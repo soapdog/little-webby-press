@@ -2,6 +2,11 @@ import BrowserFS from "browserfs"
 import slug from "slug"
 import marked from "marked"
 import mime from "mime"
+import saveAs from "file-saver"
+
+marked.setOptions({
+    xhtml: true
+})
 
 export function initializeFilesystem() {
     return new Promise((resolve, reject) => {
@@ -75,20 +80,42 @@ function copyImages(book, destination) {
 
         return false
     });
-    files.forEach(async f => {
+    let fps = files.map(async f => {
         let file = f.filepath
         let data = await f.arrayBuffer()
+        let Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+        let d2 = Buffer.from(data)
         let p = `${destination}/${file}`
         ensureFolders(p)
-        fs.writeFileSync(p, data)
+        fs.writeFileSync(p, d2)
     })
+    return fps
+
+}
+
+function addToZip(zip, slug, folder) {
+    let fs = require("fs")
+
+    let items = fs.readdirSync(folder)
+    console.log(folder, items)
+    while (items.length > 0) {
+        let a1 = `${folder}/${items.shift()}`
+        let stat = fs.statSync(a1)
+        if (stat.isDirectory()) {
+            addToZip(zip, slug, a1)
+        } else {
+            let content = fs.readFileSync(a1)
+            let destinationPath = a1.replace(`/tmp/${slug}/`, "")
+            zip.file(destinationPath, content)
+        }
+    }
 }
 
 function ensureFolders(path) {
     let fs = require("fs")
 
     let a = path.split("/")
-    a.splice(0,1)
+    a.splice(0, 1)
     let a1 = `/${a.shift()}`
     while (a.length >= 1) {
         if (!fs.existsSync(a1)) {
@@ -98,15 +125,17 @@ function ensureFolders(path) {
     }
 }
 
+
+
 export function createEpubFolder(book) {
-    let folder = slug(book.config.metadata.title)
+    let bookSlug = slug(book.config.metadata.title)
     let fs = require("fs")
-    folder = `/tmp/${folder}`
+    let folder = `/tmp/${bookSlug}`
 
     fs.mkdirSync(folder)
-    copyFolder("/templates/epub", folder)
+    let fp = copyFolder("/templates/epub", folder)
     fs.mkdirSync(`${folder}/OPS/images`)
-    copyImages(book, `${folder}/OPS`)
+    let fi = copyImages(book, `${folder}/OPS`)
 
     let chapterTemplateHBS = fs.readFileSync("/templates/epub/chapter.hbs", "utf8")
     let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
@@ -154,4 +183,16 @@ export function createEpubFolder(book) {
     let packageData = packageTemplate({ book, manifest, spine })
     fs.writeFileSync(`${folder}/OPS/package.opf`, packageData)
     // console.log(packageData)
+
+    Promise.all(fi).then(() => {
+        let zip = new JSZip()
+        let mimetype = fs.readFileSync(`${folder}/mimetype`)
+        zip.file("mimetype", mimetype)
+        addToZip(zip, bookSlug, folder)
+        zip.generateAsync({ type: "blob" }).then(function (blob) {
+            saveAs(blob, `${bookSlug}.epub`);
+        }, function (err) {
+            console.error(err);
+        });
+    })
 }
