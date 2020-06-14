@@ -1,0 +1,30 @@
+<script>
+  import _ from "lodash";
+  export let book;
+
+  let author = _.get(book.config, "metadata.author", "");
+  let publisher = _.get(book.config, "metadata.publisher", "");
+</script>
+
+<div class="container">
+  <form action="">
+    <div class="form-group">
+      <label class="form-label" for="author-name">Author Name</label>
+      <input
+        class="form-input"
+        type="text"
+        id="author-name"
+        bind:value={author}
+        placeholder="Name" />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="publisher-name">Publisher Name</label>
+      <input
+        class="form-input"
+        type="text"
+        id="publisher-name"
+        bind:value={publisher}
+        placeholder="Name" />
+    </div>
+  </form>
+</div>

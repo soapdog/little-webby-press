@@ -1,7 +1,29 @@
 <script>
+  import _ from "lodash";
   export let book;
 
-  let files = book.files
+  let files = book.files.filter(f => {
+    console.log(f.filepath)
+    if (book.config.profiles.book.includes(f.name)) {
+      return true
+    }
+
+    if (f.filepath.match(/^images/)) {
+      return true
+    }
+
+    return false
+  });
+
+  const includedInProfile = (profile, file) => {
+    if (file.filepath.match(/^images/)) {
+      return true
+    }
+
+    let p = _.get(book, `config.profiles.${profile}`, [])
+    
+    return p.includes(file.name);
+  };
 </script>
 
 <div class="column">
@@ -23,7 +45,7 @@
       The
       <em>files</em>
       tab only lists files listed in
-      <code>Book.toml</code>
+      <code>Book.toml</code> and in the <code>images/</code> folder. The files are listed in alphabetical order to make them easier to find and not in ToC order.
     </div>
     <table class="table">
       <thead>
@@ -39,10 +61,26 @@
         {#each files as file}
           <tr>
             <td>{file.filepath}</td>
-            <td />
-            <td />
-            <td />
-            <td />
+            <td>
+              {#if includedInProfile('book', file)}
+                <i class="fas fa-check" />
+              {/if}
+            </td>
+            <td>
+              {#if includedInProfile('sample', file)}
+                <i class="fas fa-check" />
+              {/if}
+            </td>
+            <td>
+              {#if includedInProfile('pwa', file)}
+                <i class="fas fa-check" />
+              {/if}
+            </td>
+            <td>
+              {#if includedInProfile('webmonetized', file)}
+                <i class="fas fa-check" />
+              {/if}
+            </td>
           </tr>
         {/each}
       </tbody>

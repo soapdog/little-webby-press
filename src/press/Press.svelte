@@ -3,7 +3,7 @@
   import Editor from "./Editor.svelte";
   import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
   import { onMount } from "svelte";
-  import { initialize } from "./filesystem.js";
+  import { initializeFilesystem, createEpubFolder } from "./utils.js";
   import Book from "./book.js";
   import toml from "toml";
 
@@ -11,7 +11,7 @@
   let msg, files, fs, book;
   let error = false;
 
-  initialize()
+  initializeFilesystem()
     .then(bfs => {
       fs = require("fs");
       // import files
@@ -57,11 +57,22 @@
         console.log(res);
         msg = "Parsing configuration...";
 
+        let rootFolder = res.filepath.split("/").reverse()
+        rootFolder.shift()
+        rootFolder.reverse().join("/")
+
+        files = files.map(f => {
+          f.filepath = f.filepath.replace(`${rootFolder}/`, "")
+          return f
+        })
+
         let config = toml.parse(await res.text());
-        console.log(config);
+        
 
         book = new Book(config, fs, files)
 
+        createEpubFolder(book)
+        
         stage = "loaded";
       } else {
         stage = "error";
