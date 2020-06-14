@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="BookId" dir="ltr">
+ <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:opf="http://www.idpf.org/2007/opf">
+   <dc:title dir="ltr" id="title">{{book.config.metadata.title}}</dc:title>
+   <meta refines="#title" property="title-type">main</meta>
+   <dc:creator id="creator">{{book.config.metadata.author}}</dc:creator>
+   <meta refines="#creator" property="file-as">{{book.config.metadata.author}}</meta>
+   <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+   <dc:language>en</dc:language>
+   {{#if book.config.metadata.publisher}}
+   <dc:publisher>{{book.config.metadata.publisher}}</dc:publisher>
+   {{/if}}
+   <dc:identifier id="BookId">{{book.config.metadata.identifier}}</dc:identifier>
+   <dc:date>{{book.config.metadata.date}}</dc:date>
+   <meta property="dcterms:modified">{{book.config.metadata.date}}</meta>
+
+   <meta name="cover" content="cover_image" />
+ </metadata>
+ <manifest>
+  <item id="style" href="stylesheet.css" media-type="text/css" />
+  <item id="cover_image" href="{{book.config.metadata.cover}}" media-type="image/jpeg" properties="cover-image" />
+  <item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+  <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+  {{#each manifest}}
+  <item id="{{id}}" href="{{file}}" media-type="{{mime}}" />
+  {{/each}}
+ </manifest>
+ <spine toc="ncx" page-progression-direction="ltr">
+    {{#each spine}}
+    <itemref idref="{{this}}" />
+    {{/each}}
+ </spine>
+
+<guide>
+  <reference href="title_page.xhtml" type="cover" title="Cover" />
+  <reference href="toc.xhtml" type="toc" title="Table of Contents" />
+  <reference href="chap00.xhtml" type="text" title="Start" />
+</guide>
+</package>

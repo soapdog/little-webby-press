@@ -1,6 +1,7 @@
 import BrowserFS from "browserfs"
 import slug from "slug"
 import marked from "marked"
+import mime from "mime"
 
 export function initializeFilesystem() {
     return new Promise((resolve, reject) => {
@@ -49,7 +50,7 @@ function copyFolder(source, destination) {
 
     items.forEach(f => {
         // skip handlebar files, copy the rest.
-        if (f.indexOf(".hbs") === -1) { 
+        if (f.indexOf(".hbs") === -1) {
             let sourcePath = `${source}/${f}`
             let destinationPath = `${destination}/${f}`
             let s = fs.statSync(sourcePath)
@@ -64,13 +65,48 @@ function copyFolder(source, destination) {
 
 }
 
+function copyImages(book, destination) {
+    let fs = require("fs")
+
+    let files = book.files.filter(f => {
+        if (f.filepath.match(/^images/)) {
+            return true
+        }
+
+        return false
+    });
+    files.forEach(async f => {
+        let file = f.filepath
+        let data = await f.arrayBuffer()
+        let p = `${destination}/${file}`
+        ensureFolders(p)
+        fs.writeFileSync(p, data)
+    })
+}
+
+function ensureFolders(path) {
+    let fs = require("fs")
+
+    let a = path.split("/")
+    a.splice(0,1)
+    let a1 = `/${a.shift()}`
+    while (a.length >= 1) {
+        if (!fs.existsSync(a1)) {
+            fs.mkdirSync(a1)
+        }
+        a1 = `${a1}/${a.shift()}`
+    }
+}
+
 export function createEpubFolder(book) {
     let folder = slug(book.config.metadata.title)
     let fs = require("fs")
     folder = `/tmp/${folder}`
 
     fs.mkdirSync(folder)
-    copyFolder("/templates/epub", folder) 
+    copyFolder("/templates/epub", folder)
+    fs.mkdirSync(`${folder}/OPS/images`)
+    copyImages(book, `${folder}/OPS`)
 
     let chapterTemplateHBS = fs.readFileSync("/templates/epub/chapter.hbs", "utf8")
     let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
@@ -79,9 +115,43 @@ export function createEpubFolder(book) {
 
         let contentMarkdown = await file.text()
         let contentHtml = marked(contentMarkdown)
-        let destinationFilename = chapterFilename.replace(".md",".html")
+        let destinationFilename = chapterFilename.replace(".md", ".xhtml")
         let destination = `${folder}/OPS/${destinationFilename}`
-        let data = chapterTemplate({html: contentHtml})
+        let data = chapterTemplate({ html: contentHtml })
         fs.writeFileSync(destination, data)
+
     })
+    let manifest = []
+
+    let files = book.files.filter(f => {
+        if (book.config.profiles.book.includes(f.name)) {
+            return true
+        }
+
+        if (f.filepath.match(/^images/)) {
+            return true
+        }
+
+        return false
+    });
+    files.forEach(file => {
+        let f = file.filepath
+        f = f.replace(".md", ".xhtml")
+        let m = mime.getType(f)
+        let i = file.name.split(".")[0]
+        manifest.push({
+            id: i,
+            file: f,
+            mime: m
+        })
+    })
+
+    let spine = book.config.profiles.book.map(f => f.split(".")[0])
+
+    book.config.metadata.date = book.config.metadata.date.toISOString()
+    let packateHBS = fs.readFileSync("/templates/epub/package.hbs", "utf8")
+    let packageTemplate = Handlebars.compile(packateHBS)
+    let packageData = packageTemplate({ book, manifest, spine })
+    fs.writeFileSync(`${folder}/OPS/package.opf`, packageData)
+    // console.log(packageData)
 }
