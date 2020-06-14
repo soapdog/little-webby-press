@@ -1,10 +1,10 @@
 import BrowserFS from "browserfs"
 import slug from "slug"
+import marked from "marked"
 
 export function initializeFilesystem() {
     return new Promise((resolve, reject) => {
         fetch('templates.zip').then(function (response) {
-            console.log(response)
             return response.arrayBuffer();
         }).then(function (zipData) {
             var Buffer = BrowserFS.BFSRequire('buffer').Buffer;
@@ -24,7 +24,6 @@ export function initializeFilesystem() {
                 }
             }, function (e) {
                 if (e) {
-                    fs = false
                     reject(e)
                 }
                 BrowserFS.install(window)
@@ -39,7 +38,7 @@ function copyFile(source, destination) {
 
     if (fs.existsSync(source)) {
         let contents = fs.readFileSync(source)
-        fs.writeFileSync(destination, contents, "utf8","wx+")
+        fs.writeFileSync(destination, contents, "utf8", "wx+")
     }
 }
 
@@ -47,16 +46,19 @@ function copyFolder(source, destination) {
     let fs = require("fs")
 
     let items = fs.readdirSync(source)
-    debugger
+
     items.forEach(f => {
-        let sourcePath = `${source}/${f}`
-        let destinationPath = `${destination}/${f}`
-        let s = fs.statSync(sourcePath)
-        if (s.isDirectory()) {
-            fs.mkdirSync(destinationPath)
-            copyFolder(sourcePath, destinationPath)
-        } else {
-            copyFile(sourcePath, destinationPath)
+        // skip handlebar files, copy the rest.
+        if (f.indexOf(".hbs") === -1) { 
+            let sourcePath = `${source}/${f}`
+            let destinationPath = `${destination}/${f}`
+            let s = fs.statSync(sourcePath)
+            if (s.isDirectory()) {
+                fs.mkdirSync(destinationPath)
+                copyFolder(sourcePath, destinationPath)
+            } else {
+                copyFile(sourcePath, destinationPath)
+            }
         }
     })
 
@@ -68,6 +70,18 @@ export function createEpubFolder(book) {
     folder = `/tmp/${folder}`
 
     fs.mkdirSync(folder)
-    copyFolder("/templates/epub", folder)
+    copyFolder("/templates/epub", folder) 
 
+    let chapterTemplateHBS = fs.readFileSync("/templates/epub/chapter.hbs", "utf8")
+    let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
+    book.config.profiles.book.forEach(async chapterFilename => {
+        let file = book.files.filter(f => f.name === chapterFilename)[0]
+
+        let contentMarkdown = await file.text()
+        let contentHtml = marked(contentMarkdown)
+        let destinationFilename = chapterFilename.replace(".md",".html")
+        let destination = `${folder}/OPS/${destinationFilename}`
+        let data = chapterTemplate({html: contentHtml})
+        fs.writeFileSync(destination, data)
+    })
 }

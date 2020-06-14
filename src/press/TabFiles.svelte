@@ -3,7 +3,6 @@
   export let book;
 
   let files = book.files.filter(f => {
-    console.log(f.filepath)
     if (book.config.profiles.book.includes(f.name)) {
       return true
     }

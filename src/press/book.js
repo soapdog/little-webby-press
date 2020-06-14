@@ -1,7 +1,6 @@
 export default class Book {
-    constructor(config, fs, files) {
+    constructor(config, files) {
         this.config = config
-        this.fs = fs
         this.files = files
     }
 }

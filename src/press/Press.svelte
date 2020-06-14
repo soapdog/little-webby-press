@@ -8,14 +8,12 @@
   import toml from "toml";
 
   let stage = "waiting"; // loading, loaded, over
-  let msg, files, fs, book;
+  let msg, files, book;
   let error = false;
 
   initializeFilesystem()
     .then(bfs => {
-      fs = require("fs");
-      // import files
-      console.log(fs);
+
     })
     .catch(e => {
       error = e.message;
@@ -43,6 +41,7 @@
     });
     dropzone.addEventListener("drop", async evt => {
       evt.preventDefault();
+
       msg = "Getting file list...";
       stage = "loading";
       files = await window.getFilesFromDataTransferItems(
@@ -69,10 +68,10 @@
         let config = toml.parse(await res.text());
         
 
-        book = new Book(config, fs, files)
+        book = new Book(config, files)
 
         createEpubFolder(book)
-        
+
         stage = "loaded";
       } else {
         stage = "error";
