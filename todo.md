@@ -19,6 +19,13 @@
 
 # layout
 * [ ] fix the control bars.
+* [ ] add footer.
+* [ ] maybe change spectre theme to base16 compatible?
+* [ ] investigate if we really need spectre.
+
+# Monetization
+* [ ] Add webmonetization endpoint
+* [ ] Create kofi
 
 # future (uncertain)
 * [ ] add menu support
