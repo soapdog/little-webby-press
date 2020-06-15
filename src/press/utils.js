@@ -3,6 +3,8 @@ import slug from "slug"
 import marked from "marked"
 import mime from "mime"
 import saveAs from "file-saver"
+import Book from "./book.js";
+import toml from "toml";
 
 marked.setOptions({
     xhtml: true
@@ -26,7 +28,10 @@ export function initializeFilesystem() {
                         }
                     },
                     "/tmp": { fs: "InMemory" },
-                    "/books": { fs: "IndexedDB", options: { storeName: "books" } }
+                    "/books": { fs: "IndexedDB", options: { storeName: "books" } },
+                    "/etc": { fs: "IndexedDB", options: { storeName: "etc" } },
+                    "/integration": { fs: "IndexedDB", options: { storeName: "integration" } }
+
                 }
             }, function (e) {
                 if (e) {
@@ -195,4 +200,28 @@ export function createEpubFolder(book) {
             console.error(err);
         });
     })
+}
+
+export async function processDroppedFiles(files) {
+    // look for Book.toml
+    let tomlFile = files.filter(file => {
+        return file.name.toLowerCase() == "book.toml";
+    })[0];
+
+    if (tomlFile) {
+        let rootFolder = tomlFile.filepath.split("/").reverse();
+        rootFolder.shift();
+        rootFolder.reverse().join("/");
+
+        files = files.map(f => {
+            f.filepath = f.filepath.replace(`${rootFolder}/`, "");
+            return f;
+        });
+
+        let config = toml.parse(await tomlFile.text());
+        let book = new Book(config, files);
+        return book
+    } else {
+        return new Error("Can't find Book.toml file")
+    }
 }

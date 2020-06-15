@@ -3,21 +3,11 @@
   import Editor from "./Editor.svelte";
   import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
   import { onMount } from "svelte";
-  import { initializeFilesystem, createEpubFolder } from "./utils.js";
-  import Book from "./book.js";
-  import toml from "toml";
+  import { createEpubFolder, processDroppedFiles } from "./utils.js";
 
   let stage = "waiting"; // loading, loaded, over
   let msg, files, book;
   let error = false;
-
-  initializeFilesystem()
-    .then(bfs => {
-
-    })
-    .catch(e => {
-      error = e.message;
-    });
 
   function readFile(file) {
     return new Promise((resolve, reject) => {
@@ -47,34 +37,14 @@
       files = await window.getFilesFromDataTransferItems(
         evt.dataTransfer.items
       );
-      // look for Book.toml
-      let res = files.filter(file => {
-        return file.name.toLowerCase() == "book.toml";
-      })[0];
 
-      if (res) {
-        console.log(res);
-        msg = "Parsing configuration...";
-
-        let rootFolder = res.filepath.split("/").reverse()
-        rootFolder.shift()
-        rootFolder.reverse().join("/")
-
-        files = files.map(f => {
-          f.filepath = f.filepath.replace(`${rootFolder}/`, "")
-          return f
-        })
-
-        let config = toml.parse(await res.text());
-        
-
-        book = new Book(config, files)
-
-        createEpubFolder(book)
-
-        stage = "loaded";
-      } else {
+      msg = "Loading configuration...";
+      book = await processDroppedFiles(files);
+      if (book instanceof Error) {
         stage = "error";
+        msg = book.message;
+      } else {
+        stage = "loaded";
       }
     });
   });
