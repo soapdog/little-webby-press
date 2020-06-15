@@ -132,73 +132,76 @@ function ensureFolders(path) {
 
 
 
-export function createEpubFolder(book) {
-    let bookSlug = slug(book.config.metadata.title)
-    let fs = require("fs")
-    let folder = `/tmp/${bookSlug}`
+export function generateEbook(book) {
+    return new Promise((resolve, reject) => {
+        let bookSlug = slug(book.config.metadata.title)
+        let fs = require("fs")
+        let folder = `/tmp/${bookSlug}`
 
-    fs.mkdirSync(folder)
-    let fp = copyFolder("/templates/epub", folder)
-    fs.mkdirSync(`${folder}/OPS/images`)
-    let fi = copyImages(book, `${folder}/OPS`)
+        fs.mkdirSync(folder)
+        let fp = copyFolder("/templates/epub", folder)
+        fs.mkdirSync(`${folder}/OPS/images`)
+        let fi = copyImages(book, `${folder}/OPS`)
 
-    let chapterTemplateHBS = fs.readFileSync("/templates/epub/chapter.hbs", "utf8")
-    let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
-    book.config.profiles.book.forEach(async chapterFilename => {
-        let file = book.files.filter(f => f.name === chapterFilename)[0]
+        let chapterTemplateHBS = fs.readFileSync("/templates/epub/chapter.hbs", "utf8")
+        let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
+        book.config.profiles.book.forEach(async chapterFilename => {
+            let file = book.files.filter(f => f.name === chapterFilename)[0]
 
-        let contentMarkdown = await file.text()
-        let contentHtml = marked(contentMarkdown)
-        let destinationFilename = chapterFilename.replace(".md", ".xhtml")
-        let destination = `${folder}/OPS/${destinationFilename}`
-        let data = chapterTemplate({ html: contentHtml })
-        fs.writeFileSync(destination, data)
+            let contentMarkdown = await file.text()
+            let contentHtml = marked(contentMarkdown)
+            let destinationFilename = chapterFilename.replace(".md", ".xhtml")
+            let destination = `${folder}/OPS/${destinationFilename}`
+            let data = chapterTemplate({ html: contentHtml })
+            fs.writeFileSync(destination, data)
 
-    })
-    let manifest = []
-
-    let files = book.files.filter(f => {
-        if (book.config.profiles.book.includes(f.name)) {
-            return true
-        }
-
-        if (f.filepath.match(/^images/)) {
-            return true
-        }
-
-        return false
-    });
-    files.forEach(file => {
-        let f = file.filepath
-        f = f.replace(".md", ".xhtml")
-        let m = mime.getType(f)
-        let i = file.name.split(".")[0]
-        manifest.push({
-            id: i,
-            file: f,
-            mime: m
         })
-    })
+        let manifest = []
 
-    let spine = book.config.profiles.book.map(f => f.split(".")[0])
+        let files = book.files.filter(f => {
+            if (book.config.profiles.book.includes(f.name)) {
+                return true
+            }
 
-    book.config.metadata.date = book.config.metadata.date.toISOString()
-    let packateHBS = fs.readFileSync("/templates/epub/package.hbs", "utf8")
-    let packageTemplate = Handlebars.compile(packateHBS)
-    let packageData = packageTemplate({ book, manifest, spine })
-    fs.writeFileSync(`${folder}/OPS/package.opf`, packageData)
-    // console.log(packageData)
+            if (f.filepath.match(/^images/)) {
+                return true
+            }
 
-    Promise.all(fi).then(() => {
-        let zip = new JSZip()
-        let mimetype = fs.readFileSync(`${folder}/mimetype`)
-        zip.file("mimetype", mimetype)
-        addToZip(zip, bookSlug, folder)
-        zip.generateAsync({ type: "blob" }).then(function (blob) {
-            saveAs(blob, `${bookSlug}.epub`);
-        }, function (err) {
-            console.error(err);
+            return false
         });
+        files.forEach(file => {
+            let f = file.filepath
+            f = f.replace(".md", ".xhtml")
+            let m = mime.getType(f)
+            let i = file.name.split(".")[0]
+            manifest.push({
+                id: i,
+                file: f,
+                mime: m
+            })
+        })
+
+        let spine = book.config.profiles.book.map(f => f.split(".")[0])
+
+        book.config.metadata.date = book.config.metadata.date.toISOString()
+        let packateHBS = fs.readFileSync("/templates/epub/package.hbs", "utf8")
+        let packageTemplate = Handlebars.compile(packateHBS)
+        let packageData = packageTemplate({ book, manifest, spine })
+        fs.writeFileSync(`${folder}/OPS/package.opf`, packageData)
+        // console.log(packageData)
+
+        Promise.all(fi).then(() => {
+            let zip = new JSZip()
+            let mimetype = fs.readFileSync(`${folder}/mimetype`)
+            zip.file("mimetype", mimetype)
+            addToZip(zip, bookSlug, folder)
+            zip.generateAsync({ type: "blob" }).then(function (blob) {
+                saveAs(blob, `${bookSlug}.epub`);
+                resolve()
+            }, function (err) {
+                reject(err)
+            });
+        })
     })
 }
 

@@ -40,12 +40,12 @@
       </div>
     </div>
   {:else}
-    <div class="toast toast-primary m-2">
+    <p>
       The
       <em>files</em>
       tab only lists files listed in
       <code>Book.toml</code> and in the <code>images/</code> folder. The files are listed in alphabetical order to make them easier to find and not in ToC order.
-    </div>
+    </p>
     <table class="table">
       <thead>
         <tr>
