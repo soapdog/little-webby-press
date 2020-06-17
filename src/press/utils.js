@@ -170,14 +170,23 @@ export function generateEbook(book) {
             return false
         });
         files.forEach(file => {
+            if (file.filepath == book.config.metadata.cover) {
+                return
+            }
             let f = file.filepath
             f = f.replace(".md", ".xhtml")
             let m = mime.getType(f)
             let i = file.name.split(".")[0]
+            let linear = "yes"
+            if (f.indexOf(".xhtml") == -1) {
+                linear = "no"
+                i = `r-${i}`
+            }
             manifest.push({
                 id: i,
                 file: f,
-                mime: m
+                mime: m,
+                linear
             })
         })
 

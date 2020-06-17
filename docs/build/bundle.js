@@ -50364,14 +50364,23 @@ var app = (function () {
                 return false
             });
             files.forEach(file => {
+                if (file.filepath == book.config.metadata.cover) {
+                    return
+                }
                 let f = file.filepath;
                 f = f.replace(".md", ".xhtml");
                 let m = mime.getType(f);
                 let i = file.name.split(".")[0];
+                let linear = "yes";
+                if (f.indexOf(".xhtml") == -1) {
+                    linear = "no";
+                    i = `r-${i}`;
+                }
                 manifest.push({
                     id: i,
                     file: f,
-                    mime: m
+                    mime: m,
+                    linear
                 });
             });
 
@@ -51000,25 +51009,25 @@ var app = (function () {
     			if (img.src !== (img_src_value = "...")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "class", "rounded mr-2");
     			attr_dev(img, "alt", "...");
-    			add_location(img, file$6, 75, 8, 1742);
+    			add_location(img, file$6, 75, 8, 1817);
     			attr_dev(strong, "class", "mr-auto");
-    			add_location(strong, file$6, 76, 8, 1799);
+    			add_location(strong, file$6, 76, 8, 1875);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$6, 82, 10, 1983);
+    			add_location(span, file$6, 82, 10, 2065);
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", "ml-2 mb-1 close");
     			attr_dev(button, "data-dismiss", "toast");
     			attr_dev(button, "aria-label", "Close");
-    			add_location(button, file$6, 77, 8, 1846);
+    			add_location(button, file$6, 77, 8, 1923);
     			attr_dev(div0, "class", "toast-header");
-    			add_location(div0, file$6, 74, 6, 1707);
+    			add_location(div0, file$6, 74, 6, 1781);
     			attr_dev(div1, "class", "toast-body");
-    			add_location(div1, file$6, 85, 6, 2060);
+    			add_location(div1, file$6, 85, 6, 2145);
     			attr_dev(div2, "class", "toast");
     			attr_dev(div2, "role", "alert");
     			attr_dev(div2, "aria-live", "assertive");
     			attr_dev(div2, "aria-atomic", "true");
-    			add_location(div2, file$6, 73, 4, 1627);
+    			add_location(div2, file$6, 73, 4, 1700);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -51116,7 +51125,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "d-flex justify-content-center align-items-center h-100 text-center svelte-7mmywi");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$6, 89, 4, 2179);
+    			add_location(div, file$6, 89, 4, 2268);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -51184,14 +51193,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$6, 116, 12, 3168);
+    			add_location(i, file$6, 116, 12, 3284);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 115, 10, 3131);
+    			add_location(div0, file$6, 115, 10, 3246);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$6, 118, 10, 3238);
+    			add_location(p0, file$6, 118, 10, 3356);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$6, 119, 10, 3289);
-    			add_location(div1, file$6, 114, 8, 3115);
+    			add_location(p1, file$6, 119, 10, 3408);
+    			add_location(div1, file$6, 114, 8, 3229);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -51251,23 +51260,23 @@ var app = (function () {
     			t4 = space();
     			div1 = element("div");
     			button = element("button");
-    			t5 = text("Learn more about how to build books using\n              ");
+    			t5 = text("Learn more about how to build books using\r\n              ");
     			em = element("em");
     			em.textContent = "little.webby.press";
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 100, 12, 2610);
+    			add_location(i, file$6, 100, 12, 2710);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 99, 10, 2573);
+    			add_location(div0, file$6, 99, 10, 2672);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$6, 102, 10, 2669);
+    			add_location(p0, file$6, 102, 10, 2771);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$6, 103, 10, 2728);
-    			add_location(em, file$6, 109, 14, 2989);
+    			add_location(p1, file$6, 103, 10, 2831);
+    			add_location(em, file$6, 109, 14, 3098);
     			attr_dev(button, "class", "btn btn-primary");
-    			add_location(button, file$6, 107, 12, 2886);
+    			add_location(button, file$6, 107, 12, 2993);
     			attr_dev(div1, "class", "empty-action");
-    			add_location(div1, file$6, 106, 10, 2847);
-    			add_location(div2, file$6, 98, 8, 2557);
+    			add_location(div1, file$6, 106, 10, 2953);
+    			add_location(div2, file$6, 98, 8, 2655);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -51317,12 +51326,12 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Drop a book folder here!";
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$6, 93, 12, 2378);
+    			add_location(i, file$6, 93, 12, 2471);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 92, 10, 2341);
+    			add_location(div0, file$6, 92, 10, 2433);
     			attr_dev(p, "class", "empty-title h5");
-    			add_location(p, file$6, 95, 10, 2443);
-    			add_location(div1, file$6, 91, 8, 2325);
+    			add_location(p, file$6, 95, 10, 2538);
+    			add_location(div1, file$6, 91, 8, 2416);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -51378,7 +51387,7 @@ var app = (function () {
     			t1 = space();
     			if_block1.c();
     			attr_dev(div, "class", "container-fluid p-0 mx-auto full-height drop-area svelte-7mmywi");
-    			add_location(div, file$6, 67, 0, 1529);
+    			add_location(div, file$6, 67, 0, 1596);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
