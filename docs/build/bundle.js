@@ -72,6 +72,9 @@ var app = (function () {
     function set_input_value(input, value) {
         input.value = value == null ? '' : value;
     }
+    function set_style(node, key, value, important) {
+        node.style.setProperty(key, value, important ? 'important' : '');
+    }
     function select_option(select, value) {
         for (let i = 0; i < select.options.length; i += 1) {
             const option = select.options[i];
@@ -364,6 +367,10 @@ var app = (function () {
         else
             dispatch_dev("SvelteDOMSetAttribute", { node, attribute, value });
     }
+    function prop_dev(node, property, value) {
+        node[property] = value;
+        dispatch_dev("SvelteDOMSetProperty", { node, property, value });
+    }
     function set_data_dev(text, data) {
         data = '' + data;
         if (text.data === data)
@@ -409,64 +416,90 @@ var app = (function () {
     const file = "src\\press\\Nav.svelte";
 
     function create_fragment(ctx) {
-    	let header;
-    	let section0;
+    	let nav;
+    	let div0;
     	let a0;
     	let t1;
-    	let section1;
+    	let button;
+    	let span;
+    	let t2;
+    	let div2;
+    	let div1;
     	let a1;
-    	let t3;
+    	let t4;
     	let a2;
 
     	const block = {
     		c: function create() {
-    			header = element("header");
-    			section0 = element("section");
+    			nav = element("nav");
+    			div0 = element("div");
     			a0 = element("a");
-    			a0.textContent = "little.webby.press";
+    			a0.textContent = "Little Webby Press";
     			t1 = space();
-    			section1 = element("section");
+    			button = element("button");
+    			span = element("span");
+    			t2 = space();
+    			div2 = element("div");
+    			div1 = element("div");
     			a1 = element("a");
     			a1.textContent = "Help";
-    			t3 = space();
+    			t4 = space();
     			a2 = element("a");
     			a2.textContent = "GitHub";
     			attr_dev(a0, "href", "/index.html");
-    			attr_dev(a0, "class", "navbar-brand mr-2 ml-2 text-bold");
-    			add_location(a0, file, 2, 4, 65);
-    			attr_dev(section0, "class", "navbar-section");
-    			add_location(section0, file, 1, 2, 27);
+    			attr_dev(a0, "class", "navbar-brand font-weight-bold");
+    			add_location(a0, file, 2, 4, 121);
+    			attr_dev(span, "class", "navbar-toggler-icon");
+    			add_location(span, file, 11, 6, 438);
+    			attr_dev(button, "class", "navbar-toggler");
+    			attr_dev(button, "type", "button");
+    			attr_dev(button, "data-toggle", "collapse");
+    			attr_dev(button, "data-target", "#navbarNav");
+    			attr_dev(button, "aria-controls", "navbarNav");
+    			attr_dev(button, "aria-expanded", "false");
+    			attr_dev(button, "aria-label", "Toggle navigation");
+    			add_location(button, file, 3, 4, 209);
+    			attr_dev(div0, "class", "container-fluid");
+    			add_location(div0, file, 1, 2, 86);
     			attr_dev(a1, "href", "/help");
     			attr_dev(a1, "target", "_blank");
-    			attr_dev(a1, "class", "btn btn-link");
-    			add_location(a1, file, 6, 4, 208);
+    			attr_dev(a1, "class", "nav-link");
+    			add_location(a1, file, 17, 6, 625);
     			attr_dev(a2, "href", "https://github.com/soapdog/little-webby-press");
     			attr_dev(a2, "target", "_blank");
-    			attr_dev(a2, "class", "btn btn-link");
-    			add_location(a2, file, 7, 4, 275);
-    			attr_dev(section1, "class", "navbar-section");
-    			add_location(section1, file, 5, 2, 170);
-    			attr_dev(header, "class", "navbar");
-    			add_location(header, file, 0, 0, 0);
+    			attr_dev(a2, "class", "nav-link");
+    			add_location(a2, file, 18, 6, 690);
+    			attr_dev(div1, "class", "navbar-nav");
+    			add_location(div1, file, 15, 4, 591);
+    			attr_dev(div2, "class", "collapse navbar-collapse justify-content-end");
+    			attr_dev(div2, "id", "navbarNavAltMarkup");
+    			add_location(div2, file, 14, 2, 503);
+    			attr_dev(nav, "class", "navbar navbar-expand navbar-light");
+    			set_style(nav, "background-color", "#e3f2fd");
+    			add_location(nav, file, 0, 0, 0);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, header, anchor);
-    			append_dev(header, section0);
-    			append_dev(section0, a0);
-    			append_dev(header, t1);
-    			append_dev(header, section1);
-    			append_dev(section1, a1);
-    			append_dev(section1, t3);
-    			append_dev(section1, a2);
+    			insert_dev(target, nav, anchor);
+    			append_dev(nav, div0);
+    			append_dev(div0, a0);
+    			append_dev(div0, t1);
+    			append_dev(div0, button);
+    			append_dev(button, span);
+    			append_dev(nav, t2);
+    			append_dev(nav, div2);
+    			append_dev(div2, div1);
+    			append_dev(div1, a1);
+    			append_dev(div1, t4);
+    			append_dev(div1, a2);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(header);
+    			if (detaching) detach_dev(nav);
     		}
     	};
 
@@ -17629,30 +17662,28 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (42:2) {:else}
+    // (38:2) {:else}
     function create_else_block(ctx) {
     	let p;
     	let t0;
     	let em;
     	let t2;
-    	let code0;
+    	let code;
     	let t4;
-    	let code1;
-    	let t6;
-    	let t7;
+    	let t5;
     	let table;
     	let thead;
     	let tr;
     	let th0;
-    	let t9;
+    	let t7;
     	let th1;
-    	let t11;
+    	let t9;
     	let th2;
-    	let t13;
+    	let t11;
     	let th3;
-    	let t15;
+    	let t13;
     	let th4;
-    	let t17;
+    	let t15;
     	let tbody;
     	let each_value = /*files*/ ctx[0];
     	validate_each_argument(each_value);
@@ -17669,75 +17700,69 @@ var app = (function () {
     			em = element("em");
     			em.textContent = "files";
     			t2 = text("\r\n      tab only lists files listed in\r\n      ");
-    			code0 = element("code");
-    			code0.textContent = "Book.toml";
-    			t4 = text(" and in the ");
-    			code1 = element("code");
-    			code1.textContent = "images/";
-    			t6 = text(" folder. The files are listed in alphabetical order to make them easier to find and not in ToC order.");
-    			t7 = space();
+    			code = element("code");
+    			code.textContent = "Book.toml";
+    			t4 = text(" profiles. The files are listed in alphabetical order to make them easier to find and not in ToC order.");
+    			t5 = space();
     			table = element("table");
     			thead = element("thead");
     			tr = element("tr");
     			th0 = element("th");
     			th0.textContent = "filename";
-    			t9 = space();
+    			t7 = space();
     			th1 = element("th");
     			th1.textContent = "ePub";
-    			t11 = space();
+    			t9 = space();
     			th2 = element("th");
     			th2.textContent = "Sample";
-    			t13 = space();
+    			t11 = space();
     			th3 = element("th");
     			th3.textContent = "PWA";
-    			t15 = space();
+    			t13 = space();
     			th4 = element("th");
     			th4.textContent = "PWA + WebMonetized";
-    			t17 = space();
+    			t15 = space();
     			tbody = element("tbody");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			add_location(em, file$1, 44, 6, 1019);
-    			add_location(code0, file$1, 46, 6, 1079);
-    			add_location(code1, file$1, 46, 40, 1113);
-    			add_location(p, file$1, 42, 4, 997);
-    			add_location(th0, file$1, 51, 10, 1312);
-    			add_location(th1, file$1, 52, 10, 1341);
-    			add_location(th2, file$1, 53, 10, 1366);
-    			add_location(th3, file$1, 54, 10, 1393);
-    			add_location(th4, file$1, 55, 10, 1417);
-    			add_location(tr, file$1, 50, 8, 1296);
-    			add_location(thead, file$1, 49, 6, 1279);
-    			add_location(tbody, file$1, 58, 6, 1483);
+    			add_location(em, file$1, 40, 6, 951);
+    			add_location(code, file$1, 42, 6, 1011);
+    			add_location(p, file$1, 38, 4, 929);
+    			add_location(th0, file$1, 47, 10, 1214);
+    			add_location(th1, file$1, 48, 10, 1243);
+    			add_location(th2, file$1, 49, 10, 1268);
+    			add_location(th3, file$1, 50, 10, 1295);
+    			add_location(th4, file$1, 51, 10, 1319);
+    			add_location(tr, file$1, 46, 8, 1198);
+    			add_location(thead, file$1, 45, 6, 1181);
+    			add_location(tbody, file$1, 54, 6, 1385);
     			attr_dev(table, "class", "table");
-    			add_location(table, file$1, 48, 4, 1250);
+    			add_location(table, file$1, 44, 4, 1152);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
     			append_dev(p, t0);
     			append_dev(p, em);
     			append_dev(p, t2);
-    			append_dev(p, code0);
+    			append_dev(p, code);
     			append_dev(p, t4);
-    			append_dev(p, code1);
-    			append_dev(p, t6);
-    			insert_dev(target, t7, anchor);
+    			insert_dev(target, t5, anchor);
     			insert_dev(target, table, anchor);
     			append_dev(table, thead);
     			append_dev(thead, tr);
     			append_dev(tr, th0);
-    			append_dev(tr, t9);
+    			append_dev(tr, t7);
     			append_dev(tr, th1);
-    			append_dev(tr, t11);
+    			append_dev(tr, t9);
     			append_dev(tr, th2);
-    			append_dev(tr, t13);
+    			append_dev(tr, t11);
     			append_dev(tr, th3);
-    			append_dev(tr, t15);
+    			append_dev(tr, t13);
     			append_dev(tr, th4);
-    			append_dev(table, t17);
+    			append_dev(table, t15);
     			append_dev(table, tbody);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -17771,7 +17796,7 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(t5);
     			if (detaching) detach_dev(table);
     			destroy_each(each_blocks, detaching);
     		}
@@ -17781,14 +17806,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(42:2) {:else}",
+    		source: "(38:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (29:2) {#if files.length == 0}
+    // (25:2) {#if files.length == 0}
     function create_if_block(ctx) {
     	let div2;
     	let div0;
@@ -17817,19 +17842,19 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Learn more about book data :-)";
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$1, 31, 8, 631);
+    			add_location(i, file$1, 27, 8, 563);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$1, 30, 6, 597);
+    			add_location(div0, file$1, 26, 6, 529);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$1, 33, 6, 684);
+    			add_location(p0, file$1, 29, 6, 616);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$1, 34, 6, 737);
+    			add_location(p1, file$1, 30, 6, 669);
     			attr_dev(button, "class", "btn btn-primary");
-    			add_location(button, file$1, 38, 8, 883);
+    			add_location(button, file$1, 34, 8, 815);
     			attr_dev(div1, "class", "empty-action");
-    			add_location(div1, file$1, 37, 6, 847);
+    			add_location(div1, file$1, 33, 6, 779);
     			attr_dev(div2, "class", "empty");
-    			add_location(div2, file$1, 29, 4, 570);
+    			add_location(div2, file$1, 25, 4, 502);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -17853,14 +17878,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(29:2) {#if files.length == 0}",
+    		source: "(25:2) {#if files.length == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (64:14) {#if includedInProfile('book', file)}
+    // (60:14) {#if includedInProfile('book', file)}
     function create_if_block_4(ctx) {
     	let i;
 
@@ -17868,7 +17893,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-check");
-    			add_location(i, file$1, 64, 16, 1664);
+    			add_location(i, file$1, 60, 16, 1566);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -17882,14 +17907,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(64:14) {#if includedInProfile('book', file)}",
+    		source: "(60:14) {#if includedInProfile('book', file)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (69:14) {#if includedInProfile('sample', file)}
+    // (65:14) {#if includedInProfile('sample', file)}
     function create_if_block_3(ctx) {
     	let i;
 
@@ -17897,7 +17922,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-check");
-    			add_location(i, file$1, 69, 16, 1821);
+    			add_location(i, file$1, 65, 16, 1723);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -17911,14 +17936,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(69:14) {#if includedInProfile('sample', file)}",
+    		source: "(65:14) {#if includedInProfile('sample', file)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (74:14) {#if includedInProfile('pwa', file)}
+    // (70:14) {#if includedInProfile('pwa', file)}
     function create_if_block_2(ctx) {
     	let i;
 
@@ -17926,7 +17951,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-check");
-    			add_location(i, file$1, 74, 16, 1975);
+    			add_location(i, file$1, 70, 16, 1877);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -17940,14 +17965,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(74:14) {#if includedInProfile('pwa', file)}",
+    		source: "(70:14) {#if includedInProfile('pwa', file)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (79:14) {#if includedInProfile('webmonetized', file)}
+    // (75:14) {#if includedInProfile('webmonetized', file)}
     function create_if_block_1(ctx) {
     	let i;
 
@@ -17955,7 +17980,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-check");
-    			add_location(i, file$1, 79, 16, 2138);
+    			add_location(i, file$1, 75, 16, 2040);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -17969,14 +17994,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(79:14) {#if includedInProfile('webmonetized', file)}",
+    		source: "(75:14) {#if includedInProfile('webmonetized', file)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (60:8) {#each files as file}
+    // (56:8) {#each files as file}
     function create_each_block(ctx) {
     	let tr;
     	let td0;
@@ -18018,12 +18043,12 @@ var app = (function () {
     			td4 = element("td");
     			if (if_block3) if_block3.c();
     			t5 = space();
-    			add_location(td0, file$1, 61, 12, 1551);
-    			add_location(td1, file$1, 62, 12, 1589);
-    			add_location(td2, file$1, 67, 12, 1744);
-    			add_location(td3, file$1, 72, 12, 1901);
-    			add_location(td4, file$1, 77, 12, 2055);
-    			add_location(tr, file$1, 60, 10, 1533);
+    			add_location(td0, file$1, 57, 12, 1453);
+    			add_location(td1, file$1, 58, 12, 1491);
+    			add_location(td2, file$1, 63, 12, 1646);
+    			add_location(td3, file$1, 68, 12, 1803);
+    			add_location(td4, file$1, 73, 12, 1957);
+    			add_location(tr, file$1, 56, 10, 1435);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -18057,7 +18082,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(60:8) {#each files as file}",
+    		source: "(56:8) {#each files as file}",
     		ctx
     	});
 
@@ -18080,7 +18105,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			attr_dev(div, "class", "column");
-    			add_location(div, file$1, 27, 0, 517);
+    			add_location(div, file$1, 23, 0, 449);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -18116,10 +18141,6 @@ var app = (function () {
 
     	let files = book.files.filter(f => {
     		if (book.config.profiles.book.includes(f.name)) {
-    			return true;
-    		}
-
-    		if (f.filepath.match(/^images/)) {
     			return true;
     		}
 
@@ -18195,70 +18216,72 @@ var app = (function () {
     const file$2 = "src\\press\\TabOptions.svelte";
 
     function create_fragment$2(ctx) {
-    	let div5;
     	let form;
-    	let h50;
+    	let div5;
+    	let div1;
+    	let span0;
     	let t1;
     	let div0;
-    	let label0;
     	let input0;
     	let t2;
-    	let i0;
-    	let t3;
+    	let label0;
     	let t4;
-    	let span0;
+    	let div3;
+    	let div2;
+    	let label1;
     	let t6;
-    	let div1;
     	let select;
     	let option0;
     	let option1;
     	let option2;
     	let t10;
-    	let h51;
-    	let t12;
-    	let div2;
-    	let label1;
-    	let input1;
-    	let t13;
-    	let i1;
-    	let t14;
-    	let t15;
-    	let span1;
-    	let t17;
-    	let h52;
-    	let t19;
-    	let div3;
-    	let label2;
-    	let input2;
-    	let t20;
-    	let i2;
-    	let t21;
-    	let t22;
     	let div4;
+    	let t12;
+    	let div13;
+    	let div7;
+    	let span1;
+    	let t14;
+    	let div6;
+    	let input1;
+    	let t15;
+    	let label2;
+    	let t17;
+    	let div11;
+    	let div9;
+    	let div8;
+    	let input2;
+    	let t18;
     	let label3;
-    	let t24;
+    	let t20;
+    	let div10;
+    	let label4;
+    	let t22;
     	let input3;
+    	let input3_disabled_value;
+    	let t23;
+    	let div12;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
-    			div5 = element("div");
     			form = element("form");
-    			h50 = element("h5");
-    			h50.textContent = "eBook";
+    			div5 = element("div");
+    			div1 = element("div");
+    			span0 = element("span");
+    			span0.textContent = "eBook";
     			t1 = space();
     			div0 = element("div");
-    			label0 = element("label");
     			input0 = element("input");
     			t2 = space();
-    			i0 = element("i");
-    			t3 = text("\r\n        Create eBook.");
+    			label0 = element("label");
+    			label0.textContent = "Create eBook.";
     			t4 = space();
-    			span0 = element("span");
-    			span0.textContent = "The eBook is created in EPUB3 non-DRM format.";
+    			div3 = element("div");
+    			div2 = element("div");
+    			label1 = element("label");
+    			label1.textContent = "Theme";
     			t6 = space();
-    			div1 = element("div");
     			select = element("select");
     			option0 = element("option");
     			option0.textContent = "Choose a theme";
@@ -18267,145 +18290,159 @@ var app = (function () {
     			option2 = element("option");
     			option2.textContent = "Fiction";
     			t10 = space();
-    			h51 = element("h5");
-    			h51.textContent = "Website";
-    			t12 = space();
-    			div2 = element("div");
-    			label1 = element("label");
-    			input1 = element("input");
-    			t13 = space();
-    			i1 = element("i");
-    			t14 = text("\r\n        Create website.");
-    			t15 = space();
-    			span1 = element("span");
-    			span1.textContent = "The website generated by this tool is a static website that can be\r\n        deployed to any webserver.";
-    			t17 = space();
-    			h52 = element("h5");
-    			h52.textContent = "Webmonetization";
-    			t19 = space();
-    			div3 = element("div");
-    			label2 = element("label");
-    			input2 = element("input");
-    			t20 = space();
-    			i2 = element("i");
-    			t21 = text("\r\n        Enable Webmonetatization.");
-    			t22 = space();
     			div4 = element("div");
+    			div4.textContent = "The eBook is created in EPUB3 non-DRM format.";
+    			t12 = space();
+    			div13 = element("div");
+    			div7 = element("div");
+    			span1 = element("span");
+    			span1.textContent = "Website";
+    			t14 = space();
+    			div6 = element("div");
+    			input1 = element("input");
+    			t15 = space();
+    			label2 = element("label");
+    			label2.textContent = "Create website.";
+    			t17 = space();
+    			div11 = element("div");
+    			div9 = element("div");
+    			div8 = element("div");
+    			input2 = element("input");
+    			t18 = space();
     			label3 = element("label");
-    			label3.textContent = "Webmonetization Endpoint";
-    			t24 = space();
+    			label3.textContent = "Enable Web Monetatization.";
+    			t20 = space();
+    			div10 = element("div");
+    			label4 = element("label");
+    			label4.textContent = "Webmonetization Endpoint";
+    			t22 = space();
     			input3 = element("input");
-    			attr_dev(h50, "class", "h5");
-    			add_location(h50, file$2, 7, 4, 136);
+    			t23 = space();
+    			div12 = element("div");
+    			div12.textContent = "The website generated by this tool is a static website that can be\r\n      deployed to any webserver.";
+    			add_location(span0, file$2, 8, 6, 201);
+    			attr_dev(input0, "class", "form-check-input");
     			attr_dev(input0, "type", "checkbox");
-    			add_location(input0, file$2, 10, 8, 237);
-    			attr_dev(i0, "class", "form-icon");
-    			add_location(i0, file$2, 11, 8, 313);
-    			attr_dev(label0, "class", "form-switch");
-    			add_location(label0, file$2, 9, 6, 200);
-    			add_location(span0, file$2, 14, 6, 383);
-    			attr_dev(div0, "class", "form-group ");
-    			add_location(div0, file$2, 8, 4, 167);
+    			add_location(input0, file$2, 10, 8, 273);
+    			attr_dev(label0, "class", "form-check-label");
+    			attr_dev(label0, "for", "flexSwitchCheckChecked");
+    			add_location(label0, file$2, 14, 8, 407);
+    			attr_dev(div0, "class", "form-check form-switch");
+    			add_location(div0, file$2, 9, 6, 227);
+    			attr_dev(div1, "class", "card-header d-flex justify-content-between");
+    			add_location(div1, file$2, 7, 4, 137);
+    			attr_dev(label1, "class", "form-label");
+    			add_location(label1, file$2, 21, 8, 602);
     			option0.__value = "Choose a theme";
     			option0.value = option0.__value;
-    			add_location(option0, file$2, 18, 8, 566);
+    			add_location(option0, file$2, 23, 10, 728);
     			option1.__value = "technical";
     			option1.value = option1.__value;
-    			add_location(option1, file$2, 19, 8, 607);
+    			add_location(option1, file$2, 24, 10, 771);
     			option2.__value = "fiction";
     			option2.value = option2.__value;
-    			add_location(option2, file$2, 20, 8, 661);
+    			add_location(option2, file$2, 25, 10, 827);
     			attr_dev(select, "class", "form-select");
     			if (/*book*/ ctx[0].config.ebook.theme === void 0) add_render_callback(() => /*select_change_handler*/ ctx[2].call(select));
-    			add_location(select, file$2, 17, 6, 491);
-    			attr_dev(div1, "class", "form-group");
-    			add_location(div1, file$2, 16, 4, 459);
-    			attr_dev(h51, "class", "h5");
-    			add_location(h51, file$2, 23, 4, 736);
+    			add_location(select, file$2, 22, 8, 651);
+    			attr_dev(div2, "class", "mb-3");
+    			add_location(div2, file$2, 20, 6, 574);
+    			attr_dev(div3, "class", "card-body");
+    			add_location(div3, file$2, 19, 4, 543);
+    			attr_dev(div4, "class", "card-footer text-muted");
+    			add_location(div4, file$2, 29, 4, 918);
+    			attr_dev(div5, "class", "card mb-3");
+    			add_location(div5, file$2, 6, 2, 108);
+    			add_location(span1, file$2, 35, 6, 1124);
+    			attr_dev(input1, "class", "form-check-input");
     			attr_dev(input1, "type", "checkbox");
-    			add_location(input1, file$2, 26, 8, 838);
-    			attr_dev(i1, "class", "form-icon");
-    			add_location(i1, file$2, 27, 8, 912);
-    			attr_dev(label1, "class", "form-switch");
-    			add_location(label1, file$2, 25, 6, 801);
-    			add_location(span1, file$2, 30, 6, 984);
-    			attr_dev(div2, "class", "form-group");
-    			add_location(div2, file$2, 24, 4, 769);
-    			attr_dev(h52, "class", "h5");
-    			add_location(h52, file$2, 35, 4, 1135);
+    			add_location(input1, file$2, 37, 8, 1198);
+    			attr_dev(label2, "class", "form-check-label");
+    			attr_dev(label2, "for", "flexSwitchCheckChecked");
+    			add_location(label2, file$2, 41, 8, 1330);
+    			attr_dev(div6, "class", "form-check form-switch");
+    			add_location(div6, file$2, 36, 6, 1152);
+    			attr_dev(div7, "class", "card-header d-flex justify-content-between");
+    			add_location(div7, file$2, 34, 4, 1060);
     			attr_dev(input2, "type", "checkbox");
-    			add_location(input2, file$2, 38, 8, 1253);
-    			attr_dev(i2, "class", "form-icon");
-    			add_location(i2, file$2, 41, 8, 1361);
-    			attr_dev(label2, "class", "form-switch");
-    			add_location(label2, file$2, 37, 6, 1216);
-    			attr_dev(div3, "class", "form-group tooltip");
-    			add_location(div3, file$2, 36, 4, 1176);
-    			attr_dev(label3, "class", "form-label");
-    			add_location(label3, file$2, 46, 6, 1485);
-    			attr_dev(input3, "class", "form-input");
+    			attr_dev(input2, "class", "form-check-input");
+    			add_location(input2, file$2, 49, 10, 1575);
+    			attr_dev(label3, "class", "form-check-label");
+    			add_location(label3, file$2, 53, 10, 1727);
+    			attr_dev(div8, "class", "form-check form-switch");
+    			add_location(div8, file$2, 48, 8, 1527);
+    			attr_dev(div9, "class", "mb-3");
+    			add_location(div9, file$2, 47, 6, 1499);
+    			attr_dev(label4, "class", "form-label");
+    			add_location(label4, file$2, 57, 8, 1859);
+    			attr_dev(input3, "class", "form-control");
     			attr_dev(input3, "type", "text");
-    			add_location(input3, file$2, 47, 6, 1551);
-    			attr_dev(div4, "class", "form-group");
-    			add_location(div4, file$2, 45, 4, 1453);
-    			attr_dev(form, "class", "form");
+    			input3.disabled = input3_disabled_value = !/*book*/ ctx[0].config.webmonetization.enabled;
+    			add_location(input3, file$2, 58, 8, 1927);
+    			attr_dev(div10, "class", "mb-3");
+    			add_location(div10, file$2, 56, 6, 1831);
+    			attr_dev(div11, "class", "card-body");
+    			add_location(div11, file$2, 46, 4, 1468);
+    			attr_dev(div12, "class", "card-footer text-muted");
+    			add_location(div12, file$2, 65, 4, 2143);
+    			attr_dev(div13, "class", "card mb-3");
+    			add_location(div13, file$2, 33, 2, 1031);
+    			attr_dev(form, "class", "form mt-2");
     			attr_dev(form, "action", "");
-    			add_location(form, file$2, 6, 2, 101);
-    			attr_dev(div5, "class", "container m-2");
-    			add_location(div5, file$2, 5, 0, 70);
+    			add_location(form, file$2, 5, 0, 70);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div5, anchor);
-    			append_dev(div5, form);
-    			append_dev(form, h50);
-    			append_dev(form, t1);
-    			append_dev(form, div0);
-    			append_dev(div0, label0);
-    			append_dev(label0, input0);
+    			insert_dev(target, form, anchor);
+    			append_dev(form, div5);
+    			append_dev(div5, div1);
+    			append_dev(div1, span0);
+    			append_dev(div1, t1);
+    			append_dev(div1, div0);
+    			append_dev(div0, input0);
     			input0.checked = /*book*/ ctx[0].config.ebook.enabled;
-    			append_dev(label0, t2);
-    			append_dev(label0, i0);
-    			append_dev(label0, t3);
-    			append_dev(div0, t4);
-    			append_dev(div0, span0);
-    			append_dev(form, t6);
-    			append_dev(form, div1);
-    			append_dev(div1, select);
+    			append_dev(div0, t2);
+    			append_dev(div0, label0);
+    			append_dev(div5, t4);
+    			append_dev(div5, div3);
+    			append_dev(div3, div2);
+    			append_dev(div2, label1);
+    			append_dev(div2, t6);
+    			append_dev(div2, select);
     			append_dev(select, option0);
     			append_dev(select, option1);
     			append_dev(select, option2);
     			select_option(select, /*book*/ ctx[0].config.ebook.theme);
-    			append_dev(form, t10);
-    			append_dev(form, h51);
+    			append_dev(div5, t10);
+    			append_dev(div5, div4);
     			append_dev(form, t12);
-    			append_dev(form, div2);
-    			append_dev(div2, label1);
-    			append_dev(label1, input1);
+    			append_dev(form, div13);
+    			append_dev(div13, div7);
+    			append_dev(div7, span1);
+    			append_dev(div7, t14);
+    			append_dev(div7, div6);
+    			append_dev(div6, input1);
     			input1.checked = /*book*/ ctx[0].config.pwa.enabled;
-    			append_dev(label1, t13);
-    			append_dev(label1, i1);
-    			append_dev(label1, t14);
-    			append_dev(div2, t15);
-    			append_dev(div2, span1);
-    			append_dev(form, t17);
-    			append_dev(form, h52);
-    			append_dev(form, t19);
-    			append_dev(form, div3);
-    			append_dev(div3, label2);
-    			append_dev(label2, input2);
+    			append_dev(div6, t15);
+    			append_dev(div6, label2);
+    			append_dev(div13, t17);
+    			append_dev(div13, div11);
+    			append_dev(div11, div9);
+    			append_dev(div9, div8);
+    			append_dev(div8, input2);
     			input2.checked = /*book*/ ctx[0].config.webmonetization.enabled;
-    			append_dev(label2, t20);
-    			append_dev(label2, i2);
-    			append_dev(label2, t21);
-    			append_dev(form, t22);
-    			append_dev(form, div4);
-    			append_dev(div4, label3);
-    			append_dev(div4, t24);
-    			append_dev(div4, input3);
+    			append_dev(div8, t18);
+    			append_dev(div8, label3);
+    			append_dev(div11, t20);
+    			append_dev(div11, div10);
+    			append_dev(div10, label4);
+    			append_dev(div10, t22);
+    			append_dev(div10, input3);
     			set_input_value(input3, /*book*/ ctx[0].config.webmonetization.endpoint);
+    			append_dev(div13, t23);
+    			append_dev(div13, div12);
 
     			if (!mounted) {
     				dispose = [
@@ -18436,6 +18473,10 @@ var app = (function () {
     				input2.checked = /*book*/ ctx[0].config.webmonetization.enabled;
     			}
 
+    			if (dirty & /*book*/ 1 && input3_disabled_value !== (input3_disabled_value = !/*book*/ ctx[0].config.webmonetization.enabled)) {
+    				prop_dev(input3, "disabled", input3_disabled_value);
+    			}
+
     			if (dirty & /*book*/ 1 && input3.value !== /*book*/ ctx[0].config.webmonetization.endpoint) {
     				set_input_value(input3, /*book*/ ctx[0].config.webmonetization.endpoint);
     			}
@@ -18443,7 +18484,7 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(form);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -18553,7 +18594,6 @@ var app = (function () {
     const file$3 = "src\\press\\TabMetadata.svelte";
 
     function create_fragment$3(ctx) {
-    	let div2;
     	let form;
     	let div0;
     	let label0;
@@ -18569,7 +18609,6 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div2 = element("div");
     			form = element("form");
     			div0 = element("div");
     			label0 = element("label");
@@ -18584,35 +18623,33 @@ var app = (function () {
     			input1 = element("input");
     			attr_dev(label0, "class", "form-label");
     			attr_dev(label0, "for", "author-name");
-    			add_location(label0, file$3, 11, 6, 277);
-    			attr_dev(input0, "class", "form-input");
+    			add_location(label0, file$3, 10, 6, 259);
+    			attr_dev(input0, "class", "form-control");
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "author-name");
     			attr_dev(input0, "placeholder", "Name");
-    			add_location(input0, file$3, 12, 6, 348);
-    			attr_dev(div0, "class", "form-group");
-    			add_location(div0, file$3, 10, 4, 245);
+    			add_location(input0, file$3, 11, 6, 330);
+    			attr_dev(div0, "class", "mb-3");
+    			add_location(div0, file$3, 9, 4, 233);
     			attr_dev(label1, "class", "form-label");
     			attr_dev(label1, "for", "publisher-name");
-    			add_location(label1, file$3, 20, 6, 539);
-    			attr_dev(input1, "class", "form-input");
+    			add_location(label1, file$3, 19, 6, 517);
+    			attr_dev(input1, "class", "form-control");
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "id", "publisher-name");
     			attr_dev(input1, "placeholder", "Name");
-    			add_location(input1, file$3, 21, 6, 616);
-    			attr_dev(div1, "class", "form-group");
-    			add_location(div1, file$3, 19, 4, 507);
+    			add_location(input1, file$3, 20, 6, 594);
+    			attr_dev(div1, "class", "mb-3");
+    			add_location(div1, file$3, 18, 4, 491);
     			attr_dev(form, "action", "");
-    			add_location(form, file$3, 9, 2, 223);
-    			attr_dev(div2, "class", "container");
-    			add_location(div2, file$3, 8, 0, 196);
+    			attr_dev(form, "class", "mt-2");
+    			add_location(form, file$3, 8, 2, 198);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div2, anchor);
-    			append_dev(div2, form);
+    			insert_dev(target, form, anchor);
     			append_dev(form, div0);
     			append_dev(div0, label0);
     			append_dev(div0, t1);
@@ -18646,7 +18683,7 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(form);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -50389,60 +50426,98 @@ var app = (function () {
     /* src\press\EditorControls.svelte generated by Svelte v3.23.2 */
     const file$4 = "src\\press\\EditorControls.svelte";
 
-    function create_fragment$4(ctx) {
-    	let section0;
-    	let button0;
-    	let t1;
-    	let section1;
-    	let button1;
-    	let mounted;
-    	let dispose;
+    // (16:6) {#if generating}
+    function create_if_block$1(ctx) {
+    	let span;
 
     	const block = {
     		c: function create() {
-    			section0 = element("section");
-    			button0 = element("button");
-    			button0.textContent = "Save";
-    			t1 = space();
-    			section1 = element("section");
-    			button1 = element("button");
-    			button1.textContent = "Generate";
-    			attr_dev(button0, "class", "btn btn-primary");
-    			add_location(button0, file$4, 11, 2, 266);
-    			attr_dev(section0, "class", "float-left");
-    			add_location(section0, file$4, 10, 0, 234);
-    			attr_dev(button1, "class", "btn btn-primary");
-    			toggle_class(button1, "loading", /*generating*/ ctx[0]);
-    			add_location(button1, file$4, 14, 2, 358);
-    			attr_dev(section1, "class", "float-right");
-    			add_location(section1, file$4, 13, 0, 325);
+    			span = element("span");
+    			attr_dev(span, "class", "spinner-border spinner-border-sm");
+    			attr_dev(span, "role", "status");
+    			attr_dev(span, "aria-hidden", "true");
+    			add_location(span, file$4, 16, 8, 505);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$1.name,
+    		type: "if",
+    		source: "(16:6) {#if generating}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$4(ctx) {
+    	let nav;
+    	let div;
+    	let button;
+    	let t;
+    	let mounted;
+    	let dispose;
+    	let if_block = /*generating*/ ctx[0] && create_if_block$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			nav = element("nav");
+    			div = element("div");
+    			button = element("button");
+    			if (if_block) if_block.c();
+    			t = text("\r\n      Generate");
+    			attr_dev(button, "class", "btn btn-primary");
+    			button.disabled = /*generating*/ ctx[0];
+    			add_location(button, file$4, 14, 4, 397);
+    			attr_dev(div, "class", "container-fluid justify-content-end");
+    			add_location(div, file$4, 13, 2, 342);
+    			attr_dev(nav, "class", "navbar fixed-bottom navbar-expand-lg navbar-light");
+    			set_style(nav, "background-color", "#e3f2fd");
+    			add_location(nav, file$4, 10, 0, 234);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, section0, anchor);
-    			append_dev(section0, button0);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, section1, anchor);
-    			append_dev(section1, button1);
+    			insert_dev(target, nav, anchor);
+    			append_dev(nav, div);
+    			append_dev(div, button);
+    			if (if_block) if_block.m(button, null);
+    			append_dev(button, t);
 
     			if (!mounted) {
-    				dispose = listen_dev(button1, "click", /*generate*/ ctx[1], false, false, false);
+    				dispose = listen_dev(button, "click", /*generate*/ ctx[1], false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
+    			if (/*generating*/ ctx[0]) {
+    				if (if_block) ; else {
+    					if_block = create_if_block$1(ctx);
+    					if_block.c();
+    					if_block.m(button, t);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+
     			if (dirty & /*generating*/ 1) {
-    				toggle_class(button1, "loading", /*generating*/ ctx[0]);
+    				prop_dev(button, "disabled", /*generating*/ ctx[0]);
     			}
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(section0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(section1);
+    			if (detaching) detach_dev(nav);
+    			if (if_block) if_block.d();
     			mounted = false;
     			dispose();
     		}
@@ -50533,7 +50608,7 @@ var app = (function () {
     const file$5 = "src\\press\\Editor.svelte";
 
     function create_fragment$5(ctx) {
-    	let div2;
+    	let div1;
     	let ul;
     	let li0;
     	let a0;
@@ -50547,7 +50622,6 @@ var app = (function () {
     	let div0;
     	let switch_instance;
     	let t6;
-    	let div1;
     	let editorcontrols;
     	let current;
     	let mounted;
@@ -50572,7 +50646,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div2 = element("div");
+    			div1 = element("div");
     			ul = element("ul");
     			li0 = element("li");
     			a0 = element("a");
@@ -50589,38 +50663,38 @@ var app = (function () {
     			div0 = element("div");
     			if (switch_instance) create_component(switch_instance.$$.fragment);
     			t6 = space();
-    			div1 = element("div");
     			create_component(editorcontrols.$$.fragment);
+    			attr_dev(a0, "class", "nav-link");
     			attr_dev(a0, "href", "#");
-    			add_location(a0, file$5, 31, 6, 693);
-    			attr_dev(li0, "class", "tab-item");
-    			toggle_class(li0, "active", /*currentView*/ ctx[1] == "options");
-    			add_location(li0, file$5, 27, 4, 545);
+    			toggle_class(a0, "active", /*currentView*/ ctx[1] == "options");
+    			add_location(a0, file$5, 24, 6, 582);
+    			attr_dev(li0, "class", "nav-item");
+    			add_location(li0, file$5, 21, 4, 481);
+    			attr_dev(a1, "class", "nav-link");
     			attr_dev(a1, "href", "#");
-    			add_location(a1, file$5, 37, 6, 883);
-    			attr_dev(li1, "class", "tab-item");
-    			toggle_class(li1, "active", /*currentView*/ ctx[1] == "metadata");
-    			add_location(li1, file$5, 33, 4, 733);
+    			toggle_class(a1, "active", /*currentView*/ ctx[1] == "metadata");
+    			add_location(a1, file$5, 31, 6, 799);
+    			attr_dev(li1, "class", "nav-item");
+    			add_location(li1, file$5, 28, 4, 697);
+    			attr_dev(a2, "class", "nav-link");
     			attr_dev(a2, "href", "#");
-    			add_location(a2, file$5, 43, 6, 1068);
-    			attr_dev(li2, "class", "tab-item");
-    			toggle_class(li2, "active", /*currentView*/ ctx[1] == "files");
-    			add_location(li2, file$5, 39, 4, 924);
-    			attr_dev(ul, "class", "tab tab-block");
-    			add_location(ul, file$5, 26, 2, 513);
+    			toggle_class(a2, "active", /*currentView*/ ctx[1] == "files");
+    			add_location(a2, file$5, 38, 6, 1015);
+    			attr_dev(li2, "class", "nav-item");
+    			add_location(li2, file$5, 35, 4, 916);
+    			attr_dev(ul, "class", "nav nav-pills nav-fill");
+    			add_location(ul, file$5, 20, 2, 440);
     			attr_dev(div0, "class", "columns tab");
-    			add_location(div0, file$5, 46, 2, 1113);
-    			attr_dev(div1, "class", "controls svelte-t3z1y9");
-    			add_location(div1, file$5, 49, 2, 1211);
-    			attr_dev(div2, "class", "container");
-    			add_location(div2, file$5, 25, 0, 486);
+    			add_location(div0, file$5, 43, 2, 1133);
+    			attr_dev(div1, "class", "container mx-auto m-4 ");
+    			add_location(div1, file$5, 19, 0, 400);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div2, anchor);
-    			append_dev(div2, ul);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, ul);
     			append_dev(ul, li0);
     			append_dev(li0, a0);
     			append_dev(ul, t1);
@@ -50629,15 +50703,14 @@ var app = (function () {
     			append_dev(ul, t3);
     			append_dev(ul, li2);
     			append_dev(li2, a2);
-    			append_dev(div2, t5);
-    			append_dev(div2, div0);
+    			append_dev(div1, t5);
+    			append_dev(div1, div0);
 
     			if (switch_instance) {
     				mount_component(switch_instance, div0, null);
     			}
 
-    			append_dev(div2, t6);
-    			append_dev(div2, div1);
+    			append_dev(div1, t6);
     			mount_component(editorcontrols, div1, null);
     			current = true;
 
@@ -50653,15 +50726,15 @@ var app = (function () {
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*currentView*/ 2) {
-    				toggle_class(li0, "active", /*currentView*/ ctx[1] == "options");
+    				toggle_class(a0, "active", /*currentView*/ ctx[1] == "options");
     			}
 
     			if (dirty & /*currentView*/ 2) {
-    				toggle_class(li1, "active", /*currentView*/ ctx[1] == "metadata");
+    				toggle_class(a1, "active", /*currentView*/ ctx[1] == "metadata");
     			}
 
     			if (dirty & /*currentView*/ 2) {
-    				toggle_class(li2, "active", /*currentView*/ ctx[1] == "files");
+    				toggle_class(a2, "active", /*currentView*/ ctx[1] == "files");
     			}
 
     			const switch_instance_changes = {};
@@ -50707,7 +50780,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(div1);
     			if (switch_instance) destroy_component(switch_instance);
     			destroy_component(editorcontrols);
     			mounted = false;
@@ -50895,26 +50968,73 @@ var app = (function () {
     const { Error: Error_1 } = globals;
     const file$6 = "src\\press\\Press.svelte";
 
-    // (72:6) {#if error}
+    // (73:2) {#if error}
     function create_if_block_4$1(ctx) {
-    	let toast;
+    	let div2;
+    	let div0;
+    	let img;
+    	let img_src_value;
+    	let t0;
+    	let strong;
+    	let t2;
+    	let button;
+    	let span;
+    	let t4;
+    	let div1;
 
     	const block = {
     		c: function create() {
-    			toast = element("toast");
-
-    			toast.textContent = `
-          Error initializing filesystem: ${/*error*/ ctx[3]}`;
-
-    			attr_dev(toast, "class", "toast toast-error m-2");
-    			add_location(toast, file$6, 72, 8, 1681);
+    			div2 = element("div");
+    			div0 = element("div");
+    			img = element("img");
+    			t0 = space();
+    			strong = element("strong");
+    			strong.textContent = "Error";
+    			t2 = space();
+    			button = element("button");
+    			span = element("span");
+    			span.textContent = "×";
+    			t4 = space();
+    			div1 = element("div");
+    			div1.textContent = `Error initializing filesystem: ${/*error*/ ctx[3]}`;
+    			if (img.src !== (img_src_value = "...")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "class", "rounded mr-2");
+    			attr_dev(img, "alt", "...");
+    			add_location(img, file$6, 75, 8, 1742);
+    			attr_dev(strong, "class", "mr-auto");
+    			add_location(strong, file$6, 76, 8, 1799);
+    			attr_dev(span, "aria-hidden", "true");
+    			add_location(span, file$6, 82, 10, 1983);
+    			attr_dev(button, "type", "button");
+    			attr_dev(button, "class", "ml-2 mb-1 close");
+    			attr_dev(button, "data-dismiss", "toast");
+    			attr_dev(button, "aria-label", "Close");
+    			add_location(button, file$6, 77, 8, 1846);
+    			attr_dev(div0, "class", "toast-header");
+    			add_location(div0, file$6, 74, 6, 1707);
+    			attr_dev(div1, "class", "toast-body");
+    			add_location(div1, file$6, 85, 6, 2060);
+    			attr_dev(div2, "class", "toast");
+    			attr_dev(div2, "role", "alert");
+    			attr_dev(div2, "aria-live", "assertive");
+    			attr_dev(div2, "aria-atomic", "true");
+    			add_location(div2, file$6, 73, 4, 1627);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, toast, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
+    			append_dev(div0, img);
+    			append_dev(div0, t0);
+    			append_dev(div0, strong);
+    			append_dev(div0, t2);
+    			append_dev(div0, button);
+    			append_dev(button, span);
+    			append_dev(div2, t4);
+    			append_dev(div2, div1);
     		},
     		p: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(toast);
+    			if (detaching) detach_dev(div2);
     		}
     	};
 
@@ -50922,14 +51042,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(72:6) {#if error}",
+    		source: "(73:2) {#if error}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:6) {:else}
+    // (124:2) {:else}
     function create_else_block$1(ctx) {
     	let editor;
     	let current;
@@ -50970,15 +51090,15 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(106:6) {:else}",
+    		source: "(124:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (77:6) {#if stage !== 'loaded'}
-    function create_if_block$1(ctx) {
+    // (89:2) {#if stage !== 'loaded'}
+    function create_if_block$2(ctx) {
     	let div;
 
     	function select_block_type_1(ctx, dirty) {
@@ -50994,9 +51114,9 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if (if_block) if_block.c();
-    			attr_dev(div, "class", "empty drop-area svelte-io7zuo");
+    			attr_dev(div, "class", "d-flex justify-content-center align-items-center h-100 text-center svelte-7mmywi");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$6, 77, 8, 1836);
+    			add_location(div, file$6, 89, 4, 2179);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -51032,18 +51152,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block$2.name,
     		type: "if",
-    		source: "(77:6) {#if stage !== 'loaded'}",
+    		source: "(89:2) {#if stage !== 'loaded'}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (98:39) 
+    // (114:35) 
     function create_if_block_3$1(ctx) {
-    	let div;
+    	let div1;
+    	let div0;
     	let i;
     	let t0;
     	let p0;
@@ -51053,7 +51174,8 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
     			i = element("i");
     			t0 = space();
     			p0 = element("p");
@@ -51062,32 +51184,30 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$6, 99, 14, 2752);
-    			attr_dev(div, "class", "empty-icon");
-    			add_location(div, file$6, 98, 12, 2713);
+    			add_location(i, file$6, 116, 12, 3168);
+    			attr_dev(div0, "class", "empty-icon");
+    			add_location(div0, file$6, 115, 10, 3131);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$6, 101, 12, 2826);
+    			add_location(p0, file$6, 118, 10, 3238);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$6, 102, 12, 2879);
+    			add_location(p1, file$6, 119, 10, 3289);
+    			add_location(div1, file$6, 114, 8, 3115);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, i);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, p1, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, div0);
+    			append_dev(div0, i);
+    			append_dev(div1, t0);
+    			append_dev(div1, p0);
+    			append_dev(div1, t2);
+    			append_dev(div1, p1);
     			append_dev(p1, t3);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*msg*/ 2) set_data_dev(t3, /*msg*/ ctx[1]);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(div1);
     		}
     	};
 
@@ -51095,15 +51215,16 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(98:39) ",
+    		source: "(114:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (84:39) 
+    // (98:35) 
     function create_if_block_2$1(ctx) {
+    	let div2;
     	let div0;
     	let i;
     	let t0;
@@ -51118,6 +51239,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			div2 = element("div");
     			div0 = element("div");
     			i = element("i");
     			t0 = space();
@@ -51129,45 +51251,41 @@ var app = (function () {
     			t4 = space();
     			div1 = element("div");
     			button = element("button");
-    			t5 = text("Learn more about how to build books using\n                ");
+    			t5 = text("Learn more about how to build books using\n              ");
     			em = element("em");
     			em.textContent = "little.webby.press";
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 85, 14, 2193);
+    			add_location(i, file$6, 100, 12, 2610);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 84, 12, 2154);
+    			add_location(div0, file$6, 99, 10, 2573);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$6, 87, 12, 2256);
+    			add_location(p0, file$6, 102, 10, 2669);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$6, 88, 12, 2317);
-    			add_location(em, file$6, 94, 16, 2590);
+    			add_location(p1, file$6, 103, 10, 2728);
+    			add_location(em, file$6, 109, 14, 2989);
     			attr_dev(button, "class", "btn btn-primary");
-    			add_location(button, file$6, 92, 14, 2483);
+    			add_location(button, file$6, 107, 12, 2886);
     			attr_dev(div1, "class", "empty-action");
-    			add_location(div1, file$6, 91, 12, 2442);
+    			add_location(div1, file$6, 106, 10, 2847);
+    			add_location(div2, file$6, 98, 8, 2557);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
     			append_dev(div0, i);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, p0, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, p1, anchor);
-    			insert_dev(target, t4, anchor);
-    			insert_dev(target, div1, anchor);
+    			append_dev(div2, t0);
+    			append_dev(div2, p0);
+    			append_dev(div2, t2);
+    			append_dev(div2, p1);
+    			append_dev(div2, t4);
+    			append_dev(div2, div1);
     			append_dev(div1, button);
     			append_dev(button, t5);
     			append_dev(button, em);
     		},
     		p: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(div2);
     		}
     	};
 
@@ -51175,45 +51293,47 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(84:39) ",
+    		source: "(98:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (79:10) {#if stage == 'over'}
+    // (91:6) {#if stage == 'over'}
     function create_if_block_1$1(ctx) {
-    	let div;
+    	let div1;
+    	let div0;
     	let i;
     	let t0;
     	let p;
 
     	const block = {
     		c: function create() {
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
     			i = element("i");
     			t0 = space();
     			p = element("p");
     			p.textContent = "Drop a book folder here!";
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$6, 80, 14, 1978);
-    			attr_dev(div, "class", "empty-icon");
-    			add_location(div, file$6, 79, 12, 1939);
+    			add_location(i, file$6, 93, 12, 2378);
+    			attr_dev(div0, "class", "empty-icon");
+    			add_location(div0, file$6, 92, 10, 2341);
     			attr_dev(p, "class", "empty-title h5");
-    			add_location(p, file$6, 82, 12, 2047);
+    			add_location(p, file$6, 95, 10, 2443);
+    			add_location(div1, file$6, 91, 8, 2325);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, i);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, div0);
+    			append_dev(div0, i);
+    			append_dev(div1, t0);
+    			append_dev(div1, p);
     		},
     		p: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(div1);
     		}
     	};
 
@@ -51221,7 +51341,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(79:10) {#if stage == 'over'}",
+    		source: "(91:6) {#if stage == 'over'}",
     		ctx
     	});
 
@@ -51229,9 +51349,7 @@ var app = (function () {
     }
 
     function create_fragment$6(ctx) {
-    	let div2;
-    	let div1;
-    	let div0;
+    	let div;
     	let nav;
     	let t0;
     	let t1;
@@ -51240,7 +51358,7 @@ var app = (function () {
     	let current;
     	nav = new Nav({ $$inline: true });
     	let if_block0 = /*error*/ ctx[3] && create_if_block_4$1(ctx);
-    	const if_block_creators = [create_if_block$1, create_else_block$1];
+    	const if_block_creators = [create_if_block$2, create_else_block$1];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -51253,33 +51371,25 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div2 = element("div");
-    			div1 = element("div");
-    			div0 = element("div");
+    			div = element("div");
     			create_component(nav.$$.fragment);
     			t0 = space();
     			if (if_block0) if_block0.c();
     			t1 = space();
     			if_block1.c();
-    			attr_dev(div0, "class", "column bg-secondary");
-    			add_location(div0, file$6, 69, 4, 1607);
-    			attr_dev(div1, "class", "columns m-2 full-height svelte-io7zuo");
-    			add_location(div1, file$6, 68, 2, 1565);
-    			attr_dev(div2, "class", "container grid-lg");
-    			add_location(div2, file$6, 67, 0, 1531);
+    			attr_dev(div, "class", "container-fluid p-0 mx-auto full-height drop-area svelte-7mmywi");
+    			add_location(div, file$6, 67, 0, 1529);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div2, anchor);
-    			append_dev(div2, div1);
-    			append_dev(div1, div0);
-    			mount_component(nav, div0, null);
-    			append_dev(div0, t0);
-    			if (if_block0) if_block0.m(div0, null);
-    			append_dev(div0, t1);
-    			if_blocks[current_block_type_index].m(div0, null);
+    			insert_dev(target, div, anchor);
+    			mount_component(nav, div, null);
+    			append_dev(div, t0);
+    			if (if_block0) if_block0.m(div, null);
+    			append_dev(div, t1);
+    			if_blocks[current_block_type_index].m(div, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -51305,7 +51415,7 @@ var app = (function () {
     				}
 
     				transition_in(if_block1, 1);
-    				if_block1.m(div0, null);
+    				if_block1.m(div, null);
     			}
     		},
     		i: function intro(local) {
@@ -51320,7 +51430,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(div);
     			destroy_component(nav);
     			if (if_block0) if_block0.d();
     			if_blocks[current_block_type_index].d();

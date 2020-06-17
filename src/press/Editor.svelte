@@ -15,39 +15,34 @@
   let currentView = "options";
 </script>
 <style>
-.controls {
-  position: fixed;
-  bottom: 20px;
-  width: 910px;
-  margin: auto
-}
 </style>
 
-<div class="container">
-  <ul class="tab tab-block">
+<div class="container mx-auto m-4 ">
+  <ul class="nav nav-pills nav-fill">
     <li
-      class="tab-item"
-      class:active={currentView == 'options'}
+      class="nav-item"
       on:click|preventDefault={() => (currentView = 'options')}>
-      <a href="#">Options</a>
+      <a class="nav-link" class:active={currentView == 'options'} href="#">
+        Options
+      </a>
     </li>
     <li
-      class="tab-item"
-      class:active={currentView == 'metadata'}
+      class="nav-item"
       on:click|preventDefault={() => (currentView = 'metadata')}>
-      <a href="#">Metadata</a>
+      <a class="nav-link" class:active={currentView == 'metadata'} href="#">
+        Metadata
+      </a>
     </li>
     <li
-      class="tab-item"
-      class:active={currentView == 'files'}
+      class="nav-item"
       on:click|preventDefault={() => (currentView = 'files')}>
-      <a href="#">Files</a>
+      <a class="nav-link" class:active={currentView == 'files'} href="#">
+        Files
+      </a>
     </li>
   </ul>
   <div class="columns tab">
     <svelte:component this={views[currentView]} {book} />
   </div>
-  <div class="controls">
-    <EditorControls {book} />
-  </div>
+  <EditorControls {book} />
 </div>

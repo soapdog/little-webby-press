@@ -52,7 +52,7 @@
 
 <style>
   .over {
-    border: solid 4px #4240d4;
+    border: solid 4px #e3f2fd;
   }
 
   .action-items {
@@ -61,51 +61,67 @@
   }
 
   .full-height {
-    height: calc(100vh - 0.8rem);
+    height: calc(100vh - 48px);
   }
 </style>
 
-<div class="container grid-lg">
-  <div class="columns m-2 full-height">
-    <div class="column bg-secondary">
-      <Nav />
-      {#if error}
-        <toast class="toast toast-error m-2">
-          Error initializing filesystem: {error}
-        </toast>
-      {/if}
-      {#if stage !== 'loaded'}
-        <div class="empty drop-area" class:over={stage == 'over'}>
-          {#if stage == 'over'}
-            <div class="empty-icon">
-              <i class="fas fa-smile-wink fa-3x" />
-            </div>
-            <p class="empty-title h5">Drop a book folder here!</p>
-          {:else if stage == 'waiting'}
-            <div class="empty-icon">
-              <i class="fas fa-book fa-3x" />
-            </div>
-            <p class="empty-title h5">The book is empty.</p>
-            <p class="empty-subtitle">
-              Drag &amp; Drop a folder with book data here to start.
-            </p>
-            <div class="empty-action">
-              <button class="btn btn-primary">
-                Learn more about how to build books using
-                <em>little.webby.press</em>
-              </button>
-            </div>
-          {:else if stage == 'loading'}
-            <div class="empty-icon">
-              <i class="fas fa-spinner fa-3x fa-spin" />
-            </div>
-            <p class="empty-title h5">Loading...</p>
-            <p class="empty-subtitle">{msg}</p>
-          {/if}
+<div
+  class="container-fluid p-0 mx-auto full-height drop-area"
+  >
+
+  <Nav />
+  {#if error}
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded mr-2" alt="..." />
+        <strong class="mr-auto">Error</strong>
+        <button
+          type="button"
+          class="ml-2 mb-1 close"
+          data-dismiss="toast"
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">Error initializing filesystem: {error}</div>
+    </div>
+  {/if}
+  {#if stage !== 'loaded'}
+    <div class="d-flex justify-content-center align-items-center h-100 text-center" class:over={stage == 'over'}>
+      {#if stage == 'over'}
+        <div>
+          <div class="empty-icon">
+            <i class="fas fa-smile-wink fa-3x" />
+          </div>
+          <p class="empty-title h5">Drop a book folder here!</p>
         </div>
-      {:else}
-        <Editor {book} />
+      {:else if stage == 'waiting'}
+        <div>
+          <div class="empty-icon">
+            <i class="fas fa-book fa-3x" />
+          </div>
+          <p class="empty-title h5">The book is empty.</p>
+          <p class="empty-subtitle">
+            Drag &amp; Drop a folder with book data here to start.
+          </p>
+          <div class="empty-action">
+            <button class="btn btn-primary">
+              Learn more about how to build books using
+              <em>little.webby.press</em>
+            </button>
+          </div>
+        </div>
+      {:else if stage == 'loading'}
+        <div>
+          <div class="empty-icon">
+            <i class="fas fa-spinner fa-3x fa-spin" />
+          </div>
+          <p class="empty-title h5">Loading...</p>
+          <p class="empty-subtitle">{msg}</p>
+        </div>
       {/if}
     </div>
-  </div>
+  {:else}
+    <Editor {book} />
+  {/if}
 </div>

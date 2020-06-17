@@ -8,14 +8,18 @@
   };
 </script>
 
-<section class="float-left">
-  <button class="btn btn-primary">Save</button>
-</section>
-<section class="float-right">
-  <button
-    class="btn btn-primary"
-    class:loading={generating}
-    on:click={generate}>
-    Generate
-  </button>
-</section>
+<nav
+  class="navbar fixed-bottom navbar-expand-lg navbar-light"
+  style="background-color: #e3f2fd;">
+  <div class="container-fluid justify-content-end">
+    <button class="btn btn-primary" disabled={generating} on:click={generate}>
+      {#if generating}
+        <span
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true" />
+      {/if}
+      Generate
+    </button>
+  </div>
+</nav>
