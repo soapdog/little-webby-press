@@ -1,10 +1,27 @@
-<header class="navbar">
-  <section class="navbar-section">
-    <a href="/index.html" class="navbar-brand mr-2 ml-2 text-bold">little.webby.press</a>
+<nav class="navbar navbar-expand navbar-light" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a href="/index.html" class="navbar-brand font-weight-bold">Little Webby Press</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" />
+    </button>
+  </div>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
 
-  </section>
-  <section class="navbar-section">
-    <a href="/help" target="_blank" class="btn btn-link">Help</a>
-    <a href="https://github.com/soapdog/little-webby-press" target="_blank" class="btn btn-link">GitHub</a>
-  </section>
-</header>
+      <a href="/help" target="_blank" class="nav-link">Help</a>
+      <a
+        href="https://github.com/soapdog/little-webby-press"
+        target="_blank"
+        class="nav-link">
+        GitHub
+      </a>
+    </div>
+  </div>
+</nav>

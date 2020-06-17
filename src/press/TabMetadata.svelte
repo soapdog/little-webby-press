@@ -6,25 +6,23 @@
   let publisher = _.get(book.config, "metadata.publisher", "");
 </script>
 
-<div class="container">
-  <form action="">
-    <div class="form-group">
+  <form action="" class="mt-2">
+    <div class="mb-3">
       <label class="form-label" for="author-name">Author Name</label>
       <input
-        class="form-input"
+        class="form-control"
         type="text"
         id="author-name"
         bind:value={author}
         placeholder="Name" />
     </div>
-    <div class="form-group">
+    <div class="mb-3">
       <label class="form-label" for="publisher-name">Publisher Name</label>
       <input
-        class="form-input"
+        class="form-control"
         type="text"
         id="publisher-name"
         bind:value={publisher}
         placeholder="Name" />
     </div>
   </form>
-</div>

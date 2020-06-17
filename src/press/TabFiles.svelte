@@ -7,10 +7,6 @@
       return true
     }
 
-    if (f.filepath.match(/^images/)) {
-      return true
-    }
-
     return false
   });
 
@@ -44,7 +40,7 @@
       The
       <em>files</em>
       tab only lists files listed in
-      <code>Book.toml</code> and in the <code>images/</code> folder. The files are listed in alphabetical order to make them easier to find and not in ToC order.
+      <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to find and not in ToC order.
     </p>
     <table class="table">
       <thead>
