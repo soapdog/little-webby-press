@@ -1,11 +1,11 @@
 ## package.opf handling
-* [ ] change IDs on package.opf to contain prefix (so they don't clash between chapter and images with the same name).
-* [ ] make sure no ID is a number.
-* [ ] discover what <guide> means.
-* [ ] generate toc.ncx or remove it.
+* [x] change IDs on package.opf to contain prefix (so they don't clash between chapter and images with the same name).
+* [x] make sure no ID is a number.
+* [x] discover what <guide> means.
+* [x] generate toc.ncx or remove it.
 * [ ] figure out which other metadata is interesting to support.
-* [ ] make sure cover don't appear twice on the manifest.
-* [ ] date format appears to be wrong. Create handlebars helpers to fix it.
+* [x] make sure cover don't appear twice on the manifest.
+* [x] date format appears to be wrong. Create handlebars helpers to fix it.
 
 ## sourcefiles
 * [ ] Add support for textile
@@ -18,10 +18,10 @@
 * [ ] themes? Maybe just base16?
 
 # layout
-* [ ] fix the control bars.
+* [x] fix the control bars.
 * [ ] add footer.
-* [ ] maybe change spectre theme to base16 compatible?
-* [ ] investigate if we really need spectre.
+* [x] maybe change spectre theme to base16 compatible?
+* [x] investigate if we really need spectre.
 
 # Monetization
 * [ ] Add webmonetization endpoint
