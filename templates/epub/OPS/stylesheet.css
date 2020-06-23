@@ -3,28 +3,28 @@
 font-family: 'Stix';
 font-weight: normal;
 font-style: normal;
-src:url(../fonts/STIXGeneral.otf);
+src:url(fonts/STIXGeneral.otf);
 }
 
 @font-face {
 font-family: 'Stix';
 font-weight: bold;
 font-style: normal;
-src:url(../fonts/STIXGeneralBol.otf);
+src:url(fonts/STIXGeneralBol.otf);
 }
 
 @font-face {
 font-family:'Stix';
 font-weight: normal;
 font-style: italic;
-src:url(../fonts/STIXGeneralItalic.otf);
+src:url(fonts/STIXGeneralItalic.otf);
 }
 
 @font-face {
 font-family:'Stix';
 font-weight: bold;
 font-style: italic;
-src:url(../fonts/STIXGeneralBolIta.otf);
+src:url(fonts/STIXGeneralBolIta.otf);
 }
 
 

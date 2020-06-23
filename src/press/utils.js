@@ -194,7 +194,7 @@ export function generateEbook(book) {
 
         let chapterTemplateHBS = fs.readFileSync("/templates/epub/chapter.hbs", "utf8")
         let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
-        book.config.profiles.book.forEach(async chapterFilename => {
+        let fp = book.config.profiles.book.map(async chapterFilename => {
             let file = book.files.filter(f => f.name === chapterFilename)[0]
 
             let contentMarkdown = await file.text()
@@ -275,7 +275,7 @@ export function generateEbook(book) {
         fs.writeFileSync(`${folder}/OPS/cover.xhtml`, coverData)
 
         // EPUB3 file
-        Promise.all(fi).then(() => {
+        Promise.all([...fi, ...fp]).then(() => {
             let zip = new JSZip()
             let mimetype = fs.readFileSync(`${folder}/mimetype`)
             zip.file("mimetype", mimetype)
