@@ -14,7 +14,7 @@
     "file-saver": "^2.0.2",
     "handlebars": "^4.7.6",
     "jszip": "^3.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "marked": "^1.1.0",
     "mime": "^2.4.6",
     "rollup": "^2.3.4",
