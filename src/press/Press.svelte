@@ -3,7 +3,7 @@
   import Editor from "./Editor.svelte";
   import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
   import { onMount } from "svelte";
-  import { processDroppedFiles } from "./utils.js";
+  import { bookFromFiles } from "./book.js";
 
   let stage = "waiting"; // loading, loaded, over
   let msg, files, book;
@@ -39,7 +39,7 @@
       );
 
       msg = "Loading configuration...";
-      book = await processDroppedFiles(files);
+      book = await bookFromFiles(files);
       if (book instanceof Error) {
         stage = "error";
         msg = book.message;

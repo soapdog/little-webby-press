@@ -1,88 +1,42 @@
 import BrowserFS from "browserfs"
 import slug from "slug"
 import marked from "marked"
-import mime, { getExtension } from "mime"
+import mime from "mime"
 import saveAs from "file-saver"
-import Book from "./book.js";
-import toml from "toml";
 import moment from "moment"
+import { copyFolder } from "../common/fs.js"
 
+
+// DEFAULT OPTIONS
+// - marked
 marked.setOptions({
-    xhtml: true
+    xhtml: true // EPUBs are XHTML.
 })
 
-export function initializeFilesystem() {
-    return new Promise((resolve, reject) => {
-        fetch('templates.zip').then(function (response) {
-            return response.arrayBuffer();
-        }).then(function (zipData) {
-            var Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+// TEMPLATE HELPERS
+Handlebars.registerHelper("dateModified", function (context, block) {
+    return moment(Date(context)).format("YYYY-MM-DD[T]HH[:]mm[:00Z]");
+});
 
-            BrowserFS.configure({
-                fs: "MountableFileSystem",
-                options: {
-                    "/templates": {
-                        fs: "ZipFS",
-                        options: {
-                            // Wrap as Buffer object.
-                            zipData: Buffer.from(zipData)
-                        }
-                    },
-                    "/tmp": { fs: "InMemory" },
-                    "/books": { fs: "IndexedDB", options: { storeName: "books" } },
-                    "/etc": { fs: "IndexedDB", options: { storeName: "etc" } },
-                    "/integration": { fs: "IndexedDB", options: { storeName: "integration" } }
+Handlebars.registerHelper("tocIndex", function (context, block) {
+    let n = new Number(context)
 
-                }
-            }, function (e) {
-                if (e) {
-                    reject(e)
-                }
-                BrowserFS.install(window)
-                resolve(BrowserFS)
-            });
-        })
-    })
-}
-
-function copyFile(source, destination) {
-    let fs = require("fs")
-
-    if (fs.existsSync(source)) {
-        let contents = fs.readFileSync(source)
-        fs.writeFileSync(destination, contents, "utf8", "wx+")
+    if (!isNaN(n)) {
+        return n + 3
+    } else {
+        return context
     }
-}
+});
 
-function copyFolder(source, destination) {
-    let fs = require("fs")
+Handlebars.registerHelper("chapterTitle", function (context, block) {
+    return `Chapter ${context}`
+});
 
-    let items = fs.readdirSync(source)
-    for (let x = 0; x < items.length; x++) {
-        let f = items[x]
-        // skip handlebar files, copy the rest.
-        if (f.indexOf(".hbs") === -1) {
-            let sourcePath = `${source}/${f}`
-            let destinationPath = `${destination}/${f}`
-            console.log("dest", destinationPath)
-            ensureFolders(destinationPath)
-            let s = fs.statSync(sourcePath)
-            if (s.isDirectory()) {
-                if (!fs.existsSync(destinationPath)) {
-                    fs.mkdirSync(destinationPath)
-                }
-                copyFolder(sourcePath, destinationPath)
-            } else {
-                copyFile(sourcePath, destinationPath)
-            }
-        }
-    }
-}
-function getFileExtension(filename) {
-    let arr = filename.split(".")
-    arr.reverse()
-    return arr[0]
-}
+Handlebars.registerHelper("mime", function (context, block) {
+    return mime.getType(context)
+});
+
+// IMPLEMENTATION
 
 function copyImages(book, destination) {
     let fs = require("fs")
@@ -105,7 +59,6 @@ function copyImages(book, destination) {
         fs.writeFileSync(p, d2)
     })
     return fps
-
 }
 
 function addToZip(zip, slug, folder) {
@@ -139,28 +92,6 @@ function ensureFolders(path) {
         a1 = `${a1}/${a.shift()}`
     }
 }
-
-Handlebars.registerHelper("dateModified", function (context, block) {
-    return moment(Date(context)).format("YYYY-MM-DD[T]HH[:]mm[:00Z]");
-});
-
-Handlebars.registerHelper("tocIndex", function (context, block) {
-    let n = new Number(context)
-
-    if (!isNaN(n)) {
-        return n + 3
-    } else {
-        return context
-    }
-});
-
-Handlebars.registerHelper("chapterTitle", function (context, block) {
-    return `Chapter ${context}`
-});
-
-Handlebars.registerHelper("mime", function (context, block) {
-    return mime.getType(context)
-});
 
 
 function fixImages(html) {
@@ -288,28 +219,4 @@ export function generateEbook(book) {
             });
         })
     })
-}
-
-export async function processDroppedFiles(files) {
-    // look for Book.toml
-    let tomlFile = files.filter(file => {
-        return file.name.toLowerCase() == "book.toml";
-    })[0];
-
-    if (tomlFile) {
-        let rootFolder = tomlFile.filepath.split("/").reverse();
-        rootFolder.shift();
-        rootFolder.reverse().join("/");
-
-        files = files.map(f => {
-            f.filepath = f.filepath.replace(`${rootFolder}/`, "");
-            return f;
-        });
-
-        let config = toml.parse(await tomlFile.text());
-        let book = new Book(config, files);
-        return book
-    } else {
-        return new Error("Can't find Book.toml file")
-    }
 }
