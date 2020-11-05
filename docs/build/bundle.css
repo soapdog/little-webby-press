@@ -1,3 +1,4 @@
-.over.svelte-7mmywi{border:solid 4px #e3f2fd}.full-height.svelte-7mmywi{height:calc(100vh - 48px)}
+.loader.svelte-t3ti1g{border-top-color:#3498db;-webkit-animation:svelte-t3ti1g-spinner 1.5s linear infinite;animation:svelte-t3ti1g-spinner 1.5s linear infinite}@-webkit-keyframes svelte-t3ti1g-spinner{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes svelte-t3ti1g-spinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.over.svelte-rfxul8{border:solid 4px #e3f2fd}.full-height.svelte-rfxul8{height:calc(100vh - 48px)}
 
 /*# sourceMappingURL=bundle.css.map */

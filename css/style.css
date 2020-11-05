@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply font-bold py-2 px-4 rounded inline-block;
+  }
+
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+
+  .btn-gray {
+    @apply bg-gray-400 text-gray-800;
+  }
+  .btn-gray:hover {
+    @apply bg-gray-500;
+	}
+
+	.nav {
+		@apply inline-block text-blue-500;
+	}
+
+	.nav:hover {
+		@apply text-blue-800;
+	}
+
+	.nav-pill {
+		@apply inline-block border rounded py-1 px-3 border-white text-blue-500
+	}
+
+	.nav-pill-active {
+		@apply  border-blue-500  bg-blue-500 text-white;
+	}
+
+	.nav-pill:hover {
+		@apply border-gray-200  bg-gray-200
+	}
+}

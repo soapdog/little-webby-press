@@ -1,3 +1,6 @@
+import BrowserFS from "browserfs"
+
+
 export function initializeFilesystem() {
     return new Promise((resolve, reject) => {
         fetch('templates.zip').then(function (response) {
@@ -72,4 +75,18 @@ export function getFileExtension(filename) {
     let arr = filename.split(".")
     arr.reverse()
     return arr[0]
+}
+
+export function ensureFolders(path) {
+    let fs = require("fs")
+
+    let a = path.split("/")
+    a.splice(0, 1)
+    let a1 = `/${a.shift()}`
+    while (a.length >= 1) {
+        if (!fs.existsSync(a1)) {
+            fs.mkdirSync(a1)
+        }
+        a1 = `${a1}/${a.shift()}`
+    }
 }

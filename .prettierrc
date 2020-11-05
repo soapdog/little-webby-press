@@ -3,5 +3,8 @@
     "svelteStrictMode": false,
     "svelteBracketNewLine": false,
     "svelteAllowShorthand": true,
-    "svelteIndentScriptAndStyle": true
+		"svelteIndentScriptAndStyle": true,
+		"tabWidth":2,
+		"useTabs":true,
+		"singleQuote":false
   }

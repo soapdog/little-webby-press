@@ -1,5 +1,5 @@
 import App from './App.svelte';
-import { initializeFilesystem } from "./press/utils.js";
+import { initializeFilesystem } from "./common/fs.js";
 
 let app;
 

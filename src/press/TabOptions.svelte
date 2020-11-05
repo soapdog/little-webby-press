@@ -38,7 +38,7 @@
         <input
           class="form-check-input"
           type="checkbox"
-          bind:checked={book.config.website.enabled} />
+          bind:checked={book.config.pwa.enabled} />
         <label class="form-check-label" for="flexSwitchCheckChecked">
           Create website.
         </label>
