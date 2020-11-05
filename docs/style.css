@@ -704,6 +704,32 @@ video {
   background-color: rgba(237, 242, 247, var(--bg-opacity))
 }
 
+.card {
+  max-width: 24rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #a0aec0;
+  border-color: rgba(160, 174, 192, var(--border-opacity));
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.card-header {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
