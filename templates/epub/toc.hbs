@@ -15,7 +15,7 @@
             <ol class='toc no-parts'>
                 {{#each spine}}
                 <li>
-                    <a href="{{this}}.xhtml">{{chapterTitle this}}</a>
+                    <a href="{{file}}.xhtml">{{chapterTitle file}}</a>
                 </li>
                 {{/each}}
             </ol>
@@ -25,7 +25,7 @@
             <h2>Guide</h2>
             <ol>
                 <li>
-                    <a epub:type="bodymatter" href="{{spine.[0]}}.xhtml">Begin Reading</a>
+                    <a epub:type="bodymatter" href="{{spine.[0].file}}.xhtml">Begin Reading</a>
                 </li>
             </ol>
         </nav>
