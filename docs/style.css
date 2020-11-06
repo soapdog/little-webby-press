@@ -701,11 +701,11 @@ video {
   border-color: rgba(237, 242, 247, var(--border-opacity));
   --bg-opacity: 1;
   background-color: #edf2f7;
-  background-color: rgba(237, 242, 247, var(--bg-opacity))
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
 }
 
 .card {
-  max-width: 24rem;
+  max-width: 32rem;
   border-radius: 0.25rem;
   overflow: hidden;
   border-width: 1px;
@@ -714,20 +714,62 @@ video {
   border-color: rgba(160, 174, 192, var(--border-opacity));
   padding: 0.5rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem
+  margin-bottom: 0.5rem;
 }
 
 .card-header {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .card-title {
   font-weight: 700;
   font-size: 1.25rem;
-  margin-bottom: 0.5rem
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  display: block;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #cbd5e0;
+  border-color: rgba(203, 213, 224, var(--border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  line-height: 1.25;
+}
+
+.form-control:hover {
+  --border-opacity: 1;
+  border-color: #a0aec0;
+  border-color: rgba(160, 174, 192, var(--border-opacity))
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

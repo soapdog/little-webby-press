@@ -1,4 +1,4 @@
-<nav class="p-2">
+<nav class="py-2">
 	<ul class="flex">
 		<li class="mr-6">
 			<a class="nav font-semibold" href="/">
