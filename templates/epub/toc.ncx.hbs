@@ -23,11 +23,11 @@
       <content src="toc.xhtml"/>
     </navPoint>
     {{#each spine}}
-    <navPoint id="{{this}}" playOrder="{{tocIndex @index}}">
+    <navPoint id="{{id}}" playOrder="{{tocIndex @index}}">
       <navLabel>
-        <text>{{chapterTitle this}}</text>
+        <text>{{chapterTitle id}}</text>
       </navLabel>
-      <content src="{{this}}.xhtml"/>
+      <content src="{{file}}.xhtml"/>
     </navPoint>
     {{/each}}
   </navMap>

@@ -1,127 +1,131 @@
 <script>
-  import Nav from "./Nav.svelte";
-  import Editor from "./Editor.svelte";
-  import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
-  import { onMount } from "svelte";
-  import { processDroppedFiles } from "./utils.js";
+	import Editor from "./Editor.svelte";
+	import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
+	import { onMount } from "svelte";
+	import { bookFromFiles } from "./book.js";
 
-  let stage = "waiting"; // loading, loaded, over
-  let msg, files, book;
-  let error = false;
+	let stage = "waiting"; // loading, loaded, over
+	let msg, files, book;
+	let error = false;
 
-  function readFile(file) {
-    return new Promise((resolve, reject) => {
-      var fr = new FileReader();
-      fr.onload = () => {
-        resolve(fr.result);
-      };
-      fr.readAsText(file.blob);
-    });
-  }
+	function readFile(file) {
+		return new Promise((resolve, reject) => {
+			var fr = new FileReader();
+			fr.onload = () => {
+				resolve(fr.result);
+			};
+			fr.readAsText(file.blob);
+		});
+	}
 
-  onMount(() => {
-    const dropzone = document.querySelector(".drop-area");
-    dropzone.addEventListener("dragover", evt => {
-      evt.preventDefault();
-      stage = "over";
-    });
-    dropzone.addEventListener("dragleave", evt => {
-      evt.preventDefault();
-      stage = "waiting";
-    });
-    dropzone.addEventListener("drop", async evt => {
-      evt.preventDefault();
+	onMount(() => {
+		const dropzone = document.querySelector(".drop-area");
+		dropzone.addEventListener("dragover", evt => {
+			evt.preventDefault();
+			stage = "over";
+		});
+		dropzone.addEventListener("dragleave", evt => {
+			evt.preventDefault();
+			stage = "waiting";
+		});
+		dropzone.addEventListener("drop", async evt => {
+			evt.preventDefault();
 
-      msg = "Getting file list...";
-      stage = "loading";
-      files = await window.getFilesFromDataTransferItems(
-        evt.dataTransfer.items
-      );
+			msg = "Getting file list...";
+			stage = "loading";
+			files = await window.getFilesFromDataTransferItems(
+				evt.dataTransfer.items
+			);
 
-      msg = "Loading configuration...";
-      book = await processDroppedFiles(files);
-      if (book instanceof Error) {
-        stage = "error";
-        msg = book.message;
-      } else {
-        stage = "loaded";
-      }
-    });
-  });
+			msg = "Loading configuration...";
+			book = await bookFromFiles(files);
+			if (book instanceof Error) {
+				stage = "error";
+				msg = book.message;
+			} else {
+				stage = "loaded";
+			}
+		});
+	});
 </script>
 
 <style>
-  .over {
-    border: solid 4px #e3f2fd;
-  }
+	.over {
+		border: solid 4px #e3f2fd;
+	}
 
-  .action-items {
-    position: fixed;
-    bottom: 0px;
-  }
+	.action-items {
+		position: fixed;
+		bottom: 0px;
+	}
 
-  .full-height {
-    height: calc(100vh - 48px);
-  }
+	.full-height {
+		height: calc(100vh - 48px);
+	}
 </style>
 
-<div
-  class="container-fluid p-0 mx-auto full-height drop-area"
-  >
-
-  <Nav />
-  {#if error}
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <img src="..." class="rounded mr-2" alt="..." />
-        <strong class="mr-auto">Error</strong>
-        <button
-          type="button"
-          class="ml-2 mb-1 close"
-          data-dismiss="toast"
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="toast-body">Error initializing filesystem: {error}</div>
-    </div>
-  {/if}
-  {#if stage !== 'loaded'}
-    <div class="d-flex justify-content-center align-items-center h-100 text-center" class:over={stage == 'over'}>
-      {#if stage == 'over'}
-        <div>
-          <div class="empty-icon">
-            <i class="fas fa-smile-wink fa-3x" />
-          </div>
-          <p class="empty-title h5">Drop a book folder here!</p>
-        </div>
-      {:else if stage == 'waiting'}
-        <div>
-          <div class="empty-icon">
-            <i class="fas fa-book fa-3x" />
-          </div>
-          <p class="empty-title h5">The book is empty.</p>
-          <p class="empty-subtitle">
-            Drag &amp; Drop a folder with book data here to start.
-          </p>
-          <div class="empty-action">
-            <button class="btn btn-primary">
-              Learn more about how to build books using
-              <em>little.webby.press</em>
-            </button>
-          </div>
-        </div>
-      {:else if stage == 'loading'}
-        <div>
-          <div class="empty-icon">
-            <i class="fas fa-spinner fa-3x fa-spin" />
-          </div>
-          <p class="empty-title h5">Loading...</p>
-          <p class="empty-subtitle">{msg}</p>
-        </div>
-      {/if}
-    </div>
-  {:else}
-    <Editor {book} />
-  {/if}
+<div class="container p-0 mx-auto full-height drop-area">
+	{#if error}
+		<div
+			class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded
+			relative"
+			role="alert">
+			<strong class="font-bold">Holy smokes!</strong>
+			<span class="block sm:inline">{error}</span>
+			<span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+				<svg
+					class="fill-current h-6 w-6 text-red-500"
+					role="button"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20">
+					<title>Close</title>
+					<path
+						d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2
+						1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1
+						1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758
+						3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+				</svg>
+			</span>
+		</div>
+	{/if}
+	{#if stage !== 'loaded'}
+		<div
+			class="flex justify-center content-center h-100 text-center"
+			class:over={stage == 'over'}>
+			{#if stage == 'over'}
+				<div>
+					<div class="empty-icon">
+						<i class="fas fa-smile-wink fa-3x" />
+					</div>
+					<p class="text-xl">Drop a book folder here!</p>
+				</div>
+			{:else if stage == 'waiting'}
+				<div>
+					<div class="empty-icon">
+						<i class="fas fa-book fa-3x" />
+					</div>
+					<p class="text-xl">The book is empty.</p>
+					<p class="text-light">
+						Drag &amp; Drop a folder with book data here to start.
+					</p>
+					<div class="empty-action">
+						<a class="btn btn-blue" href="/help">
+							Learn more about how to build books using
+							<em>little.webby.press</em>
+						</a>
+					</div>
+				</div>
+			{:else if stage == 'loading'}
+				<div>
+					<div class="empty-icon">
+						<i class="fas fa-spinner fa-3x fa-spin" />
+					</div>
+					<p class="text-xl">Loading...</p>
+					<p class="text-light">{msg}</p>
+				</div>
+			{/if}
+		</div>
+	{:else}
+		<Editor {book} />
+	{/if}
 </div>
