@@ -1,38 +1,23 @@
 <script>
-  import _ from "lodash";
-  export let book;
+	import _ from "lodash";
+	export let book;
 
-  let author = _.get(book.config, "metadata.author", "");
-  let publisher = _.get(book.config, "metadata.publisher", "");
-  let title = _.get(book.config, "metadata.title", "");
+	let author = _.get(book.config, "metadata.author", "");
+	let publisher = _.get(book.config, "metadata.publisher", "");
+	let title = _.get(book.config, "metadata.title", "");
 </script>
 
-  <form action="" class="mt-2">
-  <div class="mb-3">
-      <label class="form-label" for="book-title">Book Title</label>
-      <input
-        class="form-control"
-        type="text"
-        id="book-title"
-        bind:value={title}
-        placeholder="Book Title" />
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="author-name">Author Name</label>
-      <input
-        class="form-control"
-        type="text"
-        id="author-name"
-        bind:value={author}
-        placeholder="Name" />
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="publisher-name">Publisher Name</label>
-      <input
-        class="form-control"
-        type="text"
-        id="publisher-name"
-        bind:value={publisher}
-        placeholder="Name" />
-    </div>
-  </form>
+<div class="card mb-6">
+	<div class="mb-3">
+		<label class="form-label" for="book-title">Book Title</label>
+		<span>{title}</span>
+	</div>
+	<div class="mb-3">
+		<label class="form-label" for="author-name">Author Name</label>
+		<span>{author}</span>
+	</div>
+	<div class="mb-3">
+		<label class="form-label" for="publisher-name">Publisher Name</label>
+		<span>{publisher}</span>
+	</div>
+</div>

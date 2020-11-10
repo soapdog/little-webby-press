@@ -42,7 +42,7 @@
 	}
 
 	.card {
-		@apply max-w-lg rounded overflow-hidden border border-gray-500 p-2 mt-2 mb-2;
+		@apply max-w-lg rounded overflow-hidden border border-gray-500 p-4 mt-2 mb-2;
 	}
 
 	.card-header {

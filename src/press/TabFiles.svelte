@@ -16,12 +16,15 @@
     }
 
     let p = _.get(book, `config.profiles.${profile}`, [])
-    
+
     return p.includes(file.name);
   };
+
+	let profiles = Object.keys(book.config.profiles)
+
 </script>
 
-<div class="column">
+<div class="card mb-6">
   {#if files.length == 0}
     <div class="empty">
       <div class="empty-icon">
@@ -40,42 +43,28 @@
       The
       <em>files</em>
       tab only lists files listed in
-      <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to find and not in ToC order.
+      <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to locate. This is not your table of contents or spine.
     </p>
-    <table class="table">
+    <table class="table-auto">
       <thead>
         <tr>
-          <th>filename</th>
-          <th>ePub</th>
-          <th>Sample</th>
-          <th>PWA</th>
-          <th>PWA + WebMonetized</th>
+          <th class="px-4 py-2">filename</th>
+					{#each profiles as profile}
+          <th class="px-4 py-2">{profile}</th>
+					{/each}
         </tr>
       </thead>
       <tbody>
-        {#each files as file}
-          <tr>
-            <td>{file.filepath}</td>
-            <td>
-              {#if includedInProfile('book', file)}
+        {#each files as file, i}
+          <tr class:bg-gray-100={i % 2 == 0}>
+            <td class="border px-4 py-2">{file.filepath}</td>
+            {#each profiles as profile}
+						<td class="border px-4 py-2">
+              {#if includedInProfile(profile, file)}
                 <i class="fas fa-check" />
               {/if}
             </td>
-            <td>
-              {#if includedInProfile('sample', file)}
-                <i class="fas fa-check" />
-              {/if}
-            </td>
-            <td>
-              {#if includedInProfile('pwa', file)}
-                <i class="fas fa-check" />
-              {/if}
-            </td>
-            <td>
-              {#if includedInProfile('webmonetized', file)}
-                <i class="fas fa-check" />
-              {/if}
-            </td>
+						{/each}
           </tr>
         {/each}
       </tbody>
