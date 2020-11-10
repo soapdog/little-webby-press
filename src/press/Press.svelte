@@ -1,62 +1,56 @@
 <script>
-	import Editor from "./Editor.svelte";
-	import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
-	import { onMount } from "svelte";
-	import { bookFromFiles } from "./book.js";
+	import Editor from "./Editor.svelte"
+	import { getFilesFromDataTransferItems } from "datatransfer-files-promise"
+	import { onMount } from "svelte"
+	import { bookFromFiles } from "./book.js"
+	import { _ } from "svelte-i18n"
 
-	let stage = "waiting"; // loading, loaded, over
-	let msg, files, book;
-	let error = false;
+	let stage = "waiting" // loading, loaded, over
+	let msg, files, book
+	let error = false
 
 	function readFile(file) {
 		return new Promise((resolve, reject) => {
-			var fr = new FileReader();
+			var fr = new FileReader()
 			fr.onload = () => {
-				resolve(fr.result);
-			};
-			fr.readAsText(file.blob);
-		});
+				resolve(fr.result)
+			}
+			fr.readAsText(file.blob)
+		})
 	}
 
 	onMount(() => {
-		const dropzone = document.querySelector(".drop-area");
+		const dropzone = document.querySelector(".drop-area")
 		dropzone.addEventListener("dragover", evt => {
-			evt.preventDefault();
-			stage = "over";
-		});
+			evt.preventDefault()
+			stage = "over"
+		})
 		dropzone.addEventListener("dragleave", evt => {
-			evt.preventDefault();
-			stage = "waiting";
-		});
+			evt.preventDefault()
+			stage = "waiting"
+		})
 		dropzone.addEventListener("drop", async evt => {
-			evt.preventDefault();
+			evt.preventDefault()
 
-			msg = "Getting file list...";
-			stage = "loading";
-			files = await window.getFilesFromDataTransferItems(
-				evt.dataTransfer.items
-			);
+			msg = $_("getting-file-list")
+			stage = "loading"
+			files = await window.getFilesFromDataTransferItems(evt.dataTransfer.items)
 
-			msg = "Loading configuration...";
-			book = await bookFromFiles(files);
+			msg = $_("loading-configuration")
+			book = await bookFromFiles(files)
 			if (book instanceof Error) {
-				stage = "error";
-				msg = book.message;
+				stage = "error"
+				msg = book.message
 			} else {
-				stage = "loaded";
+				stage = "loaded"
 			}
-		});
-	});
+		})
+	})
 </script>
 
 <style>
 	.over {
 		border: solid 4px #e3f2fd;
-	}
-
-	.action-items {
-		position: fixed;
-		bottom: 0px;
 	}
 
 	.full-height {
@@ -70,7 +64,7 @@
 			class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded
 			relative"
 			role="alert">
-			<strong class="font-bold">Holy smokes!</strong>
+			<strong class="font-bold">{$_('error-quip')}</strong>
 			<span class="block sm:inline">{error}</span>
 			<span class="absolute top-0 bottom-0 right-0 px-4 py-3">
 				<svg
@@ -78,7 +72,7 @@
 					role="button"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 20 20">
-					<title>Close</title>
+					<title>{$_('close')}</title>
 					<path
 						d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2
 						1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1
@@ -97,17 +91,15 @@
 					<div class="empty-icon">
 						<i class="fas fa-smile-wink fa-3x" />
 					</div>
-					<p class="text-xl">Drop a book folder here!</p>
+					<p class="text-xl">{$_('drop-a-book-folder-here')}</p>
 				</div>
 			{:else if stage == 'waiting'}
 				<div>
 					<div class="empty-icon">
 						<i class="fas fa-book fa-3x" />
 					</div>
-					<p class="text-xl">The book is empty.</p>
-					<p class="text-light">
-						Drag &amp; Drop a folder with book data here to start.
-					</p>
+					<p class="text-xl">{$_('no_book')}</p>
+					<p class="text-light">{$_('drag-and-drop-to-start')}</p>
 					<div class="empty-action">
 						<a class="btn btn-blue" href="/help">
 							Learn more about how to build books using
@@ -120,7 +112,7 @@
 					<div class="empty-icon">
 						<i class="fas fa-spinner fa-3x fa-spin" />
 					</div>
-					<p class="text-xl">Loading...</p>
+					<p class="text-xl">{$_('loading')}</p>
 					<p class="text-light">{msg}</p>
 				</div>
 			{/if}

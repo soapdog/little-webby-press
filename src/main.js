@@ -1,5 +1,6 @@
 import App from './App.svelte';
 import { initializeFilesystem } from "./common/fs.js";
+import "./common/i18n.js"
 
 let app;
 
