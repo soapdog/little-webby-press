@@ -639,6 +639,16 @@ video {
   background-color: rgba(43, 108, 176, var(--bg-opacity));
 }
 
+.btn-blue:disabled {
+  --bg-opacity: 1;
+  background-color: #cbd5e0;
+  background-color: rgba(203, 213, 224, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #2d3748;
+  color: rgba(45, 55, 72, var(--text-opacity));
+  cursor: not-allowed;
+}
+
 .btn-gray {
   --bg-opacity: 1;
   background-color: #cbd5e0;
