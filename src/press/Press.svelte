@@ -1,5 +1,5 @@
 <script>
-	import Editor from "./Editor.svelte"
+	import Tabs from "./Tabs.svelte"
 	import { getFilesFromDataTransferItems } from "datatransfer-files-promise"
 	import { onMount } from "svelte"
 	import { bookFromFiles } from "./book.js"
@@ -100,7 +100,7 @@
 					</div>
 					<p class="text-xl">{$_('no_book')}</p>
 					<p class="text-light">{$_('drag-and-drop-to-start')}</p>
-					<div class="empty-action">
+					<div class="mt-6">
 						<a class="btn btn-blue" href="/help">
 							Learn more about how to build books using
 							<em>little.webby.press</em>
@@ -118,6 +118,6 @@
 			{/if}
 		</div>
 	{:else}
-		<Editor {book} />
+		<Tabs {book} />
 	{/if}
 </div>

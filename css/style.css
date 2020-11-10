@@ -12,7 +12,11 @@
   }
   .btn-blue:hover {
     @apply bg-blue-700;
-  }
+	}
+
+	.btn-blue:disabled {
+		@apply bg-gray-400 text-gray-800 cursor-not-allowed;
+	}
 
   .btn-gray {
     @apply bg-gray-400 text-gray-800;

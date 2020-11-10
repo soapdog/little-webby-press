@@ -14,8 +14,8 @@
 		<button class="btn btn-blue" disabled={generating} on:click={generate}>
 			{#if generating}
 				<i class="fas fa-spinner fa-lg fa-spin" />
-			{/if}
-			{$_("action-generate")}
+				{$_('generating-book')}
+			{:else}{$_('action-generate')}{/if}
 		</button>
 	</div>
 </nav>

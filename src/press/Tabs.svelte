@@ -3,7 +3,7 @@
 	import TabFiles from "./TabFiles.svelte"
 	import TabOptions from "./TabOptions.svelte"
 	import TabMetadata from "./TabMetadata.svelte"
-	import EditorControls from "./EditorControls.svelte"
+	import TabsActions from "./TabsActions.svelte"
 
 	export let book
 
@@ -44,5 +44,5 @@
 	<div class="columns tab">
 		<svelte:component this={views[currentView]} {book} />
 	</div>
-	<EditorControls {book} />
+	<TabsActions {book} />
 </div>
