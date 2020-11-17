@@ -1,0 +1,21 @@
+{
+  "action-generate": "Generate",
+  "close": "Close",
+  "drag-and-drop-to-start": "Drag & Drop a folder with book data here to start.",
+  "drop-a-book-folder-here": "Drop a book folder here!",
+  "error-quip": "Holy smokes!",
+  "files": "Files",
+  "files-tab-description": "The <em>files</em> tab only lists files listed in <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to locate. This is not your table of contents or spine.",
+  "generating-book": "Generating book...",
+  "get-help": "Learn more about book data :-)",
+  "getting-file-list": "Getting file list...",
+  "header-filename": "filename",
+  "loading": "Loading...",
+  "loading-configuration": "Loading configuration...",
+  "metadata": "Metadata",
+  "nav_github": "Github",
+  "nav_help": "Help",
+  "no-files-found": "No files found.",
+  "no_book": "You haven't loaded any book.",
+  "options": "Options"
+}

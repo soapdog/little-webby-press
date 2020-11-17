@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+
 <head>
-<title>Cover</title>
-<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+	<title>Cover</title>
+	<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+	<style type="text/css" title="override_css">
+		body.fullpage {
+			margin: 0;
+			padding: 0;
+		}
+
+		section.cover {
+			display: block;
+			text-align: center;
+			height: 95%;
+		}
+
+		img#coverimage {
+			height: 95%;
+		}
+
+		img#coverimage:only-of-type {
+			height: 95vh;
+		}
+	</style>
 </head>
-<body dir="ltr">
-<div id="cover-image">
-<img src="{{book.config.metadata.cover}}" alt="{{book.config.metadata.title}}"/>
-</div>
+
+<body class="fullpage" dir="ltr">
+	<section class="cover" epub:type="cover">
+		<img id="coverimage" src="{{book.config.metadata.cover}}" alt="{{book.config.metadata.title}}" />
+	</section>
 </body>
+
 </html>

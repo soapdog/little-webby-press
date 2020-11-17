@@ -6,5 +6,7 @@
 		"svelteIndentScriptAndStyle": true,
 		"tabWidth":2,
 		"useTabs":true,
-		"singleQuote":false
+		"singleQuote":false,
+		"semi": false,
+		"trailingComma": "es5"
   }

@@ -1,18 +1,19 @@
 <script>
-	import TabFiles from "./TabFiles.svelte";
-	import TabOptions from "./TabOptions.svelte";
-	import TabMetadata from "./TabMetadata.svelte";
-	import EditorControls from "./EditorControls.svelte";
+	import { _ } from "svelte-i18n"
+	import TabFiles from "./TabFiles.svelte"
+	import TabOptions from "./TabOptions.svelte"
+	import TabMetadata from "./TabMetadata.svelte"
+	import TabsActions from "./TabsActions.svelte"
 
-	export let book;
+	export let book
 
 	let views = {
 		files: TabFiles,
 		options: TabOptions,
-		metadata: TabMetadata
-	};
+		metadata: TabMetadata,
+	}
 
-	let currentView = "options";
+	let currentView = "options"
 </script>
 
 <style>
@@ -25,23 +26,23 @@
 			class="nav-pill"
 			class:nav-pill-active={currentView == 'options'}
 			on:click|preventDefault={() => (currentView = 'options')}>
-			<span>Options</span>
+			<span>{$_("options")}</span>
 		</li>
 		<li
 			class="nav-pill"
 			class:nav-pill-active={currentView == 'metadata'}
 			on:click|preventDefault={() => (currentView = 'metadata')}>
-			<span>Metadata</span>
+			<span>{$_("metadata")}</span>
 		</li>
 		<li
 			class="nav-pill"
 			class:nav-pill-active={currentView == 'files'}
 			on:click|preventDefault={() => (currentView = 'files')}>
-			<span>Files</span>
+			<span>{$_("files")}</span>
 		</li>
 	</ul>
 	<div class="columns tab">
 		<svelte:component this={views[currentView]} {book} />
 	</div>
-	<EditorControls {book} />
+	<TabsActions {book} />
 </div>

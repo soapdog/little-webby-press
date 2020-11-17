@@ -1,6 +1,5 @@
 /node_modules/
-/public/build/
+/docs/build/
 
 .DS_Store
 
-/samples/

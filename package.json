@@ -4,7 +4,7 @@
     "scripts": {
         "watch:tailwind": "postcss css/style.css -o docs/style.css -w",
         "build:tailwind": "cross-env NODE_ENV=production postcss css/style.css -o docs/style.css",
-        "build": "yarn run build:tailwind && rollup -c",
+        "build": "concurrently \"npm run build:tailwind\" \"rollup -c\"",
         "start": "sirv docs",
         "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\""
     },
@@ -36,6 +36,7 @@
         "rollup-plugin-terser": "^7.0.2",
         "slug": "^3.3.0",
         "svelte": "^3.0.0",
+        "svelte-i18n": "^3.2.5",
         "tailwindcss": "^1.8.10",
         "toml": "^3.0.0"
     },
