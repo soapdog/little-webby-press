@@ -4915,24 +4915,24 @@ var app = (function () {
     			t4 = text(t4_value);
     			attr_dev(a0, "class", "nav font-semibold");
     			attr_dev(a0, "href", "/");
-    			add_location(a0, file, 7, 3, 128);
+    			add_location(a0, file, 7, 3, 135);
     			attr_dev(li0, "class", "mr-6");
-    			add_location(li0, file, 6, 2, 107);
+    			add_location(li0, file, 6, 2, 113);
     			attr_dev(a1, "class", "nav");
     			attr_dev(a1, "href", "/help");
-    			add_location(a1, file, 12, 3, 229);
+    			add_location(a1, file, 12, 3, 241);
     			attr_dev(li1, "class", "mr-6");
-    			add_location(li1, file, 11, 2, 208);
+    			add_location(li1, file, 11, 2, 219);
     			attr_dev(a2, "class", "nav");
     			attr_dev(a2, "href", "https://github.com/soapdog/little-webby-press");
     			attr_dev(a2, "target", "_blank");
-    			add_location(a2, file, 15, 3, 309);
+    			add_location(a2, file, 15, 3, 324);
     			attr_dev(li2, "class", "mr-6");
-    			add_location(li2, file, 14, 2, 288);
+    			add_location(li2, file, 14, 2, 302);
     			attr_dev(ul, "class", "flex");
-    			add_location(ul, file, 5, 1, 87);
+    			add_location(ul, file, 5, 1, 92);
     			attr_dev(nav, "class", "py-2 pb-4 text-xl");
-    			add_location(nav, file, 4, 0, 54);
+    			add_location(nav, file, 4, 0, 58);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -22221,14 +22221,14 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(p, file$1, 40, 2, 865);
+    			add_location(p, file$1, 40, 2, 905);
     			attr_dev(th, "class", "px-4 py-2");
-    			add_location(th, file$1, 44, 5, 962);
-    			add_location(tr, file$1, 43, 4, 952);
-    			add_location(thead, file$1, 42, 3, 940);
-    			add_location(tbody, file$1, 50, 3, 1127);
+    			add_location(th, file$1, 44, 5, 1006);
+    			add_location(tr, file$1, 43, 4, 995);
+    			add_location(thead, file$1, 42, 3, 982);
+    			add_location(tbody, file$1, 50, 3, 1177);
     			attr_dev(table, "class", "table-auto");
-    			add_location(table, file$1, 41, 2, 910);
+    			add_location(table, file$1, 41, 2, 951);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -22358,19 +22358,19 @@ var app = (function () {
     			button = element("button");
     			t5 = text(t5_value);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$1, 31, 4, 581);
+    			add_location(i, file$1, 31, 4, 612);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$1, 30, 3, 552);
+    			add_location(div0, file$1, 30, 3, 582);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$1, 33, 3, 626);
+    			add_location(p0, file$1, 33, 3, 659);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$1, 34, 3, 682);
+    			add_location(p1, file$1, 34, 3, 716);
     			attr_dev(button, "class", "btn btn-primary");
-    			add_location(button, file$1, 36, 4, 777);
+    			add_location(button, file$1, 36, 4, 813);
     			attr_dev(div1, "class", "empty-action");
-    			add_location(div1, file$1, 35, 3, 746);
+    			add_location(div1, file$1, 35, 3, 781);
     			attr_dev(div2, "class", "empty");
-    			add_location(div2, file$1, 29, 2, 529);
+    			add_location(div2, file$1, 29, 2, 558);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -22419,7 +22419,7 @@ var app = (function () {
     			th = element("th");
     			t = text(t_value);
     			attr_dev(th, "class", "px-4 py-2");
-    			add_location(th, file$1, 46, 6, 1052);
+    			add_location(th, file$1, 46, 6, 1098);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -22450,7 +22450,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-check");
-    			add_location(i, file$1, 57, 9, 1388);
+    			add_location(i, file$1, 57, 9, 1445);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -22482,7 +22482,7 @@ var app = (function () {
     			td = element("td");
     			if (if_block) if_block.c();
     			attr_dev(td, "class", "border px-4 py-2");
-    			add_location(td, file$1, 55, 7, 1302);
+    			add_location(td, file$1, 55, 7, 1357);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td, anchor);
@@ -22535,9 +22535,9 @@ var app = (function () {
 
     			t2 = space();
     			attr_dev(td, "class", "border px-4 py-2");
-    			add_location(td, file$1, 53, 6, 1211);
+    			add_location(td, file$1, 53, 6, 1264);
     			toggle_class(tr, "bg-gray-100", /*i*/ ctx[7] % 2 == 0);
-    			add_location(tr, file$1, 52, 5, 1169);
+    			add_location(tr, file$1, 52, 5, 1221);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22609,7 +22609,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			attr_dev(div, "class", "card mb-6");
-    			add_location(div, file$1, 27, 0, 478);
+    			add_location(div, file$1, 27, 0, 505);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -70952,7 +70952,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$4, 15, 4, 375);
+    			add_location(i, file$4, 15, 4, 390);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -71003,10 +71003,10 @@ var app = (function () {
     			if_block.c();
     			attr_dev(button, "class", "btn btn-blue");
     			button.disabled = /*generating*/ ctx[0];
-    			add_location(button, file$4, 13, 2, 279);
+    			add_location(button, file$4, 13, 2, 292);
     			attr_dev(div, "class", "flex justify-end");
-    			add_location(div, file$4, 12, 1, 246);
-    			add_location(nav, file$4, 11, 0, 239);
+    			add_location(div, file$4, 12, 1, 258);
+    			add_location(nav, file$4, 11, 0, 250);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -71201,24 +71201,24 @@ var app = (function () {
     			if (switch_instance) create_component(switch_instance.$$.fragment);
     			t6 = space();
     			create_component(tabsactions.$$.fragment);
-    			add_location(span0, file$5, 28, 3, 589);
+    			add_location(span0, file$5, 28, 3, 617);
     			attr_dev(li0, "class", "nav-pill");
     			toggle_class(li0, "nav-pill-active", /*currentView*/ ctx[1] == "options");
-    			add_location(li0, file$5, 24, 2, 448);
-    			add_location(span1, file$5, 34, 3, 771);
+    			add_location(li0, file$5, 24, 2, 472);
+    			add_location(span1, file$5, 34, 3, 805);
     			attr_dev(li1, "class", "nav-pill");
     			toggle_class(li1, "nav-pill-active", /*currentView*/ ctx[1] == "metadata");
-    			add_location(li1, file$5, 30, 2, 628);
-    			add_location(span2, file$5, 40, 3, 948);
+    			add_location(li1, file$5, 30, 2, 658);
+    			add_location(span2, file$5, 40, 3, 988);
     			attr_dev(li2, "class", "nav-pill");
     			toggle_class(li2, "nav-pill-active", /*currentView*/ ctx[1] == "files");
-    			add_location(li2, file$5, 36, 2, 811);
+    			add_location(li2, file$5, 36, 2, 847);
     			attr_dev(ul, "class", "flex");
-    			add_location(ul, file$5, 23, 1, 428);
+    			add_location(ul, file$5, 23, 1, 451);
     			attr_dev(div0, "class", "columns tab");
-    			add_location(div0, file$5, 43, 1, 991);
+    			add_location(div0, file$5, 43, 1, 1034);
     			attr_dev(div1, "class", "container mx-auto m-4 ");
-    			add_location(div1, file$5, 22, 0, 390);
+    			add_location(div1, file$5, 22, 0, 412);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -75597,22 +75597,22 @@ var app = (function () {
     			t4 = text(t4_value);
     			path = svg_element("path");
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$6, 66, 3, 1487);
+    			add_location(strong, file$6, 66, 3, 1553);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$6, 67, 3, 1544);
-    			add_location(title, file$6, 74, 5, 1795);
-    			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
-    			add_location(path, file$6, 75, 5, 1829);
+    			add_location(span0, file$6, 67, 3, 1611);
+    			add_location(title, file$6, 74, 5, 1869);
+    			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\r\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\r\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\r\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
+    			add_location(path, file$6, 75, 5, 1904);
     			attr_dev(svg, "class", "fill-current h-6 w-6 text-red-500");
     			attr_dev(svg, "role", "button");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 20 20");
-    			add_location(svg, file$6, 69, 4, 1653);
+    			add_location(svg, file$6, 69, 4, 1722);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$6, 68, 3, 1592);
-    			attr_dev(div, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n\t\t\trelative");
+    			add_location(span1, file$6, 68, 3, 1660);
+    			attr_dev(div, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\r\n\t\t\trelative");
     			attr_dev(div, "role", "alert");
-    			add_location(div, file$6, 62, 2, 1375);
+    			add_location(div, file$6, 62, 2, 1437);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -75714,7 +75714,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1no39p5");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$6, 85, 2, 2161);
+    			add_location(div, file$6, 85, 2, 2246);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -75784,14 +75784,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$6, 112, 6, 2949);
+    			add_location(i, file$6, 112, 6, 3061);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 111, 5, 2918);
+    			add_location(div0, file$6, 111, 5, 3029);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 114, 5, 3009);
+    			add_location(p0, file$6, 114, 5, 3123);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 115, 5, 3053);
-    			add_location(div1, file$6, 110, 4, 2907);
+    			add_location(p1, file$6, 115, 5, 3168);
+    			add_location(div1, file$6, 110, 4, 3017);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -75857,24 +75857,24 @@ var app = (function () {
     			t4 = space();
     			div1 = element("div");
     			a = element("a");
-    			t5 = text("Learn more about how to build books using\n\t\t\t\t\t\t\t");
+    			t5 = text("Learn more about how to build books using\r\n\t\t\t\t\t\t\t");
     			em = element("em");
     			em.textContent = "little.webby.press";
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 98, 6, 2534);
+    			add_location(i, file$6, 98, 6, 2632);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 97, 5, 2503);
+    			add_location(div0, file$6, 97, 5, 2600);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 100, 5, 2583);
+    			add_location(p0, file$6, 100, 5, 2683);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 101, 5, 2627);
-    			add_location(em, file$6, 105, 7, 2808);
+    			add_location(p1, file$6, 101, 5, 2728);
+    			add_location(em, file$6, 105, 7, 2913);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 103, 6, 2714);
+    			add_location(a, file$6, 103, 6, 2817);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$6, 102, 5, 2689);
-    			add_location(div2, file$6, 96, 4, 2492);
+    			add_location(div1, file$6, 102, 5, 2791);
+    			add_location(div2, file$6, 96, 4, 2588);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -75931,12 +75931,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$6, 91, 6, 2334);
+    			add_location(i, file$6, 91, 6, 2425);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 90, 5, 2303);
+    			add_location(div0, file$6, 90, 5, 2393);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$6, 93, 5, 2389);
-    			add_location(div1, file$6, 89, 4, 2292);
+    			add_location(p, file$6, 93, 5, 2482);
+    			add_location(div1, file$6, 89, 4, 2381);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -75990,7 +75990,7 @@ var app = (function () {
     			t = space();
     			if_block1.c();
     			attr_dev(div, "class", "container p-0 mx-auto full-height drop-area svelte-1no39p5");
-    			add_location(div, file$6, 60, 0, 1302);
+    			add_location(div, file$6, 60, 0, 1362);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
