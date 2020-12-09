@@ -102,8 +102,7 @@
 					<p class="text-light">{$_('drag-and-drop-to-start')}</p>
 					<div class="mt-6">
 						<a class="btn btn-blue" href="/help">
-							Learn more about how to build books using
-							<em>little.webby.press</em>
+							{@html $_("learn-more-long")}
 						</a>
 					</div>
 				</div>
