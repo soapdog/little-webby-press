@@ -16,11 +16,11 @@ let md = new MarkdownIt({
 	.use(MarkdownAnchor)
 
 // TEMPLATE HELPERS
-Handlebars.registerHelper("dateModified", function (context, block) {
+Handlebars.registerHelper("dateModified", function (context, _block) {
 	return moment(Date(context)).format("YYYY-MM-DD[T]HH[:]mm[:00Z]");
 });
 
-Handlebars.registerHelper("tocIndex", function (context, block) {
+Handlebars.registerHelper("tocIndex", function (context, _block) {
 	let n = new Number(context)
 
 	if (!isNaN(n)) {
@@ -30,11 +30,11 @@ Handlebars.registerHelper("tocIndex", function (context, block) {
 	}
 });
 
-Handlebars.registerHelper("chapterTitle", function (context, block) {
+Handlebars.registerHelper("chapterTitle", function (context, _block) {
 	return `Chapter ${context}`
 });
 
-Handlebars.registerHelper("mime", function (context, block) {
+Handlebars.registerHelper("mime", function (context, _block) {
 	return mime.getType(context)
 });
 
