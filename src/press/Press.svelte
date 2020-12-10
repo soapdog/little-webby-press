@@ -40,7 +40,7 @@
 			book = await bookFromFiles(files)
 			if (book instanceof Error) {
 				stage = "error"
-				msg = book.message
+				msg = $_(book.message)
 			} else {
 				stage = "loaded"
 			}
@@ -59,13 +59,13 @@
 </style>
 
 <div class="container p-0 mx-auto full-height drop-area">
-	{#if error}
+	{#if stage === "error"}
 		<div
 			class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded
 			relative"
 			role="alert">
 			<strong class="font-bold">{$_('error-quip')}</strong>
-			<span class="block sm:inline">{error}</span>
+			<span class="block sm:inline">{msg}</span>
 			<span class="absolute top-0 bottom-0 right-0 px-4 py-3">
 				<svg
 					class="fill-current h-6 w-6 text-red-500"
@@ -81,6 +81,22 @@
 				</svg>
 			</span>
 		</div>
+		<div
+		class="flex justify-center content-center h-100 text-center py-3"
+		class:over={stage == 'over'}>
+		<div>
+			<div class="empty-icon">
+				<i class="fas fa-book fa-3x" />
+			</div>
+			<p class="text-xl">{$_('no_book')}</p>
+			<p class="text-light">{$_('drag-and-drop-to-start')}</p>
+			<div class="mt-6">
+				<a class="btn btn-blue" href="/help">
+					{@html $_("learn-more-long")}
+				</a>
+			</div>
+		</div>
+	</div>
 	{/if}
 	{#if stage !== 'loaded'}
 		<div

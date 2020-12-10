@@ -27,6 +27,6 @@ export async function bookFromFiles(files) {
         let book = new Book(config, files);
         return book
     } else {
-        return new Error("Can't find Book.toml file")
+        return new Error("error-no-toml")
     }
 }
