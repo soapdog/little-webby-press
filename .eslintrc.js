@@ -10,7 +10,8 @@ module.exports = {
 		},
 		globals: {
 			Handlebars: "writable",
-			module: "writable"
+			module: "writable",
+			require: "writable"
 		},
     plugins: [
       "svelte3"
@@ -22,6 +23,7 @@ module.exports = {
       }
 		],
 		rules: {
-			quotes: ["error", "double"]
+			quotes: ["error", "double"],
+			"no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
 		}
   };
