@@ -5,6 +5,7 @@
   "drag-and-drop-to-start": "Arrastar e solte uma pasta com os arquivos do livro.",
   "drop-a-book-folder-here": "Solte uma pasta de livro aqui!",
   "enabled": "ativado",
+  "error-no-configuration": "",
   "error-quip": "Caramba!",
   "files": "arquivos",
   "files-tab-description": "A aba <em> arquivos </em> lista apenas os arquivos listados nos perfis <code> Book.toml </code>. \nOs arquivos são listados em ordem alfabética para facilitar a localização. \nEste não é o seu índice.",

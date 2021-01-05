@@ -5,7 +5,7 @@
   "drag-and-drop-to-start": "Drag & Drop a folder with book data here to start.",
   "drop-a-book-folder-here": "Drop a book folder here!",
   "enabled": "Enabled",
-  "error-no-toml": "Can't find Book.toml file",
+  "error-no-configuration": "Can't find Book configuration file",
   "error-quip": "Holy smokes!",
   "files": "Files",
   "files-tab-description": "The <em>files</em> tab only lists files listed in <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to locate. This is not your table of contents or spine.",

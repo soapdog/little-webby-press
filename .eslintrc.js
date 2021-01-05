@@ -11,7 +11,8 @@ module.exports = {
 		globals: {
 			Handlebars: "writable",
 			module: "writable",
-			require: "writable"
+			require: "writable",
+			JSZip: "writable"
 		},
     plugins: [
       "svelte3"
