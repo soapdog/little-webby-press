@@ -22150,12 +22150,12 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[3] = list[i];
-    	child_ctx[5] = i;
+    	child_ctx[5] = list[i];
+    	child_ctx[7] = i;
     	return child_ctx;
     }
 
-    // (29:1) {:else}
+    // (26:1) {:else}
     function create_else_block(ctx) {
     	let p;
     	let raw_value = /*$_*/ ctx[0]("manuscript-tab-description") + "";
@@ -22192,14 +22192,14 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(p, file$1, 29, 2, 663);
+    			add_location(p, file$1, 26, 2, 612);
     			attr_dev(th, "class", "px-4 py-2");
-    			add_location(th, file$1, 33, 5, 765);
-    			add_location(tr, file$1, 32, 4, 755);
-    			add_location(thead, file$1, 31, 3, 743);
-    			add_location(tbody, file$1, 36, 3, 841);
+    			add_location(th, file$1, 30, 5, 714);
+    			add_location(tr, file$1, 29, 4, 704);
+    			add_location(thead, file$1, 28, 3, 692);
+    			add_location(tbody, file$1, 33, 3, 790);
     			attr_dev(table, "class", "table-auto");
-    			add_location(table, file$1, 30, 2, 713);
+    			add_location(table, file$1, 27, 2, 662);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -22256,14 +22256,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(29:1) {:else}",
+    		source: "(26:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (18:1) {#if files.length == 0}
+    // (15:1) {#if files.length == 0}
     function create_if_block(ctx) {
     	let div2;
     	let div0;
@@ -22298,19 +22298,19 @@ var app = (function () {
     			button = element("button");
     			t5 = text(t5_value);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$1, 20, 4, 379);
+    			add_location(i, file$1, 17, 4, 328);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$1, 19, 3, 350);
+    			add_location(div0, file$1, 16, 3, 299);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$1, 22, 3, 424);
+    			add_location(p0, file$1, 19, 3, 373);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$1, 23, 3, 480);
+    			add_location(p1, file$1, 20, 3, 429);
     			attr_dev(button, "class", "btn btn-primary");
-    			add_location(button, file$1, 25, 4, 575);
+    			add_location(button, file$1, 22, 4, 524);
     			attr_dev(div1, "class", "empty-action");
-    			add_location(div1, file$1, 24, 3, 544);
+    			add_location(div1, file$1, 21, 3, 493);
     			attr_dev(div2, "class", "empty");
-    			add_location(div2, file$1, 18, 2, 327);
+    			add_location(div2, file$1, 15, 2, 276);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -22341,18 +22341,18 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(18:1) {#if files.length == 0}",
+    		source: "(15:1) {#if files.length == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:4) {#each files as file, i}
+    // (35:4) {#each files as file, i}
     function create_each_block(ctx) {
     	let tr;
     	let td;
-    	let t0_value = /*file*/ ctx[3].filepath + "";
+    	let t0_value = /*file*/ ctx[5] + "";
     	let t0;
     	let t1;
 
@@ -22363,9 +22363,9 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(td, "class", "border px-4 py-2");
-    			add_location(td, file$1, 39, 6, 925);
-    			toggle_class(tr, "bg-gray-100", /*i*/ ctx[5] % 2 == 0);
-    			add_location(tr, file$1, 38, 5, 883);
+    			add_location(td, file$1, 36, 6, 874);
+    			toggle_class(tr, "bg-gray-100", /*i*/ ctx[7] % 2 == 0);
+    			add_location(tr, file$1, 35, 5, 832);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22383,7 +22383,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(38:4) {#each files as file, i}",
+    		source: "(35:4) {#each files as file, i}",
     		ctx
     	});
 
@@ -22406,7 +22406,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			attr_dev(div, "class", "card mb-6");
-    			add_location(div, file$1, 16, 0, 276);
+    			add_location(div, file$1, 13, 0, 225);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -22442,15 +22442,9 @@ var app = (function () {
     	validate_store(ne, "_");
     	component_subscribe($$self, ne, $$value => $$invalidate(0, $_ = $$value));
     	let { book } = $$props;
-
-    	let files = book.files.filter(f => {
-    		if (book.config.book.frontmatter.includes(f.name) || book.config.book.chapters.includes(f.name)) {
-    			return true;
-    		}
-
-    		return false;
-    	});
-
+    	let fm = book.config.book.frontmatter || [];
+    	let chapters = book.config.book.chapters || [];
+    	let files = fm.concat(chapters);
     	const writable_props = ["book"];
 
     	Object.keys($$props).forEach(key => {
@@ -22464,10 +22458,12 @@ var app = (function () {
     		if ("book" in $$props) $$invalidate(2, book = $$props.book);
     	};
 
-    	$$self.$capture_state = () => ({ lo: lodash, _: ne, book, files, $_ });
+    	$$self.$capture_state = () => ({ lo: lodash, _: ne, book, fm, chapters, files, $_ });
 
     	$$self.$inject_state = $$props => {
     		if ("book" in $$props) $$invalidate(2, book = $$props.book);
+    		if ("fm" in $$props) fm = $$props.fm;
+    		if ("chapters" in $$props) chapters = $$props.chapters;
     		if ("files" in $$props) $$invalidate(1, files = $$props.files);
     	};
 
@@ -68143,14 +68139,11 @@ var app = (function () {
     		}
     		ensureFolders("${siteFolder}/index.html");
     		copyFolder("/templates/site", siteFolder);
-    		fs.writeFileSync(
-    			`${siteFolder}/${bookSlug}.epub`,
-    			fs.readFileSync(bookFile)
-    		);
+    		fs.writeFileSync(`${siteFolder}/book.epub`, fs.readFileSync(bookFile));
 
     		// site zip file
     		let zip = new JSZip();
-    		addToZip(zip, bookSlug, siteFolder);
+    		addToZip(zip, `${bookSlug}-site`, siteFolder);
     		zip.generateAsync({ type: "blob" }).then(
     			function (blob) {
     				FileSaver_min(blob, `${bookSlug}-site.zip`);

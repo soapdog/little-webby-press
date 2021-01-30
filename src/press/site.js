@@ -27,14 +27,11 @@ export function generateSite(book) {
 		}
 		ensureFolders("${siteFolder}/index.html")
 		copyFolder("/templates/site", siteFolder)
-		fs.writeFileSync(
-			`${siteFolder}/${bookSlug}.epub`,
-			fs.readFileSync(bookFile)
-		)
+		fs.writeFileSync(`${siteFolder}/book.epub`, fs.readFileSync(bookFile))
 
 		// site zip file
 		let zip = new JSZip()
-		addToZip(zip, bookSlug, siteFolder)
+		addToZip(zip, `${bookSlug}-site`, siteFolder)
 		zip.generateAsync({ type: "blob" }).then(
 			function (blob) {
 				saveAs(blob, `${bookSlug}-site.zip`)
