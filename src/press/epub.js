@@ -3,6 +3,7 @@ import MarkdownIt from "markdown-it"
 import MarkdownFootnote from "markdown-it-footnote"
 import MarkdownAnchor from "markdown-it-anchor"
 import saveAs from "file-saver"
+import slugify from "slugify"
 import {
 	copyFolder,
 	ensureFolders,
@@ -23,7 +24,7 @@ let md = new MarkdownIt({
 	xhtmlOut: true,
 })
 	.use(MarkdownFootnote)
-	.use(MarkdownAnchor)
+	.use(MarkdownAnchor, { slugify })
 
 // IMPLEMENTATION
 
