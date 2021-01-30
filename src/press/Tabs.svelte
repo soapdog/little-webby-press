@@ -1,6 +1,6 @@
 <script>
 	import { _ } from "svelte-i18n"
-	import TabFiles from "./TabFiles.svelte"
+	import TabManuscript from "./TabManuscript.svelte"
 	import TabOptions from "./TabOptions.svelte"
 	import TabMetadata from "./TabMetadata.svelte"
 	import TabsActions from "./TabsActions.svelte"
@@ -8,7 +8,7 @@
 	export let book
 
 	let views = {
-		files: TabFiles,
+		manuscript: TabManuscript,
 		options: TabOptions,
 		metadata: TabMetadata,
 	}
@@ -36,9 +36,9 @@
 		</li>
 		<li
 			class="nav-pill"
-			class:nav-pill-active={currentView == 'files'}
-			on:click|preventDefault={() => (currentView = 'files')}>
-			<span>{$_("files")}</span>
+			class:nav-pill-active={currentView == 'manuscript'}
+			on:click|preventDefault={() => (currentView = 'manuscript')}>
+			<span>{$_("manuscript")}</span>
 		</li>
 	</ul>
 	<div class="columns tab">

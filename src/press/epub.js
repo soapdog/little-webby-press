@@ -1,4 +1,5 @@
-import slug from "slug"
+import BrowserFS from "browserfs"
+
 import MarkdownIt from "markdown-it"
 import MarkdownFootnote from "markdown-it-footnote"
 import MarkdownAnchor from "markdown-it-anchor"
@@ -29,9 +30,10 @@ let md = new MarkdownIt({
 // IMPLEMENTATION
 
 export function generateEpub(book) {
+	// Sit back, relax, and enjoy the waterfall...
 	return new Promise((resolve, reject) => {
 		console.log(book.config)
-		let bookSlug = slug(book.config.metadata.title)
+		let bookSlug = slugify(book.config.metadata.title)
 		let fs = require("fs")
 		let folder = `/tmp/${bookSlug}`
 		let toc = {}
@@ -154,7 +156,6 @@ export function generateEpub(book) {
 				return s
 			})
 			let tocData = tocTemplate({ book, manifest, spine })
-			console.log(spine, tocData)
 			fs.writeFileSync(`${folder}/OPS/toc.xhtml`, tocData)
 
 			// EPUB3 file
@@ -163,9 +164,14 @@ export function generateEpub(book) {
 			zip.file("mimetype", mimetype)
 			addToZip(zip, bookSlug, folder)
 			zip.generateAsync({ type: "blob" }).then(
-				function (blob) {
-					saveAs(blob, `${bookSlug}.epub`)
-					resolve()
+				function (epubBlob) {
+					epubBlob.arrayBuffer().then((epubBuffer) => {
+						let Buffer = BrowserFS.BFSRequire("buffer").Buffer
+						console.log(epubBlob)
+						fs.writeFileSync(`/tmp/${bookSlug}.epub`, Buffer.from(epubBuffer))
+						saveAs(epubBlob, `${bookSlug}.epub`)
+						resolve()
+					})
 				},
 				function (err) {
 					reject(err)

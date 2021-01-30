@@ -5,24 +5,13 @@
 	export let book
 
 	let files = book.files.filter(f => {
-		if (book.config.profiles.book.includes(f.name)) {
+		if (book.config.ebook.frontmatter.includes(f.name) || book.config.ebook.chapters.includes(f.name)) {
 			return true
 		}
 
 		return false
 	})
 
-	const includedInProfile = (profile, file) => {
-		if (file.filepath.match(/^images/)) {
-			return true
-		}
-
-		let p = lo.get(book, `config.profiles.${profile}`, [])
-
-		return p.includes(file.name)
-	}
-
-	let profiles = Object.keys(book.config.profiles)
 </script>
 
 <div class="card mb-6">
@@ -38,27 +27,17 @@
 			</div>
 		</div>
 	{:else}
-		<p>{@html $_('files-tab-description')}</p>
+		<p>{@html $_('manuscript-tab-description')}</p>
 		<table class="table-auto">
 			<thead>
 				<tr>
 					<th class="px-4 py-2">{$_('header-filename')}</th>
-					{#each profiles as profile}
-						<th class="px-4 py-2">{profile}</th>
-					{/each}
 				</tr>
 			</thead>
 			<tbody>
 				{#each files as file, i}
 					<tr class:bg-gray-100={i % 2 == 0}>
 						<td class="border px-4 py-2">{file.filepath}</td>
-						{#each profiles as profile}
-							<td class="border px-4 py-2">
-								{#if includedInProfile(profile, file)}
-									<i class="fas fa-check" />
-								{/if}
-							</td>
-						{/each}
 					</tr>
 				{/each}
 			</tbody>
