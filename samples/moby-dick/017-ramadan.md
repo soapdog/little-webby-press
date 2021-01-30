@@ -1,7 +1,6 @@
-### Chapter 17. 
-The Ramadan.
-============
+### Chapter 17.
 
+# The Ramadan.
 
 As Queequeg’s Ramadan, or Fasting and Humiliation, was to continue all day, I
 did not choose to disturb him till towards night-fall; for I cherish the
@@ -37,14 +36,14 @@ before our mounting to the chamber. That’s strange, thought I; but at any rate
 since the harpoon stands yonder, and he seldom or never goes abroad without it,
 therefore he must be inside here, and no possible mistake.
 
-“Queequeg! — Queequeg!” — all still. Something must have happened.  Apoplexy! I
-tried to burst open the door; but it stubbornly resisted.  Running down stairs,
+“Queequeg! — Queequeg!” — all still. Something must have happened. Apoplexy! I
+tried to burst open the door; but it stubbornly resisted. Running down stairs,
 I quickly stated my suspicions to the first person I met — the chamber-maid.
 “La! la!” she cried, “I thought something must be the matter. I went to make
 the bed after breakfast, and the door was locked; and not a mouse to be heard;
 and it’s been just so silent ever since. But I thought, may be, you had both
 gone off and locked your baggage in for safe keeping. La! la, ma’am! —
-Mistress! murder! Mrs.  Hussey! apoplexy!” — and with these cries, she ran
+Mistress! murder! Mrs. Hussey! apoplexy!” — and with these cries, she ran
 towards the kitchen, I following.
 
 Mrs. Hussey soon appeared, with a mustard-pot in one hand and a vinegar-cruet
@@ -74,10 +73,10 @@ it there.” Running to a little closet under the landing of the stairs, she
 glanced in, and returning, told me that Queequeg’s harpoon was missing. “He’s
 killed himself,” she cried. “It’s unfort’nate Stiggs done over again there goes
 another counterpane — God pity his poor mother! — it will be the ruin of my
-house. Has the poor lad a sister?  Where’s that girl? — there, Betty, go to
+house. Has the poor lad a sister? Where’s that girl? — there, Betty, go to
 Snarles the Painter, and tell him to paint me a sign, with — “no suicides
 permitted here, and no smoking in the parlor;” — might as well kill both birds
-at once. Kill?  The Lord be merciful to his ghost! What’s that noise there?
+at once. Kill? The Lord be merciful to his ghost! What’s that noise there?
 You, young man, avast there!”
 
 And running up after me, she caught me as I was again trying to force open the
@@ -111,7 +110,7 @@ it seemed so painfully and unnaturally constrained; especially, as in all
 probability he had been sitting so for upwards of eight or ten hours, going too
 without his regular meals.
 
-“Mrs. Hussey,” said I, “he’s *alive* at all events; so leave us, if you please,
+“Mrs. Hussey,” said I, “he’s _alive_ at all events; so leave us, if you please,
 and I will see to this strange affair myself.”
 
 Closing the door upon the landlady, I endeavored to prevail upon Queequeg to
@@ -210,8 +209,5 @@ piety.
 
 At last we rose and dressed; and Queequeg, taking a prodigiously hearty
 breakfast of chowders of all sorts, so that the landlady should not make much
-profit by reason of his Ramadan, we sallied out to board the *Pequod,* sauntering
+profit by reason of his Ramadan, we sallied out to board the _Pequod,_ sauntering
 along, and picking our teeth with halibut bones.
-
-
-

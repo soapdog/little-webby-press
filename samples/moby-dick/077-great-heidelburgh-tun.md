@@ -1,6 +1,6 @@
-### Chapter 77. 
-The Great Heidelburgh Tun.
-==========================
+### Chapter 77.
+
+# The Great Heidelburgh Tun.
 
 Now comes the Baling of the Case. But to comprehend it aright, you must know
 something of the curious internal structure of the thing operated upon.
@@ -13,13 +13,12 @@ forehead of the whale. At the middle of the forehead horizontally subdivide
 this upper quoin, and then you have two almost equal parts, which before were
 naturally divided by an internal wall of a thick tendinous substance.
 
-
 > \* Quoin is not a Euclidean term. It belongs to the pure nautical
 > mathematics. I know not that it has been defined before. A quoin is a solid
 > which differs from a wedge in having its sharp end formed by the steep
 > inclination of one side, instead of the mutual tapering of both sides.
 
-----
+---
 
 The lower subdivided part, called the junk, is one immense honeycomb of oil,
 formed by the crossing and recrossing, into ten thousand infiltrated cells, of
@@ -64,6 +63,3 @@ quarter.
 Thus much being said, attend now, I pray you, to that marvellous and — in this
 particular instance — almost fatal operation whereby the Sperm Whale’s great
 Heidelburgh Tun is tapped.
-
-
-

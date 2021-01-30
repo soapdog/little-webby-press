@@ -1,6 +1,6 @@
-### Chapter 9. 
-The Sermon.
-===========
+### Chapter 9.
+
+# The Sermon.
 
 Father Mapple rose, and in a mild voice of unassuming authority ordered the
 scattered people to condense. “Starboard gangway, there! side away to larboard
@@ -18,33 +18,32 @@ bottom of the sea.
 This ended, in prolonged solemn tones, like the continual tolling of
 a bell in a ship that is foundering at sea in a fog — in such tones he
 commenced reading the following hymn; but changing his manner towards
-the concluding stanzas, burst forth with a pealing exultation and joy — 
+the concluding stanzas, burst forth with a pealing exultation and joy —
 
->  “The ribs and terrors in the whale,   
->  Arched over me a dismal gloom,   
->  While all God’s sun-lit waves rolled by,   
->  And lift me deepening down to doom.   
->    
->  “I saw the opening maw of hell,   
->  With endless pains and sorrows there;   
->  Which none but they that feel can tell —    
->  Oh, I was plunging to despair.   
->    
->  “In black distress, I called my God,   
->  When I could scarce believe him mine,   
->  He bowed his ear to my complaints —    
->  No more the whale did me confine.   
->    
->  “With speed he flew to my relief,   
->  As on a radiant dolphin borne;   
->  Awful, yet bright, as lightning shone   
->  The face of my Deliverer God.   
->    
->  “My song for ever shall record   
->  That terrible, that joyful hour;   
->  I give the glory to my God,   
->  His all the mercy and the power.”   
-
+> “The ribs and terrors in the whale,
+> Arched over me a dismal gloom,
+> While all God’s sun-lit waves rolled by,
+> And lift me deepening down to doom.
+>
+> “I saw the opening maw of hell,
+> With endless pains and sorrows there;
+> Which none but they that feel can tell —
+> Oh, I was plunging to despair.
+>
+> “In black distress, I called my God,
+> When I could scarce believe him mine,
+> He bowed his ear to my complaints —
+> No more the whale did me confine.
+>
+> “With speed he flew to my relief,
+> As on a radiant dolphin borne;
+> Awful, yet bright, as lightning shone
+> The face of my Deliverer God.
+>
+> “My song for ever shall record
+> That terrible, that joyful hour;
+> I give the glory to my God,
+> His all the mercy and the power.”
 
 Nearly all joined in singing this hymn, which swelled high above the howling of
 the storm. A brief pause ensued; the preacher slowly turned over the leaves of
@@ -58,7 +57,7 @@ the soul does Jonah’s deep sealine sound! what a pregnant lesson to us is this
 prophet! What a noble thing is that canticle in the fish’s belly! How
 billow-like and boisterously grand! We feel the floods surging over us; we
 sound with him to the kelpy bottom of the waters; sea-weed and all the slime of
-the sea is about us! But *what* is this lesson that the book of Jonah teaches?
+the sea is about us! But _what_ is this lesson that the book of Jonah teaches?
 Shipmates, it is a two-stranded lesson; a lesson to us all as sinful men, and a
 lesson to me as a pilot of the living God. As sinful men, it is a lesson to us
 all, because it is a story of the sin, hard-heartedness, suddenly awakened
@@ -83,7 +82,7 @@ days, when the Atlantic was an almost unknown sea. Because Joppa, the modern
 Jaffa, shipmates, is on the most easterly coast of the Mediterranean, the
 Syrian; and Tarshish or Cadiz more than two thousand miles to the westward from
 that, just outside the Straits of Gibraltar. See ye not then, shipmates, that
-Jonah sought to flee world-wide from God?  Miserable man! Oh! most contemptible
+Jonah sought to flee world-wide from God? Miserable man! Oh! most contemptible
 and worthy of all scorn; with slouched hat and guilty eye, skulking from his
 God; prowling among the shipping like a vile burglar hastening to cross the
 seas. So disordered, self-condemning is his look, that had there been policemen
@@ -93,7 +92,7 @@ hat-box, valise, or carpet-bag, — no friends accompany him to the wharf with
 their adieux. At last, after much dodging search, he finds the Tarshish ship
 receiving the last items of her cargo; and as he steps on board to see its
 Captain in the cabin, all the sailors for the moment desist from hoisting in
-the goods, to mark the stranger’s evil eye.  Jonah sees this; but in vain he
+the goods, to mark the stranger’s evil eye. Jonah sees this; but in vain he
 tries to look all ease and confidence; in vain essays his wretched smile.
 Strong intuitions of the man assure the mariners he can be no innocent. In
 their gamesome but still serious way, one whispers to the other — ‘Jack, he’s
@@ -112,7 +111,7 @@ pass, and he descends into the cabin.
 
 “‘Who’s there?’ cries the Captain at his busy desk, hurriedly making out his
 papers for the Customs — ‘Who’s there?’ Oh! how that harmless question mangles
-Jonah! For the instant he almost turns to flee again.  But he rallies. ‘I seek
+Jonah! For the instant he almost turns to flee again. But he rallies. ‘I seek
 a passage in this ship to Tarshish; how soon sail ye, sir?’ Thus far the busy
 Captain had not looked up to Jonah, though the man now stands before him; but
 no sooner does he hear that hollow voice, than he darts a scrutinizing glance.
@@ -128,7 +127,7 @@ of meaning.
 “Now Jonah’s Captain, shipmates, was one whose discernment detects crime in
 any, but whose cupidity exposes it only in the penniless. In this world,
 shipmates, sin that pays its way can travel freely, and without a passport;
-whereas Virtue, if a pauper, is stopped at all frontiers.  So Jonah’s Captain
+whereas Virtue, if a pauper, is stopped at all frontiers. So Jonah’s Captain
 prepares to test the length of Jonah’s purse, ere he judge him openly. He
 charges him thrice the usual sum; and it’s assented to. Then the Captain knows
 that Jonah is a fugitive; but at the same time resolves to help a flight that
@@ -186,7 +185,7 @@ his lethargy by that direful cry, Jonah staggers to his feet, and stumbling to
 the deck, grasps a shroud, to look out upon the sea. But at that moment he is
 sprung upon by a panther billow leaping over the bulwarks. Wave after wave thus
 leaps into the ship, and finding no speedy vent runs roaring fore and aft, till
-the mariners come nigh to drowning while yet afloat.  And ever, as the white
+the mariners come nigh to drowning while yet afloat. And ever, as the white
 moon shows her affrighted face from the steep gullies in the blackness
 overhead, aghast Jonah sees the rearing bowsprit pointing high upward, but soon
 beat downward again towards the tormented deep.
@@ -206,11 +205,11 @@ upon him.
 
 “‘I am a Hebrew,’ he cries — and then — ‘I fear the Lord the God of Heaven who
 hath made the sea and the dry land!’ Fear him, O Jonah? Aye, well mightest thou
-fear the Lord God *then*! Straightway, he now goes on to make a full
+fear the Lord God _then_! Straightway, he now goes on to make a full
 confession; whereupon the mariners became more and more appalled, but still are
 pitiful. For when Jonah, not yet supplicating God for mercy, since he but too
 well knew the darkness of his deserts, — when wretched Jonah cries out to them
-to take him and cast him forth into the sea, for he knew that for *his* sake
+to take him and cast him forth into the sea, for he knew that for _his_ sake
 this great tempest was upon them; they mercifully turn from him, and seek by
 other means to save the ship. But all in vain; the indignant gale howls louder;
 then, with one hand raised invokingly to God, with the other they not
@@ -236,7 +235,7 @@ repent of it like Jonah.”
 
 While he was speaking these words, the howling of the shrieking, slanting storm
 without seemed to add new power to the preacher, who, when describing Jonah’s
-sea-storm, seemed tossed by a storm himself.  His deep chest heaved as with a
+sea-storm, seemed tossed by a storm himself. His deep chest heaved as with a
 ground-swell; his tossed arms seemed the warring elements at work; and the
 thunders that rolled away from off his swarthy brow, and the light leaping from
 his eye, made all his simple hearers look on him with a quick fear that was
@@ -254,8 +253,8 @@ have read ye by what murky light may be mine the lesson that Jonah teaches to
 all sinners; and therefore to ye, and still more to me, for I am a greater
 sinner than ye. And now how gladly would I come down from this mast-head and
 sit on the hatches there where you sit, and listen as you listen, while some
-one of you reads *me* that other and more awful lesson which Jonah teaches to
-*me*, as a pilot of the living God.  How being an anointed pilot-prophet, or
+one of you reads _me_ that other and more awful lesson which Jonah teaches to
+_me_, as a pilot of the living God. How being an anointed pilot-prophet, or
 speaker of true things, and bidden by the Lord to sound those unwelcome truths
 in the ears of a wicked Nineveh, Jonah, appalled at the hostility he should
 raise, fled from his mission, and sought to escape his duty and his God by
@@ -307,6 +306,3 @@ is man that he should live out the lifetime of his God?”
 He said no more, but slowly waving a benediction, covered his face with his
 hands, and so remained kneeling, till all the people had departed, and he was
 left alone in the place.
-
-
-

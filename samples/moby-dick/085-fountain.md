@@ -1,7 +1,6 @@
-### Chapter 85. 
-The Fountain.
-=============
+### Chapter 85.
 
+# The Fountain.
 
 That for six thousand years — and no one knows how many millions of ages before
 — the great whales should have been spouting all over the sea, and sprinkling
@@ -10,7 +9,7 @@ mistifying pots; and that for some centuries back, thousands of hunters should
 have been close by the fountain of the whale, watching these sprinklings and
 spoutings — that all this should be, and yet, that down to this blessed minute
 (fifteen and a quarter minutes past one o’clock P.M. of this sixteenth day of
-December, A.D.  1851), it should still remain a problem, whether these
+December, A.D. 1851), it should still remain a problem, whether these
 spoutings are, after all, really water, or nothing but vapour — this is surely
 a noteworthy thing.
 
@@ -18,7 +17,7 @@ Let us, then, look at this matter, along with some interesting items
 contingent. Every one knows that by the peculiar cunning of their gills, the
 finny tribes in general breathe the air which at all times is combined with the
 element in which they swim; hence, a herring or a cod might live a century, and
-never once raise its head above the surface.  But owing to his marked internal
+never once raise its head above the surface. But owing to his marked internal
 structure which gives him regular lungs, like a human being’s, the whale can
 only live by inhaling the disengaged air in the open atmosphere. Wherefore the
 necessity for his periodical visits to the upper world. But he cannot in any
@@ -31,7 +30,7 @@ If I say, that in any creature breathing is only a function indispensable to
 vitality, inasmuch as it withdraws from the air a certain element, which being
 subsequently brought into contact with the blood imparts to the blood its
 vivifying principle, I do not think I shall err; though I may possibly use some
-superfluous scientific words.  Assume it, and it follows that if all the blood
+superfluous scientific words. Assume it, and it follows that if all the blood
 in a man could be aerated with one breath, he might then seal up his nostrils
 and not fetch another for a considerable time. That is to say, he would then
 live without breathing. Anomalous as it may seem, this is precisely the case
@@ -43,11 +42,11 @@ involved Cretan labyrinth of vermicelli-like vessels, which vessels, when he
 quits the surface, are completely distended with oxygenated blood. So that for
 an hour or more, a thousand fathoms in the sea, he carries a surplus stock of
 vitality in him, just as the camel crossing the waterless desert carries a
-surplus supply of drink for future use in its four supplementary stomachs.  The
+surplus supply of drink for future use in its four supplementary stomachs. The
 anatomical fact of this labyrinth is indisputable; and that the supposition
 founded upon it is reasonable and true, seems the more cogent to me, when I
-consider the otherwise inexplicable obstinacy of that leviathan in *having his
-spoutings out,* as the fishermen phrase it. This is what I mean. If unmolested,
+consider the otherwise inexplicable obstinacy of that leviathan in _having his
+spoutings out,_ as the fishermen phrase it. This is what I mean. If unmolested,
 upon rising to the surface, the Sperm Whale will continue there for a period of
 time exactly uniform with all his other unmolested risings. Say he stays eleven
 minutes, and jets seventy times, that is, respires seventy breaths; then
@@ -86,7 +85,7 @@ and as that long canal — like the grand Erie Canal — is furnished with a sor
 of locks (that open and shut) for the downward retention of air or the upward
 exclusion of water, therefore the whale has no voice; unless you insult him by
 saying, that when he so strangely rumbles, he talks through his nose. But then
-again, what has the whale to say?  Seldom have I known any profound being that
+again, what has the whale to say? Seldom have I known any profound being that
 had anything to say to this world, unless forced to stammer out something by
 way of getting a living. Oh! happy that the world is such an excellent
 listener!
@@ -108,7 +107,7 @@ time him with your watch, you will find that when unmolested, there is an
 undeviating rhyme between the periods of his jets and the ordinary periods of
 respiration.
 
-But why pester one with all this reasoning on the subject? Speak out!  You have
+But why pester one with all this reasoning on the subject? Speak out! You have
 seen him spout; then declare what the spout is; can you not tell water from
 air? My dear sir, in this world it is not so easy to settle these plain things.
 I have ever found your plain things the knottiest of all. And as for this whale
@@ -136,7 +135,7 @@ outer, vapoury shreds of the jet, which will often happen, your skin will
 feverishly smart, from the acridness of the thing so touching it. And I know
 one, who coming into still closer contact with the spout, whether with some
 scientific object in view, or otherwise, I cannot say, the skin peeled off from
-his cheek and arm.  Wherefore, among whalemen, the spout is deemed poisonous;
+his cheek and arm. Wherefore, among whalemen, the spout is deemed poisonous;
 they try to evade it. Another thing; I have heard it said, and I do not much
 doubt it, that if the jet is fairly spouted into your eyes, it will blind you.
 The wisest thing the investigator can do then, it seems to me, is to let this
@@ -162,7 +161,7 @@ And how nobly it raises our conceit of the mighty, misty monster, to behold him
 solemnly sailing through a calm tropical sea; his vast, mild head overhung by a
 canopy of vapour, engendered by his incommunicable contemplations, and that
 vapour — as you will sometimes see it — glorified by a rainbow, as if Heaven
-itself had put its seal upon his thoughts.  For, d’ye see, rainbows do not
+itself had put its seal upon his thoughts. For, d’ye see, rainbows do not
 visit the clear air; they only irradiate vapour. And so, through all the thick
 mists of the dim doubts in my mind, divine intuitions now and then shoot,
 enkindling my fog with a heavenly ray. And for this I thank God; for all have
@@ -170,6 +169,3 @@ doubts; many deny; but doubts or denials, few along with them, have intuitions.
 Doubts of all things earthly, and intuitions of some things heavenly; this
 combination makes neither believer nor infidel, but makes a man who regards
 them both with equal eye.
-
-
-

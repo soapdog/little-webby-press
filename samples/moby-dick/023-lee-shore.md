@@ -1,12 +1,11 @@
-### Chapter 23. 
-The Lee Shore.
-==============
+### Chapter 23.
 
+# The Lee Shore.
 
 Some chapters back, one Bulkington was spoken of, a tall, newlanded mariner,
 encountered in New Bedford at the inn.
 
-When on that shivering winter’s night, the *Pequod* thrust her vindictive bows
+When on that shivering winter’s night, the _Pequod_ thrust her vindictive bows
 into the cold malicious waves, who should I see standing at her helm but
 Bulkington! I looked with sympathetic awe and fearfulness upon the man, who in
 mid-winter just landed from a four years’ dangerous voyage, could so
@@ -31,8 +30,7 @@ of heaven and earth conspire to cast her on the treacherous, slavish shore?
 
 But as in landlessness alone resides highest truth, shoreless, indefinite as
 God — so, better is it to perish in that howling infinite, than be ingloriously
-dashed upon the lee, even if that were safety!  For worm-like, then, oh! who
+dashed upon the lee, even if that were safety! For worm-like, then, oh! who
 would craven crawl to land! Terrors of the terrible! is all this agony so vain?
 Take heart, take heart, O Bulkington! Bear thee grimly, demigod! Up from the
 spray of thy ocean-perishing — straight up, leaps thy apotheosis!
-

@@ -1,11 +1,10 @@
-### Chapter 19. 
-The Prophet.
-============
+### Chapter 19.
 
+# The Prophet.
 
 “Shipmates, have ye shipped in that ship?”
 
-Queequeg and I had just left the *Pequod,* and were sauntering away from the
+Queequeg and I had just left the _Pequod,_ and were sauntering away from the
 water, for the moment each occupied with his own thoughts, when the above words
 were put to us by a stranger, who, pausing before us, levelled his massive
 forefinger at the vessel in question. He was but shabbily apparelled in faded
@@ -16,10 +15,10 @@ dried up.
 
 “Have ye shipped in her?” he repeated.
 
-“You mean the ship *Pequod,* I suppose,” said I, trying to gain a little more
+“You mean the ship _Pequod,_ I suppose,” said I, trying to gain a little more
 time for an uninterrupted look at him.
 
-“Aye, the *Pequod* — that ship there,” he said, drawing back his whole arm, and
+“Aye, the _Pequod_ — that ship there,” he said, drawing back his whole arm, and
 then rapidly shoving it straight out from him, with the fixed bayonet of his
 pointed finger darted full at the object.
 
@@ -35,9 +34,9 @@ better off for it. A soul’s a sort of a fifth wheel to a wagon.”
 
 “What are you jabbering about, shipmate?” said I.
 
-*“He’s* got enough, though, to make up for all deficiencies of that sort in
+_“He’s_ got enough, though, to make up for all deficiencies of that sort in
 other chaps,” abruptly said the stranger, placing a nervous emphasis upon the
-word *He.*
+word _He._
 
 “Queequeg,” said I, “let’s go; this fellow has broken loose from somewhere;
 he’s talking about something and somebody we don’t know.”
@@ -50,7 +49,7 @@ manner.
 
 “Captain Ahab.”
 
-“What! the captain of our ship, the *Pequod?”*
+“What! the captain of our ship, the _Pequod?”_
 
 “Aye, among some of us old sailor chaps, he goes by that name. Ye hav’n’t seen
 him yet, have ye?”
@@ -64,7 +63,7 @@ mine will be all right; not before.”
 
 “What do you know about him?”
 
-“What did they *tell* you about him? Say that!”
+“What did they _tell_ you about him? Say that!”
 
 “They didn’t tell much of anything about him; only I’ve heard that he’s a good
 whale-hunter, and a good captain to his crew.”
@@ -85,13 +84,13 @@ leg; and that a parmacetti took the other off.”
 “My friend,” said I, “what all this gibberish of yours is about, I don’t know,
 and I don’t much care; for it seems to me that you must be a little damaged in
 the head. But if you are speaking of Captain Ahab, of that ship there, the
-*Pequod,* then let me tell you, that I know all about the loss of his leg.”
+_Pequod,_ then let me tell you, that I know all about the loss of his leg.”
 
 “ALL about it, eh — sure you do? — all?”
 
 “Pretty sure.”
 
-With finger pointed and eye levelled at the *Pequod,* the beggar-like stranger
+With finger pointed and eye levelled at the _Pequod,_ the beggar-like stranger
 stood a moment, as if in a troubled reverie; then starting a little, turned and
 said: — “Ye’ve shipped, have ye? Names down on the papers? Well, well, what’s
 signed, is signed; and what’s to be, will be; and then again, perhaps it won’t
@@ -130,7 +129,7 @@ same corner that we did. He did; and then it seemed to me that he was dogging
 us, but with what intent I could not for the life of me imagine. This
 circumstance, coupled with his ambiguous, half-hinting, half-revealing,
 shrouded sort of talk, now begat in me all kinds of vague wonderments and
-half-apprehensions, and all connected with the *Pequod;* and Captain Ahab; and
+half-apprehensions, and all connected with the _Pequod;_ and Captain Ahab; and
 the leg he had lost; and the Cape Horn fit; and the silver calabash; and what
 Captain Peleg had said of him, when I left the ship the day previous; and the
 prediction of the squaw Tistig; and the voyage we had bound ourselves to sail;
@@ -141,6 +140,3 @@ us or not, and with that intent crossed the way with Queequeg, and on that side
 of it retraced our steps. But Elijah passed on, without seeming to notice us.
 This relieved me; and once more, and finally as it seemed to me, I pronounced
 him in my heart, a humbug.
-
-
-

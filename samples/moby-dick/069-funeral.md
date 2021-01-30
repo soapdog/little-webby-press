@@ -1,13 +1,12 @@
-### Chapter 69. 
-The Funeral.
-============
+### Chapter 69.
 
+# The Funeral.
 
 Haul in the chains! Let the carcase go astern!
 
 The vast tackles have now done their duty. The peeled white body of the
 beheaded whale flashes like a marble sepulchre; though changed in hue, it has
-not perceptibly lost anything in bulk. It is still colossal.  Slowly it floats
+not perceptibly lost anything in bulk. It is still colossal. Slowly it floats
 more and more away, the water round it torn and splashed by the insatiate
 sharks, and the air above vexed with rapacious flights of screaming fowls,
 whose beaks are like so many insulting poniards in the whale. The vast white
@@ -19,7 +18,7 @@ fair face of the pleasant sea, wafted by the joyous breezes, that great mass of
 death floats on and on, till lost in infinite perspectives.
 
 There’s a most doleful and most mocking funeral! The sea-vultures all in pious
-mourning, the air-sharks all punctiliously in black or speckled.  In life but
+mourning, the air-sharks all punctiliously in black or speckled. In life but
 few of them would have helped the whale, I ween, if peradventure he had needed
 it; but upon the banquet of his funeral they most piously do pounce. Oh,
 horrible vultureism of earth! from which not the mightiest whale is free.
@@ -29,8 +28,8 @@ hovers over it to scare. Espied by some timid man-of-war or blundering
 discovery-vessel from afar, when the distance obscuring the swarming fowls,
 nevertheless still shows the white mass floating in the sun, and the white
 spray heaving high against it; straightway the whale’s unharming corpse, with
-trembling fingers is set down in the log — __shoals, rocks, and breakers
-hereabouts: beware!__ And for years afterwards, perhaps, ships shun the place;
+trembling fingers is set down in the log — **shoals, rocks, and breakers
+hereabouts: beware!** And for years afterwards, perhaps, ships shun the place;
 leaping over it as silly sheep leap over a vacuum, because their leader
 originally leaped there when a stick was held. There’s your law of precedents;
 there’s your utility of traditions; there’s the story of your obstinate
@@ -42,6 +41,3 @@ foes, in his death his ghost becomes a powerless panic to a world.
 
 Are you a believer in ghosts, my friend? There are other ghosts than the
 Cock-Lane one, and far deeper men than Doctor Johnson who believe in them.
-
-
-

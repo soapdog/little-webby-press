@@ -1,9 +1,8 @@
 ### Chapter 20.
-All Astir.
-==========
 
+# All Astir.
 
-A day or two passed, and there was great activity aboard the *Pequod.* Not only
+A day or two passed, and there was great activity aboard the _Pequod._ Not only
 were the old sails being mended, but new sails were coming on board, and bolts
 of canvas, and coils of rigging; in short, everything betokened that the ship’s
 preparations were hurrying to a close. Captain Peleg seldom or never went
@@ -18,7 +17,7 @@ Queequeg and I got down our traps, resolving, however, to sleep ashore till the
 last. But it seems they always give very long notice in these cases, and the
 ship did not sail for several days. But no wonder; there was a good deal to be
 done, and there is no telling how many things to be thought of, before the
-*Pequod* was fully equipped.
+_Pequod_ was fully equipped.
 
 Every one knows what a multitude of things — beds, sauce-pans, knives and
 forks, shovels and tongs, napkins, nut-crackers, and what not, are
@@ -36,15 +35,15 @@ and spare lines and harpoons, and spare everythings, almost, but a spare
 Captain and duplicate ship.
 
 At the period of our arrival at the Island, the heaviest storage of the
-*Pequod* had been almost completed; comprising her beef, bread, water, fuel,
+_Pequod_ had been almost completed; comprising her beef, bread, water, fuel,
 and iron hoops and staves. But, as before hinted, for some time there was a
 continual fetching and carrying on board of divers odds and ends of things,
 both large and small.
 
 Chief among those who did this fetching and carrying was Captain Bildad’s
 sister, a lean old lady of a most determined and indefatigable spirit, but
-withal very kindhearted, who seemed resolved that, if *she* could help it,
-nothing should be found wanting in the *Pequod,* after once fairly getting to
+withal very kindhearted, who seemed resolved that, if _she_ could help it,
+nothing should be found wanting in the _Pequod,_ after once fairly getting to
 sea. At one time she would come on board with a jar of pickles for the
 steward’s pantry; another time with a bunch of quills for the chief mate’s
 desk, where he kept his log; a third time with a roll of flannel for the small
@@ -80,6 +79,3 @@ think nothing.
 
 At last it was given out that some time next day the ship would certainly sail.
 So next morning, Queequeg and I took a very early start.
-
-
-

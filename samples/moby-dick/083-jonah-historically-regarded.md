@@ -1,7 +1,6 @@
-### Chapter 83. 
-Jonah Historically Regarded.
-============================
+### Chapter 83.
 
+# Jonah Historically Regarded.
 
 Reference was made to the historical story of Jonah and the whale in the
 preceding chapter. Now some Nantucketers rather distrust this historical story
@@ -17,7 +16,7 @@ curious, unscientific plates; one of which represented Jonah’s whale with two
 spouts in his head — a peculiarity only true with respect to a species of the
 Leviathan (the Right Whale, and the varieties of that order), concerning which
 the fishermen have this saying, “A penny roll would choke him"; his swallow is
-so very small.  But, to this, Bishop Jebb’s anticipative answer is ready. It is
+so very small. But, to this, Bishop Jebb’s anticipative answer is ready. It is
 not necessary, hints the Bishop, that we consider Jonah as tombed in the
 whale’s belly, but as temporarily lodged in some part of his mouth. And this
 seems reasonable enough in the good Bishop. For truly, the Right Whale’s mouth
@@ -29,13 +28,13 @@ Another reason which Sag-Harbor (he went by that name) urged for his want of
 faith in this matter of the prophet, was something obscurely in reference to
 his incarcerated body and the whale’s gastric juices. But this objection
 likewise falls to the ground, because a German exegetist supposes that Jonah
-must have taken refuge in the floating body of a __dead__ whale — even as the
+must have taken refuge in the floating body of a **dead** whale — even as the
 French soldiers in the Russian campaign turned their dead horses into tents,
 and crawled into them. Besides, it has been divined by other continental
 commentators, that when Jonah was thrown overboard from the Joppa ship, he
 straightway effected his escape to another vessel near by, some vessel with a
-whale for a figure-head; and, I would add, possibly called *“The Whale,”* as
-some craft are nowadays christened the *“Shark,”* the *“Gull,”* the *“Eagle.”*
+whale for a figure-head; and, I would add, possibly called _“The Whale,”_ as
+some craft are nowadays christened the _“Shark,”_ the _“Gull,”_ the _“Eagle.”_
 Nor have there been wanting learned exegetists who have opined that the whale
 mentioned in the book of Jonah merely meant a life-preserver — an inflated bag
 of wind — which the endangered prophet swam to, and so was saved from a watery
@@ -44,7 +43,7 @@ another reason for his want of faith. It was this, if I remember right: Jonah
 was swallowed by the whale in the Mediterranean Sea, and after three days he
 was vomited up somewhere within three days’ journey of Nineveh, a city on the
 Tigris, very much more than three days’ journey across from the nearest point
-of the Mediterranean coast.  How is that?
+of the Mediterranean coast. How is that?
 
 But was there no other way for the whale to land the prophet within that short
 distance of Nineveh? Yes. He might have carried him round by the way of the
@@ -68,6 +67,3 @@ Besides, to this day, the highly enlightened Turks devoutly believe in the
 historical story of Jonah. And some three centuries ago, an English traveller
 in old Harris’s Voyages, speaks of a Turkish Mosque built in honour of Jonah,
 in which Mosque was a miraculous lamp that burnt without any oil.
-
-
-

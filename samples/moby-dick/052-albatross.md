@@ -1,10 +1,9 @@
-### Chapter 52. 
-The Albatross.
-==============
+### Chapter 52.
 
+# The Albatross.
 
 South-eastward from the Cape, off the distant Crozetts, a good cruising ground
-for Right Whalemen, a sail loomed ahead, the *Goney* (Albatross) by name. As she
+for Right Whalemen, a sail loomed ahead, the _Goney_ (Albatross) by name. As she
 slowly drew nigh, from my lofty perch at the fore-mast-head, I had a good view
 of that sight so remarkable to a tyro in the far ocean fisheries — a whaler at
 sea, and long absent from home.
@@ -29,13 +28,13 @@ But as the strange captain, leaning over the pallid bulwarks, was in the act of
 putting his trumpet to his mouth, it somehow fell from his hand into the sea;
 and the wind now rising amain, he in vain strove to make himself heard without
 it. Meantime his ship was still increasing the distance between. While in
-various silent ways the seamen of the *Pequod* were evincing their observance
+various silent ways the seamen of the _Pequod_ were evincing their observance
 of this ominous incident at the first mere mention of the White Whale's name to
 another ship, Ahab for a moment paused; it almost seemed as though he would
 have lowered a boat to board the stranger, had not the threatening wind
 forbade. But taking advantage of his windward position, he again seized his
 trumpet, and knowing by her aspect that the stranger vessel was a Nantucketer
-and shortly bound home, he loudly hailed — “Ahoy there! This is the *Pequod,*
+and shortly bound home, he loudly hailed — “Ahoy there! This is the _Pequod,_
 bound round the world! Tell them to address all future letters to the Pacific
 ocean! and this time three years, if I am not at home, tell them to address
 them to — ”
@@ -48,7 +47,7 @@ flanks. Though in the course of his continual voyagings Ahab must often before
 have noticed a similar sight, yet, to any monomaniac man, the veriest trifles
 capriciously carry meanings.
 
-“Swim away from me, do ye?” murmured Ahab, gazing over into the water.  There
+“Swim away from me, do ye?” murmured Ahab, gazing over into the water. There
 seemed but little in the words, but the tone conveyed more of deep helpless
 sadness than the insane old man had ever before evinced. But turning to the
 steersman, who thus far had been holding the ship in the wind to diminish her
@@ -67,6 +66,3 @@ in pursuit of those far mysteries we dream of, or in tormented chase of that
 demon phantom that, some time or other, swims before all human hearts; while
 chasing such over this round globe, they either lead us on in barren mazes or
 midway leave us whelmed.
-
-
-

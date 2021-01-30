@@ -1,7 +1,6 @@
-### Chapter 7. 
-The Chapel.
-===========
+### Chapter 7.
 
+# The Chapel.
 
 In this same New Bedford there stands a Whaleman’s Chapel, and few are the
 moody fishermen, shortly bound for the Indian Ocean or Pacific, who fail to
@@ -18,29 +17,29 @@ grief were insular and incommunicable. The chaplain had not yet arrived; and
 there these silent islands of men and women sat steadfastly eyeing several
 marble tablets, with black borders, masoned into the wall on either side the
 pulpit. Three of them ran something like the following, but I do not pretend to
-quote: — 
+quote: —
 
-----
+---
 
-> __SACRED TO THE MEMORY OF JOHN TALBOT,__ Who, at the age of eighteen, was lost
-> overboard, Near the Isle of Desolation, off Patagonia, November 1st, 1836. __THIS
-> TABLET__ Is erected to his Memory __BY HIS SISTER.__
+> **SACRED TO THE MEMORY OF JOHN TALBOT,** Who, at the age of eighteen, was lost
+> overboard, Near the Isle of Desolation, off Patagonia, November 1st, 1836. **THIS
+> TABLET** Is erected to his Memory **BY HIS SISTER.**
 
-----
+---
 
-> __SACRED TO THE MEMORY OF ROBERT LONG, WILLIS ELLERY, NATHAN COLEMAN, WALTER
-> CANNY, SETH MACY, AND SAMUEL GLEIG,__ Forming one of the boats’ crews __OF THE
-> SHIP ELIZA__ Who were towed out of sight by a Whale, On the Off-shore Ground in
-> the __PACIFIC,__ December 31st, 1839. __THIS MARBLE__ Is here placed by their
-> surviving __SHIPMATES.__
+> **SACRED TO THE MEMORY OF ROBERT LONG, WILLIS ELLERY, NATHAN COLEMAN, WALTER
+> CANNY, SETH MACY, AND SAMUEL GLEIG,** Forming one of the boats’ crews **OF THE
+> SHIP ELIZA** Who were towed out of sight by a Whale, On the Off-shore Ground in
+> the **PACIFIC,** December 31st, 1839. **THIS MARBLE** Is here placed by their
+> surviving **SHIPMATES.**
 
-----
+---
 
-> __SACRED TO THE MEMORY OF__ The late __CAPTAIN EZEKIEL HARDY,__ Who in the bows of his
-> boat was killed by a Sperm Whale on the coast of Japan, __AUGUST 3d, 1833.__ __THIS
-> TABLET__ Is erected to his Memory __BY HIS WIDOW.__
+> **SACRED TO THE MEMORY OF** The late **CAPTAIN EZEKIEL HARDY,** Who in the bows of his
+> boat was killed by a Sperm Whale on the coast of Japan, **AUGUST 3d, 1833.** **THIS
+> TABLET** Is erected to his Memory **BY HIS WIDOW.**
 
-----
+---
 
 Shaking off the sleet from my ice-glazed hat and jacket, I seated myself near
 the door, and turning sideways was surprised to see Queequeg near me. Affected
@@ -56,7 +55,7 @@ were assembled those, in whose unhealing hearts the sight of those bleak
 tablets sympathetically caused the old wounds to bleed afresh.
 
 Oh! ye whose dead lie buried beneath the green grass; who standing among
-flowers can say — here, *here* lies my beloved; ye know not the desolation that
+flowers can say — here, _here_ lies my beloved; ye know not the desolation that
 broods in bosoms like these. What bitter blanks in those black-bordered marbles
 which cover no ashes! What despair in those immovable inscriptions! What deadly
 voids and unbidden infidelities in the lines that seem to gnaw upon all Faith,
@@ -87,13 +86,10 @@ Delightful inducements to embark, fine chance for promotion, it seems — aye, a
 stove boat will make me an immortal by brevet. Yes, there is death in this
 business of whaling — a speechlessly quick chaotic bundling of a man into
 Eternity. But what then? Methinks we have hugely mistaken this matter of Life
-and Death.  Methinks that what they call my shadow here on earth is my true
+and Death. Methinks that what they call my shadow here on earth is my true
 substance. Methinks that in looking at things spiritual, we are too much like
 oysters observing the sun through the water, and thinking that thick water the
 thinnest of air. Methinks my body is but the lees of my better being. In fact
 take my body who will, take it I say, it is not me. And therefore three cheers
 for Nantucket; and come a stove boat and stove body when they will, for stave
 my soul, Jove himself cannot.
-
-
-

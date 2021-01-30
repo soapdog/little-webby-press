@@ -1,12 +1,11 @@
-### Chapter 55. 
-Of the Monstrous Pictures of Whales.
-====================================
+### Chapter 55.
 
+# Of the Monstrous Pictures of Whales.
 
 I shall ere long paint to you as well as one can without canvas, something like
 the true form of the whale as he actually appears to the eye of the whaleman
 when in his own absolute body the whale is moored alongside the whale-ship so
-that he can be fairly stepped upon there.  It may be worth while, therefore,
+that he can be fairly stepped upon there. It may be worth while, therefore,
 previously to advert to those curious imaginary portraits of him which even
 down to the present day confidently challenge the faith of the landsman. It is
 time to set the world right in this matter, by proving such pictures of the
@@ -49,7 +48,7 @@ What shall be said of these? As for the book-binder’s whale winding like a
 vine-stalk round the stock of a descending anchor — as stamped and gilded on
 the backs and title-pages of many books both old and new — that is a very
 picturesque but purely fabulous creature, imitated, I take it, from the like
-figures on antique vases.  Though universally denominated a dolphin, I
+figures on antique vases. Though universally denominated a dolphin, I
 nevertheless call this book-binder’s fish an attempt at a whale; because it was
 so intended when the device was first introduced. It was introduced by an old
 Italian publisher somewhere about the 15th century, during the Revival of
@@ -78,7 +77,7 @@ Seas, for the purpose of extending the Spermaceti Whale Fisheries.”_ In this
 book is an outline purporting to be a “Picture of a Physeter or Spermaceti
 whale, drawn by scale from one killed on the coast of Mexico, August, 1793, and
 hoisted on deck.” I doubt not the captain had this veracious picture taken for
-the benefit of his marines.  To mention but one thing about it, let me say that
+the benefit of his marines. To mention but one thing about it, let me say that
 it has an eye which applied, according to the accompanying scale, to a full
 grown sperm whale, would make the eye of that whale a bow-window some five feet
 long. Ah, my gallant captain, why did ye not give us Jonah looking out of that
@@ -122,7 +121,7 @@ But these manifold mistakes in depicting the whale are not so very surprising
 after all. Consider! Most of the scientific drawings have been taken from the
 stranded fish; and these are about as correct as a drawing of a wrecked ship,
 with broken back, would correctly represent the noble animal itself in all its
-undashed pride of hull and spars.  Though elephants have stood for their
+undashed pride of hull and spars. Though elephants have stood for their
 full-lengths, the living Leviathan has never yet fairly floated himself for his
 portrait. The living whale, in his full majesty and significance, is only to be
 seen at sea in unfathomable waters; and afloat the vast bulk of him is out of
@@ -136,7 +135,7 @@ limbered, varying shape of him, that his precise expression the devil himself
 could not catch.
 
 But it may be fancied, that from the naked skeleton of the stranded whale,
-accurate hints may be derived touching his true form. Not at all.  For it is
+accurate hints may be derived touching his true form. Not at all. For it is
 one of the more curious things about this Leviathan, that his skeleton gives
 very little idea of his general shape. Though Jeremy Bentham’s skeleton, which
 hangs for candelabra in the library of one of his executors, correctly conveys
@@ -164,5 +163,3 @@ idea of his living contour, is by going a whaling yourself; but by so doing,
 you run no small risk of being eternally stove and sunk by him. Wherefore, it
 seems to me you had best not be too fastidious in your curiosity touching this
 Leviathan.
-
-

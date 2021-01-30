@@ -1,11 +1,10 @@
-### Chapter 36. 
-The Quarter-Deck.
-=================
+### Chapter 36.
 
+# The Quarter-Deck.
 
-*(Enter __AHAB:__ then, __ALL__)*
+_(Enter **AHAB:** then, **ALL**)_
 
-----
+---
 
 It was not a great while after the affair of the pipe, that one morning shortly
 after breakfast, Ahab, as was his wont, ascended the cabin-gangway to the deck.
@@ -48,7 +47,7 @@ standpoint; and as though not a soul were nigh him resumed his heavy turns upon
 the deck. With bent head and half-slouched hat he continued to pace, unmindful
 of the wondering whispering among the men; till Stubb cautiously whispered to
 Flask, that Ahab must have summoned them there for the purpose of witnessing a
-pedestrian feat. But this did not last long. Vehemently pausing, he cried: — 
+pedestrian feat. But this did not last long. Vehemently pausing, he cried: —
 
 “What do ye do when ye see a whale, men?”
 
@@ -72,7 +71,7 @@ at such seemingly purposeless questions.
 
 But, they were all eagerness again, as Ahab, now half-revolving in his
 pivot-hole, with one hand reaching high up a shroud, and tightly, almost
-convulsively grasping it, addressed them thus: — 
+convulsively grasping it, addressed them thus: —
 
 “All ye mast-headers have before now heard me give orders about a white whale.
 Look ye! d’ye see this Spanish ounce of gold?” — holding up a broad bright coin
@@ -142,7 +141,7 @@ out: “Aye, aye! and I’ll chase him round Good Hope, and round the Horn, and
 round the Norway Maelstrom, and round perdition’s flames before I give him up.
 And this is what ye have shipped for, men! to chase that white whale on both
 sides of land, and over all sides of earth, till he spouts black blood and
-rolls fin out.  What say ye, men, will ye splice hands on it, now? I think ye
+rolls fin out. What say ye, men, will ye splice hands on it, now? I think ye
 do look brave.”
 
 “Aye, aye!” shouted the harpooneers and seamen, running closer to the excited
@@ -162,7 +161,7 @@ Nantucket market.”
 lower layer. If money’s to be the measurer, man, and the accountants have
 computed their great counting-house the globe, by girdling it with guineas, one
 to every three parts of an inch; then, let me tell thee, that my vengeance will
-fetch a great premium *here!”*
+fetch a great premium _here!”_
 
 “He smites his chest,” whispered Stubb, “what’s that for? methinks it rings
 most vast, but hollow.”
@@ -192,14 +191,14 @@ indignity. I meant not to incense thee. Let it go. Look! see yonder Turkish
 cheeks of spotted tawn — living, breathing pictures painted by the sun. The
 Pagan leopards — the unrecking and unworshipping things, that live; and seek,
 and give no reasons for the torrid life they feel! The crew, man, the crew! Are
-they not one and all with Ahab, in this matter of the whale?  See Stubb! he
-laughs! See yonder Chilian! he snorts to think of it.  Stand up amid the
+they not one and all with Ahab, in this matter of the whale? See Stubb! he
+laughs! See yonder Chilian! he snorts to think of it. Stand up amid the
 general hurricane, thy one tost sapling cannot, Starbuck! And what is it?
 Reckon it. ’Tis but to help strike a fin; no wondrous feat for Starbuck. What
 is it more? From this one poor hunt, then, the best lance out of all Nantucket,
 surely he will not hang back, when every foremast-hand has clutched a
 whetstone? Ah! constrainings seize thee; I see! the billow lifts thee! Speak,
-but speak! — Aye, aye!  thy silence, then, *that* voices thee. *(Aside)*
+but speak! — Aye, aye! thy silence, then, _that_ voices thee. _(Aside)_
 Something shot from my dilated nostrils, he has inhaled it in his lungs.
 Starbuck now is mine; cannot oppose me now, without rebellion.”
 
@@ -240,7 +239,7 @@ mates, flank me with your lances; and ye harpooneers, stand there with your
 irons; and ye, stout mariners, ring me in, that I may in some sort revive a
 noble custom of my fisherman fathers before me. O men, you will yet see that —
 Ha! boy, come back? bad pennies come not sooner. Hand it me. Why, now, this
-pewter had run brimming again, were’t not thou St.  Vitus’ imp — away, thou
+pewter had run brimming again, were’t not thou St. Vitus’ imp — away, thou
 ague!
 
 “Advance, ye mates! Cross your lances full before me. Well done! Let me touch
@@ -254,13 +253,13 @@ and mystic aspect. Stubb and Flask looked sideways from him; the honest eye of
 Starbuck fell downright.
 
 “In vain!” cried Ahab; “but, maybe, ’tis well. For did ye three but once take
-the full-forced shock, then mine own electric thing, *that* had perhaps expired
+the full-forced shock, then mine own electric thing, _that_ had perhaps expired
 from out me. Perchance, too, it would have dropped ye dead. Perchance ye need
 it not. Down lances! And now, ye mates, I do appoint ye three cupbearers to my
 three pagan kinsmen there — yon three most honourable gentlemen and noblemen,
 my valiant harpooneers. Disdain the task? What, when the great Pope washes the
 feet of beggars, using his tiara for ewer? Oh, my sweet cardinals! your own
-condescension, *that* shall bend ye to it. I do not order ye; ye will it. Cut
+condescension, _that_ shall bend ye to it. I do not order ye; ye will it. Cut
 your seizings and draw the poles, ye harpooneers!”
 
 Silently obeying the order, the three harpooneers now stood with the detached
@@ -273,7 +272,7 @@ officer to the other, he brimmed the harpoon sockets with the fiery waters from
 the pewter.
 
 “Now, three to three, ye stand. Commend the murderous chalices! Bestow them, ye
-who are now made parties to this indissoluble league. Ha!  Starbuck! but the
+who are now made parties to this indissoluble league. Ha! Starbuck! but the
 deed is done! Yon ratifying sun now waits to sit upon it. Drink, ye
 harpooneers! drink and swear, ye men that man the deathful whaleboat’s bow —
 Death to Moby Dick! God hunt us all, if we do not hunt Moby Dick to his death!”
@@ -282,5 +281,3 @@ against the white whale, the spirits were simultaneously quaffed down with a
 hiss. Starbuck paled, and turned, and shivered. Once more, and finally, the
 replenished pewter went the rounds among the frantic crew; when, waving his
 free hand to them, they all dispersed; and Ahab retired within his cabin.
-
-

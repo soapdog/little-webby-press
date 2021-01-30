@@ -1,7 +1,6 @@
-### Chapter 70. 
-The Sphynx.
-===========
+### Chapter 70.
 
+# The Sphynx.
 
 It should not have been omitted that previous to completely stripping the body
 of the leviathan, he was beheaded. Now, the beheading of the Sperm Whale is a
@@ -29,12 +28,12 @@ bulk, and completely to suspend such a burden as that, even by the immense
 tackles of a whaler, this were as vain a thing as to attempt weighing a Dutch
 barn in jewellers’ scales.
 
-The *Pequod’s* whale being decapitated and the body stripped, the head was
+The _Pequod’s_ whale being decapitated and the body stripped, the head was
 hoisted against the ship’s side — about half way out of the sea, so that it
 might yet in great part be buoyed up by its native element. And there with the
 strained craft steeply leaning over to it, by reason of the enormous downward
 drag from the lower mast-head, and every yard-arm on that side projecting like
-a crane over the waves; there, that blood-dripping head hung to the *Pequod’s*
+a crane over the waves; there, that blood-dripping head hung to the _Pequod’s_
 waist like the giant Holofernes’s from the girdle of Judith.
 
 When this last task was accomplished it was noon, and the seamen went below to
@@ -72,15 +71,12 @@ infidel of Abraham, and not one syllable is thine!”
 “Sail ho!” cried a triumphant voice from the main-mast-head.
 
 “Aye? Well, now, that’s cheering,” cried Ahab, suddenly erecting himself, while
-whole thunder-clouds swept aside from his brow.  “That lively cry upon this
+whole thunder-clouds swept aside from his brow. “That lively cry upon this
 deadly calm might almost convert a better man. — Where away?”
 
 “Three points on the starboard bow, sir, and bringing down her breeze to us!
 
 “Better and better, man. Would now St. Paul would come along that way, and to
-my breezelessness bring his breeze! O Nature, and O soul of man!  how far
+my breezelessness bring his breeze! O Nature, and O soul of man! how far
 beyond all utterance are your linked analogies! not the smallest atom stirs or
 lives on matter, but has its cunning duplicate in mind.”
-
-
-

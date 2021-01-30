@@ -1,7 +1,6 @@
-### Chapter 46. 
-Surmises.
-=========
+### Chapter 46.
 
+# Surmises.
 
 Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and
 actions ever had in view the ultimate capture of Moby Dick; though he seemed
@@ -49,7 +48,7 @@ all things requisite that temporary interests and employments should intervene
 and hold them healthily suspended for the final dash.
 
 Nor was Ahab unmindful of another thing. In times of strong emotion mankind
-disdain all base considerations; but such times are evanescent.  The permanent
+disdain all base considerations; but such times are evanescent. The permanent
 constitutional condition of the manufactured man, thought Ahab, is sordidness.
 Granting that the White Whale fully incites the hearts of this my savage crew,
 and playing round their savageness even breeds a certain generous
@@ -88,6 +87,3 @@ known passionate interest in the general pursuit of his profession.
 Be all this as it may, his voice was now often heard hailing the three
 mast-heads and admonishing them to keep a bright look-out, and not omit
 reporting even a porpoise. This vigilance was not long without reward.
-
-
-

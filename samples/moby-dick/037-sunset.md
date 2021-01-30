@@ -1,17 +1,16 @@
-### Chapter 37. 
-Sunset.
-=======
+### Chapter 37.
 
+# Sunset.
 
-*[The cabin; by the stern windows; __AHAB__ sitting alone, and gazing out.]*
+_[The cabin; by the stern windows; __AHAB__ sitting alone, and gazing out.]_
 
-----
+---
 
 I leave a white and turbid wake; pale waters, paler cheeks, where’er I sail.
 The envious billows sidelong swell to whelm my track; let them; but first I
 pass.
 
-Yonder, by ever-brimming goblet’s rim, the warm waves blush like wine.  The
+Yonder, by ever-brimming goblet’s rim, the warm waves blush like wine. The
 gold brow plumbs the blue. The diver sun — slow dived from noon — goes down; my
 soul mounts up! she wearies with her endless hill. Is, then, the crown too
 heavy that I wear? this Iron Crown of Lombardy. Yet is it bright with many a
@@ -25,8 +24,8 @@ Dry heat upon my brow? Oh! time was, when as the sunrise nobly spurred me, so
 the sunset soothed. No more. This lovely light, it lights not me; all
 loveliness is anguish to me, since I can ne’er enjoy. Gifted with the high
 perception, I lack the low, enjoying power; damned, most subtly and most
-malignantly! damned in the midst of Paradise! Good night — good night! *[Waving
-his hand, he moves from the window.]*
+malignantly! damned in the midst of Paradise! Good night — good night! _[Waving
+his hand, he moves from the window.]_
 
 ’Twas not so hard a task. I thought to find one stubborn, at the least; but my
 one cogged circle fits into all their various wheels, and they revolve. Or, if
@@ -38,9 +37,9 @@ wild madness that’s only calm to comprehend itself! The prophecy was that I
 should be dismembered; and — Aye! I lost this leg. I now prophesy that I will
 dismember my dismemberer. Now, then, be the prophet and the fulfiller one.
 That’s more than ye, ye great gods, ever were. I laugh and hoot at ye, ye
-cricket-players, ye pugilists, ye deaf Burkes and blinded Bendigoes!  I will
+cricket-players, ye pugilists, ye deaf Burkes and blinded Bendigoes! I will
 not say as schoolboys do to bullies — Take some one of your own size; don’t
-pommel *me!* No, ye’ve knocked me down, and I am up again; but *ye* have run
+pommel _me!_ No, ye’ve knocked me down, and I am up again; but _ye_ have run
 and hidden. Come forth from behind your cotton bags! I have no long gun to
 reach ye. Come, Ahab’s compliments to ye; come and see if ye can swerve me.
 Swerve me? ye cannot swerve me, else ye swerve yourselves! man has ye there.
@@ -48,5 +47,3 @@ Swerve me? The path to my fixed purpose is laid with iron rails, whereon my
 soul is grooved to run. Over unsounded gorges, through the rifled hearts of
 mountains, under torrents’ beds, unerringly I rush! Naught’s an obstacle,
 naught’s an angle to the iron way!
-
-

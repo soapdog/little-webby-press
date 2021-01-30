@@ -1,7 +1,6 @@
-### Chapter 28. 
-Ahab.
-=====
+### Chapter 28.
 
+# Ahab.
 
 For several days after leaving Nantucket, nothing above hatches was seen of
 Captain Ahab. The mates regularly relieved each other at the watches, and for
@@ -40,7 +39,7 @@ those less lowering, but still grey and gloomy enough mornings of the
 transition, when with a fair wind the ship was rushing through the water with a
 vindictive sort of leaping and melancholy rapidity, that as I mounted to the
 deck at the call of the forenoon watch, so soon as I levelled my glance towards
-the taffrail, foreboding shivers ran over me.  Reality outran apprehension;
+the taffrail, foreboding shivers ran over me. Reality outran apprehension;
 Captain Ahab stood upon his quarter-deck.
 
 There seemed no sign of common bodily illness about him, nor of the recovery
@@ -56,7 +55,7 @@ tree, when the upper lightning tearingly darts down it, and without wrenching a
 single twig, peels and grooves out the bark from top to bottom, ere running off
 into the soil, leaving the tree still greenly alive, but branded. Whether that
 mark was born with him, or whether it was the scar left by some desperate
-wound, no one could certainly say.  By some tacit consent, throughout the
+wound, no one could certainly say. By some tacit consent, throughout the
 voyage little or no allusion was made to it, especially by the mates. But once
 Tashtego’s senior, an old Gay-Head Indian among the crew, superstitiously
 asserted that not till he was full forty years old did Ahab become that way
@@ -81,8 +80,8 @@ dismasted craft, he shipped another mast without coming home for it. He has a
 quiver of ’em.”
 
 I was struck with the singular posture he maintained. Upon each side of the
-*Pequod’s* quarter deck, and pretty close to the mizzen shrouds, there was an
-auger hole, bored about half an inch or so, into the plank.  His bone leg
+_Pequod’s_ quarter deck, and pretty close to the mizzen shrouds, there was an
+auger hole, bored about half an inch or so, into the plank. His bone leg
 steadied in that hole; one arm elevated, and holding by a shroud; Captain Ahab
 stood erect, looking straight out beyond the ship’s ever-pitching prow. There
 was an infinity of firmest fortitude, a determinate, unsurrenderable
@@ -93,7 +92,7 @@ painful, consciousness of being under a troubled master-eye. And not only that,
 but moody stricken Ahab stood before them with a crucifixion in his face; in
 all the nameless regal overbearing dignity of some mighty woe.
 
-Ere long, from his first visit in the air, he withdrew into his cabin.  But
+Ere long, from his first visit in the air, he withdrew into his cabin. But
 after that morning, he was every day visible to the crew; either standing in
 his pivot-hole, or seated upon an ivory stool he had; or heavily walking the
 deck. As the sky grew less gloomy; indeed, began to grow a little genial, he
@@ -101,7 +100,7 @@ became still less and less a recluse; as if, when the ship had sailed from
 home, nothing but the dead wintry bleakness of the sea had then kept him so
 secluded. And, by and by, it came to pass, that he was almost continually in
 the air; but, as yet, for all that he said, or perceptibly did, on the at last
-sunny deck, he seemed as unnecessary there as another mast. But the *Pequod*
+sunny deck, he seemed as unnecessary there as another mast. But the _Pequod_
 was only making a passage now; not regularly cruising; nearly all whaling
 preparatives needing supervision the mates were fully competent to, so that
 there was little or nothing, out of himself, to employ or excite Ahab, now; and
@@ -117,6 +116,3 @@ will at least send forth some few green sprouts, to welcome such glad-hearted
 visitants; so Ahab did, in the end, a little respond to the playful allurings
 of that girlish air. More than once did he put forth the faint blossom of a
 look, which, in any other man, would have soon flowered out in a smile.
-
-
-

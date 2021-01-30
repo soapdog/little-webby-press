@@ -1,6 +1,6 @@
-### Chapter 2. 
-The Carpet-Bag.
-===============
+### Chapter 2.
+
+# The Carpet-Bag.
 
 I stuffed a shirt or two into my old carpet-bag, tucked it under my arm, and
 started for Cape Horn and the Pacific. Quitting the good city of old Manhatto, I
@@ -119,6 +119,3 @@ the tepid tears of orphans.
 But no more of this blubbering now, we are going a-whaling, and there is plenty
 of that yet to come. Let us scrape the ice from our frosted feet, and see what
 sort of a place this “Spouter” may be.
-
-
-

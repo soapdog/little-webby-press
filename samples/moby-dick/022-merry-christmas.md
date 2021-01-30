@@ -1,17 +1,16 @@
-### Chapter 22. 
-Merry Christmas.
-================
+### Chapter 22.
 
+# Merry Christmas.
 
 At length, towards noon, upon the final dismissal of the ship’s riggers, and
-after the *Pequod* had been hauled out from the wharf, and after the
+after the _Pequod_ had been hauled out from the wharf, and after the
 ever-thoughtful Charity had come off in a whale-boat, with her last gift — a
 night-cap for Stubb, the second mate, her brother-in-law, and a spare Bible for
 the steward — after all this, the two Captains, Peleg and Bildad, issued from
 the cabin, and turning to the chief mate, Peleg said:
 
 “Now, Mr. Starbuck, are you sure everything is right? Captain Ahab is all ready
-— just spoke to him — nothing more to be got from shore, eh?  Well, call all
+— just spoke to him — nothing more to be got from shore, eh? Well, call all
 hands, then. Muster ’em aft here — blast ’em!”
 
 “No need of profane words, however great the hurry, Peleg,” said Bildad, “but
@@ -39,7 +38,7 @@ Bildad.
 main-mast. “Mr. Starbuck, drive’em aft.”
 
 “Strike the tent there!” — was the next order. As I hinted before, this
-whalebone marquee was never pitched except in port; and on board the *Pequod,*
+whalebone marquee was never pitched except in port; and on board the _Pequod,_
 for thirty years, the order to strike the tent was well known to be the next
 thing to heaving up the anchor.
 
@@ -56,7 +55,7 @@ bows for the approaching anchor, and at intervals singing what seemed a dismal
 stave of psalmody, to cheer the hands at the windlass, who roared forth some
 sort of a chorus about the girls in Booble Alley, with hearty good will.
 Nevertheless, not three days previous, Bildad had told them that no profane
-songs would be allowed on board the *Pequod,* particularly in getting under
+songs would be allowed on board the _Pequod,_ particularly in getting under
 weigh; and Charity, his sister, had placed a small choice copy of Watts in each
 seaman’s berth.
 
@@ -71,7 +70,7 @@ my rear, and turning round, was horrified at the apparition of Captain Peleg in
 the act of withdrawing his leg from my immediate vicinity. That was my first
 kick.
 
-“Is that the way they heave in the marchant service?” he roared.  “Spring, thou
+“Is that the way they heave in the marchant service?” he roared. “Spring, thou
 sheep-head; spring, and break thy backbone! Why don’t ye spring, I say, all of
 ye — spring! Quohog! spring, thou chap with the red whiskers; spring there,
 Scotch-cap; spring, thou green pants. Spring, I say, all of ye, and spring your
@@ -88,9 +87,9 @@ elephant, vast curving icicles depended from the bows.
 
 Lank Bildad, as pilot, headed the first watch, and ever and anon, as the old
 craft deep dived into the green seas, and sent the shivering frost all over
-her, and the winds howled, and the cordage rang, his steady notes were heard, — 
+her, and the winds howled, and the cordage rang, his steady notes were heard, —
 
-> “Sweet fields beyond the swelling flood, Stand dressed in living green.  So
+> “Sweet fields beyond the swelling flood, Stand dressed in living green. So
 > to the Jews old Canaan stood, While Jordan rolled between.”
 
 Never did those sweet words sound more sweetly to me than then. They were full
@@ -126,7 +125,7 @@ and now a word with Starbuck, the chief mate.
 
 But, at last, he turned to his comrade, with a final sort of look about him, —
 “Captain Bildad — come, old shipmate, we must go. Back the main-yard there!
-Boat ahoy! Stand by to come close alongside, now!  Careful, careful! — come,
+Boat ahoy! Stand by to come close alongside, now! Careful, careful! — come,
 Bildad, boy — say your last. Luck to ye, Starbuck — luck to ye, Mr. Stubb —
 luck to ye, Mr. Flask — good-bye and good luck to ye all — and this day three
 years I’ll have a hot supper smoking for ye in old Nantucket. Hurrah and away!”
@@ -134,14 +133,14 @@ years I’ll have a hot supper smoking for ye in old Nantucket. Hurrah and away!
 “God bless ye, and have ye in His holy keeping, men,” murmured old Bildad,
 almost incoherently. “I hope ye’ll have fine weather now, so that Captain Ahab
 may soon be moving among ye — a pleasant sun is all he needs, and ye’ll have
-plenty of them in the tropic voyage ye go.  Be careful in the hunt, ye mates.
+plenty of them in the tropic voyage ye go. Be careful in the hunt, ye mates.
 Don’t stave the boats needlessly, ye harpooneers; good white cedar plank is
-raised full three per cent.  within the year. Don’t forget your prayers,
+raised full three per cent. within the year. Don’t forget your prayers,
 either. Mr. Starbuck, mind that cooper don’t waste the spare staves. Oh! the
 sail-needles are in the green locker! Don’t whale it too much a’ Lord’s days,
 men; but don’t miss a fair chance either, that’s rejecting Heaven’s good gifts.
 Have an eye to the molasses tierce, Mr. Stubb; it was a little leaky, I
-thought.  If ye touch at the islands, Mr. Flask, beware of fornication.
+thought. If ye touch at the islands, Mr. Flask, beware of fornication.
 Good-bye, good-bye! Don’t keep that cheese too long down in the hold, Mr.
 Starbuck; it’ll spoil. Be careful with the butter — twenty cents the pound it
 was, and mind ye, if — ”
@@ -152,6 +151,3 @@ hurried him over the side, and both dropt into the boat.
 Ship and boat diverged; the cold, damp night breeze blew between; a screaming
 gull flew overhead; the two hulls wildly rolled; we gave three heavy-hearted
 cheers, and blindly plunged like fate into the lone Atlantic.
-
-
-

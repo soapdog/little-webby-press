@@ -1,6 +1,6 @@
-### Chapter 16. 
-The Ship.
-=========
+### Chapter 16.
+
+# The Ship.
 
 In bed we concocted our plans for the morrow. But to my surprise and no small
 concern, Queequeg now gave me to understand, that he had been diligently
@@ -36,18 +36,18 @@ Articles — leaving Queequeg, then, fasting on his tomahawk pipe, and Yojo
 warming himself at his sacrificial fire of shavings, I sallied out among
 the shipping. After much prolonged sauntering and many random inquiries,
 I learnt that there were three ships up for three-years’ voyages — The
-*Devil-dam,* the *Tit-bit,* and the *Pequod*. __*Devil-dam*,__ I do not know the
-origin of; __*Tit-bit*__ is obvious; __*Pequod,*__ you will no doubt remember, was
+_Devil-dam,_ the _Tit-bit,_ and the _Pequod_. **_Devil-dam_,** I do not know the
+origin of; **_Tit-bit_** is obvious; **_Pequod,_** you will no doubt remember, was
 the name of a celebrated tribe of Massachusetts Indians; now extinct
 as the ancient Medes. I peered and pryed about the Devil-dam; from her,
-hopped over to the Tit-bit; and finally, going on board the *Pequod*,
+hopped over to the Tit-bit; and finally, going on board the _Pequod_,
 looked around her for a moment, and then decided that this was the very
 ship for us.
 
 You may have seen many a quaint craft in your day, for aught I know; —
 square-toed luggers; mountainous Japanese junks; butter-box galliots, and what
 not; but take my word for it, you never saw such a rare old craft as this same
-rare old *Pequod*. She was a ship of the old school, rather small if anything;
+rare old _Pequod_. She was a ship of the old school, rather small if anything;
 with an old-fashioned claw-footed look about her. Long seasoned and
 weather-stained in the typhoons and calms of all four oceans, her old hull’s
 complexion was darkened like a French grenadier’s, who has alike fought in
@@ -57,9 +57,9 @@ her masts stood stiffly up like the spines of the three old kings of Cologne.
 Her ancient decks were worn and wrinkled, like the pilgrim-worshipped
 flag-stone in Canterbury Cathedral where Becket bled. But to all these her old
 antiquities, were added new and marvellous features, pertaining to the wild
-business that for more than half a century she had followed.  Old Captain
+business that for more than half a century she had followed. Old Captain
 Peleg, many years her chief-mate, before he commanded another vessel of his
-own, and now a retired seaman, and one of the principal owners of the *Pequod*, —
+own, and now a retired seaman, and one of the principal owners of the _Pequod_, —
 this old Peleg, during the term of his chief-mateship, had built upon her
 original grotesqueness, and inlaid it, all over, with a quaintness both of
 material and device, unmatched by anything except it be Thorkill-Hake’s carved
@@ -82,7 +82,7 @@ but I could not well overlook a strange sort of tent, or rather wigwam, pitched
 a little behind the main-mast. It seemed only a temporary erection used in
 port. It was of a conical shape, some ten feet high; consisting of the long,
 huge slabs of limber black bone taken from the middle and highest part of the
-jaws of the right-whale.  Planted with their broad ends on the deck, a circle
+jaws of the right-whale. Planted with their broad ends on the deck, a circle
 of these slabs laced together, mutually sloped towards each other, and at the
 apex united in a tufted point, where the loose hairy fibres waved to and fro
 like the top-knot on some old Pottowottamie Sachem’s head. A triangular opening
@@ -104,9 +104,9 @@ eyes, which must have arisen from his continual sailings in many hard gales,
 and always looking to windward; — for this causes the muscles about the eyes to
 become pursed together. Such eye-wrinkles are very effectual in a scowl.
 
-“Is this the Captain of the *Pequod*?” said I, advancing to the door of the tent.
+“Is this the Captain of the _Pequod_?” said I, advancing to the door of the tent.
 
-“Supposing it be the captain of the *Pequod*, what dost thou want of him?” he
+“Supposing it be the captain of the _Pequod_, what dost thou want of him?” he
 demanded.
 
 “I was thinking of shipping.”
@@ -124,7 +124,7 @@ voyages in the merchant service, and I think that — ”
 “Merchant service be damned. Talk not that lingo to me. Dost see that leg? —
 I’ll take that leg away from thy stern, if ever thou talkest of the marchant
 service to me again. Marchant service indeed! I suppose now ye feel
-considerable proud of having served in those marchant ships.  But flukes! man,
+considerable proud of having served in those marchant ships. But flukes! man,
 what makes thee want to go a whaling, eh? — it looks a little suspicious, don’t
 it, eh? — Hast not been a pirate, hast thou? — Didst not rob thy last Captain,
 didst thou? — Dost not think of murdering the officers when thou gettest to
@@ -149,7 +149,7 @@ ye.”
 “I am mistaken then. I thought I was speaking to the Captain himself.”
 
 “Thou art speaking to Captain Peleg — that’s who ye are speaking to, young man.
-It belongs to me and Captain Bildad to see the *Pequod* fitted out for the
+It belongs to me and Captain Bildad to see the _Pequod_ fitted out for the
 voyage, and supplied with all her needs, including crew. We are part owners and
 agents. But as I was going to say, if thou wantest to know what whaling is, as
 thou tellest ye do, I can put ye in a way of finding it out before ye bind
@@ -168,7 +168,7 @@ peculiar ferocity in that particular whale, though indeed I might have inferred
 as much from the simple fact of the accident.”
 
 “Look ye now, young man, thy lungs are a sort of soft, d’ye see; thou dost not
-talk shark a bit. *sure,* ye’ve been to sea before now; sure of that?”
+talk shark a bit. _sure,_ ye’ve been to sea before now; sure of that?”
 
 “Sir,” said I, “I thought I told you that I had been four voyages in the
 merchant — ”
@@ -208,7 +208,7 @@ there’s a squall coming up, I think.”
 “Well, what does thou think then of seeing the world? Do ye wish to go round
 Cape Horn to see any more of it, eh? Can’t ye see the world where you stand?”
 
-I was a little staggered, but go a-whaling I must, and I would; and the *Pequod*
+I was a little staggered, but go a-whaling I must, and I would; and the _Pequod_
 was as good a ship as any — I thought the best — and all this I now repeated to
 Peleg. Seeing me so determined, he expressed his willingness to ship me.
 
@@ -255,7 +255,7 @@ to do with such an one, but with quite another; and still a man, who, if indeed
 peculiar, it only results again from another phase of the Quaker, modified by
 individual circumstances.
 
-Like Captain Peleg, Captain Bildad was a well-to-do, retired whaleman.  But
+Like Captain Peleg, Captain Bildad was a well-to-do, retired whaleman. But
 unlike Captain Peleg — who cared not a rush for what are called serious things,
 and indeed deemed those self-same serious things the veriest of all trifles —
 Captain Bildad had not only been originally educated according to the strictest
@@ -335,7 +335,7 @@ lay would not be very large; but considering that I was used to the sea, could
 steer a ship, splice a rope, and all that, I made no doubt that from all I had
 heard I should be offered at least the 275th lay — that is, the 275th part of
 the clear net proceeds of the voyage, whatever that might eventually amount to.
-And though the 275th lay was what they call a rather *long lay,* yet it was
+And though the 275th lay was what they call a rather _long lay,_ yet it was
 better than nothing; and if we had a lucky voyage, might pretty nearly pay for
 the clothing I would wear out on it, not to speak of my three years’ beef and
 board, for which I would not have to pay one stiver.
@@ -351,15 +351,15 @@ of a broad-shouldered make.
 But one thing, nevertheless, that made me a little distrustful about receiving
 a generous share of the profits was this: Ashore, I had heard something of both
 Captain Peleg and his unaccountable old crony Bildad; how that they being the
-principal proprietors of the *Pequod*, therefore the other and more
+principal proprietors of the _Pequod_, therefore the other and more
 inconsiderable and scattered owners, left nearly the whole management of the
 ship’s affairs to these two. And I did not know but what the stingy old Bildad
 might have a mighty deal to say about shipping hands, especially as I now found
-him on board the *Pequod*, quite at home there in the cabin, and reading his
+him on board the _Pequod_, quite at home there in the cabin, and reading his
 Bible as if at his own fireside. Now while Peleg was vainly trying to mend a
 pen with his jack-knife, old Bildad, to my no small surprise, considering that
 he was such an interested party in these proceedings; Bildad never heeded us,
-but went on mumbling to himself out of his book, “*lay* not up for yourselves
+but went on mumbling to himself out of his book, “_lay_ not up for yourselves
 treasures upon earth, where moth — ”
 
 “Well, Captain Bildad,” interrupted Peleg, “what d’ye say, what lay shall we
@@ -367,15 +367,15 @@ give this young man?”
 
 “Thou knowest best,” was the sepulchral reply, “the seven hundred and
 seventy-seventh wouldn’t be too much, would it? — ‘where moth and rust do
-corrupt, but *lay* — ’”
+corrupt, but _lay_ — ’”
 
-*Lay*, indeed, thought I, and such a lay! the seven hundred and
+_Lay_, indeed, thought I, and such a lay! the seven hundred and
 seventy-seventh! Well, old Bildad, you are determined that I, for one, shall
-not *lay* up many *lays* here below, where moth and rust do corrupt.  It was an
-exceedingly *long lay* that, indeed; and though from the magnitude of the
+not _lay_ up many _lays_ here below, where moth and rust do corrupt. It was an
+exceedingly _long lay_ that, indeed; and though from the magnitude of the
 figure it might at first deceive a landsman, yet the slightest consideration
 will show that though seven hundred and seventy-seven is a pretty large number,
-yet, when you come to make a *teenth* of it, you will then see, I say, that the
+yet, when you come to make a _teenth_ of it, you will then see, I say, that the
 seven hundred and seventy-seventh part of a farthing is a good deal less than
 seven hundred and seventy-seven gold doubloons; and so I thought at the time.
 
@@ -448,7 +448,7 @@ any?” turning to me.
 “Well, bring him along then.”
 
 And, after signing the papers, off I went; nothing doubting but that I had done
-a good morning’s work, and that the *Pequod* was the identical ship that Yojo had
+a good morning’s work, and that the _Pequod_ was the identical ship that Yojo had
 provided to carry Queequeg and me round the Cape.
 
 But I had not proceeded far, when I began to bethink me that the Captain with
@@ -477,17 +477,17 @@ well enough; no fear, no fear. He’s a grand, ungodly, god-like man, Captain
 Ahab; doesn’t speak much; but, when he does speak, then you may well listen.
 Mark ye, be forewarned; Ahab’s above the common; Ahab’s been in colleges, as
 well as ’mong the cannibals; been used to deeper wonders than the waves; fixed
-his fiery lance in mightier, stranger foes than whales. His lance!  aye, the
+his fiery lance in mightier, stranger foes than whales. His lance! aye, the
 keenest and the surest that out of all our isle! Oh! he ain’t Captain Bildad;
-no, and he ain’t Captain Peleg; *he’s Ahab,* boy; and Ahab of old, thou knowest,
+no, and he ain’t Captain Peleg; _he’s Ahab,_ boy; and Ahab of old, thou knowest,
 was a crowned king!”
 
 “And a very vile one. When that wicked king was slain, the dogs, did they not
 lick his blood?”
 
 “Come hither to me — hither, hither,” said Peleg, with a significance in his
-eye that almost startled me. “Look ye, lad; never say that on board the *Pequod*.
-Never say it anywhere. Captain Ahab did not name himself.  ’Twas a foolish,
+eye that almost startled me. “Look ye, lad; never say that on board the _Pequod_.
+Never say it anywhere. Captain Ahab did not name himself. ’Twas a foolish,
 ignorant whim of his crazy, widowed mother, who died when he was only a
 twelvemonth old. And yet the old squaw Tistig, at Gayhead, said that the name
 would somehow prove prophetic. And, perhaps, other fools like her may tell thee
@@ -518,6 +518,3 @@ felt it; and it did not disincline me towards him; though I felt impatience at
 what seemed like mystery in him, so imperfectly as he was known to me then.
 However, my thoughts were at length carried in other directions, so that for
 the present dark Ahab slipped my mind.
-
-
-

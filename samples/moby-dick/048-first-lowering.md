@@ -1,7 +1,6 @@
-### Chapter 48. 
-The First Lowering.
-===================
+### Chapter 48.
 
+# The First Lowering.
 
 The phantoms, for so they then seemed, were flitting on the other side of the
 deck, and, with a noiseless celerity, were casting loose the tackles and bands
@@ -47,12 +46,12 @@ and his crew, the inmates of the other boats obeyed not the command.
 out more to leeward!”
 
 “Aye, aye, sir,” cheerily cried little King-Post, sweeping round his great
-steering oar. “Lay back!” addressing his crew.  “There! — there! — there again!
+steering oar. “Lay back!” addressing his crew. “There! — there! — there again!
 There she blows right ahead, boys! — lay back!”
 
 “Never heed yonder yellow boys, Archy.”
 
-“Oh, I don’t mind’em, sir,” said Archy; “I knew it all before now.  Didn’t I
+“Oh, I don’t mind’em, sir,” said Archy; “I knew it all before now. Didn’t I
 hear ’em in the hold? And didn’t I tell Cabaco here of it? What say ye, Cabaco?
 They are stowaways, Mr. Flask.”
 
@@ -70,10 +69,10 @@ so, so, then: — softly, softly! That’s it — that’s it! long and strong. 
 way there, give way! The devil fetch ye, ye ragamuffin rapscallions; ye are all
 asleep. Stop snoring, ye sleepers, and pull. Pull, will ye? pull, can’t ye?
 pull, won’t ye? Why in the name of gudgeons and ginger-cakes don’t ye pull? —
-pull and break something! pull, and start your eyes out!  Here!” whipping out
+pull and break something! pull, and start your eyes out! Here!” whipping out
 the sharp knife from his girdle; “every mother’s son of ye draw his knife, and
 pull with the blade between his teeth. That’s it — that’s it. Now ye do
-something; that looks like it, my steel-bits.  Start her — start her, my
+something; that looks like it, my steel-bits. Start her — start her, my
 silver-spoons! Start her, marling-spikes!”
 
 Stubb’s exordium to his crew is given here at large, because he had rather a
@@ -87,7 +86,7 @@ could hear such queer invocations without pulling for dear life, and yet
 pulling for the mere joke of the thing. Besides he all the time looked so easy
 and indolent himself, so loungingly managed his steering-oar, and so broadly
 gaped — open-mouthed at times — that the mere sight of such a yawning
-commander, by sheer force of contrast, acted like a charm upon the crew.  Then
+commander, by sheer force of contrast, acted like a charm upon the crew. Then
 again, Stubb was one of those odd sort of humorists, whose jollity is sometimes
 so curiously ambiguous, as to put all inferiors on their guard in the matter of
 obeying them.
@@ -108,7 +107,7 @@ Stubb’s.
 in a whisper to his crew, then speaking out loud again: “A sad business, Mr.
 Stubb! (seethe her, seethe her, my lads!) but never mind, Mr. Stubb, all for
 the best. Let all your crew pull strong, come what will. (Spring, my men,
-spring!) There’s hogsheads of sperm ahead, Mr.  Stubb, and that’s what ye came
+spring!) There’s hogsheads of sperm ahead, Mr. Stubb, and that’s what ye came
 for. (Pull, my boys!) Sperm, sperm’s the play! This at least is duty; duty and
 profit hand in hand.”
 
@@ -116,7 +115,7 @@ profit hand in hand.”
 soon as I clapt eye on ’em, I thought so. Aye, and that’s what he went into the
 after hold for, so often, as Dough-Boy long suspected. They were hidden down
 there. The White Whale’s at the bottom of it. Well, well, so be it! Can’t be
-helped! All right! Give way, men!  It ain’t the White Whale to-day! Give way!”
+helped! All right! Give way, men! It ain’t the White Whale to-day! Give way!”
 
 Now the advent of these outlandish strangers at such a critical instant as the
 lowering of the boats from the deck, this had not unreasonably awakened a sort
@@ -128,7 +127,7 @@ Stubb’s confident way of accounting for their appearance, they were for the
 time freed from superstitious surmisings; though the affair still left abundant
 room for all manner of wild conjectures as to dark Ahab’s precise agency in the
 matter from the beginning. For me, I silently recalled the mysterious shadows I
-had seen creeping on board the *Pequod* during the dim Nantucket dawn, as well as
+had seen creeping on board the _Pequod_ during the dim Nantucket dawn, as well as
 the enigmatical hintings of the unaccountable Elijah.
 
 Meantime, Ahab, out of hearing of his officers, having sided the furthest to
@@ -240,8 +239,8 @@ now soft with entreaty.
 How different the loud little King-Post. “Sing out and say something, my
 hearties. Roar and pull, my thunderbolts! Beach me, beach me on their black
 backs, boys; only do that for me, and I’ll sign over to you my Martha’s
-Vineyard plantation, boys; including wife and children, boys.  Lay me on — lay
-me on! O Lord, Lord! but I shall go stark, staring mad!  See! see that white
+Vineyard plantation, boys; including wife and children, boys. Lay me on — lay
+me on! O Lord, Lord! but I shall go stark, staring mad! See! see that white
 water!” And so shouting, he pulled his hat from his head, and stamped up and
 down on it; then picking it up, flirted it far off upon the sea; and finally
 fell to rearing and plunging in the boat’s stern like a crazed colt from the
@@ -249,9 +248,9 @@ prairie.
 
 “Look at that chap now,” philosophically drawled Stubb, who, with his unlighted
 short pipe, mechanically retained between his teeth, at a short distance,
-followed after — "He’s got fits, that Flask has. Fits?  yes, give him fits —
+followed after — "He’s got fits, that Flask has. Fits? yes, give him fits —
 that’s the very word — pitch fits into ’em. Merrily, merrily, hearts-alive.
-Pudding for supper, you know; — merry’s the word.  Pull, babes — pull,
+Pudding for supper, you know; — merry’s the word. Pull, babes — pull,
 sucklings — pull, all. But what the devil are you hurrying about? Softly,
 softly, and steadily, my men. Only pull, and keep pulling; nothing more. Crack
 all your backbones, and bite your knives in two — that’s all. Take it easy —
@@ -281,7 +280,7 @@ profound dip into the watery glens and hollows; the keen spurrings and goadings
 to gain the top of the opposite hill; the headlong, sled-like slide down its
 other side; — all these, with the cries of the headsmen and harpooneers, and
 the shuddering gasps of the oarsmen, with the wondrous sight of the ivory
-*Pequod* bearing down upon her boats with outstretched sails, like a wild hen
+_Pequod_ bearing down upon her boats with outstretched sails, like a wild hen
 after her screaming brood; — all this was thrilling.
 
 Not the raw recruit, marching from the bosom of his wife into the fever heat of
@@ -293,7 +292,7 @@ the charmed, churned circle of the hunted sperm whale.
 The dancing white water made by the chase was now becoming more and more
 visible, owing to the increasing darkness of the dun cloud-shadows flung upon
 the sea. The jets of vapour no longer blended, but tilted everywhere to right
-and left; the whales seemed separating their wakes.  The boats were pulled more
+and left; the whales seemed separating their wakes. The boats were pulled more
 apart; Starbuck giving chase to three whales running dead to leeward. Our sail
 was now set, and, with the still rising wind, we rushed along; the boat going
 with such madness through the water, that the lee oars could scarcely be worked
@@ -303,7 +302,7 @@ Soon we were running through a suffusing wide veil of mist; neither ship nor
 boat to be seen.
 
 “Give way, men,” whispered Starbuck, drawing still further aft the sheet of his
-sail; “there is time to kill a fish yet before the squall comes.  There’s white
+sail; “there is time to kill a fish yet before the squall comes. There’s white
 water again! — close to! Spring!”
 
 Soon after, two cries in quick succession on each side of us denoted that the
@@ -318,7 +317,7 @@ heard, too, an enormous wallowing sound as of fifty elephants stirring in their
 litter. Meanwhile the boat was still booming through the mist, the waves
 curling and hissing around us like the erected crests of enraged serpents.
 
-“That’s his hump. *there, there,* give it to him!” whispered Starbuck.
+“That’s his hump. _there, there,_ give it to him!” whispered Starbuck.
 
 A short rushing sound leaped out of the boat; it was the darted iron of
 Queequeg. Then all in one welded commotion came an invisible push from astern,
@@ -341,9 +340,9 @@ prairie, in which, unconsumed, we were burning; immortal in these jaws of
 death! In vain we hailed the other boats; as well roar to the live coals down
 the chimney of a flaming furnace as hail those boats in that storm. Meanwhile
 the driving scud, rack, and mist, grew darker with the shadows of night; no
-sign of the ship could be seen.  The rising sea forbade all attempts to bale
+sign of the ship could be seen. The rising sea forbade all attempts to bale
 out the boat. The oars were useless as propellers, performing now the office of
-life-preservers.  So, cutting the lashing of the waterproof match keg, after
+life-preservers. So, cutting the lashing of the waterproof match keg, after
 many failures Starbuck contrived to ignite the lamp in the lantern; then
 stretching it on a waif pole, handed it to Queequeg as the standard-bearer of
 this forlorn hope. There, then, he sat, holding up that imbecile candle in the
@@ -352,8 +351,8 @@ a man without faith, hopelessly holding up hope in the midst of despair.
 
 Wet, drenched through, and shivering cold, despairing of ship or boat, we
 lifted up our eyes as the dawn came on. The mist still spread over the sea, the
-empty lantern lay crushed in the bottom of the boat.  Suddenly Queequeg started
-to his feet, hollowing his hand to his ear.  We all heard a faint creaking, as
+empty lantern lay crushed in the bottom of the boat. Suddenly Queequeg started
+to his feet, hollowing his hand to his ear. We all heard a faint creaking, as
 of ropes and yards hitherto muffled by the storm. The sound came nearer and
 nearer; the thick mists were dimly parted by a huge, vague form. Affrighted, we
 all sprang into the sea as the ship at last loomed into view, bearing right
@@ -367,6 +366,3 @@ were at last taken up and safely landed on board. Ere the squall came close to,
 the other boats had cut loose from their fish and returned to the ship in good
 time. The ship had given us up, but was still cruising, if haply it might light
 upon some token of our perishing, — an oar or a lance pole.
-
-
-

@@ -1,6 +1,6 @@
-#Chapter 18. 
-His Mark.
-=========
+### Chapter 18.
+
+# His Mark.
 
 As we were walking down the end of the wharf towards the ship, Queequeg
 carrying his harpoon, Captain Peleg in his gruff voice loudly hailed us from
@@ -14,7 +14,7 @@ and leaving my comrade standing on the wharf.
 “I mean,” he replied, “he must show his papers.”
 
 “Yes,” said Captain Bildad in his hollow voice, sticking his head from behind
-Peleg’s, out of the wigwam. “He must show that he’s converted.  Son of
+Peleg’s, out of the wigwam. “He must show that he’s converted. Son of
 darkness,” he added, turning to Queequeg, “art thou at present in communion
 with any Christian church?”
 
@@ -50,9 +50,9 @@ Catholic Church to which you and I, and Captain Peleg there, and Queequeg here,
 and all of us, and every mother’s son and soul of us belong; the great and
 everlasting First Congregation of this whole worshipping world; we all belong
 to that; only some of us cherish some queer crotchets no ways touching the
-grand belief; in *that* we all join hands.”
+grand belief; in _that_ we all join hands.”
 
-“Splice, thou mean’st *splice* hands,” cried Peleg, drawing nearer. “Young man,
+“Splice, thou mean’st _splice_ hands,” cried Peleg, drawing nearer. “Young man,
 you’d better ship for a missionary, instead of a fore-mast hand; I never heard
 a better sermon. Deacon Deuteronomy — why Father Mapple himself couldn’t beat
 it, and he’s reckoned something. Come aboard, come aboard; never mind about the
@@ -65,7 +65,7 @@ fish?”
 Without saying a word, Queequeg, in his wild sort of way, jumped upon the
 bulwarks, from thence into the bows of one of the whale-boats hanging to the
 side; and then bracing his left knee, and poising his harpoon, cried out in
-some such way as this: — 
+some such way as this: —
 
 “Cap’ain, you see him small drop tar on water dere? You see him? well, spose
 him one whale eye, well, den!” and taking sharp aim at it, he darted the iron
@@ -76,7 +76,7 @@ the glistening tar spot out of sight.
 why, dad whale dead.”
 
 “Quick, Bildad,” said Peleg, his partner, who, aghast at the close vicinity of
-the flying harpoon, had retreated towards the cabin gangway.  “Quick, I say,
+the flying harpoon, had retreated towards the cabin gangway. “Quick, I say,
 you Bildad, and get the ship’s papers. We must have Hedgehog there, I mean
 Quohog, in one of our boats. Look ye, Quohog, we’ll give ye the ninetieth lay,
 and that’s more than ever was given a harpooneer yet out of Nantucket.”
@@ -93,9 +93,9 @@ But at this question, Queequeg, who had twice or thrice before taken part in
 similar ceremonies, looked no ways abashed; but taking the offered pen, copied
 upon the paper, in the proper place, an exact counterpart of a queer round
 figure which was tattooed upon his arm; so that through Captain Peleg’s
-obstinate mistake touching his appellative, it stood something like this: — 
+obstinate mistake touching his appellative, it stood something like this: —
 
-> Quohog. his __X__ mark.
+> Quohog. his **X** mark.
 
 Meanwhile Captain Bildad sat earnestly and steadfastly eyeing Queequeg, and at
 last rising solemnly and fumbling in the huge pockets of his broad-skirted drab
@@ -113,7 +113,7 @@ heterogeneously mixed with Scriptural and domestic phrases.
 
 “Avast there, avast there, Bildad, avast now spoiling our harpooneer,” Peleg.
 “Pious harpooneers never make good voyagers — it takes the shark out of ’em; no
-harpooneer is worth a straw who aint pretty sharkish.  There was young Nat
+harpooneer is worth a straw who aint pretty sharkish. There was young Nat
 Swaine, once the bravest boat-header out of all Nantucket and the Vineyard; he
 joined the meeting, and never came to good. He got so frightened about his
 plaguy soul, that he shrinked and sheered away from whales, for fear of
@@ -122,13 +122,13 @@ after-claps, in case he got stove and went to Davy Jones.”
 “Peleg! Peleg!” said Bildad, lifting his eyes and hands, “thou thyself, as I
 myself, hast seen many a perilous time; thou knowest, Peleg, what it is to have
 the fear of death; how, then, can’st thou prate in this ungodly guise. Thou
-beliest thine own heart, Peleg. Tell me, when this same *Pequod* here had her
+beliest thine own heart, Peleg. Tell me, when this same _Pequod_ here had her
 three masts overboard in that typhoon on Japan, that same voyage when thou went
 mate with Captain Ahab, did’st thou not think of Death and the Judgment then?”
 
 “Hear him, hear him now,” cried Peleg, marching across the cabin, and thrusting
-his hands far down into his pockets, — “hear him, all of ye.  Think of that!
-When every moment we thought the ship would sink!  Death and the Judgment then?
+his hands far down into his pockets, — “hear him, all of ye. Think of that!
+When every moment we thought the ship would sink! Death and the Judgment then?
 What? With all three masts making such an everlasting thundering against the
 side; and every sea breaking over us, fore and aft. Think of Death and the
 Judgment then? No! no time to think about Death then. Life was what Captain
@@ -139,6 +139,3 @@ Bildad said no more, but buttoning up his coat, stalked on deck, where we
 followed him. There he stood, very quietly overlooking some sailmakers who were
 mending a top-sail in the waist. Now and then he stooped to pick up a patch, or
 save an end of tarred twine, which otherwise might have been wasted.
-
-
-

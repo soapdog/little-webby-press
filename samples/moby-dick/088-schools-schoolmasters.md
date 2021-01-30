@@ -1,6 +1,6 @@
-### Chapter 88. 
-Schools and Schoolmasters.
-==========================
+### Chapter 88.
+
+# Schools and Schoolmasters.
 
 The previous chapter gave account of an immense body or herd of Sperm Whales,
 and there was also then given the probable cause inducing those vast
@@ -8,7 +8,7 @@ aggregations.
 
 Now, though such great bodies are at times encountered, yet, as must have been
 seen, even at the present day, small detached bands are occasionally observed,
-embracing from twenty to fifty individuals each.  Such bands are known as
+embracing from twenty to fifty individuals each. Such bands are known as
 schools. They generally are of two sorts; those composed almost entirely of
 females, and those mustering none but young vigorous males, or bulls, as they
 are familiarly designated.
@@ -23,7 +23,7 @@ is always of the largest leviathanic proportions, the ladies, even at full
 growth, are not more than one-third of the bulk of an average-sized male. They
 are comparatively delicate, indeed; I dare say, not to exceed half a dozen
 yards round the waist. Nevertheless, it cannot be denied, that upon the whole
-they are hereditarily entitled to *Embonpoint.*
+they are hereditarily entitled to _Embonpoint._
 
 It is very curious to watch this harem and its lord in their indolent
 ramblings. Like fashionables, they are for ever on the move in leisurely search
@@ -38,7 +38,7 @@ When serenely advancing on one of these journeys, if any strange suspicious
 sights are seen, my lord whale keeps a wary eye on his interesting family.
 Should any unwarrantably pert young Leviathan coming that way, presume to draw
 confidentially close to one of the ladies, with what prodigious fury the Bashaw
-assails him, and chases him away!  High times, indeed, if unprincipled young
+assails him, and chases him away! High times, indeed, if unprincipled young
 rakes like him are to be permitted to invade the sanctity of domestic bliss;
 though do what the Bashaw will, he cannot keep the most notorious Lothario out
 of his bed; for, alas! all fish bed in common. As ashore, the ladies often
@@ -53,7 +53,7 @@ But supposing the invader of domestic bliss to betake himself away at the first
 rush of the harem’s lord, then is it very diverting to watch that lord. Gently
 he insinuates his vast bulk among them again and revels there awhile, still in
 tantalizing vicinity to young Lothario, like pious Solomon devoutly worshipping
-among his thousand concubines.  Granting other whales to be in sight, the
+among his thousand concubines. Granting other whales to be in sight, the
 fishermen will seldom give chase to one of these Grand Turks; for these Grand
 Turks are too lavish of their strength, and hence their unctuousness is small.
 As for the sons and the daughters they beget, why, those sons and daughters
@@ -108,6 +108,3 @@ characteristic of the sexes. Say you strike a Forty-barrel-bull — poor devil!
 all his comrades quit him. But strike a member of the harem school, and her
 companions swim around her with every token of concern, sometimes lingering so
 near her and so long, as themselves to fall a prey.
-
-
-

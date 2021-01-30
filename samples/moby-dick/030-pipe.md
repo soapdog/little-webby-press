@@ -1,11 +1,10 @@
-### Chapter 30. 
-The Pipe.
-=========
+### Chapter 30.
 
+# The Pipe.
 
 When Stubb had departed, Ahab stood for a while leaning over the bulwarks; and
 then, as had been usual with him of late, calling a sailor of the watch, he
-sent him below for his ivory stool, and also his pipe.  Lighting the pipe at
+sent him below for his ivory stool, and also his pipe. Lighting the pipe at
 the binnacle lamp and planting the stool on the weather side of the deck, he
 sat and smoked.
 
@@ -22,13 +21,10 @@ Oh, my pipe! hard must it go with me if thy charm be gone! Here have I been
 unconsciously toiling, not pleasuring — aye, and ignorantly smoking to windward
 all the while; to windward, and with such nervous whiffs, as if, like the dying
 whale, my final jets were the strongest and fullest of trouble. What business
-have I with this pipe?  This thing that is meant for sereneness, to send up
+have I with this pipe? This thing that is meant for sereneness, to send up
 mild white vapours among mild white hairs, not among torn iron-grey locks like
 mine. I’ll smoke no more — ”
 
 He tossed the still lighted pipe into the sea. The fire hissed in the waves;
 the same instant the ship shot by the bubble the sinking pipe made. With
 slouched hat, Ahab lurchingly paced the planks.
-
-
-

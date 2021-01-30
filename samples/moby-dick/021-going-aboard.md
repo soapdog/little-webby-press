@@ -1,7 +1,6 @@
 ### Chapter 21.
-Going Aboard.
-==============
 
+# Going Aboard.
 
 It was nearly six o’clock, but only grey imperfect misty dawn, when we drew
 nigh the wharf.
@@ -60,7 +59,7 @@ again very soon, I guess; unless it’s before the Grand Jury.” And with these
 cracked words he finally departed, leaving me, for the moment, in no small
 wonderment at his frantic impudence.
 
-At last, stepping on board the *Pequod,* we found everything in profound quiet,
+At last, stepping on board the _Pequod,_ we found everything in profound quiet,
 not a soul moving. The cabin entrance was locked within; the hatches were all
 on, and lumbered with coils of rigging. Going forward to the forecastle, we
 found the slide of the scuttle open. Seeing a light, we went down, and found
@@ -136,6 +135,3 @@ It was now clear sunrise. Soon the crew came on board in twos and threes; the
 riggers bestirred themselves; the mates were actively engaged; and several of
 the shore people were busy in bringing various last things on board. Meanwhile
 Captain Ahab remained invisibly enshrined within his cabin.
-
-
-

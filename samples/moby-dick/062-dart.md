@@ -1,7 +1,6 @@
-### Chapter 62. 
-The Dart.
-=========
+### Chapter 62.
 
+# The Dart.
 
 A word concerning an incident in the last chapter.
 
@@ -49,5 +48,3 @@ harpooneer that has caused them.
 
 To insure the greatest efficiency in the dart, the harpooneers of this world
 must start to their feet from out of idleness, and not from out of toil.
-
-

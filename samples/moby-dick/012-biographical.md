@@ -1,7 +1,6 @@
 ### Chapter 12.
-Biographical.
-=============
 
+# Biographical.
 
 Queequeg was a native of Rokovoko, an island far away to the West and South. It
 is not down in any map; true places never are.
@@ -68,7 +67,7 @@ Nantucket, as being the most promising port for an adventurous whaleman to
 embark from. He at once resolved to accompany me to that island, ship aboard
 the same vessel, get into the same watch, the same boat, the same mess with me,
 in short to share my every hap; with both my hands in his, boldly dip into the
-Potluck of both worlds.  To all this I joyously assented; for besides the
+Potluck of both worlds. To all this I joyously assented; for besides the
 affection I now felt for Queequeg, he was an experienced harpooneer, and as
 such, could not fail to be of great usefulness to one, who, like me, was wholly
 ignorant of the mysteries of whaling, though well acquainted with the sea, as
@@ -77,5 +76,3 @@ known to merchant seamen.
 His story being ended with his pipe’s last dying puff, Queequeg embraced me,
 pressed his forehead against mine, and blowing out the light, we rolled over
 from each other, this way and that, and very soon were sleeping.
-
-

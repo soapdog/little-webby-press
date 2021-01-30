@@ -1,7 +1,6 @@
-###Chapter 65. 
-The Whale as a Dish.
-====================
+### Chapter 65.
 
+# The Whale as a Dish.
 
 That mortal man should feed upon the creature that feeds his lamp, and, like
 Stubb, eat him by his own light, as you may say; this seems so outlandish a
@@ -14,7 +13,7 @@ reward for inventing an admirable sauce to be eaten with barbacued porpoises,
 which, you remember, are a species of whale. Porpoises, indeed, are to this day
 considered fine eating. The meat is made into balls about the size of billiard
 balls, and being well seasoned and spiced might be taken for turtle-balls or
-veal balls.  The old monks of Dunfermline were very fond of them. They had a
+veal balls. The old monks of Dunfermline were very fond of them. They had a
 great porpoise grant from the crown.
 
 The fact is, that among his hunters at least, the whale would by all hands be
@@ -45,7 +44,7 @@ it. In the long try watches of the night it is a common thing for the seamen to
 dip their ship-biscuit into the huge oil-pots and let them fry there awhile.
 Many a good supper have I thus made.
 
-In the case of a small Sperm Whale the brains are accounted a fine dish.  The
+In the case of a small Sperm Whale the brains are accounted a fine dish. The
 casket of the skull is broken into with an axe, and the two plump, whitish
 lobes being withdrawn (precisely resembling two large puddings), they are then
 mixed with flour, and cooked into a most delectable mess, in flavor somewhat
@@ -55,8 +54,8 @@ calves’ brains, by and by get to have a little brains of their own, so as to b
 able to tell a calf’s head from their own heads; which, indeed, requires
 uncommon discrimination. And that is the reason why a young buck with an
 intelligent looking calf’s head before him, is somehow one of the saddest
-sights you can see. The head looks a sort of reproachfully at him, with an *“Et
-tu Brute!”* expression.
+sights you can see. The head looks a sort of reproachfully at him, with an _“Et
+tu Brute!”_ expression.
 
 It is not, perhaps, entirely because the whale is so excessively unctuous that
 landsmen seem to regard the eating of him with abhorrence; that appears to
@@ -83,6 +82,3 @@ same fowl. And with what quill did the Secretary of the Society for the
 Suppression of Cruelty to Ganders formally indite his circulars? It is only
 within the last month or two that that society passed a resolution to patronise
 nothing but steel pens.
-
-
-

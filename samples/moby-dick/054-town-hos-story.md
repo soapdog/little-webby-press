@@ -1,27 +1,26 @@
-### Chapter 54. 
-The *Town-Ho’s* Story.
-====================
+### Chapter 54.
 
+# The _Town-Ho’s_ Story.
 
-*(As told at the Golden Inn)*
+_(As told at the Golden Inn)_
 
-----
+---
 
 The Cape of Good Hope, and all the watery region round about there, is much
 like some noted four corners of a great highway, where you meet more travellers
 than in any other part.
 
-It was not very long after speaking the *Goney* that another homeward-bound
-whaleman, the *Town-Ho,*\* was encountered. She was manned almost wholly by
+It was not very long after speaking the _Goney_ that another homeward-bound
+whaleman, the _Town-Ho,_\* was encountered. She was manned almost wholly by
 Polynesians. In the short gam that ensued she gave us strong news of Moby Dick.
 To some the general interest in the White Whale was now wildly heightened by a
-circumstance of the *Town-Ho’s* story, which seemed obscurely to involve with
+circumstance of the _Town-Ho’s_ story, which seemed obscurely to involve with
 the whale a certain wondrous, inverted visitation of one of those so called
 judgments of God which at times are said to overtake some men. This latter
 circumstance, with its own particular accompaniments, forming what may be
 called the secret part of the tragedy about to be narrated, never reached the
 ears of Captain Ahab or his mates. For that secret part of the story was
-unknown to the captain of the *Town-Ho* himself. It was the private property of
+unknown to the captain of the _Town-Ho_ himself. It was the private property of
 three confederate white seamen of that ship, one of whom, it seems,
 communicated it to Tashtego with Romish injunctions of secrecy, but the
 following night Tashtego rambled in his sleep, and revealed so much of it in
@@ -29,16 +28,15 @@ that way, that when he was wakened he could not well withhold the rest.
 Nevertheless, so potent an influence did this thing have on those seamen in the
 Pequod who came to the full knowledge of it, and by such a strange delicacy, to
 call it so, were they governed in this matter, that they kept the secret among
-themselves so that it never transpired abaft the *Pequod’s* main-mast.
+themselves so that it never transpired abaft the _Pequod’s_ main-mast.
 Interweaving in its proper place this darker thread with the story as publicly
 narrated on the ship, the whole of this strange affair I now proceed to put on
 lasting record.
 
-
 > \*The ancient whale-cry upon first sighting a whale from the mast-head, still
 > used by whalemen in hunting the famous Gallipagos terrapin.
 
-----
+---
 
 For my humor’s sake, I shall preserve the style in which I once narrated it at
 Lima, to a lounging circle of my Spanish friends, one saint’s eve, smoking upon
@@ -48,7 +46,7 @@ the interluding questions they occasionally put, and which are duly answered at
 the time.
 
 “Some two years prior to my first learning the events which I am about
-rehearsing to you, gentlemen, the *Town-Ho,* Sperm Whaler of Nantucket, was
+rehearsing to you, gentlemen, the _Town-Ho,_ Sperm Whaler of Nantucket, was
 cruising in your Pacific here, not very many days’ sail eastward from the eaves
 of this good Golden Inn. She was somewhere to the northward of the Line. One
 morning upon handling the pumps, according to daily usage, it was observed that
@@ -69,7 +67,7 @@ he did not at all fear that his ship would founder by the way, because his
 pumps were of the best, and being periodically relieved at them, those
 six-and-thirty men of his could easily keep the ship free; never mind if the
 leak should double on her. In truth, well nigh the whole of this passage being
-attended by very prosperous breezes, the *Town-Ho* had all but certainly
+attended by very prosperous breezes, the _Town-Ho_ had all but certainly
 arrived in perfect safety at her port without the occurrence of the least
 fatality, had it not been for the brutal overbearing of Radney, the mate, a
 Vineyarder, and the bitterly provoked vengeance of Steelkilt, a Lakeman and
@@ -118,7 +116,7 @@ docile. At all events, he had proved so thus far; but Radney was doomed and
 made mad, and Steelkilt — but, gentlemen, you shall hear.
 
 “It was not more than a day or two at the furthest after pointing her prow for
-her island haven, that the *Town-Ho’s* leak seemed again increasing, but only
+her island haven, that the _Town-Ho’s_ leak seemed again increasing, but only
 so as to require an hour or more at the pumps every day. You must know that in
 a settled and civilized ocean like our Atlantic, for example, some skippers
 think little of pumping their whole way across it; though of a still, sleepy
@@ -133,7 +131,7 @@ them. It is only when a leaky vessel is in some very out of the way part of
 those waters, some really landless latitude, that her captain begins to feel a
 little anxious.
 
-“Much this way had it been with the *Town-Ho;* so when her leak was found
+“Much this way had it been with the _Town-Ho;_ so when her leak was found
 gaining once more, there was in truth some small concern manifested by several
 of her company; especially by Radney the mate. He commanded the upper sails to
 be well hoisted, sheeted home anew, and every way expanded to the breeze. Now
@@ -202,7 +200,7 @@ Such, gentlemen, is the inflexibility of sea-usages and the instinctive love of
 neatness in seamen; some of whom would not willingly drown without first
 washing their faces. But in all vessels this broom business is the prescriptive
 province of the boys, if boys there be aboard. Besides, it was the stronger men
-in the *Town-Ho* that had been divided into gangs, taking turns at the pumps;
+in the _Town-Ho_ that had been divided into gangs, taking turns at the pumps;
 and being the most athletic seaman of them all, Steelkilt had been regularly
 assigned captain of one of the gangs; consequently he should have been freed
 from any trivial business not connected with truly nautical duties, such being
@@ -250,7 +248,7 @@ humor, the Lakeman paused on the hatches and thus spoke to the officer:
 “‘Mr. Radney, I will not obey you. Take that hammer away, or look to yourself.’
 But the predestinated mate coming still closer to him, where the Lakeman stood
 fixed, now shook the heavy hammer within an inch of his teeth; meanwhile
-repeating a string of insufferable maledictions.  Retreating not the thousandth
+repeating a string of insufferable maledictions. Retreating not the thousandth
 part of an inch; stabbing him in the eye with the unflinching poniard of his
 glance, Steelkilt, clenching his right hand behind him and creepingly drawing
 it back, told his persecutor that if the hammer but grazed his cheek he
@@ -286,7 +284,7 @@ scenery of those noble Mohawk counties; and especially, by rows of snow-white
 chapels, whose spires stand almost like milestones, flows one continual stream
 of Venetianly corrupt and often lawless life. There’s your true Ashantee,
 gentlemen; there howl your pagans; where you ever find them, next door to you;
-under the long-flung shadow, and the snug patronising lee of churches.  For by
+under the long-flung shadow, and the snug patronising lee of churches. For by
 some curious fatality, as it is often noted of your metropolitan freebooters
 that they ever encamp around the halls of justice, so sinners, gentlemen, most
 abound in holiest vicinities.
@@ -304,7 +302,7 @@ your corrupt comparison. Oh! do not bow and look surprised; you know the
 proverb all along this coast — “Corrupt as Lima.” It but bears out your saying,
 too; churches more plentiful than billiard-tables, and for ever open — and
 “Corrupt as Lima.” So, too, Venice; I have been there; the holy city of the
-blessed evangelist, St.  Mark! — St. Dominic, purge it! Your cup! Thanks: here
+blessed evangelist, St. Mark! — St. Dominic, purge it! Your cup! Thanks: here
 I refill; now, you pour out again.’
 
 “Freely depicted in his own vocation, gentlemen, the Canaller would make a fine
@@ -313,9 +311,9 @@ for days and days along his green-turfed, flowery Nile, he indolently floats,
 openly toying with his red-cheeked Cleopatra, ripening his apricot thigh upon
 the sunny deck. But ashore, all this effeminacy is dashed. The brigandish guise
 which the Canaller so proudly sports; his slouched and gaily-ribboned hat
-betoken his grand features.  A terror to the smiling innocence of the villages
+betoken his grand features. A terror to the smiling innocence of the villages
 through which he floats; his swart visage and bold swagger are not unshunned in
-cities.  Once a vagabond on his own canal, I have received good turns from one
+cities. Once a vagabond on his own canal, I have received good turns from one
 of these Canallers; I thank him heartily; would fain be not ungrateful; but it
 is often one of the prime redeeming qualities of your man of violence, that at
 times he has as stiff an arm to back a poor stranger in a strait, as to plunder
@@ -449,7 +447,7 @@ taffrail; and if by any devilishness of desperation possible, seize the ship.
 For himself, he would do this, he said, whether they joined him or not. That
 was the last night he should spend in that den. But the scheme met with no
 opposition on the part of the other two; they swore they were ready for that,
-or for any other mad thing, for anything in short but a surrender.  And what
+or for any other mad thing, for anything in short but a surrender. And what
 was more, they each insisted upon being the first man on deck, when the time to
 make the rush should come. But to this their leader as fiercely objected,
 reserving that priority for himself; particularly as his two comrades would not
@@ -461,7 +459,7 @@ the foul play of these miscreants must come out.
 soul had suddenly lighted, it would seem, upon the same piece of treachery,
 namely: to be foremost in breaking out, in order to be the first of the three,
 though the last of the ten, to surrender; and thereby secure whatever small
-chance of pardon such conduct might merit.  But when Steelkilt made known his
+chance of pardon such conduct might merit. But when Steelkilt made known his
 determination still to lead them to the last, they in some way, by some subtle
 chemistry of villany, mixed their before secret treacheries together; and when
 their leader fell into a doze, verbally opened their souls to each other in
@@ -529,7 +527,7 @@ the moody seamen, the iron pumps clanged as before.
 
 “Just after dark that day, when one watch had retired below, a clamor was heard
 in the forecastle; and the two trembling traitors running up, besieged the
-cabin door, saying they durst not consort with the crew.  Entreaties, cuffs,
+cabin door, saying they durst not consort with the crew. Entreaties, cuffs,
 and kicks could not drive them back, so at their own instance they were put
 down in the ship’s run for salvation. Still, no sign of mutiny reappeared among
 the rest. On the contrary, it seemed, that mainly at Steelkilt’s instigation,
@@ -537,7 +535,7 @@ they had resolved to maintain the strictest peacefulness, obey all orders to
 the last, and, when the ship reached port, desert her in a body. But in order
 to insure the speediest end to the voyage, they all agreed to another thing —
 namely, not to sing out for whales, in case any should be discovered. For,
-spite of her leak, and spite of all her other perils, the *Town-Ho* still
+spite of her leak, and spite of all her other perils, the _Town-Ho_ still
 maintained her mast-heads, and her captain was just as willing to lower for a
 fish that moment, as on the day his craft first struck the cruising ground; and
 Radney the mate was quite as ready to change his berth for a boat, and with his
@@ -555,7 +553,7 @@ revenge.
 
 “During the night, Radney had an unseamanlike way of sitting on the bulwarks of
 the quarter-deck, and leaning his arm upon the gunwale of the boat which was
-hoisted up there, a little above the ship’s side.  In this attitude, it was
+hoisted up there, a little above the ship’s side. In this attitude, it was
 well known, he sometimes dozed. There was a considerable vacancy between the
 boat and the ship, and down between this was the sea. Steelkilt calculated his
 time, and found that his next trick at the helm would come round at two
@@ -576,7 +574,7 @@ carefully in his watches below.
 
 “‘Then I must get some from old Rad;’ and he rose to go aft.
 
-“‘You don’t mean to go a begging to *him!’* said a sailor.
+“‘You don’t mean to go a begging to _him!’_ said a sailor.
 
 “‘Why not? Do you think he won’t do me a turn, when it’s to help himself in the
 end, shipmate?’ and going to the mate, he looked at him quietly, and asked him
@@ -618,7 +616,7 @@ perceiving the snowy whale within fifty yards of the ship — forgetful of the
 compact among the crew — in the excitement of the moment, the Teneriffe man had
 instinctively and involuntarily lifted his voice for the monster, though for
 some little time past it had been plainly beheld from the three sullen
-mast-heads. All was now a phrensy.  ‘The White Whale — the White Whale!’ was
+mast-heads. All was now a phrensy. ‘The White Whale — the White Whale!’ was
 the cry from captain, mates, and harpooneers, who, undeterred by fearful
 rumours, were all anxious to capture so famous and precious a fish; while the
 dogged crew eyed askance, and with curses, the appalling beauty of the vast
@@ -635,7 +633,7 @@ sprang to the bow. He was always a furious man, it seems, in a boat. And now
 his bandaged cry was, to beach him on the whale’s topmost back. Nothing loath,
 his bowsman hauled him up and up, through a blinding foam that blent two
 whitenesses together; till of a sudden the boat struck as against a sunken
-ledge, and keeling over, spilled out the standing mate.  That instant, as he
+ledge, and keeling over, spilled out the standing mate. That instant, as he
 fell on the whale’s slippery back, the boat righted, and was dashed aside by
 the swell, while Radney was tossed over into the sea, on the other flank of the
 whale. He struck out through the spray, and, for an instant, was dimly seen
@@ -651,7 +649,7 @@ distance, Moby Dick rose again, with some tatters of Radney’s red woollen
 shirt, caught in the teeth that had destroyed him. All four boats gave chase
 again; but the whale eluded them, and finally wholly disappeared.
 
-“In good time, the *Town-Ho* reached her port — a savage, solitary place —
+“In good time, the _Town-Ho_ reached her port — a savage, solitary place —
 where no civilized creature resided. There, headed by the Lakeman, all but five
 or six of the foremastmen deliberately deserted among the palms; eventually, as
 it turned out, seizing a large double war-canoe of the savages, and setting
@@ -689,7 +687,7 @@ lies.’
 from the canoe, swam to the boat; and climbing the gunwale, stood face to face
 with the captain.
 
-“‘Cross your arms, sir; throw back your head. Now, repeat after me.  As soon as
+“‘Cross your arms, sir; throw back your head. Now, repeat after me. As soon as
 Steelkilt leaves me, I swear to beach this boat on yonder island, and remain
 there six days. If I do not, may lightning strike me!’
 
@@ -717,7 +715,7 @@ its dead; still in dreams sees the awful white whale that destroyed him.
 “‘I am, Don.’
 
 “‘Then I entreat you, tell me if to the best of your own convictions, this your
-story is in substance really true? It is so passing wonderful!  Did you get it
+story is in substance really true? It is so passing wonderful! Did you get it
 from an unquestionable source? Bear with me if I seem to press.’
 
 “‘Also bear with all of us, sir sailor; for we all join in Don Sebastian’s
@@ -726,13 +724,13 @@ suit,’ cried the company, with exceeding interest.
 “‘Is there a copy of the Holy Evangelists in the Golden Inn, gentlemen?’
 
 “‘Nay,’ said Don Sebastian; ‘but I know a worthy priest near by, who will
-quickly procure one for me. I go for it; but are you well advised?  this may
+quickly procure one for me. I go for it; but are you well advised? this may
 grow too serious.’
 
 “‘Will you be so good as to bring the priest also, Don?’
 
 “‘Though there are no Auto-da-Fe’s in Lima now,’ said one of the company to
-another; ‘I fear our sailor friend runs risk of the archiepiscopacy.  Let us
+another; ‘I fear our sailor friend runs risk of the archiepiscopacy. Let us
 withdraw more out of the moonlight. I see no need of this.’
 
 “‘Excuse me for running after you, Don Sebastian; but may I also beg that you
@@ -748,6 +746,3 @@ the Holy Book before me that I may touch it.
 gentlemen, is in substance and its great items, true. I know it to be
 true; it happened on this ball; I trod the ship; I knew the crew; I have
 seen and talked with Steelkilt since the death of Radney.’”
-
-
-

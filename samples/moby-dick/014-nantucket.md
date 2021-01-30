@@ -1,7 +1,6 @@
-### Chapter 14. 
-Nantucket.
-==========
+### Chapter 14.
 
+# Nantucket.
 
 Nothing more happened on the passage worthy the mentioning; so, after a fine
 run, we safely arrived in Nantucket.
@@ -55,7 +54,7 @@ following the sea as highwaymen the road, they but plunder other ships, other
 fragments of the land like themselves, without seeking to draw their living
 from the bottomless deep itself. The Nantucketer, he alone resides and riots on
 the sea; he alone, in Bible language, goes down to it in ships; to and fro
-ploughing it as his own special plantation. *There* is his home; *there* lies
+ploughing it as his own special plantation. _There_ is his home; _there_ lies
 his business, which a Noah’s flood would not interrupt, though it overwhelmed
 all the millions in China. He lives on the sea, as prairie cocks in the
 prairie; he hides among the waves, he climbs them as chamois hunters climb the
@@ -65,6 +64,3 @@ With the landless gull, that at sunset folds her wings and is rocked to sleep
 between billows; so at nightfall, the Nantucketer, out of sight of land, furls
 his sails, and lays him to his rest, while under his very pillow rush herds of
 walruses and whales.
-
-
-

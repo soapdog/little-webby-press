@@ -1,7 +1,6 @@
-### Chapter 61. 
-Stubb Kills a Whale.
-====================
+### Chapter 61.
 
+# Stubb Kills a Whale.
 
 If to Starbuck the apparition of the Squid was a thing of portents, to Queequeg
 it was quite a different object.
@@ -10,7 +9,7 @@ it was quite a different object.
 hoisted boat, “then you quick see him ’parm whale.”
 
 The next day was exceedingly still and sultry, and with nothing special to
-engage them, the *Pequod’s* crew could hardly resist the spell of sleep induced
+engage them, the _Pequod’s_ crew could hardly resist the spell of sleep induced
 by such a vacant sea. For this part of the Indian Ocean through which we then
 were voyaging is not what whalemen call a lively ground; that is, it affords
 fewer glimpses of porpoises, dolphins, flying-fish, and other vivacious
@@ -27,7 +26,7 @@ is withdrawn.
 Ere forgetfulness altogether came over me, I had noticed that the seamen at the
 main and mizzen-mast-heads were already drowsy. So that at last all three of us
 lifelessly swung from the spars, and for every swing that we made there was a
-nod from below from the slumbering helmsman.  The waves, too, nodded their
+nod from below from the slumbering helmsman. The waves, too, nodded their
 indolent crests; and across the wide trance of the sea, east nodded to west,
 and the sun over all.
 
@@ -82,7 +81,7 @@ brewed.\*
 > transform himself from a bluff-bowed sluggish galliot into a sharppointed New
 > York pilot-boat.
 
-----
+---
 
 “Start her, start her, my men! Don’t hurry yourselves; take plenty of time —
 but start her; start her like thunder-claps, that’s all,” cried Stubb,
@@ -107,7 +106,7 @@ the onset, all the while puffing the smoke from his mouth. Like desperadoes
 they tugged and they strained, till the welcome cry was heard — “Stand up,
 Tashtego! — give it to him!” The harpoon was hurled. “Stern all!” The oarsmen
 backed water; the same moment something went hot and hissing along every one of
-their wrists.  It was the magical line. An instant before, Stubb had swiftly
+their wrists. It was the magical line. An instant before, Stubb had swiftly
 caught two additional turns with it round the loggerhead, whence, by reason of
 its increased rapid circlings, a hempen blue smoke now jetted up and mingled
 with the steady fumes from his pipe. As the line passed round and round the
@@ -123,18 +122,17 @@ taken, so that the line began holding its place. The boat now flew through the
 boiling water like a shark all fins. Stubb and Tashtego here changed places —
 stem for stern — a staggering business truly in that rocking commotion.
 
-
 > \* Partly to show the indispensableness of this act, it may here be stated,
 > that, in the old Dutch fishery, a mop was used to dash the running line with
 > water; in many other ships, a wooden piggin, or bailer, is set apart for that
 > purpose. Your hat, however, is the most convenient.
 
-----
+---
 
 From the vibrating line extending the entire length of the upper part of the
 boat, and from its now being more tight than a harpstring, you would have
 thought the craft had two keels — one cleaving the water, the other the air —
-as the boat churned on through both opposing elements at once.  A continual
+as the boat churned on through both opposing elements at once. A continual
 cascade played at the bows; a ceaseless whirling eddy in her wake; and, at the
 slightest motion from within, even but of a little finger, the vibrating,
 cracking craft canted over her spasmodic gunwale into the sea. Thus they
@@ -187,6 +185,3 @@ flanks into the sea. His heart had burst!
 “Yes; both pipes smoked out!” and withdrawing his own from his mouth, Stubb
 scattered the dead ashes over the water; and, for a moment, stood thoughtfully
 eyeing the vast corpse he had made.
-
-
-

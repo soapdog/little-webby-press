@@ -1,7 +1,6 @@
-### Chapter 42. 
-The Whiteness of The Whale.
-===========================
+### Chapter 42.
 
+# The Whiteness of The Whale.
 
 What the white whale was to Ahab, has been hinted; what, at times, he was to
 me, as yet remains unsaid.
@@ -54,7 +53,7 @@ strikes more of panic to the soul than that redness which affrights in blood.
 
 This elusive quality it is, which causes the thought of whiteness, when
 divorced from more kindly associations, and coupled with any object terrible in
-itself, to heighten that terror to the furthest bounds.  Witness the white bear
+itself, to heighten that terror to the furthest bounds. Witness the white bear
 of the poles, and the white shark of the tropics; what but their smooth, flaky
 whiteness makes them the transcendent horrors they are? That ghastly whiteness
 it is which imparts such an abhorrent mildness, even more loathsome than
@@ -73,23 +72,21 @@ shark.\*
 > this to be true; yet, were it not for the whiteness, you would not have that
 > intensified terror.
 
-----
+---
 
 As for the white shark, the white gliding ghostliness of repose in that
 creature, when beheld in his ordinary moods, strangely tallies with the same
 quality in the Polar quadruped. This peculiarity is most vividly hit by the
 French in the name they bestow upon that fish. The Romish mass for the dead
-begins with *“Requiem eternam”* (eternal rest), whence *requiem* denominating
+begins with _“Requiem eternam”_ (eternal rest), whence _requiem_ denominating
 the mass itself, and any other funeral music. Now, in allusion to the white,
 silent stillness of death in this shark, and the mild deadliness of his habits,
-the French call him *Requin.*
-
+the French call him _Requin._
 
 Bethink thee of the albatross, whence come those clouds of spiritual wonderment
 and pale dread, in which that white phantom sails in all imaginations? Not
 Coleridge first threw that spell; but God’s great, unflattering laureate,
 Nature.\*
-
 
 > \*I remember the first albatross I ever saw. It was during a prolonged gale,
 > in waters hard upon the Antarctic seas. From my forenoon watch below, I
@@ -105,7 +102,7 @@ Nature.\*
 > traditions and of towns. Long I gazed at that prodigy of plumage. I cannot
 > tell, can only hint, the things that darted through me then. But at last I
 > awoke; and turning, asked a sailor what bird was this. A goney, he replied.
-> Goney!  never had heard that name before; is it conceivable that this
+> Goney! never had heard that name before; is it conceivable that this
 > glorious thing is utterly unknown to men ashore! never! But some time after,
 > I learned that goney was some seaman’s name for albatross. So that by no
 > possibility could Coleridge’s wild Rhyme have had aught to do with those
@@ -114,7 +111,7 @@ Nature.\*
 > in saying this, I do but indirectly burnish a little brighter the noble merit
 > of the poem and the poet.
 
-----
+---
 
 I assert, then, that in the wondrous bodily whiteness of the bird chiefly lurks
 the secret of the spell; a truth the more evinced in this, that by a solecism
@@ -122,12 +119,11 @@ of terms there are birds called grey albatrosses; and these I have frequently
 seen, but never with such emotions as when I beheld the Antarctic fowl.
 
 But how had the mystic thing been caught? Whisper it not, and I will tell; with
-a treacherous hook and line, as the fowl floated on the sea.  At last the
+a treacherous hook and line, as the fowl floated on the sea. At last the
 Captain made a postman of it; tying a lettered, leathern tally round its neck,
 with the ship’s time and place; and then letting it escape. But I doubt not,
 that leathern tally, meant for man, was taken off in Heaven, when the white
 fowl flew to join the wing-folding, the invoking, and adoring cherubim!
-
 
 Most famous in our Western annals and Indian traditions is that of the White
 Steed of the Prairies; a magnificent milk-white charger, large-eyed,
@@ -245,7 +241,7 @@ phenomenon, especially when exhibited under any form at all approaching to
 muteness or universality. What I mean by these two statements may perhaps be
 respectively elucidated by the following examples.
 
-__First:__ The mariner, when drawing nigh the coasts of foreign lands, if by
+**First:** The mariner, when drawing nigh the coasts of foreign lands, if by
 night he hear the roar of breakers, starts to vigilance, and feels just enough
 of trepidation to sharpen all his faculties; but under precisely similar
 circumstances, let him be called from his hammock to view his ship sailing
@@ -258,7 +254,7 @@ again. Yet where is the mariner who will tell thee, “Sir, it was not so much
 the fear of striking hidden rocks, as the fear of that hideous whiteness that
 so stirred me?”
 
-__Second:__ To the native Indian of Peru, the continual sight of the
+**Second:** To the native Indian of Peru, the continual sight of the
 snowhowdahed Andes conveys naught of dread, except, perhaps, in the mere
 fancying of the eternal frosted desolateness reigning at such vast altitudes,
 and the natural conceit of what a fearfulness it would be to lose oneself in
@@ -329,6 +325,3 @@ coloured and colouring glasses upon their eyes, so the wretched infidel gazes
 himself blind at the monumental white shroud that wraps all the prospect around
 him. And of all these things the Albino whale was the symbol. Wonder ye then at
 the fiery hunt?
-
-
-

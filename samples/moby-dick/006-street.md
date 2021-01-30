@@ -1,7 +1,6 @@
-### Chapter 6. 
-The Street.
-===========
+### Chapter 6.
 
+# The Street.
 
 If I had been astonished at first catching a glimpse of so outlandish an
 individual as Queequeg circulating among the polite society of a civilized
@@ -43,7 +42,7 @@ buttons, and all, down the throat of the tempest.
 But think not that this famous town has only harpooneers, cannibals, and
 bumpkins to show her visitors. Not at all. Still New Bedford is a queer place.
 Had it not been for us whalemen, that tract of land would this day perhaps have
-been in as howling condition as the coast of Labrador.  As it is, parts of her
+been in as howling condition as the coast of Labrador. As it is, parts of her
 back country are enough to frighten one, they look so bony. The town itself is
 perhaps the dearest place to live in, in all New England. It is a land of oil,
 true enough: but not like Canaan; a land, also, of corn and wine. The streets
@@ -54,12 +53,12 @@ how planted upon this once scraggy scoria of a country?
 
 Go and gaze upon the iron emblematical harpoons round yonder lofty mansion, and
 your question will be answered. Yes; all these brave houses and flowery gardens
-came from the Atlantic, Pacific, and Indian oceans.  One and all, they were
+came from the Atlantic, Pacific, and Indian oceans. One and all, they were
 harpooned and dragged up hither from the bottom of the sea. Can Herr Alexander
 perform a feat like that?
 
 In New Bedford, fathers, they say, give whales for dowers to their daughters,
-and portion off their nieces with a few porpoises a-piece.  You must go to New
+and portion off their nieces with a few porpoises a-piece. You must go to New
 Bedford to see a brilliant wedding; for, they say, they have reservoirs of oil
 in every house, and every night recklessly burn their lengths in spermaceti
 candles.
@@ -77,6 +76,3 @@ as sunlight in the seventh heavens. Elsewhere match that bloom of theirs, ye
 cannot, save in Salem, where they tell me the young girls breathe such musk,
 their sailor sweethearts smell them miles off shore, as though they were
 drawing nigh the odorous Moluccas instead of the Puritanic sands.
-
-
-

@@ -1,6 +1,6 @@
-### Chapter 11. 
-Nightgown.
-==========
+### Chapter 11.
+
+# Nightgown.
 
 We had lain thus in bed, chatting and napping at short intervals, and Queequeg
 now and then affectionately throwing his brown tattooed legs over mine, and
@@ -58,6 +58,3 @@ Though at the time I but ill comprehended not a few of his words, yet
 subsequent disclosures, when I had become more familiar with his broken
 phraseology, now enable me to present the whole story such as it may prove in
 the mere skeleton I give.
-
-
-

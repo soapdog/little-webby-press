@@ -1,14 +1,13 @@
-### Chapter 71. 
-The Jeroboam’s Story.
-=====================
+### Chapter 71.
 
+# The Jeroboam’s Story.
 
 Hand in hand, ship and breeze blew on; but the breeze came faster than the
-ship, and soon the *Pequod* began to rock.
+ship, and soon the _Pequod_ began to rock.
 
 By and by, through the glass the stranger’s boats and manned mast-heads proved
 her a whale-ship. But as she was so far to windward, and shooting by,
-apparently making a passage to some other ground, the *Pequod* could not hope
+apparently making a passage to some other ground, the _Pequod_ could not hope
 to reach her. So the signal was set to see what response would be made.
 
 Here be it said, that like the vessels of military marines, the ships of the
@@ -18,22 +17,22 @@ captain is provided with it. Thereby, the whale commanders are enabled to
 recognise each other upon the ocean, even at considerable distances and with no
 small facility.
 
-The *Pequod’s* signal was at last responded to by the stranger’s setting her
-own; which proved the ship to be the *Jeroboam* of Nantucket. Squaring her
-yards, she bore down, ranged abeam under the *Pequod’s* lee, and lowered a
+The _Pequod’s_ signal was at last responded to by the stranger’s setting her
+own; which proved the ship to be the _Jeroboam_ of Nantucket. Squaring her
+yards, she bore down, ranged abeam under the _Pequod’s_ lee, and lowered a
 boat; it soon drew nigh; but, as the side-ladder was being rigged by Starbuck’s
 order to accommodate the visiting captain, the stranger in question waved his
 hand from his boat’s stern in token of that proceeding being entirely
-unnecessary. It turned out that the *Jeroboam* had a malignant epidemic on
-board, and that Mayhew, her captain, was fearful of infecting the *Pequod’s*
+unnecessary. It turned out that the _Jeroboam_ had a malignant epidemic on
+board, and that Mayhew, her captain, was fearful of infecting the _Pequod’s_
 company. For, though himself and boat’s crew remained untainted, and though his
 ship was half a rifle-shot off, and an incorruptible sea and air rolling and
 flowing between; yet conscientiously adhering to the timid quarantine of the
-land, he peremptorily refused to come into direct contact with the *Pequod.*
+land, he peremptorily refused to come into direct contact with the _Pequod._
 
 But this did by no means prevent all communications. Preserving an interval of
-some few yards between itself and the ship, the *Jeroboam’s* boat by the
-occasional use of its oars contrived to keep parallel to the *Pequod,* as she
+some few yards between itself and the ship, the _Jeroboam’s_ boat by the
+occasional use of its oars contrived to keep parallel to the _Pequod,_ as she
 heavily forged through the sea (for by this time it blew very fresh), with her
 main-topsail aback; though, indeed, at times by the sudden onset of a large
 rolling wave, the boat would be pushed some way ahead; but would be soon
@@ -42,7 +41,7 @@ like interruptions now and then, a conversation was sustained between the two
 parties; but at intervals not without still another interruption of a very
 different sort.
 
-Pulling an oar in the *Jeroboam’s* boat, was a man of a singular appearance,
+Pulling an oar in the _Jeroboam’s_ boat, was a man of a singular appearance,
 even in that wild whaling life where individual notabilities make up all
 totalities. He was a small, short, youngish man, sprinkled all over his face
 with freckles, and wearing redundant yellow hair. A long-skirted,
@@ -52,13 +51,13 @@ delirium was in his eyes.
 
 So soon as this figure had been first descried, Stubb had exclaimed — “That’s
 he! that’s he! — the long-togged scaramouch the Town-Ho’s company told us of!”
-Stubb here alluded to a strange story told of the *Jeroboam,* and a certain man
-among her crew, some time previous when the *Pequod* spoke the Town-Ho.
+Stubb here alluded to a strange story told of the _Jeroboam,_ and a certain man
+among her crew, some time previous when the _Pequod_ spoke the Town-Ho.
 According to this account and what was subsequently learned, it seemed that the
 scaramouch in question had gained a wonderful ascendency over almost everybody
-in the *Jeroboam.* His story was this:
+in the _Jeroboam._ His story was this:
 
-----
+---
 
 He had been originally nurtured among the crazy society of Neskyeuna Shakers,
 where he had been a great prophet; in their cracked, secret meetings having
@@ -68,7 +67,7 @@ which, instead of containing gunpowder, was supposed to be charged with
 laudanum. A strange, apostolic whim having seized him, he had left Neskyeuna
 for Nantucket, where, with that cunning peculiar to craziness, he assumed a
 steady, common-sense exterior, and offered himself as a green-hand candidate
-for the *Jeroboam’s* whaling voyage. They engaged him; but straightway upon the
+for the _Jeroboam’s_ whaling voyage. They engaged him; but straightway upon the
 ship’s getting out of sight of land, his insanity broke out in a freshet. He
 announced himself as the archangel Gabriel, and commanded the captain to jump
 overboard. He published his manifesto, whereby he set himself forth as the
@@ -91,15 +90,15 @@ it came to pass that Gabriel had the complete freedom of the ship. The
 consequence of all this was, that the archangel cared little or nothing for the
 captain and mates; and since the epidemic had broken out, he carried a higher
 hand than ever; declaring that the plague, as he called it, was at his sole
-command; nor should it be stayed but according to his good pleasure.  The
+command; nor should it be stayed but according to his good pleasure. The
 sailors, mostly poor devils, cringed, and some of them fawned before him; in
 obedience to his instructions, sometimes rendering him personal homage, as to a
 god. Such things may seem incredible; but, however wondrous, they are true. Nor
 is the history of fanatics half so striking in respect to the measureless
 self-deception of the fanatic himself, as his measureless power of deceiving
-and bedevilling so many others. But it is time to return to the *Pequod.*
+and bedevilling so many others. But it is time to return to the _Pequod._
 
-----
+---
 
 “I fear not thy epidemic, man,” said Ahab from the bulwarks, to Captain Mayhew,
 who stood in the boat’s stern; “come on board.”
@@ -128,9 +127,9 @@ When this interlude was over, Captain Mayhew began a dark story concerning Moby
 Dick; not, however, without frequent interruptions from Gabriel, whenever his
 name was mentioned, and the crazy sea that seemed leagued with him.
 
-----
+---
 
-It seemed that the *Jeroboam* had not long left home, when upon speaking a
+It seemed that the _Jeroboam_ had not long left home, when upon speaking a
 whale-ship, her people were reliably apprised of the existence of Moby Dick,
 and the havoc he had made. Greedily sucking in this intelligence, Gabriel
 solemnly warned the captain against attacking the White Whale, in case the
@@ -156,7 +155,7 @@ of the boat was harmed, nor a hair of any oarsman’s head; but the mate for eve
 sank.
 
 It is well to parenthesize here, that of the fatal accidents in the Sperm-Whale
-Fishery, this kind is perhaps almost as frequent as any.  Sometimes, nothing is
+Fishery, this kind is perhaps almost as frequent as any. Sometimes, nothing is
 injured but the man who is thus annihilated; oftener the boat’s bow is knocked
 off, or the thigh-board, in which the headsman stands, is torn from its place
 and accompanies the body. But strangest of all is the circumstance, that in
@@ -172,7 +171,7 @@ making a general prophecy, which any one might have done, and so have chanced
 to hit one of many marks in the wide margin allowed. He became a nameless
 terror to the ship.
 
-----
+---
 
 Mayhew having concluded his narration, Ahab put such questions to him, that the
 stranger captain could not forbear inquiring whether he intended to hunt the
@@ -202,9 +201,9 @@ cutting-spade pole, and with his knife slightly split the end, to insert the
 letter there, and in that way, hand it to the boat, without its coming any
 closer to the ship.
 
-Meantime, Ahab holding the letter, muttered, “Mr. Har — yes, Mr.  Harry — (a
-woman’s pinny hand, — the man’s wife, I’ll wager) — Aye — Mr.  Harry Macey,
-Ship *Jeroboam;* — why it’s Macey, and he’s dead!”
+Meantime, Ahab holding the letter, muttered, “Mr. Har — yes, Mr. Harry — (a
+woman’s pinny hand, — the man’s wife, I’ll wager) — Aye — Mr. Harry Macey,
+Ship _Jeroboam;_ — why it’s Macey, and he’s dead!”
 
 “Poor fellow! poor fellow! and from his wife,” sighed Mayhew; “but let me have
 it.”
@@ -213,16 +212,13 @@ it.”
 
 “Curses throttle thee!” yelled Ahab. “Captain Mayhew, stand by now to receive
 it"; and taking the fatal missive from Starbuck’s hands, he caught it in the
-slit of the pole, and reached it over towards the boat.  But as he did so, the
+slit of the pole, and reached it over towards the boat. But as he did so, the
 oarsmen expectantly desisted from rowing; the boat drifted a little towards the
 ship’s stern; so that, as if by magic, the letter suddenly ranged along with
 Gabriel’s eager hand. He clutched it in an instant, seized the boat-knife, and
 impaling the letter on it, sent it thus loaded back into the ship. It fell at
 Ahab’s feet. Then Gabriel shrieked out to his comrades to give way with their
-oars, and in that manner the mutinous boat rapidly shot away from the *Pequod.*
+oars, and in that manner the mutinous boat rapidly shot away from the _Pequod._
 
 As, after this interlude, the seamen resumed their work upon the jacket of the
 whale, many strange things were hinted in reference to this wild affair.
-
-
-

@@ -1,7 +1,6 @@
-### Chapter 86. 
-The Tail.
-=========
+### Chapter 86.
 
+# The Tail.
 
 Other poets have warbled the praises of the soft eye of the antelope, and the
 lovely plumage of the bird that never alights; less celestial, I celebrate a
@@ -11,7 +10,7 @@ Reckoning the largest sized Sperm Whale’s tail to begin at that point of the
 trunk where it tapers to about the girth of a man, it comprises upon its upper
 surface alone, an area of at least fifty square feet. The compact round body of
 its root expands into two broad, firm, flat palms or flukes, gradually shoaling
-away to less than an inch in thickness.  At the crotch or junction, these
+away to less than an inch in thickness. At the crotch or junction, these
 flukes slightly overlap, then sideways recede from each other like wings,
 leaving a wide vacancy between. In no living thing are the lines of beauty more
 exquisitely defined than in the crescentic borders of these flukes. At its
@@ -33,7 +32,7 @@ whole bulk of the leviathan is knit over with a warp and woof of muscular
 fibres and filaments, which passing on either side the loins and running down
 into the flukes, insensibly blend with them, and largely contribute to their
 might; so that in the tail the confluent measureless force of the whole whale
-seems concentrated to a point.  Could annihilation occur to matter, this were
+seems concentrated to a point. Could annihilation occur to matter, this were
 the thing to do it.
 
 Nor does this — its amazing strength, at all tend to cripple the graceful
@@ -62,7 +61,7 @@ Five great motions are peculiar to it. First, when used as a fin for
 progression; Second, when used as a mace in battle; Third, in sweeping; Fourth,
 in lobtailing; Fifth, in peaking flukes.
 
-__First:__ Being horizontal in its position, the Leviathan’s tail acts in a
+**First:** Being horizontal in its position, the Leviathan’s tail acts in a
 different manner from the tails of all other sea creatures. It never wriggles.
 In man or fish, wriggling is a sign of inferiority. To the whale, his tail is
 the sole means of propulsion. Scroll-wise coiled forwards beneath the body, and
@@ -70,7 +69,7 @@ then rapidly sprung backwards, it is this which gives that singular darting,
 leaping motion to the monster when furiously swimming. His side-fins only serve
 to steer by.
 
-__Second:__ It is a little significant, that while one sperm whale only fights
+**Second:** It is a little significant, that while one sperm whale only fights
 another sperm whale with his head and jaw, nevertheless, in his conflicts with
 man, he chiefly and contemptuously uses his tail. In striking at a boat, he
 swiftly curves away his flukes from it, and the blow is only inflicted by the
@@ -84,21 +83,21 @@ result. These submerged side blows are so often received in the fishery, that
 they are accounted mere child’s play. Some one strips off a frock, and the hole
 is stopped.
 
-__Third__: I cannot demonstrate it, but it seems to me, that in the whale the
+**Third**: I cannot demonstrate it, but it seems to me, that in the whale the
 sense of touch is concentrated in the tail; for in this respect there is a
 delicacy in it only equalled by the daintiness of the elephant’s trunk. This
 delicacy is chiefly evinced in the action of sweeping, when in maidenly
 gentleness the whale with a certain soft slowness moves his immense flukes from
 side to side upon the surface of the sea; and if he feel but a sailor’s
 whisker, woe to that sailor, whiskers and all. What tenderness there is in that
-preliminary touch!  Had this tail any prehensile power, I should straightway
+preliminary touch! Had this tail any prehensile power, I should straightway
 bethink me of Darmonodes’ elephant that so frequented the flower-market, and
 with low salutations presented nosegays to damsels, and then caressed their
 zones. On more accounts than one, a pity it is that the whale does not possess
 this prehensile virtue in his tail; for I have heard of yet another elephant,
 that when wounded in the fight, curved round his trunk and extracted the dart.
 
-__Fourth:__ Stealing unawares upon the whale in the fancied security of the
+**Fourth:** Stealing unawares upon the whale in the fancied security of the
 middle of solitary seas, you find him unbent from the vast corpulence of his
 dignity, and kitten-like, he plays on the ocean as if it were a hearth. But
 still you see his power in his play. The broad palms of his tail are flirted
@@ -107,12 +106,12 @@ for miles. You would almost think a great gun had been discharged; and if you
 noticed the light wreath of vapour from the spiracle at his other extremity,
 you would think that that was the smoke from the touch-hole.
 
-__Fifth:__ As in the ordinary floating posture of the leviathan the flukes lie
+**Fifth:** As in the ordinary floating posture of the leviathan the flukes lie
 considerably below the level of his back, they are then completely out of sight
 beneath the surface; but when he is about to plunge into the deeps, his entire
 flukes with at least thirty feet of his body are tossed erect in the air, and
 so remain vibrating a moment, till they downwards shoot out of view. Excepting
-the sublime *breach* — somewhere else to be described — this peaking of the
+the sublime _breach_ — somewhere else to be described — this peaking of the
 whale’s flukes is perhaps the grandest sight to be seen in all animated nature.
 Out of the bottomless profundities the gigantic tail seems spasmodically
 snatching at the highest heaven. So in dreams, have I seen majestic Satan
@@ -147,7 +146,7 @@ air, very much as an Indian juggler tosses his balls.\*
 > these is the spout. It is well known that the elephant will often draw up
 > water or dust in his trunk, and then elevating it, jet it forth in a stream.
 
-----
+---
 
 The more I consider this mighty tail, the more do I deplore my inability to
 express it. At times there are gestures in it, which, though they would well
@@ -163,6 +162,3 @@ his face, when face he has none? Thou shalt see my back parts, my tail, he
 seems to say, but my face shall not be seen. But I cannot completely make out
 his back parts; and hint what he will about his face, I say again he has no
 face.
-
-
-

@@ -1,7 +1,6 @@
-### Chapter 79. 
-The Prairie.
-============
+### Chapter 79.
 
+# The Prairie.
 
 To scan the lines of his face, or feel the bumps on the head of this Leviathan;
 this is a thing which no Physiognomist or Phrenologist has as yet undertaken.
@@ -16,7 +15,7 @@ phrenological characteristics of other beings than man. Therefore, though I am
 but ill qualified for a pioneer, in the application of these two semi-sciences
 to the whale, I will do my endeavor. I try all things; I achieve what I can.
 
-Physiognomically regarded, the Sperm Whale is an anomalous creature.  He has no
+Physiognomically regarded, the Sperm Whale is an anomalous creature. He has no
 proper nose. And since the nose is the central and most conspicuous of the
 features; and since it perhaps most modifies and finally controls their
 combined expression; hence it would seem that its entire absence, as an
@@ -41,7 +40,7 @@ In thought, a fine human brow is like the East when troubled with the morning.
 In the repose of the pasture, the curled brow of the bull has a touch of the
 grand in it. Pushing heavy cannon up mountain defiles, the elephant’s brow is
 majestic. Human or animal, the mystical brow is as that great golden seal
-affixed by the German Emperors to their decrees.  It signifies — “God: done
+affixed by the German Emperors to their decrees. It signifies — “God: done
 this day by my hand.” But in most creatures, nay in man himself, very often the
 brow is but a mere strip of alpine land lying along the snow line. Few are the
 foreheads which like Shakespeare’s or Melancthon’s rise so high, and descend so
@@ -55,7 +54,7 @@ than in beholding any other object in living nature. For you see no one point
 precisely; not one distinct feature is revealed; no nose, eyes, ears, or mouth;
 no face; he has none, proper; nothing but that one broad firmament of a
 forehead, pleated with riddles; dumbly lowering with the doom of boats, and
-ships, and men.  Nor, in profile, does this wondrous brow diminish; though that
+ships, and men. Nor, in profile, does this wondrous brow diminish; though that
 way viewed its grandeur does not domineer upon you so. In profile, you plainly
 perceive that horizontal, semi-crescentic depression in the forehead’s middle,
 which, in man, is Lavater’s mark of genius.
@@ -79,6 +78,3 @@ Sir William Jones, who read in thirty languages, could not read the simplest
 peasant’s face in its profounder and more subtle meanings, how may unlettered
 Ishmael hope to read the awful Chaldee of the Sperm Whale’s brow? I but put
 that brow before you. Read it if you can.
-
-
-
