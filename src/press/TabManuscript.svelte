@@ -4,13 +4,10 @@
 
 	export let book
 
-	let files = book.files.filter(f => {
-		if (book.config.book.frontmatter.includes(f.name) || book.config.book.chapters.includes(f.name)) {
-			return true
-		}
+	let fm = book.config.book.frontmatter || []
+	let chapters = book.config.book.chapters || []
 
-		return false
-	})
+	let files = fm.concat(chapters)
 
 </script>
 
@@ -37,7 +34,7 @@
 			<tbody>
 				{#each files as file, i}
 					<tr class:bg-gray-100={i % 2 == 0}>
-						<td class="border px-4 py-2">{file.filepath}</td>
+						<td class="border px-4 py-2">{file}</td>
 					</tr>
 				{/each}
 			</tbody>
