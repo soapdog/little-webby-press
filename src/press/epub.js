@@ -32,7 +32,6 @@ let md = new MarkdownIt({
 export function generateEpub(book) {
 	// Sit back, relax, and enjoy the waterfall...
 	return new Promise((resolve, reject) => {
-		console.log(book.config)
 		let bookSlug = slugify(book.config.metadata.title)
 		let fs = require("fs")
 		let folder = `/tmp/${bookSlug}`
@@ -58,8 +57,8 @@ export function generateEpub(book) {
 
 		// Add HTML Chapters
 		let contentFiles = [
-			...book.config.ebook.frontmatter,
-			...book.config.ebook.chapters,
+			...book.config.book.frontmatter,
+			...book.config.book.chapters,
 		]
 		let fp = contentFiles.map(async (chapterFilename) => {
 			let file = book.files.filter((f) => f.name === chapterFilename)[0]
@@ -74,7 +73,7 @@ export function generateEpub(book) {
 
 			// due to the async nature of this code, the ToC won't ready until
 			// all promises complete.
-			if (!book.config.ebook.frontmatter.includes(chapterFilename)) {
+			if (!book.config.book.frontmatter.includes(chapterFilename)) {
 				toc[destinationFilename] = extractToc(contentHtml, destinationFilename)
 			}
 		})
@@ -167,7 +166,6 @@ export function generateEpub(book) {
 				function (epubBlob) {
 					epubBlob.arrayBuffer().then((epubBuffer) => {
 						let Buffer = BrowserFS.BFSRequire("buffer").Buffer
-						console.log(epubBlob)
 						fs.writeFileSync(`/tmp/${bookSlug}.epub`, Buffer.from(epubBuffer))
 						saveAs(epubBlob, `${bookSlug}.epub`)
 						resolve()

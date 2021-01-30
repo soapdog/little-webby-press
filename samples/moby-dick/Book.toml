@@ -6,8 +6,9 @@ date = 2019-08-08T12:00:00Z
 identifier = "http://www.gutenberg.org/ebooks/2701"
 cover = "images/cover.jpg"
 
-[pwa]
+[site]
 enabled = false
+
 
 [webmonetization]
 enabled = false
@@ -18,7 +19,7 @@ prefix = "h3"
 label = "h1"
 match = "first"
 
-[ebook]
+[book]
 enabled = true
 theme = "technical"
 frontmatter = [

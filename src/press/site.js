@@ -13,7 +13,6 @@ import {
 export function generateSite(book) {
 	// Sit back, relax, and enjoy the waterfall...
 	return new Promise((resolve, reject) => {
-		console.log(book.config)
 		let bookSlug = slugify(book.config.metadata.title)
 		let fs = require("fs")
 		let siteFolder = `/tmp/${bookSlug}-site`

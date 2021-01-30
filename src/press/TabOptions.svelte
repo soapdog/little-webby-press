@@ -11,7 +11,7 @@
 		<div class="card-header flex justify-between">
 			<span class="card-title">{$_('options-ebook-section-header')}</span>
 			<div class="mb-4">
-				{#if book.config.ebook.enabled}
+				{#if book.config.book.enabled}
 					<i class="fas fa-toggle-on" />
 				{:else}
 					<i class="fas fa-toggle-off" />
@@ -19,13 +19,13 @@
 			</div>
 		</div>
 
-		{#if book.config.ebook.enabled}
+		{#if book.config.book.enabled}
 			<div class="card-body">
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">
 						{$_('options-theme')}
 					</label>
-					<span>{book.config.ebook.theme}</span>
+					<span>{book.config.book.theme}</span>
 				</div>
 			</div>
 
@@ -45,7 +45,7 @@
 		<div class="card-header flex justify-between">
 			<span class="card-title">{$_('options-website-section-header')}</span>
 			<div class="mb-4">
-				{#if book.config.pwa.enabled}
+				{#if book.config.site.enabled}
 					<i class="fas fa-toggle-on" />
 				{:else}
 					<i class="fas fa-toggle-off" />
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 
-		{#if book.config.pwa.enabled}
+		{#if book.config.site.enabled}
 			<div class="card-body">
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">

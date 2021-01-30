@@ -5,7 +5,7 @@
 	export let book
 
 	let files = book.files.filter(f => {
-		if (book.config.ebook.frontmatter.includes(f.name) || book.config.ebook.chapters.includes(f.name)) {
+		if (book.config.book.frontmatter.includes(f.name) || book.config.book.chapters.includes(f.name)) {
 			return true
 		}
 

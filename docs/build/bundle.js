@@ -22192,14 +22192,14 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(p, file$1, 29, 2, 665);
+    			add_location(p, file$1, 29, 2, 663);
     			attr_dev(th, "class", "px-4 py-2");
-    			add_location(th, file$1, 33, 5, 767);
-    			add_location(tr, file$1, 32, 4, 757);
-    			add_location(thead, file$1, 31, 3, 745);
-    			add_location(tbody, file$1, 36, 3, 843);
+    			add_location(th, file$1, 33, 5, 765);
+    			add_location(tr, file$1, 32, 4, 755);
+    			add_location(thead, file$1, 31, 3, 743);
+    			add_location(tbody, file$1, 36, 3, 841);
     			attr_dev(table, "class", "table-auto");
-    			add_location(table, file$1, 30, 2, 715);
+    			add_location(table, file$1, 30, 2, 713);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -22298,19 +22298,19 @@ var app = (function () {
     			button = element("button");
     			t5 = text(t5_value);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$1, 20, 4, 381);
+    			add_location(i, file$1, 20, 4, 379);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$1, 19, 3, 352);
+    			add_location(div0, file$1, 19, 3, 350);
     			attr_dev(p0, "class", "empty-title h5");
-    			add_location(p0, file$1, 22, 3, 426);
+    			add_location(p0, file$1, 22, 3, 424);
     			attr_dev(p1, "class", "empty-subtitle");
-    			add_location(p1, file$1, 23, 3, 482);
+    			add_location(p1, file$1, 23, 3, 480);
     			attr_dev(button, "class", "btn btn-primary");
-    			add_location(button, file$1, 25, 4, 577);
+    			add_location(button, file$1, 25, 4, 575);
     			attr_dev(div1, "class", "empty-action");
-    			add_location(div1, file$1, 24, 3, 546);
+    			add_location(div1, file$1, 24, 3, 544);
     			attr_dev(div2, "class", "empty");
-    			add_location(div2, file$1, 18, 2, 329);
+    			add_location(div2, file$1, 18, 2, 327);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -22363,9 +22363,9 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(td, "class", "border px-4 py-2");
-    			add_location(td, file$1, 39, 6, 927);
+    			add_location(td, file$1, 39, 6, 925);
     			toggle_class(tr, "bg-gray-100", /*i*/ ctx[5] % 2 == 0);
-    			add_location(tr, file$1, 38, 5, 885);
+    			add_location(tr, file$1, 38, 5, 883);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -22406,7 +22406,7 @@ var app = (function () {
     			div = element("div");
     			if_block.c();
     			attr_dev(div, "class", "card mb-6");
-    			add_location(div, file$1, 16, 0, 278);
+    			add_location(div, file$1, 16, 0, 276);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -22444,7 +22444,7 @@ var app = (function () {
     	let { book } = $$props;
 
     	let files = book.files.filter(f => {
-    		if (book.config.ebook.frontmatter.includes(f.name) || book.config.ebook.chapters.includes(f.name)) {
+    		if (book.config.book.frontmatter.includes(f.name) || book.config.book.chapters.includes(f.name)) {
     			return true;
     		}
 
@@ -22518,7 +22518,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-toggle-off");
-    			add_location(i, file$2, 16, 5, 398);
+    			add_location(i, file$2, 16, 5, 397);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -22539,7 +22539,7 @@ var app = (function () {
     	return block;
     }
 
-    // (14:4) {#if book.config.ebook.enabled}
+    // (14:4) {#if book.config.book.enabled}
     function create_if_block_4(ctx) {
     	let i;
 
@@ -22547,7 +22547,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-toggle-on");
-    			add_location(i, file$2, 14, 5, 350);
+    			add_location(i, file$2, 14, 5, 349);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -22561,7 +22561,7 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(14:4) {#if book.config.ebook.enabled}",
+    		source: "(14:4) {#if book.config.book.enabled}",
     		ctx
     	});
 
@@ -22579,7 +22579,7 @@ var app = (function () {
     			div = element("div");
     			t = text(t_value);
     			attr_dev(div, "class", "italic");
-    			add_location(div, file$2, 35, 3, 801);
+    			add_location(div, file$2, 35, 3, 798);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -22604,7 +22604,7 @@ var app = (function () {
     	return block;
     }
 
-    // (22:2) {#if book.config.ebook.enabled}
+    // (22:2) {#if book.config.book.enabled}
     function create_if_block_3(ctx) {
     	let div1;
     	let div0;
@@ -22613,7 +22613,7 @@ var app = (function () {
     	let t0;
     	let t1;
     	let span;
-    	let t2_value = /*book*/ ctx[0].config.ebook.theme + "";
+    	let t2_value = /*book*/ ctx[0].config.book.theme + "";
     	let t2;
     	let t3;
     	let div2;
@@ -22633,14 +22633,14 @@ var app = (function () {
     			div2 = element("div");
     			t4 = text(t4_value);
     			attr_dev(label, "class", "block text-gray-700 text-md font-bold mb-2");
-    			add_location(label, file$2, 24, 5, 549);
-    			add_location(span, file$2, 27, 5, 655);
+    			add_location(label, file$2, 24, 5, 547);
+    			add_location(span, file$2, 27, 5, 653);
     			attr_dev(div0, "class", "mb-3");
-    			add_location(div0, file$2, 23, 4, 525);
+    			add_location(div0, file$2, 23, 4, 523);
     			attr_dev(div1, "class", "card-body");
-    			add_location(div1, file$2, 22, 3, 497);
+    			add_location(div1, file$2, 22, 3, 495);
     			attr_dev(div2, "class", "italic");
-    			add_location(div2, file$2, 31, 3, 719);
+    			add_location(div2, file$2, 31, 3, 716);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -22656,7 +22656,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*$_*/ 2 && t0_value !== (t0_value = /*$_*/ ctx[1]("options-theme") + "")) set_data_dev(t0, t0_value);
-    			if (dirty & /*book*/ 1 && t2_value !== (t2_value = /*book*/ ctx[0].config.ebook.theme + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*book*/ 1 && t2_value !== (t2_value = /*book*/ ctx[0].config.book.theme + "")) set_data_dev(t2, t2_value);
     			if (dirty & /*$_*/ 2 && t4_value !== (t4_value = /*$_*/ ctx[1]("options-book-format-blurb") + "")) set_data_dev(t4, t4_value);
     		},
     		d: function destroy(detaching) {
@@ -22670,7 +22670,7 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(22:2) {#if book.config.ebook.enabled}",
+    		source: "(22:2) {#if book.config.book.enabled}",
     		ctx
     	});
 
@@ -22685,7 +22685,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-toggle-off");
-    			add_location(i, file$2, 50, 5, 1146);
+    			add_location(i, file$2, 50, 5, 1144);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -22706,7 +22706,7 @@ var app = (function () {
     	return block;
     }
 
-    // (48:4) {#if book.config.pwa.enabled}
+    // (48:4) {#if book.config.site.enabled}
     function create_if_block_2(ctx) {
     	let i;
 
@@ -22714,7 +22714,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-toggle-on");
-    			add_location(i, file$2, 48, 5, 1098);
+    			add_location(i, file$2, 48, 5, 1096);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -22728,7 +22728,7 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(48:4) {#if book.config.pwa.enabled}",
+    		source: "(48:4) {#if book.config.site.enabled}",
     		ctx
     	});
 
@@ -22746,7 +22746,7 @@ var app = (function () {
     			div = element("div");
     			t = text(t_value);
     			attr_dev(div, "class", "italic");
-    			add_location(div, file$2, 80, 3, 1877);
+    			add_location(div, file$2, 80, 3, 1876);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -22771,7 +22771,7 @@ var app = (function () {
     	return block;
     }
 
-    // (56:2) {#if book.config.pwa.enabled}
+    // (56:2) {#if book.config.site.enabled}
     function create_if_block$1(ctx) {
     	let div2;
     	let div0;
@@ -22820,18 +22820,18 @@ var app = (function () {
     			div3 = element("div");
     			t7 = text(t7_value);
     			attr_dev(label0, "class", "block text-gray-700 text-md font-bold mb-2");
-    			add_location(label0, file$2, 58, 5, 1295);
+    			add_location(label0, file$2, 58, 5, 1294);
     			attr_dev(div0, "class", "mb-3");
-    			add_location(div0, file$2, 57, 4, 1271);
+    			add_location(div0, file$2, 57, 4, 1270);
     			attr_dev(label1, "class", "block text-gray-700 text-md font-bold mb-2");
-    			add_location(label1, file$2, 69, 5, 1589);
-    			add_location(span, file$2, 72, 5, 1715);
+    			add_location(label1, file$2, 69, 5, 1588);
+    			add_location(span, file$2, 72, 5, 1714);
     			attr_dev(div1, "class", "mb-3");
-    			add_location(div1, file$2, 68, 4, 1565);
+    			add_location(div1, file$2, 68, 4, 1564);
     			attr_dev(div2, "class", "card-body");
-    			add_location(div2, file$2, 56, 3, 1243);
+    			add_location(div2, file$2, 56, 3, 1242);
     			attr_dev(div3, "class", "italic");
-    			add_location(div3, file$2, 76, 3, 1792);
+    			add_location(div3, file$2, 76, 3, 1791);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -22882,7 +22882,7 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(56:2) {#if book.config.pwa.enabled}",
+    		source: "(56:2) {#if book.config.site.enabled}",
     		ctx
     	});
 
@@ -22899,7 +22899,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text(t_value);
-    			add_location(span, file$2, 64, 6, 1508);
+    			add_location(span, file$2, 64, 6, 1507);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -22934,7 +22934,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text(t_value);
-    			add_location(span, file$2, 62, 6, 1460);
+    			add_location(span, file$2, 62, 6, 1459);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -22980,7 +22980,7 @@ var app = (function () {
     	let t6;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*book*/ ctx[0].config.ebook.enabled) return create_if_block_4;
+    		if (/*book*/ ctx[0].config.book.enabled) return create_if_block_4;
     		return create_else_block_4;
     	}
 
@@ -22988,7 +22988,7 @@ var app = (function () {
     	let if_block0 = current_block_type(ctx);
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*book*/ ctx[0].config.ebook.enabled) return create_if_block_3;
+    		if (/*book*/ ctx[0].config.book.enabled) return create_if_block_3;
     		return create_else_block_3;
     	}
 
@@ -22996,7 +22996,7 @@ var app = (function () {
     	let if_block1 = current_block_type_1(ctx);
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*book*/ ctx[0].config.pwa.enabled) return create_if_block_2;
+    		if (/*book*/ ctx[0].config.site.enabled) return create_if_block_2;
     		return create_else_block_2;
     	}
 
@@ -23004,7 +23004,7 @@ var app = (function () {
     	let if_block2 = current_block_type_2(ctx);
 
     	function select_block_type_3(ctx, dirty) {
-    		if (/*book*/ ctx[0].config.pwa.enabled) return create_if_block$1;
+    		if (/*book*/ ctx[0].config.site.enabled) return create_if_block$1;
     		return create_else_block_1;
     	}
 
@@ -23042,13 +23042,13 @@ var app = (function () {
     			attr_dev(div2, "class", "card mb-6");
     			add_location(div2, file$2, 8, 1, 141);
     			attr_dev(span1, "class", "card-title");
-    			add_location(span1, file$2, 45, 3, 966);
+    			add_location(span1, file$2, 45, 3, 963);
     			attr_dev(div3, "class", "mb-4");
-    			add_location(div3, file$2, 46, 3, 1040);
+    			add_location(div3, file$2, 46, 3, 1037);
     			attr_dev(div4, "class", "card-header flex justify-between");
-    			add_location(div4, file$2, 44, 2, 916);
+    			add_location(div4, file$2, 44, 2, 913);
     			attr_dev(div5, "class", "card mb-6");
-    			add_location(div5, file$2, 42, 1, 889);
+    			add_location(div5, file$2, 42, 1, 886);
     			attr_dev(form, "class", "w-full max-w-lg");
     			attr_dev(form, "action", "");
     			add_location(form, file$2, 7, 0, 99);
@@ -67977,7 +67977,6 @@ var app = (function () {
     function generateEpub(book) {
     	// Sit back, relax, and enjoy the waterfall...
     	return new Promise((resolve, reject) => {
-    		console.log(book.config);
     		let bookSlug = slugify(book.config.metadata.title);
     		let fs = require("fs");
     		let folder = `/tmp/${bookSlug}`;
@@ -68003,8 +68002,8 @@ var app = (function () {
 
     		// Add HTML Chapters
     		let contentFiles = [
-    			...book.config.ebook.frontmatter,
-    			...book.config.ebook.chapters,
+    			...book.config.book.frontmatter,
+    			...book.config.book.chapters,
     		];
     		let fp = contentFiles.map(async (chapterFilename) => {
     			let file = book.files.filter((f) => f.name === chapterFilename)[0];
@@ -68019,7 +68018,7 @@ var app = (function () {
 
     			// due to the async nature of this code, the ToC won't ready until
     			// all promises complete.
-    			if (!book.config.ebook.frontmatter.includes(chapterFilename)) {
+    			if (!book.config.book.frontmatter.includes(chapterFilename)) {
     				toc[destinationFilename] = extractToc(contentHtml, destinationFilename);
     			}
     		});
@@ -68112,7 +68111,6 @@ var app = (function () {
     				function (epubBlob) {
     					epubBlob.arrayBuffer().then((epubBuffer) => {
     						let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-    						console.log(epubBlob);
     						fs.writeFileSync(`/tmp/${bookSlug}.epub`, Buffer.from(epubBuffer));
     						FileSaver_min(epubBlob, `${bookSlug}.epub`);
     						resolve();
@@ -68131,7 +68129,6 @@ var app = (function () {
     function generateSite(book) {
     	// Sit back, relax, and enjoy the waterfall...
     	return new Promise((resolve, reject) => {
-    		console.log(book.config);
     		let bookSlug = slugify(book.config.metadata.title);
     		let fs = require("fs");
     		let siteFolder = `/tmp/${bookSlug}-site`;
@@ -73749,7 +73746,8 @@ var app = (function () {
     	"error-quip": "Holy smokes!",
     	manuscript: manuscript,
     	"manuscript-tab-description": "The <em>Manuscript</em> tab only lists files listed in <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to locate. This is not your table of contents or spine.",
-    	"generating-book": "Generating book...",
+    	"generating-book": "Generating eBook...",
+    	"generating-site": "Generating Site...",
     	"get-help": "Learn more about book data :-)",
     	"getting-file-list": "Getting file list...",
     	"header-filename": "filename",
