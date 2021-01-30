@@ -1,6 +1,6 @@
-###Chapter 74. 
-The Sperm Whale’s Head — Contrasted View.
-=========================================
+### Chapter 74.
+
+# The Sperm Whale’s Head — Contrasted View.
 
 Here, now, are two great whales, laying their heads together; let us join them,
 and lay together our own.
@@ -100,7 +100,7 @@ through so small an eye, and hear the thunder through an ear which is smaller
 than a hare’s? But if his eyes were broad as the lens of Herschel’s great
 telescope; and his ears capacious as the porches of cathedrals; would that make
 him any longer of sight, or sharper of hearing? Not at all. — Why then do you
-try to “enlarge” your mind?  Subtilize it.
+try to “enlarge” your mind? Subtilize it.
 
 Let us now with whatever levers and steam-engines we have at hand, cant over
 the sperm whale’s head, that it may lie bottom up; then, ascending by a ladder
@@ -139,6 +139,3 @@ these teeth, as Michigan oxen drag stumps of old oaks out of wild wood lands.
 There are generally forty-two teeth in all; in old whales, much worn down, but
 undecayed; nor filled after our artificial fashion. The jaw is afterwards sawn
 into slabs, and piled away like joists for building houses.
-
-
-

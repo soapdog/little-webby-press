@@ -1,9 +1,8 @@
-### Chapter 59. 
-Squid.
-======
+### Chapter 59.
 
+# Squid.
 
-Slowly wading through the meadows of brit, the *Pequod* still held on her way
+Slowly wading through the meadows of brit, the _Pequod_ still held on her way
 north-eastward towards the island of Java; a gentle air impelling her keel, so
 that in the surrounding serenity her three tall tapering masts mildly waved to
 that languid breeze, as three mild palms on a plain. And still, at wide
@@ -20,10 +19,10 @@ In the distance, a great white mass lazily rose, and rising higher and higher,
 and disentangling itself from the azure, at last gleamed before our prow like a
 snow-slide, new slid from the hills. Thus glistening for a moment, as slowly it
 subsided, and sank. Then once more arose, and silently gleamed. It seemed not a
-whale; and yet is this Moby Dick?  thought Daggoo. Again the phantom went down,
+whale; and yet is this Moby Dick? thought Daggoo. Again the phantom went down,
 but on re-appearing once more, with a stiletto-like cry that startled every man
 from his nod, the negro yelled out — “There! there again! there she breaches!
-right ahead!  The White Whale, the White Whale!”
+right ahead! The White Whale, the White Whale!”
 
 Upon this, the seamen rushed to the yard-arms, as in swarming-time the bees
 rush to the boughs. Bare-headed in the sultry sun, Ahab stood on the bowsprit,
@@ -43,7 +42,7 @@ pulling towards their prey. Soon it went down, and while, with oars suspended,
 we were awaiting its reappearance, lo! in the same spot where it sank, once
 more it slowly rose. Almost forgetting for the moment all thoughts of Moby
 Dick, we now gazed at the most wondrous phenomenon which the secret seas have
-hitherto revealed to mankind.  A vast pulpy mass, furlongs in length and
+hitherto revealed to mankind. A vast pulpy mass, furlongs in length and
 breadth, of a glancing cream-colour, lay floating on the water, innumerable
 long arms radiating from its centre, and curling and twisting like a nest of
 anacondas, as if blindly to clutch at any hapless object within reach. No
@@ -84,13 +83,10 @@ to attack and tear it.
 There seems some ground to imagine that the great Kraken of Bishop Pontoppodan
 may ultimately resolve itself into Squid. The manner in which the Bishop
 describes it, as alternately rising and sinking, with some other particulars he
-narrates, in all this the two correspond.  But much abatement is necessary with
+narrates, in all this the two correspond. But much abatement is necessary with
 respect to the incredible bulk he assigns it.
 
 By some naturalists who have vaguely heard rumors of the mysterious creature,
 here spoken of, it is included among the class of cuttle-fish, to which,
 indeed, in certain external respects it would seem to belong, but only as the
 Anak of the tribe.
-
-
-

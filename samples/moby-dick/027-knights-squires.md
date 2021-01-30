@@ -1,7 +1,6 @@
-### Chapter 27. 
-Knights & Squires.
-==================
+### Chapter 27.
 
+# Knights & Squires.
 
 Stubb was the second mate. He was a native of Cape Cod; and hence, according to
 local usage, was called a Cape-Cod-man. A happy-go-lucky; neither craven nor
@@ -58,14 +57,14 @@ matter of whales; he followed these fish for the fun of it; and a three years’
 voyage round Cape Horn was only a jolly joke that lasted that length of time.
 As a carpenter’s nails are divided into wrought nails and cut nails; so mankind
 may be similarly divided. Little Flask was one of the wrought ones; made to
-clinch tight and last long. They called him King-Post on board of the *Pequod;*
+clinch tight and last long. They called him King-Post on board of the _Pequod;_
 because, in form, he could be well likened to the short, square timber known by
 that name in Arctic whalers; and which by the means of many radiating side
 timbers inserted into it, serves to brace the ship against the icy concussions
 of those battering seas.
 
 Now these three mates — Starbuck, Stubb, and Flask, were momentous men. They it
-was who by universal prescription commanded three of the *Pequod’s* boats as
+was who by universal prescription commanded three of the _Pequod’s_ boats as
 headsmen. In that grand order of battle in which Captain Ahab would probably
 marshal his forces to descend on the whales, these three headsmen were as
 captains of companies. Or, being armed with their long keen whaling spears,
@@ -77,7 +76,7 @@ of old, is always accompanied by his boat-steerer or harpooneer, who in certain
 conjunctures provides him with a fresh lance, when the former one has been
 badly twisted, or elbowed in the assault; and moreover, as there generally
 subsists between the two, a close intimacy and friendliness; it is therefore
-but meet, that in this place we set down who the *Pequod’s* harpooneers were,
+but meet, that in this place we set down who the _Pequod’s_ harpooneers were,
 and to what headsman each of them belonged.
 
 First of all was Queequeg, whom Starbuck, the chief mate, had selected for his
@@ -114,7 +113,7 @@ his socks. There was a corporeal humility in looking up at him; and a white man
 standing before him seemed a white flag come to beg truce of a fortress.
 Curious to tell, this imperial negro, Ahasuerus Daggoo, was the Squire of
 little Flask, who looked like a chess-man beside him. As for the residue of the
-*Pequod’s* company, be it said, that at the present day not one in two of the
+_Pequod’s_ company, be it said, that at the present day not one in two of the
 many thousand men before the mast employed in the American whale fishery, are
 Americans born, though pretty nearly all the officers are. Herein it is the
 same with the American whale fishery as with the American army and military and
@@ -128,17 +127,14 @@ like manner, the Greenland whalers sailing out of Hull or London, put in at the
 Shetland Islands, to receive the full complement of their crew. Upon the
 passage homewards, they drop them there again. How it is, there is no telling,
 but Islanders seem to make the best whalemen. They were nearly all Islanders in
-the *Pequod,* *isolatoes* too, I call such, not acknowledging the common
-continent of men, but each *isolato* living on a separate continent of his own.
-Yet now, federated along one keel, what a set these Isolatoes were!  An
+the _Pequod,_ _isolatoes_ too, I call such, not acknowledging the common
+continent of men, but each _isolato_ living on a separate continent of his own.
+Yet now, federated along one keel, what a set these Isolatoes were! An
 Anacharsis Clootz deputation from all the isles of the sea, and all the ends of
-the earth, accompanying Old Ahab in the *Pequod* to lay the world’s grievances
+the earth, accompanying Old Ahab in the _Pequod_ to lay the world’s grievances
 before that bar from which not very many of them ever come back. Black Little
 Pip — he never did — oh, no! he went before. Poor Alabama boy! On the grim
-*Pequod’s* forecastle, ye shall ere long see him, beating his tambourine;
+_Pequod’s_ forecastle, ye shall ere long see him, beating his tambourine;
 prelusive of the eternal time, when sent for, to the great quarter-deck on
 high, he was bid strike in with angels, and beat his tambourine in glory;
 called a coward here, hailed a hero there!
-
-
-

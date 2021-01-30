@@ -1,17 +1,16 @@
-### Chapter 29. 
-Enter Ahab; to Him, Stubb.
-==========================
+### Chapter 29.
 
+# Enter Ahab; to Him, Stubb.
 
 Some days elapsed, and ice and icebergs all astern, the Pequod now went rolling
 through the bright Quito spring, which, at sea, almost perpetually reigns on
-the threshold of the eternal August of the Tropic.  The warmly cool, clear,
+the threshold of the eternal August of the Tropic. The warmly cool, clear,
 ringing, perfumed, overflowing, redundant days, were as crystal goblets of
 Persian sherbet, heaped up — flaked up, with rose-water snow. The starred and
 stately nights seemed haughty dames in jewelled velvets, nursing at home in
 lonely pride, the memory of their absent conquering Earls, the golden helmeted
 suns! For sleeping man, ’twas hard to choose between such winsome days and such
-seducing nights.  But all the witcheries of that unwaning weather did not
+seducing nights. But all the witcheries of that unwaning weather did not
 merely lend new spells and potencies to the outward world. Inward they turned
 upon the soul, especially when the still mild hours of eve came on; then,
 memory shot her crystals as the clear ice most forms of noiseless twilights.
@@ -33,7 +32,7 @@ by day, but with some cautiousness dropt it to its place for fear of disturbing
 their slumbering shipmates; when this sort of steady quietude would begin to
 prevail, habitually, the silent steersman would watch the cabin-scuttle; and
 ere long the old man would emerge, gripping at the iron banister, to help his
-crippled way.  Some considering touch of humanity was in him; for at times like
+crippled way. Some considering touch of humanity was in him; for at times like
 these, he usually abstained from patrolling the quarter-deck; because to his
 wearied mates, seeking repose within six inches of his ivory heel, such would
 have been the reverberating crack and din of that bony step, that their dreams
@@ -71,7 +70,7 @@ aspect, that Stubb involuntarily retreated.
 Stubb, as he found himself descending the cabin-scuttle. “It’s very queer.
 Stop, Stubb; somehow, now, I don’t well know whether to go back and strike him,
 or — what’s that? — down here on my knees and pray for him? Yes, that was the
-thought coming up in me; but it would be the first time I ever *did* pray. It’s
+thought coming up in me; but it would be the first time I ever _did_ pray. It’s
 queer; very queer; and he’s queer too; aye, take him fore and aft, he’s about
 the queerest old man Stubb ever sailed with. How he flashed at me! — his eyes
 like powder-pans! is he mad? Anyway there’s something on his mind, as sure as
@@ -92,15 +91,12 @@ to fall right asleep. And now that I think of it, that’s about the first thing
 babies do, and that’s a sort of queer, too. Damn me, but all things are queer,
 come to think of ’em. But that’s against my principles. Think not, is my
 eleventh commandment; and sleep when you can, is my twelfth — So here goes
-again. But how’s that?  didn’t he call me a dog? blazes! he called me ten times
-a donkey, and piled a lot of jackasses on top of *that!* He might as well have
-kicked me, and done with it. Maybe he *did* kick me, and I didn’t observe it, I
+again. But how’s that? didn’t he call me a dog? blazes! he called me ten times
+a donkey, and piled a lot of jackasses on top of _that!_ He might as well have
+kicked me, and done with it. Maybe he _did_ kick me, and I didn’t observe it, I
 was so taken all aback with his brow, somehow. It flashed like a bleached bone.
 What the devil’s the matter with me? I don’t stand right on my legs. Coming
 afoul of that old man has a sort of turned me wrong side out. By the Lord, I
-must have been dreaming, though — How? how?  how? — but the only way’s to stash
+must have been dreaming, though — How? how? how? — but the only way’s to stash
 it; so here goes to hammock again; and in the morning, I’ll see how this
 plaguey juggling thinks over by daylight.”
-
-
-

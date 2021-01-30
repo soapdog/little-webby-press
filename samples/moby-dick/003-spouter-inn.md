@@ -1,6 +1,6 @@
-### Chapter 3.  
-The Spouter-Inn.  
-================
+### Chapter 3.
+
+# The Spouter-Inn.
 
 Entering that gable-ended Spouter-Inn, you found yourself in a wide, low,
 straggling entry with old-fashioned wainscots, reminding one of the bulwarks of
@@ -19,7 +19,7 @@ altogether unwarranted.
 But what most puzzled and confounded you was a long, limber, portentous, black
 mass of something hovering in the centre of the picture over three blue, dim,
 perpendicular lines floating in a nameless yeast. A boggy, soggy, squitchy
-picture truly, enough to drive a nervous man distracted.  Yet was there a sort
+picture truly, enough to drive a nervous man distracted. Yet was there a sort
 of indefinite, half-attained, unimaginable sublimity about it that fairly froze
 you to it, till you involuntarily took an oath with yourself to find out what
 that marvellous painting meant. Ever and anon a bright, but, alas, deceptive
@@ -27,7 +27,7 @@ idea would dart you through. — It’s the Black Sea in a midnight gale. — It
 unnatural combat of the four primal elements. — It’s a blasted heath. — It’s a
 Hyperborean winter scene. — It’s the breaking-up of the icebound stream of Time.
 But at last all these fancies yielded to that one portentous something in the
-picture’s midst. *That* once found out, and all the rest were plain. But stop;
+picture’s midst. _That_ once found out, and all the rest were plain. But stop;
 does it not bear a faint resemblance to a gigantic fish? even the great
 leviathan himself?
 
@@ -72,14 +72,14 @@ money, dearly sells the sailors deliriums and death.
 Abominable are the tumblers into which he pours his poison. Though true
 cylinders without — within, the villanous green goggling glasses deceitfully
 tapered downwards to a cheating bottom. Parallel meridians rudely pecked into
-the glass, surround these footpads’ goblets. Fill to *this* mark, and your
-charge is but a penny; to *this* a penny more; and so on to the full glass — the
+the glass, surround these footpads’ goblets. Fill to _this_ mark, and your
+charge is but a penny; to _this_ a penny more; and so on to the full glass — the
 Cape Horn measure, which you may gulp down for a shilling.
 
 Upon entering the place I found a number of young seamen gathered about a table,
-examining by a dim light divers specimens of *skrimshander.* I sought the
+examining by a dim light divers specimens of _skrimshander._ I sought the
 landlord, and telling him I desired to be accommodated with a room, received for
-answer that his house was full — not a bed unoccupied.  “But avast,” he added,
+answer that his house was full — not a bed unoccupied. “But avast,” he added,
 tapping his forehead, “you haint no objections to sharing a harpooneer’s
 blanket, have ye? I s’pose you are goin’ a-whalin’, so you’d better get used to
 that sort of thing.”
@@ -90,7 +90,7 @@ landlord) really had no other place for me, and the harpooneer was not decidedly
 objectionable, why rather than wander further about a strange town on so bitter
 a night, I would put up with the half of any decent man’s blanket.
 
-“I thought so. All right; take a seat. Supper? — you want supper?  Supper’ll be
+“I thought so. All right; take a seat. Supper? — you want supper? Supper’ll be
 ready directly.”
 
 I sat down on an old wooden settle, carved all over like a bench on the Battery.
@@ -185,7 +185,7 @@ yourself with your own blanket, and sleep in your own skin.
 The more I pondered over this harpooneer, the more I abominated the thought of
 sleeping with him. It was fair to presume that being a harpooneer, his linen or
 woollen, as the case might be, would not be of the tidiest, certainly none of
-the finest. I began to twitch all over.  Besides, it was getting late, and my
+the finest. I began to twitch all over. Besides, it was getting late, and my
 decent harpooneer ought to be home and going bedwards. Suppose now, he should
 tumble in upon me at midnight — how could I tell from what vile hole he had been
 coming?
@@ -259,14 +259,14 @@ here, the market’s overstocked.”
 spinning that yarn to me — I’m not green.”
 
 “May be not,” taking out a stick and whittling a toothpick, “but I rayther guess
-you’ll be done *brown* if that ere harpooneer hears you a slanderin’ his head.”
+you’ll be done _brown_ if that ere harpooneer hears you a slanderin’ his head.”
 
 “I’ll break it for him,” said I, now flying into a passion again at this
 unaccountable farrago of the landlord’s.
 
 “It’s broke a’ready,” said he.
 
-“Broke,” said I — *“broke,* do you mean?”
+“Broke,” said I — _“broke,_ do you mean?”
 
 “Sartain, and that’s the very reason he can’t sell it, I guess.”
 
@@ -282,8 +282,8 @@ demand of you to speak out and tell me who and what this harpooneer is, and
 whether I shall be in all respects safe to spend the night with him. And in the
 first place, you will be so good as to unsay that story about selling his head,
 which if true I take to be good evidence that this harpooneer is stark mad, and
-I’ve no idea of sleeping with a madman; and you, sir, *you* I mean, landlord,
-*YOU, sir, by trying to induce me to do so knowingly, would thereby render
+I’ve no idea of sleeping with a madman; and you, sir, _you_ I mean, landlord,
+\*YOU, sir, by trying to induce me to do so knowingly, would thereby render
 yourself liable to a criminal prosecution.”
 
 “Wall,” said the landlord, fetching a long breath, “that’s a purty long sarmon
@@ -310,12 +310,12 @@ the night we were spliced. There’s plenty of room for two to kick about in tha
 bed; it’s an almighty big bed that. Why, afore we give it up, Sal used to put
 our Sam and little Johnny in the foot of it. But I got a dreaming and sprawling
 about one night, and somehow, Sam got pitched on the floor, and came near
-breaking his arm.  Arter that, Sal said it wouldn’t do. Come along here, I’ll
+breaking his arm. Arter that, Sal said it wouldn’t do. Come along here, I’ll
 give ye a glim in a jiffy;” and so saying he lighted a candle and held it
 towards me, offering to lead the way. But I stood irresolute; when looking at a
 clock in the corner, he exclaimed “I vum it’s Sunday — you won’t see that
-harpooneer to-night; he’s come to anchor somewhere — come along then; *do* come;
-*won’t* ye come?”
+harpooneer to-night; he’s come to anchor somewhere — come along then; _do_ come;
+_won’t_ ye come?”
 
 I considered the matter a moment, and then up stairs we went, and I was ushered
 into a small room, cold as a clam, and furnished, sure enough, with a prodigious
@@ -333,7 +333,7 @@ belonging to the place, but a rude shelf, the four walls, and a papered
 fireboard representing a man striking a whale. Of things not properly belonging
 to the room, there was a hammock lashed up, and thrown upon the floor in one
 corner; also a large seaman’s bag, containing the harpooneer’s wardrobe, no
-doubt in lieu of a land trunk.  Likewise, there was a parcel of outlandish bone
+doubt in lieu of a land trunk. Likewise, there was a parcel of outlandish bone
 fish hooks on the shelf over the fire-place, and a tall harpoon standing at the
 head of the bed.
 
@@ -397,16 +397,16 @@ this harpooneer never noticed me at all. But, after some difficulty having
 opened his bag, he commenced fumbling in it, and presently pulled out a sort of
 tomahawk, and a seal-skin wallet with the hair on. Placing these on the old
 chest in the middle of the room, he then took the New Zealand head — a ghastly
-thing enough — and crammed it down into the bag.  He now took off his hat — a
+thing enough — and crammed it down into the bag. He now took off his hat — a
 new beaver hat — when I came nigh singing out with fresh surprise. There was no
 hair on his head — none to speak of at least — nothing but a small scalp-knot
 twisted up on his forehead. His bald purplish head now looked for all the world
-like a mildewed skull.  Had not the stranger stood between me and the door, I
+like a mildewed skull. Had not the stranger stood between me and the door, I
 would have bolted out of it quicker than ever I bolted a dinner.
 
 Even as it was, I thought something of slipping out of the window, but it was
 the second floor back. I am no coward, but what to make of this head-peddling
-purple rascal altogether passed my comprehension.  Ignorance is the parent of
+purple rascal altogether passed my comprehension. Ignorance is the parent of
 fear, and being completely nonplussed and confounded about the stranger, I
 confess I was now as much afraid of him as if it was the devil himself who had
 thus broken into my room at the dead of night. In fact, I was so afraid of him
@@ -421,7 +421,7 @@ sticking-plaster shirt. Still more, his very legs were marked, as if a parcel of
 dark green frogs were running up the trunks of young palms. It was now quite
 plain that he must be some abominable savage or other shipped aboard of a
 whaleman in the South Seas, and so landed in this Christian country. I quaked to
-think of it.  A peddler of heads too — perhaps the heads of his own brothers. He
+think of it. A peddler of heads too — perhaps the heads of his own brothers. He
 might take a fancy to mine — heavens! look at that tomahawk!
 
 But there was no time for shuddering, for now the savage went about something
@@ -461,7 +461,7 @@ exhibiting strong symptoms of concluding his business operations, and jumping
 into bed with me, I thought it was high time, now or never, before the light was
 put out, to break the spell in which I had so long been bound.
 
-But the interval I spent in deliberating what to say, was a fatal one.  Taking
+But the interval I spent in deliberating what to say, was a fatal one. Taking
 up his tomahawk from the table, he examined the head of it for an instant, and
 then holding it to the light, with his mouth at the handle, he puffed out great
 clouds of tobacco smoke. The next moment the light was extinguished, and this
@@ -477,12 +477,12 @@ at once that he but ill comprehended my meaning.
 “Who-e debel you?” — he at last said — “you no speak-e, dam-me, I kill-e.” And
 so saying the lighted tomahawk began flourishing about me in the dark.
 
-“Landlord, for God’s sake, Peter Coffin!” shouted I. “Landlord! Watch!  Coffin!
+“Landlord, for God’s sake, Peter Coffin!” shouted I. “Landlord! Watch! Coffin!
 Angels! save me!”
 
 “Speak-e! tell-ee me who-ee be, or dam-me, I kill-e!” again growled the
 cannibal, while his horrid flourishings of the tomahawk scattered the hot
-tobacco ashes about me till I thought my linen would get on fire.  But thank
+tobacco ashes about me till I thought my linen would get on fire. But thank
 heaven, at that moment the landlord came into the room light in hand, and
 leaping from the bed I ran up to him.
 
@@ -501,7 +501,7 @@ in bed.
 
 “You gettee in,” he added, motioning to me with his tomahawk, and throwing the
 clothes to one side. He really did this in not only a civil but a really kind
-and charitable way. I stood looking at him a moment.  For all his tattooings he
+and charitable way. I stood looking at him a moment. For all his tattooings he
 was on the whole a clean, comely looking cannibal. What’s all this fuss I have
 been making about, thought I to myself — the man’s a human being just as I am:
 he has just as much reason to fear me, as I have to be afraid of him. Better
@@ -509,8 +509,8 @@ sleep with a sober cannibal than a drunken Christian.
 
 “Landlord,” said I, “tell him to stash his tomahawk there, or pipe, or whatever
 you call it; tell him to stop smoking, in short, and I will turn in with him.
-But I don’t fancy having a man smoking in bed with me.  It’s dangerous. Besides,
-I ain’t insured.” 
+But I don’t fancy having a man smoking in bed with me. It’s dangerous. Besides,
+I ain’t insured.”
 
 This being told to Queequeg, he at once complied, and again politely motioned me
 to get into bed — rolling over to one side as much as to say — “I won't touch a
@@ -519,6 +519,3 @@ leg of ye.”
 “Good night, landlord,” said I, “you may go.”
 
 I turned in, and never slept better in my life.
-
-
-

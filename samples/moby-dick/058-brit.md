@@ -1,7 +1,6 @@
-### Chapter 58. 
-Brit.
-=====
+### Chapter 58.
 
+# Brit.
 
 Steering north-eastward from the Crozetts, we fell in with vast meadows of
 brit, the minute, yellow substance, upon which the Right Whale largely feeds.
@@ -9,7 +8,7 @@ For leagues and leagues it undulated round us, so that we seemed to be sailing
 through boundless fields of ripe and golden wheat.
 
 On the second day, numbers of Right Whales were seen, who, secure from the
-attack of a Sperm Whaler like the *Pequod,* with open jaws sluggishly swam
+attack of a Sperm Whaler like the _Pequod,_ with open jaws sluggishly swam
 through the brit, which, adhering to the fringing fibres of that wondrous
 Venetian blind in their mouths, was in that manner separated from the water
 that escaped at the lip.
@@ -19,15 +18,13 @@ through the long wet grass of marshy meads; even so these monsters swam, making
 a strange, grassy, cutting sound; and leaving behind them endless swaths of
 blue upon the yellow sea.\*
 
-
 > \*That part of the sea known among whalemen as the “Brazil Banks” does not
 > bear that name as the Banks of Newfoundland do, because of there being
 > shallows and soundings there, but because of this remarkable meadow-like
 > appearance, caused by the vast drifts of brit continually floating in those
 > latitudes, where the Right Whale is often chased.
 
-----
-
+---
 
 But it was only the sound they made as they parted the brit which at all
 reminded one of mowers. Seen from the mast-heads, especially when they paused
@@ -65,7 +62,7 @@ repetition of these very impressions, man has lost that sense of the full
 awfulness of the sea which aboriginally belongs to it.
 
 The first boat we read of, floated on an ocean, that with Portuguese vengeance
-had whelmed a whole world without leaving so much as a widow.  That same ocean
+had whelmed a whole world without leaving so much as a widow. That same ocean
 rolls now; that same ocean destroyed the wrecked ships of last year. Yea,
 foolish mortals, Noah’s flood is not yet subsided; two thirds of the fair world
 it yet covers.
@@ -99,5 +96,3 @@ to something in yourself? For as this appalling ocean surrounds the verdant
 land, so in the soul of man there lies one insular Tahiti, full of peace and
 joy, but encompassed by all the horrors of the half known life. God keep thee!
 Push not off from that isle, thou canst never return!
-
-

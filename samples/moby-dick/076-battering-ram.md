@@ -1,7 +1,6 @@
-### Chapter 76. 
-The Battering-Ram.
-==================
+### Chapter 76.
 
+# The Battering-Ram.
 
 Ere quitting, for the nonce, the Sperm Whale’s head, I would have you, as a
 sensible physiologist, simply — particularly remark its front aspect, in all
@@ -21,16 +20,16 @@ same way, indeed, as though your own mouth were entirely under your chin.
 Moreover you observe that the whale has no external nose; and that what nose he
 has — his spout hole — is on the top of his head; you observe that his eyes and
 ears are at the sides of his head, nearly one third of his entire length from
-the front.  Wherefore, you must now have perceived that the front of the Sperm
+the front. Wherefore, you must now have perceived that the front of the Sperm
 Whale’s head is a dead, blind wall, without a single organ or tender prominence
 of any sort whatsoever. Furthermore, you are now to consider that only in the
 extreme, lower, backward sloping part of the front of the head, is there the
 slightest vestige of bone; and not till you get near twenty feet from the
 forehead do you come to the full cranial development. So that this whole
-enormous boneless mass is as one wad.  Finally, though, as will soon be
+enormous boneless mass is as one wad. Finally, though, as will soon be
 revealed, its contents partly comprise the most delicate oil; yet, you are now
 to be apprised of the nature of the substance which so impregnably invests all
-that apparent effeminacy.  In some previous place I have described to you how
+that apparent effeminacy. In some previous place I have described to you how
 the blubber wraps the body of the whale, as the rind wraps an orange. Just so
 with the head; but with this difference: about the head this envelope, though
 not so thick, is of a boneless toughness, inestimable by any man who has not
@@ -73,6 +72,3 @@ you own the whale, you are but a provincial and sentimentalist in Truth. But
 clear Truth is a thing for salamander giants only to encounter; how small the
 chances for the provincials then? What befell the weakling youth lifting the
 dread goddess’s veil at Lais?
-
-
-

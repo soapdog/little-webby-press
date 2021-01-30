@@ -1,7 +1,6 @@
-### Chapter 68. 
-The Blanket.
-============
+### Chapter 68.
 
+# The Blanket.
 
 I have given no small attention to that not unvexed subject, the skin of the
 whale. I have had controversies about it with experienced whalemen afloat, and
@@ -101,6 +100,3 @@ temperature of thine own.
 
 But how easy and how hopeless to teach these fine things! Of erections, how few
 are domed like St. Peter’s! of creatures, how few vast as the whale!
-
-
-

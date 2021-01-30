@@ -1,7 +1,6 @@
-### Chapter 84. 
-Pitchpoling.
-============
+### Chapter 84.
 
+# Pitchpoling.
 
 To make them run easily and swiftly, the axles of carriages are anointed; and
 for much the same purpose, some whalers perform an analogous operation upon
@@ -50,7 +49,7 @@ must first get fast to a whale, before any pitchpoling comes into play.
 Look now at Stubb; a man who from his humorous, deliberate coolness and
 equanimity in the direst emergencies, was specially qualified to excel in
 pitchpoling. Look at him; he stands upright in the tossed bow of the flying
-boat; wrapt in fleecy foam, the towing whale is forty feet ahead.  Handling the
+boat; wrapt in fleecy foam, the towing whale is forty feet ahead. Handling the
 long lance lightly, glancing twice or thrice along its length to see if it be
 exactly straight, Stubb whistlingly gathers up the coil of the warp in one
 hand, so as to secure its free end in his grasp, leaving the rest unobstructed.
@@ -75,6 +74,3 @@ spear returning to its master like a greyhound held in skilful leash. The
 agonized whale goes into his flurry; the tow-line is slackened, and the
 pitchpoler dropping astern, folds his hands, and mutely watches the monster
 die.
-
-
-

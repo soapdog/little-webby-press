@@ -1,7 +1,6 @@
-### Chapter 41. 
-Moby Dick.
-==========
+### Chapter 41.
 
+# Moby Dick.
 
 I, Ishmael, was one of that crew; my shouts had gone up with the rest; my oath
 had been welded with theirs; and stronger I shouted, and more did I hammer and
@@ -75,7 +74,7 @@ cases such a panic did he finally strike, that few who by those rumors, at
 least, had heard of the White Whale, few of those hunters were willing to
 encounter the perils of his jaw.
 
-But there were still other and more vital practical influences at work.  Not
+But there were still other and more vital practical influences at work. Not
 even at the present day has the original prestige of the Sperm Whale, as
 fearfully distinguished from all other species of the leviathan, died out of
 the minds of the whalemen as a body. There are those this day among them, who,
@@ -202,11 +201,11 @@ a birth or a bridal.
 His three boats stove around him, and oars and men both whirling in the eddies;
 one captain, seizing the line-knife from his broken prow, had dashed at the
 whale, as an Arkansas duellist at his foe, blindly seeking with a six inch
-blade to reach the fathom-deep life of the whale.  That captain was Ahab. And
+blade to reach the fathom-deep life of the whale. That captain was Ahab. And
 then it was, that suddenly sweeping his sickle-shaped lower jaw beneath him,
 Moby Dick had reaped away Ahab’s leg, as a mower a blade of grass in the field.
 No turbaned Turk, no hired Venetian or Malay, could have smote him with more
-seeming malice.  Small reason was there to doubt, then, that ever since that
+seeming malice. Small reason was there to doubt, then, that ever since that
 almost fatal encounter, Ahab had cherished a wild vindictiveness against the
 whale, all the more fell for that in his frantic morbidness he at last came to
 identify with him, not only all his bodily woes, but all his intellectual and
@@ -230,7 +229,7 @@ It is not probable that this monomania in him took its instant rise at the
 precise time of his bodily dismemberment. Then, in darting at the monster,
 knife in hand, he had but given loose to a sudden, passionate, corporal
 animosity; and when he received the stroke that tore him, he probably but felt
-the agonizing bodily laceration, but nothing more.  Yet, when by this collision
+the agonizing bodily laceration, but nothing more. Yet, when by this collision
 forced to turn towards home, and for long months of days and weeks, Ahab and
 anguish lay stretched together in one hammock, rounding in mid winter that
 dreary, howling Patagonian Cape; then it was, that his torn body and gashed
@@ -261,7 +260,7 @@ own mad mark; so that far from having lost his strength, Ahab, to that one end,
 did now possess a thousand fold more potency than ever he had sanely brought to
 bear upon any one reasonable object.
 
-This is much; yet Ahab’s larger, darker, deeper part remains unhinted.  But
+This is much; yet Ahab’s larger, darker, deeper part remains unhinted. But
 vain to popularize profundities, and all truth is profound. Winding far down
 from within the very heart of this spiked Hotel de Cluny where we here stand —
 however grand and wonderful, now quit it; — and take your way, ye nobler,
@@ -279,14 +278,14 @@ Now, in his heart, Ahab had some glimpse of this, namely: all my means are
 sane, my motive and my object mad. Yet without power to kill, or change, or
 shun the fact; he likewise knew that to mankind he did long dissemble; in some
 sort, did still. But that thing of his dissembling was only subject to his
-perceptibility, not to his will determinate.  Nevertheless, so well did he
+perceptibility, not to his will determinate. Nevertheless, so well did he
 succeed in that dissembling, that when with ivory leg he stepped ashore at
 last, no Nantucketer thought him otherwise than but naturally grieved, and that
 to the quick, with the terrible casualty which had overtaken him.
 
 The report of his undeniable delirium at sea was likewise popularly ascribed to
 a kindred cause. And so too, all the added moodiness which always afterwards,
-to the very day of sailing in the *Pequod* on the present voyage, sat brooding
+to the very day of sailing in the _Pequod_ on the present voyage, sat brooding
 on his brow. Nor is it so very unlikely, that far from distrusting his fitness
 for another whaling voyage, on account of such dark symptoms, the calculating
 people of that prudent isle were inclined to harbor the conceit, that for those
@@ -294,7 +293,7 @@ very reasons he was all the better qualified and set on edge, for a pursuit so
 full of rage and wildness as the bloody hunt of whales. Gnawed within and
 scorched without, with the infixed, unrelenting fangs of some incurable idea;
 such an one, could he be found, would seem the very man to dart his iron and
-lift his lance against the most appalling of all brutes.  Or, if for any reason
+lift his lance against the most appalling of all brutes. Or, if for any reason
 thought to be corporeally incapacitated for that, yet such an one would seem
 superlatively competent to cheer and howl on his underlings to the attack. But
 be all this as it may, certain it is, that with the mad secret of his unabated
@@ -325,6 +324,3 @@ his pick? Who does not feel the irresistible arm drag? What skiff in tow of a
 seventy-four can stand still? For one, I gave myself up to the abandonment of
 the time and the place; but while yet all a-rush to encounter the whale, could
 see naught in that brute but the deadliest ill.
-
-
-

@@ -1,7 +1,6 @@
-### Chapter 50. 
-Ahab’s Boat and Crew. Fedallah.
-===============================
+### Chapter 50.
 
+# Ahab’s Boat and Crew. Fedallah.
 
 “Who would have thought it, Flask!” cried Stubb; “if I had but one leg
 you would not catch me in a boat, unless maybe to stop the plug-hole
@@ -13,7 +12,6 @@ That would disable him; but he has one knee, and good part of the other
 left, you know.”
 
 “I don’t know that, my little man; I never yet saw him kneel.”
-
 
 Among whale-wise people it has often been argued whether, considering
 the paramount importance of his life to the success of the voyage, it is
@@ -28,7 +26,7 @@ considering that the pursuit of whales is always under great and
 extraordinary difficulties; that every individual moment, indeed, then
 comprises a peril; under these circumstances is it wise for any
 maimed man to enter a whale-boat in the hunt? As a general thing, the
-joint-owners of the *Pequod* must have plainly thought not.
+joint-owners of the _Pequod_ must have plainly thought not.
 
 Ahab well knew that although his friends at home would think little of
 his entering a boat in certain comparatively harmless vicissitudes of
@@ -37,7 +35,7 @@ his orders in person, yet for Captain Ahab to have a boat actually
 apportioned to him as a regular headsman in the hunt — above all for
 Captain Ahab to be supplied with five extra men, as that same boat’s
 crew, he well knew that such generous conceits never entered the heads
-of the owners of the *Pequod.* Therefore he had not solicited a boat’s
+of the owners of the _Pequod._ Therefore he had not solicited a boat’s
 crew from them, nor had he in any way hinted his desires on that head.
 Nevertheless he had taken private measures of his own touching all
 that matter. Until Cabaco’s published discovery, the sailors had little
@@ -96,6 +94,3 @@ the sun and the moon why they were created and to what end; when though,
 according to Genesis, the angels indeed consorted with the daughters of
 men, the devils also, add the uncanonical Rabbins, indulged in mundane
 amours.
-
-
-

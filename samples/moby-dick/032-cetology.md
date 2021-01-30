@@ -1,10 +1,9 @@
-### Chapter 32. 
-Cetology.
-=========
+### Chapter 32.
 
+# Cetology.
 
 Already we are boldly launched upon the deep; but soon we shall be lost in its
-unshored, harbourless immensities. Ere that come to pass; ere the *Pequod’s*
+unshored, harbourless immensities. Ere that come to pass; ere the _Pequod’s_
 weedy hull rolls side by side with the barnacled hulls of the leviathan; at the
 outset it is but well to attend to a matter almost indispensable to a thorough
 appreciative understanding of the more special leviathanic revelations and
@@ -82,12 +81,12 @@ equal to it. To grope down into the bottom of the sea after them; to have one’
 hands among the unspeakable foundations, ribs, and very pelvis of the world;
 this is a fearful thing. What am I that I should essay to hook the nose of this
 leviathan! The awful tauntings in Job might well appal me. Will he the
-(leviathan) make a covenant with thee?  Behold the hope of him is vain! But I
+(leviathan) make a covenant with thee? Behold the hope of him is vain! But I
 have swam through libraries and sailed through oceans; I have had to do with
 whales with these visible hands; I am in earnest; and I will try. There are
 some preliminaries to settle.
 
-__First:__ The uncertain, unsettled condition of this science of Cetology is in the
+**First:** The uncertain, unsettled condition of this science of Cetology is in the
 very vestibule attested by the fact, that in some quarters it still remains a
 moot point whether a whale be a fish. In his System of Nature, A.D. 1776,
 Linnaeus declares, “I hereby separate the whales from the fish.” But of my own
@@ -98,21 +97,21 @@ possession of the same seas with the Leviathan.
 The grounds upon which Linnaeus would fain have banished the whales from the
 waters, he states as follows: “On account of their warm bilocular heart, their
 lungs, their movable eyelids, their hollow ears, penem intrantem feminam mammis
-lactantem,” and finally, *“ex lege naturae jure meritoque.”* I submitted all this
+lactantem,” and finally, _“ex lege naturae jure meritoque.”_ I submitted all this
 to my friends Simeon Macey and Charley Coffin, of Nantucket, both messmates of
 mine in a certain voyage, and they united in the opinion that the reasons set
 forth were altogether insufficient. Charley profanely hinted they were humbug.
 
 Be it known that, waiving all argument, I take the good old fashioned ground
-that the whale is a fish, and call upon holy Jonah to back me.  This
+that the whale is a fish, and call upon holy Jonah to back me. This
 fundamental thing settled, the next point is, in what internal respect does the
 whale differ from other fish. Above, Linnaeus has given you those items. But in
 brief, they are these: lungs and warm blood; whereas, all other fish are
 lungless and cold blooded.
 
-__Next:__ how shall we define the whale, by his obvious externals, so as
+**Next:** how shall we define the whale, by his obvious externals, so as
 conspicuously to label him for all time to come? To be short, then, a whale is
-*a spouting fish with a horizontal tail.* There you have him. However
+_a spouting fish with a horizontal tail._ There you have him. However
 contracted, that definition is the result of expanded meditation. A walrus
 spouts much like a whale, but the walrus is not a fish, because he is
 amphibious. But the last term of the definition is still more cogent, as
@@ -128,7 +127,6 @@ hitherto authoritatively regarded as alien.\* Hence, all the smaller, spouting,
 and horizontal tailed fish must be included in this ground-plan of Cetology.
 Now, then, come the grand divisions of the entire whale host.
 
-
 > \* I am aware that down to the present time, the fish styled Lamatins and
 > Dugongs (Pig-fish and Sow-fish of the Coffins of Nantucket) are included by
 > many naturalists among the whales. But as these pig-fish are a noisy,
@@ -136,26 +134,26 @@ Now, then, come the grand divisions of the entire whale host.
 > hay, and especially as they do not spout, I deny their credentials as whales;
 > and have presented them with their passports to quit the Kingdom of Cetology.
 
-----
+---
 
-__First:__ According to magnitude I divide the whales into three primary
-*Books* (subdivisible into *Chapters*), and these shall comprehend them all,
+**First:** According to magnitude I divide the whales into three primary
+_Books_ (subdivisible into _Chapters_), and these shall comprehend them all,
 both small and large.
 
-## I. The *Folio* Whale; II. the *Octavo* Whale; III. the *Duodecimo* Whale.
+## I. The _Folio_ Whale; II. the _Octavo_ Whale; III. the _Duodecimo_ Whale.
 
-As the type of the *Folio* I present the __Sperm Whale__; of the *Octavo*, the
-__Grampus__; of the *Duodecimo,* the __Porpoise.__
+As the type of the _Folio_ I present the **Sperm Whale**; of the _Octavo_, the
+**Grampus**; of the _Duodecimo,_ the **Porpoise.**
 
-----
+---
 
-### Folios. 
+### Folios.
 
-Among these I here include the following chapters: — __I. The Sperm
-Whale;__ __II. the Right Whale;__ __III. the Fin-back Whale;__ __IV. the Hump-backed
-Whale;__ __V. the Razor-back Whale;__ __VI. the Sulphur-Bottom Whale.__
+Among these I here include the following chapters: — **I. The Sperm
+Whale;** **II. the Right Whale;** **III. the Fin-back Whale;** **IV. the Hump-backed
+Whale;** **V. the Razor-back Whale;** **VI. the Sulphur-Bottom Whale.**
 
-#### Book I. **(Folio),** Chapter I. (Sperm Whale). 
+#### Book I. **(Folio),** Chapter I. (Sperm Whale).
 
 — This whale, among the English of old vaguely known as the Trumpa whale, and
 the Physeter whale, and the Anvil Headed whale, is the present Cachalot of the
@@ -179,12 +177,12 @@ notion so strangely significant of its scarcity. And so the appellation must at
 last have come to be bestowed upon the whale from which this spermaceti was
 really derived.
 
-#### Book I. *(Folio),* Chapter II. (Right Whale). 
+#### Book I. _(Folio),_ Chapter II. (Right Whale).
 
 — In one respect this is the most venerable of the leviathans, being the one
 first regularly hunted by man. It yields the article commonly known as
 whalebone or baleen; and the oil specially known as “whale oil,” an inferior
-article in commerce.  Among the fishermen, he is indiscriminately designated by
+article in commerce. Among the fishermen, he is indiscriminately designated by
 all the following titles: The Whale; the Greenland Whale; the Black Whale; the
 Great Whale; the True Whale; the Right Whale. There is a deal of obscurity
 concerning the identity of the species thus multitudinously baptised. What then
@@ -205,7 +203,7 @@ most inconclusive differences, that some departments of natural history become
 so repellingly intricate. The right whale will be elsewhere treated of at some
 length, with reference to elucidating the sperm whale.
 
-#### Book I. *(Folio),* Chapter III. (Fin-back). 
+#### Book I. _(Folio),_ Chapter III. (Fin-back).
 
 — Under this head I reckon a monster which, by the various names of Fin-Back,
 Tall-Spout, and Long-John, has been seen almost in every sea and is commonly
@@ -231,7 +229,7 @@ barren plain; gifted with such wondrous power and velocity in swimming, as to
 defy all present pursuit from man; this leviathan seems the banished and
 unconquerable Cain of his race, bearing for his mark that style upon his back.
 From having the baleen in his mouth, the Fin-Back is sometimes included with
-the right whale, among a theoretic species denominated *whalebone whales,* that
+the right whale, among a theoretic species denominated _whalebone whales,_ that
 is, whales with baleen. Of these so called Whalebone whales, there would seem
 to be several varieties, most of which, however, are little known. Broad-nosed
 whales and beaked whales; pike-headed whales; bunched whales; under-jawed
@@ -263,12 +261,12 @@ anatomy more striking than his baleen? Yet we have seen that by his baleen it
 is impossible correctly to classify the Greenland whale. And if you descend
 into the bowels of the various leviathans, why there you will not find
 distinctions a fiftieth part as available to the systematizer as those external
-ones already enumerated.  What then remains? nothing but to take hold of the
+ones already enumerated. What then remains? nothing but to take hold of the
 whales bodily, in their entire liberal volume, and boldly sort them that way.
 And this is the Bibliographical system here adopted; and it is the only one
 that can possibly succeed, for it alone is practicable. To proceed.
 
-#### Book I. *(Folio)* Chapter IV. (Hump-back). 
+#### Book I. _(Folio)_ Chapter IV. (Hump-back).
 
 — This whale is often seen on the northern American coast. He has been
 frequently captured there, and towed into harbor. He has a great pack on him
@@ -278,7 +276,7 @@ sperm whale also has a hump though a smaller one. His oil is not very valuable.
 He has baleen. He is the most gamesome and light-hearted of all the whales,
 making more gay foam and white water generally than any other of them.
 
-#### Book I. *(Folio),* Chapter V. (Razor-back). 
+#### Book I. _(Folio),_ Chapter V. (Razor-back).
 
 — Of this whale little is known but his name. I have seen him at a distance off
 Cape Horn. Of a retiring nature, he eludes both hunters and philosophers.
@@ -286,7 +284,7 @@ Though no coward, he has never yet shown any part of him but his back, which
 rises in a long sharp ridge. Let him go. I know little more of him, nor does
 anybody else.
 
-#### Book I. *(Folio),* CHAPTER VI. (Sulphur-bottom). 
+#### Book I. _(Folio),_ CHAPTER VI. (Sulphur-bottom).
 
 — Another retiring gentleman, with a brimstone belly, doubtless got by scraping
 along the Tartarian tiles in some of his profounder divings. He is seldom seen;
@@ -296,40 +294,38 @@ would run away with rope-walks of line. Prodigies are told of him. Adieu,
 Sulphur Bottom! I can say nothing more that is true of ye, nor can the oldest
 Nantucketer.
 
-Thus ends __Book I. *(Folio),*__ and now begins __Book II. *(Octavo).*__
+Thus ends **Book I. _(Folio),_** and now begins **Book II. _(Octavo)._**
 
-----
+---
 
-### *Octavoes.*\* 
+### _Octavoes._\*
 
 — These embrace the whales of middling magnitude, among which present may be
-numbered: — __I., the Grampus;__ __II., the Black fish;__ __III., the
-Narwhale;__ __IV., the Thrasher;__ __V., the Killer.__
-
+numbered: — **I., the Grampus;** **II., the Black fish;** **III., the
+Narwhale;** **IV., the Thrasher;** **V., the Killer.**
 
 > \* Why this book of whales is not denominated the Quarto is very plain.
 > Because, while the whales of this order, though smaller than those of the
 > former order, nevertheless retain a proportionate likeness to them in figure,
 > yet the bookbinder’s Quarto volume in its dimensioned form does not preserve
-> the shape of the *Folio* volume, but the *Octavo* volume does.
+> the shape of the _Folio_ volume, but the _Octavo_ volume does.
 
-
-#### Book II. *(Octavo),* Chapter I. (Grampus). 
+#### Book II. _(Octavo),_ Chapter I. (Grampus).
 
 — Though this fish, whose loud sonorous breathing, or rather blowing, has
 furnished a proverb to landsmen, is so well known a denizen of the deep, yet is
 he not popularly classed among whales. But possessing all the grand distinctive
-features of the leviathan, most naturalists have recognised him for one.  He is
-of moderate *octavo* size, varying from fifteen to twenty-five feet in length,
+features of the leviathan, most naturalists have recognised him for one. He is
+of moderate _octavo_ size, varying from fifteen to twenty-five feet in length,
 and of corresponding dimensions round the waist. He swims in herds; he is never
 regularly hunted, though his oil is considerable in quantity, and pretty good
 for light. By some fishermen his approach is regarded as premonitory of the
 advance of the great sperm whale.
 
-#### Book II. *(Octavo),* Chapter II. (Black fish). 
+#### Book II. _(Octavo),_ Chapter II. (Black fish).
 
 — I give the popular fishermen’s names for all these fish, for generally they
-are the best.  Where any name happens to be vague or inexpressive, I shall say
+are the best. Where any name happens to be vague or inexpressive, I shall say
 so, and suggest another. I do so now, touching the Black Fish, so-called,
 because blackness is the rule among almost all whales. So, call him the Hyena
 Whale, if you please. His voracity is well known, and from the circumstance
@@ -344,7 +340,7 @@ alone by themselves, burn unsavory tallow instead of odorous wax. Though their
 blubber is very thin, some of these whales will yield you upwards of thirty
 gallons of oil.
 
-#### Book II. *(Octavo),* Chapter III. (Narwhale), that is, Nostril whale. 
+#### Book II. _(Octavo),_ Chapter III. (Narwhale), that is, Nostril whale.
 
 — Another instance of a curiously named whale, so named I suppose from his
 peculiar horn being originally mistaken for a peaked nose. The creature is some
@@ -362,7 +358,7 @@ finding it sheeted with ice, thrusts his horn up, and so breaks through. But
 you cannot prove either of these surmises to be correct. My own opinion is,
 that however this one-sided horn may really be used by the Narwhale — however
 that may be — it would certainly be very convenient to him for a folder in
-reading pamphlets.  The Narwhale I have heard called the Tusked whale, the
+reading pamphlets. The Narwhale I have heard called the Tusked whale, the
 Horned whale, and the Unicorn whale. He is certainly a curious example of the
 Unicornism to be found in almost every kingdom of animated nature. From certain
 cloistered old authors I have gathered that this same sea-unicorn’s horn was in
@@ -380,47 +376,47 @@ avers that the Earl of Leicester, on bended knees, did likewise present to her
 highness another horn, pertaining to a land beast of the unicorn nature.
 
 The Narwhale has a very picturesque, leopard-like look, being of a milk-white
-ground colour, dotted with round and oblong spots of black.  His oil is very
+ground colour, dotted with round and oblong spots of black. His oil is very
 superior, clear and fine; but there is little of it, and he is seldom hunted.
 He is mostly found in the circumpolar seas.
 
-#### Book II. *(Octavo),* Chapter IV. (Killer). 
+#### Book II. _(Octavo),_ Chapter IV. (Killer).
 
 — Of this whale little is precisely known to the Nantucketer, and nothing at
 all to the professed naturalist. From what I have seen of him at a distance, I
 should say that he was about the bigness of a grampus. He is very savage — a
-sort of Feegee fish. He sometimes takes the great *Folio* whales by the lip,
+sort of Feegee fish. He sometimes takes the great _Folio_ whales by the lip,
 and hangs there like a leech, till the mighty brute is worried to death. The
 Killer is never hunted. I never heard what sort of oil he has. Exception might
 be taken to the name bestowed upon this whale, on the ground of its
 indistinctness. For we are all killers, on land and on sea; Bonapartes and
 Sharks included.
 
-#### Book II. *(Octavo),* Chapter V. (Thrasher). 
+#### Book II. _(Octavo),_ Chapter V. (Thrasher).
 
 — This gentleman is famous for his tail, which he uses for a ferule in
-thrashing his foes. He mounts the *Folio* whale’s back, and as he swims, he
+thrashing his foes. He mounts the _Folio_ whale’s back, and as he swims, he
 works his passage by flogging him; as some schoolmasters get along in the world
 by a similar process. Still less is known of the Thrasher than of the Killer.
 Both are outlaws, even in the lawless seas.
 
-Thus ends __Book II. *(Octavo),*__ and begins __Book III. *(Duodecimo).*__
+Thus ends **Book II. _(Octavo),_** and begins **Book III. _(Duodecimo)._**
 
-----
+---
 
-### Duodecimoes. 
+### Duodecimoes.
 
-— These include the smaller whales. __I. The Huzza Porpoise.__  __II. The
-Algerine Porpoise.__ __III. The Mealy-mouthed Porpoise.__
+— These include the smaller whales. **I. The Huzza Porpoise.** **II. The
+Algerine Porpoise.** **III. The Mealy-mouthed Porpoise.**
 
 To those who have not chanced specially to study the subject, it may possibly
 seem strange, that fishes not commonly exceeding four or five feet should be
-marshalled among *whales* — a word, which, in the popular sense, always conveys
-an idea of hugeness. But the creatures set down above as *Duodecimoes* are
+marshalled among _whales_ — a word, which, in the popular sense, always conveys
+an idea of hugeness. But the creatures set down above as _Duodecimoes_ are
 infallibly whales, by the terms of my definition of what a whale is — i.e. a
 spouting fish, with a horizontal tail.
 
-#### Book III. *(Duodecimo),* Chapter 1. (Huzza Porpoise). 
+#### Book III. _(Duodecimo),_ Chapter 1. (Huzza Porpoise).
 
 — This is the common porpoise found almost all over the globe. The name is of
 my own bestowal; for there are more than one sort of porpoises, and something
@@ -440,19 +436,19 @@ small that it is not very readily discernible. But the next time you have a
 chance, watch him; and you will then see the great Sperm whale himself in
 miniature.
 
-#### Book III. *(Duodecimo),* Chapter II. (Algerine Porpoise). 
+#### Book III. _(Duodecimo),_ Chapter II. (Algerine Porpoise).
 
 — A pirate. Very savage. He is only found, I think, in the Pacific. He is
 somewhat larger than the Huzza Porpoise, but much of the same general make.
 Provoke him, and he will buckle to a shark. I have lowered for him many times,
 but never yet saw him captured.
 
-#### Book III. *(Duodecimo),* Chapter III. (Mealy-mouthed Porpoise). 
+#### Book III. _(Duodecimo),_ Chapter III. (Mealy-mouthed Porpoise).
 
 — The largest kind of Porpoise; and only found in the Pacific, so far as it is
 known. The only English name, by which he has hitherto been designated, is that
 of the fishers — Right-Whale Porpoise, from the circumstance that he is chiefly
-found in the vicinity of that *Folio.* In shape, he differs in some degree from
+found in the vicinity of that _Folio._ In shape, he differs in some degree from
 the Huzza Porpoise, being of a less rotund and jolly girth; indeed, he is of
 quite a neat and gentleman-like figure. He has no fins on his back (most other
 porpoises have), he has a lovely tail, and sentimental Indian eyes of a hazel
@@ -464,17 +460,17 @@ his head, and the whole of his mouth, which makes him look as if he had just
 escaped from a felonious visit to a meal-bag. A most mean and mealy aspect! His
 oil is much like that of the common porpoise.
 
-----
+---
 
-Beyond the *Duodecimo,* this system does not proceed, inasmuch as the Porpoise
+Beyond the _Duodecimo,_ this system does not proceed, inasmuch as the Porpoise
 is the smallest of the whales. Above, you have all the Leviathans of note. But
 there are a rabble of uncertain, fugitive, half-fabulous whales, which, as an
 American whaleman, I know by reputation, but not personally. I shall enumerate
 them by their fore-castle appellations; for possibly such a list may be
 valuable to future investigators, who may complete what I have here but begun.
 If any of the following whales, shall hereafter be caught and marked, then he
-can readily be incorporated into this System, according to his *Folio,* *Octavo,*
-or *Duodecimo* magnitude: — The Bottle-Nose Whale; the Junk Whale; the
+can readily be incorporated into this System, according to his _Folio,_ _Octavo,_
+or _Duodecimo_ magnitude: — The Bottle-Nose Whale; the Junk Whale; the
 Pudding-Headed Whale; the Cape Whale; the Leading Whale; the Cannon Whale; the
 Scragg Whale; the Coppered Whale; the Elephant Whale; the Iceberg Whale; the
 Quog Whale; the Blue Whale; etc. From Icelandic, Dutch, and old English
@@ -483,7 +479,7 @@ with all manner of uncouth names. But I omit them as altogether obsolete; and
 can hardly help suspecting them for mere sounds, full of Leviathanism, but
 signifying nothing.
 
-__Finally:__ It was stated at the outset, that this system would not be here,
+**Finally:** It was stated at the outset, that this system would not be here,
 and at once, perfected. You cannot but plainly see that I have kept my word.
 But I now leave my cetological System standing thus unfinished, even as the
 great Cathedral of Cologne was left, with the crane still standing upon the top
@@ -491,5 +487,3 @@ of the uncompleted tower. For small erections may be finished by their first
 architects; grand ones, true ones, ever leave the copestone to posterity. God
 keep me from ever completing anything. This whole book is but a draught — nay,
 but the draught of a draught. Oh, Time, Strength, Cash, and Patience!
-
-

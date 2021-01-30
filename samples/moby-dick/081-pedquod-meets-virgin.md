@@ -1,17 +1,16 @@
-### Chapter 81. 
-The *Pequod* Meets The Virgin.
-============================
+### Chapter 81.
 
+# The _Pequod_ Meets The Virgin.
 
-The predestinated day arrived, and we duly met the ship *Jungfrau,* Derick De
+The predestinated day arrived, and we duly met the ship _Jungfrau,_ Derick De
 Deer, master, of Bremen.
 
 At one time the greatest whaling people in the world, the Dutch and Germans are
 now among the least; but here and there at very wide intervals of latitude and
 longitude, you still occasionally meet with their flag in the Pacific.
 
-For some reason, the *Jungfrau* seemed quite eager to pay her respects.  While
-yet some distance from the *Pequod,* she rounded to, and dropping a boat, her
+For some reason, the _Jungfrau_ seemed quite eager to pay her respects. While
+yet some distance from the _Pequod,_ she rounded to, and dropping a boat, her
 captain was impelled towards us, impatiently standing in the bows instead of
 the stern.
 
@@ -23,7 +22,7 @@ off to make us our coffee, is the Yarman; don’t you see that big tin can there
 alongside of him? — that’s his boiling water. Oh! he’s all right, is the
 Yarman.”
 
-“Go along with you,” cried Flask, “it’s a lamp-feeder and an oil-can.  He’s out
+“Go along with you,” cried Flask, “it’s a lamp-feeder and an oil-can. He’s out
 of oil, and has come a-begging.”
 
 However curious it may seem for an oil-ship to be borrowing oil on the
@@ -39,8 +38,8 @@ his lamp-feeder and oil can, with some remarks touching his having to turn into
 his hammock at night in profound darkness — his last drop of Bremen oil being
 gone, and not a single flying-fish yet captured to supply the deficiency;
 concluding by hinting that his ship was indeed what in the Fishery is
-technically called a *clean* one (that is, an empty one), well deserving the
-name of *Jungfrau* or the Virgin.
+technically called a _clean_ one (that is, an empty one), well deserving the
+name of _Jungfrau_ or the Virgin.
 
 His necessities supplied, Derick departed; but he had not gained his ship’s
 side, when whales were almost simultaneously raised from the mast-heads of both
@@ -49,10 +48,10 @@ oil-can and lamp-feeder aboard, he slewed round his boat and made after the
 leviathan lamp-feeders.
 
 Now, the game having risen to leeward, he and the other three German boats that
-soon followed him, had considerably the start of the *Pequod’s* keels. There
+soon followed him, had considerably the start of the _Pequod’s_ keels. There
 were eight whales, an average pod. Aware of their danger, they were going all
 abreast with great speed straight before the wind, rubbing their flanks as
-closely as so many spans of horses in harness.  They left a great, wide wake,
+closely as so many spans of horses in harness. They left a great, wide wake,
 as though continually unrolling a great wide parchment upon the sea.
 
 Full in this rapid wake, and many fathoms in the rear, swam a huge, humped old
@@ -71,7 +70,7 @@ causing the waters behind him to upbubble.
 “Who’s got some paregoric?” said Stubb, “he has the stomach-ache, I’m afraid.
 Lord, think of having half an acre of stomach-ache! Adverse winds are holding
 mad Christmas in him, boys. It’s the first foul wind I ever knew to blow from
-astern; but look, did ever whale yaw so before?  it must be, he’s lost his
+astern; but look, did ever whale yaw so before? it must be, he’s lost his
 tiller.”
 
 As an overladen Indiaman bearing down the Hindostan coast with a deck load of
@@ -91,7 +90,7 @@ With one intent all the combined rival boats were pointed for this one fish,
 because not only was he the largest, and therefore the most valuable whale, but
 he was nearest to them, and the other whales were going with such great
 velocity, moreover, as almost to defy pursuit for the time. At this juncture
-the *Pequod’s* keels had shot by the three German boats last lowered; but from
+the _Pequod’s_ keels had shot by the three German boats last lowered; but from
 the great start he had had, Derick’s boat still led the chase, though every
 moment neared by his foreign rivals. The only thing they feared, was, that from
 being already so nigh to his mark, he would be enabled to dart his iron before
@@ -113,13 +112,13 @@ the mast there’s budding. This won’t do, boys. Look at that Yarman! The shor
 and long of it is, men, will ye spit fire or not?”
 
 “Oh! see the suds he makes!” cried Flask, dancing up and down — “What a hump —
-Oh, __do__ pile on the beef — lays like a log! Oh! my lads, __do__ spring —
+Oh, **do** pile on the beef — lays like a log! Oh! my lads, **do** spring —
 slap-jacks and quahogs for supper, you know, my lads — baked clams and muffins
-— oh, __do__, __do__, spring, — he’s a hundred barreller — don’t lose him now —
-don’t oh, __don’t!__ — see that Yarman — Oh, won’t ye pull for your duff, my
-lads — such a sog! such a sogger! Don’t ye love sperm?  There goes three
+— oh, **do**, **do**, spring, — he’s a hundred barreller — don’t lose him now —
+don’t oh, **don’t!** — see that Yarman — Oh, won’t ye pull for your duff, my
+lads — such a sog! such a sogger! Don’t ye love sperm? There goes three
 thousand dollars, men! — a bank! — a whole bank! The bank of England! — Oh,
-__do__, __do__, __do__! — What’s that Yarman about now?”
+**do**, **do**, **do**! — What’s that Yarman about now?”
 
 At this moment Derick was in the act of pitching his lamp-feeder at the
 advancing boats, and also his oil-can; perhaps with the double view of
@@ -133,7 +132,7 @@ Gayhead? What d’ye say?”
 
 “I say, pull like god-dam,” — cried the Indian.
 
-Fiercely, but evenly incited by the taunts of the German, the *Pequod’s* three
+Fiercely, but evenly incited by the taunts of the German, the _Pequod’s_ three
 boats now began ranging almost abreast; and, so disposed, momentarily neared
 him. In that fine, loose, chivalrous attitude of the headsman when drawing near
 to his prey, the three mates stood up proudly, occasionally backing the after
@@ -147,7 +146,7 @@ oarsman. While this clumsy lubber was striving to free his white-ash, and
 while, in consequence, Derick’s boat was nigh to capsizing, and he thundering
 away at his men in a mighty rage; — that was a good time for Starbuck, Stubb,
 and Flask. With a shout, they took a mortal start forwards, and slantingly
-ranged up on the German’s quarter.  An instant more, and all four boats were
+ranged up on the German’s quarter. An instant more, and all four boats were
 diagonically in the whale’s immediate wake, while stretching from them, on both
 sides, was the foaming swell that he made.
 
@@ -165,7 +164,7 @@ this made the sight of him unspeakably pitiable; while still, in his amazing
 bulk, portcullis jaw, and omnipotent tail, there was enough to appal the
 stoutest man who so pitied.
 
-Seeing now that but a very few moments more would give the *Pequod’s* boats the
+Seeing now that but a very few moments more would give the _Pequod’s_ boats the
 advantage, and rather than be thus foiled of his game, Derick chose to hazard
 what to him must have seemed a most unusually long dart, ere the last chance
 would for ever escape.
@@ -220,17 +219,17 @@ eternal blue noon; and as not a single groan or cry of any sort, nay, not so
 much as a ripple or a bubble came up from its depths; what landsman would have
 thought, that beneath all that silence and placidity, the utmost monster of the
 seas was writhing and wrenching in agony! Not eight inches of perpendicular
-rope were visible at the bows.  Seems it credible that by three such thin
+rope were visible at the bows. Seems it credible that by three such thin
 threads the great Leviathan was suspended like the big weight to an eight day
 clock. Suspended? and to what? To three bits of board. Is this the creature of
 whom it was once so triumphantly said — “Canst thou fill his skin with barbed
-irons?  or his head with fish-spears? The sword of him that layeth at him
+irons? or his head with fish-spears? The sword of him that layeth at him
 cannot hold, the spear, the dart, nor the habergeon: he esteemeth iron as
 straw; the arrow cannot make him flee; darts are counted as stubble; he
-laugheth at the shaking of a spear!” This the creature? this he? Oh!  that
+laugheth at the shaking of a spear!” This the creature? this he? Oh! that
 unfulfilments should follow the prophets. For with the strength of a thousand
 thighs in his tail, Leviathan had run his head under the mountains of the sea,
-to hide him from the *Pequod’s* fish-spears!
+to hide him from the _Pequod’s_ fish-spears!
 
 In that sloping afternoon sunlight, the shadows that the three boats sent down
 beneath the surface, must have been long enough and broad enough to shade half
@@ -275,11 +274,11 @@ with much of it that is ordinarily submerged, was plainly revealed. His eyes,
 or rather the places where his eyes had been, were beheld. As strange misgrown
 masses gather in the knot-holes of the noblest oaks when prostrate, so from the
 points which the whale’s eyes had once occupied, now protruded blind bulbs,
-horribly pitiable to see.  But pity there was none. For all his old age, and
+horribly pitiable to see. But pity there was none. For all his old age, and
 his one arm, and his blind eyes, he must die the death and be murdered, in
 order to light the gay bridals and other merry-makings of men, and also to
 illuminate the solemn churches that preach unconditional inoffensiveness by all
-to all.  Still rolling in his blood, at last he partially disclosed a strangely
+to all. Still rolling in his blood, at last he partially disclosed a strangely
 discoloured bunch or protuberance, the size of a bushel, low down on the flank.
 
 “A nice spot,” cried Flask; “just let me prick him there once.”
@@ -324,16 +323,16 @@ America was discovered.
 What other marvels might have been rummaged out of this monstrous cabinet there
 is no telling. But a sudden stop was put to further discoveries, by the ship’s
 being unprecedentedly dragged over sideways to the sea, owing to the body’s
-immensely increasing tendency to sink.  However, Starbuck, who had the ordering
+immensely increasing tendency to sink. However, Starbuck, who had the ordering
 of affairs, hung on to it to the last; hung on to it so resolutely, indeed,
 that when at length the ship would have been capsized, if still persisting in
 locking arms with the body; then, when the command was given to break clear
 from it, such was the immovable strain upon the timber-heads to which the
 fluke-chains and cables were fastened, that it was impossible to cast them off.
-Meantime everything in the *Pequod* was aslant. To cross to the other side of
+Meantime everything in the _Pequod_ was aslant. To cross to the other side of
 the deck was like walking up the steep gabled roof of a house. The ship groaned
 and gasped. Many of the ivory inlayings of her bulwarks and cabins were started
-from their places, by the unnatural dislocation.  In vain handspikes and crows
+from their places, by the unnatural dislocation. In vain handspikes and crows
 were brought to bear upon the immovable fluke-chains, to pry them adrift from
 the timberheads; and so low had the whale now settled that the submerged ends
 could not be at all approached, while every moment whole tons of ponderosity
@@ -379,7 +378,7 @@ buoys to him, with plenty of rope; so that when the body has gone down, they
 know where to look for it when it shall have ascended again.
 
 It was not long after the sinking of the body that a cry was heard from the
-*Pequod’s* mast-heads, announcing that the *Jungfrau* was again lowering her
+_Pequod’s_ mast-heads, announcing that the _Jungfrau_ was again lowering her
 boats; though the only spout in sight was that of a Fin-Back, belonging to the
 species of uncapturable whales, because of its incredible power of swimming.
 Nevertheless, the Fin-Back’s spout is so similar to the Sperm Whale’s, that by
@@ -389,6 +388,3 @@ crowding all sail, made after her four young keels, and thus they all
 disappeared far to leeward, still in bold, hopeful chase.
 
 Oh! many are the Fin-Backs, and many are the Dericks, my friend.
-
-
-

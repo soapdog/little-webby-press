@@ -1,7 +1,6 @@
-### Chapter 56.  
-Of the Less Erroneous Pictures of Whales, and the True Pictures of Whaling Scenes.
-=======================================================================
+### Chapter 56.
 
+# Of the Less Erroneous Pictures of Whales, and the True Pictures of Whaling Scenes.
 
 In connexion with the monstrous pictures of whales, I am strongly tempted here
 to enter upon those still more monstrous stories of them which are to be found
@@ -111,5 +110,3 @@ horse. From the ship, the smoke of the torments of the boiling whale is going
 up like the smoke over a village of smithies; and to windward, a black cloud,
 rising up with earnest of squalls and rains, seems to quicken the activity of
 the excited seamen.
-
-

@@ -1,7 +1,6 @@
-### Chapter 13. 
-Wheelbarrow.
-============
+### Chapter 13.
 
+# Wheelbarrow.
 
 Next morning, Monday, after disposing of the embalmed head to a barber, for a
 block, I settled my own and comrade’s bill; using, however, my comrade’s money.
@@ -12,7 +11,7 @@ me concerning the very person whom I now companied with.
 
 We borrowed a wheelbarrow, and embarking our things, including my own poor
 carpet-bag, and Queequeg’s canvas sack and hammock, away we went down to “the
-*Moss,”* the little Nantucket packet schooner moored at the wharf. As we were
+_Moss,”_ the little Nantucket packet schooner moored at the wharf. As we were
 going along the people stared; not at Queequeg so much — for they were used to
 seeing cannibals like him in their streets, — but at seeing him and me upon
 such confidential terms. But we heeded them not, going along wheeling the
@@ -72,15 +71,15 @@ begins a second; and a second ended, only begins a third, and so on, for ever
 and for aye. Such is the endlessness, yea, the intolerableness of all earthly
 effort.
 
-Gaining the more open water, the bracing breeze waxed fresh; the little *Moss*
-tossed the quick foam from her bows, as a young colt his snortings.  How I
+Gaining the more open water, the bracing breeze waxed fresh; the little _Moss_
+tossed the quick foam from her bows, as a young colt his snortings. How I
 snuffed that Tartar air! — how I spurned that turnpike earth! — that common
 highway all over dented with the marks of slavish heels and hoofs; and turned
 me to admire the magnanimity of the sea which will permit no records.
 
-At the same foam-fountain, Queequeg seemed to drink and reel with me.  His
-dusky nostrils swelled apart; he showed his filed and pointed teeth.  On, on we
-flew; and our offing gained, the *Moss* did homage to the blast; ducked and dived
+At the same foam-fountain, Queequeg seemed to drink and reel with me. His
+dusky nostrils swelled apart; he showed his filed and pointed teeth. On, on we
+flew; and our offing gained, the _Moss_ did homage to the blast; ducked and dived
 her bows as a slave before the Sultan. Sideways leaning, we sideways darted;
 every ropeyarn tingling like a wire; the two tall masts buckling like Indian
 canes in land tornadoes. So full of this reeling scene were we, as we stood by
@@ -113,7 +112,7 @@ still shivering greenhorn.
 expression of disdain, “ah! him bevy small-e fish-e; Queequeg no kill-e so
 small-e fish-e; Queequeg kill-e big whale!”
 
-“Look you,” roared the Captain, “I’ll kill-e *you*, you cannibal, if you try
+“Look you,” roared the Captain, “I’ll kill-e _you_, you cannibal, if you try
 any more of your tricks aboard here; so mind your eye.”
 
 But it so happened just then, that it was high time for the Captain to mind his
@@ -139,7 +138,7 @@ and glorious fellow, but saw no one to be saved. The greenhorn had gone down.
 Shooting himself perpendicularly from the water, Queequeg, now took an
 instant’s glance around him, and seeming to see just how matters were, dived
 down and disappeared. A few minutes more, and he rose again, one arm still
-striking out, and with the other dragging a lifeless form.  The boat soon
+striking out, and with the other dragging a lifeless form. The boat soon
 picked them up. The poor bumpkin was restored. All hands voted Queequeg a noble
 trump; the captain begged his pardon. From that hour I clove to Queequeg like a
 barnacle; yea, till poor Queequeg took his last long dive.
@@ -150,6 +149,3 @@ water — fresh water — something to wipe the brine off; that done, he put o
 clothes, lighted his pipe, and leaning against the bulwarks, and mildly eyeing
 those around him, seemed to be saying to himself — “It’s a mutual, joint-stock
 world, in all meridians. We cannibals must help these Christians.”
-
-
-

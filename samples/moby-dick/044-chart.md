@@ -1,7 +1,6 @@
-### Chapter 44. 
-The Chart.
-==========
+### Chapter 44.
 
+# The Chart.
 
 Had you followed Captain Ahab down into his cabin after the squall that took
 place on the night succeeding that wild ratification of his purpose with his
@@ -42,7 +41,7 @@ whale’s resorting to given waters, that many hunters believe that, could he be
 closely observed and studied throughout the world; were the logs for one voyage
 of the entire whale fleet carefully collated, then the migrations of the sperm
 whale would be found to correspond in invariability to those of the
-herring-shoals or the flights of swallows.  On this hint, attempts have been
+herring-shoals or the flights of swallows. On this hint, attempts have been
 made to construct elaborate migratory charts of the sperm whale.\*
 
 > \*Since the above was written, the statement is happily borne out by an
@@ -56,16 +55,16 @@ made to construct elaborate migratory charts of the sperm whale.\*
 > have been spent in each month in every district, and the two others to show
 > the number of days in which whales, sperm or right, have been seen.”
 
-----
+---
 
 Besides, when making a passage from one feeding-ground to another, the sperm
 whales, guided by some infallible instinct — say, rather, secret intelligence
-from the Deity — mostly swim in *veins,* as they are called; continuing their
+from the Deity — mostly swim in _veins,_ as they are called; continuing their
 way along a given ocean-line with such undeviating exactitude, that no ship
 ever sailed her course, by any chart, with one tithe of such marvellous
 precision. Though, in these cases, the direction taken by any one whale be
 straight as a surveyor’s parallel, and though the line of advance be strictly
-confined to its own unavoidable, straight wake, yet the arbitrary *vein* in
+confined to its own unavoidable, straight wake, yet the arbitrary _vein_ in
 which at these times he is said to swim, generally embraces some few miles in
 width (more or less, as the vein is presumed to expand or contract); but never
 exceeds the visual sweep from the whale-ship’s mast-heads, when circumspectly
@@ -90,7 +89,7 @@ true. In general, the same remark, only within a less wide limit, applies to
 the solitaries and hermits among the matured, aged sperm whales. So that though
 Moby Dick had in a former year been seen, for example, on what is called the
 Seychelle ground in the Indian ocean, or Volcano Bay on the Japanese Coast; yet
-it did not follow, that were the *Pequod* to visit either of those spots at any
+it did not follow, that were the _Pequod_ to visit either of those spots at any
 subsequent corresponding season, she would infallibly encounter him there. So,
 too, with some other feeding grounds, where he had at times revealed himself.
 But all these seemed only his casual stopping-places and ocean-inns, so to
@@ -113,12 +112,12 @@ hopes upon the one crowning fact above mentioned, however flattering it might
 be to those hopes; nor in the sleeplessness of his vow could he so tranquillize
 his unquiet heart as to postpone all intervening quest.
 
-Now, the *Pequod* had sailed from Nantucket at the very beginning of the
+Now, the _Pequod_ had sailed from Nantucket at the very beginning of the
 Season-on-the-Line. No possible endeavor then could enable her commander to
 make the great passage southwards, double Cape Horn, and then running down
 sixty degrees of latitude arrive in the equatorial Pacific in time to cruise
-there. Therefore, he must wait for the next ensuing season.  Yet the premature
-hour of the *Pequod’s* sailing had, perhaps, been correctly selected by Ahab,
+there. Therefore, he must wait for the next ensuing season. Yet the premature
+hour of the _Pequod’s_ sailing had, perhaps, been correctly selected by Ahab,
 with a view to this very complexion of things. Because, an interval of three
 hundred and sixty-five days and nights was before him; an interval which,
 instead of impatiently enduring ashore, he would spend in a miscellaneous hunt;
@@ -127,7 +126,7 @@ periodical feeding-grounds, should turn up his wrinkled brow off the Persian
 Gulf, or in the Bengal Bay, or China Seas, or in any other waters haunted by
 his race. So that Monsoons, Pampas, Nor’-Westers, Harmattans, Trades; any wind
 but the Levanter and Simoon, might blow Moby Dick into the devious zig-zag
-world-circle of the *Pequod’s* circumnavigating wake.
+world-circle of the _Pequod’s_ circumnavigating wake.
 
 But granting all this; yet, regarded discreetly and coolly, seems it not but a
 mad idea, this; that in the broad boundless ocean, one solitary whale, even if
@@ -137,7 +136,7 @@ Constantinople? Yes. For the peculiar snow-white brow of Moby Dick, and his
 snow-white hump, could not but be unmistakable. And have I not tallied the
 whale, Ahab would mutter to himself, as after poring over his charts till long
 after midnight he would throw himself back in reveries — tallied him, and shall
-he escape?  His broad fins are bored, and scalloped out like a lost sheep’s
+he escape? His broad fins are bored, and scalloped out like a lost sheep’s
 ear! And here, his mad mind would run on in a breathless race; till a weariness
 and faintness of pondering came over him; and in the open air of the deck he
 would seek to recover his strength. Ah, God! what trances of torments does that
@@ -169,13 +168,10 @@ thoughts and fancies to his one supreme purpose; that purpose, by its own sheer
 inveteracy of will, forced itself against gods and devils into a kind of
 self-assumed, independent being of its own. Nay, could grimly live and burn,
 while the common vitality to which it was conjoined, fled horror-stricken from
-the unbidden and unfathered birth.  Therefore, the tormented spirit that glared
+the unbidden and unfathered birth. Therefore, the tormented spirit that glared
 out of bodily eyes, when what seemed Ahab rushed from his room, was for the
 time but a vacated thing, a formless somnambulistic being, a ray of living
 light, to be sure, but without an object to colour, and therefore a blankness
 in itself. God help thee, old man, thy thoughts have created a creature in
 thee; and he whose intense thinking thus makes him a Prometheus; a vulture
 feeds upon that heart for ever; that vulture the very creature he creates.
-
-
-

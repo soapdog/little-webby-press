@@ -1,8 +1,8 @@
-### Chapter 51. 
-The Spirit-Spout.
-=================
+### Chapter 51.
 
-Days, weeks passed, and under easy sail, the ivory *Pequod* had slowly swept
+# The Spirit-Spout.
+
+Days, weeks passed, and under easy sail, the ivory _Pequod_ had slowly swept
 across four several cruising-grounds; that off the Azores; off the Cape de
 Verdes; on the Plate (so called), being off the mouth of the Rio de la Plata;
 and the Carrol Ground, an unstaked, watery locality, southerly from St. Helena.
@@ -38,7 +38,7 @@ as if two antagonistic influences were struggling in her — one to mount direct
 to heaven, the other to drive yawingly to some horizontal goal. And had you
 watched Ahab’s face that night, you would have thought that in him also two
 different things were warring. While his one live leg made lively echoes along
-the deck, every stroke of his dead limb sounded like a coffin-tap.  On life and
+the deck, every stroke of his dead limb sounded like a coffin-tap. On life and
 death this old man walked. But though the ship so swiftly sped, and though from
 every eye, like arrows, the eager glances shot, yet the silvery jet was no more
 seen that night. Every sailor swore he saw it once, but not a second time.
@@ -53,7 +53,7 @@ and somehow seeming at every distinct repetition to be advancing still further
 and further in our van, this solitary jet seemed for ever alluring us on.
 
 Nor with the immemorial superstition of their race, and in accordance with the
-preternaturalness, as it seemed, which in many things invested the *Pequod,* were
+preternaturalness, as it seemed, which in many things invested the _Pequod,_ were
 there wanting some of the seamen who swore that whenever and wherever descried;
 at however remote times, or in however far apart latitudes and longitudes, that
 unnearable spout was cast by one self-same whale; and that whale, Moby Dick.
@@ -71,7 +71,7 @@ before our urn-like prow.
 
 But, at last, when turning to the eastward, the Cape winds began howling around
 us, and we rose and fell upon the long, troubled seas that are there; when the
-ivory-tusked *Pequod* sharply bowed to the blast, and gored the dark waves in her
+ivory-tusked _Pequod_ sharply bowed to the blast, and gored the dark waves in her
 madness, till, like showers of silver chips, the foam-flakes flew over her
 bulwarks; then all this desolate vacuity of life went away, but gave place to
 sights more dismal than before.
@@ -100,7 +100,7 @@ the almost continual command of the drenched and dangerous deck, manifested the
 gloomiest reserve; and more seldom than ever addressed his mates. In
 tempestuous times like these, after everything above and aloft has been
 secured, nothing more can be done but passively to await the issue of the gale.
-Then Captain and crew become practical fatalists.  So, with his ivory leg
+Then Captain and crew become practical fatalists. So, with his ivory leg
 inserted into its accustomed hole, and with one hand firmly grasping a shroud,
 Ahab for hours and hours would stand gazing dead to windward, while an
 occasional squall of sleet or snow would all but congeal his very eyelashes
@@ -110,7 +110,7 @@ bulwarks in the waist; and the better to guard against the leaping waves, each
 man had slipped himself into a sort of bowline secured to the rail, in which he
 swung as in a loosened belt. Few or no words were spoken; and the silent ship,
 as if manned by painted sailors in wax, day after day tore on through all the
-swift madness and gladness of the demoniac waves.  By night the same muteness
+swift madness and gladness of the demoniac waves. By night the same muteness
 of humanity before the shrieks of the ocean prevailed; still in silence the men
 swung in the bowlines; still wordless Ahab stood up to the blast. Even when
 wearied nature seemed demanding repose he would not seek that repose in his
@@ -124,15 +124,11 @@ His lantern swung from his tightly clenched hand. Though the body was erect,
 the head was thrown back so that the closed eyes were pointed towards the
 needle of the tell-tale that swung from a beam in the ceiling.\*
 
-
 > \*The cabin-compass is called the tell-tale, because without going to the
 > compass at the helm, the Captain, while below, can inform himself of the
 > course of the ship.
 
-----
+---
 
 Terrible old man! thought Starbuck with a shudder, sleeping in this gale, still
 thou steadfastly eyest thy purpose.
-
-
-

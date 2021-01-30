@@ -1,10 +1,9 @@
-### Chapter 87. 
-The Grand Armada.
-=================
+### Chapter 87.
 
+# The Grand Armada.
 
 The long and narrow peninsula of Malacca, extending south-eastward from the
-territories of Birmah, forms the most southerly point of all Asia.  In a
+territories of Birmah, forms the most southerly point of all Asia. In a
 continuous line from that peninsula stretch the long islands of Sumatra, Java,
 Bally, and Timor; which, with many others, form a vast mole, or rampart,
 lengthwise connecting Asia with Australia, and dividing the long unbroken
@@ -40,12 +39,12 @@ repressed; yet, even at the present day, we occasionally hear of English and
 American vessels, which, in those waters, have been remorselessly boarded and
 pillaged.
 
-With a fair, fresh wind, the *Pequod* was now drawing nigh to these straits;
+With a fair, fresh wind, the _Pequod_ was now drawing nigh to these straits;
 Ahab purposing to pass through them into the Javan sea, and thence, cruising
 northwards, over waters known to be frequented here and there by the Sperm
 Whale, sweep inshore by the Philippine Islands, and gain the far coast of
-Japan, in time for the great whaling season there.  By these means, the
-circumnavigating *Pequod* would sweep almost all the known Sperm Whale cruising
+Japan, in time for the great whaling season there. By these means, the
+circumnavigating _Pequod_ would sweep almost all the known Sperm Whale cruising
 grounds of the world, previous to descending upon the Line in the Pacific;
 where Ahab, though everywhere else foiled in his pursuit, firmly counted upon
 giving battle to Moby Dick, in the sea he was most known to frequent; and at a
@@ -72,7 +71,7 @@ carry them the news that another flood had come; they would only answer
 Now, as many Sperm Whales had been captured off the western coast of Java, in
 the near vicinity of the Straits of Sunda; indeed, as most of the ground,
 roundabout, was generally recognised by the fishermen as an excellent spot for
-cruising; therefore, as the *Pequod* gained more and more upon Java Head, the
+cruising; therefore, as the _Pequod_ gained more and more upon Java Head, the
 look-outs were repeatedly hailed, and admonished to keep wide awake. But though
 the green palmy cliffs of the land soon loomed on the starboard bow, and with
 delighted nostrils the fresh cinnamon was snuffed in the air, yet not a single
@@ -100,7 +99,7 @@ fall over in two branches, like the cleft drooping boughs of a willow, the
 single forward-slanting spout of the Sperm Whale presents a thick curled bush
 of white mist, continually rising and falling away to leeward.
 
-Seen from the *Pequod’s* deck, then, as she would rise on a high hill of the
+Seen from the _Pequod’s_ deck, then, as she would rise on a high hill of the
 sea, this host of vapoury spouts, individually curling up into the air, and
 beheld through a blending atmosphere of bluish haze, showed like the thousand
 cheerful chimneys of some dense metropolis, descried of a balmy autumnal
@@ -113,7 +112,7 @@ this vast fleet of whales now seem hurrying forward through the straits;
 gradually contracting the wings of their semicircle, and swimming on, in one
 solid, but still crescentic centre.
 
-Crowding all sail the *Pequod* pressed after them; the harpooneers handling
+Crowding all sail the _Pequod_ pressed after them; the harpooneers handling
 their weapons, and loudly cheering from the heads of their yet suspended boats.
 If the wind only held, little doubt had they, that chased through these Straits
 of Sunda, the vast host would only deploy into the Oriental seas to witness the
@@ -124,16 +123,16 @@ with stun-sail piled on stun-sail, we sailed along, driving these leviathans
 before us; when, of a sudden, the voice of Tashtego was heard, loudly directing
 attention to something in our wake.
 
-Corresponding to the crescent in our van, we beheld another in our rear.  It
+Corresponding to the crescent in our van, we beheld another in our rear. It
 seemed formed of detached white vapours, rising and falling something like the
 spouts of the whales; only they did not so completely come and go; for they
 constantly hovered, without finally disappearing. Levelling his glass at this
 sight, Ahab quickly revolved in his pivot-hole, crying, “Aloft there, and rig
 whips and buckets to wet the sails; — Malays, sir, and after us!”
 
-As if too long lurking behind the headlands, till the *Pequod* should fairly
+As if too long lurking behind the headlands, till the _Pequod_ should fairly
 have entered the straits, these rascally Asiatics were now in hot pursuit, to
-make up for their over-cautious delay. But when the swift *Pequod,* with a
+make up for their over-cautious delay. But when the swift _Pequod,_ with a
 fresh leading wind, was herself in hot chase; how very kind of these tawny
 philanthropists to assist in speeding her on to her own chosen pursuit, — mere
 riding-whips and rowels to her, that they were. As with glass under arm, Ahab
@@ -150,7 +149,7 @@ like the black sand beach after some stormy tide has been gnawing it, without
 being able to drag the firm thing from its place.
 
 But thoughts like these troubled very few of the reckless crew; and when, after
-steadily dropping and dropping the pirates astern, the *Pequod* at last shot by
+steadily dropping and dropping the pirates astern, the _Pequod_ at last shot by
 the vivid green Cockatoo Point on the Sumatra side, emerging at last upon the
 broad waters beyond; then, the harpooneers seemed more to grieve that the swift
 whales had been gaining upon the ship, than to rejoice that the ship had so
@@ -171,7 +170,7 @@ irresolution, which, when the fishermen perceive it in the whale, they say he
 is gallied. The compact martial columns in which they had been hitherto rapidly
 and steadily swimming, were now broken up in one measureless rout; and like
 King Porus’ elephants in the Indian battle with Alexander, they seemed going
-mad with consternation.  In all directions expanding in vast irregular circles,
+mad with consternation. In all directions expanding in vast irregular circles,
 and aimlessly swimming hither and thither, by their short thick spoutings, they
 plainly betrayed their distraction of panic. This was still more strangely
 evinced by those of their number, who, completely paralysed as it were,
@@ -321,7 +320,6 @@ becomes entangled with the hempen one, so that the cub is thereby trapped. Some
 of the subtlest secrets of the seas seemed divulged to us in this enchanted
 pond. We saw young Leviathan amours in the deep.\*
 
-
 > \* The sperm whale, as with all other species of the Leviathan, but unlike
 > most other fish, breeds indifferently at all seasons; after a gestation which
 > may probably be set down at nine months, producing but one at a time; though
@@ -331,10 +329,10 @@ pond. We saw young Leviathan amours in the deep.\*
 > When by chance these precious parts in a nursing whale are cut by the
 > hunter’s lance, the mother’s pouring milk and blood rivallingly discolour the
 > sea for rods. The milk is very sweet and rich; it has been tasted by man; it
-> might do well with strawberries.  When overflowing with mutual esteem, the
+> might do well with strawberries. When overflowing with mutual esteem, the
 > whales salute **more hominum**.
 
-----
+---
 
 And thus, though surrounded by circle upon circle of consternations and
 affrights, did these inscrutable creatures at the centre freely and fearlessly
@@ -353,7 +351,7 @@ and then blindly darting to and fro across the circles, was nothing to what at
 last met our eyes. It is sometimes the custom when fast to a whale more than
 commonly powerful and alert, to seek to hamstring him, as it were, by sundering
 or maiming his gigantic tail-tendon. It is done by darting a short-handled
-cutting-spade, to which is attached a rope for hauling it back again.  A whale
+cutting-spade, to which is attached a rope for hauling it back again. A whale
 wounded (as we afterwards learned) in this part, but not effectually, as it
 seemed, had broken away from the boat, carrying along with him half of the
 harpoon line; and in the extraordinary agony of the wound, he was now dashing
@@ -412,9 +410,7 @@ mark its place on the sea, and also as token of prior possession, should the
 boats of any other ship draw near.
 
 The result of this lowering was somewhat illustrative of that sagacious
-saying in the Fishery, — __the more whales the less fish.__ Of all the
+saying in the Fishery, — **the more whales the less fish.** Of all the
 drugged whales only one was captured. The rest contrived to escape for
 the time, but only to be taken, as will hereafter be seen, by some other
-craft than the *Pequod.*
-
-
+craft than the _Pequod._

@@ -1,6 +1,6 @@
-### Chapter 78. 
-Cistern and Buckets.
-====================
+### Chapter 78.
+
+# Cistern and Buckets.
 
 Nimble as a cat, Tashtego mounts aloft; and without altering his erect posture,
 runs straight out upon the overhanging mainyard-arm, to the part where it
@@ -30,7 +30,7 @@ the deep cistern will yield no more. Towards the end, Tashtego has to ram his
 long pole harder and harder, and deeper and deeper into the Tun, until some
 twenty feet of the pole have gone down.
 
-Now, the people of the *Pequod* had been baling some time in this way; several
+Now, the people of the _Pequod_ had been baling some time in this way; several
 tubs had been filled with the fragrant sperm; when all at once a queer accident
 happened. Whether it was that Tashtego, that wild Indian, was so heedless and
 reckless as to let go for a moment his one-handed hold on the great cabled
@@ -79,7 +79,7 @@ hull rolled away from it, to far down her glittering copper; and all caught
 their breath, as half swinging — now over the sailors’ heads, and now over the
 water — Daggoo, through a thick mist of spray, was dimly beheld clinging to the
 pendulous tackles, while poor, buried-alive Tashtego was sinking utterly down
-to the bottom of the sea!  But hardly had the blinding vapour cleared away,
+to the bottom of the sea! But hardly had the blinding vapour cleared away,
 when a naked figure with a boarding-sword in his hand, was for one swift moment
 seen hovering over the bulwarks. The next, a loud splash announced that my
 brave Queequeg had dived to the rescue. One packed rush was made to the side,
@@ -112,7 +112,7 @@ doing as well as could be expected.
 And thus, through the courage and great skill in obstetrics of Queequeg, the
 deliverance, or rather, delivery of Tashtego, was successfully accomplished, in
 the teeth, too, of the most untoward and apparently hopeless impediments; which
-is a lesson by no means to be forgotten.  Midwifery should be taught in the
+is a lesson by no means to be forgotten. Midwifery should be taught in the
 same course with fencing and boxing, riding and rowing.
 
 I know that this queer adventure of the Gay-Header’s will be sure to seem
@@ -141,8 +141,5 @@ hearsed, and tombed in the secret inner chamber and sanctum sanctorum of the
 whale. Only one sweeter end can readily be recalled — the delicious death of an
 Ohio honey-hunter, who seeking honey in the crotch of a hollow tree, found such
 exceeding store of it, that leaning too far over, it sucked him in, so that he
-died embalmed.  How many, think ye, have likewise fallen into Plato’s honey
+died embalmed. How many, think ye, have likewise fallen into Plato’s honey
 head, and sweetly perished there?
-
-
-

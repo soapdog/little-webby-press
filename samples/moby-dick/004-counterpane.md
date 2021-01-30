@@ -1,7 +1,6 @@
-### Chapter 4.  
-The Counterpane.  
-================
+### Chapter 4.
 
+# The Counterpane.
 
 Upon waking next morning about daylight, I found Queequeg’s arm thrown over me
 in the most loving and affectionate manner. You had almost thought I had been
@@ -11,14 +10,14 @@ interminable Cretan labyrinth of a figure, no two parts of which were of one
 precise shade — owing I suppose to his keeping his arm at sea unmethodically in
 sun and shade, his shirt sleeves irregularly rolled up at various times — this
 same arm of his, I say, looked for all the world like a strip of that same
-patchwork quilt.  Indeed, partly lying on it as the arm did when I first awoke,
+patchwork quilt. Indeed, partly lying on it as the arm did when I first awoke,
 I could hardly tell it from the quilt, they so blended their hues together; and
 it was only by the sense of weight and pressure that I could tell that Queequeg
 was hugging me.
 
 My sensations were strange. Let me try to explain them. When I was a child, I
 well remember a somewhat similar circumstance that befell me; whether it was a
-reality or a dream, I never could entirely settle.  The circumstance was this. I
+reality or a dream, I never could entirely settle. The circumstance was this. I
 had been cutting up some caper or other — I think it was trying to crawl up the
 chimney, as I had seen a little sweep do a few days previous; and my stepmother
 who, somehow or other, was all the time whipping me, or sending me to bed
@@ -91,7 +90,7 @@ Nevertheless, a man like Queequeg you don’t see every day, he and his ways wer
 well worth unusual regarding.
 
 He commenced dressing at top by donning his beaver hat, a very tall one, by the
-by, and then — still minus his trowsers — he hunted up his boots.  What under
+by, and then — still minus his trowsers — he hunted up his boots. What under
 the heavens he did it for, I cannot tell, but his next movement was to crush
 himself — boots in hand, and hat on — under the bed; when, from sundry violent
 gaspings and strainings, I inferred he was hard at work booting himself; though
@@ -123,13 +122,10 @@ takes the harpoon from the bed corner, slips out the long wooden stock,
 unsheathes the head, whets it a little on his boot, and striding up to the bit
 of mirror against the wall, begins a vigorous scraping, or rather harpooning of
 his cheeks. Thinks I, Queequeg, this is using Rogers’s best cutlery with a
-vengeance.  Afterwards I wondered the less at this operation when I came to know
+vengeance. Afterwards I wondered the less at this operation when I came to know
 of what fine steel the head of a harpoon is made, and how exceedingly sharp the
 long straight edges are always kept.
 
 The rest of his toilet was soon achieved, and he proudly marched out of the
 room, wrapped up in his great pilot monkey jacket, and sporting his harpoon like
 a marshal’s baton.
-
-
-

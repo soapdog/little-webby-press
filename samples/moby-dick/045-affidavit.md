@@ -1,7 +1,6 @@
-### Chapter 45. 
-The Affidavit.
-==============
+### Chapter 45.
 
+# The Affidavit.
 
 So far as what there may be of a narrative in this book; and, indeed, as
 indirectly touching one or two very interesting and curious particulars in the
@@ -17,7 +16,7 @@ to produce the desired impression by separate citations of items, practically
 or reliably known to me as a whaleman; and from these citations, I take it —
 the conclusion aimed at will naturally follow of itself.
 
-__First:__ I have personally known three instances where a whale, after
+**First:** I have personally known three instances where a whale, after
 receiving a harpoon, has effected a complete escape; and, after an interval (in
 one instance of three years), has been again struck by the same hand, and
 slain; when the two irons, both marked by the same private cypher, have been
@@ -30,7 +29,7 @@ years, often endangered by serpents, savages, tigers, poisonous miasmas, with
 all the other common perils incident to wandering in the heart of unknown
 regions. Meanwhile, the whale he had struck must also have been on its travels;
 no doubt it had thrice circumnavigated the globe, brushing with its flanks all
-the coasts of Africa; but to no purpose.  This man and this whale again came
+the coasts of Africa; but to no purpose. This man and this whale again came
 together, and the one vanquished the other. I say I, myself, have known three
 instances similar to this; that is in two of them I saw the whales struck; and,
 upon the second attack, saw the two irons with the respective marks cut in
@@ -42,7 +41,7 @@ sure it was more than that. Here are three instances, then, which I personally
 know the truth of; but I have heard of many other instances from persons whose
 veracity in the matter there is no good ground to impeach.
 
-__Secondly:__ It is well known in the Sperm Whale Fishery, however ignorant the
+**Secondly:** It is well known in the Sperm Whale Fishery, however ignorant the
 world ashore may be of it, that there have been several memorable historical
 instances where a particular whale in the ocean has been at distant times and
 places popularly cognisable. Why such a whale became thus marked was not
@@ -66,7 +65,7 @@ the rights, privileges, and distinctions of a name; had as much a name indeed
 as Cambyses or Caesar. Was it not so, O Timor Tom! thou famed leviathan,
 scarred like an iceberg, who so long did’st lurk in the Oriental straits of
 that name, whose spout was oft seen from the palmy beach of Ombay? Was it not
-so, O New Zealand Jack!  thou terror of all cruisers that crossed their wakes
+so, O New Zealand Jack! thou terror of all cruisers that crossed their wakes
 in the vicinity of the Tattoo Land? Was it not so, O Morquan! King of Japan,
 whose lofty jet they say at times assumed the semblance of a snow-white cross
 against the sky? Was it not so, O Don Miguel! thou Chilian whale, marked like
@@ -92,9 +91,9 @@ world, that without some hints touching the plain facts, historical and
 otherwise, of the fishery, they might scout at Moby Dick as a monstrous fable,
 or still worse and more detestable, a hideous and intolerable allegory.
 
-__First:__ Though most men have some vague flitting ideas of the general perils
+**First:** Though most men have some vague flitting ideas of the general perils
 of the grand fishery, yet they have nothing like a fixed, vivid conception of
-those perils, and the frequency with which they recur.  One reason perhaps is,
+those perils, and the frequency with which they recur. One reason perhaps is,
 that not one in fifty of the actual disasters and deaths by casualties in the
 fishery, ever finds a public record at home, however transient and immediately
 forgotten that record. Do you suppose that that poor fellow there, who this
@@ -110,7 +109,7 @@ them more than one, and three that had each lost a boat’s crew. For God’s sa
 be economical with your lamps and candles! not a gallon you burn, but at least
 one drop of man’s blood was spilled for it.
 
-__Secondly:__ People ashore have indeed some indefinite idea that a whale is an
+**Secondly:** People ashore have indeed some indefinite idea that a whale is an
 enormous creature of enormous power; but I have ever found that when narrating
 to them some specific example of this two-fold enormousness, they have
 significantly complimented me upon my facetiousness; when, I declare upon my
@@ -121,9 +120,9 @@ But fortunately the special point I here seek can be established upon testimony
 entirely independent of my own. That point is this: The Sperm Whale is in some
 cases sufficiently powerful, knowing, and judiciously malicious, as with direct
 aforethought to stave in, utterly destroy, and sink a large ship; and what is
-more, the Sperm Whale *has* done it.
+more, the Sperm Whale _has_ done it.
 
-__First:__ In the year 1820 the ship *Essex,* Captain Pollard, of Nantucket, was
+**First:** In the year 1820 the ship _Essex,_ Captain Pollard, of Nantucket, was
 cruising in the Pacific Ocean. One day she saw spouts, lowered her boats, and
 gave chase to a shoal of sperm whales. Ere long, several of the whales were
 wounded; when, suddenly, a very large whale escaping from the boats, issued
@@ -136,10 +135,9 @@ in command of another ship, but the gods shipwrecked him again upon unknown
 rocks and breakers; for the second time his ship was utterly lost, and
 forthwith forswearing the sea, he has never tempted it since. At this day
 Captain Pollard is a resident of Nantucket. I have seen Owen Chace, who was
-chief mate of the *Essex* at the time of the tragedy; I have read his plain and
+chief mate of the _Essex_ at the time of the tragedy; I have read his plain and
 faithful narrative; I have conversed with his son; and all this within a few
 miles of the scene of the catastrophe.\*
-
 
 > \*The following are extracts from Chace’s narrative: “Every fact seemed to
 > warrant me in concluding that it was anything but chance which directed his
@@ -156,27 +154,26 @@ miles of the scene of the catastrophe.\*
 > whale (many of which impressions I cannot now recall), induce me to be
 > satisfied that I am correct in my opinion.”
 
-----
+---
 
 Here are his reflections some time after quitting the ship, during a black
 night an open boat, when almost despairing of reaching any hospitable shore.
 “The dark ocean and swelling waters were nothing; the fears of being swallowed
 up by some dreadful tempest, or dashed upon hidden rocks, with all the other
 ordinary subjects of fearful contemplation, seemed scarcely entitled to a
-moment’s thought; the dismal looking wreck, and *the horrid aspect and revenge
-of the whale,* wholly engrossed my reflections, until day again made its
+moment’s thought; the dismal looking wreck, and _the horrid aspect and revenge
+of the whale,_ wholly engrossed my reflections, until day again made its
 appearance.”
 
-In another place — p. 45, — he speaks of *“the mysterious and mortal attack of
-the animal.”*
+In another place — p. 45, — he speaks of _“the mysterious and mortal attack of
+the animal.”_
 
-
-__Secondly:__ The ship *Union,* also of Nantucket, was in the year 1807 totally
+**Secondly:** The ship _Union,_ also of Nantucket, was in the year 1807 totally
 lost off the Azores by a similar onset, but the authentic particulars of this
 catastrophe I have never chanced to encounter, though from the whale hunters I
 have now and then heard casual allusions to it.
 
-__Thirdly:__ Some eighteen or twenty years ago Commodore J -- -, then
+**Thirdly:** Some eighteen or twenty years ago Commodore J -- -, then
 commanding an American sloop-of-war of the first class, happened to be dining
 with a party of whaling captains, on board a Nantucket ship in the harbor of
 Oahu, Sandwich Islands. Conversation turning upon whales, the Commodore was
@@ -193,10 +190,10 @@ Commodore’s interview with that whale as providential. Was not Saul of Tarsus
 converted from unbelief by a similar fright? I tell you, the sperm whale will
 stand no nonsense.
 
-I will now refer you to Langsdorff’s *Voyages* for a little circumstance in
+I will now refer you to Langsdorff’s _Voyages_ for a little circumstance in
 point, peculiarly interesting to the writer hereof. Langsdorff, you must know
 by the way, was attached to the Russian Admiral Krusenstern’s famous Discovery
-Expedition in the beginning of the present century.  Captain Langsdorff thus
+Expedition in the beginning of the present century. Captain Langsdorff thus
 begins his seventeenth chapter:
 
 > "By the thirteenth of May our ship was ready to sail, and the next day we
@@ -221,7 +218,7 @@ Now, the Captain D’Wolf here alluded to as commanding the ship in question, is
 a New Englander, who, after a long life of unusual adventures as a sea-captain,
 this day resides in the village of Dorchester near Boston. I have the honour of
 being a nephew of his. I have particularly questioned him concerning this
-passage in Langsdorff.  He substantiates every word. The ship, however, was by
+passage in Langsdorff. He substantiates every word. The ship, however, was by
 no means a large one: a Russian craft built on the Siberian coast, and
 purchased by my uncle after bartering away the vessel in which he sailed from
 home.
@@ -253,7 +250,7 @@ I might proceed with several more examples, one way or another known to me, of
 the great power and malice at times of the sperm whale. In more than one
 instance, he has been known, not only to chase the assailing boats back to
 their ships, but to pursue the ship itself, and long withstand all the lances
-hurled at him from its decks. The English ship *Pusie Hall* can tell a story on
+hurled at him from its decks. The English ship _Pusie Hall_ can tell a story on
 that head; and, as for his strength, let me say, that there have been examples
 where the lines attached to a running sperm whale have, in a calm, been
 transferred to the ship, and secured there; the whale towing her great hull
@@ -297,7 +294,7 @@ as a vessel of war readily passes through the Dardanelles, hence a sperm whale
 could, by the same route, pass out of the Mediterranean into the Propontis.
 
 In the Propontis, as far as I can learn, none of that peculiar substance called
-*brit* is to be found, the aliment of the right whale. But I have every reason
+_brit_ is to be found, the aliment of the right whale. But I have every reason
 to believe that the food of the sperm whale — squid or cuttle-fish — lurks at
 the bottom of that sea, because large creatures, but by no means the largest of
 that sort, have been found at its surface. If, then, you properly put these
@@ -305,6 +302,3 @@ statements together, and reason upon them a bit, you will clearly perceive
 that, according to all human reasoning, Procopius’s sea-monster, that for half
 a century stove the ships of a Roman Emperor, must in all probability have been
 a sperm whale.
-
-
-

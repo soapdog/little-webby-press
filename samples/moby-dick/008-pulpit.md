@@ -1,6 +1,6 @@
 ### Chapter 8.
-The Pulpit.
-===========
+
+# The Pulpit.
 
 I had not been seated very long ere a man of a certain venerable robustness
 entered; immediately as the storm-pelted door flew back upon admitting him, a
@@ -8,7 +8,7 @@ quick regardful eyeing of him by all the congregation, sufficiently attested
 that this fine old man was the chaplain. Yes, it was the famous Father Mapple,
 so called by the whalemen, among whom he was a very great favourite. He had
 been a sailor and a harpooneer in his youth, but for many years past had
-dedicated his life to the ministry.  At the time I now write of, Father Mapple
+dedicated his life to the ministry. At the time I now write of, Father Mapple
 was in the hardy winter of a healthy old age; that sort of old age which seems
 merging into a second flowering youth, for among all the fissures of his
 wrinkles, there shone certain mild gleams of a newly developing bloom — the
@@ -19,7 +19,7 @@ peculiarities about him, imputable to that adventurous maritime life he had
 led. When he entered I observed that he carried no umbrella, and certainly had
 not come in his carriage, for his tarpaulin hat ran down with melting sleet,
 and his great pilot cloth jacket seemed almost to drag him to the floor with
-the weight of the water it had absorbed.  However, hat and coat and overshoes
+the weight of the water it had absorbed. However, hat and coat and overshoes
 were one by one removed, and hung up in a little space in an adjacent corner;
 when, arrayed in a decent suit, he quietly approached the pulpit.
 
@@ -46,13 +46,13 @@ gaining the height, slowly turn round, and stooping over the pulpit,
 deliberately drag up the ladder step by step, till the whole was deposited
 within, leaving him impregnable in his little Quebec.
 
-I pondered some time without fully comprehending the reason for this.  Father
+I pondered some time without fully comprehending the reason for this. Father
 Mapple enjoyed such a wide reputation for sincerity and sanctity, that I could
 not suspect him of courting notoriety by any mere tricks of the stage. No,
 thought I, there must be some sober reason for this thing; furthermore, it must
 symbolize something unseen. Can it be, then, that by that act of physical
 isolation, he signifies his spiritual withdrawal for the time, from all outward
-worldly ties and connexions?  Yes, for replenished with the meat and wine of
+worldly ties and connexions? Yes, for replenished with the meat and wine of
 the word, to the faithful man of God, this pulpit, I see, is a self-containing
 stronghold — a lofty Ehrenbreitstein, with a perennial well of water within the
 walls.
@@ -78,8 +78,5 @@ What could be more full of meaning? — for the pulpit is ever this earth’s
 foremost part; all the rest comes in its rear; the pulpit leads the world. From
 thence it is the storm of God’s quick wrath is first descried, and the bow must
 bear the earliest brunt. From thence it is the God of breezes fair or foul is
-first invoked for favourable winds.  Yes, the world’s a ship on its passage
+first invoked for favourable winds. Yes, the world’s a ship on its passage
 out, and not a voyage complete; and the pulpit is its prow.
-
-
-

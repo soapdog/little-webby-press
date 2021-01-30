@@ -1,19 +1,19 @@
-### Chapter 73. 
-Stubb and Flask Kill a Right Whale; and Then Have a Talk Over Him.
-==================================================================
+### Chapter 73.
+
+# Stubb and Flask Kill a Right Whale; and Then Have a Talk Over Him.
 
 It must be borne in mind that all this time we have a Sperm Whale’s prodigious
-head hanging to the *Pequod’s* side. But we must let it continue hanging there
-a while till we can get a chance to attend to it.  For the present other
+head hanging to the _Pequod’s_ side. But we must let it continue hanging there
+a while till we can get a chance to attend to it. For the present other
 matters press, and the best we can do now for the head, is to pray heaven the
 tackles may hold.
 
-Now, during the past night and forenoon, the *Pequod* had gradually drifted
+Now, during the past night and forenoon, the _Pequod_ had gradually drifted
 into a sea, which, by its occasional patches of yellow brit, gave unusual
 tokens of the vicinity of Right Whales, a species of the Leviathan that but few
 supposed to be at this particular time lurking anywhere near. And though all
 hands commonly disdained the capture of those inferior creatures; and though
-the *Pequod* was not commissioned to cruise for them at all, and though she had
+the _Pequod_ was not commissioned to cruise for them at all, and though she had
 passed numbers of them near the Crozetts without lowering a boat; yet now that
 a Sperm Whale had been brought alongside and beheaded, to the surprise of all,
 the announcement was made that a Right Whale should be captured that day, if
@@ -48,7 +48,7 @@ performed a complete circuit.
 
 Meantime, they hauled more and more upon their lines, till close flanking him
 on both sides, Stubb answered Flask with lance for lance; and thus round and
-round the *Pequod* the battle went, while the multitudes of sharks that had
+round the _Pequod_ the battle went, while the multitudes of sharks that had
 before swum round the Sperm Whale’s body, rushed to the fresh blood that was
 spilled, thirstily drinking at every new gash, as the eager Israelites did at
 the new bursting fountains that poured from the smitten rock.
@@ -125,7 +125,7 @@ it there, Flask? I guess ye did?”
 
 “No: never saw such a book; heard of it, though. But now, tell me, Stubb, do
 you suppose that that devil you was speaking of just now, was the same you say
-is now on board the *Pequod*?”
+is now on board the _Pequod_?”
 
 “Am I the same man that helped kill this whale? Doesn’t the devil live for
 ever; who ever heard that the devil was dead? Did you ever see any parson a
@@ -136,7 +136,7 @@ that, Mr. Flask?”
 “How old do you suppose Fedallah is, Stubb?”
 
 “Do you see that mainmast there?” pointing to the ship; “well, that’s the
-figure one; now take all the hoops in the *Pequod*’s hold, and string along in
+figure one; now take all the hoops in the _Pequod_’s hold, and string along in
 a row with that mast, for oughts, do you see; well, that wouldn’t begin to be
 Fedallah’s age. Nor all the coopers in creation couldn’t show hoops enough to
 make oughts enough.”
@@ -189,7 +189,7 @@ chains and other necessaries were already prepared for securing him.
 “Didn’t I tell you so?” said Flask; “yes, you’ll soon see this right whale’s
 head hoisted up opposite that parmacetti’s.”
 
-In good time, Flask’s saying proved true. As before, the *Pequod* steeply
+In good time, Flask’s saying proved true. As before, the _Pequod_ steeply
 leaned over towards the sperm whale’s head, now, by the counterpoise of both
 heads, she regained her even keel; though sorely strained, you may well
 believe. So, when on one side you hoist in Locke’s head, you go over that way;
@@ -213,6 +213,3 @@ chanced so to stand, that the Parsee occupied his shadow; while, if the
 Parsee’s shadow was there at all it seemed only to blend with, and lengthen
 Ahab’s. As the crew toiled on, Laplandish speculations were bandied among them,
 concerning all these passing things.
-
-
-

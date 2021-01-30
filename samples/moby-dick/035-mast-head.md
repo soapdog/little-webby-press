@@ -1,7 +1,6 @@
-### Chapter 35. 
-The Mast-Head.
-==============
+### Chapter 35.
 
+# The Mast-Head.
 
 It was during the more pleasant weather, that in due rotation with the other
 seamen my first mast-head came round.
@@ -15,9 +14,9 @@ last; and not till her skysail-poles sail in among the spires of the port, does
 she altogether relinquish the hope of capturing one whale more.
 
 Now, as the business of standing mast-heads, ashore or afloat, is a very
-ancient and interesting one, let us in some measure expatiate here.  I take it,
+ancient and interesting one, let us in some measure expatiate here. I take it,
 that the earliest standers of mast-heads were the old Egyptians; because, in
-all my researches, I find none prior to them.  For though their progenitors,
+all my researches, I find none prior to them. For though their progenitors,
 the builders of Babel, must doubtless, by their tower, have intended to rear
 the loftiest mast-head in all Asia, or Africa either; yet (ere the final truck
 was put to it) as that great stone mast of theirs may be said to have gone by
@@ -104,21 +103,21 @@ your body, and no more can you make a convenient closet of your watch-coat.
 
 Concerning all this, it is much to be deplored that the mast-heads of a
 southern whale ship are unprovided with those enviable little tents or pulpits,
-called *crow’s-nests,* in which the look-outs of a Greenland whaler are
+called _crow’s-nests,_ in which the look-outs of a Greenland whaler are
 protected from the inclement weather of the frozen seas. In the fireside
 narrative of Captain Sleet, entitled _“A Voyage among the Icebergs, in quest of
 the Greenland Whale, and incidentally for the re-discovery of the Lost
 Icelandic Colonies of Old Greenland;”_ in this admirable volume, all standers
 of mast-heads are furnished with a charmingly circumstantial account of the
-then recently invented *crow’s-nest* of the Glacier, which was the name of
-Captain Sleet’s good craft. He called it the *sleet’s crow’s-nest,* in honour
+then recently invented _crow’s-nest_ of the Glacier, which was the name of
+Captain Sleet’s good craft. He called it the _sleet’s crow’s-nest,_ in honour
 of himself; he being the original inventor and patentee, and free from all
 ridiculous false delicacy, and holding that if we call our own children after
 our own names (we fathers being the original inventors and patentees), so
 likewise should we denominate after ourselves any other apparatus we may beget.
 In shape, the Sleet’s crow’s-nest is something like a large tierce or pipe; it
 is open above, however, where it is furnished with a movable side-screen to
-keep to windward of your head in a hard gale.  Being fixed on the summit of the
+keep to windward of your head in a hard gale. Being fixed on the summit of the
 mast, you ascend into it through a little trap-hatch in the bottom. On the
 after side, or side next the stern of the ship, is a comfortable seat, with a
 locker underneath for umbrellas, comforters, and coats. In front is a leather
@@ -142,7 +141,7 @@ learned “binnacle deviations,” “azimuth compass observations,” and “ap
 errors,” he knows very well, Captain Sleet, that he was not so much immersed in
 those profound magnetic meditations, as to fail being attracted occasionally
 towards that well replenished little case-bottle, so nicely tucked in on one
-side of his crow’s nest, within easy reach of his hand.  Though, upon the
+side of his crow’s nest, within easy reach of his hand. Though, upon the
 whole, I greatly admire and even love the brave, the honest, and learned
 Captain; yet I take it very ill of him that he should so utterly ignore that
 case-bottle, seeing what a faithful friend and comforter it must have been,
@@ -175,7 +174,7 @@ whale-fishery furnishes an asylum for many romantic, melancholy, and
 absent-minded young men, disgusted with the carking cares of earth, and seeking
 sentiment in tar and blubber. Childe Harold not unfrequently perches himself
 upon the mast-head of some luckless disappointed whale-ship, and in moody
-phrase ejaculates: — 
+phrase ejaculates: —
 
 > “Roll on, thou deep and dark blue ocean, roll! Ten thousand blubber-hunters
 > sweep over thee in vain.”
@@ -210,6 +209,3 @@ an inch; slip your hold at all; and your identity comes back in horror. Over
 Descartian vortices you hover. And perhaps, at mid-day, in the fairest weather,
 with one half-throttled shriek you drop through that transparent air into the
 summer sea, no more to rise for ever. Heed it well, ye Pantheists!
-
-
-

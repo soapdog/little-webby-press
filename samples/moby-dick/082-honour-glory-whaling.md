@@ -1,7 +1,6 @@
-### Chapter 82. 
-The Honour and Glory of Whaling.
-================================
+### Chapter 82.
 
+# The Honour and Glory of Whaling.
 
 There are some enterprises in which a careful disorderliness is the true
 method.
@@ -86,7 +85,7 @@ gods themselves. That wondrous oriental story is now to be rehearsed from the
 Shaster, which gives us the dread Vishnoo, one of the three persons in the
 godhead of the Hindoos; gives us this divine Vishnoo himself for our Lord; —
 Vishnoo, who, by the first of his ten earthly incarnations, has for ever set
-apart and sanctified the whale.  When Brahma, or the God of Gods, saith the
+apart and sanctified the whale. When Brahma, or the God of Gods, saith the
 Shaster, resolved to recreate the world after one of its periodical
 dissolutions, he gave birth to Vishnoo, to preside over the work; but the
 Vedas, or mystical books, whose perusal would seem to have been indispensable
@@ -99,6 +98,3 @@ is called a horseman?
 
 Perseus, St. George, Hercules, Jonah, and Vishnoo! there’s a member-roll for
 you! What club but the whaleman’s can head off like that?
-
-
-

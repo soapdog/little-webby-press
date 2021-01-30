@@ -1,9 +1,9 @@
-### Chapter 10. 
-A Bosom Friend.
-===============
+### Chapter 10.
+
+# A Bosom Friend.
 
 Returning to the Spouter-Inn from the Chapel, I found Queequeg there quite
-alone; he having left the Chapel before the benediction some time.  He was
+alone; he having left the Chapel before the benediction some time. He was
 sitting on a bench before the fire, with his feet on the stove hearth, and in
 one hand was holding close up to his face that little negro idol of his;
 peering hard into its face, and with a jack-knife gently whittling away at its
@@ -25,8 +25,8 @@ Through all his unearthly tattooings, I thought I saw the traces of a simple
 honest heart; and in his large, deep eyes, fiery black and bold, there seemed
 tokens of a spirit that would dare a thousand devils. And besides all this,
 there was a certain lofty bearing about the Pagan, which even his uncouthness
-could not altogether maim.  He looked like a man who had never cringed and
-never had had a creditor.  Whether it was, too, that his head being shaved, his
+could not altogether maim. He looked like a man who had never cringed and
+never had had a creditor. Whether it was, too, that his head being shaved, his
 forehead was drawn out in freer and brighter relief, and looked more expansive
 than it otherwise would, this I will not venture to decide; but certain it was
 his head was phrenologically an excellent one. It may seem ridiculous, but it
@@ -38,7 +38,7 @@ on top. Queequeg was George Washington cannibalistically developed.
 Whilst I was thus closely scanning him, half-pretending meanwhile to be looking
 out at the storm from the casement, he never heeded my presence, never troubled
 himself with so much as a single glance; but appeared wholly occupied with
-counting the pages of the marvellous book.  Considering how sociably we had
+counting the pages of the marvellous book. Considering how sociably we had
 been sleeping together the night previous, and especially considering the
 affectionate arm I had found thrown over me upon waking in the morning, I
 thought this indifference of his very strange. But savages are strange beings;
@@ -67,7 +67,7 @@ solemn swells; I began to be sensible of strange feelings. I felt a melting in
 me. No more my splintered heart and maddened hand were turned against the
 wolfish world. This soothing savage had redeemed it. There he sat, his very
 indifference speaking a nature in which there lurked no civilized hypocrisies
-and bland deceits.  Wild he was; a very sight of sights to see; yet I began to
+and bland deceits. Wild he was; a very sight of sights to see; yet I began to
 feel myself mysteriously drawn towards him. And those same things that would
 have repelled most others, they were the very magnets that thus drew me. I’ll
 try a pagan friend, thought I, since Christian kindness has proved but hollow
@@ -101,7 +101,7 @@ wallet, and groping under the tobacco, drew out some thirty dollars in silver;
 then spreading them on the table, and mechanically dividing them into two equal
 portions, pushed one of them towards me, and said it was mine. I was going to
 remonstrate; but he silenced me by pouring them into my trowsers’ pockets. I
-let them stay.  He then went about his evening prayers, took out his idol, and
+let them stay. He then went about his evening prayers, took out his idol, and
 removed the paper fireboard. By certain signs and symptoms, I thought he seemed
 anxious for me to join him; but well knowing what was to follow, I deliberated
 a moment whether, in case he invited me, I would comply or otherwise.
@@ -111,9 +111,9 @@ Presbyterian Church. How then could I unite with this wild idolator in
 worshipping his piece of wood? But what is worship? thought I. Do you suppose
 now, Ishmael, that the magnanimous God of heaven and earth — pagans and all
 included — can possibly be jealous of an insignificant bit of black wood?
-Impossible! But what is worship? — to do the will of God — *that* is worship.
+Impossible! But what is worship? — to do the will of God — _that_ is worship.
 And what is the will of God? — to do to my fellow man what I would have my
-fellow man to do to me — *that* is the will of God. Now, Queequeg is my fellow
+fellow man to do to me — _that_ is the will of God. Now, Queequeg is my fellow
 man. And what do I wish that this Queequeg would do to me? Why, unite with me
 in my particular Presbyterian form of worship. Consequently, I must then unite
 with him in his; ergo, I must turn idolator. So I kindled the shavings; helped
@@ -127,6 +127,3 @@ disclosures between friends. Man and wife, they say, there open the very bottom
 of their souls to each other; and some old couples often lie and chat over old
 times till nearly morning. Thus, then, in our hearts’ honeymoon, lay I and
 Queequeg — a cosy, loving pair.
-
-
-

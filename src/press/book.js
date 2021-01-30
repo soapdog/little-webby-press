@@ -1,32 +1,50 @@
-import toml from "toml";
+import toml from "toml"
+
+// TODO: implement them all
+let configurationFiles = [
+	"book.lua",
+	"book.toml",
+	"book.ini",
+	"book.json",
+	"book.txt",
+]
 
 export default class Book {
-    constructor(config, files) {
-        this.config = config
-        this.files = files
-    }
+	constructor(config, files) {
+		this.config = config
+		this.files = files
+	}
 }
 
 export async function bookFromFiles(files) {
-    // look for Book.toml
-    let tomlFile = files.filter(file => {
-        return file.name.toLowerCase() == "book.toml";
-    })[0];
+	// look for Book configuration files
+	let conf = files.filter((file) => {
+		return configurationFiles.includes(file.name.toLowerCase())
+	})[0]
 
-    if (tomlFile) {
-        let rootFolder = tomlFile.filepath.split("/").reverse();
-        rootFolder.shift();
-        rootFolder.reverse().join("/");
+	if (conf) {
+		let rootFolder = conf.filepath.split("/").reverse()
+		rootFolder.shift()
+		rootFolder.reverse().join("/")
 
-        files = files.map(f => {
-            f.filepath = f.filepath.replace(`${rootFolder}/`, "");
-            return f;
-        });
+		files = files.map((f) => {
+			f.filepath = f.filepath.replace(`${rootFolder}/`, "")
+			return f
+		})
 
-        let config = toml.parse(await tomlFile.text());
-        let book = new Book(config, files);
-        return book
-    } else {
-        return new Error("Can't find Book.toml file")
-    }
+		let config = {}
+		let ext = conf.filepath.split(".").reverse()[0]
+		switch (ext) {
+			case "toml":
+				config = toml.parse(await conf.text())
+				break
+			default:
+				return new Error("error-no-configuration")
+		}
+
+		let book = new Book(config, files)
+		return book
+	} else {
+		return new Error("error-no-configuration")
+	}
 }

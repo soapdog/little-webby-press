@@ -1,11 +1,10 @@
-### Chapter 64. 
-Stubb’s Supper.
-===============
+### Chapter 64.
 
+# Stubb’s Supper.
 
 Stubb’s whale had been killed some distance from the ship. It was a calm; so,
 forming a tandem of three boats, we commenced the slow business of towing the
-trophy to the *Pequod.* And now, as we eighteen men with our thirty-six arms, and
+trophy to the _Pequod._ And now, as we eighteen men with our thirty-six arms, and
 one hundred and eighty thumbs and fingers, slowly toiled hour after hour upon
 that inert, sluggish corpse in the sea; and it seemed hardly to budge at all,
 except at long intervals; good evidence was hereby furnished of the
@@ -14,7 +13,7 @@ whatever they call it, in China, four or five laborers on the foot-path will
 draw a bulky freighted junk at the rate of a mile an hour; but this grand
 argosy we towed heavily forged along, as if laden with pig-lead in bulk.
 
-Darkness came on; but three lights up and down in the *Pequod’s* main-rigging
+Darkness came on; but three lights up and down in the _Pequod’s_ main-rigging
 dimly guided our way; till drawing nearer we saw Ahab dropping one of several
 more lanterns over the bulwarks. Vacantly eyeing the heaving whale for a
 moment, he issued the usual orders for securing it for the night, and then
@@ -27,7 +26,7 @@ vague dissatisfaction, or impatience, or despair, seemed working in him; as if
 the sight of that dead body reminded him that Moby Dick was yet to be slain;
 and though a thousand other whales were brought to his ship, all that would not
 one jot advance his grand, monomaniac object. Very soon you would have thought
-from the sound on the *Pequod’s* decks, that all hands were preparing to cast
+from the sound on the _Pequod’s_ decks, that all hands were preparing to cast
 anchor in the deep; for heavy chains are being dragged along the deck, and
 thrust rattling out of the port-holes. But by those clanking links, the vast
 corpse itself, not the ship, is to be moored. Tied by the head to the stern,
@@ -35,7 +34,6 @@ and by the tail to the bows, the whale now lies with its black hull close to
 the vessel’s and seen through the darkness of the night, which obscured the
 spars and rigging aloft, the two — ship and whale, seemed yoked together like
 colossal bullocks, whereof one reclines while the other remains standing.\*
-
 
 > \* A little item may as well be related here. The strongest and most reliable
 > hold which the ship has upon the whale when moored alongside, is by the
@@ -51,14 +49,14 @@ colossal bullocks, whereof one reclines while the other remains standing.\*
 > last locked fast round the smallest part of the tail, at the point of
 > junction with its broad flukes or lobes.
 
-----
+---
 
 If moody Ahab was now all quiescence, at least so far as could be known on
 deck, Stubb, his second mate, flushed with conquest, betrayed an unusual but
 still good-natured excitement. Such an unwonted bustle was he in that the staid
 Starbuck, his official superior, quietly resigned to him for the time the sole
 management of affairs. One small, helping cause of all this liveliness in
-Stubb, was soon made strangely manifest.  Stubb was a high liver; he was
+Stubb, was soon made strangely manifest. Stubb was a high liver; he was
 somewhat intemperately fond of the whale as a flavorish thing to his palate.
 
 “A steak, a steak, ere I sleep! You, Daggoo! overboard you go, and cut me one
@@ -157,7 +155,7 @@ preaching. That’s no way to convert sinners, cook!”
 
 “No, cook; go on, go on.”
 
-“Well, den, Belubed fellow-critters:” — 
+“Well, den, Belubed fellow-critters:” —
 
 “Right!” exclaimed Stubb, approvingly, “coax ’em to it; try that,” and Fleece
 continued.
@@ -174,7 +172,7 @@ Once more the sermon proceeded.
 “Your woraciousness, fellow-critters, I don’t blame ye so much for; dat is
 natur, and can’t be helped; but to gobern dat wicked natur, dat is de pint. You
 is sharks, sartin; but if you gobern de shark in you, why den you be angel; for
-all angel is not’ing more dan de shark well goberned.  Now, look here,
+all angel is not’ing more dan de shark well goberned. Now, look here,
 bred’ren, just try wonst to be cibil, a helping yourselbs from dat whale. Don’t
 be tearin’ de blubber out your neighbour’s mout, I say. Is not one shark dood
 right as toder to dat whale? And, by Gor, none on you has de right to dat
@@ -196,7 +194,7 @@ and eber.”
 and I’ll away to my supper.”
 
 Upon this, Fleece, holding both hands over the fishy mob, raised his shrill
-voice, and cried — 
+voice, and cried —
 
 “Cussed fellow-critters! Kick up de damndest row as ever you can; fill your dam
 bellies ’till dey bust — and den die.”
@@ -228,14 +226,14 @@ were born in, cook!”
 
 “Didn’t I say de Roanoke country?” he cried sharply.
 
-“No, you didn’t, cook; but I’ll tell you what I’m coming to, cook.  You must go
+“No, you didn’t, cook; but I’ll tell you what I’m coming to, cook. You must go
 home and be born over again; you don’t know how to cook a whale-steak yet.”
 
 “Bress my soul, if I cook noder one,” he growled, angrily, turning round to
 depart.
 
 “Come back here, cook; — here, hand me those tongs; — now take that bit of
-steak there, and tell me if you think that steak cooked as it should be?  Take
+steak there, and tell me if you think that steak cooked as it should be? Take
 it, I say” — holding the tongs towards him — “take it, and taste it.”
 
 Faintly smacking his withered lips over it for a moment, the old negro
@@ -267,7 +265,7 @@ where?”
 it there very solemnly.
 
 “So, then, you expect to go up into our main-top, do you, cook, when you are
-dead? But don’t you know the higher you climb, the colder it gets?  Main-top,
+dead? But don’t you know the higher you climb, the colder it gets? Main-top,
 eh?”
 
 “Didn’t say dat t’all,” said Fleece, again in the sulks.
@@ -297,13 +295,10 @@ for the ends of the flukes, have them soused, cook. There, now ye may go.”
 
 But Fleece had hardly got three paces off, when he was recalled.
 
-“Cook, give me cutlets for supper to-morrow night in the mid-watch.  D’ye hear?
+“Cook, give me cutlets for supper to-morrow night in the mid-watch. D’ye hear?
 away you sail, then. — Halloa! stop! make a bow before you go. — Avast heaving
 again! Whale-balls for breakfast — don’t forget.”
 
 “Wish, by gor! whale eat him, ’stead of him eat whale. I’m bressed if he ain’t
 more of shark dan Massa Shark hisself,” muttered the old man, limping away;
 with which sage ejaculation he went to his hammock.
-
-
-

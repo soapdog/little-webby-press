@@ -1,7 +1,6 @@
-###Chapter 66. 
-The Shark Massacre.
-===================
+### Chapter 66.
 
+# The Shark Massacre.
 
 When in the Southern Fishery, a captured Sperm Whale, after long and weary
 toil, is brought alongside late at night, it is not, as a general thing at
@@ -16,12 +15,12 @@ shall mount the deck to see that all goes well.
 But sometimes, especially upon the Line in the Pacific, this plan will not
 answer at all; because such incalculable hosts of sharks gather round the
 moored carcase, that were he left so for six hours, say, on a stretch, little
-more than the skeleton would be visible by morning.  In most other parts of the
+more than the skeleton would be visible by morning. In most other parts of the
 ocean, however, where these fish do not so largely abound, their wondrous
 voracity can be at times considerably diminished, by vigorously stirring them
 up with sharp whaling-spades, a procedure notwithstanding, which, in some
 instances, only seems to tickle them into still greater activity. But it was
-not thus in the present case with the *Pequod’s* sharks; though, to be sure,
+not thus in the present case with the _Pequod’s_ sharks; though, to be sure,
 any man unaccustomed to such sights, to have looked over her side that night,
 would have almost thought the whole round sea was one huge cheese, and those
 sharks the maggots in it.
@@ -46,7 +45,6 @@ on deck for the sake of his skin, one of these sharks almost took poor
 Queequeg’s hand off, when he tried to shut down the dead lid of his murderous
 jaw.
 
-
 > \* The whaling-spade used for cutting-in is made of the very best steel; is
 > about the bigness of a man’s spread hand; and in general shape, corresponds
 > to the garden implement after which it is named; only its sides are perfectly
@@ -55,10 +53,6 @@ jaw.
 > just like a razor. In its socket, a stiff pole, from twenty to thirty feet
 > long, is inserted for a handle.
 
-
 “Queequeg no care what god made him shark,” said the savage, agonizingly
 lifting his hand up and down; “wedder Fejee god or Nantucket god; but de god
 wat made shark must be one dam Ingin.”
-
-
-

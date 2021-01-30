@@ -1,11 +1,10 @@
-### Chapter 57. 
-Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in Stone; in Mountains; in Stars.
-================================================================================
+### Chapter 57.
 
+# Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in Stone; in Mountains; in Stars.
 
 On Tower-hill, as you go down to the London docks, you may have seen a crippled
-beggar (or *kedger*, as the sailors say) holding a painted board before him,
-representing the tragic scene in which he lost his leg.  There are three whales
+beggar (or _kedger_, as the sailors say) holding a painted board before him,
+representing the tragic scene in which he lost his leg. There are three whales
 and three boats; and one of the boats (presumed to contain the missing leg in
 all its original integrity) is being crunched by the jaws of the foremost
 whale. Any time these ten years, they tell me, has that man held up that
@@ -28,7 +27,7 @@ alone; and, with that almost omnipotent tool of the sailor, they will turn you
 out anything you please, in the way of a mariner’s fancy.
 
 Long exile from Christendom and civilization inevitably restores a man to that
-condition in which God placed him, i.e. what is called savagery.  Your true
+condition in which God placed him, i.e. what is called savagery. Your true
 whale-hunter is as much a savage as an Iroquois. I myself am a savage, owning
 no allegiance but to the King of the Cannibals; and ready at any moment to
 rebel against him.
@@ -36,7 +35,7 @@ rebel against him.
 Now, one of the peculiar characteristics of the savage in his domestic hours,
 is his wonderful patience of industry. An ancient Hawaiian war-club or
 spear-paddle, in its full multiplicity and elaboration of carving, is as great
-a trophy of human perseverance as a Latin lexicon.  For, with but a bit of
+a trophy of human perseverance as a Latin lexicon. For, with but a bit of
 broken sea-shell or a shark’s tooth, that miraculous intricacy of wooden
 net-work has been achieved; and it has cost steady years of steady application.
 
@@ -57,7 +56,7 @@ anvil-headed whale would be best. But these knocking whales are seldom
 remarkable as faithful essays. On the spires of some old-fashioned churches you
 will see sheet-iron whales placed there for weather-cocks; but they are so
 elevated, and besides that are to all intents and purposes so labelled with
-*“hands off!”* you cannot examine them closely enough to decide upon their
+_“hands off!”_ you cannot examine them closely enough to decide upon their
 merit.
 
 In bony, ribby regions of the earth, where at the base of high broken cliffs
@@ -89,6 +88,3 @@ With a frigate’s anchors for my bridle-bitts and fasces of harpoons for spurs,
 would I could mount that whale and leap the topmost skies, to see whether the
 fabled heavens with all their countless tents really lie encamped beyond my
 mortal sight!
-
-
-

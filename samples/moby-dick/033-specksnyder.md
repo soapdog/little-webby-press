@@ -1,7 +1,6 @@
-### Chapter 33. 
-The Specksnyder.
-================
+### Chapter 33.
 
+# The Specksnyder.
 
 Concerning the officers of the whale-craft, this seems as good a place as any
 to set down a little domestic peculiarity on ship-board, arising from the
@@ -11,7 +10,7 @@ other marine than the whale-fleet.
 The large importance attached to the harpooneer’s vocation is evinced by the
 fact, that originally in the old Dutch Fishery, two centuries and more ago, the
 command of a whale ship was not wholly lodged in the person now called the
-captain, but was divided between him and an officer called the *Specksnyder.*
+captain, but was divided between him and an officer called the _Specksnyder._
 Literally this word means Fat-Cutter; usage, however, in time made it
 equivalent to Chief Harpooneer. In those days, the captain’s authority was
 restricted to the navigation and general management of the vessel; while over
@@ -51,13 +50,13 @@ grandeur not surpassed in any military navy; nay, extorting almost as much
 outward homage as if he wore the imperial purple, and not the shabbiest of
 pilot-cloth.
 
-And though of all men the moody captain of the *Pequod* was the least given to
+And though of all men the moody captain of the _Pequod_ was the least given to
 that sort of shallowest assumption; and though the only homage he ever exacted,
 was implicit, instantaneous obedience; though he required no man to remove the
 shoes from his feet ere stepping upon the quarter-deck; and though there were
 times when, owing to peculiar circumstances connected with events hereafter to
 be detailed, he addressed them in unusual terms, whether of condescension or
-*in terrorem,* or otherwise; yet even Captain Ahab was by no means unobservant
+_in terrorem,_ or otherwise; yet even Captain Ahab was by no means unobservant
 of the paramount forms and usages of the sea.
 
 Nor, perhaps, will it fail to be eventually perceived, that behind those forms
@@ -88,6 +87,3 @@ that I have only to do with a poor old whale-hunter like him; and, therefore,
 all outward majestical trappings and housings are denied me. Oh, Ahab! what
 shall be grand in thee, it must needs be plucked at from the skies, and dived
 for in the deep, and featured in the unbodied air!
-
-
-

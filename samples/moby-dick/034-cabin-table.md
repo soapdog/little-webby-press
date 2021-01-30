@@ -1,7 +1,6 @@
 ### Chapter 34.
-The Cabin-Table.
-================
 
+# The Cabin-Table.
 
 It is noon; and Dough-Boy, the steward, thrusting his pale loaf-of-bread face
 from the cabin-scuttle, announces dinner to his lord and master; who, sitting
@@ -89,25 +88,25 @@ privilege of lounging in the rear. If Stubb even, who is but a peg higher than
 Flask, happens to have but a small appetite, and soon shows symptoms of
 concluding his repast, then Flask must bestir himself, he will not get more
 than three mouthfuls that day; for it is against holy usage for Stubb to
-precede Flask to the deck.  Therefore it was that Flask once admitted in
+precede Flask to the deck. Therefore it was that Flask once admitted in
 private, that ever since he had arisen to the dignity of an officer, from that
 moment he had never known what it was to be otherwise than hungry, more or
 less. For what he ate did not so much relieve his hunger, as keep it immortal
-in him.  Peace and satisfaction, thought Flask, have for ever departed from my
+in him. Peace and satisfaction, thought Flask, have for ever departed from my
 stomach. I am an officer; but, how I wish I could fish a bit of old-fashioned
 beef in the forecastle, as I used to when I was before the mast. There’s the
 fruits of promotion now; there’s the vanity of glory: there’s the insanity of
-life! Besides, if it were so that any mere sailor of the *Pequod* had a grudge
+life! Besides, if it were so that any mere sailor of the _Pequod_ had a grudge
 against Flask in Flask’s official capacity, all that sailor had to do, in order
 to obtain ample vengeance, was to go aft at dinner-time, and get a peep at
 Flask through the cabin sky-light, sitting silly and dumfoundered before awful
 Ahab.
 
 Now, Ahab and his three mates formed what may be called the first table in the
-*Pequod’s* cabin. After their departure, taking place in inverted order to
+_Pequod’s_ cabin. After their departure, taking place in inverted order to
 their arrival, the canvas cloth was cleared, or rather was restored to some
 hurried order by the pallid steward. And then the three harpooneers were bidden
-to the feast, they being its residuary legatees.  They made a sort of temporary
+to the feast, they being its residuary legatees. They made a sort of temporary
 servants’ hall of the high and mighty cabin.
 
 In strange contrast to the hardly tolerable constraint and nameless invisible
@@ -116,7 +115,7 @@ the almost frantic democracy of those inferior fellows the harpooneers. While
 their masters, the mates, seemed afraid of the sound of the hinges of their own
 jaws, the harpooneers chewed their food with such a relish that there was a
 report to it. They dined like lords; they filled their bellies like Indian
-ships all day loading with spices.  Such portentous appetites had Queequeg and
+ships all day loading with spices. Such portentous appetites had Queequeg and
 Tashtego, that to fill out the vacancies made by the previous repast, often the
 pale Dough-Boy was fain to bring on a great baron of salt-junk, seemingly
 quarried out of the solid ox. And if he were not lively about it, if he did not
@@ -171,7 +170,7 @@ In this one matter, Ahab seemed no exception to most American whale captains,
 who, as a set, rather incline to the opinion that by rights the ship’s cabin
 belongs to them; and that it is by courtesy alone that anybody else is, at any
 time, permitted there. So that, in real truth, the mates and harpooneers of the
-*Pequod* might more properly be said to have lived out of the cabin than in it.
+_Pequod_ might more properly be said to have lived out of the cabin than in it.
 For when they did enter it, it was something as a street-door enters a house;
 turning inwards for a moment, only to be turned out the next; and, as a
 permanent thing, residing in the open air. Nor did they lose much hereby; in
@@ -182,6 +181,3 @@ Missouri. And as when Spring and Summer had departed, that wild Logan of the
 woods, burying himself in the hollow of a tree, lived out the winter there,
 sucking his own paws; so, in his inclement, howling old age, Ahab’s soul, shut
 up in the caved trunk of his body, there fed upon the sullen paws of its gloom!
-
-
-

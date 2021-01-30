@@ -1,6 +1,6 @@
-### Chapter 1. 
-Loomings.
-=========
+### Chapter 1.
+
+# Loomings.
 
 Call me Ishmael. Some years ago — never mind how long precisely — having little
 or no money in my purse, and nothing particular to interest me on shore, I
@@ -22,7 +22,7 @@ There now is your insular city of the Manhattoes, belted round by wharves as
 Indian isles by coral reefs — commerce surrounds it with her surf. Right and
 left, the streets take you waterward. Its extreme downtown is the battery, where
 that noble mole is washed by waves, and cooled by breezes, which a few hours
-previous were out of sight of land.  Look at the crowds of water-gazers there.
+previous were out of sight of land. Look at the crowds of water-gazers there.
 
 Circumambulate the city of a dreamy Sabbath afternoon. Go from Corlears Hook to
 Coenties Slip, and from thence, by Whitehall, northward. What do you see? —
@@ -40,7 +40,7 @@ the land; loitering under the shady lee of yonder warehouses will not suffice.
 No. They must get just as nigh the water as they possibly can without falling
 in. And there they stand — miles of them — leagues. Inlanders all, they come
 from lanes and alleys, streets and avenues — north, east, south, and west. Yet
-here they all unite.  Tell me, does the magnetic virtue of the needles of the
+here they all unite. Tell me, does the magnetic virtue of the needles of the
 compasses of all those ships attract them thither?
 
 Once more. Say you are in the country; in some high land of lakes. Take almost
@@ -48,7 +48,7 @@ any path you please, and ten to one it carries you down in a dale, and leaves
 you there by a pool in the stream. There is magic in it. Let the most
 absent-minded of men be plunged in his deepest reveries — stand that man on his
 legs, set his feet a-going, and he will infallibly lead you to water, if water
-there be in all that region.  Should you ever be athirst in the great American
+there be in all that region. Should you ever be athirst in the great American
 desert, try this experiment, if your caravan happen to be supplied with a
 metaphysical professor. Yes, as every one knows, meditation and water are wedded
 for ever.
@@ -81,7 +81,7 @@ is the image of the ungraspable phantom of life; and this is the key to it all.
 
 Now, when I say that I am in the habit of going to sea whenever I begin to grow
 hazy about the eyes, and begin to be over conscious of my lungs, I do not mean
-to have it inferred that I ever go to sea as a passenger.  For to go as a
+to have it inferred that I ever go to sea as a passenger. For to go as a
 passenger you must needs have a purse, and a purse is but a rag unless you have
 something in it. Besides, passengers get sea-sick — grow quarrelsome — don’t
 sleep of nights — do not enjoy themselves much, as a general thing; — no, I
@@ -90,7 +90,7 @@ sea as a Commodore, or a Captain, or a Cook. I abandon the glory and distinction
 of such offices to those who like them. For my part, I abominate all honourable
 respectable toils, trials, and tribulations of every kind whatsoever. It is
 quite as much as I can do to take care of myself, without taking care of ships,
-barques, brigs, schooners, and what not.  And as for going as cook, — though I
+barques, brigs, schooners, and what not. And as for going as cook, — though I
 confess there is considerable glory in that, a cook being a sort of officer on
 ship-board — yet, somehow, I never fancied broiling fowls; — though once
 broiled, judiciously buttered, and judgmatically salted and peppered, there is
@@ -100,7 +100,7 @@ broiled ibis and roasted river horse, that you see the mummies of those
 creatures in their huge bake-houses the pyramids.
 
 No, when I go to sea, I go as a simple sailor, right before the mast, plumb down
-into the forecastle, aloft there to the royal mast-head.  True, they rather
+into the forecastle, aloft there to the royal mast-head. True, they rather
 order me about some, and make me jump from spar to spar, like a grasshopper in a
 May meadow. And at first, this sort of thing is unpleasant enough. It touches
 one’s sense of honour, particularly if you come of an old established family in
@@ -128,7 +128,7 @@ for my trouble, whereas they never pay passengers a single penny that I ever
 heard of. On the contrary, passengers themselves must pay. And there is all the
 difference in the world between paying and being paid. The act of paying is
 perhaps the most uncomfortable infliction that the two orchard thieves entailed
-upon us. But *being paid,* — what will compare with it? The urbane activity with
+upon us. But _being paid,_ — what will compare with it? The urbane activity with
 which a man receives money is really marvellous, considering that we so
 earnestly believe money to be the root of all earthly ills, and that on no
 account can a monied man enter heaven. Ah! how cheerfully we consign ourselves
@@ -141,21 +141,21 @@ maxim), so for the most part the Commodore on the quarter-deck gets his
 atmosphere at second hand from the sailors on the forecastle. He thinks he
 breathes it first; but not so. In much the same way do the commonalty lead their
 leaders in many other things, at the same time that the leaders little suspect
-it.  But wherefore it was that after having repeatedly smelt the sea as a
+it. But wherefore it was that after having repeatedly smelt the sea as a
 merchant sailor, I should now take it into my head to go on a whaling voyage;
 this the invisible police officer of the Fates, who has the constant
 surveillance of me, and secretly dogs me, and influences me in some
 unaccountable way — he can better answer than any one else. And, doubtless, my
 going on this whaling voyage, formed part of the grand programme of Providence
 that was drawn up a long time ago. It came in as a sort of brief interlude and
-solo between more extensive performances.  I take it that this part of the bill
+solo between more extensive performances. I take it that this part of the bill
 must have run something like this:
 
-__“Grand Contested Election for the Presidency of the United States.”__
+**“Grand Contested Election for the Presidency of the United States.”**
 
-__“Whaling Voyage by One Ishmael.”__
+**“Whaling Voyage by One Ishmael.”**
 
-__“Bloody Battle in Affghanistan.”__
+**“Bloody Battle in Affghanistan.”**
 
 Though I cannot tell why it was exactly that those stage managers, the Fates,
 put me down for this shabby part of a whaling voyage, when others were set down
@@ -184,5 +184,3 @@ flood-gates of the wonder-world swung open, and in the wild conceits that swayed
 me to my purpose, two and two there floated into my inmost soul, endless
 processions of the whale, and, mid most of them all, one grand hooded phantom,
 like a snow hill in the air.
-
-

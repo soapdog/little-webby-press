@@ -1,7 +1,6 @@
-### Chapter 5. 
-Breakfast.
-==========
+### Chapter 5.
 
+# Breakfast.
 
 I quickly followed suit, and descending into the bar-room accosted the grinning
 landlord very pleasantly. I cherished no malice towards him, though he had been
@@ -26,7 +25,7 @@ fellow’s healthy cheek is like a sun-toasted pear in hue, and would seem to
 smell almost as musky; he cannot have been three days landed from his Indian
 voyage. That man next him looks a few shades lighter; you might say a touch of
 satin wood is in him. In the complexion of a third still lingers a tropic tawn,
-but slightly bleached withal; *he* doubtless has tarried whole weeks ashore. But
+but slightly bleached withal; _he_ doubtless has tarried whole weeks ashore. But
 who could show a cheek like Queequeg? which, barred with various tints, seemed
 like the Andes’ western slope, to show forth in one array, contrasting climates,
 zone by zone.
@@ -53,14 +52,14 @@ whales on the high seas — entire strangers to them — and duelled them dead
 without winking; and yet, here they sat at a social breakfast table — all of the
 same calling, all of kindred tastes — looking round as sheepishly at each other
 as though they had never been out of sight of some sheepfold among the Green
-Mountains.  A curious sight; these bashful bears, these timid warrior whalemen!
+Mountains. A curious sight; these bashful bears, these timid warrior whalemen!
 
 But as for Queequeg — why, Queequeg sat there among them — at the head of the
 table, too, it so chanced; as cool as an icicle. To be sure I cannot say much
 for his breeding. His greatest admirer could not have cordially justified his
 bringing his harpoon into breakfast with him, and using it there without
 ceremony; reaching over the table with it, to the imminent jeopardy of many
-heads, and grappling the beefsteaks towards him. But *that* was certainly very
+heads, and grappling the beefsteaks towards him. But _that_ was certainly very
 coolly done by him, and every one knows that in most people’s estimation, to do
 anything coolly is to do it genteelly.
 
@@ -69,6 +68,3 @@ and hot rolls, and applied his undivided attention to beefsteaks, done rare.
 Enough, that when breakfast was over he withdrew like the rest into the public
 room, lighted his tomahawk-pipe, and was sitting there quietly digesting and
 smoking with his inseparable hat on, when I sallied out for a stroll.
-
-
-

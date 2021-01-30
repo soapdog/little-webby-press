@@ -1,7 +1,6 @@
-### Chapter 25. 
-Postscript.
-===========
+### Chapter 25.
 
+# Postscript.
 
 In behalf of the dignity of whaling, I would fain advance naught but
 substantiated facts. But after embattling his facts, an advocate who should
@@ -11,7 +10,7 @@ his cause — such an advocate, would he not be blameworthy?
 It is well known that at the coronation of kings and queens, even modern ones,
 a certain curious process of seasoning them for their functions is gone
 through. There is a saltcellar of state, so called, and there may be a castor
-of state. How they use the salt, precisely — who knows?  Certain I am, however,
+of state. How they use the salt, precisely — who knows? Certain I am, however,
 that a king’s head is solemnly oiled at his coronation, even as a head of
 salad. Can it be, though, that they anoint it with a view of making its
 interior run well, as they anoint machinery? Much might be ruminated here,
@@ -29,4 +28,3 @@ sweetest of all oils?
 
 Think of that, ye loyal Britons! we whalemen supply your kings and queens with
 coronation stuff!
-

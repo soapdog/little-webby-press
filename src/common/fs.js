@@ -3,10 +3,10 @@ import BrowserFS from "browserfs"
 
 export function initializeFilesystem() {
     return new Promise((resolve, reject) => {
-        fetch('templates.zip').then(function (response) {
+        fetch("templates.zip").then(function (response) {
             return response.arrayBuffer();
         }).then(function (zipData) {
-            var Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+            var Buffer = BrowserFS.BFSRequire("buffer").Buffer;
 
             BrowserFS.configure({
                 fs: "MountableFileSystem",
@@ -55,7 +55,6 @@ export function copyFolder(source, destination) {
         if (f.indexOf(".hbs") === -1) {
             let sourcePath = `${source}/${f}`
             let destinationPath = `${destination}/${f}`
-            console.log("dest", destinationPath)
             ensureFolders(destinationPath)
             let s = fs.statSync(sourcePath)
             if (s.isDirectory()) {
@@ -89,4 +88,44 @@ export function ensureFolders(path) {
         }
         a1 = `${a1}/${a.shift()}`
     }
+}
+
+export function copyImages(book, destination) {
+	let fs = require("fs")
+
+	let files = book.files.filter(f => {
+		if (f.filepath.match(/^images/)) {
+			return true
+		}
+
+		return false
+	});
+
+	let fps = files.map(async f => {
+		let file = f.filepath
+		let data = await f.arrayBuffer()
+		let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
+		let d2 = Buffer.from(data)
+		let p = `${destination}/${file}`
+		ensureFolders(p)
+		fs.writeFileSync(p, d2)
+	})
+	return fps
+}
+
+export function addToZip(zip, slug, folder) {
+	let fs = require("fs")
+
+	let items = fs.readdirSync(folder)
+	while (items.length > 0) {
+		let a1 = `${folder}/${items.shift()}`
+		let stat = fs.statSync(a1)
+		if (stat.isDirectory()) {
+			addToZip(zip, slug, a1)
+		} else {
+			let content = fs.readFileSync(a1)
+			let destinationPath = a1.replace(`/tmp/${slug}/`, "")
+			zip.file(destinationPath, content)
+		}
+	}
 }

@@ -1,10 +1,9 @@
-### Chapter 47. 
-The Mat-Maker.
-==============
+### Chapter 47.
 
+# The Mat-Maker.
 
 It was a cloudy, sultry afternoon; the seamen were lazily lounging about the
-decks, or vacantly gazing over into the lead-coloured waters.  Queequeg and I
+decks, or vacantly gazing over into the lead-coloured waters. Queequeg and I
 were mildly employed weaving what is called a sword-mat, for an additional
 lashing to our boat. So still and subdued and yet somehow preluding was all the
 scene, and such an incantation of reverie lurked in the air, that each silent
@@ -29,14 +28,13 @@ the case might be; and by this difference in the concluding blow producing a
 corresponding contrast in the final aspect of the completed fabric; this
 savage’s sword, thought I, which thus finally shapes and fashions both warp and
 woof; this easy, indifferent sword must be chance — aye, chance, free will, and
-necessity — nowise incompatible — all interweavingly working together.  The
+necessity — nowise incompatible — all interweavingly working together. The
 straight warp of necessity, not to be swerved from its ultimate course — its
 every alternating vibration, indeed, only tending to that; free will still free
 to ply her shuttle between given threads; and chance, though restrained in its
 play within the right lines of necessity, and sideways in its motions directed
 by free will, though thus prescribed to by both, chance by turns rules either,
 and has the last featuring blow at events.
-
 
 Thus we were weaving and weaving away when I started at a sound so strange,
 long drawn, and musically wild and unearthly, that the ball of free will
@@ -86,10 +84,9 @@ The sailors at the fore and mizzen had come down; the line tubs were fixed in
 their places; the cranes were thrust out; the mainyard was backed, and the
 three boats swung over the sea like three samphire baskets over high cliffs.
 Outside of the bulwarks their eager crews with one hand clung to the rail,
-while one foot was expectantly poised on the gunwale.  So look the long line of
+while one foot was expectantly poised on the gunwale. So look the long line of
 man-of-war’s men about to throw themselves on board an enemy’s ship.
 
 But at this critical instant a sudden exclamation was heard that took every eye
 from the whale. With a start all glared at dark Ahab, who was surrounded by
 five dusky phantoms that seemed fresh formed out of air.
-

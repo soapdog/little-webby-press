@@ -1,7 +1,6 @@
-### Chapter 60. 
-The Line.
-=========
+### Chapter 60.
 
+# The Line.
 
 With reference to the whaling scene shortly to be described, as well as for the
 better understanding of all similar scenes elsewhere presented, I have here to
@@ -52,13 +51,13 @@ prodigious great wedding-cake to present to the whales.
 
 Both ends of the line are exposed; the lower end terminating in an eye-splice
 or loop coming up from the bottom against the side of the tub, and hanging over
-its edge completely disengaged from everything.  This arrangement of the lower
-end is necessary on two accounts. *First:* In order to facilitate the fastening
+its edge completely disengaged from everything. This arrangement of the lower
+end is necessary on two accounts. _First:_ In order to facilitate the fastening
 to it of an additional line from a neighboring boat, in case the stricken whale
 should sound so deep as to threaten to carry off the entire line originally
 attached to the harpoon. In these instances, the whale of course is shifted
 like a mug of ale, as it were, from the one boat to the other; though the first
-boat always hovers at hand to assist its consort. *Second:* This arrangement is
+boat always hovers at hand to assist its consort. _Second:_ This arrangement is
 indispensable for common safety’s sake; for were the lower end of the line in
 any way attached to the boat, and were the whale then to run the line out to
 the end almost in a single, smoking minute as he sometimes does, he would not
@@ -109,7 +108,7 @@ warning; and only by a certain self-adjusting buoyancy and simultaneousness of
 volition and action, can you escape being made a Mazeppa of, and run away with
 where the all-seeing sun himself could never pierce you out.
 
-*Again:* as the profound calm which only apparently precedes and prophesies of
+_Again:_ as the profound calm which only apparently precedes and prophesies of
 the storm, is perhaps more awful than the storm itself; for, indeed, the calm
 is but the wrapper and envelope of the storm; and contains it in itself, as the
 seemingly harmless rifle holds the fatal powder, and the ball, and the
@@ -122,6 +121,3 @@ death, that mortals realize the silent, subtle, ever-present perils of life.
 And if you be a philosopher, though seated in the whale-boat, you would not at
 heart feel one whit more of terror, than though seated before your evening fire
 with a poker, and not a harpoon, by your side.
-
-
-

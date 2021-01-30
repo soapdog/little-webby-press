@@ -13,13 +13,18 @@ enabled = false
 enabled = false
 endpoint = "$pay.stronghold.co/1a1669155784590234897abc53465de44"
 
+[toc]
+prefix = "h3"
+label = "h1"
+match = "first"
+
 [ebook]
 enabled = true
 theme = "technical"
-
-[profiles]
-book = [
+frontmatter = [
 	"000-front-matter.md",
+]
+chapters = [
 	"001-loomings.md",
 	"002-carpet-bag.md",
 	"003-spouter-inn.md",

@@ -1,9 +1,8 @@
-### Chapter 26. 
-Knights & Squires.
-==================
+### Chapter 26.
 
+# Knights & Squires.
 
-The chief mate of the *Pequod* was Starbuck, a native of Nantucket, and a
+The chief mate of the _Pequod_ was Starbuck, a native of Nantucket, and a
 Quaker by descent. He was a long, earnest man, and though born on an icy coast,
 seemed well adapted to endure hot latitudes, his flesh being hard as
 twice-baked biscuit. Transported to the Indies, his live blood would not spoil
@@ -48,7 +47,7 @@ Starbuck was no crusader after perils; in him courage was not a sentiment; but
 a thing simply useful to him, and always at hand upon all mortally practical
 occasions. Besides, he thought, perhaps, that in this business of whaling,
 courage was one of the great staple outfits of the ship, like her beef and her
-bread, and not to be foolishly wasted.  Wherefore he had no fancy for lowering
+bread, and not to be foolishly wasted. Wherefore he had no fancy for lowering
 for whales after sun-down; nor for persisting in fighting a fish that too much
 persisted in fighting him. For, thought Starbuck, I am here in this critical
 ocean to kill whales for my living, and not to be killed by them for theirs;
@@ -101,6 +100,3 @@ Thou who didst pick up Andrew Jackson from the pebbles; who didst hurl him upon
 a war-horse; who didst thunder him higher than a throne! Thou who, in all Thy
 mighty, earthly marchings, ever cullest Thy selectest champions from the kingly
 commons; bear me out in it, O God!
-
-
-

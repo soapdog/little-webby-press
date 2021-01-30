@@ -1,10 +1,9 @@
-### Chapter 67. 
-Cutting In.
-===========
+### Chapter 67.
 
+# Cutting In.
 
 It was a Saturday night, and such a Sabbath as followed! Ex officio professors
-of Sabbath breaking are all whalemen. The ivory *Pequod* was turned into what
+of Sabbath breaking are all whalemen. The ivory _Pequod_ was turned into what
 seemed a shamble; every sailor a butcher. You would have thought we were
 offering up ten thousand red oxen to the sea gods.
 
@@ -50,16 +49,13 @@ accomplished swordsman, warning all hands to stand off, once more makes a
 scientific dash at the mass, and with a few sidelong, desperate, lunging
 slicings, severs it completely in twain; so that while the short lower part is
 still fast, the long upper strip, called a blanket-piece, swings clear, and is
-all ready for lowering.  The heavers forward now resume their song, and while
+all ready for lowering. The heavers forward now resume their song, and while
 the one tackle is peeling and hoisting a second strip from the whale, the other
 is slowly slackened away, and down goes the first strip through the main
 hatchway right beneath, into an unfurnished parlor called the blubber-room.
 Into this twilight apartment sundry nimble hands keep coiling away the long
-blanket-piece as if it were a great live mass of plaited serpents.  And thus
+blanket-piece as if it were a great live mass of plaited serpents. And thus
 the work proceeds; the two tackles hoisting and lowering simultaneously; both
 whale and windlass heaving, the heavers singing, the blubber-room gentlemen
 coiling, the mates scarfing, the ship straining, and all hands swearing
 occasionally, by way of assuaging the general friction.
-
-
-

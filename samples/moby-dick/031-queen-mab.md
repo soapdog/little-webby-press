@@ -1,7 +1,6 @@
-### Chapter 31. 
-Queen Mab.
-==========
+### Chapter 31.
 
+# Queen Mab.
 
 Next morning Stubb accosted Flask.
 
@@ -22,14 +21,14 @@ say, I was thinking to myself, ‘what’s his leg now, but a cane — a whaleb
 cane. Yes,’ thinks I, ‘it was only a playful cudgelling — in fact, only a
 whaleboning that he gave me — not a base kick. Besides,’ thinks I, ‘look at it
 once; why, the end of it — the foot part — what a small sort of end it is;
-whereas, if a broad footed farmer kicked me, *there’s* a devilish broad insult.
+whereas, if a broad footed farmer kicked me, _there’s_ a devilish broad insult.
 But this insult is whittled down to a point only.’ But now comes the greatest
 joke of the dream, Flask. While I was battering away at the pyramid, a sort of
 badger-haired old merman, with a hump on his back, takes me by the shoulders,
 and slews me round. ‘What are you ‘bout?’ says he. Slid! man, but I was
 frightened. Such a phiz! But, somehow, next moment I was over the fright. ‘What
 am I about?’ says I at last. ‘And what business is that of yours, I should like
-to know, Mr. Humpback? Do *you* want a kick?’ By the lord, Flask, I had no
+to know, Mr. Humpback? Do _you_ want a kick?’ By the lord, Flask, I had no
 sooner said that, than he turned round his stern to me, bent over, and dragging
 up a lot of seaweed he had for a clout — what do you think, I saw? — why
 thunder alive, man, his stern was stuck full of marlinspikes, with the points
@@ -40,15 +39,15 @@ saying over his ‘wise Stubb, wise Stubb,’ I thought I might as well fall to
 kicking the pyramid again. But I had only just lifted my foot for it, when he
 roared out, ‘Stop that kicking!’ ‘Halloa,’ says I, ‘what’s the matter now, old
 fellow?’ ‘Look ye here,’ says he; ‘let’s argue the insult. Captain Ahab kicked
-ye, didn’t he?’ ‘Yes, he did,’ says I — ’right *here* it was.’ ‘Very good,’
+ye, didn’t he?’ ‘Yes, he did,’ says I — ’right _here_ it was.’ ‘Very good,’
 says he — ’he used his ivory leg, didn’t he?’ ‘Yes, he did,’ says I. ‘Well
 then,’ says he, ‘wise Stubb, what have you to complain of? Didn’t he kick with
 right good will? it wasn’t a common pitch pine leg he kicked with, was it? No,
 you were kicked by a great man, and with a beautiful ivory leg, Stubb. It’s an
 honour; I consider it an honour. Listen, wise Stubb. In old England the
 greatest lords think it great glory to be slapped by a queen, and made
-garter-knights of; but, be *your* boast, Stubb, that ye were kicked by old
-Ahab, and made a wise man of. Remember what I say; *be* kicked by him; account
+garter-knights of; but, be _your_ boast, Stubb, that ye were kicked by old
+Ahab, and made a wise man of. Remember what I say; _be_ kicked by him; account
 his kicks honours; and on no account kick back; for you can’t help yourself,
 wise Stubb. Don’t you see that pyramid?’ With that, he all of a sudden seemed
 somehow, in some queer fashion, to swim off into the air. I snored; rolled
@@ -67,9 +66,6 @@ What’s that he shouts? Hark!”
 “If ye see a white one, split your lungs for him!
 
 “What do you think of that now, Flask? ain’t there a small drop of something
-queer about that, eh? A white whale — did ye mark that, man?  Look ye — there’s
-something special in the wind. Stand by for it, Flask.  Ahab has that that’s
+queer about that, eh? A white whale — did ye mark that, man? Look ye — there’s
+something special in the wind. Stand by for it, Flask. Ahab has that that’s
 bloody on his mind. But, mum; he comes this way.”
-
-
-

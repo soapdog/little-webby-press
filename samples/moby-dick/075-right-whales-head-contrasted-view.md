@@ -1,7 +1,6 @@
-### Chapter 75. 
-The Right Whale’s Head — Contrasted View.
-========================================
+### Chapter 75.
 
+# The Right Whale’s Head — Contrasted View.
 
 Crossing the deck, let us now have a good long look at the Right Whale’s head.
 
@@ -28,11 +27,11 @@ occur to you; unless, indeed, your fancy has been fixed by the technical term
 thinking how this mighty monster is actually a diademed king of the sea, whose
 green crown has been put together for him in this marvellous manner. But if
 this whale be a king, he is a very sulky looking fellow to grace a diadem. Look
-at that hanging lower lip!  what a huge sulk and pout is there! a sulk and
+at that hanging lower lip! what a huge sulk and pout is there! a sulk and
 pout, by carpenter’s measurement, about twenty feet long and five feet deep; a
 sulk and pout that will yield you some 500 gallons of oil and more.
 
-A great pity, now, that this unfortunate whale should be hare-lipped.  The
+A great pity, now, that this unfortunate whale should be hare-lipped. The
 fissure is about a foot across. Probably the mother during an important
 interval was sailing down the Peruvian coast, when earthquakes caused the beach
 to gape. Over this lip, as over a slippery threshold, we now slide into the
@@ -58,16 +57,15 @@ In old times, there seem to have prevailed the most curious fancies concerning
 these blinds. One voyager in Purchas calls them the wondrous “whiskers” inside
 of the whale’s mouth;\* another, “hogs’ bristles;” a third old gentleman in
 Hackluyt uses the following elegant language: “There are about two hundred and
-fifty fins growing on each side of his upper __chop,__ which arch over his
+fifty fins growing on each side of his upper **chop,** which arch over his
 tongue on each side of his mouth.”
-
 
 > \*This reminds us that the Right Whale really has a sort of whisker, or
 > rather a moustache, consisting of a few scattered white hairs on the upper
 > part of the outer end of the lower jaw. Sometimes these tufts impart a rather
 > brigandish expression to his otherwise solemn countenance.
 
-----
+---
 
 As every one knows, these same “hogs’ bristles,” “fins,” “whiskers,” “blinds,”
 or whatever you please, furnish to the ladies their busks and other stiffening
@@ -109,6 +107,3 @@ firmly to embrace the jaw. Does not this whole head seem to speak of an
 enormous practical resolution in facing death? This Right Whale I take to have
 been a Stoic; the Sperm Whale, a Platonian, who might have taken up Spinoza in
 his latter years.
-
-
-

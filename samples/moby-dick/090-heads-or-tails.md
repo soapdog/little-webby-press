@@ -1,10 +1,9 @@
-### Chapter 90. 
-Heads or Tails.
-===============
+### Chapter 90.
 
+# Heads or Tails.
 
-> “De balena vero sufficit, si rex habeat caput, et regina caudam.”    
-> *— Bracton, L. 3, C. 3.*
+> “De balena vero sufficit, si rex habeat caput, et regina caudam.”
+> _— Bracton, L. 3, C. 3._
 
 Latin from the books of the Laws of England, which taken along with the
 context, means, that of all whales captured by anybody on the coast of

@@ -1,9 +1,8 @@
-### Chapter 43. 
-Hark!
-=====
+### Chapter 43.
 
+# Hark!
 
-“*Hist!* Did you hear that noise, Cabaco?”
+“_Hist!_ Did you hear that noise, Cabaco?”
 
 It was the middle-watch; a fair moonlight; the seamen were standing in a
 cordon, extending from one of the fresh-water butts in the waist, to the
@@ -43,6 +42,3 @@ knows something of it too. I heard Stubb tell Flask, one morning watch, that
 there was something of that sort in the wind.”
 
 “Tish! the bucket!”
-
-
-

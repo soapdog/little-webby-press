@@ -1,7 +1,6 @@
-### Chapter 49. 
-The Hyena.
-==========
+### Chapter 49.
 
+# The Hyena.
 
 There are certain queer times and occasions in this strange mixed affair we
 call life when a man takes this whole universe for a vast practical joke,
@@ -41,7 +40,7 @@ whaleman’s discretion?”
 is an unalterable law in this fishery, Mr. Flask, for an oarsman to break his
 own back pulling himself back-foremost into death’s jaws?”
 
-“Can’t you twist that smaller?” said Flask. “Yes, that’s the law.  I should
+“Can’t you twist that smaller?” said Flask. “Yes, that’s the law. I should
 like to see a boat’s crew backing water up to a whale face foremost. Ha, ha!
 the whale would give them squint for squint, mind that!”
 
@@ -75,6 +74,3 @@ conscience sitting inside the bars of a snug family vault.
 Now then, thought I, unconsciously rolling up the sleeves of my frock, here
 goes for a cool, collected dive at death and destruction, and the devil fetch
 the hindmost.
-
-
-

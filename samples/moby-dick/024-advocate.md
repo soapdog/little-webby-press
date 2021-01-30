@@ -1,7 +1,6 @@
-### Chapter 24. 
-The Advocate.
-=============
+### Chapter 24.
 
+# The Advocate.
 
 As Queequeg and I are now fairly embarked in this business of whaling; and as
 this business of whaling has somehow come to be regarded among landsmen as a
@@ -14,7 +13,7 @@ with what are called the liberal professions. If a stranger were introduced
 into any miscellaneous metropolitan society, it would but slightly advance the
 general opinion of his merits, were he presented to the company as a
 harpooneer, say; and if in emulation of the naval officers he should append the
-initials S.W.F. *(Sperm Whale Fishery)* to his visiting card, such a procedure
+initials S.W.F. _(Sperm Whale Fishery)_ to his visiting card, such a procedure
 would be deemed pre-eminently presuming and ridiculous.
 
 Doubtless one leading reason why the world declines honouring us whalemen, is
@@ -86,7 +85,7 @@ common log. Ah, the world! Oh, the world!
 
 Until the whale fishery rounded Cape Horn, no commerce but colonial, scarcely
 any intercourse but colonial, was carried on between Europe and the long line
-of the opulent Spanish provinces on the Pacific coast.  It was the whaleman who
+of the opulent Spanish provinces on the Pacific coast. It was the whaleman who
 first broke through the jealous policy of the Spanish crown, touching those
 colonies; and, if space permitted, it might be distinctly shown how from those
 whalemen at last eventuated the liberation of Peru, Chili, and Bolivia from the
@@ -113,7 +112,7 @@ fifty lances with you there, and unhorse you with a split helmet every time.
 
 The whale has no famous author, and whaling no famous chronicler, you will say.
 
-__The whale no famous author, and whaling no famous chronicler?__ Who wrote the
+**The whale no famous author, and whaling no famous chronicler?** Who wrote the
 first account of our Leviathan? Who but mighty Job! And who composed the first
 narrative of a whaling-voyage? Who, but no less a prince than Alfred the Great,
 who, with his own royal pen, took down the words from Other, the Norwegian
@@ -123,7 +122,7 @@ Parliament? Who, but Edmund Burke!
 True enough, but then whalemen themselves are poor devils; they have no good
 blood in their veins.
 
-__No good blood in their veins?__ They have something better than royal blood
+**No good blood in their veins?** They have something better than royal blood
 there. The grandmother of Benjamin Franklin was Mary Morrel; afterwards, by
 marriage, Mary Folger, one of the old settlers of Nantucket, and the ancestress
 to a long line of Folgers and harpooneers — all kith and kin to noble Benjamin
@@ -131,13 +130,13 @@ to a long line of Folgers and harpooneers — all kith and kin to noble Benjamin
 
 Good again; but then all confess that somehow whaling is not respectable.
 
-__Whaling not respectable?__ Whaling is imperial! By old English statutory law,
+**Whaling not respectable?** Whaling is imperial! By old English statutory law,
 the whale is declared “a royal fish.”\*
 
 Oh, that’s only nominal! The whale himself has never figured in any grand
 imposing way.
 
-__The whale never figured in any grand imposing way?__ In one of the mighty
+**The whale never figured in any grand imposing way?** In one of the mighty
 triumphs given to a Roman general upon his entering the world’s capital, the
 bones of a whale, brought all the way from the Syrian coast, were the most
 conspicuous object in the cymballed procession.\*
@@ -147,7 +146,7 @@ _\* See subsequent chapters for something more on this head._
 Grant it, since you cite it; but, say what you will, there is no real dignity
 in whaling.
 
-__No dignity in whaling?__ The dignity of our calling the very heavens attest.
+**No dignity in whaling?** The dignity of our calling the very heavens attest.
 Cetus is a constellation in the South! No more! Drive down your hat in presence
 of the Czar, and take it off to Queequeg! No more! I know a man that, in his
 lifetime, has taken three hundred and fifty whales. I account that man more
@@ -162,6 +161,3 @@ have left undone; if, at my death, my executors, or more properly my creditors,
 find any precious MSS. in my desk, then here I prospectively ascribe all the
 honour and the glory to whaling; for a whale-ship was my Yale College and my
 Harvard.
-
-
-

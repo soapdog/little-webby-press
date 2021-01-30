@@ -1,7 +1,6 @@
-### Chapter 72. 
-The Monkey-Rope.
-================
+### Chapter 72.
 
+# The Monkey-Rope.
 
 In the tumultuous business of cutting-in and attending to a whale, there is
 much running backwards and forwards among the crew. Now hands are wanted here,
@@ -38,7 +37,7 @@ Queequeg’s broad canvas belt, and fast to my narrow leather one. So that for
 better or for worse, we two, for the time, were wedded; and should poor
 Queequeg sink to rise no more, then both usage and honour demanded, that
 instead of cutting the cord, it should drag me down in his wake. So, then, an
-elongated Siamese ligature united us.  Queequeg was my own inseparable twin
+elongated Siamese ligature united us. Queequeg was my own inseparable twin
 brother; nor could I any way get rid of the dangerous liabilities which the
 hempen bond entailed.
 
@@ -60,14 +59,13 @@ of life. But handle Queequeg’s monkey-rope heedfully as I would, sometimes he
 jerked it so, that I came very near sliding overboard. Nor could I possibly
 forget that, do what I would, I only had the management of one end of it.\*
 
-
-> \*The monkey-rope is found in all whalers; but it was only in the *Pequod*
+> \*The monkey-rope is found in all whalers; but it was only in the _Pequod_
 > that the monkey and his holder were ever tied together. This improvement upon
 > the original usage was introduced by no less a man than Stubb, in order to
 > afford the imperilled harpooneer the strongest possible guarantee for the
 > faithfulness and vigilance of his monkey-rope holder.
 
-----
+---
 
 I have hinted that I would often jerk poor Queequeg from between the whale and
 the ship — where he would occasionally fall, from the incessant rolling and
@@ -82,7 +80,7 @@ by such prey as a dead whale, the otherwise miscellaneously carnivorous shark
 will seldom touch a man.
 
 Nevertheless, it may well be believed that since they have such a ravenous
-finger in the pie, it is deemed but wise to look sharp to them.  Accordingly,
+finger in the pie, it is deemed but wise to look sharp to them. Accordingly,
 besides the monkey-rope, with which I now and then jerked the poor fellow from
 too close a vicinity to the maw of what seemed a peculiarly ferocious shark —
 he was provided with still another protection. Suspended over the side in one
@@ -110,13 +108,13 @@ and stands all dripping and involuntarily trembling over the side; the steward
 advances, and with a benevolent, consolatory glance hands him — what? Some hot
 Cognac? No! hands him, ye gods! hands him a cup of tepid ginger and water!
 
-“Ginger? Do I smell ginger?” suspiciously asked Stubb, coming near.  “Yes, this
+“Ginger? Do I smell ginger?” suspiciously asked Stubb, coming near. “Yes, this
 must be ginger,” peering into the as yet untasted cup. Then standing as if
 incredulous for a while, he calmly walked towards the astonished steward slowly
 saying, “Ginger? ginger? and will you have the goodness to tell me, Mr.
-Dough-Boy, where lies the virtue of ginger?  Ginger! is ginger the sort of fuel
+Dough-Boy, where lies the virtue of ginger? Ginger! is ginger the sort of fuel
 you use, Dough-boy, to kindle a fire in this shivering cannibal? Ginger! — what
-the devil is ginger?  Sea-coal? firewood? — lucifer matches? — tinder? —
+the devil is ginger? Sea-coal? firewood? — lucifer matches? — tinder? —
 gunpowder? — what the devil is ginger, I say, that you offer this cup to our
 poor Queequeg here.”
 
@@ -140,7 +138,7 @@ on board; and bade me never give the harpooneers any spirits, but only this
 ginger-jub — so she called it.”
 
 “Ginger-jub! you gingerly rascal! take that! and run along with ye to the
-lockers, and get something better. I hope I do no wrong, Mr.  Starbuck. It is
+lockers, and get something better. I hope I do no wrong, Mr. Starbuck. It is
 the captain’s orders — grog for the harpooneer on a whale.”
 
 “Enough,” replied Starbuck, “only don’t hit him again, but — ”
@@ -154,6 +152,3 @@ When Stubb reappeared, he came with a dark flask in one hand, and a sort of
 tea-caddy in the other. The first contained strong spirits, and was handed to
 Queequeg; the second was Aunt Charity’s gift, and that was freely given to the
 waves.
-
-
-

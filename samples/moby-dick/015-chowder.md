@@ -1,9 +1,8 @@
-### Chapter 15. 
-Chowder.
-========
+### Chapter 15.
 
+# Chowder.
 
-It was quite late in the evening when the little *Moss* came snugly to anchor,
+It was quite late in the evening when the little _Moss_ came snugly to anchor,
 and Queequeg and I went ashore; so we could attend to no business that day, at
 least none but a supper and a bed. The landlord of the Spouter-Inn had
 recommended us to his cousin Hosea Hussey of the Try Pots, whom he asserted to
@@ -25,10 +24,10 @@ there was no mistaking.
 Two enormous wooden pots painted black, and suspended by asses’ ears, swung
 from the cross-trees of an old top-mast, planted in front of an old doorway.
 The horns of the cross-trees were sawed off on the other side, so that this old
-top-mast looked not a little like a gallows.  Perhaps I was over sensitive to
+top-mast looked not a little like a gallows. Perhaps I was over sensitive to
 such impressions at the time, but I could not help staring at this gallows with
 a vague misgiving. A sort of crick was in my neck as I gazed up to the two
-remaining horns; yes, *two* of them, one for Queequeg, and one for me. It’s
+remaining horns; yes, _two_ of them, one for Queequeg, and one for me. It’s
 ominous, thinks I. A Coffin my Innkeeper upon landing in my first whaling port;
 tombstones staring at me in the whalemen’s chapel; and here a gallows! and a
 pair of prodigious black pots too! Are these last throwing out oblique hints
@@ -54,7 +53,7 @@ or Cod?”
 
 “Clam or Cod?” she repeated.
 
-“A clam for supper? a cold clam; is *that* what you mean, Mrs. Hussey?” says I,
+“A clam for supper? a cold clam; is _that_ what you mean, Mrs. Hussey?” says I,
 “but that’s a rather cold and clammy reception in the winter time, ain’t it,
 Mrs. Hussey?”
 
@@ -68,7 +67,7 @@ one clam?”
 
 However, a warm savory steam from the kitchen served to belie the apparently
 cheerless prospect before us. But when that smoking chowder came in, the
-mystery was delightfully explained. Oh, sweet friends!  hearken to me. It was
+mystery was delightfully explained. Oh, sweet friends! hearken to me. It was
 made of small juicy clams, scarcely bigger than hazel nuts, mixed with pounded
 ship biscuit, and salted pork cut up into little flakes; the whole enriched
 with butter, and plentifully seasoned with pepper and salt. Our appetites being
@@ -82,7 +81,7 @@ came forth again, but with a different flavor, and in good time a fine
 cod-chowder was placed before us.
 
 We resumed business; and while plying our spoons in the bowl, thinks I to
-myself, I wonder now if this here has any effect on the head?  What’s that
+myself, I wonder now if this here has any effect on the head? What’s that
 stultifying saying about chowder-headed people? “But look, Queequeg, ain’t that
 a live eel in your bowl? Where's your harpoon?”
 
@@ -112,6 +111,3 @@ keep it for you till morning. But the chowder; clam or cod to-morrow for
 breakfast, men?”
 
 “Both,” says I; “and let’s have a couple of smoked herring by way of variety.”
-
-
-

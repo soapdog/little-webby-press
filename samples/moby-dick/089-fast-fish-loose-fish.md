@@ -1,7 +1,6 @@
-### Chapter 89. 
-Fast-Fish and Loose-Fish.
-=========================
+### Chapter 89.
 
+# Fast-Fish and Loose-Fish.
 
 The allusion to the waif and waif-poles in the last chapter but one,
 necessitates some account of the laws and regulations of the whale fishery, of
@@ -28,13 +27,13 @@ with other People’s Business. Yes; these laws might be engraven on a Queen
 Anne’s farthing, or the barb of a harpoon, and worn round the neck, so small
 are they.
 
-----
+---
 
 > I. A Fast-Fish belongs to the party fast to it.
 
 > II. A Loose-Fish is fair game for anybody who can soonest catch it.
 
-----
+---
 
 But what plays the mischief with this masterly code is the admirable brevity of
 it, which necessitates a vast volume of commentaries to expound it.
@@ -42,7 +41,7 @@ it, which necessitates a vast volume of commentaries to expound it.
 First: What is a Fast-Fish? Alive or dead a fish is technically fast, when it
 is connected with an occupied ship or boat, by any medium at all controllable
 by the occupant or occupants, — a mast, an oar, a nine-inch cable, a telegraph
-wire, or a strand of cobweb, it is all the same.  Likewise a fish is
+wire, or a strand of cobweb, it is all the same. Likewise a fish is
 technically fast when it bears a waif, or any other recognised symbol of
 possession; so long as the party waifing it plainly evince their ability at any
 time to take it alongside, as well as their intention so to do.
@@ -71,7 +70,7 @@ harpoons, and boat.
 
 Mr. Erskine was counsel for the defendants; Lord Ellenborough was the judge. In
 the course of the defence, the witty Erskine went on to illustrate his
-position, by alluding to a recent crim. con.  case, wherein a gentleman, after
+position, by alluding to a recent crim. con. case, wherein a gentleman, after
 in vain trying to bridle his wife’s viciousness, had at last abandoned her upon
 the seas of life; but in the course of years, repenting of that step, he
 instituted an action to recover possession of her. Erskine was on the other
@@ -127,7 +126,7 @@ doctrine of Loose-Fish is still more widely so. That is internationally and
 universally applicable.
 
 What was America in 1492 but a Loose-Fish, in which Columbus struck the Spanish
-standard by way of waifing it for his royal master and mistress?  What was
+standard by way of waifing it for his royal master and mistress? What was
 Poland to the Czar? What Greece to the Turk? What India to England? What at
 last will Mexico be to the United States? All Loose-Fish.
 
@@ -136,6 +135,3 @@ all men’s minds and opinions but Loose-Fish? What is the principle of religiou
 belief in them but a Loose-Fish? What to the ostentatious smuggling verbalists
 are the thoughts of thinkers but Loose-Fish? What is the great globe itself but
 a Loose-Fish? And what are you, reader, but a Loose-Fish and a Fast-Fish, too?
-
-
-
