@@ -32,6 +32,11 @@ export function extractToc(html, file) {
 			}
 		} else {
 			const labelEl = doc.querySelector(`${conf.label}`)
+			console.log("l", [file, labelEl])
+			if (!labelEl) {
+				console.log("l is null", { html, file })
+				throw "error"
+			}
 			label = labelEl.innerText
 			id = labelEl.id
 		}
@@ -48,6 +53,7 @@ export function extractToc(html, file) {
 	// TODO: fix for multiple ToC entries inside a single chapter file.
 	if (conf.match === "all") {
 		let r = []
+		let hs = doc.querySelectorAll(`${conf.label}`)
 		hs.forEach((h) => {
 			r.push({
 				file: file,

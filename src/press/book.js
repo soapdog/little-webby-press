@@ -1,13 +1,39 @@
 import toml from "toml"
+import _ from "lodash"
 
-// TODO: implement them all
 let configurationFiles = [
-	"book.lua",
 	"book.toml",
-	"book.ini",
 	"book.json",
-	"book.txt",
 ]
+
+export const defaultBookConfiguration = {
+	metadata: {
+		title: "Untitled",
+		author: "Unnamed Author",
+		publisher: "",
+		date: new Date("2021-03-08T17:52:15"),
+		identifier: "",
+	},
+	site: {
+		enabled: false,
+	},
+	webmonetization: {
+		enabled: false,
+		endpoint: "",
+	},
+	toc: {
+		prefix: "",
+		label: "h1",
+		match: "all"
+	},
+	book: {
+		enabled: false,
+		theme: "generic",
+		frontmatter: [],
+		chapters: [],
+		backmatter: []
+	}
+}
 
 export default class Book {
 	constructor(config, files) {
@@ -38,11 +64,14 @@ export async function bookFromFiles(files) {
 			case "toml":
 				config = toml.parse(await conf.text())
 				break
+			case "json":
+				config = JSON.parse(await conf.text())
+				break
 			default:
 				return new Error("error-no-configuration")
 		}
 
-		let book = new Book(config, files)
+		let book = new Book(_.defaultsDeep(config, defaultBookConfiguration), files)
 		return book
 	} else {
 		return new Error("error-no-configuration")
