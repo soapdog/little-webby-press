@@ -43,8 +43,14 @@ let md = new MarkdownIt({
 
 // IMPLEMENTATION
 
+let currentTheme = "generic"
+
+function setTheme(theme) {
+	currentTheme = theme
+}
+
 function themeFolder() {
-	return "/templates/epub"
+	return `/templates/${currentTheme}/epub`
 }
 
 function themePathFor(file) {
@@ -59,6 +65,8 @@ export function generateEpub(book) {
 		let folder = `/tmp/${bookSlug}`
 		let toc = {}
 		let manifest = []
+
+		setTheme(book.config.book.theme)
 
 		if (!fs.existsSync(folder)) {
 			fs.mkdirSync(folder)

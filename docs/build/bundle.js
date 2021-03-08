@@ -74691,8 +74691,14 @@ var app = (function () {
 
     // IMPLEMENTATION
 
+    let currentTheme = "generic";
+
+    function setTheme(theme) {
+    	currentTheme = theme;
+    }
+
     function themeFolder() {
-    	return "/templates/epub"
+    	return `/templates/${currentTheme}/epub`
     }
 
     function themePathFor(file) {
@@ -74707,6 +74713,8 @@ var app = (function () {
     		let folder = `/tmp/${bookSlug}`;
     		let toc = {};
     		let manifest = [];
+
+    		setTheme(book.config.book.theme);
 
     		if (!fs.existsSync(folder)) {
     			fs.mkdirSync(folder);
@@ -74726,22 +74734,14 @@ var app = (function () {
     		let chapterTemplate = Handlebars.compile(chapterTemplateHBS);
 
     		// Add HTML Chapters
-    		if (typeof book.config.book.frontmatter === "undefined") {
-    			book.config.book.frontmatter = [];
-    		}
-
-    		if (typeof book.config.book.backmatter === "undefined") {
-    			book.config.book.backmatter = [];
-    		}
-
     		let contentFiles = [
     			...book.config.book.frontmatter,
     			...book.config.book.chapters,
     			...book.config.book.backmatter,
     		];
+
     		let fp = contentFiles.map(async (chapterFilename) => {
     			let file = book.files.filter((f) => f.name === chapterFilename)[0];
-
     			let contentMarkdown = await file.text();
     			let contentHtml = md.render(contentMarkdown);
     			contentHtml = fix(contentHtml);
@@ -74839,7 +74839,7 @@ var app = (function () {
     			// EPUB3 file
     			let zip = new JSZip();
     			let mimetype = fs.readFileSync(`${folder}/mimetype`);
-    			zip.file("mimetype", mimetype);
+    			zip.file("mimetype", mimetype); // mimetype needs to be the first file in the zip. That is part of the EPUB spec.
     			addToZip(zip, bookSlug, folder);
     			zip.generateAsync({ type: "blob" }).then(
     				function (epubBlob) {
@@ -79641,14 +79641,39 @@ var app = (function () {
       }
     };
 
-    // TODO: implement them all
     let configurationFiles = [
-    	"book.lua",
     	"book.toml",
-    	"book.ini",
     	"book.json",
-    	"book.txt",
     ];
+
+    const defaultBookConfiguration = {
+    	metadata: {
+    		title: "Untitled",
+    		author: "Unnamed Author",
+    		publisher: "",
+    		date: new Date("2021-03-08T17:52:15"),
+    		identifier: "",
+    	},
+    	site: {
+    		enabled: false,
+    	},
+    	webmonetization: {
+    		enabled: false,
+    		endpoint: "",
+    	},
+    	toc: {
+    		prefix: "",
+    		label: "h1",
+    		match: "all"
+    	},
+    	book: {
+    		enabled: false,
+    		theme: "generic",
+    		frontmatter: [],
+    		chapters: [],
+    		backmatter: []
+    	}
+    };
 
     class Book {
     	constructor(config, files) {
@@ -79679,11 +79704,14 @@ var app = (function () {
     			case "toml":
     				config = toml.parse(await conf.text());
     				break
+    			case "json":
+    				config = JSON.parse(await conf.text());
+    				break
     			default:
     				return new Error("error-no-configuration")
     		}
 
-    		let book = new Book(config, files);
+    		let book = new Book(lodash.defaultsDeep(config, defaultBookConfiguration), files);
     		return book
     	} else {
     		return new Error("error-no-configuration")
