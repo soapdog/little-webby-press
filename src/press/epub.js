@@ -27,6 +27,7 @@ import {
 	registerToCPrefix,
 } from "../common/utils.js"
 
+import Handlebars from "handlebars"
 import JSZip from "jszip"
 
 // DEFAULT OPTIONS

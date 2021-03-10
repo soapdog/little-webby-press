@@ -1,6 +1,7 @@
 import moment from "moment"
 import mime from "mime"
 import { extractToc } from "../common/utils.js"
+import Handlebars from "handlebars"
 
 let tocIndexValue = 0
 
