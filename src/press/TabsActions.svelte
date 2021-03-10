@@ -1,39 +1,35 @@
 <script>
-	import { generateEpub } from "./epub.js"
-	import { generateSite } from "./site.js"
-
+	import { createEventDispatcher } from "svelte"
 	import { _ } from "svelte-i18n"
 
-	export let book
-	let generating = false
-	let generatingSite = false
+	const dispatch = createEventDispatcher()
 
-	const generate = ev => {
-		generating = true
-		generateEpub(book).then(() => (generating = false))
+	export let generatingBook = false
+	export let generatingSite = false
+
+	const generateBook = (ev) => {
+		dispatch("generateBook")
 	}
 
-	const makeSite = ev => {
-		generatingSite = true
-		generateSite(book).then(() => (generatingSite = false))
+	const generateSite = (ev) => {
+		dispatch("generateSite")
 	}
 </script>
 
 <nav>
-	<div class="flex justify-end">
-
-		<button class="btn btn-blue" disabled={generating} on:click={generate}>
-			{#if generating}
+	<div class="flex justify-center">
+		<button class="btn btn-blue" disabled={generatingBook} on:click={generateBook}>
+			{#if generatingBook}
 				<i class="fas fa-spinner fa-lg fa-spin" />
-				{$_('generating-book')}
-			{:else}{$_('action-generate-ebook')}{/if}
+				{$_("generating-book")}
+			{:else}{$_("action-generate-ebook")}{/if}
 		</button>
 
-		<button class="btn btn-blue" disabled={generatingSite} on:click={makeSite}>
+		<button class="btn btn-blue" disabled={generatingSite} on:click={generateSite}>
 			{#if generatingSite}
 				<i class="fas fa-spinner fa-lg fa-spin" />
-				{$_('generating-site')}
-			{:else}{$_('action-generate-site')}{/if}
+				{$_("generating-site")}
+			{:else}{$_("action-generate-site")}{/if}
 		</button>
 	</div>
 </nav>
