@@ -11,6 +11,8 @@
 	let stage = "waiting" // loading, loaded, over
 	let msg, files, book
 	let error = false
+	let generatingBook = false
+	let generatingSite = false
 
 	function readFile(file) {
 		return new Promise((resolve, reject) => {
@@ -21,9 +23,6 @@
 			fr.readAsText(file.blob)
 		})
 	}
-
-	let generatingBook = false
-	let generatingSite = false
 
 	const actionGenerateBook = (ev) => {
 		generatingBook = true
@@ -74,7 +73,7 @@
 	}
 </style>
 
-<div class="container p-0 mx-auto full-height drop-area">
+<div class="container p-0 mx-auto full-height">
 	{#if stage === "error"}
 		<div
 			class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded

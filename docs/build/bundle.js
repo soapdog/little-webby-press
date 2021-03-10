@@ -79716,7 +79716,7 @@ var app = (function () {
     const { Error: Error_1 } = globals;
     const file$6 = "src/press/Press.svelte";
 
-    // (78:1) {#if stage === "error"}
+    // (77:1) {#if stage === "error"}
     function create_if_block_4$1(ctx) {
     	let div0;
     	let strong;
@@ -79779,39 +79779,39 @@ var app = (function () {
     			div2 = element("div");
     			a = element("a");
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$6, 82, 3, 1946);
+    			add_location(strong, file$6, 81, 3, 1935);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$6, 83, 3, 2003);
-    			add_location(title, file$6, 90, 5, 2252);
+    			add_location(span0, file$6, 82, 3, 1992);
+    			add_location(title, file$6, 89, 5, 2241);
     			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
-    			add_location(path, file$6, 91, 5, 2286);
+    			add_location(path, file$6, 90, 5, 2275);
     			attr_dev(svg, "class", "fill-current h-6 w-6 text-red-500");
     			attr_dev(svg, "role", "button");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 20 20");
-    			add_location(svg, file$6, 85, 4, 2110);
+    			add_location(svg, file$6, 84, 4, 2099);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$6, 84, 3, 2049);
+    			add_location(span1, file$6, 83, 3, 2038);
     			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n\t\t\trelative");
     			attr_dev(div0, "role", "alert");
-    			add_location(div0, file$6, 78, 2, 1834);
+    			add_location(div0, file$6, 77, 2, 1823);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 104, 5, 2735);
+    			add_location(i, file$6, 103, 5, 2724);
     			attr_dev(div1, "class", "empty-icon");
-    			add_location(div1, file$6, 103, 4, 2705);
+    			add_location(div1, file$6, 102, 4, 2694);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 106, 4, 2782);
+    			add_location(p0, file$6, 105, 4, 2771);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 107, 4, 2825);
+    			add_location(p1, file$6, 106, 4, 2814);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 109, 5, 2910);
+    			add_location(a, file$6, 108, 5, 2899);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$6, 108, 4, 2886);
-    			add_location(div3, file$6, 102, 3, 2695);
+    			add_location(div2, file$6, 107, 4, 2875);
+    			add_location(div3, file$6, 101, 3, 2684);
     			attr_dev(div4, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1no39p5");
     			toggle_class(div4, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div4, file$6, 99, 2, 2585);
+    			add_location(div4, file$6, 98, 2, 2574);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -79864,14 +79864,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(78:1) {#if stage === \\\"error\\\"}",
+    		source: "(77:1) {#if stage === \\\"error\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (151:1) {:else}
+    // (150:1) {:else}
     function create_else_block$3(ctx) {
     	let tabs;
     	let t;
@@ -79937,14 +79937,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(151:1) {:else}",
+    		source: "(150:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:1) {#if stage !== "loaded"}
+    // (116:1) {#if stage !== "loaded"}
     function create_if_block$3(ctx) {
     	let div;
 
@@ -79963,7 +79963,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1no39p5");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$6, 117, 2, 3059);
+    			add_location(div, file$6, 116, 2, 3048);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -80001,14 +80001,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(117:1) {#if stage !== \\\"loaded\\\"}",
+    		source: "(116:1) {#if stage !== \\\"loaded\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (141:32) 
+    // (140:32) 
     function create_if_block_3$1(ctx) {
     	let div1;
     	let div0;
@@ -80033,14 +80033,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$6, 143, 6, 3800);
+    			add_location(i, file$6, 142, 6, 3789);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 142, 5, 3769);
+    			add_location(div0, file$6, 141, 5, 3758);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 145, 5, 3860);
+    			add_location(p0, file$6, 144, 5, 3849);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 146, 5, 3904);
-    			add_location(div1, file$6, 141, 4, 3758);
+    			add_location(p1, file$6, 145, 5, 3893);
+    			add_location(div1, file$6, 140, 4, 3747);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -80066,14 +80066,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(141:32) ",
+    		source: "(140:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (128:32) 
+    // (127:32) 
     function create_if_block_2$1(ctx) {
     	let div2;
     	let div0;
@@ -80106,19 +80106,19 @@ var app = (function () {
     			div1 = element("div");
     			a = element("a");
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 130, 6, 3432);
+    			add_location(i, file$6, 129, 6, 3421);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 129, 5, 3401);
+    			add_location(div0, file$6, 128, 5, 3390);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 132, 5, 3481);
+    			add_location(p0, file$6, 131, 5, 3470);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 133, 5, 3525);
+    			add_location(p1, file$6, 132, 5, 3514);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 135, 6, 3612);
+    			add_location(a, file$6, 134, 6, 3601);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$6, 134, 5, 3587);
-    			add_location(div2, file$6, 128, 4, 3390);
+    			add_location(div1, file$6, 133, 5, 3576);
+    			add_location(div2, file$6, 127, 4, 3379);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -80148,14 +80148,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(128:32) ",
+    		source: "(127:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (121:3) {#if stage == "over"}
+    // (120:3) {#if stage == "over"}
     function create_if_block_1$2(ctx) {
     	let div1;
     	let div0;
@@ -80174,12 +80174,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$6, 123, 6, 3232);
+    			add_location(i, file$6, 122, 6, 3221);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 122, 5, 3201);
+    			add_location(div0, file$6, 121, 5, 3190);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$6, 125, 5, 3287);
-    			add_location(div1, file$6, 121, 4, 3190);
+    			add_location(p, file$6, 124, 5, 3276);
+    			add_location(div1, file$6, 120, 4, 3179);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -80201,7 +80201,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(121:3) {#if stage == \\\"over\\\"}",
+    		source: "(120:3) {#if stage == \\\"over\\\"}",
     		ctx
     	});
 
@@ -80232,8 +80232,8 @@ var app = (function () {
     			if (if_block0) if_block0.c();
     			t = space();
     			if_block1.c();
-    			attr_dev(div, "class", "container p-0 mx-auto full-height drop-area svelte-1no39p5");
-    			add_location(div, file$6, 76, 0, 1749);
+    			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1no39p5");
+    			add_location(div, file$6, 75, 0, 1748);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -80395,9 +80395,9 @@ var app = (function () {
     		files,
     		book,
     		error,
-    		readFile,
     		generatingBook,
     		generatingSite,
+    		readFile,
     		actionGenerateBook,
     		actionGenerateSite,
     		$_
