@@ -27,6 +27,8 @@ import {
 	registerToCPrefix,
 } from "../common/utils.js"
 
+import JSZip from "jszip"
+
 // DEFAULT OPTIONS
 let md = new MarkdownIt({
 	xhtmlOut: true,
