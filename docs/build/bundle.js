@@ -89738,6 +89738,11 @@ var app = (function () {
 
     		setTheme(book.config.book.theme);
 
+    		if (!fs.existsSync(themeFolder())) {
+    			reject({message: "theme-not-found"});
+    			return false
+    		}
+
     		if (!fs.existsSync(folder)) {
     			fs.mkdirSync(folder);
     		}
@@ -89921,7 +89926,7 @@ var app = (function () {
     const { Error: Error_1 } = globals;
     const file$6 = "src/press/Press.svelte";
 
-    // (77:1) {#if stage === "error"}
+    // (87:1) {#if stage === "error"}
     function create_if_block_4$1(ctx) {
     	let div0;
     	let strong;
@@ -89984,39 +89989,39 @@ var app = (function () {
     			div2 = element("div");
     			a = element("a");
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$6, 81, 3, 1935);
+    			add_location(strong, file$6, 91, 3, 2081);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$6, 82, 3, 1992);
-    			add_location(title, file$6, 89, 5, 2241);
+    			add_location(span0, file$6, 92, 3, 2138);
+    			add_location(title, file$6, 99, 5, 2387);
     			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
-    			add_location(path, file$6, 90, 5, 2275);
+    			add_location(path, file$6, 100, 5, 2421);
     			attr_dev(svg, "class", "fill-current h-6 w-6 text-red-500");
     			attr_dev(svg, "role", "button");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 20 20");
-    			add_location(svg, file$6, 84, 4, 2099);
+    			add_location(svg, file$6, 94, 4, 2245);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$6, 83, 3, 2038);
+    			add_location(span1, file$6, 93, 3, 2184);
     			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n\t\t\trelative");
     			attr_dev(div0, "role", "alert");
-    			add_location(div0, file$6, 77, 2, 1823);
+    			add_location(div0, file$6, 87, 2, 1969);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 103, 5, 2724);
+    			add_location(i, file$6, 113, 5, 2870);
     			attr_dev(div1, "class", "empty-icon");
-    			add_location(div1, file$6, 102, 4, 2694);
+    			add_location(div1, file$6, 112, 4, 2840);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 105, 4, 2771);
+    			add_location(p0, file$6, 115, 4, 2917);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 106, 4, 2814);
+    			add_location(p1, file$6, 116, 4, 2960);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 108, 5, 2899);
+    			add_location(a, file$6, 118, 5, 3045);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$6, 107, 4, 2875);
-    			add_location(div3, file$6, 101, 3, 2684);
+    			add_location(div2, file$6, 117, 4, 3021);
+    			add_location(div3, file$6, 111, 3, 2830);
     			attr_dev(div4, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1no39p5");
     			toggle_class(div4, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div4, file$6, 98, 2, 2574);
+    			add_location(div4, file$6, 108, 2, 2720);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -90069,14 +90074,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(77:1) {#if stage === \\\"error\\\"}",
+    		source: "(87:1) {#if stage === \\\"error\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:1) {:else}
+    // (160:1) {:else}
     function create_else_block$3(ctx) {
     	let tabs;
     	let t;
@@ -90142,14 +90147,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(150:1) {:else}",
+    		source: "(160:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:1) {#if stage !== "loaded"}
+    // (126:1) {#if stage !== "loaded"}
     function create_if_block$3(ctx) {
     	let div;
 
@@ -90168,7 +90173,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1no39p5");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$6, 116, 2, 3048);
+    			add_location(div, file$6, 126, 2, 3194);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -90206,14 +90211,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(116:1) {#if stage !== \\\"loaded\\\"}",
+    		source: "(126:1) {#if stage !== \\\"loaded\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (140:32) 
+    // (150:32) 
     function create_if_block_3$1(ctx) {
     	let div1;
     	let div0;
@@ -90238,14 +90243,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$6, 142, 6, 3789);
+    			add_location(i, file$6, 152, 6, 3935);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 141, 5, 3758);
+    			add_location(div0, file$6, 151, 5, 3904);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 144, 5, 3849);
+    			add_location(p0, file$6, 154, 5, 3995);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 145, 5, 3893);
-    			add_location(div1, file$6, 140, 4, 3747);
+    			add_location(p1, file$6, 155, 5, 4039);
+    			add_location(div1, file$6, 150, 4, 3893);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -90271,14 +90276,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(140:32) ",
+    		source: "(150:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:32) 
+    // (137:32) 
     function create_if_block_2$1(ctx) {
     	let div2;
     	let div0;
@@ -90311,19 +90316,19 @@ var app = (function () {
     			div1 = element("div");
     			a = element("a");
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 129, 6, 3421);
+    			add_location(i, file$6, 139, 6, 3567);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 128, 5, 3390);
+    			add_location(div0, file$6, 138, 5, 3536);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 131, 5, 3470);
+    			add_location(p0, file$6, 141, 5, 3616);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 132, 5, 3514);
+    			add_location(p1, file$6, 142, 5, 3660);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 134, 6, 3601);
+    			add_location(a, file$6, 144, 6, 3747);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$6, 133, 5, 3576);
-    			add_location(div2, file$6, 127, 4, 3379);
+    			add_location(div1, file$6, 143, 5, 3722);
+    			add_location(div2, file$6, 137, 4, 3525);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -90353,14 +90358,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(127:32) ",
+    		source: "(137:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:3) {#if stage == "over"}
+    // (130:3) {#if stage == "over"}
     function create_if_block_1$2(ctx) {
     	let div1;
     	let div0;
@@ -90379,12 +90384,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$6, 122, 6, 3221);
+    			add_location(i, file$6, 132, 6, 3367);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 121, 5, 3190);
+    			add_location(div0, file$6, 131, 5, 3336);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$6, 124, 5, 3276);
-    			add_location(div1, file$6, 120, 4, 3179);
+    			add_location(p, file$6, 134, 5, 3422);
+    			add_location(div1, file$6, 130, 4, 3325);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -90406,7 +90411,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(120:3) {#if stage == \\\"over\\\"}",
+    		source: "(130:3) {#if stage == \\\"over\\\"}",
     		ctx
     	});
 
@@ -90438,7 +90443,7 @@ var app = (function () {
     			t = space();
     			if_block1.c();
     			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1no39p5");
-    			add_location(div, file$6, 75, 0, 1748);
+    			add_location(div, file$6, 85, 0, 1894);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -90539,12 +90544,20 @@ var app = (function () {
 
     	const actionGenerateBook = ev => {
     		$$invalidate(3, generatingBook = true);
-    		generateEpub(book).then(() => $$invalidate(3, generatingBook = false));
+
+    		generateEpub(book).then(() => $$invalidate(3, generatingBook = false)).catch(n => {
+    			$$invalidate(0, stage = "error");
+    			$$invalidate(1, msg = $_(n.message));
+    		});
     	};
 
     	const actionGenerateSite = ev => {
     		$$invalidate(4, generatingSite = true);
-    		generateSite(book).then(() => $$invalidate(4, generatingSite = false));
+
+    		generateSite(book).then(() => $$invalidate(4, generatingSite = false)).catch(n => {
+    			$$invalidate(0, stage = "error");
+    			$$invalidate(1, msg = $_(n.message));
+    		});
     	};
 
     	onMount(() => {
@@ -90789,7 +90802,8 @@ var app = (function () {
     	"options-web-monetization-endpoint": "Web Monetization Endpoint",
     	"options-website-format-blurb": "The website generated by this tool is a static website that can be\n\t\t\t\tdeployed to any webserver.",
     	"options-website-is-disabled": "Website support is disabled in your configuration.",
-    	"options-website-section-header": "Website"
+    	"options-website-section-header": "Website",
+    	"theme-not-found": "Theme Not Found."
     };
 
     var close$1 = "Fechar";
@@ -90843,7 +90857,8 @@ var app = (function () {
     	"options-web-monetization-endpoint": "Web Monetization Endpoint",
     	"options-website-format-blurb": "O site gerado por esta ferramenta é um site estático que funciona em qualquer servidor da web.",
     	"options-website-is-disabled": "O suporte ao site está desabilitado em sua configuração.",
-    	"options-website-section-header": "Website"
+    	"options-website-section-header": "Website",
+    	"theme-not-found": ""
     };
 
     c("en", en);

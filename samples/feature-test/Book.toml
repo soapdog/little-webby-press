@@ -20,7 +20,7 @@ match = "first"
 
 [book]
 enabled = true
-theme = "generic"
+theme = "generic2"
 chapters = [
 	"basic.md"
 ]

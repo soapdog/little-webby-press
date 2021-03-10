@@ -26,12 +26,22 @@
 
 	const actionGenerateBook = (ev) => {
 		generatingBook = true
-		generateEpub(book).then(() => (generatingBook = false))
+		generateEpub(book)
+			.then(() => (generatingBook = false))
+			.catch((n) => {
+				stage = "error"
+				msg = $_(n.message)
+			})
 	}
 
 	const actionGenerateSite = (ev) => {
 		generatingSite = true
-		generateSite(book).then(() => (generatingSite = false))
+		generateSite(book)
+			.then(() => (generatingSite = false))
+			.catch((n) => {
+				stage = "error"
+				msg = $_(n.message)
+			})
 	}
 
 	onMount(() => {

@@ -71,6 +71,11 @@ export function generateEpub(book) {
 
 		setTheme(book.config.book.theme)
 
+		if (!fs.existsSync(themeFolder())) {
+			reject({message: "theme-not-found"})
+			return false
+		}
+
 		if (!fs.existsSync(folder)) {
 			fs.mkdirSync(folder)
 		}
