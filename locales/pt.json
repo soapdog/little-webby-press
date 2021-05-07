@@ -11,6 +11,7 @@
   "error-quip": "Caramba!",
   "files": "arquivos",
   "files-tab-description": "A aba <em> arquivos </em> lista apenas os arquivos listados nos perfis <code> Book.toml </code>. \nOs arquivos são listados em ordem alfabética para facilitar a localização. \nEste não é o seu índice.",
+  "generate": "",
   "generating-book": "Gerando livro ...",
   "generating-site": "",
   "get-help": "Saiba mais sobre os dados do livro :-)",

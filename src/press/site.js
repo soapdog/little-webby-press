@@ -7,8 +7,27 @@ import {
 	copyImages,
 	addToZip,
 } from "../common/fs.js"
+import "../common/templateHelpers.js"
+import JSZip from "jszip"
+import { generateEpub } from "./epub.js"
+
+
 
 // IMPLEMENTATION
+
+let currentTheme = "generic"
+
+function setTheme(theme) {
+	currentTheme = theme
+}
+
+function themeFolder() {
+	return `/templates/${currentTheme}/site`
+}
+
+function themePathFor(file) {
+	return `${themeFolder()}/${file}`
+}
 
 export function generateSite(book) {
 	// Sit back, relax, and enjoy the waterfall...
@@ -18,15 +37,23 @@ export function generateSite(book) {
 		let siteFolder = `/tmp/${bookSlug}-site`
 		let bookFile = `/tmp/${bookSlug}.epub`
 
+		setTheme(book.config.book.theme)
+
+		if (!fs.existsSync(themeFolder())) {
+			reject({message: "theme-not-found"})
+		}
+
 		if (!fs.existsSync(bookFile)) {
-			reject("no epub")
+			generateEpub(book)
 		}
 
 		if (!fs.existsSync(siteFolder)) {
 			fs.mkdirSync(siteFolder)
 		}
+
+
 		ensureFolders("${siteFolder}/index.html")
-		copyFolder("/templates/site", siteFolder)
+		copyFolder(themeFolder(), siteFolder)
 		fs.writeFileSync(`${siteFolder}/book.epub`, fs.readFileSync(bookFile))
 
 		// site zip file

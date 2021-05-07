@@ -21,7 +21,7 @@
   "loading": "Loading...",
   "loading-configuration": "Loading configuration...",
   "manuscript": "Manuscript",
-  "manuscript-tab-description": "The <em>Manuscript</em> tab only lists files listed in <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to locate. This is not your table of contents or spine.",
+  "manuscript-tab-description": "The <em>Manuscript</em> tab only lists files listed in <code>Book.toml</code>. The files are listed in the order they'll appear in the book (this is your spine).",
   "metadata": "Metadata",
   "metadata-author-name": "Author Name",
   "metadata-book-title": "Book Title",

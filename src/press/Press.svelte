@@ -29,6 +29,7 @@
 		generateEpub(book)
 			.then(() => (generatingBook = false))
 			.catch((n) => {
+				generatingBook = false
 				stage = "error"
 				msg = $_(n.message)
 			})
@@ -39,6 +40,7 @@
 		generateSite(book)
 			.then(() => (generatingSite = false))
 			.catch((n) => {
+				generatingSite = false
 				stage = "error"
 				msg = $_(n.message)
 			})

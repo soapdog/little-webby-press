@@ -7,7 +7,7 @@ identifier = "http://www.gutenberg.org/ebooks/2701"
 cover = "images/cover.jpg"
 
 [site]
-enabled = false
+enabled = true
 
 
 [webmonetization]
@@ -21,7 +21,6 @@ match = "first"
 
 [book]
 enabled = true
-theme = "technical"
 frontmatter = [
 	"000-front-matter.md",
 ]

@@ -89887,6 +89887,16 @@ var app = (function () {
 
     // IMPLEMENTATION
 
+    let currentTheme$1 = "generic";
+
+    function setTheme$1(theme) {
+    	currentTheme$1 = theme;
+    }
+
+    function themeFolder$1() {
+    	return `/templates/${currentTheme$1}/site`
+    }
+
     function generateSite(book) {
     	// Sit back, relax, and enjoy the waterfall...
     	return new Promise((resolve, reject) => {
@@ -89895,19 +89905,27 @@ var app = (function () {
     		let siteFolder = `/tmp/${bookSlug}-site`;
     		let bookFile = `/tmp/${bookSlug}.epub`;
 
+    		setTheme$1(book.config.book.theme);
+
+    		if (!fs.existsSync(themeFolder$1())) {
+    			reject({message: "theme-not-found"});
+    		}
+
     		if (!fs.existsSync(bookFile)) {
-    			reject("no epub");
+    			generateEpub(book);
     		}
 
     		if (!fs.existsSync(siteFolder)) {
     			fs.mkdirSync(siteFolder);
     		}
+
+
     		ensureFolders("${siteFolder}/index.html");
-    		copyFolder("/templates/site", siteFolder);
+    		copyFolder(themeFolder$1(), siteFolder);
     		fs.writeFileSync(`${siteFolder}/book.epub`, fs.readFileSync(bookFile));
 
     		// site zip file
-    		let zip = new JSZip();
+    		let zip = new jszip_min();
     		addToZip(zip, `${bookSlug}-site`, siteFolder);
     		zip.generateAsync({ type: "blob" }).then(
     			function (blob) {
@@ -89926,7 +89944,7 @@ var app = (function () {
     const { Error: Error_1 } = globals;
     const file$6 = "src/press/Press.svelte";
 
-    // (87:1) {#if stage === "error"}
+    // (89:1) {#if stage === "error"}
     function create_if_block_4$1(ctx) {
     	let div0;
     	let strong;
@@ -89989,39 +90007,39 @@ var app = (function () {
     			div2 = element("div");
     			a = element("a");
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$6, 91, 3, 2081);
+    			add_location(strong, file$6, 93, 3, 2135);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$6, 92, 3, 2138);
-    			add_location(title, file$6, 99, 5, 2387);
+    			add_location(span0, file$6, 94, 3, 2192);
+    			add_location(title, file$6, 101, 5, 2441);
     			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
-    			add_location(path, file$6, 100, 5, 2421);
+    			add_location(path, file$6, 102, 5, 2475);
     			attr_dev(svg, "class", "fill-current h-6 w-6 text-red-500");
     			attr_dev(svg, "role", "button");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 20 20");
-    			add_location(svg, file$6, 94, 4, 2245);
+    			add_location(svg, file$6, 96, 4, 2299);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$6, 93, 3, 2184);
+    			add_location(span1, file$6, 95, 3, 2238);
     			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n\t\t\trelative");
     			attr_dev(div0, "role", "alert");
-    			add_location(div0, file$6, 87, 2, 1969);
+    			add_location(div0, file$6, 89, 2, 2023);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 113, 5, 2870);
+    			add_location(i, file$6, 115, 5, 2924);
     			attr_dev(div1, "class", "empty-icon");
-    			add_location(div1, file$6, 112, 4, 2840);
+    			add_location(div1, file$6, 114, 4, 2894);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 115, 4, 2917);
+    			add_location(p0, file$6, 117, 4, 2971);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 116, 4, 2960);
+    			add_location(p1, file$6, 118, 4, 3014);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 118, 5, 3045);
+    			add_location(a, file$6, 120, 5, 3099);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$6, 117, 4, 3021);
-    			add_location(div3, file$6, 111, 3, 2830);
+    			add_location(div2, file$6, 119, 4, 3075);
+    			add_location(div3, file$6, 113, 3, 2884);
     			attr_dev(div4, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1no39p5");
     			toggle_class(div4, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div4, file$6, 108, 2, 2720);
+    			add_location(div4, file$6, 110, 2, 2774);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -90074,14 +90092,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(87:1) {#if stage === \\\"error\\\"}",
+    		source: "(89:1) {#if stage === \\\"error\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (160:1) {:else}
+    // (162:1) {:else}
     function create_else_block$3(ctx) {
     	let tabs;
     	let t;
@@ -90147,14 +90165,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(160:1) {:else}",
+    		source: "(162:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (126:1) {#if stage !== "loaded"}
+    // (128:1) {#if stage !== "loaded"}
     function create_if_block$3(ctx) {
     	let div;
 
@@ -90173,7 +90191,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1no39p5");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$6, 126, 2, 3194);
+    			add_location(div, file$6, 128, 2, 3248);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -90211,14 +90229,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(126:1) {#if stage !== \\\"loaded\\\"}",
+    		source: "(128:1) {#if stage !== \\\"loaded\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:32) 
+    // (152:32) 
     function create_if_block_3$1(ctx) {
     	let div1;
     	let div0;
@@ -90243,14 +90261,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$6, 152, 6, 3935);
+    			add_location(i, file$6, 154, 6, 3989);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 151, 5, 3904);
+    			add_location(div0, file$6, 153, 5, 3958);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 154, 5, 3995);
+    			add_location(p0, file$6, 156, 5, 4049);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 155, 5, 4039);
-    			add_location(div1, file$6, 150, 4, 3893);
+    			add_location(p1, file$6, 157, 5, 4093);
+    			add_location(div1, file$6, 152, 4, 3947);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -90276,14 +90294,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(150:32) ",
+    		source: "(152:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:32) 
+    // (139:32) 
     function create_if_block_2$1(ctx) {
     	let div2;
     	let div0;
@@ -90316,19 +90334,19 @@ var app = (function () {
     			div1 = element("div");
     			a = element("a");
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$6, 139, 6, 3567);
+    			add_location(i, file$6, 141, 6, 3621);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 138, 5, 3536);
+    			add_location(div0, file$6, 140, 5, 3590);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$6, 141, 5, 3616);
+    			add_location(p0, file$6, 143, 5, 3670);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$6, 142, 5, 3660);
+    			add_location(p1, file$6, 144, 5, 3714);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$6, 144, 6, 3747);
+    			add_location(a, file$6, 146, 6, 3801);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$6, 143, 5, 3722);
-    			add_location(div2, file$6, 137, 4, 3525);
+    			add_location(div1, file$6, 145, 5, 3776);
+    			add_location(div2, file$6, 139, 4, 3579);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -90358,14 +90376,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(137:32) ",
+    		source: "(139:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (130:3) {#if stage == "over"}
+    // (132:3) {#if stage == "over"}
     function create_if_block_1$2(ctx) {
     	let div1;
     	let div0;
@@ -90384,12 +90402,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$6, 132, 6, 3367);
+    			add_location(i, file$6, 134, 6, 3421);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$6, 131, 5, 3336);
+    			add_location(div0, file$6, 133, 5, 3390);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$6, 134, 5, 3422);
-    			add_location(div1, file$6, 130, 4, 3325);
+    			add_location(p, file$6, 136, 5, 3476);
+    			add_location(div1, file$6, 132, 4, 3379);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -90411,7 +90429,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(130:3) {#if stage == \\\"over\\\"}",
+    		source: "(132:3) {#if stage == \\\"over\\\"}",
     		ctx
     	});
 
@@ -90443,7 +90461,7 @@ var app = (function () {
     			t = space();
     			if_block1.c();
     			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1no39p5");
-    			add_location(div, file$6, 85, 0, 1894);
+    			add_location(div, file$6, 87, 0, 1948);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -90546,6 +90564,7 @@ var app = (function () {
     		$$invalidate(3, generatingBook = true);
 
     		generateEpub(book).then(() => $$invalidate(3, generatingBook = false)).catch(n => {
+    			$$invalidate(3, generatingBook = false);
     			$$invalidate(0, stage = "error");
     			$$invalidate(1, msg = $_(n.message));
     		});
@@ -90555,6 +90574,7 @@ var app = (function () {
     		$$invalidate(4, generatingSite = true);
 
     		generateSite(book).then(() => $$invalidate(4, generatingSite = false)).catch(n => {
+    			$$invalidate(4, generatingSite = false);
     			$$invalidate(0, stage = "error");
     			$$invalidate(1, msg = $_(n.message));
     		});
@@ -90784,7 +90804,7 @@ var app = (function () {
     	loading: loading,
     	"loading-configuration": "Loading configuration...",
     	manuscript: manuscript,
-    	"manuscript-tab-description": "The <em>Manuscript</em> tab only lists files listed in <code>Book.toml</code> profiles. The files are listed in alphabetical order to make them easier to locate. This is not your table of contents or spine.",
+    	"manuscript-tab-description": "The <em>Manuscript</em> tab only lists files listed in <code>Book.toml</code>. The files are listed in the order they'll appear in the book (this is your spine).",
     	metadata: metadata,
     	"metadata-author-name": "Author Name",
     	"metadata-book-title": "Book Title",
@@ -90810,6 +90830,7 @@ var app = (function () {
     var disabled$1 = "Desativado";
     var enabled$1 = "ativado";
     var files$1 = "arquivos";
+    var generate$1 = "";
     var loading$1 = "Carregando...";
     var manuscript$1 = "";
     var metadata$1 = "Metadados";
@@ -90830,6 +90851,7 @@ var app = (function () {
     	"error-quip": "Caramba!",
     	files: files$1,
     	"files-tab-description": "A aba <em> arquivos </em> lista apenas os arquivos listados nos perfis <code> Book.toml </code>. \nOs arquivos são listados em ordem alfabética para facilitar a localização. \nEste não é o seu índice.",
+    	generate: generate$1,
     	"generating-book": "Gerando livro ...",
     	"generating-site": "",
     	"get-help": "Saiba mais sobre os dados do livro :-)",
