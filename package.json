@@ -29,7 +29,7 @@
         "marked": "^1.1.0",
         "mime": "^2.4.6",
         "moment": "^2.27.0",
-        "postcss": "^8.1.7",
+        "postcss": "^8.2.10",
         "postcss-cli": "^8.0.0",
         "rollup": "^2.3.4",
         "rollup-plugin-livereload": "^1.0.0",
