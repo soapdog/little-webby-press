@@ -7,12 +7,12 @@
 	import { generateEpub } from "./epub.js"
 	import { generateSite } from "./site.js"
 	import { _ } from "svelte-i18n"
+	import { ebookEpub3Generating, staticSiteGenerating} from "./stores.js"
 
 	let stage = "waiting" // loading, loaded, over
 	let msg, files, book
 	let error = false
-	let generatingBook = false
-	let generatingSite = false
+
 
 	function readFile(file) {
 		return new Promise((resolve, reject) => {
@@ -25,22 +25,22 @@
 	}
 
 	const actionGenerateBook = (ev) => {
-		generatingBook = true
+		ebookEpub3Generating.set(true)
 		generateEpub(book)
-			.then(() => (generatingBook = false))
+			.then(() => (ebookEpub3Generating.set(false)))
 			.catch((n) => {
-				generatingBook = false
+				ebookEpub3Generating.set(false)
 				stage = "error"
 				msg = $_(n.message)
 			})
 	}
 
 	const actionGenerateSite = (ev) => {
-		generatingSite = true
+		staticSiteGenerating.set(true)
 		generateSite(book)
-			.then(() => (generatingSite = false))
+			.then(() => (gstaticSiteGenerating.set(false)))
 			.catch((n) => {
-				generatingSite = false
+				staticSiteGenerating.set(false)
 				stage = "error"
 				msg = $_(n.message)
 			})
@@ -162,8 +162,6 @@
 	{:else}
 		<Tabs {book} />
 		<TabsActions
-			{generatingBook}
-			{generatingSite}
 			on:generateBook={actionGenerateBook}
 			on:generateSite={actionGenerateSite} />
 	{/if}

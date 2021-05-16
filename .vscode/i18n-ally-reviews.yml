@@ -13,3 +13,25 @@ reviews:
             suggestion: ''
             type: approve
             time: '2021-04-29T11:46:54.480Z'
+  products:
+    locales:
+      pt:
+        comments:
+          - user:
+              name: Andre Alves Garzia
+              email: andre@andregarzia.com
+            id: Otwu_ukh1Cc61032nFjCY
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2021-05-16T15:21:40.113Z'
+      en:
+        comments:
+          - user:
+              name: Andre Alves Garzia
+              email: andre@andregarzia.com
+            id: ZMJExKiq4lHk9rBmioWkx
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2021-05-16T15:21:43.452Z'

@@ -3,6 +3,7 @@
 	import TabManuscript from "./TabManuscript.svelte"
 	import TabOptions from "./TabOptions.svelte"
 	import TabMetadata from "./TabMetadata.svelte"
+	import TabProducts from "./TabProducts.svelte"
 
 	export let book
 
@@ -10,6 +11,7 @@
 		manuscript: TabManuscript,
 		options: TabOptions,
 		metadata: TabMetadata,
+		products: TabProducts
 	}
 
 	let currentView = "options"
@@ -39,6 +41,12 @@
 			on:click|preventDefault={() => (currentView = 'manuscript')}>
 			<span>{$_("manuscript")}</span>
 		</li>
+		<li
+		class="nav-pill"
+		class:nav-pill-active={currentView == 'products'}
+		on:click|preventDefault={() => (currentView = 'products')}>
+		<span>{$_("products")}</span>
+	</li>
 	</ul>
 	<div class="columns tab">
 		<svelte:component this={views[currentView]} {book} />

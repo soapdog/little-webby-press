@@ -9,6 +9,7 @@
 
 ## sourcefiles
 * [ ] Add support for textile
+* [ ] Add support for plain-text
 
 # themes
 * [ ] find themes to use for epub
