@@ -3,10 +3,8 @@
 	import { ebookEpub3Generating, staticSiteGenerating } from "./stores.js"
 	import saveAs from "file-saver"
 	import slugify from "slugify"
-	import BrowserFS from "browserfs"
 
 	let fs = require("fs")
-	let Buffer = require("buffer").Buffer
 
 	export let book
 
@@ -15,12 +13,9 @@
 	const downloadGenericEpub3 = () => {
 		let path = `/books/${bookSlug}.epub`
 		if (fs.existsSync(path)) {
-			console.time("generating blob")
 			let data = fs.readFileSync(path)
 			let f = new File([data.buffer], `${bookSlug}.epub`, {type: "application/zip+epub"})
-			console.timeEnd("generating blob")
 			saveAs(f)
-			console.log("save")
 		} else {
 			console.log("404", path)
 		}

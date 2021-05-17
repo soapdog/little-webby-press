@@ -206,7 +206,7 @@ export function generateEpub(book) {
 					epubBlob.arrayBuffer().then((epubBuffer) => {
 						let Buffer = BrowserFS.BFSRequire("buffer").Buffer
 						fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer))
-						saveAs(epubBlob, `${bookSlug}.epub`)
+						// saveAs(epubBlob, `${bookSlug}.epub`)
 						resolve()
 					})
 				},
