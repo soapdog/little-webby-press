@@ -1,4 +1,11 @@
+/*
+Documentation for BrowserFS: https://jvilk.com/browserfs/1.4.1/index.html
+- The default documentation link on the site links to 2.0.0-beta-2 while
+the version on NPM (which is the one we're using is) 1.4.3
+*/
+
 import BrowserFS from "browserfs"
+
 
 
 export function initializeFilesystem() {
@@ -19,9 +26,9 @@ export function initializeFilesystem() {
                         }
                     },
                     "/tmp": { fs: "InMemory" },
-                    "/books": { fs: "IndexedDB", options: { storeName: "books" } },
-                    "/etc": { fs: "IndexedDB", options: { storeName: "etc" } },
-                    "/integration": { fs: "IndexedDB", options: { storeName: "integration" } }
+                    "/books": { fs: "InMemory", options: { storeName: "books" } },
+                    "/etc": { fs: "InMemory", options: { } },
+                    "/integration": { fs: "InMemory", options: { storeName: "integration" } }
 
                 }
             }, function (e) {

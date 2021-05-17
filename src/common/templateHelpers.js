@@ -1,4 +1,3 @@
-import moment from "moment"
 import mime from "mime"
 import { extractToc } from "../common/utils.js"
 import Handlebars from "handlebars"
@@ -7,7 +6,7 @@ let tocIndexValue = 0
 
 // TEMPLATE HELPERS
 Handlebars.registerHelper("dateModified", function (context, _block) {
-	return moment(Date(context)).format("YYYY-MM-DD[T]HH[:]mm[:00Z]")
+	return  new Date(context).toISOString()
 })
 
 Handlebars.registerHelper("tocStartAt", function (v) {
