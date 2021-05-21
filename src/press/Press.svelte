@@ -25,24 +25,22 @@
 	}
 
 	const actionGenerateBook = (ev) => {
-		ebookEpub3Generating.set(true)
 		generateEpub(book)
-			.then(() => (ebookEpub3Generating.set(false)))
 			.catch((n) => {
 				ebookEpub3Generating.set(false)
 				stage = "error"
 				msg = $_(n.message)
+				console.error("error generating epub3", n)
 			})
 	}
 
 	const actionGenerateSite = (ev) => {
-		staticSiteGenerating.set(true)
 		generateSite(book)
-			.then(() => (gstaticSiteGenerating.set(false)))
 			.catch((n) => {
 				staticSiteGenerating.set(false)
 				stage = "error"
 				msg = $_(n.message)
+				console.error("error generating site", n)
 			})
 	}
 

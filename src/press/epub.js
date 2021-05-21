@@ -29,6 +29,8 @@ import {
 
 import Handlebars from "handlebars"
 import JSZip from "jszip"
+import { ebookEpub3Generating} from "./stores.js"
+
 
 // DEFAULT OPTIONS
 let md = new MarkdownIt({
@@ -62,12 +64,15 @@ function themePathFor(file) {
 
 export function generateEpub(book) {
 	// Sit back, relax, and enjoy the waterfall...
+	console.log("Generate book", book)
 	return new Promise((resolve, reject) => {
-		let bookSlug = slugify(book.config.metadata.title)
+		let bookSlug = slugify(book.config.metadata.title) 
 		let fs = require("fs")
 		let folder = `/tmp/${bookSlug}`
 		let toc = {}
 		let manifest = []
+
+		ebookEpub3Generating.set(true)
 
 		setTheme(book.config.book.theme)
 
@@ -207,10 +212,12 @@ export function generateEpub(book) {
 						let Buffer = BrowserFS.BFSRequire("buffer").Buffer
 						fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer))
 						// saveAs(epubBlob, `${bookSlug}.epub`)
+						ebookEpub3Generating.set(false)
 						resolve()
 					})
 				},
 				function (err) {
+					ebookEpub3Generating.set(false)
 					reject(err)
 				}
 			)
