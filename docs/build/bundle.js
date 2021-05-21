@@ -82636,6 +82636,20 @@ var app = (function () {
     	})
     }
 
+    // DEFAULT OPTIONS
+    let md$1 = new markdownIt({
+    	xhtmlOut: true,
+    	linkify: true,
+    	typographer: true,
+    })
+    	.use(markdownItFootnote)
+    	.use(r, { slugify })
+    	.use(markdownItBracketedSpans)
+    	.use(markdownItAttrs)
+    	.use(markdownItImplicitFigures, { figcaption: true })
+    	.use(markdownItEmoji)
+    	.use(markdownItCenterText);
+
     // IMPLEMENTATION
 
     let currentTheme$1 = "generic";
@@ -82690,13 +82704,14 @@ var app = (function () {
     		let fi = copyImages(book, `${siteFolder}`);
 
 
-    		// Templating...
-    		let data = {
-    			cover: book.config.metadata.cover,
-    			title: book.config.metadata.title,
-    			author: book.config.metadata.author,
-    			description: "lorem ipsum"
-    		};
+    		// Templating
+    		if (book.config.site.description) {
+    			book.config.site.description = md$1.render(book.config.site.description);
+    		}
+
+    		if (book.config.site.blurb) {
+    			book.config.site.blurb = md$1.render(book.config.site.blurb);
+    		}
 
     		let indexTemplateHBS = fs.readFileSync(
     			themePathFor$1("index.hbs"),
@@ -82704,7 +82719,7 @@ var app = (function () {
     		);
 
     		let indexTemplate = lib$1.compile(indexTemplateHBS);
-    		let contents = indexTemplate(data);
+    		let contents = indexTemplate({book});
     		fs.writeFileSync(`${siteFolder}/index.html`, contents);
 
     		// site zip file...

@@ -1,4 +1,3 @@
-import MarkdownIt from "markdown-it"
 import saveAs from "file-saver"
 import slugify from "slugify"
 import {

@@ -1,0 +1,81 @@
+<html lang="{{book.config.metadata.lang}}">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{book.config.metadata.title}}
+		-
+	{{book.config.metadata.author}}</title>
+	<link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
+	<style>
+	.cover { max-width: 350px; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<section class="section">
+			<div class="columns is-vcentered">
+				<div class="column">
+
+					<figure class="image">
+						<img
+						class="cover"
+						src="{{book.config.metadata.cover}}"
+						alt="{{book.config.metadata.title}}"
+						/>
+					</figure>
+					<div>
+						<figure class="image is-32x32">
+							<img
+							class="is-rounded"
+							src="http://placekitten.com/32/32"
+							alt="{{book.config.metadata.title}}"
+							/>
+						</figure>
+
+						<div class="column">
+							<span>{{book.config.metadata.author}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="column has-text-centered">
+					<h1 class="title is-2">
+						{{book.config.metadata.title}}
+					</h1>
+					<h2 class="subtitle is-4">
+						Let this cover page describe a product or service.
+					</h2>
+					<br>
+					<p class="has-text-centered">
+						<a class="button is-medium is-info is-outlined">
+							Get The Book
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section mb-0 content has-background-grey-darker has-text-info-light">
+	<div class="columns  has-text-centered">
+		<div class="column">
+			<span>EPUB3</span>
+		</div>
+
+		<div class="column">
+			<span>Web</span>
+		</div>
+
+		<div class="column">
+			<span>WebMo</span>
+		</div>
+	</div>
+</section>
+<section class="section content has-background-link-light has-text-black-bis">
+	<h4 class="title is-4 has-text-centered">
+		{{book.config.metadata.title}}
+	</h4>
+	{{{book.config.site.description}}}
+</section>
+</div>
+</body>
+</html>
