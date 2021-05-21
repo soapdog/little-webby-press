@@ -7,7 +7,10 @@
 	{{book.config.metadata.author}}</title>
 	<link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
 	<style>
-	.cover { max-width: 350px; }
+	.cover { 
+		max-width: 350px; 
+		margin: auto;
+	}
 	</style>
 </head>
 <body>
@@ -23,8 +26,8 @@
 						alt="{{book.config.metadata.title}}"
 						/>
 					</figure>
-					<div>
-						<figure class="image is-32x32">
+					<div class="p-4 flex has-text-centered">
+						<figure class="image is-32x32 flex-shrink-0 is-inline-block">
 							<img
 							class="is-rounded"
 							src="http://placekitten.com/32/32"
@@ -32,9 +35,7 @@
 							/>
 						</figure>
 
-						<div class="column">
-							<span>{{book.config.metadata.author}}</span>
-						</div>
+						<span>{{book.config.metadata.author}}</span>
 					</div>
 				</div>
 				<div class="column has-text-centered">
@@ -46,8 +47,11 @@
 					</h2>
 					<br>
 					<p class="has-text-centered">
-						<a class="button is-medium is-info is-outlined">
-							Get The Book
+						<a class="button m-2 is-medium is-info is-outlined">
+							Download The Book
+						</a>
+						<a class="button m-2 is-medium is-info is-outlined">
+							Read It Online
 						</a>
 					</p>
 				</div>
