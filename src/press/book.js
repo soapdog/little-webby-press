@@ -1,8 +1,10 @@
 import toml from "toml"
+import yaml  from "js-yaml"
 import _ from "lodash"
 
 let configurationFiles = [
 	"book.toml",
+	"book.yaml",
 	"book.json",
 ]
 
@@ -11,7 +13,7 @@ export const defaultBookConfiguration = {
 		title: "Untitled",
 		author: "Unnamed Author",
 		publisher: "",
-		date: new Date("2021-03-08T17:52:15"),
+		date: new Date(),
 		identifier: "",
 	},
 	site: {
@@ -43,7 +45,6 @@ export default class Book {
 }
 
 export async function bookFromFiles(files) {
-	// look for Book configuration files
 	let conf = files.filter((file) => {
 		return configurationFiles.includes(file.name.toLowerCase())
 	})[0]
@@ -66,6 +67,9 @@ export async function bookFromFiles(files) {
 				break
 			case "json":
 				config = JSON.parse(await conf.text())
+				break
+			case "yaml":
+				config = yaml.load(await conf.text())
 				break
 			default:
 				return new Error("error-no-configuration")
