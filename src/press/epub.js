@@ -9,8 +9,6 @@ import MarkdownBracketedSpans from "markdown-it-bracketed-spans"
 import MarkdownImplicitFigues from "markdown-it-implicit-figures"
 import MarkdownCenterText from "markdown-it-center-text"
 import MarkdownEmoji from "markdown-it-emoji"
-
-import saveAs from "file-saver"
 import slugify from "slugify"
 import {
 	copyFolder,

@@ -11,20 +11,18 @@
 
 	let stage = "waiting" // loading, loaded, over
 	let msg, files, book
-	let error = false
 
+	// function readFile(file) {
+	// 	return new Promise((resolve, _reject) => {
+	// 		var fr = new FileReader()
+	// 		fr.onload = () => {
+	// 			resolve(fr.result)
+	// 		}
+	// 		fr.readAsText(file.blob)
+	// 	})
+	// }
 
-	function readFile(file) {
-		return new Promise((resolve, reject) => {
-			var fr = new FileReader()
-			fr.onload = () => {
-				resolve(fr.result)
-			}
-			fr.readAsText(file.blob)
-		})
-	}
-
-	const actionGenerateBook = (ev) => {
+	const actionGenerateBook = (_ev) => {
 		generateEpub(book)
 			.catch((n) => {
 				ebookEpub3Generating.set(false)
@@ -34,7 +32,7 @@
 			})
 	}
 
-	const actionGenerateSite = (ev) => {
+	const actionGenerateSite = (_ev) => {
 		generateSite(book)
 			.catch((n) => {
 				staticSiteGenerating.set(false)
@@ -42,6 +40,35 @@
 				msg = $_(n.message)
 				console.error("error generating site", n)
 			})
+	}
+
+	const loadFiles = (_evt) => {
+		document.getElementById("file-input").click()
+	}
+
+	const filesLoaded = async (evt) => {
+		evt.preventDefault()
+
+		msg = $_("getting-file-list")
+		stage = "loading"
+		files = Array.from(evt.target.files)
+		// FileList does not contain "filepath" property like DataTransferItem do.
+		// That property is used by book.js.
+		// It's value is apparently the same as name.
+		files = files.map(i => {
+			i.filepath = i.name
+			return i
+		})
+		console.log("files", files)
+
+		msg = $_("loading-configuration")
+		book = await bookFromFiles(files)
+		if (book instanceof Error) {
+			stage = "error"
+			msg = $_(book.message)
+		} else {
+			stage = "loaded"
+		}
 	}
 
 	onMount(() => {
@@ -60,6 +87,7 @@
 			msg = $_("getting-file-list")
 			stage = "loading"
 			files = await window.getFilesFromDataTransferItems(evt.dataTransfer.items)
+			console.log("files", files)
 
 			msg = $_("loading-configuration")
 			book = await bookFromFiles(files)
@@ -146,6 +174,12 @@
 							{@html $_("learn-more-long")}
 						</a>
 					</div>
+						<div class="mt-6">
+							<span class="btn btn-blue" on:click={loadFiles}>
+								<input type="file" class="hidden" id="file-input" webkitdirectory multiple directory on:change={filesLoaded}>
+								{@html $_("load-folder")}
+							</span>
+						</div>
 				</div>
 			{:else if stage == "loading"}
 				<div>
