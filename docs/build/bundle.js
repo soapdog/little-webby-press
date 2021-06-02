@@ -32424,9 +32424,9 @@ var app = (function () {
     var jsYaml$1 = jsYaml;
 
     let configurationFiles = [
-    	"book.toml",
-    	"book.yaml",
-    	"book.json",
+      "book.toml",
+      "book.yaml",
+      "book.json",
     ];
 
     /**
@@ -32436,14 +32436,14 @@ var app = (function () {
      * Certain properties will be either `false` or have a string.
      */
     const defaultBookConfiguration = {
-    	metadata: {
-    		title: "Untitled",
+      metadata: {
+        title: "Untitled",
         subtitle: false,
-    		date: new Date(),
-    		identifier: false,
+        date: new Date(),
+        identifier: false,
         cover: false,
         language: "en"
-    	},
+      },
       publisher: {
         name: false,
         bio: false,
@@ -32451,11 +32451,12 @@ var app = (function () {
       },
       author: {
         name: false,
+        photo: false,
         bio: false,
         links: []
       },
-    	site: {
-    		enabled: false,
+      site: {
+        enabled: false,
         theme: "generic",
         frontmatter: [],
         chapters: [],
@@ -32471,71 +32472,71 @@ var app = (function () {
           "about-author": "About The Author",
           "toc": "Table Of Contents"
         }
-    	},
-    	webmonetization: {
-    		enabled: false,
-    		endpoint: false,
+      },
+      webmonetization: {
+        enabled: false,
+        endpoint: false,
         frontmatter: [],
         chapters: [],
         backmatter: []
-    	},
-    	toc: {
-    		prefix: false,
-    		label: "h1",
-    		match: "all"
-    	},
-    	book: {
-    		enabled: false,
-    		theme: "generic",
-    		frontmatter: [],
-    		chapters: [],
-    		backmatter: []
-    	}
+      },
+      toc: {
+        prefix: false,
+        label: "h1",
+        match: "all"
+      },
+      book: {
+        enabled: false,
+        theme: "generic",
+        frontmatter: [],
+        chapters: [],
+        backmatter: []
+      }
     };
 
     class Book {
-    	constructor(config, files) {
-    		this.config = config;
-    		this.files = files;
-    	}
+      constructor(config, files) {
+        this.config = config;
+        this.files = files;
+      }
     }
 
     async function bookFromFiles(files) {
-    	let conf = files.filter((file) => {
-    		return configurationFiles.includes(file.name.toLowerCase())
-    	})[0];
+      let conf = files.filter((file) => {
+        return configurationFiles.includes(file.name.toLowerCase())
+      })[0];
 
-    	if (conf) {
-    		let rootFolder = conf.filepath.split("/").reverse();
-    		rootFolder.shift();
-    		rootFolder.reverse().join("/");
+      if (conf) {
+        let rootFolder = conf.filepath.split("/").reverse();
+        rootFolder.shift();
+        rootFolder.reverse().join("/");
 
-    		files = files.map((f) => {
-    			f.filepath = f.filepath.replace(`${rootFolder}/`, "");
-    			return f
-    		});
+        files = files.map((f) => {
+          f.filepath = f.filepath.replace(`${rootFolder}/`, "");
+          return f
+        });
 
-    		let config = {};
-    		let ext = conf.filepath.split(".").reverse()[0];
-    		switch (ext) {
-    			case "toml":
-    				config = toml.parse(await conf.text());
-    				break
-    			case "json":
-    				config = JSON.parse(await conf.text());
-    				break
-    			case "yaml":
-    				config = jsYaml$1.load(await conf.text());
-    				break
-    			default:
-    				return new Error("error-no-configuration")
-    		}
+        let config = {};
+        let ext = conf.filepath.split(".").reverse()[0];
+        switch (ext) {
+          case "toml":
+            config = toml.parse(await conf.text());
+            break
+          case "json":
+            config = JSON.parse(await conf.text());
+            break
+          case "yaml":
+            config = jsYaml$1.load(await conf.text());
+            break
+          default:
+            return new Error("error-no-configuration")
+        }
 
-    		let book = new Book(lodash.defaultsDeep(config, defaultBookConfiguration), files);
-    		return book
-    	} else {
-    		return new Error("error-no-configuration")
-    	}
+        let book = new Book(lodash.defaultsDeep(config, defaultBookConfiguration), files);
+        return book
+      } else {
+        return new Error("error-no-configuration")
+      }
     }
 
     var browserfs = createCommonjsModule(function (module, exports) {
@@ -86583,106 +86584,162 @@ var app = (function () {
 
     // DEFAULT OPTIONS
     let md$1 = new markdownIt({
-    	xhtmlOut: true,
-    	linkify: true,
-    	typographer: true,
+      xhtmlOut: true,
+      linkify: true,
+      typographer: true,
     })
-    	.use(markdownItFootnote)
-    	.use(r, { slugify })
-    	.use(markdownItBracketedSpans)
-    	.use(markdownItAttrs)
-    	.use(markdownItImplicitFigures, { figcaption: true })
-    	.use(markdownItEmoji)
-    	.use(markdownItCenterText);
+      .use(markdownItFootnote)
+      .use(r, { slugify })
+      .use(markdownItBracketedSpans)
+      .use(markdownItAttrs)
+      .use(markdownItImplicitFigures, { figcaption: true })
+      .use(markdownItEmoji)
+      .use(markdownItCenterText);
 
     // IMPLEMENTATION
 
     let currentTheme$1 = "generic";
 
     function setTheme$1(theme) {
-    	currentTheme$1 = theme;
+      currentTheme$1 = theme;
     }
 
     function themeFolder$1() {
-    	return `/templates/${currentTheme$1}/site`
+      return `/templates/${currentTheme$1}/site`
     }
 
     function themePathFor$1(file) {
-    	return `${themeFolder$1()}/${file}`
+      return `${themeFolder$1()}/${file}`
+    }
+
+    function contentFilesFromConfiguration(book) {
+      let frontmatter =
+        book.config.site.frontmatter.length > 0
+          ? book.config.site.frontmatter
+          : book.config.book.frontmatter;
+      let chapters =
+        book.config.site.chapters.length > 0
+          ? book.config.site.chapters
+          : book.config.book.chapters;
+      let backmatter =
+        book.config.site.backmatter.length > 0
+          ? book.config.site.backmatter
+          : book.config.book.backmatter;
+
+      let contentFiles = [...frontmatter, ...chapters, ...backmatter];
+
+      return contentFiles
+    }
+
+    function isFrontmatter(book, file) {
+      let frontmatter =
+        book.config.site.frontmatter.length > 0
+          ? book.config.site.frontmatter
+          : book.config.book.frontmatter;
+      return frontmatter.includes(file)
     }
 
     function generateSite(book) {
-    	// Sit back, relax, and enjoy the waterfall...
-    	console.log("Generate site", book);
-    	return new Promise((resolve, reject) => {
-    		let bookSlug = slugify(book.config.metadata.title);
-    		let fs = require("fs");
-    		let siteFolder = `/tmp/${bookSlug}-site`;
-    		let bookFile = `/books/${bookSlug}.epub`;
+      // Sit back, relax, and enjoy the waterfall...
+      console.log("Generate site", book);
+      return new Promise((resolve, reject) => {
+        let bookSlug = slugify(book.config.metadata.title);
+        let fs = require("fs");
+        let siteFolder = `/tmp/${bookSlug}-site`;
+        let bookFile = `/books/${bookSlug}.epub`;
+        let toc = {};
 
-    		staticSiteGenerating.set(true);
+        staticSiteGenerating.set(true);
 
-    		setTheme$1(book.config.book.theme);
+        setTheme$1(book.config.site.theme);
 
-    		if (!fs.existsSync(themeFolder$1())) {
-    			reject({message: "theme-not-found"});
-    		}
+        if (!fs.existsSync(themeFolder$1())) {
+          reject({ message: "theme-not-found" });
+        }
 
-    		if (!fs.existsSync(bookFile)) {
-    			generateEpub(book).then(() => {
-    				generateSite(book)
-    					.then(() => resolve())
-    					.catch(n => reject(n));
-    			});
-    			return false
-    		}
+        if (!fs.existsSync(bookFile)) {
+          generateEpub(book).then(() => {
+            generateSite(book)
+              .then(() => resolve())
+              .catch((n) => reject(n));
+          });
+          return false
+        }
 
-    		if (!fs.existsSync(siteFolder)) {
-    			fs.mkdirSync(siteFolder);
-    		}
+        if (!fs.existsSync(siteFolder)) {
+          fs.mkdirSync(siteFolder);
+        }
 
-    		// Copy files over...
-    		ensureFolders(`${siteFolder}/files/${bookSlug}.epub`);
-    		copyFolder(themeFolder$1(), siteFolder);
-    		fs.writeFileSync(`${siteFolder}/files/${bookSlug}.epub`, fs.readFileSync(bookFile));
+        // Copy files over...
+        ensureFolders(`${siteFolder}/files/${bookSlug}.epub`);
+        copyFolder(themeFolder$1(), siteFolder);
+        fs.writeFileSync(
+          `${siteFolder}/files/${bookSlug}.epub`,
+          fs.readFileSync(bookFile)
+        );
 
-    		let fi = copyImages(book, `${siteFolder}`);
+        let fi = copyImages(book, `${siteFolder}`);
 
-    		// Templating
-    		if (book.config.site.description) {
-    			book.config.site.description = md$1.render(book.config.site.description);
-    		}
+        let contentFiles = contentFilesFromConfiguration(book);
 
-    		if (book.config.site.blurb) {
-    			book.config.site.blurb = md$1.render(book.config.site.blurb);
-    		}
+        let fp = contentFiles.map(async (chapterFilename) => {
+          let file = book.files.filter((f) => f.name === chapterFilename)[0];
+          let contentMarkdown = await file.text();
+          let contentHtml = md$1.render(contentMarkdown);
+          contentHtml = fix(contentHtml);
+          let destinationFilename = chapterFilename.replace(".md", ".xhtml");
+          //let data = chapterTemplate({ html: contentHtml })
+          //fs.writeFileSync(destination, data)
 
-    		let indexTemplateHBS = fs.readFileSync(
-    			themePathFor$1("index.hbs"),
-    			"utf8"
-    		);
+          // due to the async nature of this code, the ToC won't ready until
+          // all promises complete.
+          if (!isFrontmatter(book, chapterFilename)) {
+            toc[destinationFilename] = extractToc(contentHtml, destinationFilename);
+          }
+        });
 
-    		let indexTemplate = lib$1.compile(indexTemplateHBS);
-    		let contents = indexTemplate({book});
-    		fs.writeFileSync(`${siteFolder}/index.html`, contents);
+        let spine = contentFiles.map((f) => {
+          let i = f.split(".")[0];
+          return { id: `c-${i}`, file: i, htmlFile: `${i}.html` }
+        });
 
-    		// site zip file...
-    		Promise.all([...fi]).then(() => {
-    			let zip = new jszip_min();
-    			addToZip(zip, `${bookSlug}-site`, siteFolder);
-    			zip.generateAsync({ type: "blob" }).then(
-    				function (blob) {
-    					FileSaver_min(blob, `${bookSlug}-site.zip`);
-    					staticSiteGenerating.set(false);
-    					resolve();
-    				},
-    				function (err) {
-    					staticSiteGenerating.set(false);
-    					reject(err);
-    				}
-    			);
-    		});
-    	})
+        // site zip file...
+        Promise.all([...fi, ...fp]).then(() => {
+          spine = spine.map((s) => {
+            s.toc = toc[s.htmlFile];
+            return s
+          });
+
+          // Templating
+          if (book.config.site.description) {
+            book.config.site.description = md$1.render(book.config.site.description);
+          }
+
+          if (book.config.site.blurb) {
+            book.config.site.blurb = md$1.render(book.config.site.blurb);
+          }
+
+          let indexTemplateHBS = fs.readFileSync(themePathFor$1("index.hbs"), "utf8");
+
+          let indexTemplate = lib$1.compile(indexTemplateHBS);
+          let contents = indexTemplate({ book, spine });
+          fs.writeFileSync(`${siteFolder}/index.html`, contents);
+
+          let zip = new jszip_min();
+          addToZip(zip, `${bookSlug}-site`, siteFolder);
+          zip.generateAsync({ type: "blob" }).then(
+            function (blob) {
+              FileSaver_min(blob, `${bookSlug}-site.zip`);
+              staticSiteGenerating.set(false);
+              resolve();
+            },
+            function (err) {
+              staticSiteGenerating.set(false);
+              reject(err);
+            }
+          );
+        });
+      })
     }
 
     /* src/press/Press.svelte generated by Svelte v3.23.2 */
@@ -86690,7 +86747,7 @@ var app = (function () {
     const { Error: Error_1, console: console_1$1 } = globals;
     const file$7 = "src/press/Press.svelte";
 
-    // (115:1) {#if stage === "error"}
+    // (114:1) {#if stage === "error"}
     function create_if_block_4$1(ctx) {
     	let div0;
     	let strong;
@@ -86753,39 +86810,39 @@ var app = (function () {
     			div2 = element("div");
     			a = element("a");
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$7, 119, 3, 2874);
+    			add_location(strong, file$7, 118, 3, 2844);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$7, 120, 3, 2931);
-    			add_location(title, file$7, 127, 5, 3180);
+    			add_location(span0, file$7, 119, 3, 2901);
+    			add_location(title, file$7, 126, 5, 3150);
     			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
-    			add_location(path, file$7, 128, 5, 3214);
+    			add_location(path, file$7, 127, 5, 3184);
     			attr_dev(svg, "class", "fill-current h-6 w-6 text-red-500");
     			attr_dev(svg, "role", "button");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 20 20");
-    			add_location(svg, file$7, 122, 4, 3038);
+    			add_location(svg, file$7, 121, 4, 3008);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$7, 121, 3, 2977);
+    			add_location(span1, file$7, 120, 3, 2947);
     			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n\t\t\trelative");
     			attr_dev(div0, "role", "alert");
-    			add_location(div0, file$7, 115, 2, 2762);
+    			add_location(div0, file$7, 114, 2, 2732);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$7, 141, 5, 3663);
+    			add_location(i, file$7, 140, 5, 3633);
     			attr_dev(div1, "class", "empty-icon");
-    			add_location(div1, file$7, 140, 4, 3633);
+    			add_location(div1, file$7, 139, 4, 3603);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 143, 4, 3710);
+    			add_location(p0, file$7, 142, 4, 3680);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 144, 4, 3753);
+    			add_location(p1, file$7, 143, 4, 3723);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$7, 146, 5, 3838);
+    			add_location(a, file$7, 145, 5, 3808);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 145, 4, 3814);
-    			add_location(div3, file$7, 139, 3, 3623);
+    			add_location(div2, file$7, 144, 4, 3784);
+    			add_location(div3, file$7, 138, 3, 3593);
     			attr_dev(div4, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1no39p5");
     			toggle_class(div4, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div4, file$7, 136, 2, 3513);
+    			add_location(div4, file$7, 135, 2, 3483);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -86838,14 +86895,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(115:1) {#if stage === \\\"error\\\"}",
+    		source: "(114:1) {#if stage === \\\"error\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (194:1) {:else}
+    // (193:1) {:else}
     function create_else_block$4(ctx) {
     	let tabs;
     	let t;
@@ -86900,14 +86957,14 @@ var app = (function () {
     		block,
     		id: create_else_block$4.name,
     		type: "else",
-    		source: "(194:1) {:else}",
+    		source: "(193:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (154:1) {#if stage !== "loaded"}
+    // (153:1) {#if stage !== "loaded"}
     function create_if_block$4(ctx) {
     	let div;
 
@@ -86926,7 +86983,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1no39p5");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$7, 154, 2, 3987);
+    			add_location(div, file$7, 153, 2, 3957);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -86964,14 +87021,14 @@ var app = (function () {
     		block,
     		id: create_if_block$4.name,
     		type: "if",
-    		source: "(154:1) {#if stage !== \\\"loaded\\\"}",
+    		source: "(153:1) {#if stage !== \\\"loaded\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (184:32) 
+    // (183:32) 
     function create_if_block_3$1(ctx) {
     	let div1;
     	let div0;
@@ -86996,14 +87053,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$7, 186, 6, 4989);
+    			add_location(i, file$7, 185, 6, 4959);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 185, 5, 4958);
+    			add_location(div0, file$7, 184, 5, 4928);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 188, 5, 5049);
+    			add_location(p0, file$7, 187, 5, 5019);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 189, 5, 5093);
-    			add_location(div1, file$7, 184, 4, 4947);
+    			add_location(p1, file$7, 188, 5, 5063);
+    			add_location(div1, file$7, 183, 4, 4917);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87029,14 +87086,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(184:32) ",
+    		source: "(183:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (165:32) 
+    // (164:32) 
     function create_if_block_2$1(ctx) {
     	let div3;
     	let div0;
@@ -87083,31 +87140,31 @@ var app = (function () {
     			input = element("input");
     			t6 = space();
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$7, 167, 6, 4360);
+    			add_location(i, file$7, 166, 6, 4330);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 166, 5, 4329);
+    			add_location(div0, file$7, 165, 5, 4299);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 169, 5, 4409);
+    			add_location(p0, file$7, 168, 5, 4379);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 170, 5, 4453);
+    			add_location(p1, file$7, 169, 5, 4423);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$7, 172, 6, 4540);
+    			add_location(a, file$7, 171, 6, 4510);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$7, 171, 5, 4515);
+    			add_location(div1, file$7, 170, 5, 4485);
     			attr_dev(input, "type", "file");
     			attr_dev(input, "class", "hidden");
     			attr_dev(input, "id", "file-input");
     			attr_dev(input, "webkitdirectory", "");
     			input.multiple = true;
     			attr_dev(input, "directory", "");
-    			add_location(input, file$7, 178, 8, 4727);
+    			add_location(input, file$7, 177, 8, 4697);
     			html_tag = new HtmlTag(null);
     			attr_dev(span, "class", "btn btn-blue");
-    			add_location(span, file$7, 177, 7, 4670);
+    			add_location(span, file$7, 176, 7, 4640);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 176, 6, 4644);
-    			add_location(div3, file$7, 165, 4, 4318);
+    			add_location(div2, file$7, 175, 6, 4614);
+    			add_location(div3, file$7, 164, 4, 4288);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -87155,14 +87212,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(165:32) ",
+    		source: "(164:32) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (158:3) {#if stage == "over"}
+    // (157:3) {#if stage == "over"}
     function create_if_block_1$2(ctx) {
     	let div1;
     	let div0;
@@ -87181,12 +87238,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$7, 160, 6, 4160);
+    			add_location(i, file$7, 159, 6, 4130);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 159, 5, 4129);
+    			add_location(div0, file$7, 158, 5, 4099);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$7, 162, 5, 4215);
-    			add_location(div1, file$7, 158, 4, 4118);
+    			add_location(p, file$7, 161, 5, 4185);
+    			add_location(div1, file$7, 157, 4, 4088);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87208,7 +87265,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(158:3) {#if stage == \\\"over\\\"}",
+    		source: "(157:3) {#if stage == \\\"over\\\"}",
     		ctx
     	});
 
@@ -87240,7 +87297,7 @@ var app = (function () {
     			t = space();
     			if_block1.c();
     			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1no39p5");
-    			add_location(div, file$7, 113, 0, 2687);
+    			add_location(div, file$7, 112, 0, 2657);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -87369,7 +87426,6 @@ var app = (function () {
     			return i;
     		});
 
-    		console.log("files", files);
     		$$invalidate(1, msg = $_("loading-configuration"));
     		$$invalidate(2, book = await bookFromFiles(files));
 

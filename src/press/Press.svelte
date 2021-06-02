@@ -59,7 +59,6 @@
 			i.filepath = i.webkitRelativePath
 			return i
 		})
-		console.log("files", files)
 
 		msg = $_("loading-configuration")
 		book = await bookFromFiles(files)

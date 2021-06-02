@@ -17,7 +17,7 @@
 <body>
 	<div class="container">
 		<section class="section">
-			<div class="columns is-vcentered">
+			<div class="columns is-vcentered is-one-third">
 				<div class="column">
 
 					<figure class="image">
@@ -28,32 +28,39 @@
 						/>
 					</figure>
 					<div class="p-4 flex has-text-centered">
+            {{#if book.config.author.photo}}
 						<figure class="image is-32x32 flex-shrink-0 is-inline-block">
 							<img
 							class="is-rounded"
-							src="http://placekitten.com/32/32"
-							alt="{{book.config.metadata.title}}"
+							src="{{book.config.author.photo}}"
+							alt="{{book.config.author.name}}"
 							/>
 						</figure>
+            {{/if}}
 
-						<span>{{book.config.metadata.author}}</span>
+						<span>{{book.config.author.name}}</span>
 					</div>
 				</div>
 				<div class="column has-text-centered">
 					<h1 class="title is-2">
 						{{book.config.metadata.title}}
 					</h1>
+          {{#if book.config.metadata.subtitle}}
 					<h2 class="subtitle is-4">
-						Let this cover page describe a product or service.
+						{{book.config.metadata.subtitle}}
 					</h2>
+          {{/if}}
 					<br>
 					<p class="has-text-centered">
 						<a class="button m-2 is-medium is-info is-outlined">
-							Download The Book
+							{{book.config.site.actions.download}}
 						</a>
 						<a class="button m-2 is-medium is-info is-outlined">
-							Read It Online
+							{{book.config.site.actions.read}}
 						</a>
+            <a class="button m-2 is-medium is-info is-outlined">
+              {{book.config.site.actions.toc}}
+            </a>
 					</p>
 				</div>
 			</div>
@@ -75,23 +82,35 @@
 		</div>
 	</div>
 </section>
+{{#if book.config.site.blurb}}
 <section class="section content has-background-link-light has-text-black-bis">
 	<h4 class="title is-4 has-text-centered">
-		About the Book
+		{{book.config.site.labels.about-book}}
 	</h4>
-	{{{book.config.site.description}}}
+	{{{book.config.site.blurb}}}
 </section>
+{{/if}}
+{{#if book.config.author.bio}}
 <section class="section content">
   <h4 class="title is-4 has-text-centered">
-    About the Author
+    {{book.config.site.labels.about-author}}
   </h4>
   {{{book.config.author.bio}}}
 </section>
+{{/if}}
 <section class="section content">
   <h4 class="title is-4 has-text-centered">
-    Table of Contents
+    {{book.config.site.labels.toc}}
   </h4>
-  {{{toc}}}
+  <ol class='toc no-parts'>
+  {{#each spine as | s | }}
+    {{#each s.toc as | t | }}
+    <li>
+        <a href="book/{{t.file}}#{{t.id}}">{{t.text}}</a>
+    </li>
+    {{/each}}
+  {{/each}}
+  </ol>
 </section>
 </div>
 </body>

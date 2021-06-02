@@ -1,10 +1,14 @@
 [metadata]
 title = "Moby-Dick, or, The Whale"
-author = "Herman Melville"
-publisher = "Project Gutenberg"
 date = 2019-08-08T12:00:00Z
 identifier = "http://www.gutenberg.org/ebooks/2701"
 cover = "images/cover.jpg"
+
+[author]
+name = "Herman Melville"
+
+[publisher]
+publisher = "Project Gutenberg"
 
 [site]
 enabled = true

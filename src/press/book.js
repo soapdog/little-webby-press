@@ -3,9 +3,9 @@ import yaml  from "js-yaml"
 import _ from "lodash"
 
 let configurationFiles = [
-	"book.toml",
-	"book.yaml",
-	"book.json",
+  "book.toml",
+  "book.yaml",
+  "book.json",
 ]
 
 /**
@@ -15,14 +15,14 @@ let configurationFiles = [
  * Certain properties will be either `false` or have a string.
  */
 export const defaultBookConfiguration = {
-	metadata: {
-		title: "Untitled",
+  metadata: {
+    title: "Untitled",
     subtitle: false,
-		date: new Date(),
-		identifier: false,
+    date: new Date(),
+    identifier: false,
     cover: false,
     language: "en"
-	},
+  },
   publisher: {
     name: false,
     bio: false,
@@ -30,11 +30,12 @@ export const defaultBookConfiguration = {
   },
   author: {
     name: false,
+    photo: false,
     bio: false,
     links: []
   },
-	site: {
-		enabled: false,
+  site: {
+    enabled: false,
     theme: "generic",
     frontmatter: [],
     chapters: [],
@@ -50,69 +51,69 @@ export const defaultBookConfiguration = {
       "about-author": "About The Author",
       "toc": "Table Of Contents"
     }
-	},
-	webmonetization: {
-		enabled: false,
-		endpoint: false,
+  },
+  webmonetization: {
+    enabled: false,
+    endpoint: false,
     frontmatter: [],
     chapters: [],
     backmatter: []
-	},
-	toc: {
-		prefix: false,
-		label: "h1",
-		match: "all"
-	},
-	book: {
-		enabled: false,
-		theme: "generic",
-		frontmatter: [],
-		chapters: [],
-		backmatter: []
-	}
+  },
+  toc: {
+    prefix: false,
+    label: "h1",
+    match: "all"
+  },
+  book: {
+    enabled: false,
+    theme: "generic",
+    frontmatter: [],
+    chapters: [],
+    backmatter: []
+  }
 }
 
 export default class Book {
-	constructor(config, files) {
-		this.config = config
-		this.files = files
-	}
+  constructor(config, files) {
+    this.config = config
+    this.files = files
+  }
 }
 
 export async function bookFromFiles(files) {
-	let conf = files.filter((file) => {
-		return configurationFiles.includes(file.name.toLowerCase())
-	})[0]
+  let conf = files.filter((file) => {
+    return configurationFiles.includes(file.name.toLowerCase())
+  })[0]
 
-	if (conf) {
-		let rootFolder = conf.filepath.split("/").reverse()
-		rootFolder.shift()
-		rootFolder.reverse().join("/")
+  if (conf) {
+    let rootFolder = conf.filepath.split("/").reverse()
+    rootFolder.shift()
+    rootFolder.reverse().join("/")
 
-		files = files.map((f) => {
-			f.filepath = f.filepath.replace(`${rootFolder}/`, "")
-			return f
-		})
+    files = files.map((f) => {
+      f.filepath = f.filepath.replace(`${rootFolder}/`, "")
+      return f
+    })
 
-		let config = {}
-		let ext = conf.filepath.split(".").reverse()[0]
-		switch (ext) {
-			case "toml":
-				config = toml.parse(await conf.text())
-				break
-			case "json":
-				config = JSON.parse(await conf.text())
-				break
-			case "yaml":
-				config = yaml.load(await conf.text())
-				break
-			default:
-				return new Error("error-no-configuration")
-		}
+    let config = {}
+    let ext = conf.filepath.split(".").reverse()[0]
+    switch (ext) {
+      case "toml":
+        config = toml.parse(await conf.text())
+        break
+      case "json":
+        config = JSON.parse(await conf.text())
+        break
+      case "yaml":
+        config = yaml.load(await conf.text())
+        break
+      default:
+        return new Error("error-no-configuration")
+    }
 
-		let book = new Book(_.defaultsDeep(config, defaultBookConfiguration), files)
-		return book
-	} else {
-		return new Error("error-no-configuration")
-	}
+    let book = new Book(_.defaultsDeep(config, defaultBookConfiguration), files)
+    return book
+  } else {
+    return new Error("error-no-configuration")
+  }
 }
