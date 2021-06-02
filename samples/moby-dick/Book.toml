@@ -6,6 +6,9 @@ cover = "images/cover.jpg"
 
 [author]
 name = "Herman Melville"
+bio = """
+Herman Melville, (born August 1, 1819, New York City—died September 28, 1891, New York City), American novelist, short-story writer, and poet, best known for his novels of the sea, including his masterpiece, Moby Dick (1851).
+"""
 
 [publisher]
 publisher = "Project Gutenberg"

@@ -1,3 +1,5 @@
+import BrowserFS from "browserfs"
+
 import saveAs from "file-saver"
 import slugify from "slugify"
 import {
@@ -97,7 +99,7 @@ function isBackmatter(book, file) {
 
 export function generateSite(book) {
   // Sit back, relax, and enjoy the waterfall...
-  console.log("Generate site", book)
+  console.time("Generating site")
   return new Promise((resolve, reject) => {
     let bookSlug = slugify(book.config.metadata.title)
     let fs = require("fs")
@@ -138,15 +140,22 @@ export function generateSite(book) {
 
     let contentFiles = contentFilesFromConfiguration(book)
 
+    let chapterTemplateHBS = fs.readFileSync(
+      themePathFor("chapter.hbs"),
+      "utf8"
+    )
+    let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
+
     let fp = contentFiles.map(async (chapterFilename) => {
       let file = book.files.filter((f) => f.name === chapterFilename)[0]
       let contentMarkdown = await file.text()
       let contentHtml = md.render(contentMarkdown)
       contentHtml = fix(contentHtml)
-      let destinationFilename = chapterFilename.replace(".md", ".xhtml")
+      let destinationFilename = chapterFilename.replace(".md", ".html")
       let destination = `${siteFolder}/book/${destinationFilename}`
-      //let data = chapterTemplate({ html: contentHtml })
-      //fs.writeFileSync(destination, data)
+      let data = chapterTemplate({ html: contentHtml })
+      ensureFolders(destination)
+      fs.writeFileSync(destination, data)
 
       // due to the async nature of this code, the ToC won't ready until
       // all promises complete.
@@ -186,9 +195,17 @@ export function generateSite(book) {
       addToZip(zip, `${bookSlug}-site`, siteFolder)
       zip.generateAsync({ type: "blob" }).then(
         function (blob) {
-          saveAs(blob, `${bookSlug}-site.zip`)
-          staticSiteGenerating.set(false)
-          resolve()
+          // saveAs(blob, `${bookSlug}-site.zip`)
+          // staticSiteGenerating.set(false)
+          // console.timeEnd("Generating site")
+          // resolve()
+          blob.arrayBuffer().then((siteBuffer) => {
+            let Buffer = BrowserFS.BFSRequire("buffer").Buffer
+            fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer))
+            staticSiteGenerating.set(false)
+            console.timeEnd("Generating eBook")
+            resolve()
+          })
         },
         function (err) {
           staticSiteGenerating.set(false)

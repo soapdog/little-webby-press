@@ -4,6 +4,8 @@
 	import TabOptions from "./TabOptions.svelte"
 	import TabMetadata from "./TabMetadata.svelte"
 	import TabProducts from "./TabProducts.svelte"
+  import { ebookEpub3Generating, staticSiteGenerating} from "./stores.js"
+
 
 	export let book
 
@@ -15,6 +17,18 @@
 	}
 
 	let currentView = "options"
+
+  ebookEpub3Generating.subscribe(v => {
+    if (v) {
+      currentView = "products"
+    }
+  })
+
+  staticSiteGenerating.subscribe(v => {
+    if (v) {
+      currentView = "products"
+    }
+  })
 </script>
 
 <style>
@@ -25,26 +39,26 @@
 	<ul class="flex">
 		<li
 			class="nav-pill"
-			class:nav-pill-active={currentView == 'options'}
-			on:click|preventDefault={() => (currentView = 'options')}>
+			class:nav-pill-active={currentView == "options"}
+			on:click|preventDefault={() => (currentView = "options")}>
 			<span>{$_("options")}</span>
 		</li>
 		<li
 			class="nav-pill"
-			class:nav-pill-active={currentView == 'metadata'}
-			on:click|preventDefault={() => (currentView = 'metadata')}>
+			class:nav-pill-active={currentView == "metadata"}
+			on:click|preventDefault={() => (currentView = "metadata")}>
 			<span>{$_("metadata")}</span>
 		</li>
 		<li
 			class="nav-pill"
-			class:nav-pill-active={currentView == 'manuscript'}
-			on:click|preventDefault={() => (currentView = 'manuscript')}>
+			class:nav-pill-active={currentView == "manuscript"}
+			on:click|preventDefault={() => (currentView = "manuscript")}>
 			<span>{$_("manuscript")}</span>
 		</li>
 		<li
 		class="nav-pill"
-		class:nav-pill-active={currentView == 'products'}
-		on:click|preventDefault={() => (currentView = 'products')}>
+		class:nav-pill-active={currentView == "products"}
+		on:click|preventDefault={() => (currentView = "products")}>
 		<span>{$_("products")}</span>
 	</li>
 	</ul>

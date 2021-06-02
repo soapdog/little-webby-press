@@ -23563,8 +23563,8 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$4 = "src/press/TabProducts.svelte";
 
-    // (33:3) {:else}
-    function create_else_block$2(ctx) {
+    // (49:6) {:else}
+    function create_else_block_1$1(ctx) {
     	let span;
     	let t;
     	let i;
@@ -23574,11 +23574,12 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			span = element("span");
-    			t = text("Generic ePub3 eBook ");
+    			t = text("Generic ePub3 eBook\n        ");
     			i = element("i");
     			attr_dev(i, "class", "fas fa-download fa-lg");
-    			add_location(i, file$4, 33, 26, 917);
-    			add_location(span, file$4, 32, 10, 853);
+    			add_location(i, file$4, 51, 8, 1356);
+    			attr_dev(span, "class", "cursor-pointer");
+    			add_location(span, file$4, 49, 6, 1256);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -23586,7 +23587,7 @@ var app = (function () {
     			append_dev(span, i);
 
     			if (!mounted) {
-    				dispose = listen_dev(span, "click", /*downloadGenericEpub3*/ ctx[2], false, false, false);
+    				dispose = listen_dev(span, "click", /*downloadGenericEpub3*/ ctx[3], false, false, false);
     				mounted = true;
     			}
     		},
@@ -23600,17 +23601,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$2.name,
+    		id: create_else_block_1$1.name,
     		type: "else",
-    		source: "(33:3) {:else}",
+    		source: "(49:6) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (29:3) {#if $ebookEpub3Generating}
-    function create_if_block$2(ctx) {
+    // (44:6) {#if $ebookEpub3Generating}
+    function create_if_block_1$1(ctx) {
     	let span;
     	let i;
     	let t0;
@@ -23624,8 +23625,8 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$4, 30, 6, 764);
-    			add_location(span, file$4, 29, 4, 752);
+    			add_location(i, file$4, 45, 8, 1147);
+    			add_location(span, file$4, 44, 6, 1132);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -23643,9 +23644,99 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
+    		id: create_if_block_1$1.name,
+    		type: "if",
+    		source: "(44:6) {#if $ebookEpub3Generating}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (63:6) {:else}
+    function create_else_block$2(ctx) {
+    	let span;
+    	let t;
+    	let i;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			t = text("Static Site\n        ");
+    			i = element("i");
+    			attr_dev(i, "class", "fas fa-download fa-lg");
+    			add_location(i, file$4, 65, 8, 1770);
+    			attr_dev(span, "class", "cursor-pointer");
+    			add_location(span, file$4, 63, 6, 1686);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, t);
+    			append_dev(span, i);
+
+    			if (!mounted) {
+    				dispose = listen_dev(span, "click", /*downloadSite*/ ctx[4], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block$2.name,
+    		type: "else",
+    		source: "(63:6) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (58:6) {#if $staticSiteGenerating}
+    function create_if_block$2(ctx) {
+    	let span;
+    	let i;
+    	let t0;
+    	let t1_value = /*$_*/ ctx[1]("generating-site") + "";
+    	let t1;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			i = element("i");
+    			t0 = space();
+    			t1 = text(t1_value);
+    			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
+    			add_location(i, file$4, 59, 8, 1577);
+    			add_location(span, file$4, 58, 6, 1562);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, i);
+    			append_dev(span, t0);
+    			append_dev(span, t1);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$_*/ 2 && t1_value !== (t1_value = /*$_*/ ctx[1]("generating-site") + "")) set_data_dev(t1, t1_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(29:3) {#if $ebookEpub3Generating}",
+    		source: "(58:6) {#if $staticSiteGenerating}",
     		ctx
     	});
 
@@ -23662,15 +23753,22 @@ var app = (function () {
     	let div1;
     	let label1;
     	let t4;
-    	let span;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*$ebookEpub3Generating*/ ctx[0]) return create_if_block$2;
-    		return create_else_block$2;
+    		if (/*$ebookEpub3Generating*/ ctx[0]) return create_if_block_1$1;
+    		return create_else_block_1$1;
     	}
 
     	let current_block_type = select_block_type(ctx);
-    	let if_block = current_block_type(ctx);
+    	let if_block0 = current_block_type(ctx);
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*$staticSiteGenerating*/ ctx[2]) return create_if_block$2;
+    		return create_else_block$2;
+    	}
+
+    	let current_block_type_1 = select_block_type_1(ctx);
+    	let if_block1 = current_block_type_1(ctx);
 
     	const block = {
     		c: function create() {
@@ -23680,29 +23778,27 @@ var app = (function () {
     			label0 = element("label");
     			label0.textContent = "eBook";
     			t1 = space();
-    			if_block.c();
+    			if_block0.c();
     			t2 = space();
     			div1 = element("div");
     			label1 = element("label");
     			label1.textContent = "Site";
     			t4 = space();
-    			span = element("span");
-    			span.textContent = "Static Website";
+    			if_block1.c();
     			attr_dev(label0, "class", "form-label");
     			attr_dev(label0, "for", "book-title");
-    			add_location(label0, file$4, 27, 3, 660);
+    			add_location(label0, file$4, 42, 6, 1035);
     			attr_dev(div0, "class", "mb-3 flex-1");
-    			add_location(div0, file$4, 26, 2, 631);
+    			add_location(div0, file$4, 41, 4, 1003);
     			attr_dev(label1, "class", "form-label");
     			attr_dev(label1, "for", "author-name");
-    			add_location(label1, file$4, 37, 3, 1010);
-    			add_location(span, file$4, 38, 3, 1070);
+    			add_location(label1, file$4, 56, 6, 1465);
     			attr_dev(div1, "class", "mb-3 flex-1");
-    			add_location(div1, file$4, 36, 2, 981);
+    			add_location(div1, file$4, 55, 4, 1433);
     			attr_dev(div2, "class", "flex flex-row");
-    			add_location(div2, file$4, 25, 1, 601);
+    			add_location(div2, file$4, 40, 2, 971);
     			attr_dev(div3, "class", "card mb-6");
-    			add_location(div3, file$4, 24, 0, 576);
+    			add_location(div3, file$4, 39, 0, 945);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -23713,23 +23809,35 @@ var app = (function () {
     			append_dev(div2, div0);
     			append_dev(div0, label0);
     			append_dev(div0, t1);
-    			if_block.m(div0, null);
+    			if_block0.m(div0, null);
     			append_dev(div2, t2);
     			append_dev(div2, div1);
     			append_dev(div1, label1);
     			append_dev(div1, t4);
-    			append_dev(div1, span);
+    			if_block1.m(div1, null);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
-    				if_block.p(ctx, dirty);
+    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block0) {
+    				if_block0.p(ctx, dirty);
     			} else {
-    				if_block.d(1);
-    				if_block = current_block_type(ctx);
+    				if_block0.d(1);
+    				if_block0 = current_block_type(ctx);
 
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(div0, null);
+    				if (if_block0) {
+    					if_block0.c();
+    					if_block0.m(div0, null);
+    				}
+    			}
+
+    			if (current_block_type_1 === (current_block_type_1 = select_block_type_1(ctx)) && if_block1) {
+    				if_block1.p(ctx, dirty);
+    			} else {
+    				if_block1.d(1);
+    				if_block1 = current_block_type_1(ctx);
+
+    				if (if_block1) {
+    					if_block1.c();
+    					if_block1.m(div1, null);
     				}
     			}
     		},
@@ -23737,7 +23845,8 @@ var app = (function () {
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div3);
-    			if_block.d();
+    			if_block0.d();
+    			if_block1.d();
     		}
     	};
 
@@ -23755,10 +23864,13 @@ var app = (function () {
     function instance$4($$self, $$props, $$invalidate) {
     	let $ebookEpub3Generating;
     	let $_;
+    	let $staticSiteGenerating;
     	validate_store(ebookEpub3Generating, "ebookEpub3Generating");
     	component_subscribe($$self, ebookEpub3Generating, $$value => $$invalidate(0, $ebookEpub3Generating = $$value));
     	validate_store(ne, "_");
     	component_subscribe($$self, ne, $$value => $$invalidate(1, $_ = $$value));
+    	validate_store(staticSiteGenerating, "staticSiteGenerating");
+    	component_subscribe($$self, staticSiteGenerating, $$value => $$invalidate(2, $staticSiteGenerating = $$value));
     	let fs = require("fs");
     	let { book } = $$props;
     	let bookSlug = slugify(book.config.metadata.title);
@@ -23775,6 +23887,18 @@ var app = (function () {
     		}
     	};
 
+    	const downloadSite = () => {
+    		let path = `/sites/${bookSlug}-site.zip`;
+
+    		if (fs.existsSync(path)) {
+    			let data = fs.readFileSync(path);
+    			let f = new File([data.buffer], `${bookSlug}-site.zip`, { type: "application/zip" });
+    			FileSaver_min(f);
+    		} else {
+    			console.log("404", path);
+    		}
+    	};
+
     	const writable_props = ["book"];
 
     	Object.keys($$props).forEach(key => {
@@ -23785,7 +23909,7 @@ var app = (function () {
     	validate_slots("TabProducts", $$slots, []);
 
     	$$self.$set = $$props => {
-    		if ("book" in $$props) $$invalidate(3, book = $$props.book);
+    		if ("book" in $$props) $$invalidate(5, book = $$props.book);
     	};
 
     	$$self.$capture_state = () => ({
@@ -23798,13 +23922,15 @@ var app = (function () {
     		book,
     		bookSlug,
     		downloadGenericEpub3,
+    		downloadSite,
     		$ebookEpub3Generating,
-    		$_
+    		$_,
+    		$staticSiteGenerating
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("fs" in $$props) fs = $$props.fs;
-    		if ("book" in $$props) $$invalidate(3, book = $$props.book);
+    		if ("book" in $$props) $$invalidate(5, book = $$props.book);
     		if ("bookSlug" in $$props) bookSlug = $$props.bookSlug;
     	};
 
@@ -23812,13 +23938,20 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [$ebookEpub3Generating, $_, downloadGenericEpub3, book];
+    	return [
+    		$ebookEpub3Generating,
+    		$_,
+    		$staticSiteGenerating,
+    		downloadGenericEpub3,
+    		downloadSite,
+    		book
+    	];
     }
 
     class TabProducts extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$4, create_fragment$4, safe_not_equal, { book: 3 });
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, { book: 5 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -23830,7 +23963,7 @@ var app = (function () {
     		const { ctx } = this.$$;
     		const props = options.props || {};
 
-    		if (/*book*/ ctx[3] === undefined && !("book" in props)) {
+    		if (/*book*/ ctx[5] === undefined && !("book" in props)) {
     			console_1.warn("<TabProducts> was created without expected prop 'book'");
     		}
     	}
@@ -23910,28 +24043,28 @@ var app = (function () {
     			t7 = space();
     			div0 = element("div");
     			if (switch_instance) create_component(switch_instance.$$.fragment);
-    			add_location(span0, file$5, 29, 3, 633);
+    			add_location(span0, file$5, 43, 3, 900);
     			attr_dev(li0, "class", "nav-pill");
     			toggle_class(li0, "nav-pill-active", /*currentView*/ ctx[1] == "options");
-    			add_location(li0, file$5, 25, 2, 492);
-    			add_location(span1, file$5, 35, 3, 815);
+    			add_location(li0, file$5, 39, 2, 759);
+    			add_location(span1, file$5, 49, 3, 1082);
     			attr_dev(li1, "class", "nav-pill");
     			toggle_class(li1, "nav-pill-active", /*currentView*/ ctx[1] == "metadata");
-    			add_location(li1, file$5, 31, 2, 672);
-    			add_location(span2, file$5, 41, 3, 1002);
+    			add_location(li1, file$5, 45, 2, 939);
+    			add_location(span2, file$5, 55, 3, 1269);
     			attr_dev(li2, "class", "nav-pill");
     			toggle_class(li2, "nav-pill-active", /*currentView*/ ctx[1] == "manuscript");
-    			add_location(li2, file$5, 37, 2, 855);
-    			add_location(span3, file$5, 47, 2, 1183);
+    			add_location(li2, file$5, 51, 2, 1122);
+    			add_location(span3, file$5, 61, 2, 1450);
     			attr_dev(li3, "class", "nav-pill");
     			toggle_class(li3, "nav-pill-active", /*currentView*/ ctx[1] == "products");
-    			add_location(li3, file$5, 43, 2, 1044);
+    			add_location(li3, file$5, 57, 2, 1311);
     			attr_dev(ul, "class", "flex");
-    			add_location(ul, file$5, 24, 1, 472);
+    			add_location(ul, file$5, 38, 1, 739);
     			attr_dev(div0, "class", "columns tab");
-    			add_location(div0, file$5, 50, 1, 1228);
+    			add_location(div0, file$5, 64, 1, 1495);
     			attr_dev(div1, "class", "container mx-auto m-4 ");
-    			add_location(div1, file$5, 23, 0, 434);
+    			add_location(div1, file$5, 37, 0, 701);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -24068,6 +24201,19 @@ var app = (function () {
     	};
 
     	let currentView = "options";
+
+    	ebookEpub3Generating.subscribe(v => {
+    		if (v) {
+    			$$invalidate(1, currentView = "products");
+    		}
+    	});
+
+    	staticSiteGenerating.subscribe(v => {
+    		if (v) {
+    			$$invalidate(1, currentView = "products");
+    		}
+    	});
+
     	const writable_props = ["book"];
 
     	Object.keys($$props).forEach(key => {
@@ -24091,6 +24237,8 @@ var app = (function () {
     		TabOptions,
     		TabMetadata,
     		TabProducts,
+    		ebookEpub3Generating,
+    		staticSiteGenerating,
     		book,
     		views,
     		currentView,
@@ -24152,7 +24300,7 @@ var app = (function () {
     const file$6 = "src/press/TabsActions.svelte";
 
     // (23:3) {:else}
-    function create_else_block_1$1(ctx) {
+    function create_else_block_1$2(ctx) {
     	let t_value = /*$_*/ ctx[1]("action-generate-ebook") + "";
     	let t;
 
@@ -24173,7 +24321,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$1.name,
+    		id: create_else_block_1$2.name,
     		type: "else",
     		source: "(23:3) {:else}",
     		ctx
@@ -24183,7 +24331,7 @@ var app = (function () {
     }
 
     // (20:3) {#if $ebookEpub3Generating}
-    function create_if_block_1$1(ctx) {
+    function create_if_block_1$2(ctx) {
     	let i;
     	let t0;
     	let t1_value = /*$_*/ ctx[1]("generating-book") + "";
@@ -24214,7 +24362,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$1.name,
+    		id: create_if_block_1$2.name,
     		type: "if",
     		source: "(20:3) {#if $ebookEpub3Generating}",
     		ctx
@@ -24305,8 +24453,8 @@ var app = (function () {
     	let dispose;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*$ebookEpub3Generating*/ ctx[0]) return create_if_block_1$1;
-    		return create_else_block_1$1;
+    		if (/*$ebookEpub3Generating*/ ctx[0]) return create_if_block_1$2;
+    		return create_else_block_1$2;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -86641,7 +86789,7 @@ var app = (function () {
 
     function generateSite(book) {
       // Sit back, relax, and enjoy the waterfall...
-      console.log("Generate site", book);
+      console.time("Generating site");
       return new Promise((resolve, reject) => {
         let bookSlug = slugify(book.config.metadata.title);
         let fs = require("fs");
@@ -86682,14 +86830,22 @@ var app = (function () {
 
         let contentFiles = contentFilesFromConfiguration(book);
 
+        let chapterTemplateHBS = fs.readFileSync(
+          themePathFor$1("chapter.hbs"),
+          "utf8"
+        );
+        let chapterTemplate = lib$1.compile(chapterTemplateHBS);
+
         let fp = contentFiles.map(async (chapterFilename) => {
           let file = book.files.filter((f) => f.name === chapterFilename)[0];
           let contentMarkdown = await file.text();
           let contentHtml = md$1.render(contentMarkdown);
           contentHtml = fix(contentHtml);
-          let destinationFilename = chapterFilename.replace(".md", ".xhtml");
-          //let data = chapterTemplate({ html: contentHtml })
-          //fs.writeFileSync(destination, data)
+          let destinationFilename = chapterFilename.replace(".md", ".html");
+          let destination = `${siteFolder}/book/${destinationFilename}`;
+          let data = chapterTemplate({ html: contentHtml });
+          ensureFolders(destination);
+          fs.writeFileSync(destination, data);
 
           // due to the async nature of this code, the ToC won't ready until
           // all promises complete.
@@ -86729,9 +86885,17 @@ var app = (function () {
           addToZip(zip, `${bookSlug}-site`, siteFolder);
           zip.generateAsync({ type: "blob" }).then(
             function (blob) {
-              FileSaver_min(blob, `${bookSlug}-site.zip`);
-              staticSiteGenerating.set(false);
-              resolve();
+              // saveAs(blob, `${bookSlug}-site.zip`)
+              // staticSiteGenerating.set(false)
+              // console.timeEnd("Generating site")
+              // resolve()
+              blob.arrayBuffer().then((siteBuffer) => {
+                let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
+                fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer));
+                staticSiteGenerating.set(false);
+                console.timeEnd("Generating eBook");
+                resolve();
+              });
             },
             function (err) {
               staticSiteGenerating.set(false);
@@ -86969,7 +87133,7 @@ var app = (function () {
     	let div;
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*stage*/ ctx[0] == "over") return create_if_block_1$2;
+    		if (/*stage*/ ctx[0] == "over") return create_if_block_1$3;
     		if (/*stage*/ ctx[0] == "waiting") return create_if_block_2$1;
     		if (/*stage*/ ctx[0] == "loading") return create_if_block_3$1;
     	}
@@ -87220,7 +87384,7 @@ var app = (function () {
     }
 
     // (157:3) {#if stage == "over"}
-    function create_if_block_1$2(ctx) {
+    function create_if_block_1$3(ctx) {
     	let div1;
     	let div0;
     	let i;
@@ -87263,7 +87427,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$2.name,
+    		id: create_if_block_1$3.name,
     		type: "if",
     		source: "(157:3) {#if stage == \\\"over\\\"}",
     		ctx
