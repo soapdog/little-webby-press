@@ -56,7 +56,7 @@
 		// That property is used by book.js.
 		// It's value is apparently the same as name.
 		files = files.map(i => {
-			i.filepath = i.name
+			i.filepath = i.webkitRelativePath
 			return i
 		})
 		console.log("files", files)

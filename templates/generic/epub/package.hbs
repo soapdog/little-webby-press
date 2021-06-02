@@ -3,16 +3,16 @@
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
     <dc:title dir="ltr" id="title">{{book.config.metadata.title}}</dc:title>
     <meta refines="#title" property="title-type">main</meta>
-    <dc:creator id="creator">{{book.config.metadata.author}}</dc:creator>
-    <meta refines="#creator" property="file-as">{{book.config.metadata.author}}</meta>
+    <dc:creator id="creator">{{book.config.author.name}}</dc:creator>
+    <meta refines="#creator" property="file-as">{{book.config.author.name}}</meta>
     <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
     {{#if book.config.metadata.language}}
     <dc:language>{{book.config.metadata.language}}</dc:language>
     {{else}}
     <dc:language>en</dc:language>
     {{/if}}
-    {{#if book.config.metadata.publisher}}
-    <dc:publisher>{{book.config.metadata.publisher}}</dc:publisher>
+    {{#if book.config.publisher.name}}
+    <dc:publisher>{{book.config.publisher.name}}</dc:publisher>
     {{/if}}
     <dc:identifier id="BookId">{{book.config.metadata.identifier}}</dc:identifier>
     <dc:date>{{dateModified book.config.metadata.date}}</dc:date>

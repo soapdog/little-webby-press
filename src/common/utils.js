@@ -1,7 +1,18 @@
+import slugify from "slugify"
+
 let conf = {
 	prefix: false,
 	label: "h1",
 	match: "all",
+}
+
+export function safeId(txt) {
+  let s = slugify(txt, {
+    remove: /[*+~.()'"!:@;,{}[]]-/g,
+    lower: true,
+    strict: true
+  })
+  return s
 }
 
 export function registerToCPrefix(prefix) {
@@ -28,7 +39,7 @@ export function extractToc(html, file) {
 			const labelEl = doc.querySelector(`${conf.prefix} + ${conf.label}`)
 			if (prefixEl && labelEl) {
 				label = `${prefixEl.innerText} ${labelEl.innerText}`
-				id = labelEl.id
+				id = safeId(labelEl.id)
 			}
 		} else {
 			const labelEl = doc.querySelector(`${conf.label}`)
@@ -38,7 +49,7 @@ export function extractToc(html, file) {
 				throw "error"
 			}
 			label = labelEl.innerText
-			id = labelEl.id
+			id = safeId(labelEl.id)
 		}
 
 		return [
@@ -57,7 +68,7 @@ export function extractToc(html, file) {
 		hs.forEach((h) => {
 			r.push({
 				file: file,
-				id: h.id,
+				id: safeId(h.id),
 				text: h.innerText,
 			})
 		})

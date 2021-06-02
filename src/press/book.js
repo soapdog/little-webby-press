@@ -8,23 +8,58 @@ let configurationFiles = [
 	"book.json",
 ]
 
+/**
+ * This is the defaulf book configuration object.
+ * Be aware that we change types depending on the content.
+ *
+ * Certain properties will be either `false` or have a string.
+ */
 export const defaultBookConfiguration = {
 	metadata: {
 		title: "Untitled",
-		author: "Unnamed Author",
-		publisher: "",
+    subtitle: false,
 		date: new Date(),
-		identifier: "",
+		identifier: false,
+    cover: false,
+    language: "en"
 	},
+  publisher: {
+    name: false,
+    bio: false,
+    links: []
+  },
+  author: {
+    name: false,
+    bio: false,
+    links: []
+  },
 	site: {
 		enabled: false,
+    theme: "generic",
+    frontmatter: [],
+    chapters: [],
+    backmatter: [],
+    blurb: false,
+    actions: {
+      "download": "Download the eBook",
+      "read": "Free To Read Online",
+      "toc": "Table Of Contents"
+    },
+    labels: {
+      "about-book": "About The Book",
+      "about-author": "About The Author",
+      "toc": "Table Of Contents"
+    }
 	},
 	webmonetization: {
 		enabled: false,
-		endpoint: "",
+		endpoint: false,
+    frontmatter: [],
+    chapters: [],
+    backmatter: []
 	},
 	toc: {
-		prefix: "",
+		prefix: false,
 		label: "h1",
 		match: "all"
 	},

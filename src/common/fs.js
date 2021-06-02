@@ -5,7 +5,29 @@ Documentation for BrowserFS: https://jvilk.com/browserfs/
 import BrowserFS from "browserfs"
 
 
+/**
+ * When the time comes to implement mutable themes, use this:
+ *
 
+var Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+BrowserFS.configure({
+  fs: "OverlayFS",
+  options: {
+    readable: {
+      fs: "ZipFS",
+      options: {
+        zipData: Buffer.from(zipDataAsArrayBuffer)
+      }
+    },
+    writable: {
+      fs: "LocalStorage"
+    }
+  }
+}, function(e) {
+
+});
+
+ */
 export function initializeFilesystem() {
     return new Promise((resolve, reject) => {
         fetch("templates.zip").then(function (response) {
@@ -105,6 +127,7 @@ export function copyImages(book, destination) {
 		return false
 	});
 
+  console.log("copy images", files)
 	let fps = files.map(async f => {
 		let file = f.filepath
 		let data = await f.arrayBuffer()

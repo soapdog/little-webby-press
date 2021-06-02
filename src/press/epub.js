@@ -1,6 +1,5 @@
 import BrowserFS from "browserfs"
 
-// markdown & plugins
 import MarkdownIt from "markdown-it"
 import MarkdownFootnote from "markdown-it-footnote"
 import MarkdownAnchor from "markdown-it-anchor"
@@ -23,30 +22,26 @@ import {
 	registerToCLabel,
 	registerToCMatchRules,
 	registerToCPrefix,
+  safeId
 } from "../common/utils.js"
-
 import Handlebars from "handlebars"
 import JSZip from "jszip"
 import { ebookEpub3Generating} from "./stores.js"
 
-
-// DEFAULT OPTIONS
 let md = new MarkdownIt({
 	xhtmlOut: true,
 	linkify: true,
 	typographer: true,
 })
 	.use(MarkdownFootnote)
-	.use(MarkdownAnchor, { slugify })
+	.use(MarkdownAnchor, { slugify: safeId })
 	.use(MarkdownBracketedSpans)
 	.use(MarkdownAttrs)
 	.use(MarkdownImplicitFigues, { figcaption: true })
 	.use(MarkdownEmoji)
 	.use(MarkdownCenterText)
 
-// IMPLEMENTATION
-
-let currentTheme = "generic"
+let currentTheme = "generic" // default theme, same as in the defaultBookConfiguration.
 
 function setTheme(theme) {
 	currentTheme = theme
@@ -62,7 +57,9 @@ function themePathFor(file) {
 
 export function generateEpub(book) {
 	// Sit back, relax, and enjoy the waterfall...
-	console.log("Generate book", book)
+	console.time("Generating eBook")
+  console.log("Book configuration", book)
+
 	return new Promise((resolve, reject) => {
 		let bookSlug = slugify(book.config.metadata.title) 
 		let fs = require("fs")
@@ -211,6 +208,7 @@ export function generateEpub(book) {
 						fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer))
 						// saveAs(epubBlob, `${bookSlug}.epub`)
 						ebookEpub3Generating.set(false)
+            console.timeEnd("Generating eBook")
 						resolve()
 					})
 				},

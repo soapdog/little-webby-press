@@ -10,6 +10,7 @@
 	.cover { 
 		max-width: 350px; 
 		margin: auto;
+		border:  solid 1px;
 	}
 	</style>
 </head>
@@ -76,9 +77,21 @@
 </section>
 <section class="section content has-background-link-light has-text-black-bis">
 	<h4 class="title is-4 has-text-centered">
-		{{book.config.metadata.title}}
+		About the Book
 	</h4>
 	{{{book.config.site.description}}}
+</section>
+<section class="section content">
+  <h4 class="title is-4 has-text-centered">
+    About the Author
+  </h4>
+  {{{book.config.author.bio}}}
+</section>
+<section class="section content">
+  <h4 class="title is-4 has-text-centered">
+    Table of Contents
+  </h4>
+  {{{toc}}}
 </section>
 </div>
 </body>

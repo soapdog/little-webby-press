@@ -6,7 +6,7 @@ let tocIndexValue = 0
 
 // TEMPLATE HELPERS
 Handlebars.registerHelper("dateModified", function (context, _block) {
-	return  new Date(context).toISOString()
+	return  new Date(context).toISOString().slice(0,-5) + "Z"
 })
 
 Handlebars.registerHelper("tocStartAt", function (v) {
@@ -14,8 +14,7 @@ Handlebars.registerHelper("tocStartAt", function (v) {
 })
 
 Handlebars.registerHelper("tocNextValue", function () {
-	tocIndexValue++
-	return tocIndexValue
+	return tocIndexValue++
 })
 
 Handlebars.registerHelper("chapterTitle", function (context, _block) {
@@ -30,4 +29,8 @@ Handlebars.registerHelper("chapterTitle", function (context, _block) {
 
 Handlebars.registerHelper("mime", function (context, _block) {
 	return mime.getType(context)
+})
+
+Handlebars.registerHelper("withTocIndexSuffix", function (context, _block) {
+  return `${context}-${tocIndexValue}`
 })

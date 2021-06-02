@@ -89,7 +89,6 @@ export function generateSite(book) {
 
 		let fi = copyImages(book, `${siteFolder}`)
 
-
 		// Templating
 		if (book.config.site.description) {
 			book.config.site.description = md.render(book.config.site.description)
