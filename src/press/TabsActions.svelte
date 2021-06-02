@@ -15,7 +15,7 @@
 </script>
 
 <nav>
-	<div class="flex justify-center">
+	<div class="flex p-0">
 		<button class="btn btn-blue" disabled={$ebookEpub3Generating} on:click={generateBook}>
 			{#if $ebookEpub3Generating}
 				<i class="fas fa-spinner fa-lg fa-spin" />

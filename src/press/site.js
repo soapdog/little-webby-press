@@ -203,7 +203,7 @@ export function generateSite(book) {
             let Buffer = BrowserFS.BFSRequire("buffer").Buffer
             fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer))
             staticSiteGenerating.set(false)
-            console.timeEnd("Generating eBook")
+            console.timeEnd("Generating site")
             resolve()
           })
         },

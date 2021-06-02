@@ -1,12 +1,11 @@
 <script>
-	import lo from "lodash";
 	import { _ } from "svelte-i18n"
 
 	export let book;
 
-	let author = lo.get(book.config, "metadata.author", "");
-	let publisher = lo.get(book.config, "metadata.publisher", "");
-	let title = lo.get(book.config, "metadata.title", "");
+	let author = book.config.author.name || ""
+	let publisher = book.config.publisher.name || ""
+	let title = book.config.metadata.title || ""
 </script>
 
 <div class="card mb-6">

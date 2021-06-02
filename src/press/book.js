@@ -21,7 +21,8 @@ export const defaultBookConfiguration = {
     date: new Date(),
     identifier: false,
     cover: false,
-    language: "en"
+    language: "en",
+    license: false,
   },
   publisher: {
     name: false,

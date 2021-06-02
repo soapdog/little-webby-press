@@ -127,7 +127,6 @@ export function copyImages(book, destination) {
 		return false
 	});
 
-  console.log("copy images", files)
 	let fps = files.map(async f => {
 		let file = f.filepath
 		let data = await f.arrayBuffer()

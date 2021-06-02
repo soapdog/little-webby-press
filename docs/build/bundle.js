@@ -23349,24 +23349,24 @@ var app = (function () {
     			span2.textContent = `${/*publisher*/ ctx[2]}`;
     			attr_dev(label0, "class", "form-label");
     			attr_dev(label0, "for", "book-title");
-    			add_location(label0, file$3, 13, 2, 323);
-    			add_location(span0, file$3, 14, 2, 404);
+    			add_location(label0, file$3, 12, 2, 259);
+    			add_location(span0, file$3, 13, 2, 340);
     			attr_dev(div0, "class", "mb-3");
-    			add_location(div0, file$3, 12, 1, 302);
+    			add_location(div0, file$3, 11, 1, 238);
     			attr_dev(label1, "class", "form-label");
     			attr_dev(label1, "for", "author-name");
-    			add_location(label1, file$3, 17, 2, 455);
-    			add_location(span1, file$3, 18, 2, 538);
+    			add_location(label1, file$3, 16, 2, 391);
+    			add_location(span1, file$3, 17, 2, 474);
     			attr_dev(div1, "class", "mb-3");
-    			add_location(div1, file$3, 16, 1, 434);
+    			add_location(div1, file$3, 15, 1, 370);
     			attr_dev(label2, "class", "form-label");
     			attr_dev(label2, "for", "publisher-name");
-    			add_location(label2, file$3, 21, 2, 590);
-    			add_location(span2, file$3, 22, 2, 679);
+    			add_location(label2, file$3, 20, 2, 526);
+    			add_location(span2, file$3, 21, 2, 615);
     			attr_dev(div2, "class", "mb-3");
-    			add_location(div2, file$3, 20, 1, 569);
+    			add_location(div2, file$3, 19, 1, 505);
     			attr_dev(div3, "class", "card mb-6");
-    			add_location(div3, file$3, 11, 0, 277);
+    			add_location(div3, file$3, 10, 0, 213);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -23419,9 +23419,9 @@ var app = (function () {
     	validate_store(ne, "_");
     	component_subscribe($$self, ne, $$value => $$invalidate(0, $_ = $$value));
     	let { book } = $$props;
-    	let author = lodash.get(book.config, "metadata.author", "");
-    	let publisher = lodash.get(book.config, "metadata.publisher", "");
-    	let title = lodash.get(book.config, "metadata.title", "");
+    	let author = book.config.author.name || "";
+    	let publisher = book.config.publisher.name || "";
+    	let title = book.config.metadata.title || "";
     	const writable_props = ["book"];
 
     	Object.keys($$props).forEach(key => {
@@ -23435,15 +23435,7 @@ var app = (function () {
     		if ("book" in $$props) $$invalidate(4, book = $$props.book);
     	};
 
-    	$$self.$capture_state = () => ({
-    		lo: lodash,
-    		_: ne,
-    		book,
-    		author,
-    		publisher,
-    		title,
-    		$_
-    	});
+    	$$self.$capture_state = () => ({ _: ne, book, author, publisher, title, $_ });
 
     	$$self.$inject_state = $$props => {
     		if ("book" in $$props) $$invalidate(4, book = $$props.book);
@@ -24343,7 +24335,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$6, 20, 4, 508);
+    			add_location(i, file$6, 20, 4, 497);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -24415,7 +24407,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$6, 27, 4, 761);
+    			add_location(i, file$6, 27, 4, 750);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -24479,11 +24471,11 @@ var app = (function () {
     			if_block1.c();
     			attr_dev(button0, "class", "btn btn-blue");
     			button0.disabled = /*$ebookEpub3Generating*/ ctx[0];
-    			add_location(button0, file$6, 18, 2, 386);
+    			add_location(button0, file$6, 18, 2, 375);
     			attr_dev(button1, "class", "btn btn-blue");
     			button1.disabled = /*$staticSiteGenerating*/ ctx[2];
-    			add_location(button1, file$6, 25, 2, 639);
-    			attr_dev(div, "class", "flex justify-center");
+    			add_location(button1, file$6, 25, 2, 628);
+    			attr_dev(div, "class", "flex p-0");
     			add_location(div, file$6, 17, 1, 350);
     			add_location(nav, file$6, 16, 0, 343);
     		},
@@ -32590,7 +32582,8 @@ var app = (function () {
         date: new Date(),
         identifier: false,
         cover: false,
-        language: "en"
+        language: "en",
+        license: false,
       },
       publisher: {
         name: false,
@@ -78047,7 +78040,6 @@ var app = (function () {
     		return false
     	});
 
-      console.log("copy images", files);
     	let fps = files.map(async f => {
     		let file = f.filepath;
     		let data = await f.arrayBuffer();
@@ -86893,7 +86885,7 @@ var app = (function () {
                 let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
                 fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer));
                 staticSiteGenerating.set(false);
-                console.timeEnd("Generating eBook");
+                console.timeEnd("Generating site");
                 resolve();
               });
             },
