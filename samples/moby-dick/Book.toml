@@ -11,7 +11,7 @@ Herman Melville, (born August 1, 1819, New York City—died September 28, 1891, 
 """
 
 [publisher]
-publisher = "Project Gutenberg"
+name = "Project Gutenberg"
 
 [site]
 enabled = true
@@ -28,8 +28,8 @@ Presented here is the New York edition, which was published later than the Londo
 
 
 [webmonetization]
-enabled = false
-endpoint = "$pay.stronghold.co/1a1669155784590234897abc53465de44"
+enabled = true
+endpoint = "$ilp.uphold.com/zdPRwAnyEkmM"
 
 [toc]
 prefix = "h3"

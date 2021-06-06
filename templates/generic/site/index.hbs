@@ -30,7 +30,7 @@
 					<figure class="image">
 						<img
 						class="cover"
-						src="{{book.config.metadata.cover}}"
+						src="book/{{book.config.metadata.cover}}"
 						alt="{{book.config.metadata.title}}"
 						/>
 					</figure>
@@ -39,7 +39,7 @@
 						<figure class="image is-32x32 flex-shrink-0 is-inline-block">
 							<img
 							class="is-rounded"
-							src="{{book.config.author.photo}}"
+							src="book/{{book.config.author.photo}}"
 							alt="{{book.config.author.name}}"
 							/>
 						</figure>
@@ -76,23 +76,36 @@
 </section>
 <section class="level has-background-grey-darker mb-0 p-4 has-text-info-light">
 		<div class="level-item has-text-centered">
-			<span>EPUB3</span>
+	    <div>
+        <p class="heading">{{book.config.site.labels.ereader-compatible}}</p>
+        <p class="title has-text-info-light">EPUB3</p>
+      </div>
 		</div>
 
 		<div class="level-item has-text-centered">
-			<span>Web</span>
+      <div>
+        <p class="heading">{{book.config.site.labels.read}}</p>
+        <p class="title has-text-info-light">Web</p>
+      </div>
 		</div>
 
+    {{#if book.config.webmonetization.enabled}}
 		<div class="level-item has-text-centered">
-			<span>WebMo</span>
+      <div>
+        <p class="heading">{{book.config.site.labels.support-with-webmo}}</p>
+        <p class="title has-text-info-light">WebMonetization</p>
+      </div>
 		</div>
+    {{/if}}
 </section>
 {{#if book.config.site.blurb}}
 <section class="section content has-background-link-light has-text-black-bis">
-	<h4 class="title is-4 has-text-centered">
+	<h4 class="title is-4 has-text-centered has-text-grey-dark">
 		{{book.config.site.labels.about-book}}
 	</h4>
-	{{{book.config.site.blurb}}}
+  <div class="add-space">
+  	{{{book.config.site.blurb}}}
+  </div>
 </section>
 {{/if}}
 {{#if book.config.author.bio}}
@@ -101,7 +114,19 @@
     {{book.config.site.labels.about-author}}
   </h4>
   <div class="add-space">
-  {{{book.config.author.bio}}}
+    <div class="avatar has-text-centered">
+      {{#if book.config.author.photo}}
+      <figure class="image is-64x64" style="margin: auto;">
+        <img class="is-rounded" src="book/{{book.config.author.photo}}">
+      </figure>
+      {{/if}}
+      <h5 class="subtitle">{{book.config.author.name}}</h5>
+      {{#each book.config.links as | link |}}
+      <a class="button is-link" target="_blank" href="{{link.url}}">{{link.label}}</a>
+      {{/each}}
+      <br>
+    </div>
+    <div class="p-4">{{{book.config.author.bio}}}</div>
   </div>
 </section>
 {{/if}}
