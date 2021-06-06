@@ -86513,6 +86513,22 @@ var app = (function () {
       return `${context}-${tocIndexValue}`
     });
 
+    lib$1.registerHelper("isLastChapter", function () {
+      return this.index === (this.spine.length - 1);
+    });
+
+    lib$1.registerHelper("isFirstChapter", function () {
+      return this.index === 0;
+    });
+
+    lib$1.registerHelper("nextChapterLink", function () {
+      return this.spine[this.index+1].toc[0].file
+    });
+
+    lib$1.registerHelper("previousChapterLink", function () {
+      return this.spine[this.index-1].toc[0].file
+    });
+
     var jszip_min = createCommonjsModule(function (module, exports) {
     /*!
 
@@ -86722,7 +86738,6 @@ var app = (function () {
     	})
     }
 
-    // DEFAULT OPTIONS
     let md$1 = new markdownIt({
       xhtmlOut: true,
       linkify: true,
@@ -86738,7 +86753,7 @@ var app = (function () {
 
     // IMPLEMENTATION
 
-    let currentTheme$1 = "generic";
+    let currentTheme$1 = "generic"; // matches default theme from Book() default configuration.
 
     function setTheme$1(theme) {
       currentTheme$1 = theme;
@@ -86769,14 +86784,6 @@ var app = (function () {
       let contentFiles = [...frontmatter, ...chapters, ...backmatter];
 
       return contentFiles
-    }
-
-    function isFrontmatter(book, file) {
-      let frontmatter =
-        book.config.site.frontmatter.length > 0
-          ? book.config.site.frontmatter
-          : book.config.book.frontmatter;
-      return frontmatter.includes(file)
     }
 
     function generateSite(book) {
@@ -86835,15 +86842,10 @@ var app = (function () {
           contentHtml = fix(contentHtml);
           let destinationFilename = chapterFilename.replace(".md", ".html");
           let destination = `${siteFolder}/book/${destinationFilename}`;
-          let data = chapterTemplate({ html: contentHtml });
-          ensureFolders(destination);
-          fs.writeFileSync(destination, data);
 
-          // due to the async nature of this code, the ToC won't ready until
-          // all promises complete.
-          if (!isFrontmatter(book, chapterFilename)) {
-            toc[destinationFilename] = extractToc(contentHtml, destinationFilename);
-          }
+          toc[destinationFilename] = extractToc(contentHtml, destinationFilename);
+          toc[destinationFilename].content = contentHtml;
+          toc[destinationFilename].destination = destination;
         });
 
         let spine = contentFiles.map((f) => {
@@ -86873,17 +86875,23 @@ var app = (function () {
           let contents = indexTemplate({ book, spine });
           fs.writeFileSync(`${siteFolder}/index.html`, contents);
 
+          // Chapters
+          spine.forEach((item, index) => {
+            let data = chapterTemplate({ book, spine, index, html: item.toc.content });
+            ensureFolders(item.toc.destination);
+            fs.writeFileSync(item.toc.destination, data);
+          });
+
           let zip = new jszip_min();
           addToZip(zip, `${bookSlug}-site`, siteFolder);
           zip.generateAsync({ type: "blob" }).then(
             function (blob) {
-              // saveAs(blob, `${bookSlug}-site.zip`)
-              // staticSiteGenerating.set(false)
-              // console.timeEnd("Generating site")
-              // resolve()
               blob.arrayBuffer().then((siteBuffer) => {
                 let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-                fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer));
+                fs.writeFileSync(
+                  `/sites/${bookSlug}-site.zip`,
+                  Buffer.from(siteBuffer)
+                );
                 staticSiteGenerating.set(false);
                 console.timeEnd("Generating site");
                 resolve();

@@ -34,3 +34,20 @@ Handlebars.registerHelper("mime", function (context, _block) {
 Handlebars.registerHelper("withTocIndexSuffix", function (context, _block) {
   return `${context}-${tocIndexValue}`
 })
+
+Handlebars.registerHelper("isLastChapter", function () {
+  return this.index === (this.spine.length - 1);
+});
+
+Handlebars.registerHelper("isFirstChapter", function () {
+  return this.index === 0;
+});
+
+Handlebars.registerHelper("nextChapterLink", function () {
+  return this.spine[this.index+1].toc[0].file
+});
+
+Handlebars.registerHelper("previousChapterLink", function () {
+  return this.spine[this.index-1].toc[0].file
+});
+

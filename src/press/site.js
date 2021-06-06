@@ -22,7 +22,7 @@ import Handlebars from "handlebars"
 import JSZip from "jszip"
 import { generateEpub } from "./epub.js"
 import { staticSiteGenerating } from "./stores.js"
-// markdown & plugins
+
 import MarkdownIt from "markdown-it"
 import MarkdownFootnote from "markdown-it-footnote"
 import MarkdownAnchor from "markdown-it-anchor"
@@ -32,7 +32,6 @@ import MarkdownImplicitFigues from "markdown-it-implicit-figures"
 import MarkdownCenterText from "markdown-it-center-text"
 import MarkdownEmoji from "markdown-it-emoji"
 
-// DEFAULT OPTIONS
 let md = new MarkdownIt({
   xhtmlOut: true,
   linkify: true,
@@ -48,7 +47,7 @@ let md = new MarkdownIt({
 
 // IMPLEMENTATION
 
-let currentTheme = "generic"
+let currentTheme = "generic" // matches default theme from Book() default configuration.
 
 function setTheme(theme) {
   currentTheme = theme
@@ -153,15 +152,10 @@ export function generateSite(book) {
       contentHtml = fix(contentHtml)
       let destinationFilename = chapterFilename.replace(".md", ".html")
       let destination = `${siteFolder}/book/${destinationFilename}`
-      let data = chapterTemplate({ html: contentHtml })
-      ensureFolders(destination)
-      fs.writeFileSync(destination, data)
 
-      // due to the async nature of this code, the ToC won't ready until
-      // all promises complete.
-      if (!isFrontmatter(book, chapterFilename)) {
-        toc[destinationFilename] = extractToc(contentHtml, destinationFilename)
-      }
+      toc[destinationFilename] = extractToc(contentHtml, destinationFilename)
+      toc[destinationFilename].content = contentHtml
+      toc[destinationFilename].destination = destination
     })
 
     let spine = contentFiles.map((f) => {
@@ -191,17 +185,23 @@ export function generateSite(book) {
       let contents = indexTemplate({ book, spine })
       fs.writeFileSync(`${siteFolder}/index.html`, contents)
 
+      // Chapters
+      spine.forEach((item, index) => {
+        let data = chapterTemplate({ book, spine, index, html: item.toc.content })
+        ensureFolders(item.toc.destination)
+        fs.writeFileSync(item.toc.destination, data)
+      })
+
       let zip = new JSZip()
       addToZip(zip, `${bookSlug}-site`, siteFolder)
       zip.generateAsync({ type: "blob" }).then(
         function (blob) {
-          // saveAs(blob, `${bookSlug}-site.zip`)
-          // staticSiteGenerating.set(false)
-          // console.timeEnd("Generating site")
-          // resolve()
           blob.arrayBuffer().then((siteBuffer) => {
             let Buffer = BrowserFS.BFSRequire("buffer").Buffer
-            fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer))
+            fs.writeFileSync(
+              `/sites/${bookSlug}-site.zip`,
+              Buffer.from(siteBuffer)
+            )
             staticSiteGenerating.set(false)
             console.timeEnd("Generating site")
             resolve()

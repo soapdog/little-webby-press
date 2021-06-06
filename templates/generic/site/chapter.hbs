@@ -1,22 +1,81 @@
-<html lang="{{book.config.metadata.lang}}">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>{{book.config.metadata.title}}
-		-
-	{{book.config.metadata.author}}</title>
-	<link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
-	<style>
-	.cover { 
-		max-width: 350px; 
-		margin: auto;
-		border:  solid 1px;
-	}
-	</style>
-</head>
-<body>
-<div class="container">
+<html>
+  <head>
+    <title dir="ltr">{{chapterTitle html}}</title>
+    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</div>
-</body>
+    <meta charset="utf-8" />
+    <style>
+      .mini-cover {
+        max-height: 120px;
+        margin: 10px;
+      }
+      .toc-container {
+        padding-top: 20px;
+      }
+      .little-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+        .reverse-for-mobile {
+          flex-direction: column-reverse;
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="columns reverse-for-mobile">
+      <div class="column is-3 has-background-info-light">
+        <!-- sidebar -->
+        <div class="content p-2">
+          <div class="little-card">
+            <img src="../{{book.config.metadata.cover}}" class="mini-cover" />
+            <h4>{{book.config.metadata.title}}</h4>
+          </div>
+          <div class="toc-container">
+            <h4>Table of Contents</h4>
+            <ol class="toc no-parts">
+              {{#each spine as | s | }} {{#each s.toc as | t | }}
+              <li>
+                <a href="{{t.file}}#{{t.id}}">{{t.text}}</a>
+              </li>
+              {{/each}} {{/each}}
+            </ol>
+          </div>
+        </div>
+        <!-- end of sidebar -->
+      </div>
+      <div class="column">
+        <!-- content display -->
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <div class="container">
+              <div class="content p-2">
+              {{{html}}}
+              <div class="is-flex">
+                  {{#unless (isFirstChapter)}}
+                  <div>
+                    <a href="{{previousChapterLink}}" class="button is-medium is-link">&larr;</a>
+                  </div>
+                  {{/unless}}
+                  <div class="is-flex-grow-1"></div>
+                  {{#unless (isLastChapter)}}
+                  <div>
+                    <a href="{{nextChapterLink}}" class="button is-medium is-link">&rarr;</a>
+                  </div>
+                  {{/unless}}
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of content display -->
+      </div>
+    </div>
+  </body>
 </html>
