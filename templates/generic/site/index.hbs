@@ -2,6 +2,9 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{#if book.config.webmonetization.enabled}}
+  <meta name="monetization" content="{{book.config.webmonetization.endpoint}}" />
+  {{/if}}
 	<title>{{book.config.metadata.title}}
 		-
 	{{book.config.metadata.author}}</title>

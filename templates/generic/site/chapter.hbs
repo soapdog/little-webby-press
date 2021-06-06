@@ -3,6 +3,9 @@
     <title dir="ltr">{{chapterTitle html}}</title>
     <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{#if book.config.webmonetization.enabled}}
+    <meta name="monetization" content="{{book.config.webmonetization.endpoint}}" />
+    {{/if}}
 
     <meta charset="utf-8" />
     <style>
@@ -19,7 +22,8 @@
         align-items: center;
       }
 
-      @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+      @media (max-width: 767px) {
+        /* <== You can change this break point as per your  needs */
         .reverse-for-mobile {
           flex-direction: column-reverse;
           display: flex;
@@ -56,21 +60,29 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-              {{{html}}}
-              <div class="is-flex">
+                {{{html}}}
+                <div class="is-flex">
                   {{#unless (isFirstChapter)}}
                   <div>
-                    <a href="{{previousChapterLink}}" class="button is-medium is-link">&larr;</a>
+                    <a
+                      href="{{previousChapterLink}}"
+                      class="button is-medium is-link"
+                      >&larr;</a
+                    >
                   </div>
                   {{/unless}}
                   <div class="is-flex-grow-1"></div>
                   {{#unless (isLastChapter)}}
                   <div>
-                    <a href="{{nextChapterLink}}" class="button is-medium is-link">&rarr;</a>
+                    <a
+                      href="{{nextChapterLink}}"
+                      class="button is-medium is-link"
+                      >&rarr;</a
+                    >
                   </div>
                   {{/unless}}
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
