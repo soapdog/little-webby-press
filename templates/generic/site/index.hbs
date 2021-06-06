@@ -1,0 +1,126 @@
+<html lang="{{book.config.metadata.lang}}">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{#if book.config.webmonetization.enabled}}
+  <meta name="monetization" content="{{book.config.webmonetization.endpoint}}" />
+  {{/if}}
+	<title>{{book.config.metadata.title}}
+		-
+	{{book.config.metadata.author}}</title>
+	<link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
+	<style>
+	.cover { 
+		max-width: 350px; 
+		margin: auto;
+		border:  solid 1px;
+	}
+  .add-space {
+    max-width: 70%;
+    margin: auto;
+  }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<section class="section">
+			<div class="columns is-vcentered">
+				<div class="column is-one-third">
+
+					<figure class="image">
+						<img
+						class="cover"
+						src="{{book.config.metadata.cover}}"
+						alt="{{book.config.metadata.title}}"
+						/>
+					</figure>
+					<div class="p-4 flex has-text-centered">
+            {{#if book.config.author.photo}}
+						<figure class="image is-32x32 flex-shrink-0 is-inline-block">
+							<img
+							class="is-rounded"
+							src="{{book.config.author.photo}}"
+							alt="{{book.config.author.name}}"
+							/>
+						</figure>
+            {{/if}}
+
+						<span>{{book.config.author.name}}</span>
+					</div>
+				</div>
+				<div class="column has-text-centered">
+					<h1 class="title is-2">
+						{{book.config.metadata.title}}
+					</h1>
+          {{#if book.config.metadata.subtitle}}
+					<h2 class="subtitle is-4">
+						{{book.config.metadata.subtitle}}
+					</h2>
+          {{/if}}
+					<br>
+					<p class="has-text-centered">
+						<a class="button m-2 is-medium is-info is-outlined" href="files/{{book.products.epub}}">
+							{{book.config.site.actions.download}}
+						</a>
+						<a class="button m-2 is-medium is-info is-outlined" href="book/{{firstChapter}}">
+							{{book.config.site.actions.read}}
+						</a>
+            <a class="button m-2 is-medium is-info is-outlined" href="#toc">
+              {{book.config.site.actions.toc}}
+            </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="level has-background-grey-darker mb-0 p-4 has-text-info-light">
+		<div class="level-item has-text-centered">
+			<span>EPUB3</span>
+		</div>
+
+		<div class="level-item has-text-centered">
+			<span>Web</span>
+		</div>
+
+		<div class="level-item has-text-centered">
+			<span>WebMo</span>
+		</div>
+</section>
+{{#if book.config.site.blurb}}
+<section class="section content has-background-link-light has-text-black-bis">
+	<h4 class="title is-4 has-text-centered">
+		{{book.config.site.labels.about-book}}
+	</h4>
+	{{{book.config.site.blurb}}}
+</section>
+{{/if}}
+{{#if book.config.author.bio}}
+<section class="section content">
+  <h4 class="title is-4 has-text-centered">
+    {{book.config.site.labels.about-author}}
+  </h4>
+  <div class="add-space">
+  {{{book.config.author.bio}}}
+  </div>
+</section>
+{{/if}}
+<section id="toc" class="section content">
+  <h4 class="title is-4 has-text-centered">
+    {{book.config.site.labels.toc}}
+  </h4>
+  <div class="add-space">
+  <ol class="toc no-parts">
+  {{#each spine as | s | }}
+    {{#each s.toc as | t | }}
+    <li>
+        <a href="book/{{t.file}}#{{t.id}}">{{t.text}}</a>
+    </li>
+    {{/each}}
+  {{/each}}
+  </ol>
+  </div>
+</section>
+</div>
+</body>
+</html>

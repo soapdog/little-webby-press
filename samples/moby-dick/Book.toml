@@ -1,13 +1,31 @@
 [metadata]
 title = "Moby-Dick, or, The Whale"
-author = "Herman Melville"
-publisher = "Project Gutenberg"
 date = 2019-08-08T12:00:00Z
 identifier = "http://www.gutenberg.org/ebooks/2701"
 cover = "images/cover.jpg"
 
-[pwa]
-enabled = false
+[author]
+name = "Herman Melville"
+bio = """
+Herman Melville, (born August 1, 1819, New York City—died September 28, 1891, New York City), American novelist, short-story writer, and poet, best known for his novels of the sea, including his masterpiece, Moby Dick (1851).
+"""
+
+[publisher]
+publisher = "Project Gutenberg"
+
+[site]
+enabled = true
+blurb = """
+Moby Dick is the story of Captain Ahab's quest to avenge the whale that 'reaped' his leg. The quest is an obsession and the novel is a diabolical study of how a man becomes a fanatic.But it is also a hymn to democracy. Bent as the crew is on Ahab's appalling crusade, it is equally the image of a co-operative community at work: all hands dependent on all hands, each individual responsible for the security of each.Among the crew is Ishmael, the novel's narrator, ordinary sailor, and extraordinary reader. Digressive, allusive, vulgar, transcendent, the story Ishmael tells is above all an education:in the practice of whaling, in the art of writing. Expanding to equal his 'mighty theme' - not only the whale but all things sublime - Melville breathes in the world's great literature. Moby Dick is the greatest novel ever written by an American.
+"""
+description = """
+“Call me Ishmael” says Moby Dick’s protagonist, and with this famous first line launches one of the acclaimed great American novels. Part adventure story, part quest for vengeance, part biological textbook and part whaling manual, Moby Dick was first published in 1851. The story follows Ishmael as he abandons his humdrum life on shore for an adventure on the waves. Finding the whaler Pequod at harbour in Nantucket, he signs up for a three year term without meeting the Captain of the ship, a mysterious figure called Ahab. It is only well into the voyage that Ahab’s thirst for vengeance against the eponymous white whale Moby Dick—and the consequences—become clear.
+
+The novel is semi-autobiographical: Herman Melville had had his own experience of whaling, having spent a year and a half aboard a whaling ship and further years travelling the world in the early 1840s. Herman used the knowledge gained from his experiences and wide reading on the subject to furnish Moby Dick with an almost encyclopaedic quality at times. The literary style varies widely, veering from soliloquies and staged scenes to dream sequences to comprehensive lists of ships provisions, but everything serves to further detail the world that’s being painted.
+
+Presented here is the New York edition, which was published later than the London edition and reverted numerous changes the original publishers had made, as well as including the initially omitted epilogue.
+"""
+
 
 [webmonetization]
 enabled = false
@@ -18,9 +36,8 @@ prefix = "h3"
 label = "h1"
 match = "first"
 
-[ebook]
+[book]
 enabled = true
-theme = "technical"
 frontmatter = [
 	"000-front-matter.md",
 ]

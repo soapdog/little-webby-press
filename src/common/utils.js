@@ -1,7 +1,18 @@
+import slugify from "slugify"
+
 let conf = {
 	prefix: false,
 	label: "h1",
 	match: "all",
+}
+
+export function safeId(txt) {
+  let s = slugify(txt, {
+    remove: /[*+~.()'"!:@;,{}[]]-/g,
+    lower: true,
+    strict: true
+  })
+  return s
 }
 
 export function registerToCPrefix(prefix) {
@@ -28,12 +39,17 @@ export function extractToc(html, file) {
 			const labelEl = doc.querySelector(`${conf.prefix} + ${conf.label}`)
 			if (prefixEl && labelEl) {
 				label = `${prefixEl.innerText} ${labelEl.innerText}`
-				id = labelEl.id
+				id = safeId(labelEl.id)
 			}
 		} else {
 			const labelEl = doc.querySelector(`${conf.label}`)
+			console.log("l", [file, labelEl])
+			if (!labelEl) {
+				console.log("l is null", { html, file })
+				throw "error"
+			}
 			label = labelEl.innerText
-			id = labelEl.id
+			id = safeId(labelEl.id)
 		}
 
 		return [
@@ -48,10 +64,11 @@ export function extractToc(html, file) {
 	// TODO: fix for multiple ToC entries inside a single chapter file.
 	if (conf.match === "all") {
 		let r = []
+		let hs = doc.querySelectorAll(`${conf.label}`)
 		hs.forEach((h) => {
 			r.push({
 				file: file,
-				id: h.id,
+				id: safeId(h.id),
 				text: h.innerText,
 			})
 		})

@@ -1,5 +1,7 @@
 {
   "action-generate": "Gerar",
+  "action-generate-ebook": "",
+  "action-generate-site": "",
   "close": "Fechar",
   "disabled": "Desativado",
   "drag-and-drop-to-start": "Arrastar e solte uma pasta com os arquivos do livro.",
@@ -9,13 +11,17 @@
   "error-quip": "Caramba!",
   "files": "arquivos",
   "files-tab-description": "A aba <em> arquivos </em> lista apenas os arquivos listados nos perfis <code> Book.toml </code>. \nOs arquivos são listados em ordem alfabética para facilitar a localização. \nEste não é o seu índice.",
+  "generate": "",
   "generating-book": "Gerando livro ...",
+  "generating-site": "",
   "get-help": "Saiba mais sobre os dados do livro :-)",
   "getting-file-list": "Obtendo lista de arquivos ...",
   "header-filename": "nome do arquivo",
   "learn-more-long": "Saiba mais sobre como construir livros usando\n\n<em> little.webby.press </em>",
   "loading": "Carregando...",
   "loading-configuration": "Carregando configuração ...",
+  "manuscript": "",
+  "manuscript-tab-description": "",
   "metadata": "Metadados",
   "metadata-author-name": "Nome do autor",
   "metadata-book-title": "Título do livro",
@@ -33,5 +39,7 @@
   "options-web-monetization-endpoint": "Web Monetization Endpoint",
   "options-website-format-blurb": "O site gerado por esta ferramenta é um site estático que funciona em qualquer servidor da web.",
   "options-website-is-disabled": "O suporte ao site está desabilitado em sua configuração.",
-  "options-website-section-header": "Website"
+  "options-website-section-header": "Website",
+  "products": "Produtos",
+  "theme-not-found": ""
 }

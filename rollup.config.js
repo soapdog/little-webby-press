@@ -5,6 +5,8 @@ import json from '@rollup/plugin-json';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import inject from "@rollup/plugin-inject";
+import alias from "@rollup/plugin-alias";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -17,6 +19,13 @@ export default {
 		file: 'docs/build/bundle.js'
 	},
 	plugins: [
+		alias({
+			"entries": [
+				{ "find": "buffer", "replacement": "browserfs/dist/shims/buffer" },
+				{ "find": "fs", "replacement": "browserfs/dist/shims/fs" },
+				{ "find": "path", "replacement": "browserfs/dist/shims/path" }
+			]
+		}),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
@@ -34,11 +43,15 @@ export default {
 		// https://github.com/rollup/plugins/tree/master/packages/commonjs
 		resolve({
 			browser: true,
-			dedupe: ['svelte']
+			dedupe: ['svelte'],
+			"preferBuiltins": false
 		}),
 		commonjs(),
 		json(),
-		nodePolyfills(),
+		//nodePolyfills(),
+		inject({
+			"BrowserFS": "browserfs"
+		}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

@@ -584,6 +584,7 @@ video {
   border-radius: 0.25rem;
   display: inline-block;
   font-weight: 700;
+  margin: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -644,7 +645,7 @@ video {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity))
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
 
 .nav-pill-active {
@@ -721,7 +722,7 @@ video {
 
 .form-control:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(107, 114, 128, var(--tw-border-opacity))
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
 }
 
 .form-control:focus {
@@ -18606,7 +18607,6 @@ video {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -49228,7 +49228,6 @@ video {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -79772,7 +79771,6 @@ video {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -110316,7 +110314,6 @@ video {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -140860,7 +140857,6 @@ video {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -171404,7 +171400,6 @@ video {
   }
 
   .\32xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 

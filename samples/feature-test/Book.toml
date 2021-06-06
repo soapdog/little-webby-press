@@ -1,0 +1,26 @@
+[metadata]
+title = "Feature Test"
+author = "Andre Alves Garzia"
+publisher = "AndreGarzia.com"
+date = 2021-02-07T12:00:00Z
+identifier = "https://little.webby.press/samples/feature-test.html"
+cover = "images/cover.jpg"
+
+[site]
+enabled = false
+
+
+[webmonetization]
+enabled = false
+endpoint = "$pay.stronghold.co/1a1669155784590234897abc53465de44"
+
+[toc]
+label = "h1"
+match = "first"
+
+[book]
+enabled = true
+theme = "generic"
+chapters = [
+	"basic.md"
+]
