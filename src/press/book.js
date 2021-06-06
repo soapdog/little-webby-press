@@ -29,6 +29,7 @@ export const defaultBookConfiguration = {
     bio: false,
     links: []
   },
+  links: [],
   author: {
     name: false,
     photo: false,
@@ -50,7 +51,10 @@ export const defaultBookConfiguration = {
     labels: {
       "about-book": "About The Book",
       "about-author": "About The Author",
-      "toc": "Table Of Contents"
+      "toc": "Table Of Contents",
+      "ereader-compatible": "Compatible with most eReaders",
+      "support-with-webmo": "Support this work by using",
+      "read": "Free To Read Online"
     }
   },
   webmonetization: {

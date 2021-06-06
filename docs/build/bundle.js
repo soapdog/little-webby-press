@@ -32671,6 +32671,7 @@ var app = (function () {
         bio: false,
         links: []
       },
+      links: [],
       author: {
         name: false,
         photo: false,
@@ -32692,7 +32693,10 @@ var app = (function () {
         labels: {
           "about-book": "About The Book",
           "about-author": "About The Author",
-          "toc": "Table Of Contents"
+          "toc": "Table Of Contents",
+          "ereader-compatible": "Compatible with most eReaders",
+          "support-with-webmo": "Support this work by using",
+          "read": "Free To Read Online"
         }
       },
       webmonetization: {
@@ -86914,7 +86918,7 @@ var app = (function () {
           fs.readFileSync(bookFile)
         );
 
-        let fi = copyImages(book, `${siteFolder}`);
+        let fi = copyImages(book, `${siteFolder}/book`);
 
         let contentFiles = contentFilesFromConfiguration(book);
 
@@ -86956,6 +86960,10 @@ var app = (function () {
 
           if (book.config.site.blurb) {
             book.config.site.blurb = md$1.render(book.config.site.blurb);
+          }
+
+          if (book.config.author.bio) {
+            book.config.author.bio = md$1.render(book.config.author.bio);
           }
 
           let indexTemplateHBS = fs.readFileSync(themePathFor$1("index.hbs"), "utf8");
