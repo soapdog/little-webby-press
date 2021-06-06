@@ -35,6 +35,19 @@
       console.log("404", path)
     }
   }
+
+  let epubFileExists = false
+  let websiteFileExists = false
+
+  ebookEpub3Generating.subscribe(() => {
+    let bpath = `/books/${bookSlug}.epub`
+    epubFileExists = fs.existsSync(bpath)
+  })
+
+  staticSiteGenerating.subscribe(() => {
+    let wpath = `/sites/${bookSlug}-site.zip`
+    websiteFileExists = fs.existsSync(wpath)
+  })
 </script>
 
 <div class="card mb-6">
@@ -46,11 +59,13 @@
         <i class="fas fa-spinner fa-lg fa-spin" />
         {$_("generating-book")}
       </span>
-      {:else}
+      {:else if epubFileExists}
       <span class="cursor-pointer" on:click="{downloadGenericEpub3}">
         Generic ePub3 eBook
         <i class="fas fa-download fa-lg" />
       </span>
+      {:else}
+      <span>Click generate book.</span>
       {/if}
     </div>
     <div class="mb-3 flex-1">
@@ -60,11 +75,13 @@
         <i class="fas fa-spinner fa-lg fa-spin" />
         {$_("generating-site")}
       </span>
-      {:else}
+      {:else if websiteFileExists}
       <span class="cursor-pointer" on:click="{downloadSite}">
         Static Site
         <i class="fas fa-download fa-lg" />
       </span>
+      {:else}
+      <span>Click generate site.</span>
       {/if}
     </div>
   </div>
