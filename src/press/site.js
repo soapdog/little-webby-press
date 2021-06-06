@@ -123,6 +123,10 @@ export function generateSite(book) {
       return false
     }
 
+    book.products = {
+      epub: `${bookSlug}.epub`
+    }
+
     if (!fs.existsSync(siteFolder)) {
       fs.mkdirSync(siteFolder)
     }

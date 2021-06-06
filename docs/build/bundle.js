@@ -86529,6 +86529,10 @@ var app = (function () {
       return this.spine[this.index-1].toc[0].file
     });
 
+    lib$1.registerHelper("firstChapter", function () {
+      return this.spine[0].toc[0].file
+    });
+
     var jszip_min = createCommonjsModule(function (module, exports) {
     /*!
 
@@ -86812,6 +86816,10 @@ var app = (function () {
           });
           return false
         }
+
+        book.products = {
+          epub: `${bookSlug}.epub`
+        };
 
         if (!fs.existsSync(siteFolder)) {
           fs.mkdirSync(siteFolder);

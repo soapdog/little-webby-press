@@ -59,13 +59,13 @@
           {{/if}}
 					<br>
 					<p class="has-text-centered">
-						<a class="button m-2 is-medium is-info is-outlined">
+						<a class="button m-2 is-medium is-info is-outlined" href="files/{{book.products.epub}}">
 							{{book.config.site.actions.download}}
 						</a>
-						<a class="button m-2 is-medium is-info is-outlined">
+						<a class="button m-2 is-medium is-info is-outlined" href="book/{{firstChapter}}">
 							{{book.config.site.actions.read}}
 						</a>
-            <a class="button m-2 is-medium is-info is-outlined">
+            <a class="button m-2 is-medium is-info is-outlined" href="#toc">
               {{book.config.site.actions.toc}}
             </a>
 					</p>
@@ -105,12 +105,12 @@
   </div>
 </section>
 {{/if}}
-<section class="section content">
+<section id="toc" class="section content">
   <h4 class="title is-4 has-text-centered">
     {{book.config.site.labels.toc}}
   </h4>
   <div class="add-space">
-  <ol class='toc no-parts'>
+  <ol class="toc no-parts">
   {{#each spine as | s | }}
     {{#each s.toc as | t | }}
     <li>

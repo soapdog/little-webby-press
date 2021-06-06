@@ -39,7 +39,11 @@
         <div class="content p-2">
           <div class="little-card">
             <img src="../{{book.config.metadata.cover}}" class="mini-cover" />
-            <h4>{{book.config.metadata.title}}</h4>
+            <div>
+              <h4>{{book.config.metadata.title}}</h4>
+              <h5>{{book.config.author.name}}</h5>
+              <a href="../index.html" class="button is-primary is-small">Get The Book</a>
+            </div>
           </div>
           <div class="toc-container">
             <h4>Table of Contents</h4>

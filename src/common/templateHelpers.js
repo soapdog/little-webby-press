@@ -51,3 +51,8 @@ Handlebars.registerHelper("previousChapterLink", function () {
   return this.spine[this.index-1].toc[0].file
 });
 
+Handlebars.registerHelper("firstChapter", function () {
+  return this.spine[0].toc[0].file
+});
+
+
