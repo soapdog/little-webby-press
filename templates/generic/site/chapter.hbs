@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title dir="ltr">{{chapterTitle html}}</title>
+    <title dir="ltr">{{chapterTitle html}} - {{book.config.metadata.title}} - {{book.config.author.name}}</title>
     <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{#if book.config.webmonetization.enabled}}
@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <style>
       .mini-cover {
-        max-height: 120px;
+        max-height: 130px;
         margin: 10px;
       }
       .toc-container {
@@ -20,6 +20,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+      }
+
+      .little-card a img {
+        max-height: 120px;
       }
 
       @media (max-width: 767px) {
@@ -38,15 +42,15 @@
         <!-- sidebar -->
         <div class="content p-2">
           <div class="little-card">
-            <img src="../{{book.config.metadata.cover}}" class="mini-cover" />
+            <a class="mini-cover" href="../index.html"><img src="{{book.config.metadata.cover}}" /></a>
             <div>
               <h4>{{book.config.metadata.title}}</h4>
               <h5>{{book.config.author.name}}</h5>
-              <a href="../index.html" class="button is-primary is-small">Get The Book</a>
+              <a href="../files/{{book.products.epub}}" class="button is-primary is-small">{{book.config.site.actions.download}}</a>
             </div>
           </div>
           <div class="toc-container">
-            <h4>Table of Contents</h4>
+            <h4>{{book.config.site.labels.toc}}</h4>
             <ol class="toc no-parts">
               {{#each spine as | s | }} {{#each s.toc as | t | }}
               <li>

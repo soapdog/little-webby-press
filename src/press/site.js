@@ -139,7 +139,7 @@ export function generateSite(book) {
       fs.readFileSync(bookFile)
     )
 
-    let fi = copyImages(book, `${siteFolder}`)
+    let fi = copyImages(book, `${siteFolder}/book`)
 
     let contentFiles = contentFilesFromConfiguration(book)
 
@@ -181,6 +181,10 @@ export function generateSite(book) {
 
       if (book.config.site.blurb) {
         book.config.site.blurb = md.render(book.config.site.blurb)
+      }
+
+      if (book.config.author.bio) {
+        book.config.author.bio = md.render(book.config.author.bio)
       }
 
       let indexTemplateHBS = fs.readFileSync(themePathFor("index.hbs"), "utf8")
