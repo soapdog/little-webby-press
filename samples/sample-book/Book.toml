@@ -1,0 +1,32 @@
+[metadata]
+title = "A Sample Book"
+subtitle = "Not a real book"
+date = 2021-06-15T12:00:00Z
+identifier = "https://example.com/not-a-real-book"
+cover = "images/cover.png"
+
+[author]
+name = "An Aspiring Author"
+bio = """
+An author that loves peaches.
+"""
+
+[publisher]
+name = "Little Webby Press"
+
+[site]
+blurb = """
+A book that will change your life.
+"""
+
+[book]
+frontmatter = [
+  "00-frontmatter.md"
+]
+chapters = [
+  "01-first.md",
+  "02-second.md"
+]
+backmatter = [
+  "03-backmatter.md"
+]

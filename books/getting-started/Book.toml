@@ -25,7 +25,7 @@ name = "Little Webby Press"
 
 [site]
 blurb = """
-Learn the basics about using
+Learn how to use Little Webby Press.
 """
 
 [webmonetization]
@@ -34,5 +34,8 @@ endpoint = "$ilp.uphold.com/zdPRwAnyEkmM"
 
 [book]
 chapters = [
-  "getting-started.md"
+  "getting-started.md",
+  "case-study-moby-dick.md",
+  "from-scratch.md",
+  "conclusion.md"
 ]

@@ -33,11 +33,18 @@
           display: flex;
         }
       }
-    </style>
+
+      @media (min-width: 767px) {
+        .min-size {
+          min-height: 100vh;
+          margin:  0px;
+        }
+      }
+      </style>
   </head>
 
   <body>
-    <div class="columns reverse-for-mobile">
+    <div class="columns reverse-for-mobile min-size">
       <div class="column is-3 has-background-info-light">
         <!-- sidebar -->
         <div class="content p-2">
