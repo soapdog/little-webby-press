@@ -1,5 +1,5 @@
 <script>
-  import { _ } from 'svelte-i18n'
+  import { _ } from "svelte-i18n"
 </script>
 
 <nav class="py-2 pb-4 text-xl">
@@ -10,7 +10,7 @@
 			</a>
 		</li>
 		<li class="mr-6">
-			<a class="nav" href="/help">{$_("nav_help")}</a>
+			<a class="nav" href="/documentation">{$_("nav_help")}</a>
 		</li>
 		<li class="mr-6">
 			<a

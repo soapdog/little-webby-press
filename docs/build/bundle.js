@@ -4964,16 +4964,16 @@ var app = (function () {
     			attr_dev(li0, "class", "mr-6");
     			add_location(li0, file, 6, 2, 107);
     			attr_dev(a1, "class", "nav");
-    			attr_dev(a1, "href", "/help");
+    			attr_dev(a1, "href", "/documentation");
     			add_location(a1, file, 12, 3, 229);
     			attr_dev(li1, "class", "mr-6");
     			add_location(li1, file, 11, 2, 208);
     			attr_dev(a2, "class", "nav");
     			attr_dev(a2, "href", "https://github.com/soapdog/little-webby-press");
     			attr_dev(a2, "target", "_blank");
-    			add_location(a2, file, 15, 3, 309);
+    			add_location(a2, file, 15, 3, 318);
     			attr_dev(li2, "class", "mr-6");
-    			add_location(li2, file, 14, 2, 288);
+    			add_location(li2, file, 14, 2, 297);
     			attr_dev(ul, "class", "flex");
     			add_location(ul, file, 5, 1, 87);
     			attr_dev(nav, "class", "py-2 pb-4 text-xl");
@@ -24416,7 +24416,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$6, 20, 4, 497);
+    			add_location(i, file$6, 20, 4, 493);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -24488,7 +24488,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$6, 27, 4, 750);
+    			add_location(i, file$6, 27, 4, 746);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -24552,13 +24552,13 @@ var app = (function () {
     			if_block1.c();
     			attr_dev(button0, "class", "btn btn-blue");
     			button0.disabled = /*$ebookEpub3Generating*/ ctx[0];
-    			add_location(button0, file$6, 18, 2, 375);
+    			add_location(button0, file$6, 18, 2, 371);
     			attr_dev(button1, "class", "btn btn-blue");
     			button1.disabled = /*$staticSiteGenerating*/ ctx[2];
-    			add_location(button1, file$6, 25, 2, 628);
+    			add_location(button1, file$6, 25, 2, 624);
     			attr_dev(div, "class", "flex p-0");
-    			add_location(div, file$6, 17, 1, 350);
-    			add_location(nav, file$6, 16, 0, 343);
+    			add_location(div, file$6, 17, 1, 346);
+    			add_location(nav, file$6, 16, 0, 339);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -24648,11 +24648,11 @@ var app = (function () {
     	component_subscribe($$self, staticSiteGenerating, $$value => $$invalidate(2, $staticSiteGenerating = $$value));
     	const dispatch = createEventDispatcher();
 
-    	const generateBook = ev => {
+    	const generateBook = () => {
     		dispatch("generateBook");
     	};
 
-    	const generateSite = ev => {
+    	const generateSite = () => {
     		dispatch("generateSite");
     	};
 
@@ -32658,7 +32658,7 @@ var app = (function () {
      */
     const defaultBookConfiguration = {
       metadata: {
-        title: "Untitled",
+        title: "Untitled Book",
         subtitle: false,
         date: new Date(),
         identifier: false,
@@ -32679,7 +32679,7 @@ var app = (function () {
         links: []
       },
       site: {
-        enabled: false,
+        enabled: true,
         theme: "generic",
         frontmatter: [],
         chapters: [],
@@ -32708,11 +32708,11 @@ var app = (function () {
       },
       toc: {
         prefix: false,
-        label: "h1",
+        label: "h1,h2",
         match: "all"
       },
       book: {
-        enabled: false,
+        enabled: true,
         theme: "generic",
         frontmatter: [],
         chapters: [],
@@ -32759,6 +32759,10 @@ var app = (function () {
         }
 
         let book = new Book(lodash.defaultsDeep(config, defaultBookConfiguration), files);
+
+        if (book.config.webmonetization.endpoint.length > 0) {
+          book.config.webmonetization.enabled = true;
+        }
         return book
       } else {
         return new Error("error-no-configuration")
@@ -87314,14 +87318,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$7, 185, 6, 4959);
+    			add_location(i, file$7, 185, 6, 4984);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 184, 5, 4928);
+    			add_location(div0, file$7, 184, 5, 4953);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 187, 5, 5019);
+    			add_location(p0, file$7, 187, 5, 5044);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 188, 5, 5063);
-    			add_location(div1, file$7, 183, 4, 4917);
+    			add_location(p1, file$7, 188, 5, 5088);
+    			add_location(div1, file$7, 183, 4, 4942);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87409,7 +87413,7 @@ var app = (function () {
     			attr_dev(p1, "class", "text-light");
     			add_location(p1, file$7, 169, 5, 4423);
     			attr_dev(a, "class", "btn btn-blue");
-    			attr_dev(a, "href", "/help");
+    			attr_dev(a, "href", "/documentation/getting-started");
     			add_location(a, file$7, 171, 6, 4510);
     			attr_dev(div1, "class", "mt-6");
     			add_location(div1, file$7, 170, 5, 4485);
@@ -87419,12 +87423,12 @@ var app = (function () {
     			attr_dev(input, "webkitdirectory", "");
     			input.multiple = true;
     			attr_dev(input, "directory", "");
-    			add_location(input, file$7, 177, 8, 4697);
+    			add_location(input, file$7, 177, 8, 4722);
     			html_tag = new HtmlTag(null);
     			attr_dev(span, "class", "btn btn-blue");
-    			add_location(span, file$7, 176, 7, 4640);
+    			add_location(span, file$7, 176, 7, 4665);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 175, 6, 4614);
+    			add_location(div2, file$7, 175, 6, 4639);
     			add_location(div3, file$7, 164, 4, 4288);
     		},
     		m: function mount(target, anchor) {
@@ -87894,7 +87898,7 @@ var app = (function () {
     var manuscript = "Manuscript";
     var metadata = "Metadata";
     var nav_github = "Github";
-    var nav_help = "Help";
+    var nav_help = "Documentation";
     var no_book = "You haven't loaded any book.";
     var options = "Options";
     var products = "Products";
@@ -87904,8 +87908,8 @@ var app = (function () {
     	"action-generate-site": "Generate Site",
     	close: close,
     	disabled: disabled,
-    	"drag-and-drop-to-start": "Drag & Drop a folder with book data here to start.",
-    	"drop-a-book-folder-here": "Drop a book folder here!",
+    	"drag-and-drop-to-start": "Drag & Drop a folder with Manuscript to start.",
+    	"drop-a-book-folder-here": "Drop the manuscript folder here!",
     	enabled: enabled,
     	"error-no-configuration": "Can't find Book configuration file",
     	"error-quip": "Holy smokes!",
@@ -87917,8 +87921,8 @@ var app = (function () {
     	"get-help": "Learn more about book data :-)",
     	"getting-file-list": "Getting file list...",
     	"header-filename": "filename",
-    	"learn-more-long": "Learn more about how to build books using\n\t\t\t\t\t\t\t<em>little.webby.press</em>",
-    	"load-folder": "Load folder",
+    	"learn-more-long": "Read The <em>Getting Started</em> Guide",
+    	"load-folder": "Load Manuscript Folder",
     	loading: loading,
     	"loading-configuration": "Loading configuration...",
     	manuscript: manuscript,
