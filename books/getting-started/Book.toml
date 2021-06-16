@@ -24,9 +24,7 @@ url = "https://andregarzia.com"
 name = "Little Webby Press"
 
 [site]
-blurb = """
-Learn how to use Little Webby Press.
-"""
+landing = false
 
 [webmonetization]
 endpoint = "$ilp.uphold.com/zdPRwAnyEkmM"
