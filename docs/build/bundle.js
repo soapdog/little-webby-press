@@ -32685,6 +32685,7 @@ var app = (function () {
         chapters: [],
         backmatter: [],
         blurb: false,
+        landing: true,
         actions: {
           "download": "Download the eBook",
           "read": "Free To Read Online",
@@ -86970,11 +86971,24 @@ var app = (function () {
             book.config.author.bio = md$1.render(book.config.author.bio);
           }
 
-          let indexTemplateHBS = fs.readFileSync(themePathFor$1("index.hbs"), "utf8");
+          if (book.config.site.landing) {
+            let indexTemplateHBS = fs.readFileSync(themePathFor$1("index.hbs"), "utf8");
 
-          let indexTemplate = lib$1.compile(indexTemplateHBS);
-          let contents = indexTemplate({ book, spine });
-          fs.writeFileSync(`${siteFolder}/index.html`, contents);
+            let indexTemplate = lib$1.compile(indexTemplateHBS);
+            let contents = indexTemplate({ book, spine });
+            fs.writeFileSync(`${siteFolder}/index.html`, contents);
+          } else {
+            let firstChapter = spine[0].toc[0].file;
+            let refresher = `
+        <html>
+        <head>
+        <meta http-equiv="refresh" content="0;url=book/${firstChapter}">
+        </head>
+        <body></body>
+        </html>
+        `;
+            fs.writeFileSync(`${siteFolder}/index.html`, refresher);
+          }
 
           // Chapters
           spine.forEach((item, index) => {
