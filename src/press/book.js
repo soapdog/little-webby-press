@@ -55,7 +55,8 @@ export const defaultBookConfiguration = {
       "toc": "Table Of Contents",
       "ereader-compatible": "Compatible with most eReaders",
       "support-with-webmo": "Support this work by using",
-      "read": "Free To Read Online"
+      "read": "Free To Read Online",
+      "license": "License"
     }
   },
   webmonetization: {

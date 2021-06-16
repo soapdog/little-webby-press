@@ -97,6 +97,15 @@
       </div>
 		</div>
     {{/if}}
+
+    {{#if book.config.metadata.license}}
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">{{book.config.site.labels.license}}</p>
+        <p class="title has-text-info-light">{{{book.config.metadata.license}}}</p>
+      </div>
+    </div>
+    {{/if}}
 </section>
 {{#if book.config.site.blurb}}
 <section class="section content has-background-link-light has-text-black-bis">
