@@ -43,6 +43,7 @@ export const defaultBookConfiguration = {
     chapters: [],
     backmatter: [],
     blurb: false,
+    landing: true,
     actions: {
       "download": "Download the eBook",
       "read": "Free To Read Online",
