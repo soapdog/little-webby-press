@@ -7,7 +7,7 @@ cover = "images/cover.png"
 license = "<a href='https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB'><img src='book/images/license.svg'></a>"
 
 [author]
-name = "Andre Alves Garzia"
+name = "André Alves Garzia"
 bio = """
 Andre is writer and developer. In the recent years he published books about programming and managed a Web Literacy program in vulnerable neighborhoods of Rio. He is a firm believer in empowerment through technological experimentation. He lives in London with his wife, cats and more IoT boards than he can ever put into use.
 """
