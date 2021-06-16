@@ -4,6 +4,7 @@ subtitle = "A quick way to get going with Little Webby Press"
 date = 2021-10-06T12:00:00Z
 identifier = "https://litte.webby.press/books/getting-started"
 cover = "images/cover.png"
+license = "<a href='https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB'><img src='book/images/license.svg'></a>"
 
 [author]
 name = "Andre Alves Garzia"
