@@ -76,9 +76,9 @@
       console.log("typeof", typeof e)
       console.log("we got exception, but the app has crashed", e)
       stage = "error"
-      msg = e.reason || e.message || e
       ebookEpub3Generating.set(false)
       staticSiteGenerating.set(false)
+      msg = e.reason || e.message || e || "Unknown error"
     }
 
     const dropzone = document.querySelector(".drop-area")
