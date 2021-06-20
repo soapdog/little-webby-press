@@ -30,6 +30,7 @@ export const defaultBookConfiguration = {
     links: []
   },
   links: [],
+  cta: [],
   author: {
     name: false,
     photo: false,
@@ -44,6 +45,7 @@ export const defaultBookConfiguration = {
     backmatter: [],
     blurb: false,
     landing: true,
+    download: true,
     actions: {
       "download": "Download the eBook",
       "read": "Free To Read Online",
