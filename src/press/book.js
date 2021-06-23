@@ -27,7 +27,7 @@ export const defaultBookConfiguration = {
   publisher: {
     name: false,
     bio: false,
-    links: []
+    link: false
   },
   links: [],
   cta: [],
@@ -35,7 +35,6 @@ export const defaultBookConfiguration = {
     name: false,
     photo: false,
     bio: false,
-    links: []
   },
   site: {
     enabled: true,
@@ -125,6 +124,7 @@ export async function bookFromFiles(files) {
     if (book.config.webmonetization.endpoint.length > 0) {
       book.config.webmonetization.enabled = true
     }
+
     return book
   } else {
     return new Error("error-no-configuration")

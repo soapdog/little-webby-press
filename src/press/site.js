@@ -114,7 +114,7 @@ export function generateSite(book) {
       reject({ message: "theme-not-found" })
     }
 
-    if (!fs.existsSync(bookFile)) {
+    if (book.config.book.enabled && !fs.existsSync(bookFile)) {
       generateEpub(book).then(() => {
         generateSite(book)
           .then(() => resolve())
