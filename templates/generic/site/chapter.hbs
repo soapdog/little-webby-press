@@ -53,7 +53,9 @@
             <div>
               <h4>{{book.config.metadata.title}}</h4>
               <h5>{{book.config.author.name}}</h5>
+              {{#if book.config.site.download}}
               <a href="../files/{{book.products.epub}}" class="button is-primary is-small">{{book.config.site.actions.download}}</a>
+              {{/if}}
             </div>
           </div>
           <div class="toc-container">

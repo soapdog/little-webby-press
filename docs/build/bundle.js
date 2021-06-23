@@ -32666,7 +32666,7 @@ var app = (function () {
       publisher: {
         name: false,
         bio: false,
-        links: []
+        link: false
       },
       links: [],
       cta: [],
@@ -32674,7 +32674,6 @@ var app = (function () {
         name: false,
         photo: false,
         bio: false,
-        links: []
       },
       site: {
         enabled: true,
@@ -32764,6 +32763,7 @@ var app = (function () {
         if (book.config.webmonetization.endpoint.length > 0) {
           book.config.webmonetization.enabled = true;
         }
+
         return book
       } else {
         return new Error("error-no-configuration")
@@ -86905,7 +86905,7 @@ var app = (function () {
           reject({ message: "theme-not-found" });
         }
 
-        if (!fs.existsSync(bookFile)) {
+        if (book.config.book.enabled && !fs.existsSync(bookFile)) {
           generateEpub(book).then(() => {
             generateSite(book)
               .then(() => resolve())

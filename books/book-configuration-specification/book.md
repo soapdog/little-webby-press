@@ -32,7 +32,7 @@ enabled = true
 Which theme should be used to generate your eBook. At the moment we only have one theme called _generic_. In the near future we plan to have more themes, and also a way for you to override our theme selection and provide your own. Right now, you should simply ignore this field.
 
 ```toml
-theme = "Generic"
+theme = "generic"
 ```
 
 ## Frontmatter and Backmatter

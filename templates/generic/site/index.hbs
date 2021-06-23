@@ -59,9 +59,11 @@
           {{/if}}
 					<br>
 					<p class="has-text-centered">
+            {{#if book.config.site.download}}
 						<a class="button m-2 is-medium is-info is-outlined" href="files/{{book.products.epub}}">
 							{{book.config.site.actions.download}}
 						</a>
+            {{/if}}
 						<a class="button m-2 is-medium is-info is-outlined" href="book/{{firstChapter}}">
 							{{book.config.site.actions.read}}
 						</a>
