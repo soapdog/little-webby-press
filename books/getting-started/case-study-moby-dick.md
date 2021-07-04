@@ -1,6 +1,6 @@
 # Case Study: Let's publish Moby Dick
 
-Get the sample project by clicking [this download link](/samples/moby-dick.zip). After decompressing the archive, you'll see the manuscript files inside the folder.
+Get the sample project by clicking [this download link](https://little.webby.press/samples/moby-dick.zip). After decompressing the archive, you'll see the manuscript files inside the folder.
 
 They are written in [Markdown](https://markdown.org), which is a popular format for marking up plain-text files. There is one file per chapter, but you can organise your book in as many files as you want.
 

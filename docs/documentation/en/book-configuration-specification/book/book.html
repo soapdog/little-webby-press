@@ -1,0 +1,417 @@
+<html>
+  <head>
+    <title dir="ltr">Book Section - Book Configuration Specification - André Alves Garzia</title>
+    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="monetization" content="$ilp.uphold.com/zdPRwAnyEkmM" />
+
+    <meta charset="utf-8" />
+    <style>
+      .mini-cover {
+        max-height: 130px;
+        margin: 10px;
+      }
+      .toc-container {
+        padding-top: 20px;
+      }
+      .little-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .little-card a img {
+        max-height: 120px;
+      }
+
+      @media (max-width: 767px) {
+        /* <== You can change this break point as per your  needs */
+        .reverse-for-mobile {
+          flex-direction: column-reverse;
+          display: flex;
+        }
+      }
+
+      @media (min-width: 767px) {
+        .min-size {
+          min-height: 100vh;
+          margin:  0px;
+        }
+      }
+      </style>
+  </head>
+
+  <body>
+    <div class="columns reverse-for-mobile min-size">
+      <div class="column is-3 has-background-info-light">
+        <!-- sidebar -->
+        <div class="content p-2">
+          <div class="little-card">
+            <a class="mini-cover" href="../index.html"><img src="images/cover.png" /></a>
+            <div>
+              <h4>Book Configuration Specification</h4>
+              <h5>André Alves Garzia</h5>
+              <a href="../files/Book-Configuration-Specification.epub" class="button is-primary is-small">Download the eBook</a>
+            </div>
+          </div>
+          <div class="toc-container">
+            <h4>Table Of Contents</h4>
+            <ol class="toc no-parts">
+               
+              <li>
+                <a href="introduction.html#introduction">Introduction</a>
+              </li>
+                
+              <li>
+                <a href="toml.html#using-toml">Using TOML</a>
+              </li>
+                
+              <li>
+                <a href="metadata.html#metadata-section">Metadata Section</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#title">Title</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#subtitle">Subtitle</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#date">Date</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#identifier">Identifier</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#cover">Cover</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#language">Language</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#license">License</a>
+              </li>
+                
+              <li>
+                <a href="author.html#author-section">Author Section</a>
+              </li>
+              
+              <li>
+                <a href="author.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="author.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="author.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="author.html#photo">Photo</a>
+              </li>
+                
+              <li>
+                <a href="book.html#book-section">Book Section</a>
+              </li>
+              
+              <li>
+                <a href="book.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="book.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="book.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="book.html#frontmatter-and-backmatter">Frontmatter and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="book.html#chapters">Chapters</a>
+              </li>
+              
+              <li>
+                <a href="book.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="toc.html#table-of-contents-section">Table of Contents Section</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#prefix">Prefix</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#label">Label</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#match">Match</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="publisher.html#publisher-section">Publisher Section</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#link">Link</a>
+              </li>
+                
+              <li>
+                <a href="site.html#site-section">Site Section</a>
+              </li>
+              
+              <li>
+                <a href="site.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="site.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="site.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="site.html#blurb">Blurb</a>
+              </li>
+              
+              <li>
+                <a href="site.html#landing">Landing</a>
+              </li>
+              
+              <li>
+                <a href="site.html#download">Download</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-actions">Site Actions</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-labels">Site labels</a>
+              </li>
+                
+              <li>
+                <a href="webmonetization.html#webmonetization-section">WebMonetization Section</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#endpoint">Endpoint</a>
+              </li>
+                
+              <li>
+                <a href="cta.html#call-to-action-section">Call To Action Section</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="links.html#links-section">Links Section</a>
+              </li>
+              
+              <li>
+                <a href="links.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="links.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="links.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="links.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="yaml.html#using-yaml">Using YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#why-we-prefer-toml-over-yaml">Why We Prefer TOML over YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#sample-configuration-using-yaml">Sample configuration using YAML</a>
+              </li>
+                
+              <li>
+                <a href="json.html#using-json">Using JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#why-we-prefer-toml-over-json">Why We Prefer TOML over JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#sample-configuration-using-json">Sample configuration using JSON</a>
+              </li>
+                
+              <li>
+                <a href="conclusion.html#final-remarks-and-moving-on">Final Remarks and Moving On</a>
+              </li>
+               
+            </ol>
+          </div>
+        </div>
+        <!-- end of sidebar -->
+      </div>
+      <div class="column">
+        <!-- content display -->
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <div class="container">
+              <div class="content p-2">
+                <h1 id="Book-Section">Book Section</h1>
+<p>Arguably the most important section in the configuration file. This is the section that specifies your manuscript files. The order in which you specify them will form the spine of the book.</p>
+<p>All fields that belong to this section have information that goes into the eBook.</p>
+<h2 id="Default-values">Default values</h2>
+<pre><code class="language-toml">[book]
+enabled = true,
+theme = &quot;generic&quot;,
+frontmatter = [],
+chapters = [],
+backmatter = []
+</code></pre>
+<p>There is a lot to be said about each field, and it is best tackled in their own section.</p>
+<h2 id="Enabled">Enabled</h2>
+<p>This field dictates if Little Webby Press should generate an eBook for you. Some authors might have books generated using other tools and still want to use Little Webby Press to generate the Website for them. By setting this value to <code>false</code>, they’re able to bypass book generation and just create a Website.</p>
+<p>The default behavior is to generate the eBook. You only need to touch this field if your intention is to disable it.</p>
+<pre><code class="language-toml">enabled = true
+</code></pre>
+<h2 id="Theme">Theme</h2>
+<p>Which theme should be used to generate your eBook. At the moment we only have one theme called <em>generic</em>. In the near future we plan to have more themes, and also a way for you to override our theme selection and provide your own. Right now, you should simply ignore this field.</p>
+<pre><code class="language-toml">theme = &quot;generic&quot;
+</code></pre>
+<h2 id="Frontmatter-and-Backmatter">Frontmatter and Backmatter</h2>
+<p>Those two sections behave exactly the same, but one is put before the book chapters, and the other after them.</p>
+<p>Frontmatter and backmatter are what computer scientists call an <a href="https://www.bbc.co.uk/bitesize/guides/zy9thyc/revision/1">Array</a>. This is fancy speak, and the way you can understand them is as <em>a collection of stuff</em>. In our case they’re <em>a collection of files</em>. So when you write down any of these sections, you do so by writing a collection of files that are part of that section.</p>
+<pre><code class="language-toml">fontmatter = [
+  &quot;copyright.md&quot;,
+  &quot;praise-for-the-book.md&quot;,
+  &quot;acknowledgements.md&quot;
+]
+</code></pre>
+<p>and</p>
+<pre><code class="language-toml">backmatter = [
+  &quot;bio.md&quot;,
+  &quot;contact.md&quot;,
+  &quot;other-works.md&quot;
+]
+</code></pre>
+<p>A collection is placed between <em>square brackets</em> and each item is <em>quoted</em> and separated from each other using <em>commas</em>. You could write them all in a single line but writing each item in their own line makes it easier to remove items and to reorder them.</p>
+<p>Most eReaders will not place frontmatter or backmatter in the table of contents for the book. Readers will still be able to read them as they flip through the pages. Also, many eReaders will open a book in the first chapter and not in the frontmatter. This is a reason why many authors prefer to add things to the backmatter than the frontmatter, usually leaving it with only the copyright notice.</p>
+<h2 id="Chapters">Chapters</h2>
+<p><strong>Finally! This is the most important section in the whole configuration!</strong></p>
+<p>It took us a while to arrive to this section, this is where you specify the files that make up your book. Be aware that even though the field is called <em>chapters</em>, the relationship between one file and one chapter is arbitrary and there is nothing preventing you from breaking your chapters into multiple files. The field is called <em>chapters</em> because all the files inside this collection will be what ends up being your book’s chapters.</p>
+<pre><code class="language-toml">chapters = [
+  &quot;001-life-is-good.md&quot;,
+  &quot;002-life-still-good-but-other-pov.md&quot;,
+  &quot;003-shit-happens.md&quot;,
+  &quot;004-accepting-the-shit-is-hard.md&quot;,
+  &quot;005-mentor-appears.md&quot;,
+  &quot;006-mentor-teaches-shit-acceptance.md&quot;,
+  &quot;007-heroine-is-one-with-the-shit.md&quot;,
+  &quot;008-heroine-faces-harder-shit.md&quot;,
+  &quot;009-heroine-cannot-take-any-more-shit.md&quot;,
+  &quot;010-the-important-shit-is-friendship.md&quot;,
+  &quot;011-friends-get-their-shit-together.md&quot;,
+  &quot;012-friends-overcome-final-shit.md&quot;,
+  &quot;013-life-is-good-and-we-have-changed.md&quot;
+]
+</code></pre>
+<p>Those among you that know your storycraft will recognize the hero’s journey (or the story circle, or…) in the example above.</p>
+<h2 id="Important-remarks">Important remarks</h2>
+<p>The <em>Table of Contents</em> is specified by the information in another section. All that <em>frontmatter, backmatter, and chapters</em> specify is what content files belong to your book and their order.</p>
+<p>If you have Markdown files in your manuscript folder, but you don’t place them in any of these collections, they won’t be processed or appear in your book.</p>
+<p>If you have Markdown file names in your collections that don’t actually exist on your manuscript folder, the book generation will break because of the missing file. Only add files to these collections after you have created them.</p>
+
+                <div class="is-flex">
+                  <div>
+                    <a
+                      href="author.html"
+                      class="button is-medium is-link"
+                      >&larr;</a
+                    >
+                  </div>
+                  <div class="is-flex-grow-1"></div>
+                  <div>
+                    <a
+                      href="toc.html"
+                      class="button is-medium is-link"
+                      >&rarr;</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of content display -->
+      </div>
+    </div>
+  </body>
+</html>

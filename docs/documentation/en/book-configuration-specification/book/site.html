@@ -1,0 +1,452 @@
+<html>
+  <head>
+    <title dir="ltr">Site Section - Book Configuration Specification - André Alves Garzia</title>
+    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="monetization" content="$ilp.uphold.com/zdPRwAnyEkmM" />
+
+    <meta charset="utf-8" />
+    <style>
+      .mini-cover {
+        max-height: 130px;
+        margin: 10px;
+      }
+      .toc-container {
+        padding-top: 20px;
+      }
+      .little-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .little-card a img {
+        max-height: 120px;
+      }
+
+      @media (max-width: 767px) {
+        /* <== You can change this break point as per your  needs */
+        .reverse-for-mobile {
+          flex-direction: column-reverse;
+          display: flex;
+        }
+      }
+
+      @media (min-width: 767px) {
+        .min-size {
+          min-height: 100vh;
+          margin:  0px;
+        }
+      }
+      </style>
+  </head>
+
+  <body>
+    <div class="columns reverse-for-mobile min-size">
+      <div class="column is-3 has-background-info-light">
+        <!-- sidebar -->
+        <div class="content p-2">
+          <div class="little-card">
+            <a class="mini-cover" href="../index.html"><img src="images/cover.png" /></a>
+            <div>
+              <h4>Book Configuration Specification</h4>
+              <h5>André Alves Garzia</h5>
+              <a href="../files/Book-Configuration-Specification.epub" class="button is-primary is-small">Download the eBook</a>
+            </div>
+          </div>
+          <div class="toc-container">
+            <h4>Table Of Contents</h4>
+            <ol class="toc no-parts">
+               
+              <li>
+                <a href="introduction.html#introduction">Introduction</a>
+              </li>
+                
+              <li>
+                <a href="toml.html#using-toml">Using TOML</a>
+              </li>
+                
+              <li>
+                <a href="metadata.html#metadata-section">Metadata Section</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#title">Title</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#subtitle">Subtitle</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#date">Date</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#identifier">Identifier</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#cover">Cover</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#language">Language</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#license">License</a>
+              </li>
+                
+              <li>
+                <a href="author.html#author-section">Author Section</a>
+              </li>
+              
+              <li>
+                <a href="author.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="author.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="author.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="author.html#photo">Photo</a>
+              </li>
+                
+              <li>
+                <a href="book.html#book-section">Book Section</a>
+              </li>
+              
+              <li>
+                <a href="book.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="book.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="book.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="book.html#frontmatter-and-backmatter">Frontmatter and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="book.html#chapters">Chapters</a>
+              </li>
+              
+              <li>
+                <a href="book.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="toc.html#table-of-contents-section">Table of Contents Section</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#prefix">Prefix</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#label">Label</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#match">Match</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="publisher.html#publisher-section">Publisher Section</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#link">Link</a>
+              </li>
+                
+              <li>
+                <a href="site.html#site-section">Site Section</a>
+              </li>
+              
+              <li>
+                <a href="site.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="site.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="site.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="site.html#blurb">Blurb</a>
+              </li>
+              
+              <li>
+                <a href="site.html#landing">Landing</a>
+              </li>
+              
+              <li>
+                <a href="site.html#download">Download</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-actions">Site Actions</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-labels">Site labels</a>
+              </li>
+                
+              <li>
+                <a href="webmonetization.html#webmonetization-section">WebMonetization Section</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#endpoint">Endpoint</a>
+              </li>
+                
+              <li>
+                <a href="cta.html#call-to-action-section">Call To Action Section</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="links.html#links-section">Links Section</a>
+              </li>
+              
+              <li>
+                <a href="links.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="links.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="links.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="links.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="yaml.html#using-yaml">Using YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#why-we-prefer-toml-over-yaml">Why We Prefer TOML over YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#sample-configuration-using-yaml">Sample configuration using YAML</a>
+              </li>
+                
+              <li>
+                <a href="json.html#using-json">Using JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#why-we-prefer-toml-over-json">Why We Prefer TOML over JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#sample-configuration-using-json">Sample configuration using JSON</a>
+              </li>
+                
+              <li>
+                <a href="conclusion.html#final-remarks-and-moving-on">Final Remarks and Moving On</a>
+              </li>
+               
+            </ol>
+          </div>
+        </div>
+        <!-- end of sidebar -->
+      </div>
+      <div class="column">
+        <!-- content display -->
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <div class="container">
+              <div class="content p-2">
+                <h1 id="Site-Section">Site Section</h1>
+<p>Well, this is going to be a large chapter. You might want to have some coffee or tea while reading it, because this section is used to specify what goes into the Website generated by Little Webby Press and it contains a lot of fields.</p>
+<h2 id="Default-values">Default values</h2>
+<pre><code class="language-toml">[site]
+enabled = true
+theme = &quot;generic&quot;
+frontmatter = [ ]
+chapters = [ ]
+backmatter = [ ]
+blurb = false
+landing = true
+download = true
+
+[site.actions]
+download = &quot;Download the eBook&quot;
+read = &quot;Free To Read Online&quot;
+toc = &quot;Table Of Contents&quot;
+
+[site.labels]
+about-book = &quot;About The Book&quot;
+about-author = &quot;About The Author&quot;
+toc = &quot;Table Of Contents&quot;
+ereader-compatible = &quot;Compatible with most eReaders&quot;
+support-with-webmo = &quot;Support this work by using&quot;
+read = &quot;Free To Read Online&quot;
+license = &quot;License&quot;
+
+</code></pre>
+<p>You can simply ommit this section and have the site be generated according to the data in the <code>[book]</code> section. Still, I think you should have this filled in with at least the <em>blurb</em> field.</p>
+<p>A lot of these sections are similar to the <em>book section</em>, in these cases they behave exactly the same thus allowing you to override the values for the same fields on the Website.</p>
+<h2 id="Enabled">Enabled</h2>
+<p>If you want to use Little Webby Press just to assemble your eBooks, you can disable the Website generation by setting this field to <code>false</code>.</p>
+<pre><code class="language-toml">enabled = false
+</code></pre>
+<p>The default behaviour is to generate a Website. It is important to understand that even if that is the default behaviour, there is a separate button on the interface for the <em>Generate Site</em> action. Clicking only the <em>Generate eBook</em> action button, will cause only the eBook to be assembled. So, even all you want is an eBook, you can use the default settings and simply not click hte <em>Generate Site</em> action.</p>
+<p>Some authors already have their own platform and website set up. In these cases, Little Webby Press is most useful as a tool to assemble eBooks only.</p>
+<h2 id="Theme">Theme</h2>
+<p>Which theme should be used to generate the Website. At the moment we only have one theme called <em>generic</em>. In the near future we plan to have more themes, and also a way for you to override our theme selection and provide your own. Right now, you should simply ignore this field.</p>
+<pre><code class="language-toml">theme = &quot;generic&quot;
+</code></pre>
+<h2 id="Frontmatter-Chapters-and-Backmatter">Frontmatter, Chapters, and Backmatter</h2>
+<p>These behave exactly the same as their counterparts in the <em>book section</em>. The reason for having them here is to enable you to override the values. For example, suppose you just want a sample to be present in the website for the visitors to read, you could do something like</p>
+<pre><code class="language-toml">chapters = [
+  &quot;001-life-is-good.md&quot;,
+  &quot;002-life-still-good-but-other-pov.md&quot;,
+  &quot;003-shit-happens.md&quot;,
+  &quot;004-accepting-the-shit-is-hard.md&quot;,
+  &quot;005-mentor-appears.md&quot;,
+  &quot;end-of-sample-if-you-like-buy-this-shit.md&quot;
+]
+</code></pre>
+<p>And the version of the <code>chapters</code> field used by the website would not be the same as the one in the eBook.</p>
+<p>If you don’t fill these fields, the version of the <em>book section</em> will be used.</p>
+<h2 id="Blurb">Blurb</h2>
+<p>This is the marketing blurb that is placed on the website. It serves the same purpose as the text usually found in the back cover of a paperback. It’s main reason for existing is to convert visitors into readers.</p>
+<pre><code class="language-toml">blurb = &quot;&quot;&quot;
+In this award-winning book (my mom gave me an award at age five for outlining this story), you follow our heroine as she overcome challenges and finds friendship along the way.
+
+&gt; &quot;You should totally read this shit!&quot; — not GRR Martin.
+&quot;&quot;&quot;
+</code></pre>
+<p>You can use Markdown to write that field. It appears only on the Website.</p>
+<h2 id="Landing">Landing</h2>
+<p>When Little Webby Press generates a website for your book, it creates a <a href="https://unbounce.com/landing-page-articles/what-is-a-landing-page/"><em>landing site</em></a> and also a web-readable version of the book. This manual you’re reading is this webby version of the <em>Book Configuration File Specification eBook</em>.</p>
+<p>For some books – such as this manual – it doesn’t make sense to have a landing page, and all you want is the webby version of the book. In these cases, you can set <em>landing</em> to <code>false</code>.</p>
+<pre><code class="language-toml">landing = false
+</code></pre>
+<h2 id="Download">Download</h2>
+<p>The default behaviour of the Website is to provide download links for the eBook. If you don’t want the visitor to be able to download the ePub, you can set this value to <code>false</code>.</p>
+<pre><code class="language-toml">download = false
+</code></pre>
+<h2 id="Site-Actions">Site Actions</h2>
+<p>So this is a new type of section that you haven’t seen before, it has a period in its name and that period is important. What that period means is that we’re creating a subsection.</p>
+<p>There is the <em>site section</em> that starts with:</p>
+<pre><code class="language-toml">[site]
+</code></pre>
+<p>And inside the <em>site section</em> there is the <em>actions subsection</em> that starts with:</p>
+<pre><code class="language-toml">[site.actions]
+</code></pre>
+<p>The actions are the buttons that appear on the top part of the website allowing the user to <em>download the book</em>, <em>read the book online</em>, and <em>browse the table of contents</em>.</p>
+<p>What this section does, is allow you to change the text on these buttons. Being able to specify your own text is important because you book and audience might not be English-speakers and it makes no sense to have a book written in a language and the Website buttons in another.</p>
+<p>At the moment there is no way for Little Webby Press to generate sites in multiple languages, so we advise that if your book is in a language that is not English, that you specify these fields in the same language.</p>
+<pre><code class="language-toml">[site.actions]
+download = &quot;Baixe o Livro&quot;
+read = &quot;Leia Online&quot;
+toc = &quot;Índice&quot;
+</code></pre>
+<h2 id="Site-labels">Site labels</h2>
+<p>Similarly to the previous section, the <em>site labels</em> section can be used to override all the labels in the website template. This way you can localise the website in your own language.</p>
+<pre><code class="language-toml">[site.labels]
+about-book = &quot;Sobre o Livro&quot;
+about-author = &quot;Sobre o Autor&quot;
+toc = &quot;Índice&quot;
+ereader-compatible = &quot;Compatível com leitores digitais&quot;
+support-with-webmo = &quot;Apoie esse trabalho&quot;
+read = &quot;Leia Online&quot;
+license = &quot;Licença&quot;
+</code></pre>
+
+                <div class="is-flex">
+                  <div>
+                    <a
+                      href="publisher.html"
+                      class="button is-medium is-link"
+                      >&larr;</a
+                    >
+                  </div>
+                  <div class="is-flex-grow-1"></div>
+                  <div>
+                    <a
+                      href="webmonetization.html"
+                      class="button is-medium is-link"
+                      >&rarr;</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of content display -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+<html>
+  <head>
+    <title dir="ltr">Metadata Section - Book Configuration Specification - André Alves Garzia</title>
+    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="monetization" content="$ilp.uphold.com/zdPRwAnyEkmM" />
+
+    <meta charset="utf-8" />
+    <style>
+      .mini-cover {
+        max-height: 130px;
+        margin: 10px;
+      }
+      .toc-container {
+        padding-top: 20px;
+      }
+      .little-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .little-card a img {
+        max-height: 120px;
+      }
+
+      @media (max-width: 767px) {
+        /* <== You can change this break point as per your  needs */
+        .reverse-for-mobile {
+          flex-direction: column-reverse;
+          display: flex;
+        }
+      }
+
+      @media (min-width: 767px) {
+        .min-size {
+          min-height: 100vh;
+          margin:  0px;
+        }
+      }
+      </style>
+  </head>
+
+  <body>
+    <div class="columns reverse-for-mobile min-size">
+      <div class="column is-3 has-background-info-light">
+        <!-- sidebar -->
+        <div class="content p-2">
+          <div class="little-card">
+            <a class="mini-cover" href="../index.html"><img src="images/cover.png" /></a>
+            <div>
+              <h4>Book Configuration Specification</h4>
+              <h5>André Alves Garzia</h5>
+              <a href="../files/Book-Configuration-Specification.epub" class="button is-primary is-small">Download the eBook</a>
+            </div>
+          </div>
+          <div class="toc-container">
+            <h4>Table Of Contents</h4>
+            <ol class="toc no-parts">
+               
+              <li>
+                <a href="introduction.html#introduction">Introduction</a>
+              </li>
+                
+              <li>
+                <a href="toml.html#using-toml">Using TOML</a>
+              </li>
+                
+              <li>
+                <a href="metadata.html#metadata-section">Metadata Section</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#title">Title</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#subtitle">Subtitle</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#date">Date</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#identifier">Identifier</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#cover">Cover</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#language">Language</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#license">License</a>
+              </li>
+                
+              <li>
+                <a href="author.html#author-section">Author Section</a>
+              </li>
+              
+              <li>
+                <a href="author.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="author.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="author.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="author.html#photo">Photo</a>
+              </li>
+                
+              <li>
+                <a href="book.html#book-section">Book Section</a>
+              </li>
+              
+              <li>
+                <a href="book.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="book.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="book.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="book.html#frontmatter-and-backmatter">Frontmatter and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="book.html#chapters">Chapters</a>
+              </li>
+              
+              <li>
+                <a href="book.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="toc.html#table-of-contents-section">Table of Contents Section</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#prefix">Prefix</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#label">Label</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#match">Match</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="publisher.html#publisher-section">Publisher Section</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#link">Link</a>
+              </li>
+                
+              <li>
+                <a href="site.html#site-section">Site Section</a>
+              </li>
+              
+              <li>
+                <a href="site.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="site.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="site.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="site.html#blurb">Blurb</a>
+              </li>
+              
+              <li>
+                <a href="site.html#landing">Landing</a>
+              </li>
+              
+              <li>
+                <a href="site.html#download">Download</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-actions">Site Actions</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-labels">Site labels</a>
+              </li>
+                
+              <li>
+                <a href="webmonetization.html#webmonetization-section">WebMonetization Section</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#endpoint">Endpoint</a>
+              </li>
+                
+              <li>
+                <a href="cta.html#call-to-action-section">Call To Action Section</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="links.html#links-section">Links Section</a>
+              </li>
+              
+              <li>
+                <a href="links.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="links.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="links.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="links.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="yaml.html#using-yaml">Using YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#why-we-prefer-toml-over-yaml">Why We Prefer TOML over YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#sample-configuration-using-yaml">Sample configuration using YAML</a>
+              </li>
+                
+              <li>
+                <a href="json.html#using-json">Using JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#why-we-prefer-toml-over-json">Why We Prefer TOML over JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#sample-configuration-using-json">Sample configuration using JSON</a>
+              </li>
+                
+              <li>
+                <a href="conclusion.html#final-remarks-and-moving-on">Final Remarks and Moving On</a>
+              </li>
+               
+            </ol>
+          </div>
+        </div>
+        <!-- end of sidebar -->
+      </div>
+      <div class="column">
+        <!-- content display -->
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <div class="container">
+              <div class="content p-2">
+                <h1 id="Metadata-Section">Metadata Section</h1>
+<p>The metadata section contains fields that would be used for archival purposes in a library or shop.</p>
+<h2 id="Default-values">Default values</h2>
+<p>Each of these fields has a sensible default value, so you should only fill the ones you need. Below is a metadata section with the default values being explicitly shown:</p>
+<pre><code class="language-toml">[[ metadata ]]
+title = &quot;Untitled Book&quot;
+subtitle = false
+date = new Date()
+identifier = false
+cover = false
+language = &quot;en&quot;
+license = false
+</code></pre>
+<p>If you don’t add a field to your <code>Book.toml</code> file, their default value will be used. Usually, if the default value is <code>false</code> it means that the value is ignored.</p>
+<blockquote>
+<p>The software developers among you might have noticed that the fields change type from <code>boolean: false</code> to a <code>string</code> when filled in. That is by design and makes checking for them in templates easier.</p>
+</blockquote>
+<h2 id="Title">Title</h2>
+<p>You book’s title. This is added to both the eBook and the Website.</p>
+<p>Example:</p>
+<pre><code class="language-toml">title = &quot;Moby Dick, or, The Whale&quot;
+</code></pre>
+<h2 id="Subtitle">Subtitle</h2>
+<p>An optional field to hold your book subtitle. If it is present, it is added to both the eBook and the Website.</p>
+<p>Example:</p>
+<pre><code class="language-toml">subtitle = &quot;That classic book about a whale you have to read for school&quot;
+</code></pre>
+<h2 id="Date">Date</h2>
+<p>The publication date for the book. The default value will make it the current date when you’re generating the book. If you want to fill it in, you need to write the date in <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> format.</p>
+<p>Example:</p>
+<pre><code class="language-toml">date = 2019-08-08T12:00:00Z
+</code></pre>
+<p>It is <code>&lt;year&gt;-&lt;month&gt;-&lt;day&gt;T&lt;hour&gt;:&lt;minute&gt;:&lt;seconds&gt;Z</code>. The <em>year</em> should always be four numbers, and all the other items should be two numbers, so put a leading zero if the value is below ten.</p>
+<h2 id="Identifier">Identifier</h2>
+<p>This is the unique <code>identifier</code> that will be used to <em>identify</em> your book. This can be an ISBN, or any other unique value that is compatible with the platforms you’ll distribute your eBook on. A unique URL pointing to your book is a good identifier.</p>
+<p>Example:</p>
+<pre><code class="language-toml">identifier = &quot;http://www.gutenberg.org/ebooks/2701&quot;
+</code></pre>
+<h2 id="Cover">Cover</h2>
+<p>The cover image file for the book. This file, like all other images in your book, should be placed inside a folder called <code>images</code> inside your <em>manuscript folder</em>.</p>
+<pre><code class="language-toml">cover = &quot;images/cover.jpg&quot;
+</code></pre>
+<h2 id="Language">Language</h2>
+<p>The language the book is written in. The value for this field should be in <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a> format, which is a two letter code to represent a language.</p>
+<p>Here are some of example language codes:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Language</th>
+<th style="text-align:center">ISO 639-1 Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">English</td>
+<td style="text-align:center">en</td>
+</tr>
+<tr>
+<td style="text-align:left">Chinese</td>
+<td style="text-align:center">zh</td>
+</tr>
+<tr>
+<td style="text-align:left">Spanish</td>
+<td style="text-align:center">es</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguese</td>
+<td style="text-align:center">pt</td>
+</tr>
+<tr>
+<td style="text-align:left">German</td>
+<td style="text-align:center">de</td>
+</tr>
+<tr>
+<td style="text-align:left">Italian</td>
+<td style="text-align:center">it</td>
+</tr>
+<tr>
+<td style="text-align:left">Swahili</td>
+<td style="text-align:center">sw</td>
+</tr>
+<tr>
+<td style="text-align:left">Korean</td>
+<td style="text-align:center">ko</td>
+</tr>
+<tr>
+<td style="text-align:left">Japanese</td>
+<td style="text-align:center">ja</td>
+</tr>
+<tr>
+<td style="text-align:left">French</td>
+<td style="text-align:center">fr</td>
+</tr>
+<tr>
+<td style="text-align:left">Xhosa</td>
+<td style="text-align:center">xh</td>
+</tr>
+<tr>
+<td style="text-align:left">Guarani</td>
+<td style="text-align:center">gn</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<pre><code class="language-toml">language = &quot;pt&quot;
+</code></pre>
+<h2 id="License">License</h2>
+<p>This is the license for your book. It can be an HTML chunk if you want to add an image and link to the license. The intended use case for this is so that it becomes easier to tell the reader that your book is using copyleft licenses such as <a href="https://creativecommons.org/">Creative Commons</a>.</p>
+<p>Be aware that Little Webby Press does not generate a copyright page for your book. You should do it yourself, and add it to the frontmatter.</p>
+<p>The value of this license field is used only on the Website landing page.</p>
+<p>Example:</p>
+<pre><code class="language-toml">license = &quot;&lt;a href='https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB'&gt;&lt;img src='book/images/license.svg'&gt;&lt;/a&gt;&quot;
+</code></pre>
+<p>The example above is a bit complex, it uses an HTML chunk to create a link to the <em>Creative Commons Website</em> page for a specific version of the license, and it uses an image that is in the manuscript folder.</p>
+
+                <div class="is-flex">
+                  <div>
+                    <a
+                      href="toml.html"
+                      class="button is-medium is-link"
+                      >&larr;</a
+                    >
+                  </div>
+                  <div class="is-flex-grow-1"></div>
+                  <div>
+                    <a
+                      href="author.html"
+                      class="button is-medium is-link"
+                      >&rarr;</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of content display -->
+      </div>
+    </div>
+  </body>
+</html>
