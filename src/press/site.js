@@ -38,7 +38,7 @@ let md = new MarkdownIt({
   typographer: true,
 })
   .use(MarkdownFootnote)
-  .use(MarkdownAnchor, { slugify })
+  .use(MarkdownAnchor, { safeId })
   .use(MarkdownBracketedSpans)
   .use(MarkdownAttrs)
   .use(MarkdownImplicitFigues, { figcaption: true })
@@ -173,6 +173,8 @@ export function generateSite(book) {
         s.toc = toc[s.htmlFile]
         return s
       })
+
+      console.log(spine)
 
       // Templating
       if (book.config.site.description) {
