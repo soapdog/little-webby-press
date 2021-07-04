@@ -1,5 +1,5 @@
-import App from './App.svelte';
-import { initializeFilesystem } from "./common/fs.js";
+import App from "./App.svelte"
+import { initializeFilesystem } from "./common/fs.js"
 import {currentView} from "./common/viewManager.js"
 import "./common/i18n.js"
 
@@ -10,7 +10,7 @@ if (location.hash.length > 0) {
 }
 
 initializeFilesystem()
-	.then(bfs => {
+	.then(_bfs => {
 		app = new App({
 			target: document.body,
 		});
