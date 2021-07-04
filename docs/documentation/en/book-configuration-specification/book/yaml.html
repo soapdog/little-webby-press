@@ -1,0 +1,492 @@
+<html>
+  <head>
+    <title dir="ltr">Using YAML - Book Configuration Specification - André Alves Garzia</title>
+    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="monetization" content="$ilp.uphold.com/zdPRwAnyEkmM" />
+
+    <meta charset="utf-8" />
+    <style>
+      .mini-cover {
+        max-height: 130px;
+        margin: 10px;
+      }
+      .toc-container {
+        padding-top: 20px;
+      }
+      .little-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .little-card a img {
+        max-height: 120px;
+      }
+
+      @media (max-width: 767px) {
+        /* <== You can change this break point as per your  needs */
+        .reverse-for-mobile {
+          flex-direction: column-reverse;
+          display: flex;
+        }
+      }
+
+      @media (min-width: 767px) {
+        .min-size {
+          min-height: 100vh;
+          margin:  0px;
+        }
+      }
+      </style>
+  </head>
+
+  <body>
+    <div class="columns reverse-for-mobile min-size">
+      <div class="column is-3 has-background-info-light">
+        <!-- sidebar -->
+        <div class="content p-2">
+          <div class="little-card">
+            <a class="mini-cover" href="../index.html"><img src="images/cover.png" /></a>
+            <div>
+              <h4>Book Configuration Specification</h4>
+              <h5>André Alves Garzia</h5>
+              <a href="../files/Book-Configuration-Specification.epub" class="button is-primary is-small">Download the eBook</a>
+            </div>
+          </div>
+          <div class="toc-container">
+            <h4>Table Of Contents</h4>
+            <ol class="toc no-parts">
+               
+              <li>
+                <a href="introduction.html#introduction">Introduction</a>
+              </li>
+                
+              <li>
+                <a href="toml.html#using-toml">Using TOML</a>
+              </li>
+                
+              <li>
+                <a href="metadata.html#metadata-section">Metadata Section</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#title">Title</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#subtitle">Subtitle</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#date">Date</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#identifier">Identifier</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#cover">Cover</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#language">Language</a>
+              </li>
+              
+              <li>
+                <a href="metadata.html#license">License</a>
+              </li>
+                
+              <li>
+                <a href="author.html#author-section">Author Section</a>
+              </li>
+              
+              <li>
+                <a href="author.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="author.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="author.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="author.html#photo">Photo</a>
+              </li>
+                
+              <li>
+                <a href="book.html#book-section">Book Section</a>
+              </li>
+              
+              <li>
+                <a href="book.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="book.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="book.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="book.html#frontmatter-and-backmatter">Frontmatter and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="book.html#chapters">Chapters</a>
+              </li>
+              
+              <li>
+                <a href="book.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="toc.html#table-of-contents-section">Table of Contents Section</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#prefix">Prefix</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#label">Label</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#match">Match</a>
+              </li>
+              
+              <li>
+                <a href="toc.html#important-remarks">Important remarks</a>
+              </li>
+                
+              <li>
+                <a href="publisher.html#publisher-section">Publisher Section</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#name">Name</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#bio">Bio</a>
+              </li>
+              
+              <li>
+                <a href="publisher.html#link">Link</a>
+              </li>
+                
+              <li>
+                <a href="site.html#site-section">Site Section</a>
+              </li>
+              
+              <li>
+                <a href="site.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="site.html#enabled">Enabled</a>
+              </li>
+              
+              <li>
+                <a href="site.html#theme">Theme</a>
+              </li>
+              
+              <li>
+                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+              </li>
+              
+              <li>
+                <a href="site.html#blurb">Blurb</a>
+              </li>
+              
+              <li>
+                <a href="site.html#landing">Landing</a>
+              </li>
+              
+              <li>
+                <a href="site.html#download">Download</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-actions">Site Actions</a>
+              </li>
+              
+              <li>
+                <a href="site.html#site-labels">Site labels</a>
+              </li>
+                
+              <li>
+                <a href="webmonetization.html#webmonetization-section">WebMonetization Section</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="webmonetization.html#endpoint">Endpoint</a>
+              </li>
+                
+              <li>
+                <a href="cta.html#call-to-action-section">Call To Action Section</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="cta.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="links.html#links-section">Links Section</a>
+              </li>
+              
+              <li>
+                <a href="links.html#default-values">Default values</a>
+              </li>
+              
+              <li>
+                <a href="links.html#cta">cta</a>
+              </li>
+              
+              <li>
+                <a href="links.html#url">url</a>
+              </li>
+              
+              <li>
+                <a href="links.html#label">label</a>
+              </li>
+                
+              <li>
+                <a href="yaml.html#using-yaml">Using YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#why-we-prefer-toml-over-yaml">Why We Prefer TOML over YAML</a>
+              </li>
+              
+              <li>
+                <a href="yaml.html#sample-configuration-using-yaml">Sample configuration using YAML</a>
+              </li>
+                
+              <li>
+                <a href="json.html#using-json">Using JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#why-we-prefer-toml-over-json">Why We Prefer TOML over JSON</a>
+              </li>
+              
+              <li>
+                <a href="json.html#sample-configuration-using-json">Sample configuration using JSON</a>
+              </li>
+                
+              <li>
+                <a href="conclusion.html#final-remarks-and-moving-on">Final Remarks and Moving On</a>
+              </li>
+               
+            </ol>
+          </div>
+        </div>
+        <!-- end of sidebar -->
+      </div>
+      <div class="column">
+        <!-- content display -->
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <div class="container">
+              <div class="content p-2">
+                <h1 id="Using-YAML">Using YAML</h1>
+<p>So far, all the documentation for <em>configuration files</em> have only mentioned <a href="https://toml.io">TOML</a> as this is our preferred configuration markup language. Still, some people might have other preferrences, and if you’re among those who prefer <a href="https://yaml.org">YAML</a> over TOML, you’ll be happy to know that YAML works as well.</p>
+<p>To use YAML for a configuration file, just name it <code>Book.yaml</code> and write it in YAML instad of TOML. Teaching how to write YAML is beyond the scope of this manual, their website does a really good job of explaining the language and helping you understand it.</p>
+<h2 id="Why-We-Prefer-TOML-over-YAML">Why We Prefer TOML over YAML</h2>
+<p>It is important to understand that this is a personal preference. There is nothing wrong with YAML or preferring YAML. It is because we understand that such choices are mostly opinion based, that we offer you the possibility of using YAML instead of TOML.</p>
+<p>My main beef with YAML is that I think that <a href="https://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful">significant whitespace can lead to hard to debug bugs</a>. It is very easy to end up mismatching the number of spaces needed for indentation and ending up with a file that will not be a valid <em>book configuration file</em>. Such bugs are hard to detect with naked eye and often require editors with specialized plugins.</p>
+<p>Still, the choice is yours. Do you like YAML? Go for it. I’m committed to supporting it on Little Webby Press.</p>
+<h2 id="Sample-configuration-using-YAML">Sample configuration using YAML</h2>
+<p>This is a YAML version of the configuration for the <em>Moby Dick</em> sample.</p>
+<pre><code class="language-yaml">metadata:
+  title: 'Moby-Dick, or, The Whale'
+  date: 2019-08-08T12:00:00.000Z
+  identifier: 'http://www.gutenberg.org/ebooks/2701'
+  cover: images/cover.jpg
+author:
+  name: Herman Melville
+  bio: &gt;
+    Herman Melville, (born August 1, 1819, New York City—died September 28,
+    1891, New York City), American novelist, short-story writer, and poet, best
+    known for his novels of the sea, including his masterpiece, Moby Dick
+    (1851).
+publisher:
+  name: Project Gutenberg
+site:
+  blurb: &gt;
+    Moby Dick is the story of Captain Ahab's quest to avenge the whale that
+    'reaped' his leg. The quest is an obsession and the novel is a diabolical
+    study of how a man becomes a fanatic.But it is also a hymn to democracy.
+    Bent as the crew is on Ahab's appalling crusade, it is equally the image of
+    a co-operative community at work: all hands dependent on all hands, each
+    individual responsible for the security of each.Among the crew is Ishmael,
+    the novel's narrator, ordinary sailor, and extraordinary reader. Digressive,
+    allusive, vulgar, transcendent, the story Ishmael tells is above all an
+    education:in the practice of whaling, in the art of writing. Expanding to
+    equal his 'mighty theme' - not only the whale but all things sublime -
+    Melville breathes in the world's great literature. Moby Dick is the greatest
+    novel ever written by an American.
+webmonetization:
+  endpoint: $ilp.uphold.com/zdPRwAnyEkmM
+toc:
+  prefix: h3
+  label: h1
+  match: first
+book:
+  frontmatter:
+    - 000-front-matter.md
+  chapters:
+    - 001-loomings.md
+    - 002-carpet-bag.md
+    - 003-spouter-inn.md
+    - 004-counterpane.md
+    - 005-breakfast.md
+    - 006-street.md
+    - 007-chapel.md
+    - 008-pulpit.md
+    - 009-sermon.md
+    - 010-bosom-friend.md
+    - 011-nightgown.md
+    - 012-biographical.md
+    - 013-wheelbarrow.md
+    - 014-nantucket.md
+    - 015-chowder.md
+    - 016-ship.md
+    - 017-ramadan.md
+    - 018-his-mark.md
+    - 019-prophet.md
+    - 020-all-astir.md
+    - 021-going-aboard.md
+    - 022-merry-christmas.md
+    - 023-lee-shore.md
+    - 024-advocate.md
+    - 025-postscript.md
+    - 026-knights-squires.md
+    - 027-knights-squires.md
+    - 028-ahab.md
+    - 029-enter-ahab-to-him-stubb.md
+    - 030-pipe.md
+    - 031-queen-mab.md
+    - 032-cetology.md
+    - 033-specksnyder.md
+    - 034-cabin-table.md
+    - 035-mast-head.md
+    - 036-quater-deck.md
+    - 037-sunset.md
+    - 038-dusk.md
+    - 039-first-night-watch.md
+    - 040-midnight-forecastle.md
+    - 041-moby-dick.md
+    - 042-whiteness-whale.md
+    - 043-hark.md
+    - 044-chart.md
+    - 045-affidavit.md
+    - 046-surmises.md
+    - 047-mat-maker.md
+    - 048-first-lowering.md
+    - 049-hyena.md
+    - 050-ahabs-boat-crew-fedallah.md
+    - 051-spirit-spout.md
+    - 052-albatross.md
+    - 053-gam.md
+    - 054-town-hos-story.md
+    - 055-monstrous-pictures-whales.md
+    - 056-less-erroneous-pictures-whales-true-pictures-whaling-scenes.md
+    - 057-whales-paint-teeth-wood-sheet-iron-stone-mountains-stars.md
+    - 058-brit.md
+    - 059-squid.md
+    - 060-line.md
+    - 061-stubb-kills-whale.md
+    - 062-dart.md
+    - 063-crotch.md
+    - 064-stubbs-supper.md
+    - 065-whale-as-dish.md
+    - 066-shark-massacre.md
+    - 067-cutting-in.md
+    - 068-blanket.md
+    - 069-funeral.md
+    - 070-sphynx.md
+    - 071-jeroboams-story.md
+    - 072-monkey-rope.md
+    - 073-stubb-flask-kill-right-whale.md
+    - 074-sperm-whales-head-contrasted-view.md
+    - 075-right-whales-head-contrasted-view.md
+    - 076-battering-ram.md
+    - 077-great-heidelburgh-tun.md
+    - 078-cistern-buckets.md
+    - 079-prairie.md
+    - 080-nut.md
+    - 081-pedquod-meets-virgin.md
+    - 082-honour-glory-whaling.md
+    - 083-jonah-historically-regarded.md
+    - 084-pitchpoling.md
+    - 085-fountain.md
+    - 086-tail.md
+    - 087-grand-armada.md
+    - 088-schools-schoolmasters.md
+    - 089-fast-fish-loose-fish.md
+    - 090-heads-or-tails.md
+</code></pre>
+
+                <div class="is-flex">
+                  <div>
+                    <a
+                      href="links.html"
+                      class="button is-medium is-link"
+                      >&larr;</a
+                    >
+                  </div>
+                  <div class="is-flex-grow-1"></div>
+                  <div>
+                    <a
+                      href="json.html"
+                      class="button is-medium is-link"
+                      >&rarr;</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of content display -->
+      </div>
+    </div>
+  </body>
+</html>

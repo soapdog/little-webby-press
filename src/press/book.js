@@ -16,7 +16,7 @@ let configurationFiles = [
  */
 export const defaultBookConfiguration = {
   metadata: {
-    title: "Untitled",
+    title: "Untitled Book",
     subtitle: false,
     date: new Date(),
     identifier: false,
@@ -27,22 +27,24 @@ export const defaultBookConfiguration = {
   publisher: {
     name: false,
     bio: false,
-    links: []
+    link: false
   },
   links: [],
+  cta: [],
   author: {
     name: false,
     photo: false,
     bio: false,
-    links: []
   },
   site: {
-    enabled: false,
+    enabled: true,
     theme: "generic",
     frontmatter: [],
     chapters: [],
     backmatter: [],
     blurb: false,
+    landing: true,
+    download: true,
     actions: {
       "download": "Download the eBook",
       "read": "Free To Read Online",
@@ -54,7 +56,8 @@ export const defaultBookConfiguration = {
       "toc": "Table Of Contents",
       "ereader-compatible": "Compatible with most eReaders",
       "support-with-webmo": "Support this work by using",
-      "read": "Free To Read Online"
+      "read": "Free To Read Online",
+      "license": "License"
     }
   },
   webmonetization: {
@@ -66,11 +69,11 @@ export const defaultBookConfiguration = {
   },
   toc: {
     prefix: false,
-    label: "h1",
+    label: "h1,h2",
     match: "all"
   },
   book: {
-    enabled: false,
+    enabled: true,
     theme: "generic",
     frontmatter: [],
     chapters: [],
@@ -117,6 +120,11 @@ export async function bookFromFiles(files) {
     }
 
     let book = new Book(_.defaultsDeep(config, defaultBookConfiguration), files)
+
+    if (book.config.webmonetization.endpoint.length > 0) {
+      book.config.webmonetization.enabled = true
+    }
+
     return book
   } else {
     return new Error("error-no-configuration")

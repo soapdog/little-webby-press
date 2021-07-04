@@ -5,11 +5,11 @@
 
 	const dispatch = createEventDispatcher()
 
-	const generateBook = (ev) => {
+	const generateBook = () => {
 		dispatch("generateBook")
 	}
 
-	const generateSite = (ev) => {
+	const generateSite = () => {
 		dispatch("generateSite")
 	}
 </script>

@@ -58,9 +58,6 @@ var app = (function () {
     function element(name) {
         return document.createElement(name);
     }
-    function svg_element(name) {
-        return document.createElementNS('http://www.w3.org/2000/svg', name);
-    }
     function text(data) {
         return document.createTextNode(data);
     }
@@ -4960,22 +4957,22 @@ var app = (function () {
     			t4 = text(t4_value);
     			attr_dev(a0, "class", "nav font-semibold");
     			attr_dev(a0, "href", "/");
-    			add_location(a0, file, 7, 3, 128);
+    			add_location(a0, file, 7, 6, 134);
     			attr_dev(li0, "class", "mr-6");
-    			add_location(li0, file, 6, 2, 107);
+    			add_location(li0, file, 6, 4, 110);
     			attr_dev(a1, "class", "nav");
-    			attr_dev(a1, "href", "/help");
-    			add_location(a1, file, 12, 3, 229);
+    			attr_dev(a1, "href", "/documentation/en");
+    			add_location(a1, file, 12, 6, 249);
     			attr_dev(li1, "class", "mr-6");
-    			add_location(li1, file, 11, 2, 208);
+    			add_location(li1, file, 11, 4, 225);
     			attr_dev(a2, "class", "nav");
     			attr_dev(a2, "href", "https://github.com/soapdog/little-webby-press");
     			attr_dev(a2, "target", "_blank");
-    			add_location(a2, file, 15, 3, 309);
+    			add_location(a2, file, 15, 6, 348);
     			attr_dev(li2, "class", "mr-6");
-    			add_location(li2, file, 14, 2, 288);
+    			add_location(li2, file, 14, 4, 324);
     			attr_dev(ul, "class", "flex");
-    			add_location(ul, file, 5, 1, 87);
+    			add_location(ul, file, 5, 2, 88);
     			attr_dev(nav, "class", "py-2 pb-4 text-xl");
     			add_location(nav, file, 4, 0, 54);
     		},
@@ -24416,7 +24413,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$6, 20, 4, 497);
+    			add_location(i, file$6, 20, 4, 493);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -24488,7 +24485,7 @@ var app = (function () {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-spinner fa-lg fa-spin");
-    			add_location(i, file$6, 27, 4, 750);
+    			add_location(i, file$6, 27, 4, 746);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -24552,13 +24549,13 @@ var app = (function () {
     			if_block1.c();
     			attr_dev(button0, "class", "btn btn-blue");
     			button0.disabled = /*$ebookEpub3Generating*/ ctx[0];
-    			add_location(button0, file$6, 18, 2, 375);
+    			add_location(button0, file$6, 18, 2, 371);
     			attr_dev(button1, "class", "btn btn-blue");
     			button1.disabled = /*$staticSiteGenerating*/ ctx[2];
-    			add_location(button1, file$6, 25, 2, 628);
+    			add_location(button1, file$6, 25, 2, 624);
     			attr_dev(div, "class", "flex p-0");
-    			add_location(div, file$6, 17, 1, 350);
-    			add_location(nav, file$6, 16, 0, 343);
+    			add_location(div, file$6, 17, 1, 346);
+    			add_location(nav, file$6, 16, 0, 339);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -24648,11 +24645,11 @@ var app = (function () {
     	component_subscribe($$self, staticSiteGenerating, $$value => $$invalidate(2, $staticSiteGenerating = $$value));
     	const dispatch = createEventDispatcher();
 
-    	const generateBook = ev => {
+    	const generateBook = () => {
     		dispatch("generateBook");
     	};
 
-    	const generateSite = ev => {
+    	const generateSite = () => {
     		dispatch("generateSite");
     	};
 
@@ -32658,7 +32655,7 @@ var app = (function () {
      */
     const defaultBookConfiguration = {
       metadata: {
-        title: "Untitled",
+        title: "Untitled Book",
         subtitle: false,
         date: new Date(),
         identifier: false,
@@ -32669,22 +32666,24 @@ var app = (function () {
       publisher: {
         name: false,
         bio: false,
-        links: []
+        link: false
       },
       links: [],
+      cta: [],
       author: {
         name: false,
         photo: false,
         bio: false,
-        links: []
       },
       site: {
-        enabled: false,
+        enabled: true,
         theme: "generic",
         frontmatter: [],
         chapters: [],
         backmatter: [],
         blurb: false,
+        landing: true,
+        download: true,
         actions: {
           "download": "Download the eBook",
           "read": "Free To Read Online",
@@ -32696,7 +32695,8 @@ var app = (function () {
           "toc": "Table Of Contents",
           "ereader-compatible": "Compatible with most eReaders",
           "support-with-webmo": "Support this work by using",
-          "read": "Free To Read Online"
+          "read": "Free To Read Online",
+          "license": "License"
         }
       },
       webmonetization: {
@@ -32708,11 +32708,11 @@ var app = (function () {
       },
       toc: {
         prefix: false,
-        label: "h1",
+        label: "h1,h2",
         match: "all"
       },
       book: {
-        enabled: false,
+        enabled: true,
         theme: "generic",
         frontmatter: [],
         chapters: [],
@@ -32759,6 +32759,11 @@ var app = (function () {
         }
 
         let book = new Book(lodash.defaultsDeep(config, defaultBookConfiguration), files);
+
+        if (book.config.webmonetization.endpoint.length > 0) {
+          book.config.webmonetization.enabled = true;
+        }
+
         return book
       } else {
         return new Error("error-no-configuration")
@@ -86635,196 +86640,203 @@ var app = (function () {
     });
 
     let md = new markdownIt({
-    	xhtmlOut: true,
-    	linkify: true,
-    	typographer: true,
+      xhtmlOut: true,
+      linkify: true,
+      typographer: true,
     })
-    	.use(markdownItFootnote)
-    	.use(r, { slugify: safeId })
-    	.use(markdownItBracketedSpans)
-    	.use(markdownItAttrs)
-    	.use(markdownItImplicitFigures, { figcaption: true })
-    	.use(markdownItEmoji)
-    	.use(markdownItCenterText);
+      .use(markdownItFootnote)
+      .use(r, { slugify: safeId })
+      .use(markdownItBracketedSpans)
+      .use(markdownItAttrs)
+      .use(markdownItImplicitFigures, { figcaption: true })
+      .use(markdownItEmoji)
+      .use(markdownItCenterText);
 
     let currentTheme = "generic"; // default theme, same as in the defaultBookConfiguration.
 
     function setTheme(theme) {
-    	currentTheme = theme;
+      currentTheme = theme;
     }
 
     function themeFolder() {
-    	return `/templates/${currentTheme}/epub`
+      return `/templates/${currentTheme}/epub`
     }
 
     function themePathFor(file) {
-    	return `${themeFolder()}/${file}`
+      return `${themeFolder()}/${file}`
     }
 
     function generateEpub(book) {
-    	// Sit back, relax, and enjoy the waterfall...
-    	console.time("Generating eBook");
+      // Sit back, relax, and enjoy the waterfall...
+      console.time("Generating eBook");
       console.log("Book configuration", book);
 
-    	return new Promise((resolve, reject) => {
-    		let bookSlug = slugify(book.config.metadata.title); 
-    		let fs = require("fs");
-    		let folder = `/tmp/${bookSlug}`;
-    		let toc = {};
-    		let manifest = [];
+      return new Promise((resolve, reject) => {
+        let bookSlug = slugify(book.config.metadata.title);
+        let fs = require("fs");
+        let folder = `/tmp/${bookSlug}`;
+        let toc = {};
+        let manifest = [];
 
-    		ebookEpub3Generating.set(true);
+        ebookEpub3Generating.set(true);
 
-    		setTheme(book.config.book.theme);
+        setTheme(book.config.book.theme);
 
-    		if (!fs.existsSync(themeFolder())) {
-    			reject({message: "theme-not-found"});
-    			return false
-    		}
+        if (!fs.existsSync(themeFolder())) {
+          reject({ message: "theme-not-found" });
+          return false
+        }
 
-    		if (!fs.existsSync(folder)) {
-    			fs.mkdirSync(folder);
-    		}
-    		ensureFolders("${folder}/OPS/package.opf");
-    		copyFolder(themeFolder(), folder);
-    		let fi = copyImages(book, `${folder}/OPS`);
+        if (!fs.existsSync(folder)) {
+          fs.mkdirSync(folder);
+        }
+        ensureFolders("${folder}/OPS/package.opf");
+        copyFolder(themeFolder(), folder);
+        let fi = copyImages(book, `${folder}/OPS`);
 
-    		registerToCLabel(book.config.toc.label);
-    		registerToCMatchRules(book.config.toc.match);
-    		registerToCPrefix(book.config.toc.prefix);
+        registerToCLabel(book.config.toc.label);
+        registerToCMatchRules(book.config.toc.match);
+        registerToCPrefix(book.config.toc.prefix);
 
-    		let chapterTemplateHBS = fs.readFileSync(
-    			themePathFor("chapter.hbs"),
-    			"utf8"
-    		);
-    		let chapterTemplate = lib$1.compile(chapterTemplateHBS);
+        let chapterTemplateHBS = fs.readFileSync(
+          themePathFor("chapter.hbs"),
+          "utf8"
+        );
+        let chapterTemplate = lib$1.compile(chapterTemplateHBS);
 
-    		// Add HTML Chapters
-    		let contentFiles = [
-    			...book.config.book.frontmatter,
-    			...book.config.book.chapters,
-    			...book.config.book.backmatter,
-    		];
+        // Add HTML Chapters
+        let contentFiles = [
+          ...book.config.book.frontmatter,
+          ...book.config.book.chapters,
+          ...book.config.book.backmatter,
+        ];
 
-    		let fp = contentFiles.map(async (chapterFilename) => {
-    			let file = book.files.filter((f) => f.name === chapterFilename)[0];
-    			let contentMarkdown = await file.text();
-    			let contentHtml = md.render(contentMarkdown);
-    			contentHtml = fix(contentHtml);
-    			let destinationFilename = chapterFilename.replace(".md", ".xhtml");
-    			let destination = `${folder}/OPS/${destinationFilename}`;
-    			let data = chapterTemplate({ html: contentHtml });
-    			fs.writeFileSync(destination, data);
+        let fp = contentFiles.map(async (chapterFilename) => {
+          try {
+            let file = book.files.filter((f) => f.name === chapterFilename)[0];
+            let contentMarkdown = await file.text();
+            let contentHtml = md.render(contentMarkdown);
+            contentHtml = fix(contentHtml);
+            let destinationFilename = chapterFilename.replace(".md", ".xhtml");
+            let destination = `${folder}/OPS/${destinationFilename}`;
+            let data = chapterTemplate({ html: contentHtml });
+            fs.writeFileSync(destination, data);
 
-    			// due to the async nature of this code, the ToC won't ready until
-    			// all promises complete.
-    			if (!book.config.book.frontmatter.includes(chapterFilename)) {
-    				toc[destinationFilename] = extractToc(contentHtml, destinationFilename);
-    			}
-    		});
+            // due to the async nature of this code, the ToC won't ready until
+            // all promises complete.
+            if (!book.config.book.frontmatter.includes(chapterFilename)) {
+              toc[destinationFilename] = extractToc(
+                contentHtml,
+                destinationFilename
+              );
+            }
+          } catch (e) {
+            throw `Problem processing chapter: <b>${chapterFilename}</b>.<br><br>Remember that chapter files cannot be empty.`
+          }
+        });
 
-    		// Find which files to add to manifest
-    		let files = book.files.filter((f) => {
-    			if (contentFiles.includes(f.name)) {
-    				return true
-    			}
+        // Find which files to add to manifest
+        let files = book.files.filter((f) => {
+          if (contentFiles.includes(f.name)) {
+            return true
+          }
 
-    			if (f.filepath.match(/^images/)) {
-    				return true
-    			}
+          if (f.filepath.match(/^images/)) {
+            return true
+          }
 
-    			return false
-    		});
+          return false
+        });
 
-    		// Adding fonts to manifest
-    		let fonts = fs.readdirSync(`${folder}/OPS/fonts/`);
-    		fonts.forEach((f) => {
-    			files.push({
-    				filepath: `fonts/${f}`,
-    				name: f,
-    			});
-    		});
+        // Adding fonts to manifest
+        let fonts = fs.readdirSync(`${folder}/OPS/fonts/`);
+        fonts.forEach((f) => {
+          files.push({
+            filepath: `fonts/${f}`,
+            name: f,
+          });
+        });
 
-    		// adds files to manifest
-    		files.forEach((file) => {
-    			if (file.filepath == book.config.metadata.cover) {
-    				return
-    			}
+        // adds files to manifest
+        files.forEach((file) => {
+          if (file.filepath == book.config.metadata.cover) {
+            return
+          }
 
-    			let f = file.filepath;
-    			f = f.replace(".md", ".xhtml");
-    			let i = file.name.split(".")[0];
-    			let linear = "yes";
+          let f = file.filepath;
+          f = f.replace(".md", ".xhtml");
+          let i = file.name.split(".")[0];
+          let linear = "yes";
 
-    			if (f.indexOf(".xhtml") == -1) {
-    				linear = "no";
-    				i = `r-${i}`;
-    			}
+          if (f.indexOf(".xhtml") == -1) {
+            linear = "no";
+            i = `r-${i}`;
+          }
 
-    			manifest.push({
-    				id: `c-${i}`,
-    				file: f,
-    				linear,
-    			});
-    		});
+          manifest.push({
+            id: `c-${i}`,
+            file: f,
+            linear,
+          });
+        });
 
-    		// package.opf
-    		let spine = contentFiles.map((f) => {
-    			let i = f.split(".")[0];
-    			return { id: `c-${i}`, file: i, htmlFile: `${i}.xhtml` }
-    		});
+        // package.opf
+        let spine = contentFiles.map((f) => {
+          let i = f.split(".")[0];
+          return { id: `c-${i}`, file: i, htmlFile: `${i}.xhtml` }
+        });
 
-    		let packageHBS = fs.readFileSync(themePathFor("package.hbs"), "utf8");
-    		let packageTemplate = lib$1.compile(packageHBS);
-    		let packageData = packageTemplate({ book, manifest, spine });
-    		fs.writeFileSync(`${folder}/OPS/package.opf`, packageData);
+        let packageHBS = fs.readFileSync(themePathFor("package.hbs"), "utf8");
+        let packageTemplate = lib$1.compile(packageHBS);
+        let packageData = packageTemplate({ book, manifest, spine });
+        fs.writeFileSync(`${folder}/OPS/package.opf`, packageData);
 
-    		// cover.xhtml
-    		let coverHBS = fs.readFileSync(themePathFor("cover.hbs"), "utf8");
-    		let coverTemplate = lib$1.compile(coverHBS);
-    		let coverData = coverTemplate({ book });
-    		fs.writeFileSync(`${folder}/OPS/cover.xhtml`, coverData);
+        // cover.xhtml
+        let coverHBS = fs.readFileSync(themePathFor("cover.hbs"), "utf8");
+        let coverTemplate = lib$1.compile(coverHBS);
+        let coverData = coverTemplate({ book });
+        fs.writeFileSync(`${folder}/OPS/cover.xhtml`, coverData);
 
-    		Promise.all([...fi, ...fp]).then(() => {
-    			// toc.xhtml
-    			let tocHBS = fs.readFileSync(themePathFor("toc.hbs"), "utf8");
-    			let tocTemplate = lib$1.compile(tocHBS);
-    			spine = spine.map((s) => {
-    				s.toc = toc[s.htmlFile];
-    				return s
-    			});
-    			let tocData = tocTemplate({ book, manifest, spine });
-    			fs.writeFileSync(`${folder}/OPS/toc.xhtml`, tocData);
+        Promise.all([...fi, ...fp]).then(() => {
+          // toc.xhtml
+          let tocHBS = fs.readFileSync(themePathFor("toc.hbs"), "utf8");
+          let tocTemplate = lib$1.compile(tocHBS);
+          spine = spine.map((s) => {
+            s.toc = toc[s.htmlFile];
+            return s
+          });
+          let tocData = tocTemplate({ book, manifest, spine });
+          fs.writeFileSync(`${folder}/OPS/toc.xhtml`, tocData);
 
-    			// toc.ncx
-    			let tocncxHBS = fs.readFileSync(themePathFor("toc.ncx.hbs"), "utf8");
-    			let tocncxTemplate = lib$1.compile(tocncxHBS);
-    			let tocncxData = tocncxTemplate({ book, manifest, spine });
-    			fs.writeFileSync(`${folder}/OPS/toc.ncx`, tocncxData);
+          // toc.ncx
+          let tocncxHBS = fs.readFileSync(themePathFor("toc.ncx.hbs"), "utf8");
+          let tocncxTemplate = lib$1.compile(tocncxHBS);
+          let tocncxData = tocncxTemplate({ book, manifest, spine });
+          fs.writeFileSync(`${folder}/OPS/toc.ncx`, tocncxData);
 
-    			// EPUB3 file
-    			let zip = new jszip_min();
-    			let mimetype = fs.readFileSync(`${folder}/mimetype`);
-    			zip.file("mimetype", mimetype); // mimetype needs to be the first file in the zip. That is part of the EPUB spec.
-    			addToZip(zip, bookSlug, folder);
-    			zip.generateAsync({ type: "blob" }).then(
-    				function (epubBlob) {
-    					epubBlob.arrayBuffer().then((epubBuffer) => {
-    						let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-    						fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer));
-    						// saveAs(epubBlob, `${bookSlug}.epub`)
-    						ebookEpub3Generating.set(false);
+          // EPUB3 file
+          let zip = new jszip_min();
+          let mimetype = fs.readFileSync(`${folder}/mimetype`);
+          zip.file("mimetype", mimetype); // mimetype needs to be the first file in the zip. That is part of the EPUB spec.
+          addToZip(zip, bookSlug, folder);
+          zip.generateAsync({ type: "blob" }).then(
+            function (epubBlob) {
+              epubBlob.arrayBuffer().then((epubBuffer) => {
+                let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
+                fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer));
+                // saveAs(epubBlob, `${bookSlug}.epub`)
+                ebookEpub3Generating.set(false);
                 console.timeEnd("Generating eBook");
-    						resolve();
-    					});
-    				},
-    				function (err) {
-    					ebookEpub3Generating.set(false);
-    					reject(err);
-    				}
-    			);
-    		});
-    	})
+                resolve();
+              });
+            },
+            function (err) {
+              ebookEpub3Generating.set(false);
+              reject(err);
+            }
+          );
+        });
+      })
     }
 
     let md$1 = new markdownIt({
@@ -86893,7 +86905,7 @@ var app = (function () {
           reject({ message: "theme-not-found" });
         }
 
-        if (!fs.existsSync(bookFile)) {
+        if (book.config.book.enabled && !fs.existsSync(bookFile)) {
           generateEpub(book).then(() => {
             generateSite(book)
               .then(() => resolve())
@@ -86966,11 +86978,24 @@ var app = (function () {
             book.config.author.bio = md$1.render(book.config.author.bio);
           }
 
-          let indexTemplateHBS = fs.readFileSync(themePathFor$1("index.hbs"), "utf8");
+          if (book.config.site.landing) {
+            let indexTemplateHBS = fs.readFileSync(themePathFor$1("index.hbs"), "utf8");
 
-          let indexTemplate = lib$1.compile(indexTemplateHBS);
-          let contents = indexTemplate({ book, spine });
-          fs.writeFileSync(`${siteFolder}/index.html`, contents);
+            let indexTemplate = lib$1.compile(indexTemplateHBS);
+            let contents = indexTemplate({ book, spine });
+            fs.writeFileSync(`${siteFolder}/index.html`, contents);
+          } else {
+            let firstChapter = spine[0].toc[0].file;
+            let refresher = `
+        <html>
+        <head>
+        <meta http-equiv="refresh" content="0;url=book/${firstChapter}">
+        </head>
+        <body></body>
+        </html>
+        `;
+            fs.writeFileSync(`${siteFolder}/index.html`, refresher);
+          }
 
           // Chapters
           spine.forEach((item, index) => {
@@ -87008,7 +87033,7 @@ var app = (function () {
     const { Error: Error_1, console: console_1$1 } = globals;
     const file$7 = "src/press/Press.svelte";
 
-    // (114:1) {#if stage === "error"}
+    // (124:2) {#if stage === "error"}
     function create_if_block_4$1(ctx) {
     	let div0;
     	let strong;
@@ -87017,30 +87042,33 @@ var app = (function () {
     	let t1;
     	let span0;
     	let t2;
-    	let t3;
     	let span1;
-    	let svg;
-    	let title;
-    	let t4_value = /*$_*/ ctx[3]("close") + "";
-    	let t4;
-    	let path;
-    	let t5;
+    	let t3;
+    	let div5;
     	let div4;
-    	let div3;
     	let div1;
     	let i;
-    	let t6;
+    	let t4;
     	let p0;
-    	let t7_value = /*$_*/ ctx[3]("no_book") + "";
+    	let t5_value = /*$_*/ ctx[3]("no_book") + "";
+    	let t5;
+    	let t6;
+    	let p1;
+    	let t7_value = /*$_*/ ctx[3]("drag-and-drop-to-start") + "";
     	let t7;
     	let t8;
-    	let p1;
-    	let t9_value = /*$_*/ ctx[3]("drag-and-drop-to-start") + "";
-    	let t9;
-    	let t10;
     	let div2;
     	let a;
-    	let raw_value = /*$_*/ ctx[3]("learn-more-long") + "";
+    	let raw1_value = /*$_*/ ctx[3]("learn-more-long") + "";
+    	let t9;
+    	let div3;
+    	let span2;
+    	let input;
+    	let t10;
+    	let html_tag;
+    	let raw2_value = /*$_*/ ctx[3]("load-folder") + "";
+    	let mounted;
+    	let dispose;
 
     	const block = {
     		c: function create() {
@@ -87049,61 +87077,65 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			span0 = element("span");
-    			t2 = text(/*msg*/ ctx[1]);
-    			t3 = space();
+    			t2 = space();
     			span1 = element("span");
-    			svg = svg_element("svg");
-    			title = svg_element("title");
-    			t4 = text(t4_value);
-    			path = svg_element("path");
-    			t5 = space();
+    			t3 = space();
+    			div5 = element("div");
     			div4 = element("div");
-    			div3 = element("div");
     			div1 = element("div");
     			i = element("i");
-    			t6 = space();
+    			t4 = space();
     			p0 = element("p");
+    			t5 = text(t5_value);
+    			t6 = space();
+    			p1 = element("p");
     			t7 = text(t7_value);
     			t8 = space();
-    			p1 = element("p");
-    			t9 = text(t9_value);
-    			t10 = space();
     			div2 = element("div");
     			a = element("a");
+    			t9 = space();
+    			div3 = element("div");
+    			span2 = element("span");
+    			input = element("input");
+    			t10 = space();
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$7, 118, 3, 2844);
+    			add_location(strong, file$7, 128, 6, 3375);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$7, 119, 3, 2901);
-    			add_location(title, file$7, 126, 5, 3150);
-    			attr_dev(path, "d", "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2\n\t\t\t\t\t\t1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1\n\t\t\t\t\t\t1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758\n\t\t\t\t\t\t3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z");
-    			add_location(path, file$7, 127, 5, 3184);
-    			attr_dev(svg, "class", "fill-current h-6 w-6 text-red-500");
-    			attr_dev(svg, "role", "button");
-    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
-    			attr_dev(svg, "viewBox", "0 0 20 20");
-    			add_location(svg, file$7, 121, 4, 3008);
+    			add_location(span0, file$7, 129, 6, 3435);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$7, 120, 3, 2947);
-    			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n\t\t\trelative");
+    			add_location(span1, file$7, 130, 6, 3490);
+    			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n      relative");
     			attr_dev(div0, "role", "alert");
-    			add_location(div0, file$7, 114, 2, 2732);
+    			add_location(div0, file$7, 124, 4, 3251);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$7, 140, 5, 3633);
+    			add_location(i, file$7, 138, 10, 3744);
     			attr_dev(div1, "class", "empty-icon");
-    			add_location(div1, file$7, 139, 4, 3603);
+    			add_location(div1, file$7, 137, 8, 3709);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 142, 4, 3680);
+    			add_location(p0, file$7, 140, 8, 3799);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 143, 4, 3723);
+    			add_location(p1, file$7, 141, 8, 3846);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$7, 145, 5, 3808);
+    			add_location(a, file$7, 143, 10, 3940);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 144, 4, 3784);
-    			add_location(div3, file$7, 138, 3, 3593);
-    			attr_dev(div4, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1no39p5");
-    			toggle_class(div4, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div4, file$7, 135, 2, 3483);
+    			add_location(div2, file$7, 142, 8, 3911);
+    			attr_dev(input, "type", "file");
+    			attr_dev(input, "class", "hidden");
+    			attr_dev(input, "id", "file-input");
+    			attr_dev(input, "webkitdirectory", "");
+    			input.multiple = true;
+    			attr_dev(input, "directory", "");
+    			add_location(input, file$7, 149, 16, 4156);
+    			html_tag = new HtmlTag(null);
+    			attr_dev(span2, "class", "btn btn-blue");
+    			add_location(span2, file$7, 148, 14, 4091);
+    			attr_dev(div3, "class", "mt-6");
+    			add_location(div3, file$7, 147, 8, 4058);
+    			add_location(div4, file$7, 136, 6, 3695);
+    			attr_dev(div5, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1kfhj15");
+    			toggle_class(div5, "over", /*stage*/ ctx[0] == "over");
+    			add_location(div5, file$7, 133, 4, 3576);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -87111,44 +87143,56 @@ var app = (function () {
     			append_dev(strong, t0);
     			append_dev(div0, t1);
     			append_dev(div0, span0);
-    			append_dev(span0, t2);
-    			append_dev(div0, t3);
+    			span0.innerHTML = /*msg*/ ctx[1];
+    			append_dev(div0, t2);
     			append_dev(div0, span1);
-    			append_dev(span1, svg);
-    			append_dev(svg, title);
-    			append_dev(title, t4);
-    			append_dev(svg, path);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, div3);
-    			append_dev(div3, div1);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div4);
+    			append_dev(div4, div1);
     			append_dev(div1, i);
-    			append_dev(div3, t6);
-    			append_dev(div3, p0);
-    			append_dev(p0, t7);
-    			append_dev(div3, t8);
-    			append_dev(div3, p1);
-    			append_dev(p1, t9);
-    			append_dev(div3, t10);
-    			append_dev(div3, div2);
+    			append_dev(div4, t4);
+    			append_dev(div4, p0);
+    			append_dev(p0, t5);
+    			append_dev(div4, t6);
+    			append_dev(div4, p1);
+    			append_dev(p1, t7);
+    			append_dev(div4, t8);
+    			append_dev(div4, div2);
     			append_dev(div2, a);
-    			a.innerHTML = raw_value;
+    			a.innerHTML = raw1_value;
+    			append_dev(div4, t9);
+    			append_dev(div4, div3);
+    			append_dev(div3, span2);
+    			append_dev(span2, input);
+    			append_dev(span2, t10);
+    			html_tag.m(raw2_value, span2);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(input, "change", /*filesLoaded*/ ctx[7], false, false, false),
+    					listen_dev(span2, "click", /*loadFiles*/ ctx[6], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*$_*/ 8 && t0_value !== (t0_value = /*$_*/ ctx[3]("error-quip") + "")) set_data_dev(t0, t0_value);
-    			if (dirty & /*msg*/ 2) set_data_dev(t2, /*msg*/ ctx[1]);
-    			if (dirty & /*$_*/ 8 && t4_value !== (t4_value = /*$_*/ ctx[3]("close") + "")) set_data_dev(t4, t4_value);
-    			if (dirty & /*$_*/ 8 && t7_value !== (t7_value = /*$_*/ ctx[3]("no_book") + "")) set_data_dev(t7, t7_value);
-    			if (dirty & /*$_*/ 8 && t9_value !== (t9_value = /*$_*/ ctx[3]("drag-and-drop-to-start") + "")) set_data_dev(t9, t9_value);
-    			if (dirty & /*$_*/ 8 && raw_value !== (raw_value = /*$_*/ ctx[3]("learn-more-long") + "")) a.innerHTML = raw_value;
+    			if (dirty & /*msg*/ 2) span0.innerHTML = /*msg*/ ctx[1];			if (dirty & /*$_*/ 8 && t5_value !== (t5_value = /*$_*/ ctx[3]("no_book") + "")) set_data_dev(t5, t5_value);
+    			if (dirty & /*$_*/ 8 && t7_value !== (t7_value = /*$_*/ ctx[3]("drag-and-drop-to-start") + "")) set_data_dev(t7, t7_value);
+    			if (dirty & /*$_*/ 8 && raw1_value !== (raw1_value = /*$_*/ ctx[3]("learn-more-long") + "")) a.innerHTML = raw1_value;			if (dirty & /*$_*/ 8 && raw2_value !== (raw2_value = /*$_*/ ctx[3]("load-folder") + "")) html_tag.p(raw2_value);
+
     			if (dirty & /*stage*/ 1) {
-    				toggle_class(div4, "over", /*stage*/ ctx[0] == "over");
+    				toggle_class(div5, "over", /*stage*/ ctx[0] == "over");
     			}
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div5);
+    			mounted = false;
+    			run_all(dispose);
     		}
     	};
 
@@ -87156,14 +87200,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(114:1) {#if stage === \\\"error\\\"}",
+    		source: "(124:2) {#if stage === \\\"error\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (193:1) {:else}
+    // (197:2) {:else}
     function create_else_block$4(ctx) {
     	let tabs;
     	let t;
@@ -87218,14 +87262,14 @@ var app = (function () {
     		block,
     		id: create_else_block$4.name,
     		type: "else",
-    		source: "(193:1) {:else}",
+    		source: "(197:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (153:1) {#if stage !== "loaded"}
+    // (157:2) {#if stage !== "loaded"}
     function create_if_block$4(ctx) {
     	let div;
 
@@ -87242,9 +87286,9 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if (if_block) if_block.c();
-    			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1no39p5");
+    			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1kfhj15");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$7, 153, 2, 3957);
+    			add_location(div, file$7, 157, 4, 4412);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -87282,14 +87326,14 @@ var app = (function () {
     		block,
     		id: create_if_block$4.name,
     		type: "if",
-    		source: "(153:1) {#if stage !== \\\"loaded\\\"}",
+    		source: "(157:2) {#if stage !== \\\"loaded\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (183:32) 
+    // (187:35) 
     function create_if_block_3$2(ctx) {
     	let div1;
     	let div0;
@@ -87314,14 +87358,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$7, 185, 6, 4959);
+    			add_location(i, file$7, 189, 12, 5603);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 184, 5, 4928);
+    			add_location(div0, file$7, 188, 10, 5566);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 187, 5, 5019);
+    			add_location(p0, file$7, 191, 10, 5673);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 188, 5, 5063);
-    			add_location(div1, file$7, 183, 4, 4917);
+    			add_location(p1, file$7, 192, 10, 5722);
+    			add_location(div1, file$7, 187, 8, 5550);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87347,14 +87391,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$2.name,
     		type: "if",
-    		source: "(183:32) ",
+    		source: "(187:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:32) 
+    // (168:35) 
     function create_if_block_2$2(ctx) {
     	let div3;
     	let div0;
@@ -87401,31 +87445,31 @@ var app = (function () {
     			input = element("input");
     			t6 = space();
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$7, 166, 6, 4330);
+    			add_location(i, file$7, 170, 12, 4841);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 165, 5, 4299);
+    			add_location(div0, file$7, 169, 10, 4804);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 168, 5, 4379);
+    			add_location(p0, file$7, 172, 10, 4900);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 169, 5, 4423);
+    			add_location(p1, file$7, 173, 10, 4949);
     			attr_dev(a, "class", "btn btn-blue");
-    			attr_dev(a, "href", "/help");
-    			add_location(a, file$7, 171, 6, 4510);
+    			attr_dev(a, "href", "/documentation/getting-started");
+    			add_location(a, file$7, 175, 12, 5047);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$7, 170, 5, 4485);
+    			add_location(div1, file$7, 174, 10, 5016);
     			attr_dev(input, "type", "file");
     			attr_dev(input, "class", "hidden");
     			attr_dev(input, "id", "file-input");
     			attr_dev(input, "webkitdirectory", "");
     			input.multiple = true;
     			attr_dev(input, "directory", "");
-    			add_location(input, file$7, 177, 8, 4697);
+    			add_location(input, file$7, 181, 16, 5298);
     			html_tag = new HtmlTag(null);
     			attr_dev(span, "class", "btn btn-blue");
-    			add_location(span, file$7, 176, 7, 4640);
+    			add_location(span, file$7, 180, 14, 5233);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 175, 6, 4614);
-    			add_location(div3, file$7, 164, 4, 4288);
+    			add_location(div2, file$7, 179, 12, 5200);
+    			add_location(div3, file$7, 168, 8, 4788);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -87473,14 +87517,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$2.name,
     		type: "if",
-    		source: "(164:32) ",
+    		source: "(168:35) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:3) {#if stage == "over"}
+    // (161:6) {#if stage == "over"}
     function create_if_block_1$3(ctx) {
     	let div1;
     	let div0;
@@ -87499,12 +87543,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$7, 159, 6, 4130);
+    			add_location(i, file$7, 163, 12, 4609);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 158, 5, 4099);
+    			add_location(div0, file$7, 162, 10, 4572);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$7, 161, 5, 4185);
-    			add_location(div1, file$7, 157, 4, 4088);
+    			add_location(p, file$7, 165, 10, 4674);
+    			add_location(div1, file$7, 161, 8, 4556);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87526,7 +87570,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(157:3) {#if stage == \\\"over\\\"}",
+    		source: "(161:6) {#if stage == \\\"over\\\"}",
     		ctx
     	});
 
@@ -87557,8 +87601,8 @@ var app = (function () {
     			if (if_block0) if_block0.c();
     			t = space();
     			if_block1.c();
-    			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1no39p5");
-    			add_location(div, file$7, 112, 0, 2657);
+    			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1kfhj15");
+    			add_location(div, file$7, 122, 0, 3173);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -87643,13 +87687,13 @@ var app = (function () {
     	let msg, files, book;
 
     	// function readFile(file) {
-    	// 	return new Promise((resolve, _reject) => {
-    	// 		var fr = new FileReader()
-    	// 		fr.onload = () => {
-    	// 			resolve(fr.result)
-    	// 		}
-    	// 		fr.readAsText(file.blob)
-    	// 	})
+    	//  return new Promise((resolve, _reject) => {
+    	//    var fr = new FileReader()
+    	//    fr.onload = () => {
+    	//      resolve(fr.result)
+    	//    }
+    	//    fr.readAsText(file.blob)
+    	//  })
     	// }
     	const actionGenerateBook = _ev => {
     		generateEpub(book).catch(n => {
@@ -87699,6 +87743,15 @@ var app = (function () {
     	};
 
     	onMount(() => {
+    		window.onunhandledrejection = e => {
+    			console.log("typeof", typeof e);
+    			console.log("we got exception, but the app has crashed", e);
+    			$$invalidate(0, stage = "error");
+    			ebookEpub3Generating.set(false);
+    			staticSiteGenerating.set(false);
+    			$$invalidate(1, msg = e.reason || e.message || e || "Unknown error");
+    		};
+
     		const dropzone = document.querySelector(".drop-area");
 
     		dropzone.addEventListener("dragover", evt => {
@@ -87894,7 +87947,7 @@ var app = (function () {
     var manuscript = "Manuscript";
     var metadata = "Metadata";
     var nav_github = "Github";
-    var nav_help = "Help";
+    var nav_help = "Documentation";
     var no_book = "You haven't loaded any book.";
     var options = "Options";
     var products = "Products";
@@ -87904,8 +87957,8 @@ var app = (function () {
     	"action-generate-site": "Generate Site",
     	close: close,
     	disabled: disabled,
-    	"drag-and-drop-to-start": "Drag & Drop a folder with book data here to start.",
-    	"drop-a-book-folder-here": "Drop a book folder here!",
+    	"drag-and-drop-to-start": "Drag & Drop a folder with Manuscript to start.",
+    	"drop-a-book-folder-here": "Drop the manuscript folder here!",
     	enabled: enabled,
     	"error-no-configuration": "Can't find Book configuration file",
     	"error-quip": "Holy smokes!",
@@ -87917,8 +87970,8 @@ var app = (function () {
     	"get-help": "Learn more about book data :-)",
     	"getting-file-list": "Getting file list...",
     	"header-filename": "filename",
-    	"learn-more-long": "Learn more about how to build books using\n\t\t\t\t\t\t\t<em>little.webby.press</em>",
-    	"load-folder": "Load folder",
+    	"learn-more-long": "Read The <em>Getting Started</em> Guide",
+    	"load-folder": "Load Manuscript Folder",
     	loading: loading,
     	"loading-configuration": "Loading configuration...",
     	manuscript: manuscript,

@@ -114,7 +114,7 @@ export function generateSite(book) {
       reject({ message: "theme-not-found" })
     }
 
-    if (!fs.existsSync(bookFile)) {
+    if (book.config.book.enabled && !fs.existsSync(bookFile)) {
       generateEpub(book).then(() => {
         generateSite(book)
           .then(() => resolve())
@@ -187,11 +187,24 @@ export function generateSite(book) {
         book.config.author.bio = md.render(book.config.author.bio)
       }
 
-      let indexTemplateHBS = fs.readFileSync(themePathFor("index.hbs"), "utf8")
+      if (book.config.site.landing) {
+        let indexTemplateHBS = fs.readFileSync(themePathFor("index.hbs"), "utf8")
 
-      let indexTemplate = Handlebars.compile(indexTemplateHBS)
-      let contents = indexTemplate({ book, spine })
-      fs.writeFileSync(`${siteFolder}/index.html`, contents)
+        let indexTemplate = Handlebars.compile(indexTemplateHBS)
+        let contents = indexTemplate({ book, spine })
+        fs.writeFileSync(`${siteFolder}/index.html`, contents)
+      } else {
+        let firstChapter = spine[0].toc[0].file
+        let refresher = `
+        <html>
+        <head>
+        <meta http-equiv="refresh" content="0;url=book/${firstChapter}">
+        </head>
+        <body></body>
+        </html>
+        `
+        fs.writeFileSync(`${siteFolder}/index.html`, refresher)
+      }
 
       // Chapters
       spine.forEach((item, index) => {

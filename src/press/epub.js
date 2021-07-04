@@ -10,215 +10,220 @@ import MarkdownCenterText from "markdown-it-center-text"
 import MarkdownEmoji from "markdown-it-emoji"
 import slugify from "slugify"
 import {
-	copyFolder,
-	ensureFolders,
-	copyImages,
-	addToZip,
+  copyFolder,
+  ensureFolders,
+  copyImages,
+  addToZip,
 } from "../common/fs.js"
 import { fix } from "../common/fixes.js"
 import "../common/templateHelpers.js"
 import {
-	extractToc,
-	registerToCLabel,
-	registerToCMatchRules,
-	registerToCPrefix,
-  safeId
+  extractToc,
+  registerToCLabel,
+  registerToCMatchRules,
+  registerToCPrefix,
+  safeId,
 } from "../common/utils.js"
 import Handlebars from "handlebars"
 import JSZip from "jszip"
-import { ebookEpub3Generating} from "./stores.js"
+import { ebookEpub3Generating } from "./stores.js"
 
 let md = new MarkdownIt({
-	xhtmlOut: true,
-	linkify: true,
-	typographer: true,
+  xhtmlOut: true,
+  linkify: true,
+  typographer: true,
 })
-	.use(MarkdownFootnote)
-	.use(MarkdownAnchor, { slugify: safeId })
-	.use(MarkdownBracketedSpans)
-	.use(MarkdownAttrs)
-	.use(MarkdownImplicitFigues, { figcaption: true })
-	.use(MarkdownEmoji)
-	.use(MarkdownCenterText)
+  .use(MarkdownFootnote)
+  .use(MarkdownAnchor, { slugify: safeId })
+  .use(MarkdownBracketedSpans)
+  .use(MarkdownAttrs)
+  .use(MarkdownImplicitFigues, { figcaption: true })
+  .use(MarkdownEmoji)
+  .use(MarkdownCenterText)
 
 let currentTheme = "generic" // default theme, same as in the defaultBookConfiguration.
 
 function setTheme(theme) {
-	currentTheme = theme
+  currentTheme = theme
 }
 
 function themeFolder() {
-	return `/templates/${currentTheme}/epub`
+  return `/templates/${currentTheme}/epub`
 }
 
 function themePathFor(file) {
-	return `${themeFolder()}/${file}`
+  return `${themeFolder()}/${file}`
 }
 
 export function generateEpub(book) {
-	// Sit back, relax, and enjoy the waterfall...
-	console.time("Generating eBook")
+  // Sit back, relax, and enjoy the waterfall...
+  console.time("Generating eBook")
   console.log("Book configuration", book)
 
-	return new Promise((resolve, reject) => {
-		let bookSlug = slugify(book.config.metadata.title) 
-		let fs = require("fs")
-		let folder = `/tmp/${bookSlug}`
-		let toc = {}
-		let manifest = []
+  return new Promise((resolve, reject) => {
+    let bookSlug = slugify(book.config.metadata.title)
+    let fs = require("fs")
+    let folder = `/tmp/${bookSlug}`
+    let toc = {}
+    let manifest = []
 
-		ebookEpub3Generating.set(true)
+    ebookEpub3Generating.set(true)
 
-		setTheme(book.config.book.theme)
+    setTheme(book.config.book.theme)
 
-		if (!fs.existsSync(themeFolder())) {
-			reject({message: "theme-not-found"})
-			return false
-		}
+    if (!fs.existsSync(themeFolder())) {
+      reject({ message: "theme-not-found" })
+      return false
+    }
 
-		if (!fs.existsSync(folder)) {
-			fs.mkdirSync(folder)
-		}
-		ensureFolders("${folder}/OPS/package.opf")
-		copyFolder(themeFolder(), folder)
-		let fi = copyImages(book, `${folder}/OPS`)
+    if (!fs.existsSync(folder)) {
+      fs.mkdirSync(folder)
+    }
+    ensureFolders("${folder}/OPS/package.opf")
+    copyFolder(themeFolder(), folder)
+    let fi = copyImages(book, `${folder}/OPS`)
 
-		registerToCLabel(book.config.toc.label)
-		registerToCMatchRules(book.config.toc.match)
-		registerToCPrefix(book.config.toc.prefix)
+    registerToCLabel(book.config.toc.label)
+    registerToCMatchRules(book.config.toc.match)
+    registerToCPrefix(book.config.toc.prefix)
 
-		let chapterTemplateHBS = fs.readFileSync(
-			themePathFor("chapter.hbs"),
-			"utf8"
-		)
-		let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
+    let chapterTemplateHBS = fs.readFileSync(
+      themePathFor("chapter.hbs"),
+      "utf8"
+    )
+    let chapterTemplate = Handlebars.compile(chapterTemplateHBS)
 
-		// Add HTML Chapters
-		let contentFiles = [
-			...book.config.book.frontmatter,
-			...book.config.book.chapters,
-			...book.config.book.backmatter,
-		]
+    // Add HTML Chapters
+    let contentFiles = [
+      ...book.config.book.frontmatter,
+      ...book.config.book.chapters,
+      ...book.config.book.backmatter,
+    ]
 
-		let fp = contentFiles.map(async (chapterFilename) => {
-			let file = book.files.filter((f) => f.name === chapterFilename)[0]
-			let contentMarkdown = await file.text()
-			let contentHtml = md.render(contentMarkdown)
-			contentHtml = fix(contentHtml)
-			let destinationFilename = chapterFilename.replace(".md", ".xhtml")
-			let destination = `${folder}/OPS/${destinationFilename}`
-			let data = chapterTemplate({ html: contentHtml })
-			fs.writeFileSync(destination, data)
+    let fp = contentFiles.map(async (chapterFilename) => {
+      try {
+        let file = book.files.filter((f) => f.name === chapterFilename)[0]
+        let contentMarkdown = await file.text()
+        let contentHtml = md.render(contentMarkdown)
+        contentHtml = fix(contentHtml)
+        let destinationFilename = chapterFilename.replace(".md", ".xhtml")
+        let destination = `${folder}/OPS/${destinationFilename}`
+        let data = chapterTemplate({ html: contentHtml })
+        fs.writeFileSync(destination, data)
 
-			// due to the async nature of this code, the ToC won't ready until
-			// all promises complete.
-			if (!book.config.book.frontmatter.includes(chapterFilename)) {
-				toc[destinationFilename] = extractToc(contentHtml, destinationFilename)
-			}
-		})
+        // due to the async nature of this code, the ToC won't ready until
+        // all promises complete.
+        if (!book.config.book.frontmatter.includes(chapterFilename)) {
+          toc[destinationFilename] = extractToc(
+            contentHtml,
+            destinationFilename
+          )
+        }
+      } catch (e) {
+        throw `Problem processing chapter: <b>${chapterFilename}</b>.<br><br>Remember that chapter files cannot be empty.`
+      }
+    })
 
-		// Find which files to add to manifest
-		let files = book.files.filter((f) => {
-			if (contentFiles.includes(f.name)) {
-				return true
-			}
+    // Find which files to add to manifest
+    let files = book.files.filter((f) => {
+      if (contentFiles.includes(f.name)) {
+        return true
+      }
 
-			if (f.filepath.match(/^images/)) {
-				return true
-			}
+      if (f.filepath.match(/^images/)) {
+        return true
+      }
 
-			return false
-		})
+      return false
+    })
 
-		// Adding fonts to manifest
-		let fonts = fs.readdirSync(`${folder}/OPS/fonts/`)
-		fonts.forEach((f) => {
-			files.push({
-				filepath: `fonts/${f}`,
-				name: f,
-			})
-		})
+    // Adding fonts to manifest
+    let fonts = fs.readdirSync(`${folder}/OPS/fonts/`)
+    fonts.forEach((f) => {
+      files.push({
+        filepath: `fonts/${f}`,
+        name: f,
+      })
+    })
 
-		// adds files to manifest
-		files.forEach((file) => {
-			if (file.filepath == book.config.metadata.cover) {
-				return
-			}
+    // adds files to manifest
+    files.forEach((file) => {
+      if (file.filepath == book.config.metadata.cover) {
+        return
+      }
 
-			let f = file.filepath
-			f = f.replace(".md", ".xhtml")
-			let i = file.name.split(".")[0]
-			let linear = "yes"
+      let f = file.filepath
+      f = f.replace(".md", ".xhtml")
+      let i = file.name.split(".")[0]
+      let linear = "yes"
 
-			if (f.indexOf(".xhtml") == -1) {
-				linear = "no"
-				i = `r-${i}`
-			}
+      if (f.indexOf(".xhtml") == -1) {
+        linear = "no"
+        i = `r-${i}`
+      }
 
-			manifest.push({
-				id: `c-${i}`,
-				file: f,
-				linear,
-			})
-		})
+      manifest.push({
+        id: `c-${i}`,
+        file: f,
+        linear,
+      })
+    })
 
-		// package.opf
-		let spine = contentFiles.map((f) => {
-			let i = f.split(".")[0]
-			return { id: `c-${i}`, file: i, htmlFile: `${i}.xhtml` }
-		})
+    // package.opf
+    let spine = contentFiles.map((f) => {
+      let i = f.split(".")[0]
+      return { id: `c-${i}`, file: i, htmlFile: `${i}.xhtml` }
+    })
 
-		let packageHBS = fs.readFileSync(themePathFor("package.hbs"), "utf8")
-		let packageTemplate = Handlebars.compile(packageHBS)
-		let packageData = packageTemplate({ book, manifest, spine })
-		fs.writeFileSync(`${folder}/OPS/package.opf`, packageData)
+    let packageHBS = fs.readFileSync(themePathFor("package.hbs"), "utf8")
+    let packageTemplate = Handlebars.compile(packageHBS)
+    let packageData = packageTemplate({ book, manifest, spine })
+    fs.writeFileSync(`${folder}/OPS/package.opf`, packageData)
 
-		// cover.xhtml
-		let coverHBS = fs.readFileSync(themePathFor("cover.hbs"), "utf8")
-		let coverTemplate = Handlebars.compile(coverHBS)
-		let coverData = coverTemplate({ book })
-		fs.writeFileSync(`${folder}/OPS/cover.xhtml`, coverData)
+    // cover.xhtml
+    let coverHBS = fs.readFileSync(themePathFor("cover.hbs"), "utf8")
+    let coverTemplate = Handlebars.compile(coverHBS)
+    let coverData = coverTemplate({ book })
+    fs.writeFileSync(`${folder}/OPS/cover.xhtml`, coverData)
 
-		Promise.all([...fi, ...fp]).then(() => {
-			// toc.xhtml
-			let tocHBS = fs.readFileSync(themePathFor("toc.hbs"), "utf8")
-			let tocTemplate = Handlebars.compile(tocHBS)
-			spine = spine.map((s) => {
-				s.toc = toc[s.htmlFile]
-				return s
-			})
-			let tocData = tocTemplate({ book, manifest, spine })
-			fs.writeFileSync(`${folder}/OPS/toc.xhtml`, tocData)
+    Promise.all([...fi, ...fp]).then(() => {
+      // toc.xhtml
+      let tocHBS = fs.readFileSync(themePathFor("toc.hbs"), "utf8")
+      let tocTemplate = Handlebars.compile(tocHBS)
+      spine = spine.map((s) => {
+        s.toc = toc[s.htmlFile]
+        return s
+      })
+      let tocData = tocTemplate({ book, manifest, spine })
+      fs.writeFileSync(`${folder}/OPS/toc.xhtml`, tocData)
 
-			// toc.ncx
-			let tocncxHBS = fs.readFileSync(themePathFor("toc.ncx.hbs"), "utf8")
-			let tocncxTemplate = Handlebars.compile(tocncxHBS)
-			let tocncxData = tocncxTemplate({ book, manifest, spine })
-			fs.writeFileSync(`${folder}/OPS/toc.ncx`, tocncxData)
+      // toc.ncx
+      let tocncxHBS = fs.readFileSync(themePathFor("toc.ncx.hbs"), "utf8")
+      let tocncxTemplate = Handlebars.compile(tocncxHBS)
+      let tocncxData = tocncxTemplate({ book, manifest, spine })
+      fs.writeFileSync(`${folder}/OPS/toc.ncx`, tocncxData)
 
-			// EPUB3 file
-			let zip = new JSZip()
-			let mimetype = fs.readFileSync(`${folder}/mimetype`)
-			zip.file("mimetype", mimetype) // mimetype needs to be the first file in the zip. That is part of the EPUB spec.
-			addToZip(zip, bookSlug, folder)
-			zip.generateAsync({ type: "blob" }).then(
-				function (epubBlob) {
-					epubBlob.arrayBuffer().then((epubBuffer) => {
-						let Buffer = BrowserFS.BFSRequire("buffer").Buffer
-						fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer))
-						// saveAs(epubBlob, `${bookSlug}.epub`)
-						ebookEpub3Generating.set(false)
+      // EPUB3 file
+      let zip = new JSZip()
+      let mimetype = fs.readFileSync(`${folder}/mimetype`)
+      zip.file("mimetype", mimetype) // mimetype needs to be the first file in the zip. That is part of the EPUB spec.
+      addToZip(zip, bookSlug, folder)
+      zip.generateAsync({ type: "blob" }).then(
+        function (epubBlob) {
+          epubBlob.arrayBuffer().then((epubBuffer) => {
+            let Buffer = BrowserFS.BFSRequire("buffer").Buffer
+            fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer))
+            // saveAs(epubBlob, `${bookSlug}.epub`)
+            ebookEpub3Generating.set(false)
             console.timeEnd("Generating eBook")
-						resolve()
-					})
-				},
-				function (err) {
-					ebookEpub3Generating.set(false)
-					reject(err)
-				}
-			)
-		})
-	})
+            resolve()
+          })
+        },
+        function (err) {
+          ebookEpub3Generating.set(false)
+          reject(err)
+        }
+      )
+    })
+  })
 }
-
-
