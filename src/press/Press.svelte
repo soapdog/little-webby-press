@@ -173,7 +173,7 @@
           <p class="text-xl">{$_("no_book")}</p>
           <p class="text-light">{$_("drag-and-drop-to-start")}</p>
           <div class="mt-6">
-            <a class="btn btn-blue" href="/documentation/getting-started">
+            <a class="btn btn-blue" href="/documentation/en/getting-started">
               {@html $_("learn-more-long")}
             </a>
           </div>
