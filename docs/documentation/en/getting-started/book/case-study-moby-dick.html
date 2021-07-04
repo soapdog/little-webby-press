@@ -67,7 +67,7 @@
               </li>
                 
               <li>
-                <a href="case-study-moby-dick.html#case-study-lets-publish-moby-dick">Case Study: Let’s publish Moby Dick</a>
+                <a href="case-study-moby-dick.html#case-studypercent3a-letpercente2percent80percent99s-publish-moby-dick">Case Study: Let’s publish Moby Dick</a>
               </li>
               
               <li>
@@ -161,26 +161,26 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-                <h1 id="Case-Study:-Let's-publish-Moby-Dick">Case Study: Let’s publish Moby Dick</h1>
+                <h1 id="case-study%3A-let%E2%80%99s-publish-moby-dick">Case Study: Let’s publish Moby Dick</h1>
 <p>Get the sample project by clicking <a href="https://little.webby.press/samples/moby-dick.zip">this download link</a>. After decompressing the archive, you’ll see the manuscript files inside the folder.</p>
 <p>They are written in <a href="https://markdown.org">Markdown</a>, which is a popular format for marking up plain-text files. There is one file per chapter, but you can organise your book in as many files as you want.</p>
 <p>Open <a href="https://little.webby.press">Little Webby Press</a> and use the <em>Load Manuscript Folder</em> button to open a folder selection dialog. Select the <em>Moby Dick</em> folder you just unzipped.</p>
 <figure><img src="images/lwp.png" alt="" /><figcaption>Little Webby Press main screen</figcaption></figure>
 <p>The interface should change and present you with tabs to check out what information Little Webby Press gathered from the manuscript. You can’t use Little Webby Press to edit your work, it is not an editor. If you want to change any information or content, you need to edit your manuscript files and load them again. This way your files are always the <em>source of truth</em> about your work and there is no risk of the data on your disk not being the same as the data in Little Webby Press.</p>
 <p>Let’s check each of the tabs. Remember that those tabs are just a reflection of the files you had on disk.</p>
-<h2 id="The-Options-Tab">The Options Tab</h2>
+<h2 id="the-options-tab">The Options Tab</h2>
 <figure><img src="images/options-tab.png" alt="" /><figcaption>Little Webby Press options tab</figcaption></figure>
 <p>The Options Tab provides a quick way to check information about the products you’re generating. By default Little Webby Press generates an eBook and a Website.</p>
-<h2 id="The-Metadata-Tab">The Metadata Tab</h2>
+<h2 id="the-metadata-tab">The Metadata Tab</h2>
 <figure><img src="images/metadata-tab.png" alt="" /><figcaption>Little Webby Press metadata tab</figcaption></figure>
 <p>This tab shows metadata about the book including author name, publisher, etc.</p>
-<h2 id="The-Manuscript-Tab">The Manuscript Tab</h2>
+<h2 id="the-manuscript-tab">The Manuscript Tab</h2>
 <figure><img src="images/manuscript-tab.png" alt="" /><figcaption>Little Webby Press manuscript tab</figcaption></figure>
 <p>The files that compose your manuscript are listed here in the same order as they will appear in the book. A good way to organise your manuscript is using one file per chapter. This is good for eBooks because some eReaders are underpowered and can’t load a whole book in memory without degrading their performance. By using one file per chapter, the final eBook will mimic this organisation internally and the eReaders will need to load just one chapter in memory at a time, making the reading experience much snappier.</p>
-<h2 id="The-Products-Tab">The Products Tab</h2>
+<h2 id="the-products-tab">The Products Tab</h2>
 <figure><img src="images/products-tab.png" alt="" /><figcaption>Little Webby Press products tab</figcaption></figure>
 <p>Both the eBook and Website will be listed here with links to download them.</p>
-<h2 id="The-Action-Buttons">The Action Buttons</h2>
+<h2 id="the-action-buttons">The Action Buttons</h2>
 <p>At the bottom of the interface there are two buttons: <em>Generate eBook</em> and <em>Generate Site</em>. Clicking them will open the <em>Products Tab</em> and start the assembly of the products.</p>
 <figure><img src="images/action-buttons.png" alt="" /><figcaption>Action Buttons</figcaption></figure>
 <p>Once the products are ready, you will find links to download them in the <em>Products Tab</em>. Clicking the <em>Generic ePub3 eBook</em> will download an EPUB3 file which you can read in your favourite eReader application or device.</p>
@@ -190,7 +190,7 @@
 <p>The site also includes a web version of the book, so that readers can read it even without an eReader.</p>
 <figure><img src="images/moby-dick-site-reading.png" alt="" /><figcaption>Reading Moby Dick online</figcaption></figure>
 <p>At this point you might be wondering where all the extra information such as cover, marketing blurb, and author bio are comming from. They’re comming from a <em>configuration file</em> called <code>Book.toml</code> that is inside the <em>Moby Dick</em> folder.</p>
-<h1 id="The-Book-Configuration-File">The Book Configuration File</h1>
+<h1 id="the-book-configuration-file">The Book Configuration File</h1>
 <p>This is a special file that tells Little Webby Press all about your book. Let’s review the <code>Book.toml</code> from <em>Moby Dick</em>.</p>
 <pre><code class="language-toml">[metadata]
 title = &quot;Moby-Dick, or, The Whale&quot;
@@ -330,7 +330,7 @@ chapters = [
 
 </code></pre>
 <p>This file is written in a special format called <a href="https://toml.io">Toml</a>. Even though it might look a bit complicated at first glance, don worry, you’ll be able to handle it just fine. As an author, you’re used to much more complex tasks than writing a file in some quirky way.</p>
-<h2 id="The-Metadata-Section">The Metadata Section</h2>
+<h2 id="the-metadata-section">The Metadata Section</h2>
 <p>This section holds general metadata about your book. This is usually what we would consider useful information for <em>archiving purposes</em>.</p>
 <pre><code class="language-toml">[metadata]
 title = &quot;Moby-Dick, or, The Whale&quot;
@@ -357,7 +357,7 @@ cover = &quot;images/cover.jpg&quot;
 <pre><code class="language-toml">cover = &quot;images/cover.jpg&quot;
 </code></pre>
 <p>Inside the sample folder, you’ll see an <code>images</code> folder that contains all the images used both in the book and on the website for the book. The field <code>cover</code> points to a file inside <code>images/</code> that is the image to be used as the book cover.</p>
-<h2 id="The-Author-Section">The Author Section</h2>
+<h2 id="the-author-section">The Author Section</h2>
 <p>This section holds the information about the book author. The bio is only shown in the website but the author name is also included in the eBook.</p>
 <pre><code class="language-toml">[author]
 name = &quot;Herman Melville&quot;
@@ -367,12 +367,12 @@ Herman Melville, (born August 1, 1819, New York City—died September 28, 1891, 
   sea, including his masterpiece, Moby Dick (1851).
 &quot;&quot;&quot;
 </code></pre>
-<h2 id="The-Publisher-Section">The Publisher Section</h2>
+<h2 id="the-publisher-section">The Publisher Section</h2>
 <p>This is similar to the <em>Author Section</em> but it represents information about the publisher. At the moment, this information is added to the eBook but not the Website.</p>
 <pre><code class="language-toml">[publisher]
 name = &quot;Project Gutenberg&quot;
 </code></pre>
-<h2 id="The-Site-Section">The Site Section</h2>
+<h2 id="the-site-section">The Site Section</h2>
 <p>This section contains the <em>marketing blurb</em> used on the Website to help potential readers decide if they want to read your book or not. It is what would go into the <em>back of a paperback</em>.</p>
 <pre><code class="language-toml">[site]
 blurb = &quot;&quot;&quot;
@@ -390,10 +390,10 @@ Moby Dick is the greatest novel ever written by an American.
 </code></pre>
 <p>You can see how it looks in the Website in the screenshot below.</p>
 <figure><img src="images/marketing-blurb.png" alt="" /><figcaption>Marketing blurb on the Website for Moby Dick</figcaption></figure>
-<h2 id="The-WebMonetization-Section">The WebMonetization Section</h2>
+<h2 id="the-webmonetization-section">The WebMonetization Section</h2>
 <p><a href="https://webmonetization.org/">WebMonetization</a> is an exciting new <em>Web Standard</em> that has the potential to revolutionise how creators are funded.</p>
 <blockquote>
-<h3 id="Motivation">Motivation</h3>
+<h3 id="motivation">Motivation</h3>
 <p>The ability to transfer money has been a long-standing omission from the web platform. As a result, the web suffers from a flood of advertising and corrupt business models. Web Monetization provides an open, native, efficient, and automatic way to compensate creators, pay for API calls, and support crucial web infrastructure.</p>
 <p>— <em>Source: <a href="https://webmonetization.org/">Web Monetization Website</a></em></p>
 </blockquote>
@@ -403,7 +403,7 @@ Moby Dick is the greatest novel ever written by an American.
 endpoint = &quot;$ilp.uphold.com/doesntexist&quot;
 </code></pre>
 <p>On the Moby Dick sample, the endpoint is pointing to a fictional endpoint.</p>
-<h2 id="The-Table-Of-Contents-Section">The Table Of Contents Section</h2>
+<h2 id="the-table-of-contents-section">The Table Of Contents Section</h2>
 <p>This section is optional, and is only used when the book is doing something special with the chapter titles. When using Markdown, lines beginning with <code>#</code> are titles. The amount of hashes you add before the text represent the <em>heading level</em>.</p>
 <pre><code class="language-markdown"># This is a title, with heading 1.
 
@@ -471,7 +471,7 @@ match = &quot;first&quot;
 <p>So, back to the section at hand. The <code>prefix</code> is the <em>hat</em>. The <code>label</code> is the <em>CSS Selector</em> for the <em>chapter’s title</em>. And the final field <code>match</code> can either be <code>all</code> or <code>first</code>. It tells Little Webby Press if it should look for just the first title in a file, or for multiple titles in a file.</p>
 <p>In the case of Moby Dick, there is only one title per file, so the value is <code>first</code>. Other books, specially non-fiction books with multiple sections per chapter will use <code>all</code>.</p>
 <p>If you don’t have a <em>Table Of Contents</em> section, Little Webby press will look for all <code>h1</code> and <code>h2</code> in a given file.</p>
-<h2 id="The-Book-Section">The Book Section</h2>
+<h2 id="the-book-section">The Book Section</h2>
 <p>This is the most important section in the whole <code>Book.toml</code> file. It is this section that tells Little Webby Press which Markdown files are used by your book and which is their order.</p>
 <p>This section is a bit different than the ones we have seen before because it is not a simple <em>field</em> and <em>value</em> pair. It is a <em>field</em> that holds a <em>list of values</em>. Computer Science people enjoy calling it an <em>Array</em> because Computer Science people are notoriously bad at naming things.</p>
 <pre><code class="language-toml">fruits =[&quot;apple&quot;, &quot;banana&quot;, &quot;orange&quot;]
@@ -494,7 +494,7 @@ frontmatter = [
 <p>In the case of Moby Dick, the frontmatter holds some information about etymology and some extracts about whales.</p>
 <p>One important thing to keep in mind is that when an eReader opens an eBook, it usually opens it directly on the first chapter, skipping the frontmatter. Many eReader devices and apps will also not show the frontmatter or backmatter in the <em>Table Of Contents</em>. The reader will be able to read them as they flip through the pages, but they might not be listed as they are not strictly part of the book.</p>
 <p>The order you place the files inside these lists matter. They are the same order they’ll appear in the book.</p>
-<h1 id="Summary">Summary</h1>
+<h1 id="summary">Summary</h1>
 <p>This was a very long chapter, but there was a lot of ground to cover. By now, you should have downloaded the sample for Moby Dick and used Little Webby Press to generate the eBook and the Website. You should also have spent some time looking at the chapter Markdown files to see how they work, and with the <em>Book configuration File</em> understanding it’s fields and values.</p>
 <p>On the next chapter, we’re going to create a book from scratch to show you how to do it. It will be a fake book with fake content, but it will serve as a learning experience on how to use Little Webby Press to create your own books.</p>
 

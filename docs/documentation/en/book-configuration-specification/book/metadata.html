@@ -211,7 +211,7 @@
               </li>
               
               <li>
-                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+                <a href="site.html#frontmatterpercent2c-chapterspercent2c-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
               </li>
               
               <li>
@@ -325,9 +325,9 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-                <h1 id="Metadata-Section">Metadata Section</h1>
+                <h1 id="metadata-section">Metadata Section</h1>
 <p>The metadata section contains fields that would be used for archival purposes in a library or shop.</p>
-<h2 id="Default-values">Default values</h2>
+<h2 id="default-values">Default values</h2>
 <p>Each of these fields has a sensible default value, so you should only fill the ones you need. Below is a metadata section with the default values being explicitly shown:</p>
 <pre><code class="language-toml">[[ metadata ]]
 title = &quot;Untitled Book&quot;
@@ -342,32 +342,32 @@ license = false
 <blockquote>
 <p>The software developers among you might have noticed that the fields change type from <code>boolean: false</code> to a <code>string</code> when filled in. That is by design and makes checking for them in templates easier.</p>
 </blockquote>
-<h2 id="Title">Title</h2>
+<h2 id="title">Title</h2>
 <p>You book’s title. This is added to both the eBook and the Website.</p>
 <p>Example:</p>
 <pre><code class="language-toml">title = &quot;Moby Dick, or, The Whale&quot;
 </code></pre>
-<h2 id="Subtitle">Subtitle</h2>
+<h2 id="subtitle">Subtitle</h2>
 <p>An optional field to hold your book subtitle. If it is present, it is added to both the eBook and the Website.</p>
 <p>Example:</p>
 <pre><code class="language-toml">subtitle = &quot;That classic book about a whale you have to read for school&quot;
 </code></pre>
-<h2 id="Date">Date</h2>
+<h2 id="date">Date</h2>
 <p>The publication date for the book. The default value will make it the current date when you’re generating the book. If you want to fill it in, you need to write the date in <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> format.</p>
 <p>Example:</p>
 <pre><code class="language-toml">date = 2019-08-08T12:00:00Z
 </code></pre>
 <p>It is <code>&lt;year&gt;-&lt;month&gt;-&lt;day&gt;T&lt;hour&gt;:&lt;minute&gt;:&lt;seconds&gt;Z</code>. The <em>year</em> should always be four numbers, and all the other items should be two numbers, so put a leading zero if the value is below ten.</p>
-<h2 id="Identifier">Identifier</h2>
+<h2 id="identifier">Identifier</h2>
 <p>This is the unique <code>identifier</code> that will be used to <em>identify</em> your book. This can be an ISBN, or any other unique value that is compatible with the platforms you’ll distribute your eBook on. A unique URL pointing to your book is a good identifier.</p>
 <p>Example:</p>
 <pre><code class="language-toml">identifier = &quot;http://www.gutenberg.org/ebooks/2701&quot;
 </code></pre>
-<h2 id="Cover">Cover</h2>
+<h2 id="cover">Cover</h2>
 <p>The cover image file for the book. This file, like all other images in your book, should be placed inside a folder called <code>images</code> inside your <em>manuscript folder</em>.</p>
 <pre><code class="language-toml">cover = &quot;images/cover.jpg&quot;
 </code></pre>
-<h2 id="Language">Language</h2>
+<h2 id="language">Language</h2>
 <p>The language the book is written in. The value for this field should be in <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a> format, which is a two letter code to represent a language.</p>
 <p>Here are some of example language codes:</p>
 <table>
@@ -431,7 +431,7 @@ license = false
 <p>Example:</p>
 <pre><code class="language-toml">language = &quot;pt&quot;
 </code></pre>
-<h2 id="License">License</h2>
+<h2 id="license">License</h2>
 <p>This is the license for your book. It can be an HTML chunk if you want to add an image and link to the license. The intended use case for this is so that it becomes easier to tell the reader that your book is using copyleft licenses such as <a href="https://creativecommons.org/">Creative Commons</a>.</p>
 <p>Be aware that Little Webby Press does not generate a copyright page for your book. You should do it yourself, and add it to the frontmatter.</p>
 <p>The value of this license field is used only on the Website landing page.</p>

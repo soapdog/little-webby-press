@@ -211,7 +211,7 @@
               </li>
               
               <li>
-                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+                <a href="site.html#frontmatterpercent2c-chapterspercent2c-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
               </li>
               
               <li>
@@ -325,9 +325,9 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-                <h1 id="Table-of-Contents-Section">Table of Contents Section</h1>
+                <h1 id="table-of-contents-section">Table of Contents Section</h1>
 <p>Little Webby Press will look all files specified in the <em>frontmatter, backmatter, and chapters</em> fields to find out which sections belong to your table of contents. This section specifies the <em>rules</em> used by Little Webby Press to find the items inside your content.</p>
-<h2 id="Default-values">Default values</h2>
+<h2 id="default-values">Default values</h2>
 <pre><code class="language-toml">[toc]
 prefix = false
 label = &quot;h1,h2&quot;
@@ -335,7 +335,7 @@ match = &quot;all&quot;
 </code></pre>
 <p>The default behaviour, which should work for most books, is to look inside all content files and pick all <em>headers</em> of <em>level 1</em> and <em>level 2</em>, and add them to the table of contents.</p>
 <p>In the <a href="documentation/getting-started/case-study-moby-dick.md">Getting Started Guide chapter for the Moby Dick case study</a>, you can see how in that book a different behaviour is specified by changing the values in these fields.</p>
-<h2 id="Prefix">Prefix</h2>
+<h2 id="prefix">Prefix</h2>
 <p>Some authors will use a combination of headers to specify a chapter, such as the following Markdown:</p>
 <pre><code class="language-markdown">### Chapter 3
 
@@ -354,20 +354,20 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <blockquote>
 <p><strong>Attention:</strong> If you specify a <em>prefix</em> and some of your chapters don’t have the prefix, they won’t appear in the table of contents. When you specify a value for prefix, you’re telling Little Webby Press that every single table of content item will be found after a prefix.</p>
 </blockquote>
-<h2 id="Label">Label</h2>
+<h2 id="label">Label</h2>
 <p>This is the label that is used for each table of content item. By default Little Webby Press will get <em>headers level 1 and 2</em>.</p>
 <pre><code class="language-toml">label = &quot;h1,h2&quot;
 </code></pre>
 <p>In the case of Moby Dick, there are no <em>headers level 2</em>, so the label is specified as:</p>
 <pre><code class="language-toml">label = &quot;h1&quot;
 </code></pre>
-<h2 id="Match">Match</h2>
+<h2 id="match">Match</h2>
 <p>Fiction books don’t usually have multiple sections inside each chapter, so this field may sound less useful for fiction writers. On the other hand, non-fiction books tend to be organised around multiple sections.</p>
 <p>What the <em>match</em> field does is tell Little Webby Press if it should stop looking for table of contents items after the first match. Little Webby Press looks for table of content items by traversing all the items the collection of files that make up your book.</p>
 <p>If <em>match</em> is set to <em>first</em>, then it will move onto the next file after finding the first match for the current file. This is how it is set on the Moby Dick sample.</p>
 <p>The default value is <em>all</em> which makes it look for all matches inside each file.</p>
 <p>In most cases you don’t need to change this at all. In the case of the Moby Dick sample, having this field set to <em>all</em> whould generate the exact same table of contents because each file has only one <em>header level 3 prefix</em> and one <em>header level 1 label</em>. So, even if it looked further into each file for more matches, it wouldn’t find them and move on.</p>
-<h2 id="Important-remarks">Important remarks</h2>
+<h2 id="important-remarks">Important remarks</h2>
 <p>To be honest, the default values should work for the most cases. I don’t think you should change this value unless you really need to. Just use headers level 1 and 2 for your sections and subsections and you’ll be just fine with the default behaviour.</p>
 
                 <div class="is-flex">

@@ -67,7 +67,7 @@
               </li>
                 
               <li>
-                <a href="case-study-moby-dick.html#case-study-lets-publish-moby-dick">Case Study: Let’s publish Moby Dick</a>
+                <a href="case-study-moby-dick.html#case-studypercent3a-letpercente2percent80percent99s-publish-moby-dick">Case Study: Let’s publish Moby Dick</a>
               </li>
               
               <li>
@@ -161,12 +161,12 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-                <h1 id="Creating-A-New-Book">Creating A New Book</h1>
+                <h1 id="creating-a-new-book">Creating A New Book</h1>
 <p>In this chapter we’ll create a new book from scratch together. The book will be fake but the process will be the exact same process you’d use for your own work. This is a <em>follow along</em> chapter, so please get your computer ready and join the journey by replicating the same steps on your own.</p>
-<h2 id="A-Folder-For-Our-Book">A Folder For Our Book</h2>
+<h2 id="a-folder-for-our-book">A Folder For Our Book</h2>
 <p>Each book needs to live in it’s own folder on your computer. You can place this folder wherever you want, but ideally you’d place it somewhere safe and make backups often.</p>
 <p>To begin, create a folder called <code>sample-book</code>. All the files and folders we create in this tutorial chapter will be placed inside this folder.</p>
-<h2 id="The-Most-Important-Part-Of-A-Book-Is-The-Content">The Most Important Part Of A Book Is The Content</h2>
+<h2 id="the-most-important-part-of-a-book-is-the-content">The Most Important Part Of A Book Is The Content</h2>
 <p>In the previous chapter we spent a long time exploring the <em>Book Configuration File</em>. It could cause people to imagine that that file is the most important file in our book, but that is a mistake. The most important part is always your content, your manuscript. All the rest is just extra steps to make sure your content is in a good shape to delight your readers.</p>
 <p>Our sample book will have four chapters in total — one for frontmatter, two for fake content, one for backmatter — and we’ll begin by creating them all. Most of your time will always be spent writing and revising your manuscript. If you need help with that process, I recommend you check out the following resources:</p>
 <ul>
@@ -174,7 +174,7 @@
 <li><a href="https://www.thecreativepenn.com/">The Creative Penn</a> - Joanna Penn writes and podcasts wonderful content about how to write, publish, and market your book.</li>
 <li><a href="https://chris-fox-writes.teachable.com/">Chris Fox Courses</a> - Chris Fox has a wonderful course called <em>5,000 Words Per Hour</em> that is easy to digest and might just change how you write.</li>
 </ul>
-<h3 id="The-Frontmatter">The Frontmatter</h3>
+<h3 id="the-frontmatter">The Frontmatter</h3>
 <p>Create a file called <code>00-frontmatter.md</code> and place the following content into it.</p>
 <pre><code class="language-markdown">&gt; _&quot;Peaches Are Yummy&quot; — Some Important Author_
 
@@ -183,7 +183,7 @@
 I just want to say thanks to the important author who inspired me to really enjoy eating peaches.
 </code></pre>
 <p>Content files are written in <a href="https://markdown.org">Markdown</a>, if this is looking a bit odd to you, you might want to learn a bit more about Markdown before continuing.</p>
-<h3 id="Chapter-1">Chapter 1</h3>
+<h3 id="chapter-1">Chapter 1</h3>
 <p>Create a file called <code>01-first.md</code>. The names are not really important because what matters will be the order we’ll place them in the <em>Book Configuration File</em>, still naming the file with a <em>zero-padded number</em> at the front will help your computer show the files in the correct order when you look at them. For our first chapter, do something like:</p>
 <pre><code class="language-markdown"># The opening sequence
 
@@ -195,7 +195,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </code></pre>
 <p>Be aware that I just <em>copied and pasted</em> this lorem-ipsum placeholder text from the Web. Use whatever content you want there. This sample book is fake but it is yours, you should play with it.</p>
-<h3 id="Chapter-2">Chapter 2</h3>
+<h3 id="chapter-2">Chapter 2</h3>
 <p>Create a file called <code>02-second.md</code>. You could just copy and paste from the first chapter and make some alterations:</p>
 <pre><code class="language-markdown"># The sequence after the opening sequence
 
@@ -206,14 +206,14 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </code></pre>
-<h3 id="The-Backmatter">The Backmatter</h3>
+<h3 id="the-backmatter">The Backmatter</h3>
 <p>Create a file called <code>03-backmatter.md</code>, and add your important <em>Author’s note</em></p>
 <pre><code class="language-markdown"># Author's Notes
 
 My favourite note is F sharp.
 
 </code></pre>
-<h2 id="The-Book-Configuration-File">The Book Configuration File</h2>
+<h2 id="the-book-configuration-file">The Book Configuration File</h2>
 <p>Now that we’re happy with our content, it is time to create a very minimal <em>Book Configuration File</em>. That file should be named <code>Book.toml</code>, that is the file that Little Webby Press will look for, if you name it something different, Little Webby Press won’t be able to find it and won’t be able to work with your book.</p>
 <pre><code class="language-toml">[metadata]
 title = &quot;A Sample Book&quot;
@@ -257,7 +257,7 @@ content
 </code></pre>
 <p>This is good for when you’re writing the <em>author bio</em> or the <em>marketing blurb</em>.</p>
 <p>Be aware that our configuration is declaring a book cover in <code>images/cover.png</code>, which doesn’t exist. So create a folder called <code>images</code> and place any image inside it named <code>cover.png</code>. Once you do that, we’re ready!</p>
-<h2 id="Assembling-The-Sample-Book">Assembling The Sample Book</h2>
+<h2 id="assembling-the-sample-book">Assembling The Sample Book</h2>
 <p>As I mentioned a couple times before, Little Webby Press will generate both an eBook and a Website for your book. There are two <em>action buttons</em> in the interface, one to generate the book, another to generate the site. The site includes a link to download the eBook, so pressing <em>generate site</em> will also generate the eBook if you haven’t assembled it yet.</p>
 <p>Open <a href="https://little.webby.press">Little Webby Press</a> and use the <em>Select Manuscript Folder</em> to select your <code>sample-book</code> folder. You can also simply drag and drop that folder on top of <em>Little Webby Press</em> interface, it will change letting you know if it can accept the drop. Once you loaded your <em>Manuscript Folder</em> and it correctly processed your <em>Book Configuration File</em>, you’ll see the familiar Little Webby Press tabbed interface.</p>
 <figure><img src="images/sample-book-in-lwp.png" alt="" /><figcaption>Our sample book</figcaption></figure>

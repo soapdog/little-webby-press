@@ -211,7 +211,7 @@
               </li>
               
               <li>
-                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+                <a href="site.html#frontmatterpercent2c-chapterspercent2c-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
               </li>
               
               <li>
@@ -325,20 +325,20 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-                <h1 id="Author-Section">Author Section</h1>
+                <h1 id="author-section">Author Section</h1>
 <p>This is used to specify all sorts of information about the book authors. The reason behind placing author information on its own section is so that it is easier to copy and paste it as you create new books. If that information was part of the metadata section, it would be too easy to make a mistake and end up copying extra data you don’t need or forgetting to copy something.</p>
-<h2 id="Default-values">Default values</h2>
+<h2 id="default-values">Default values</h2>
 <pre><code class="language-toml">[author]
 name = false
 bio = false
 photo = false
 </code></pre>
 <p>Exactly, by default everything is ignored, and your book has no author. You really don’t want that to be the case and should fill at least the <em>name</em> field.</p>
-<h2 id="Name">Name</h2>
+<h2 id="name">Name</h2>
 <p>This is the name of the authors. You can use it to hold a single name, or add multiple names separated by commas. Names appear both in the eBook data and on the Website.</p>
 <pre><code class="language-toml">name = &quot;André Alves Garzia&quot;
 </code></pre>
-<h2 id="Bio">Bio</h2>
+<h2 id="bio">Bio</h2>
 <p>This is a mini-bio about the authors. If you’re having challenges writing about yourself, check out this articles from Reedsy about <a href="https://blog.reedsy.com/author-bio/">How to Write a Memorable Author Bio</a>.</p>
 <p>Mini-bios are not included in the eBook. If you want it on the eBook, you need to write it on either the frontmatter or the backmatter yourself. This data appears only on the Website.</p>
 <p>You can use Markdown or even some HTML on this field. Since author’s bios are usually longer than most of the other fields in the book configuration file, it is best to write them using multiple lines by using triple-double-quotes as shown in the example below.</p>
@@ -351,7 +351,7 @@ and more IoT boards than he can ever put into use.
 &quot;&quot;&quot;
 </code></pre>
 <p>Markdown will pick multiple consecutive lines of text and concatenate them in a single paragraph. To make multiple paragraphs, you need to leave a blank line between them.</p>
-<h2 id="Photo">Photo</h2>
+<h2 id="photo">Photo</h2>
 <p>This is a small photo of the authors. It needs to be placed inside the <code>images</code> folder, and referenced in the field with the <em>images folder</em> as part of it.</p>
 <pre><code class="language-toml">photo = &quot;images/author.png&quot;
 </code></pre>

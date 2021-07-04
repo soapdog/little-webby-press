@@ -211,7 +211,7 @@
               </li>
               
               <li>
-                <a href="site.html#frontmatter-chapters-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
+                <a href="site.html#frontmatterpercent2c-chapterspercent2c-and-backmatter">Frontmatter, Chapters, and Backmatter</a>
               </li>
               
               <li>
@@ -325,10 +325,10 @@
           <div class="column is-two-thirds">
             <div class="container">
               <div class="content p-2">
-                <h1 id="Book-Section">Book Section</h1>
+                <h1 id="book-section">Book Section</h1>
 <p>Arguably the most important section in the configuration file. This is the section that specifies your manuscript files. The order in which you specify them will form the spine of the book.</p>
 <p>All fields that belong to this section have information that goes into the eBook.</p>
-<h2 id="Default-values">Default values</h2>
+<h2 id="default-values">Default values</h2>
 <pre><code class="language-toml">[book]
 enabled = true,
 theme = &quot;generic&quot;,
@@ -337,16 +337,16 @@ chapters = [],
 backmatter = []
 </code></pre>
 <p>There is a lot to be said about each field, and it is best tackled in their own section.</p>
-<h2 id="Enabled">Enabled</h2>
+<h2 id="enabled">Enabled</h2>
 <p>This field dictates if Little Webby Press should generate an eBook for you. Some authors might have books generated using other tools and still want to use Little Webby Press to generate the Website for them. By setting this value to <code>false</code>, they’re able to bypass book generation and just create a Website.</p>
 <p>The default behavior is to generate the eBook. You only need to touch this field if your intention is to disable it.</p>
 <pre><code class="language-toml">enabled = true
 </code></pre>
-<h2 id="Theme">Theme</h2>
+<h2 id="theme">Theme</h2>
 <p>Which theme should be used to generate your eBook. At the moment we only have one theme called <em>generic</em>. In the near future we plan to have more themes, and also a way for you to override our theme selection and provide your own. Right now, you should simply ignore this field.</p>
 <pre><code class="language-toml">theme = &quot;generic&quot;
 </code></pre>
-<h2 id="Frontmatter-and-Backmatter">Frontmatter and Backmatter</h2>
+<h2 id="frontmatter-and-backmatter">Frontmatter and Backmatter</h2>
 <p>Those two sections behave exactly the same, but one is put before the book chapters, and the other after them.</p>
 <p>Frontmatter and backmatter are what computer scientists call an <a href="https://www.bbc.co.uk/bitesize/guides/zy9thyc/revision/1">Array</a>. This is fancy speak, and the way you can understand them is as <em>a collection of stuff</em>. In our case they’re <em>a collection of files</em>. So when you write down any of these sections, you do so by writing a collection of files that are part of that section.</p>
 <pre><code class="language-toml">fontmatter = [
@@ -364,7 +364,7 @@ backmatter = []
 </code></pre>
 <p>A collection is placed between <em>square brackets</em> and each item is <em>quoted</em> and separated from each other using <em>commas</em>. You could write them all in a single line but writing each item in their own line makes it easier to remove items and to reorder them.</p>
 <p>Most eReaders will not place frontmatter or backmatter in the table of contents for the book. Readers will still be able to read them as they flip through the pages. Also, many eReaders will open a book in the first chapter and not in the frontmatter. This is a reason why many authors prefer to add things to the backmatter than the frontmatter, usually leaving it with only the copyright notice.</p>
-<h2 id="Chapters">Chapters</h2>
+<h2 id="chapters">Chapters</h2>
 <p><strong>Finally! This is the most important section in the whole configuration!</strong></p>
 <p>It took us a while to arrive to this section, this is where you specify the files that make up your book. Be aware that even though the field is called <em>chapters</em>, the relationship between one file and one chapter is arbitrary and there is nothing preventing you from breaking your chapters into multiple files. The field is called <em>chapters</em> because all the files inside this collection will be what ends up being your book’s chapters.</p>
 <pre><code class="language-toml">chapters = [
@@ -384,7 +384,7 @@ backmatter = []
 ]
 </code></pre>
 <p>Those among you that know your storycraft will recognize the hero’s journey (or the story circle, or…) in the example above.</p>
-<h2 id="Important-remarks">Important remarks</h2>
+<h2 id="important-remarks">Important remarks</h2>
 <p>The <em>Table of Contents</em> is specified by the information in another section. All that <em>frontmatter, backmatter, and chapters</em> specify is what content files belong to your book and their order.</p>
 <p>If you have Markdown files in your manuscript folder, but you don’t place them in any of these collections, they won’t be processed or appear in your book.</p>
 <p>If you have Markdown file names in your collections that don’t actually exist on your manuscript folder, the book generation will break because of the missing file. Only add files to these collections after you have created them.</p>
