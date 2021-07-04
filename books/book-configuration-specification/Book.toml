@@ -21,6 +21,10 @@ url = "https://twitter.com/soapdog"
 label = "Blog"
 url = "https://andregarzia.com"
 
+[[cta]]
+url = "https://example.com"
+label = "Download example"
+
 [publisher]
 name = "Little Webby Press"
 
