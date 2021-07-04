@@ -1,4 +1,5 @@
 {
+  "about": "Little Webby Press is a _Web Application_ to convert your manuscript into both an eBook and a Website. It helps reduce the friction between writing and publishing, so that you can focus your time and energy into your craft.\n\n\nYou can use it to generate as many books as you want. There is no need for an account because your data never leaves your computer. Since Little Webby Press doesn't rely on expensive to scale servers, it can be offered for free.\n\n\nLittle Webby Press is developed by [André Alves Garzia](https://andregarzia.com) in London, UK. If you want to support my work, you can [buy me a coffee](https://ko-fi.com/andregarzia).",
   "action-generate": "",
   "action-generate-ebook": "Generate eBook",
   "action-generate-site": "Generate Site",
@@ -27,6 +28,7 @@
   "metadata-author-name": "Author Name",
   "metadata-book-title": "Book Title",
   "metadata-publisher-name": "Publisher Name",
+  "nav_about": "About",
   "nav_github": "Github",
   "nav_help": "Documentation",
   "no-files-found": "No files found.",

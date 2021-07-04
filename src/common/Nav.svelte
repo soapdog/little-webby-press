@@ -1,16 +1,21 @@
 <script>
   import { _ } from "svelte-i18n"
+  import {currentView} from "./viewManager.js"
+
 </script>
 
 <nav class="py-2 pb-4 text-xl">
   <ul class="flex">
     <li class="mr-6">
-      <a class="nav font-semibold" href="/">
+      <a class="nav font-semibold" href="#press" on:click={() => {currentView.set("press")}}>
         Little.Webby.Press
       </a>
     </li>
     <li class="mr-6">
-      <a class="nav" href="/documentation/en">{$_("nav_help")}</a>
+      <a class="nav" href="#about" on:click={() => {currentView.set("about")}}>{$_("nav_about")}</a>
+    </li>
+    <li class="mr-6">
+      <a class="nav" href="#documentation" on:click={() => {currentView.set("documentation")}}>{$_("nav_help")}</a>
     </li>
     <li class="mr-6">
       <a
