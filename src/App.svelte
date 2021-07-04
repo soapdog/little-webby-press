@@ -2,11 +2,13 @@
 	import Nav from "./common/Nav.svelte"
 	import Press from "./press/Press.svelte"
   import Documentation from "./documentation/Documentation.svelte"
+  import About from "./documentation/About.svelte"
   import {currentView} from "./common/viewManager.js"
 
   const views = {
     press: Press,
-    documentation: Documentation
+    documentation: Documentation,
+    about: About
   }
 </script>
 

@@ -27,7 +27,7 @@ const books = {
   }
 </style>
 
-<div class="container mx-auto full-height svelte-1no39p5">
+<div class="container mx-auto full-height">
   <div class="flex justify-center content-center h-100 text-center">
     {#each books[activeLocale] as b}
     <div class="p-2">

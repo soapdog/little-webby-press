@@ -51,9 +51,11 @@
         "svelte": "^3.0.0",
         "svelte-i18n": "^3.2.5",
         "tailwindcss": "^2.0.1",
-        "toml": "^3.0.0"
+        "toml": "^3.0.0",
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "@tailwindcss/typography": "^0.4.1"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.3"
+
     }
 }

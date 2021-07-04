@@ -12,6 +12,9 @@
       </a>
     </li>
     <li class="mr-6">
+      <a class="nav" href="#about" on:click={() => {currentView.set("about")}}>{$_("nav_about")}</a>
+    </li>
+    <li class="mr-6">
       <a class="nav" href="#documentation" on:click={() => {currentView.set("documentation")}}>{$_("nav_help")}</a>
     </li>
     <li class="mr-6">
