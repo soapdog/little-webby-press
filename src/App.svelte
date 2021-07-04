@@ -1,10 +1,12 @@
 <script>
 	import Nav from "./common/Nav.svelte"
 	import Press from "./press/Press.svelte"
+  import Documentation from "./documentation/Documentation.svelte"
   import {currentView} from "./common/viewManager.js"
 
   const views = {
-    press: Press
+    press: Press,
+    documentation: Documentation
   }
 </script>
 
