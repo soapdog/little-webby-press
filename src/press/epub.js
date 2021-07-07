@@ -123,7 +123,6 @@ export async function generateEpub(book) {
             contentHtml = md.render(content)
             break
         }
-        console.log("content", contentHtml)
         contentHtml = fix(contentHtml)
         let destinationFilename = chapterFilename.replace(ext, ".xhtml")
         let destination = `${folder}/OPS/${destinationFilename}`
