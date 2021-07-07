@@ -12,7 +12,8 @@ module.exports = {
 			Handlebars: "writable",
 			module: "writable",
 			require: "writable",
-			JSZip: "writable"
+			JSZip: "writable",
+      Asciidoctor: "writable"
 		},
     plugins: [
       "svelte3"
