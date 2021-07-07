@@ -38,6 +38,9 @@ let md = new MarkdownIt({
   .use(MarkdownEmoji)
   .use(MarkdownCenterText)
 
+// eslint-disable-next-line no-undef
+let asciidoctor = new Asciidoctor()
+
 // IMPLEMENTATION
 
 let currentTheme = "generic" // matches default theme from Book() default configuration.
@@ -79,6 +82,7 @@ export async function generateSite(book) {
 
   let bookSlug = slugify(book.config.metadata.title)
   let fs = require("fs")
+  let path = require("path")
   let siteFolder = `/tmp/${bookSlug}-site`
   let bookFile = `/books/${bookSlug}.epub`
   let toc = {}
@@ -125,10 +129,23 @@ export async function generateSite(book) {
   await Promise.all(
     contentFiles.map(async (chapterFilename) => {
       let file = book.files.filter((f) => f.name === chapterFilename)[0]
-      let contentMarkdown = await file.text()
-      let contentHtml = md.render(contentMarkdown)
+      let ext = path.extname(chapterFilename)
+      let contentHtml = ""
+      let content = await file.text()
+      switch(ext) {
+        case ".html":
+          contentHtml = content
+          break
+        case ".adoc":
+          contentHtml = asciidoctor.convert(content, { "safe": "server", "attributes": { "showtitle": true, "icons": "font" } })
+          break
+        default:
+        case ".md":
+          contentHtml = md.render(content)
+          break
+      }
       contentHtml = fix(contentHtml)
-      let destinationFilename = chapterFilename.replace(".md", ".html")
+      let destinationFilename = chapterFilename.replace(ext, ".html")
       let destination = `${siteFolder}/book/${destinationFilename}`
 
       toc[destinationFilename] = extractToc(contentHtml, destinationFilename)

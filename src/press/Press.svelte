@@ -27,7 +27,7 @@
       .catch((n) => {
         ebookEpub3Generating.set(false)
         stage = "error"
-        msg = $_(n.message)
+        msg = n.message ? $_(n.message) : n
         console.error("error generating epub3", n)
       })
   }
@@ -37,7 +37,7 @@
       .catch((n) => {
         staticSiteGenerating.set(false)
         stage = "error"
-        msg = $_(n.message)
+        msg = n.message ? $_(n.message) : n
         console.error("error generating site", n)
       })
   }

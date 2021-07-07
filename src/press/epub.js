@@ -42,6 +42,9 @@ let md = new MarkdownIt({
   .use(MarkdownEmoji)
   .use(MarkdownCenterText)
 
+// eslint-disable-next-line no-undef
+let asciidoctor = new Asciidoctor()
+
 let currentTheme = "generic" // default theme, same as in the defaultBookConfiguration.
 
 function setTheme(theme) {
@@ -63,6 +66,7 @@ export async function generateEpub(book) {
 
   let bookSlug = slugify(book.config.metadata.title)
   let fs = require("fs")
+  let path = require("path")
   let folder = `/tmp/${bookSlug}`
   let toc = {}
   let manifest = []
@@ -104,10 +108,23 @@ export async function generateEpub(book) {
     contentFiles.map(async (chapterFilename) => {
       try {
         let file = book.files.filter((f) => f.name === chapterFilename)[0]
-        let contentMarkdown = await file.text()
-        let contentHtml = md.render(contentMarkdown)
+        let ext = path.extname(chapterFilename)
+        let contentHtml = ""
+        let content = await file.text()
+        switch(ext) {
+          case ".html":
+            contentHtml = content
+            break
+          case ".adoc":
+            contentHtml = asciidoctor.convert(content, { "safe": "server", "attributes": { "showtitle": true, "icons": "font" } })
+            break
+          default:
+          case ".md":
+            contentHtml = md.render(content)
+            break
+        }
         contentHtml = fix(contentHtml)
-        let destinationFilename = chapterFilename.replace(".md", ".xhtml")
+        let destinationFilename = chapterFilename.replace(ext, ".xhtml")
         let destination = `${folder}/OPS/${destinationFilename}`
         let data = chapterTemplate({ html: contentHtml })
         fs.writeFileSync(destination, data)
@@ -121,6 +138,7 @@ export async function generateEpub(book) {
           )
         }
       } catch (e) {
+        console.error(e)
         throw `Problem processing chapter: <b>${chapterFilename}</b>.<br><br>Remember that chapter files cannot be empty.`
       }
     })
@@ -155,7 +173,8 @@ export async function generateEpub(book) {
     }
 
     let f = file.filepath
-    f = f.replace(".md", ".xhtml")
+    let ext = path.extname(f)
+    f = f.replace(ext, ".xhtml")
     let i = file.name.split(".")[0]
     let linear = "yes"
 

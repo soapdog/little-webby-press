@@ -43,7 +43,6 @@ export function extractToc(html, file) {
 			}
 		} else {
 			const labelEl = doc.querySelector(`${conf.label}`)
-			console.log("l", [file, labelEl])
 			if (!labelEl) {
 				console.log("l is null", { html, file })
 				throw "error"
