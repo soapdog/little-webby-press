@@ -5,14 +5,11 @@ import {
   ensureFolders,
   copyImages,
   addToZip,
-  loadExternalTheme
+  loadExternalTheme,
 } from "../common/fs.js"
 import { fix } from "../common/fixes.js"
 import "../common/templateHelpers.js"
-import {
-  extractToc,
-  safeId,
-} from "../common/utils.js"
+import { extractToc, safeId } from "../common/utils.js"
 
 import Handlebars from "handlebars"
 import JSZip from "jszip"
@@ -195,18 +192,18 @@ export async function generateSite(book) {
 
   let zip = new JSZip()
   addToZip(zip, `${bookSlug}-site`, siteFolder)
-  zip.generateAsync({ type: "blob" }).then(
-    function (blob) {
-      blob.arrayBuffer().then((siteBuffer) => {
-        let Buffer = BrowserFS.BFSRequire("buffer").Buffer
-        fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer))
-        staticSiteGenerating.set(false)
-        console.timeEnd("Generating site")
-      })
-    },
-    function (err) {
-      staticSiteGenerating.set(false)
-      throw err
-    }
-  )
+
+  try {
+    let blob = await zip.generateAsync({ type: "blob" })
+    let siteBuffer = await blob.arrayBuffer()
+    let Buffer = BrowserFS.BFSRequire("buffer").Buffer
+    fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer))
+    staticSiteGenerating.set(false)
+    console.timeEnd("Generating site")
+    return true
+
+  } catch (err) {
+    staticSiteGenerating.set(false)
+    throw err
+  }
 }
