@@ -9,7 +9,7 @@
 	<div class="card mb-6">
 
 		<div class="card-header flex justify-between">
-			<span class="card-title">{$_('options-ebook-section-header')}</span>
+			<span class="card-title">{$_("options-ebook-section-header")}</span>
 			<div class="mb-4">
 				{#if book.config.book.enabled}
 					<i class="fas fa-toggle-on" />
@@ -23,18 +23,18 @@
 			<div class="card-body">
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">
-						{$_('options-theme')}
+						{$_("options-theme")}
 					</label>
 					<span>{book.config.book.theme}</span>
 				</div>
 			</div>
 
 			<div class="italic">
-				{$_('options-book-format-blurb')}
+				{$_("options-book-format-blurb")}
 			</div>
 		{:else}
 			<div class="italic">
-				{$_('options-ebook-is-disabled')}
+				{$_("options-ebook-is-disabled")}
 			</div>
 		{/if}
 
@@ -43,7 +43,7 @@
 	<div class="card mb-6">
 
 		<div class="card-header flex justify-between">
-			<span class="card-title">{$_('options-website-section-header')}</span>
+			<span class="card-title">{$_("options-website-section-header")}</span>
 			<div class="mb-4">
 				{#if book.config.site.enabled}
 					<i class="fas fa-toggle-on" />
@@ -55,31 +55,37 @@
 
 		{#if book.config.site.enabled}
 			<div class="card-body">
+        <div class="mb-3">
+          <label class="block text-gray-700 text-md font-bold mb-2">
+            {$_("options-theme")}
+          </label>
+          <span>{book.config.sittheme}</span>
+        </div>
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">
-						{$_('options-web-monetization')}
+						{$_("options-web-monetization")}
 					</label>
 					{#if book.config.webmonetization.enabled}
 						<span>{$_("enabled")}</span>
 					{:else}
-						<span>{$_('disabled')}</span>
+						<span>{$_("disabled")}</span>
 					{/if}
 				</div>
 
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">
-						{$_('options-web-monetization-endpoint')}
+						{$_("options-web-monetization-endpoint")}
 					</label>
 					<span>{book.config.webmonetization.endpoint}</span>
 				</div>
 			</div>
 
 			<div class="italic">
-				{$_('options-website-format-blurb')}
+				{$_("options-website-format-blurb")}
 			</div>
 		{:else}
 			<div class="italic">
-				{$_('options-website-is-disabled')}
+				{$_("options-website-is-disabled")}
 			</div>
 		{/if}
 	</div>

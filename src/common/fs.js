@@ -39,10 +39,17 @@ export function initializeFilesystem() {
                 fs: "MountableFileSystem",
                 options: {
                     "/templates": {
-                        fs: "ZipFS",
+                        fs: "OverlayFS",
                         options: {
-                            // Wrap as Buffer object.
-                            zipData: Buffer.from(zipData)
+                          writable: {
+                            fs: "InMemory"
+                          },
+                          readable: {
+                            fs: "ZipFS",
+                            options: {
+                                zipData: Buffer.from(zipData)
+                            }
+                          }
                         }
                     },
                     "/tmp": { fs: "InMemory" },
@@ -137,6 +144,29 @@ export function copyImages(book, destination) {
 		fs.writeFileSync(p, d2)
 	})
 	return fps
+}
+
+export function loadExternalTheme(book) {
+  let fs = require("fs")
+
+  let files = book.files.filter(f => {
+    if (f.filepath.match(/^_theme/)) {
+      return true
+    }
+
+    return false
+  });
+
+  let fps = files.map(async f => {
+    let file = f.filepath.replace("_theme/","")
+    let data = await f.arrayBuffer()
+    let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
+    let d2 = Buffer.from(data)
+    let p = `/templates/${file}`
+    ensureFolders(p)
+    fs.writeFileSync(p, d2)
+  })
+  return fps
 }
 
 export function addToZip(zip, slug, folder) {
