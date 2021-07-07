@@ -78426,7 +78426,6 @@ var app = (function () {
     			}
     		} else {
     			const labelEl = doc.querySelector(`${conf.label}`);
-    			console.log("l", [file, labelEl]);
     			if (!labelEl) {
     				console.log("l is null", { html, file });
     				throw "error"
@@ -86760,6 +86759,9 @@ var app = (function () {
       .use(markdownItEmoji)
       .use(markdownItCenterText);
 
+    // eslint-disable-next-line no-undef
+    let asciidoctor = new Asciidoctor();
+
     let currentTheme = "generic"; // default theme, same as in the defaultBookConfiguration.
 
     function setTheme(theme) {
@@ -86781,6 +86783,7 @@ var app = (function () {
 
       let bookSlug = slugify(book.config.metadata.title);
       let fs = require("fs");
+      let path = require("path");
       let folder = `/tmp/${bookSlug}`;
       let toc = {};
       let manifest = [];
@@ -86822,10 +86825,24 @@ var app = (function () {
         contentFiles.map(async (chapterFilename) => {
           try {
             let file = book.files.filter((f) => f.name === chapterFilename)[0];
-            let contentMarkdown = await file.text();
-            let contentHtml = md.render(contentMarkdown);
+            let ext = path.extname(chapterFilename);
+            let contentHtml = "";
+            let content = await file.text();
+            switch(ext) {
+              case ".html":
+                contentHtml = content;
+                break
+              case ".adoc":
+                contentHtml = asciidoctor.convert(content, { "safe": "server", "attributes": { "showtitle": true, "icons": "font" } });
+                break
+              default:
+              case ".md":
+                contentHtml = md.render(content);
+                break
+            }
+            console.log("content", contentHtml);
             contentHtml = fix(contentHtml);
-            let destinationFilename = chapterFilename.replace(".md", ".xhtml");
+            let destinationFilename = chapterFilename.replace(ext, ".xhtml");
             let destination = `${folder}/OPS/${destinationFilename}`;
             let data = chapterTemplate({ html: contentHtml });
             fs.writeFileSync(destination, data);
@@ -86839,6 +86856,7 @@ var app = (function () {
               );
             }
           } catch (e) {
+            console.error(e);
             throw `Problem processing chapter: <b>${chapterFilename}</b>.<br><br>Remember that chapter files cannot be empty.`
           }
         })
@@ -86873,7 +86891,8 @@ var app = (function () {
         }
 
         let f = file.filepath;
-        f = f.replace(".md", ".xhtml");
+        let ext = path.extname(f);
+        f = f.replace(ext, ".xhtml");
         let i = file.name.split(".")[0];
         let linear = "yes";
 
@@ -86956,6 +86975,9 @@ var app = (function () {
       .use(markdownItEmoji)
       .use(markdownItCenterText);
 
+    // eslint-disable-next-line no-undef
+    let asciidoctor$1 = new Asciidoctor();
+
     // IMPLEMENTATION
 
     let currentTheme$1 = "generic"; // matches default theme from Book() default configuration.
@@ -86997,6 +87019,7 @@ var app = (function () {
 
       let bookSlug = slugify(book.config.metadata.title);
       let fs = require("fs");
+      let path = require("path");
       let siteFolder = `/tmp/${bookSlug}-site`;
       let bookFile = `/books/${bookSlug}.epub`;
       let toc = {};
@@ -87043,10 +87066,23 @@ var app = (function () {
       await Promise.all(
         contentFiles.map(async (chapterFilename) => {
           let file = book.files.filter((f) => f.name === chapterFilename)[0];
-          let contentMarkdown = await file.text();
-          let contentHtml = md$1.render(contentMarkdown);
+          let ext = path.extname(chapterFilename);
+          let contentHtml = "";
+          let content = await file.text();
+          switch(ext) {
+            case ".html":
+              contentHtml = content;
+              break
+            case ".adoc":
+              contentHtml = asciidoctor$1.convert(content, { "safe": "server", "attributes": { "showtitle": true, "icons": "font" } });
+              break
+            default:
+            case ".md":
+              contentHtml = md$1.render(content);
+              break
+          }
           contentHtml = fix(contentHtml);
-          let destinationFilename = chapterFilename.replace(".md", ".html");
+          let destinationFilename = chapterFilename.replace(ext, ".html");
           let destination = `${siteFolder}/book/${destinationFilename}`;
 
           toc[destinationFilename] = extractToc(contentHtml, destinationFilename);
@@ -87197,43 +87233,43 @@ var app = (function () {
     			input = element("input");
     			t10 = space();
     			attr_dev(strong, "class", "font-bold");
-    			add_location(strong, file$7, 128, 6, 3375);
+    			add_location(strong, file$7, 128, 6, 3407);
     			attr_dev(span0, "class", "block sm:inline");
-    			add_location(span0, file$7, 129, 6, 3435);
+    			add_location(span0, file$7, 129, 6, 3467);
     			attr_dev(span1, "class", "absolute top-0 bottom-0 right-0 px-4 py-3");
-    			add_location(span1, file$7, 130, 6, 3490);
+    			add_location(span1, file$7, 130, 6, 3522);
     			attr_dev(div0, "class", "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded\n      relative");
     			attr_dev(div0, "role", "alert");
-    			add_location(div0, file$7, 124, 4, 3251);
+    			add_location(div0, file$7, 124, 4, 3283);
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$7, 138, 10, 3744);
+    			add_location(i, file$7, 138, 10, 3776);
     			attr_dev(div1, "class", "empty-icon");
-    			add_location(div1, file$7, 137, 8, 3709);
+    			add_location(div1, file$7, 137, 8, 3741);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 140, 8, 3799);
+    			add_location(p0, file$7, 140, 8, 3831);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 141, 8, 3846);
+    			add_location(p1, file$7, 141, 8, 3878);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/help");
-    			add_location(a, file$7, 143, 10, 3940);
+    			add_location(a, file$7, 143, 10, 3972);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 142, 8, 3911);
+    			add_location(div2, file$7, 142, 8, 3943);
     			attr_dev(input, "type", "file");
     			attr_dev(input, "class", "hidden");
     			attr_dev(input, "id", "file-input");
     			attr_dev(input, "webkitdirectory", "");
     			input.multiple = true;
     			attr_dev(input, "directory", "");
-    			add_location(input, file$7, 149, 16, 4156);
+    			add_location(input, file$7, 149, 16, 4188);
     			html_tag = new HtmlTag(null);
     			attr_dev(span2, "class", "btn btn-blue");
-    			add_location(span2, file$7, 148, 14, 4091);
+    			add_location(span2, file$7, 148, 14, 4123);
     			attr_dev(div3, "class", "mt-6");
-    			add_location(div3, file$7, 147, 8, 4058);
-    			add_location(div4, file$7, 136, 6, 3695);
+    			add_location(div3, file$7, 147, 8, 4090);
+    			add_location(div4, file$7, 136, 6, 3727);
     			attr_dev(div5, "class", "flex justify-center content-center h-100 text-center py-3 svelte-1kfhj15");
     			toggle_class(div5, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div5, file$7, 133, 4, 3576);
+    			add_location(div5, file$7, 133, 4, 3608);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -87386,7 +87422,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "flex justify-center content-center h-100 text-center svelte-1kfhj15");
     			toggle_class(div, "over", /*stage*/ ctx[0] == "over");
-    			add_location(div, file$7, 157, 4, 4412);
+    			add_location(div, file$7, 157, 4, 4444);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -87456,14 +87492,14 @@ var app = (function () {
     			p1 = element("p");
     			t3 = text(/*msg*/ ctx[1]);
     			attr_dev(i, "class", "fas fa-spinner fa-3x fa-spin");
-    			add_location(i, file$7, 189, 12, 5606);
+    			add_location(i, file$7, 189, 12, 5638);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 188, 10, 5569);
+    			add_location(div0, file$7, 188, 10, 5601);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 191, 10, 5676);
+    			add_location(p0, file$7, 191, 10, 5708);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 192, 10, 5725);
-    			add_location(div1, file$7, 187, 8, 5553);
+    			add_location(p1, file$7, 192, 10, 5757);
+    			add_location(div1, file$7, 187, 8, 5585);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87543,31 +87579,31 @@ var app = (function () {
     			input = element("input");
     			t6 = space();
     			attr_dev(i, "class", "fas fa-book fa-3x");
-    			add_location(i, file$7, 170, 12, 4841);
+    			add_location(i, file$7, 170, 12, 4873);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 169, 10, 4804);
+    			add_location(div0, file$7, 169, 10, 4836);
     			attr_dev(p0, "class", "text-xl");
-    			add_location(p0, file$7, 172, 10, 4900);
+    			add_location(p0, file$7, 172, 10, 4932);
     			attr_dev(p1, "class", "text-light");
-    			add_location(p1, file$7, 173, 10, 4949);
+    			add_location(p1, file$7, 173, 10, 4981);
     			attr_dev(a, "class", "btn btn-blue");
     			attr_dev(a, "href", "/documentation/en/getting-started");
-    			add_location(a, file$7, 175, 12, 5047);
+    			add_location(a, file$7, 175, 12, 5079);
     			attr_dev(div1, "class", "mt-6");
-    			add_location(div1, file$7, 174, 10, 5016);
+    			add_location(div1, file$7, 174, 10, 5048);
     			attr_dev(input, "type", "file");
     			attr_dev(input, "class", "hidden");
     			attr_dev(input, "id", "file-input");
     			attr_dev(input, "webkitdirectory", "");
     			input.multiple = true;
     			attr_dev(input, "directory", "");
-    			add_location(input, file$7, 181, 16, 5301);
+    			add_location(input, file$7, 181, 16, 5333);
     			html_tag = new HtmlTag(null);
     			attr_dev(span, "class", "btn btn-blue");
-    			add_location(span, file$7, 180, 14, 5236);
+    			add_location(span, file$7, 180, 14, 5268);
     			attr_dev(div2, "class", "mt-6");
-    			add_location(div2, file$7, 179, 12, 5203);
-    			add_location(div3, file$7, 168, 8, 4788);
+    			add_location(div2, file$7, 179, 12, 5235);
+    			add_location(div3, file$7, 168, 8, 4820);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -87641,12 +87677,12 @@ var app = (function () {
     			p = element("p");
     			t1 = text(t1_value);
     			attr_dev(i, "class", "fas fa-smile-wink fa-3x");
-    			add_location(i, file$7, 163, 12, 4609);
+    			add_location(i, file$7, 163, 12, 4641);
     			attr_dev(div0, "class", "empty-icon");
-    			add_location(div0, file$7, 162, 10, 4572);
+    			add_location(div0, file$7, 162, 10, 4604);
     			attr_dev(p, "class", "text-xl");
-    			add_location(p, file$7, 165, 10, 4674);
-    			add_location(div1, file$7, 161, 8, 4556);
+    			add_location(p, file$7, 165, 10, 4706);
+    			add_location(div1, file$7, 161, 8, 4588);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -87700,7 +87736,7 @@ var app = (function () {
     			t = space();
     			if_block1.c();
     			attr_dev(div, "class", "container p-0 mx-auto full-height svelte-1kfhj15");
-    			add_location(div, file$7, 122, 0, 3173);
+    			add_location(div, file$7, 122, 0, 3205);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -87797,7 +87833,7 @@ var app = (function () {
     		generateEpub(book).catch(n => {
     			ebookEpub3Generating.set(false);
     			$$invalidate(0, stage = "error");
-    			$$invalidate(1, msg = $_(n.message));
+    			$$invalidate(1, msg = n.message ? $_(n.message) : n);
     			console.error("error generating epub3", n);
     		});
     	};
@@ -87806,7 +87842,7 @@ var app = (function () {
     		generateSite(book).catch(n => {
     			staticSiteGenerating.set(false);
     			$$invalidate(0, stage = "error");
-    			$$invalidate(1, msg = $_(n.message));
+    			$$invalidate(1, msg = n.message ? $_(n.message) : n);
     			console.error("error generating site", n);
     		});
     	};
