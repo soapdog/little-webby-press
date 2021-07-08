@@ -18,6 +18,10 @@ blurb = """
 Moby Dick is the story of Captain Ahab's quest to avenge the whale that 'reaped' his leg. The quest is an obsession and the novel is a diabolical study of how a man becomes a fanatic.But it is also a hymn to democracy. Bent as the crew is on Ahab's appalling crusade, it is equally the image of a co-operative community at work: all hands dependent on all hands, each individual responsible for the security of each.Among the crew is Ishmael, the novel's narrator, ordinary sailor, and extraordinary reader. Digressive, allusive, vulgar, transcendent, the story Ishmael tells is above all an education:in the practice of whaling, in the art of writing. Expanding to equal his 'mighty theme' - not only the whale but all things sublime - Melville breathes in the world's great literature. Moby Dick is the greatest novel ever written by an American.
 """
 
+[[links]]
+label = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Herman_Melville"
+
 [webmonetization]
 endpoint = "$ilp.uphold.com/zdPRwAnyEkmM"
 

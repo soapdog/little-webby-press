@@ -45,17 +45,23 @@ const books = {
     {/each}
   </div>
   <br />
+  <br />
+  <h3 class="font-semibold text-xl blue">Videos</h3>
+  <ul class="list-disc">
+    <li><a class="blue" href="https://youtu.be/rqsmSJY21Vw" target="_blank">Introduction to Little Webby Press</a></li>
+  </ul>
+  <br>
   <br>
   <h3 class="font-semibold text-xl blue">Sample Books</h3>
   <p>Sample book folders for your reference.</p>
-  <ul>
-    <li>• <a class="blue" href="../../samples/moby-dick.zip">Moby Dick</a></li>
+  <ul class="list-disc">
+    <li><a class="blue" href="../../samples/moby-dick.zip">Moby Dick</a></li>
   </ul>
   <br>
   <br>
     <h3 class="font-semibold text-xl blue">Generic Template</h3>
   <p>The <i>generic template</i> used to generate both eBooks and Websites. Use it as a starting point to create your own custom template.</p>
-  <ul>
-    <li>• <a class="blue" href="../../templates.zip">templates.zip</a></li>
+  <ul class="list-disc">
+    <li><a class="blue" href="../../templates.zip">templates.zip</a></li>
   </ul>
 </div>

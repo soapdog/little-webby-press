@@ -157,10 +157,10 @@
   {{#each spine as | s | }}
     {{#each s.toc as | t | }}
     <li>
-        {{#if book.config.site.reader}}
-        <a href="book/{{t.file}}#{{t.id}}">{{t.text}}</a>
+        {{#if ../../book.config.site.reader}}
+          <a href="book/{{t.file}}#{{t.id}}">{{t.text}}</a>
         {{else}}
-        <span>{{t.text}}</span>
+          <span>{{t.text}}</span>
         {{/if}}
     </li>
     {{/each}}
