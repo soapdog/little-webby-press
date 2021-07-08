@@ -8,6 +8,7 @@ import MarkdownBracketedSpans from "markdown-it-bracketed-spans"
 import MarkdownImplicitFigues from "markdown-it-implicit-figures"
 import MarkdownCenterText from "markdown-it-center-text"
 import MarkdownEmoji from "markdown-it-emoji"
+import textile from "textile-js"
 import slugify from "slugify"
 import {
   copyFolder,
@@ -43,7 +44,7 @@ let md = new MarkdownIt({
   .use(MarkdownCenterText)
 
 // eslint-disable-next-line no-undef
-let asciidoctor = new Asciidoctor()
+let asciidoctor = new Asciidoctor() // inserted with <script> because it fails to build with webpack
 
 let currentTheme = "generic" // default theme, same as in the defaultBookConfiguration.
 
@@ -117,6 +118,9 @@ export async function generateEpub(book) {
             break
           case ".adoc":
             contentHtml = asciidoctor.convert(content, { "safe": "server", "attributes": { "showtitle": true, "icons": "font" } })
+            break
+          case ".textile":
+            contentHtml = textile(content)
             break
           default:
           case ".md":

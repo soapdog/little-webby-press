@@ -24,6 +24,7 @@ import MarkdownBracketedSpans from "markdown-it-bracketed-spans"
 import MarkdownImplicitFigues from "markdown-it-implicit-figures"
 import MarkdownCenterText from "markdown-it-center-text"
 import MarkdownEmoji from "markdown-it-emoji"
+import textile from "textile-js"
 
 let md = new MarkdownIt({
   xhtmlOut: true,
@@ -138,6 +139,9 @@ export async function generateSite(book) {
           break
         case ".adoc":
           contentHtml = asciidoctor.convert(content, { "safe": "server", "attributes": { "showtitle": true, "icons": "font" } })
+          break
+        case ".textile":
+          contentHtml = textile(content)
           break
         default:
         case ".md":
