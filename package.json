@@ -54,6 +54,7 @@
         "svelte": "^3.0.0",
         "svelte-i18n": "^3.2.5",
         "tailwindcss": "^2.0.1",
+        "textile-js": "^2.1.1",
         "toml": "^3.0.0"
     }
 }
