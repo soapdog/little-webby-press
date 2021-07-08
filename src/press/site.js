@@ -6,6 +6,7 @@ import {
   copyImages,
   addToZip,
   loadExternalTheme,
+  generateResizedCovers,
 } from "../common/fs.js"
 import { fix } from "../common/fixes.js"
 import "../common/templateHelpers.js"
@@ -124,6 +125,12 @@ export async function generateSite(book) {
   }
 
   await Promise.all(copyImages(book, `${siteFolder}/book`))
+  await generateResizedCovers(book,`${siteFolder}/book`)
+
+  let coverPath = book.config.metadata.cover
+  let ext = path.extname(coverPath)
+  book.config.metadata.coverMedium = book.config.metadata.cover
+      .replace(ext, `-med${ext}`)
 
   let contentFiles = contentFilesFromConfiguration(book)
 
@@ -172,8 +179,6 @@ export async function generateSite(book) {
     s.toc = toc[s.htmlFile]
     return s
   })
-
-  console.log(spine)
 
   // Templating
   if (book.config.site.description) {

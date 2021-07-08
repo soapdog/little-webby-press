@@ -3,7 +3,7 @@ Documentation for BrowserFS: https://jvilk.com/browserfs/
 */
 
 import BrowserFS from "browserfs"
-
+import Reduce from "image-blob-reduce"
 
 /**
  * When the time comes to implement mutable themes, use this:
@@ -144,6 +144,25 @@ export function copyImages(book, destination) {
 		fs.writeFileSync(p, d2)
 	})
 	return fps
+}
+
+export async function generateResizedCovers(book, folder) {
+    const fs = require("fs")
+    const path = require("path")
+    const reduce = Reduce()
+
+    let coverPath = book.config.metadata.cover
+    let ext = path.extname(coverPath)
+    let resizedCoverPath = book.config.metadata.cover
+      .replace(ext, `-med${ext}`)
+
+    let cover = book.files.find(f => f.filepath === coverPath)
+    let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
+
+    let resizedBlob = await reduce.toBlob(cover, {max: 512})
+    let resizedData = Buffer.from(await resizedBlob.arrayBuffer())
+
+    fs.writeFileSync(`${folder}/${resizedCoverPath}`, resizedData)
 }
 
 export function loadExternalTheme(book) {

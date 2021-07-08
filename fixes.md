@@ -8,6 +8,7 @@
 * [x] Provide "read online" options
 * [x] Provide licensing options
 * [ ] Faq book
-* [ ] Option to disable reader
+* [x] Option to disable reader
 * [ ] Another pass at metadata view.
 * [x] Add more contact info to about.
+* [x] Provide resizable covers.
