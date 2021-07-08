@@ -45,6 +45,7 @@ export const defaultBookConfiguration = {
     blurb: false,
     landing: true,
     download: true,
+    reader: true,
     actions: {
       "download": "Download the eBook",
       "read": "Free To Read Online",

@@ -115,10 +115,13 @@ export async function generateSite(book) {
   // Copy files over...
   ensureFolders(`${siteFolder}/files/${bookSlug}.epub`)
   copyFolder(themeFolder(), siteFolder)
-  fs.writeFileSync(
-    `${siteFolder}/files/${bookSlug}.epub`,
-    fs.readFileSync(bookFile)
-  )
+
+  if (book.config.site.download) {
+    fs.writeFileSync(
+      `${siteFolder}/files/${bookSlug}.epub`,
+      fs.readFileSync(bookFile)
+    )
+  }
 
   await Promise.all(copyImages(book, `${siteFolder}/book`))
 
@@ -205,11 +208,13 @@ export async function generateSite(book) {
   }
 
   // Chapters
-  spine.forEach((item, index) => {
-    let data = chapterTemplate({ book, spine, index, html: item.toc.content })
-    ensureFolders(item.toc.destination)
-    fs.writeFileSync(item.toc.destination, data)
-  })
+  if (book.config.site.reader) {
+    spine.forEach((item, index) => {
+      let data = chapterTemplate({ book, spine, index, html: item.toc.content })
+      ensureFolders(item.toc.destination)
+      fs.writeFileSync(item.toc.destination, data)
+    })
+  }
 
   let zip = new JSZip()
   addToZip(zip, `${bookSlug}-site`, siteFolder)
