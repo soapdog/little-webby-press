@@ -59,7 +59,7 @@
           <label class="block text-gray-700 text-md font-bold mb-2">
             {$_("options-theme")}
           </label>
-          <span>{book.config.sittheme}</span>
+          <span>{book.config.site.theme}</span>
         </div>
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">
@@ -72,12 +72,14 @@
 					{/if}
 				</div>
 
+        {#if book.config.webmonetization.enabled}
 				<div class="mb-3">
 					<label class="block text-gray-700 text-md font-bold mb-2">
 						{$_("options-web-monetization-endpoint")}
 					</label>
 					<span>{book.config.webmonetization.endpoint}</span>
 				</div>
+        {/if}
 			</div>
 
 			<div class="italic">

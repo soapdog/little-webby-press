@@ -1061,6 +1061,10 @@ video {
   line-height: 1.75rem;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .m-4 {
   margin: 1rem;
 }

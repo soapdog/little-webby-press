@@ -6,6 +6,7 @@ import {
   copyImages,
   addToZip,
   loadExternalTheme,
+  generateResizedCovers,
 } from "../common/fs.js"
 import { fix } from "../common/fixes.js"
 import "../common/templateHelpers.js"
@@ -115,12 +116,21 @@ export async function generateSite(book) {
   // Copy files over...
   ensureFolders(`${siteFolder}/files/${bookSlug}.epub`)
   copyFolder(themeFolder(), siteFolder)
-  fs.writeFileSync(
-    `${siteFolder}/files/${bookSlug}.epub`,
-    fs.readFileSync(bookFile)
-  )
+
+  if (book.config.site.download) {
+    fs.writeFileSync(
+      `${siteFolder}/files/${bookSlug}.epub`,
+      fs.readFileSync(bookFile)
+    )
+  }
 
   await Promise.all(copyImages(book, `${siteFolder}/book`))
+  await generateResizedCovers(book,`${siteFolder}/book`)
+
+  let coverPath = book.config.metadata.cover
+  let ext = path.extname(coverPath)
+  book.config.metadata.coverMedium = book.config.metadata.cover
+      .replace(ext, `-med${ext}`)
 
   let contentFiles = contentFilesFromConfiguration(book)
 
@@ -170,8 +180,6 @@ export async function generateSite(book) {
     return s
   })
 
-  console.log(spine)
-
   // Templating
   if (book.config.site.description) {
     book.config.site.description = md.render(book.config.site.description)
@@ -205,11 +213,13 @@ export async function generateSite(book) {
   }
 
   // Chapters
-  spine.forEach((item, index) => {
-    let data = chapterTemplate({ book, spine, index, html: item.toc.content })
-    ensureFolders(item.toc.destination)
-    fs.writeFileSync(item.toc.destination, data)
-  })
+  if (book.config.site.reader) {
+    spine.forEach((item, index) => {
+      let data = chapterTemplate({ book, spine, index, html: item.toc.content })
+      ensureFolders(item.toc.destination)
+      fs.writeFileSync(item.toc.destination, data)
+    })
+  }
 
   let zip = new JSZip()
   addToZip(zip, `${bookSlug}-site`, siteFolder)

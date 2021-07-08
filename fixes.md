@@ -2,8 +2,13 @@
 
 * [x] Images not copying.
 * [ ] Provide default cover.
-* [ ] Make fontawesome local.
+* [x] Make fontawesome local.
 * [x] Make sure frontmatter and backmatter are being included.
-* [ ] Provide "download" link options
-* [ ] Provide "read online" options
-* [ ] Provide licensing options
+* [x] Provide "download" link options
+* [x] Provide "read online" options
+* [x] Provide licensing options
+* [ ] Faq book
+* [x] Option to disable reader
+* [ ] Another pass at metadata view.
+* [x] Add more contact info to about.
+* [x] Provide resizable covers.
