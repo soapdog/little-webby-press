@@ -1,4 +1,4 @@
-h1. Using this tool
+h1. Textile Sample
 
 This page lets you create HTML by entering text in a simple format that's easy to read and write.
 
@@ -16,3 +16,23 @@ This document is written in Textile; you can see the plain-text version on the l
 Textile-js is a JavaScript port of Textile.  You can get the full source code from its "GitHub repository":https://github.com/borgar/js-textile.
 
 **Start with a "(clear)blank page (clear text)":# or edit this document in the left window.**
+
+h1. Tables
+
+p=. Full table with summary, caption, colgroups, thead, tfoot, 2x tbody
+
+table(#dvds){border-collapse:collapse}. Great films on DVD employing Textile summary, caption, thead, tfoot, two tbody elements and colgroups
+|={font-size:140%;margin-bottom:15px}. DVDs with two Textiled tbody elements
+|:\3. 100 |{background:#ddd}|250||50|300|
+|^(header).
+|_. Title |_. Starring |_. Director |_. Writer |_. Notes |
+|~(footer).
+|\5=. This is the tfoot, centred |
+|-(toplist){background:#c5f7f6}.
+| _The Usual Suspects_ | Benicio Del Toro, Gabriel Byrne, Stephen Baldwin, Kevin Spacey | Bryan Singer | Chris McQuarrie | One of the finest films ever made |
+| _Se7en_ | Morgan Freeman, Brad Pitt, Kevin Spacey | David Fincher | Andrew Kevin Walker | Great psychological thriller |
+| _Primer_ | David Sullivan, Shane Carruth | Shane Carruth | Shane Carruth | Amazing insight into trust and human psychology through science fiction. Terrific! |
+| _District 9_ | Sharlto Copley, Jason Cope | Neill Blomkamp | Neill Blomkamp, Terri Tatchell | Social commentary layered on thick, but boy is it done well |
+|-(medlist){background:#e7e895;}.
+| _Arlington Road_ | Tim Robbins, Jeff Bridges | Mark Pellington | Ehren Kruger | Awesome study in neighbourly relations |
+| _Phone Booth_ | Colin Farrell, Kiefer Sutherland, Forest Whitaker | Joel Schumacher | Larry Cohen | Edge-of-the-seat stuff in this short but brilliantly executed thriller |

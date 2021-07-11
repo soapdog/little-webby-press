@@ -89,3 +89,14 @@ The text at the end of this sentence is cross referenced to <<_third_level_headi
 
 This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
 This is an attribute reference {url-quickref}[that links this text to the AsciiDoc Syntax Quick Reference].
+
+== Table test
+
+[cols="e,m,^,>s",width="25%"]
+|===
+|1 >s|2 |3 |4
+^|5 2.2+^.^|6 .3+<.>m|7
+^|8
+|9 2+>|10
+|===
+
