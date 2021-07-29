@@ -75,6 +75,8 @@ export function copyFile(source, destination) {
     if (fs.existsSync(source)) {
         let contents = fs.readFileSync(source)
         fs.writeFileSync(destination, contents, "utf8", "wx+")
+    } else {
+      console.warn("copyFile, source doesn't exist", source)
     }
 }
 
@@ -147,22 +149,31 @@ export function copyImages(book, destination) {
 }
 
 export async function generateResizedCovers(book, folder) {
-    const fs = require("fs")
-    const path = require("path")
-    const reduce = Reduce()
+    // const fs = require("fs")
+    // const path = require("path")
+    // const reduce = Reduce()
 
+    // let coverPath = book.config.metadata.cover
+    // let ext = path.extname(coverPath)
+    // let resizedCoverPath = book.config.metadata.cover
+    //   .replace(ext, `-med${ext}`)
+
+    // let cover = book.files.find(f => f.filepath === coverPath)
+    // let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
+
+    // let resizedBlob = await reduce.toBlob(cover, {max: 512})
+    // let resizedData = Buffer.from(await resizedBlob.arrayBuffer())
+
+    // fs.writeFileSync(`${folder}/${resizedCoverPath}`, resizedData)
+    const path = require("path")
     let coverPath = book.config.metadata.cover
     let ext = path.extname(coverPath)
     let resizedCoverPath = book.config.metadata.cover
-      .replace(ext, `-med${ext}`)
+         .replace(ext, `-med${ext}`)
+    console.log("coverPath", coverPath)
+    console.log("res", `${folder}/${resizedCoverPath}`)
+    copyFile(`${folder}/${coverPath}`, `${folder}/${resizedCoverPath}`)
 
-    let cover = book.files.find(f => f.filepath === coverPath)
-    let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-
-    let resizedBlob = await reduce.toBlob(cover, {max: 512})
-    let resizedData = Buffer.from(await resizedBlob.arrayBuffer())
-
-    fs.writeFileSync(`${folder}/${resizedCoverPath}`, resizedData)
 }
 
 export function loadExternalTheme(book) {
