@@ -56,6 +56,9 @@
               {{#if book.config.site.download}}
               <a href="../files/{{book.products.epub}}" class="button is-primary is-small">{{book.config.site.actions.download}}</a>
               {{/if}}
+              {{#if book.config.site.downloadPDF}}
+              <a href="../files/{{book.config.site.downloadPDF}}" class="button is-primary is-small">{{book.config.site.actions.downloadPDF}}</a>
+              {{/if}}
             </div>
           </div>
           <div class="toc-container">

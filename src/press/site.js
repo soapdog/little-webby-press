@@ -8,7 +8,7 @@ import {
   loadExternalTheme,
   generateResizedCovers,
 } from "../common/fs.js"
-import { fix } from "../common/fixes.js"
+import { fix, fixLinksForSite } from "../common/fixes.js"
 import "../common/templateHelpers.js"
 import { extractToc, safeId } from "../common/utils.js"
 
@@ -28,7 +28,7 @@ import MarkdownEmoji from "markdown-it-emoji"
 import textile from "textile-js"
 
 let md = new MarkdownIt({
-  xhtmlOut: true,
+  xhtmlOut: false,
   linkify: true,
   typographer: true,
 })
@@ -159,6 +159,7 @@ export async function generateSite(book) {
           break
       }
       contentHtml = fix(contentHtml)
+      contentHtml = fixLinksForSite(contentHtml)
       let destinationFilename = chapterFilename.replace(ext, ".html")
       let destination = `${siteFolder}/book/${destinationFilename}`
 

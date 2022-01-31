@@ -9,6 +9,11 @@ export function fixLinks(html) {
 	return html
 }
 
+export function fixLinksForSite(html) {
+  html = html.replace(/.xhtml/gi, ".html")
+  return html
+}
+
 export function fix(html) {
 	html = fixImages(html)
 	html = fixLinks(html)

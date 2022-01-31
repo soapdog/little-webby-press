@@ -178,7 +178,9 @@ export async function generateEpub(book) {
 
     let f = file.filepath
     let ext = path.extname(f)
-    f = f.replace(ext, ".xhtml")
+    if (contentFiles.includes(file.filepath)) {
+      f = f.replace(ext, ".xhtml")
+    }
     let i = file.name.split(".")[0]
     let linear = "yes"
 

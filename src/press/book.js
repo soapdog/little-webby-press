@@ -45,9 +45,11 @@ export const defaultBookConfiguration = {
     blurb: false,
     landing: true,
     download: true,
+    downloadPDF: false,
     reader: true,
     actions: {
       "download": "Download the eBook",
+      "downloadPDF": "Download PDF",
       "read": "Free To Read Online",
       "toc": "Table Of Contents"
     },
