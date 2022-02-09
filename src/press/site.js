@@ -216,6 +216,7 @@ export async function generateSite(book) {
   // Chapters
   if (book.config.site.reader) {
     spine.forEach((item, index) => {
+      console.log("chapter", item)
       let data = chapterTemplate({ book, spine, index, html: item.toc.content })
       ensureFolders(item.toc.destination)
       fs.writeFileSync(item.toc.destination, data)
