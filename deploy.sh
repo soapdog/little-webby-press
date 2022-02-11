@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#node ./increment-version.js
+node ./increment-version.js
 
 VERSION_TAG=v$(cat package.json| jq -r .version)
 
@@ -10,6 +10,6 @@ git add -A
 
 git commit -am "deploying $VERSION_TAG"
 git tag $VERSION_TAG
-git push
+git push --tags
 
 echo "Deployed $VERSION_TAG"
