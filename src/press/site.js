@@ -10,7 +10,14 @@ import {
 } from "../common/fs.js"
 import { fix, fixLinksForSite } from "../common/fixes.js"
 import "../common/templateHelpers.js"
-import { extractToc, safeId } from "../common/utils.js"
+import {
+  extractToc,
+  registerToCLabel,
+  registerToCMatchRules,
+  registerToCPrefix,
+  registerToCSeparator,
+  safeId,
+} from "../common/utils.js"
 
 import Handlebars from "handlebars"
 import JSZip from "jszip"
@@ -117,6 +124,11 @@ export async function generateSite(book) {
   ensureFolders(`${siteFolder}/files/${bookSlug}.epub`)
   copyFolder(themeFolder(), siteFolder)
 
+  registerToCLabel(book.config.toc.label)
+  registerToCMatchRules(book.config.toc.match)
+  registerToCPrefix(book.config.toc.prefix)
+  registerToCSeparator(book.config.toc.separator)
+
   if (book.config.site.download) {
     fs.writeFileSync(
       `${siteFolder}/files/${bookSlug}.epub`,
@@ -163,9 +175,13 @@ export async function generateSite(book) {
       let destinationFilename = chapterFilename.replace(ext, ".html")
       let destination = `${siteFolder}/book/${destinationFilename}`
 
-      toc[destinationFilename] = extractToc(contentHtml, destinationFilename)
-      toc[destinationFilename].content = contentHtml
-      toc[destinationFilename].destination = destination
+      const possibleToc = extractToc(contentHtml, destinationFilename)
+
+      if (possibleToc) {
+        toc[destinationFilename] = possibleToc
+        toc[destinationFilename].content = contentHtml
+        toc[destinationFilename].destination = destination
+      }
     })
   )
 
@@ -216,7 +232,6 @@ export async function generateSite(book) {
   // Chapters
   if (book.config.site.reader) {
     spine.forEach((item, index) => {
-      console.log("chapter", item)
       let data = chapterTemplate({ book, spine, index, html: item.toc.content })
       ensureFolders(item.toc.destination)
       fs.writeFileSync(item.toc.destination, data)

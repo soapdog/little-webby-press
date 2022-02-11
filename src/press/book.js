@@ -73,7 +73,8 @@ export const defaultBookConfiguration = {
   toc: {
     prefix: false,
     label: "h1,h2",
-    match: "all"
+    match: "all",
+    separator: " "
   },
   book: {
     enabled: true,

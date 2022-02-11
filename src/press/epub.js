@@ -24,6 +24,7 @@ import {
   registerToCLabel,
   registerToCMatchRules,
   registerToCPrefix,
+  registerToCSeparator,
   safeId,
 } from "../common/utils.js"
 import Handlebars from "handlebars"
@@ -94,6 +95,7 @@ export async function generateEpub(book) {
   registerToCLabel(book.config.toc.label)
   registerToCMatchRules(book.config.toc.match)
   registerToCPrefix(book.config.toc.prefix)
+  registerToCSeparator(book.config.toc.separator)
 
   let chapterTemplateHBS = fs.readFileSync(themePathFor("chapter.hbs"), "utf8")
   let chapterTemplate = Handlebars.compile(chapterTemplateHBS)

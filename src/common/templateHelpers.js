@@ -44,8 +44,6 @@ Handlebars.registerHelper("isFirstChapter", function () {
 });
 
 Handlebars.registerHelper("nextChapterLink", function () {
-  console.log(this.spine)
-  console.log(this.index)
   return this.spine[this.index+1].toc[0].file
 });
 
