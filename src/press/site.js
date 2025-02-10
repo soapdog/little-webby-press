@@ -1,4 +1,5 @@
-import BrowserFS from "browserfs"
+import { fs } from '@zenfs/core'
+import { path } from "path"
 import slugify from "slugify"
 import {
   copyFolder,
@@ -90,8 +91,6 @@ export async function generateSite(book) {
   console.time("Generating site")
 
   let bookSlug = slugify(book.config.metadata.title)
-  let fs = require("fs")
-  let path = require("path")
   let siteFolder = `/tmp/${bookSlug}-site`
   let bookFile = `/books/${bookSlug}.epub`
   let toc = {}

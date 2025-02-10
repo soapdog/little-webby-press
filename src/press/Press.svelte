@@ -1,13 +1,14 @@
 <script>
   import Tabs from "./Tabs.svelte"
   import TabsActions from "./TabsActions.svelte"
-  import { getFilesFromDataTransferItems } from "datatransfer-files-promise"
+  import { getFilesFromDataTransferItems } from "datatransfer-files-promise" // it is not unused-var, it attaches itself to window.
   import { onMount } from "svelte"
   import { bookFromFiles } from "./book.js"
   import { generateEpub } from "./epub.js"
   import { generateSite } from "./site.js"
   import { _ } from "svelte-i18n"
   import { ebookEpub3Generating, staticSiteGenerating} from "./stores.js"
+  import { loadManuscriptFromURL} from "../common/fs.js"
 
   let stage = "waiting" // loading, loaded, over
   let msg, files, book
@@ -81,6 +82,9 @@
       msg = e.reason || e.message || e || "Unknown error"
     }
 
+    // Create Drag & Drop zone.
+    //
+    // The user can drag & drop a folder into LWP to load the manuscript.
     const dropzone = document.querySelector(".drop-area")
     dropzone.addEventListener("dragover", (evt) => {
       evt.preventDefault()
@@ -107,6 +111,23 @@
         stage = "loaded"
       }
     })
+
+    // Load manuscript from URL params.
+    if (location.search) {
+      const params = new URLSearchParams(location.search)
+      const manuscriptURL = params.get("url")
+      const action = params.get("action")
+
+      if (manuscriptURL) {
+        // fetch url
+        console.log("loading url:", manuscriptURL)
+        loadManuscriptFromURL(manuscriptURL)
+      }
+
+      if (action) {
+        // do action
+      }
+    }
   })
 </script>
 
