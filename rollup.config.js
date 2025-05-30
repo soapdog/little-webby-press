@@ -19,13 +19,7 @@ export default {
 		file: 'docs/build/bundle.js'
 	},
 	plugins: [
-		alias({
-			"entries": [
-				{ "find": "buffer", "replacement": "browserfs/dist/shims/buffer" },
-				{ "find": "fs", "replacement": "browserfs/dist/shims/fs" },
-				{ "find": "path", "replacement": "browserfs/dist/shims/path" }
-			]
-		}),
+		alias(),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
@@ -49,9 +43,7 @@ export default {
 		commonjs(),
 		json(),
 		//nodePolyfills(),
-		inject({
-			"BrowserFS": "browserfs"
-		}),
+		inject({}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

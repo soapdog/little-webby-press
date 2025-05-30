@@ -4,7 +4,7 @@
   import saveAs from "file-saver"
   import slugify from "slugify"
 
-  let fs = require("fs")
+import { fs } from '@zenfs/core'
 
   export let book
 

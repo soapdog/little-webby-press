@@ -1,5 +1,5 @@
 import { fs } from '@zenfs/core'
-import { path } from "path"
+import * as path from 'path'
 import slugify from "slugify"
 import {
   copyFolder,
@@ -243,8 +243,7 @@ export async function generateSite(book) {
   try {
     let blob = await zip.generateAsync({ type: "blob" })
     let siteBuffer = await blob.arrayBuffer()
-    let Buffer = BrowserFS.BFSRequire("buffer").Buffer
-    fs.writeFileSync(`/sites/${bookSlug}-site.zip`, Buffer.from(siteBuffer))
+    fs.writeFileSync(`/sites/${bookSlug}-site.zip`, siteBuffer)
     staticSiteGenerating.set(false)
     console.timeEnd("Generating site")
     return true

@@ -1,5 +1,5 @@
-import BrowserFS from "browserfs"
-
+import { fs } from '@zenfs/core'
+import * as path from 'path'
 import MarkdownIt from "markdown-it"
 import MarkdownFootnote from "markdown-it-footnote"
 import MarkdownAnchor from "markdown-it-anchor"
@@ -67,8 +67,6 @@ export async function generateEpub(book) {
   console.log("Book configuration", book)
 
   let bookSlug = slugify(book.config.metadata.title)
-  let fs = require("fs")
-  let path = require("path")
   let folder = `/tmp/${bookSlug}`
   let toc = {}
   let manifest = []
@@ -240,8 +238,7 @@ export async function generateEpub(book) {
   try {
     let epubBlob = await zip.generateAsync({ type: "blob" })
     let epubBuffer = await epubBlob.arrayBuffer()
-    let Buffer = BrowserFS.BFSRequire("buffer").Buffer
-    fs.writeFileSync(`/books/${bookSlug}.epub`, Buffer.from(epubBuffer))
+    fs.writeFileSync(`/books/${bookSlug}.epub`, epubBuffer)
     // saveAs(epubBlob, `${bookSlug}.epub`)
     ebookEpub3Generating.set(false)
     console.timeEnd("Generating eBook")

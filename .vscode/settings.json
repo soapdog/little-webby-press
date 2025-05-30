@@ -1,9 +1,0 @@
-{
-		"i18n-ally.localesPaths": "./locales",
-		"i18n-ally.sortKeys": true,
-		"i18n-ally.keepFulfilled": true,
-		"i18n-ally.keystyle": "nested",
-		"prettier.semi": false,
-		"prettier.useEditorConfig": false,
-		"prettier.configPath": ".prettierrc",
-}

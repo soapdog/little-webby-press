@@ -2,10 +2,12 @@
   "name": "little.webby.press",
   "version": "2022.2.2",
   "private": true,
+  "type": "module",
   "scripts": {
     "watch:tailwind": "postcss css/style.css -o docs/style.css -w",
     "build:tailwind": "cross-env NODE_ENV=production postcss css/style.css -o docs/style.css",
     "build": "concurrently \"npm run build:tailwind\" \"rollup -c\"",
+    "build:esbuild": "esbuild src/main.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=./docs2 --allow-overwrite",
     "start": "sirv docs",
     "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\"",
     "copy:font-awesome-css": "copyfiles -E -u 4 node_modules/@fortawesome/fontawesome-free/css/* docs/css",
@@ -26,6 +28,7 @@
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.2",
     "datatransfer-files-promise": "^1.3.1",
+    "esbuild": "0.25.0",
     "eslint": "^7.11.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "file-saver": "^2.0.2",
@@ -54,13 +57,16 @@
     "rollup-plugin-terser": "^7.0.2",
     "sirv-cli": "^0.4.4",
     "slugify": "^1.4.6",
-    "svelte": "^3.0.0",
+    "svelte": "^4.0.0",
     "svelte-i18n": "^3.2.5",
     "tailwindcss": "^2.0.1",
     "textile-js": "^2.1.1",
     "toml": "^3.0.0"
   },
   "dependencies": {
-    "@zenfs/core": "^1.9.5"
+    "@zenfs/archives": "^1.0.5",
+    "@zenfs/core": "^1.9.5",
+    "@zenfs/dom": "^1.1.5",
+    "esbuild-svelte": "^0.9.0"
   }
 }

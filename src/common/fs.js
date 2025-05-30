@@ -29,15 +29,12 @@ export function initializeFilesystem() {
                   "/books": InMemory,
                   "/sites": InMemory
                 }
-
-              }
             },
             function(e) {
               if (e) {
                 reject(e)
               }
-              BrowserFS.install(window)
-              resolve(BrowserFS)
+              resolve()
             });
       })
   })
@@ -106,32 +103,14 @@ export function copyImages(book, destination) {
   let fps = files.map(async f => {
     let file = f.filepath
     let data = await f.arrayBuffer()
-    let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-    let d2 = Buffer.from(data)
     let p = `${destination}/${file}`
     ensureFolders(p)
-    fs.writeFileSync(p, d2)
+    fs.writeFileSync(p, data)
   })
   return fps
 }
 
 export async function generateResizedCovers(book, folder) {
-  // const fs = require("fs")
-  // const path = require("path")
-  // const reduce = Reduce()
-
-  // let coverPath = book.config.metadata.cover
-  // let ext = path.extname(coverPath)
-  // let resizedCoverPath = book.config.metadata.cover
-  //   .replace(ext, `-med${ext}`)
-
-  // let cover = book.files.find(f => f.filepath === coverPath)
-  // let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-
-  // let resizedBlob = await reduce.toBlob(cover, {max: 512})
-  // let resizedData = Buffer.from(await resizedBlob.arrayBuffer())
-
-  // fs.writeFileSync(`${folder}/${resizedCoverPath}`, resizedData)
   const path = require("path")
   let coverPath = book.config.metadata.cover
   let ext = path.extname(coverPath)
@@ -155,11 +134,9 @@ export function loadExternalTheme(book) {
   let fps = files.map(async f => {
     let file = f.filepath.replace("_theme/", "")
     let data = await f.arrayBuffer()
-    let Buffer = BrowserFS.BFSRequire("buffer").Buffer;
-    let d2 = Buffer.from(data)
     let p = `/templates/${file}`
     ensureFolders(p)
-    fs.writeFileSync(p, d2)
+    fs.writeFileSync(p, data)
   })
   return fps
 }
