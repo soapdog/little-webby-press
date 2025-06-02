@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Little Webby Press</title>
+    <link rel="stylesheet" type="text/css" href="css/pico.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pico.colors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="importmap">
+        {
+      "imports": {
+        "asciidoctor":"https://cdn.jsdelivr.net/npm/asciidoctor@3.0.4/+esm",
+        "handlebars":"./vendor/handlebars.js",
+        "image-blob-reduce":"./vendor/image-blob-reduce.js",
+        "jszip-utils":"./vendor/jszip-utils.js",
+        "jszip":"./vendor/jszip.js",
+        "lodash":"./vendor/lodash.js",
+        "markdown-it-anchor":"https://cdn.jsdelivr.net/npm/markdown-it-anchor@9.2.0/+esm",
+        "markdown-it-attrs":"https://cdn.jsdelivr.net/npm/markdown-it-attrs@4.3.1/+esm",
+        "markdown-it-bracketed-spans":"https://cdn.jsdelivr.net/npm/markdown-it-bracketed-spans@1.0.1/+esm",
+        "markdown-it-footnote":"https://cdn.jsdelivr.net/npm/markdown-it-footnote@4.0.0/+esm",
+        "markdown-it":"https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm",
+        "markdown-it-implicit-figures": "https://cdn.jsdelivr.net/npm/markdown-it-implicit-figures@0.12.0/+esm",
+        "markdown-it-center-text": "https://cdn.jsdelivr.net/npm/markdown-it-center-text@1.0.4/+esm",
+        "markdown-it-emoji": "https://cdn.jsdelivr.net/npm/markdown-it-emoji@3.0.0/+esm",
+        "datatransfer-files-promise": "https://cdn.jsdelivr.net/npm/datatransfer-files-promise@2.0.0/+esm",
+        "mithril":"./vendor/mithril.js",
+        "slugify":"./vendor/slugify.min.js",
+        "textile-js":"./vendor/textile.js",
+        "toml":"./vendor/toml.js",
+        "js-yaml":"./vendor/js-yaml.js",
+        "mime": "https://cdn.jsdelivr.net/npm/mime@4.0.7/+esm",
+        "file-saver": "https://cdn.jsdelivr.net/npm/file-saver@2.0.5/+esm"
+      }
+    }
+    </script>
+    <script defer type="module" src="app.js"></script>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>Little.Webby.Press</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#!/press">Generate Book</a></li>
+                <li><a href="#!/documentation">Documentation</a></li>
+                <li><a href="#!/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="container">
+      <span aria-busy="true"></span>
+    </header>
+</body>
+
+</html>

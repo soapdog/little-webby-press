@@ -1,0 +1,8 @@
+/**
+ * Bundled by jsDelivr using Rollup v2.79.2 and Terser v5.39.0.
+ * Original file: /npm/jszip-utils@0.1.0/lib/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+var e={};function t(){try{return new window.XMLHttpRequest}catch(e){}}e._getBinaryFromXHR=function(e){return e.response||e.responseText};var n="undefined"!=typeof window&&window.ActiveXObject?function(){return t()||function(){try{return new window.ActiveXObject("Microsoft.XMLHTTP")}catch(e){}}()}:t;e.getBinaryContent=function(t,r){var o,a,i,s;r||(r={}),"function"==typeof r?(s=r,r={}):"function"==typeof r.callback&&(s=r.callback),s||"undefined"==typeof Promise?(a=function(e){s(null,e)},i=function(e){s(e,null)}):o=new Promise((function(e,t){a=e,i=t}));try{var c=n();c.open("GET",t,!0),"responseType"in c&&(c.responseType="arraybuffer"),c.overrideMimeType&&c.overrideMimeType("text/plain; charset=x-user-defined"),c.onreadystatechange=function(n){if(4===c.readyState)if(200===c.status||0===c.status)try{a(e._getBinaryFromXHR(c))}catch(e){i(new Error(e))}else i(new Error("Ajax error for "+t+" : "+this.status+" "+this.statusText))},r.progress&&(c.onprogress=function(e){r.progress({path:t,originalEvent:e,percent:e.loaded/e.total*100,loaded:e.loaded,total:e.total})}),c.send()}catch(e){i(new Error(e),null)}return o};var r=e,o=r._getBinaryFromXHR,a=r.getBinaryContent;export{o as _getBinaryFromXHR,r as default,a as getBinaryContent};
+//# sourceMappingURL=/sm/cb9da8d26f6f4d12a12211fca7f23321142fc71c732ee5fc8d2fae083474154b.map
