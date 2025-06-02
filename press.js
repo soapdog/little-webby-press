@@ -110,9 +110,6 @@ const Metadata = {
     const cover = vnode.state.cover;
     const activeTab = vnode.state.activeTab;
 
-    console.log(cover);
-    console.dir(vnode.attrs.book);
-
     return [
       m(
         "nav",
@@ -129,7 +126,7 @@ const Metadata = {
             m("button", {
               disabled: activeTab == "chapters",
               onclick: ((e) => vnode.state.activeTab = "chapters"),
-            }, "Files"),
+            }, "Manuscript Files"),
           ),
         ]),
       ),
@@ -263,16 +260,22 @@ const Splash = {
                 target: "_blank",
               }, "Read The Getting Started Guide"),
             ),
+
+            m("input[type=file]", {
+              class: "hidden",
+              id: "file-input",
+              webkitdirectory: true,
+              multiple: true,
+              directory: true,
+              onchange: filesLoaded,
+            }),
+
             m("li", [
-              m("button", { onclick: loadFiles }, "Load Manuscript Folder"),
-              m("input[type=file]", {
-                class: "hidden",
-                id: "file-input",
-                webkitdirectory: true,
-                multiple: true,
-                directory: true,
-                onchange: filesLoaded,
-              }),
+              m(
+                "a",
+                { role: "button", onclick: loadFiles },
+                "Load Manuscript Folder",
+              ),
             ]),
           ]),
         ]),
