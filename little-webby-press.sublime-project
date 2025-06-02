@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "lsp_format_on_save": true,
+  },
+  "folders": [
+    {
+      "path": ".",
+      "file_exclude_patterns": [
+        ".gitkeep",
+        "*.snap",
+        "*.lock",
+        "*lock.json"
+      ],
+      "folder_exclude_patterns": [
+        ".sanity",
+        ".netlify",
+        ".next",
+        ".vercel",
+        ".cache",
+        "out",
+        "dist",
+        "node_modules",
+        ".idea",
+        "web-ext-artifacts"
+      ],
+    },
+  ],
+  "build_systems": [
+    {
+      "name": "Pack Templates",
+      "working_dir": "$project_path",
+      "shell_cmd": "./pack-templates.sh"
+    },
+    {
+      "name": "Pack Samples",
+      "working_dir": "$project_path",
+      "shell_cmd": "./pack-samples.sh"
+    }
+  ]
+}

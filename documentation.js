@@ -1,6 +1,6 @@
 import m from "mithril"
-import Header from "./header.js"
-import { render } from "./text-utilities.js"
+import Header from "./lib/header.js"
+import { render } from "./lib/text-utilities.js"
 
 const documentation_books = [
     {
@@ -39,45 +39,45 @@ Use it as a starting point to create your own custom template.
 `
 
 const Books = {
-	view: _vnode => {
-		return m("section", m("div.grid", [
-			documentation_books.map(d => m("figure", [
-				m("img", {src: d.cover, style: {"max-width": "200px"}}),
-				m("figcaption", d.title)
-			]))
-		]))
-	}
+  view: _vnode => {
+    return m("section", m("div.grid", [
+      documentation_books.map(d => m("figure", [
+        m("img", {src: d.cover, style: {"max-width": "200px"}}),
+        m("figcaption", d.title)
+      ]))
+    ]))
+  }
 }
 
 const Videos = {
-	view: vnode => {
-		return m("section", m.trust(render(videos_section)))
-	}
+  view: vnode => {
+    return m("section", m.trust(render(videos_section)))
+  }
 }
 
 const Samples = {
-	view: vnode => {
-		return m("section", m.trust(render(samples_section)))
-	}
+  view: vnode => {
+    return m("section", m.trust(render(samples_section)))
+  }
 }
 
 const Templates = {
-	view: vnode => {
-		return m("section", m.trust(render(templates_section)))
-	}
+  view: vnode => {
+    return m("section", m.trust(render(templates_section)))
+  }
 }
 
 export default {
-	view: vnode => {
-		return [
-			m(Header),
-			m("main.container", [
-				m(Books),
-				m(Videos),
-				m(Samples),
-				m(Templates)
-			]),
-			m("footer")
-		]
-	}
+  view: vnode => {
+    return [
+      m(Header),
+      m("main.container", [
+        m(Books),
+        m(Videos),
+        m(Samples),
+        m(Templates)
+      ]),
+      m("footer")
+    ]
+  }
 }

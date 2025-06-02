@@ -1,7 +1,23 @@
 .hidden {
-	display: none !important;
+  display: none !important;
 }
 
 .over {
-	border: solid 4px #e3f2fd;
+  border: solid 4px #e3f2fd;
 }
+
+.book-info {
+  display: flex;
+}
+
+.book-info figure {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.metadata {
+  display: flex;
+  flex-direction: column;
+}
+
+

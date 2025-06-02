@@ -1,11 +1,12 @@
 import m from "mithril";
 import { getFilesFromDataTransferItems } from "datatransfer-files-promise";
-import Header from "./header.js";
-import Footer from "./footer.js";
-import { render } from "./text-utilities.js";
-import { bookFromFiles } from "./book.js";
-import { initializeFilesystem } from "./common/fs.js"
-import { generateEpub } from "./epub.js";
+import Header from "./lib/header.js";
+import Footer from "./lib/footer.js";
+import { render } from "./lib/text-utilities.js";
+import { bookFromFiles } from "./lib/book.js";
+import { initializeFilesystem } from "./lib/fs.js";
+import { generateEpub } from "./lib/epub.js";
+import { generateSite } from "./lib/site.js";
 
 /**
  * BE AWARE
@@ -27,19 +28,23 @@ let files = [];
 == Metadata & Book Generation Actions ========================================================================
 */
 
-let status = "";
 let generatingSite = false;
 let generatingBook = false;
 
 const buildBook = async () => {
   generatingBook = true;
-  let vfs = await initializeFilesystem()
-  let r = await generateEpub(book)
+  await initializeFilesystem();
+  await generateEpub(book);
   generatingBook = false;
 };
 
-const buildSite = () => {
+const buildSite = async () => {
   generatingSite = true;
+  generatingBook = true;
+  await initializeFilesystem();
+  await generateSite(book);
+  generatingBook = false;
+  generatingSite = false;
 };
 
 const Press = {
@@ -54,11 +59,11 @@ const Press = {
             : "",
         ]),
       ),
-      m(".container"),
+      m(".container", m(Metadata, { book })),
       m(
         "footer",
         m("nav", [
-          m("ul", m("li", m("small", status))),
+          m("ul", m("li", m("small", ""))),
           m("ul", [
             m(
               "li",
@@ -70,16 +75,94 @@ const Press = {
             ),
             m(
               "li",
-              m("button", {
-                onclick: buildSite,
-                "aria-busy": generatingSite ? "true" : "false",
-                disabled: generatingSite,
-              }, generatingSite ? "Building Website...":"Build Website"),
+              m(
+                "button",
+                {
+                  onclick: buildSite,
+                  "aria-busy": generatingSite ? "true" : "false",
+                  disabled: generatingSite,
+                },
+                generatingSite
+                  ? "Building Book & Website..."
+                  : "Build Book & Website",
+              ),
             ),
           ]),
         ]),
       ),
     ]);
+  },
+};
+
+const Metadata = {
+  oninit: (vnode) => {
+    const metadata = vnode.attrs.book.config.metadata;
+    const cover_path = metadata.cover;
+    const cover_obj = book.files.find((f) => f.filepath == cover_path);
+    vnode.state.loadingCover = true;
+    vnode.state.cover = cover_obj;
+    vnode.state.activeTab = "metadata";
+  },
+  view: (vnode) => {
+    const book = vnode.attrs.book;
+    const metadata = book.config.metadata;
+    const author = book.config.author;
+    const cover = vnode.state.cover;
+    const activeTab = vnode.state.activeTab;
+
+    console.log(cover);
+    console.dir(vnode.attrs.book);
+
+    return [
+      m(
+        "nav",
+        m("ul", [
+          m(
+            "li",
+            m("button", {
+              disabled: activeTab == "metadata",
+              onclick: ((e) => vnode.state.activeTab = "metadata"),
+            }, "Information"),
+          ),
+          m(
+            "li",
+            m("button", {
+              disabled: activeTab == "chapters",
+              onclick: ((e) => vnode.state.activeTab = "chapters"),
+            }, "Files"),
+          ),
+        ]),
+      ),
+      activeTab == "metadata"
+        ? m("div.book-info", [
+          m("figure", [
+            m("img", { src: URL.createObjectURL(cover) }),
+          ]),
+          m("div.metadata", [
+            m("strong", "Title"),
+            m("span", metadata.title),
+            m("strong", "Subtitle"),
+            m("span", metadata.subtitle),
+            m("hr"),
+            m("strong", "Author"),
+            m("span", author.name),
+            m("strong", "Author's Bio"),
+            m("span", author.bio),
+            m("strong", "Publisher"),
+            m("span", book.config.publisher.name),
+          ]),
+        ])
+        : m(
+          "div.chapters",
+          m(
+            "table",
+            m(
+              "tbody",
+              book.config.book.chapters.map((c) => m("tr", m("td", c))),
+            ),
+          ),
+        ),
+    ];
   },
 };
 

@@ -1,6 +1,6 @@
 import m from "mithril"
-import Header from "./header.js"
-import { render } from "./text-utilities.js"
+import Header from "./lib/header.js"
+import { render } from "./lib/text-utilities.js"
 
 const about_message = `
 Little Webby Press is a _Web Application_ to convert your manuscript into both an eBook and a Website. 
@@ -19,11 +19,11 @@ Feel free to reach out over [Bluesky](https://bsky.app/profile/andreshouldwrite.
 `
 
 export default {
-	view: vnode => {
-		return [
-			m(Header),
-			m("main.container", m.trust(render(about_message))),
-			m("footer")
-		]
-	}
+  view: vnode => {
+    return [
+      m(Header),
+      m("main.container", m.trust(render(about_message))),
+      m("footer")
+    ]
+  }
 }
