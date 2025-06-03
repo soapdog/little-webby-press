@@ -18,7 +18,7 @@ const documentation_books = [
 const videos_section = `
 ### Videos 
 
-* [Introduction to Little Webby Press](https://youtu.be/rqsmSJY21Vw) 
+* [Introduction to Little Webby Press](/files/lwp.mp4)
 `;
 
 const samples_section = `

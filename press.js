@@ -176,7 +176,7 @@ At the end of it, you'll have two zip files, one containing your book in EPUB3 n
 a website.  
 
 Your manuscript folder needs to follow some rules, check out the [getting started guide](/books/getting-started/) to learn more. If you prefer you can
-[watch a video](https://youtu.be/rqsmSJY21Vw) about it.	
+[watch a video](/files/lwp.mp4) about it.
 `;
 
 const loadFiles = (_evt) => {
