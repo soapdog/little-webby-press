@@ -16,5 +16,6 @@ match = "first"
 chapters = [
   "sample-markdown.md",
   "sample-asciidoctor.adoc",
-  "sample-textile.textile"
+  "sample-djot.djot",
+  "sample-textile.textile",
 ]
